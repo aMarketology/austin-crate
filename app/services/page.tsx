@@ -3,6 +3,7 @@
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Services() {
   return (
@@ -10,10 +11,60 @@ export default function Services() {
       <Navigation />
 
       {/* Page Header */}
-      <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 px-4">
+      <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-5xl font-bold mb-4">Our Services</h1>
-          <p className="text-xl text-gray-300">Premium Concrete Coating Solutions for Tampa Bay</p>
+          <h1 className="text-5xl md:text-5xl font-bold mb-4">Specialty Shipping Services</h1>
+          <p className="text-xl text-grey-300">White-Glove Handling for Fine Art, Furniture & Medical Equipment</p>
+        </div>
+      </section>
+
+      {/* Hero Images Section */}
+      <section className="py-8 px-4 bg-grey-900">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="relative h-64 rounded-xl overflow-hidden border-2 border-grey-700 shadow-xl group">
+              <Image
+                src="/1.jpg"
+                alt="Fine Art Shipping Services"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-grey-900/90 via-grey-900/40 to-transparent flex items-end p-6">
+                <div>
+                  <h3 className="text-grey-50 font-bold text-2xl mb-2">Fine Art</h3>
+                  <p className="text-grey-300 text-sm">Museum-quality crating & transport</p>
+                </div>
+              </div>
+            </div>
+            <div className="relative h-64 rounded-xl overflow-hidden border-2 border-grey-700 shadow-xl group">
+              <Image
+                src="/2.jpg"
+                alt="Designer Furniture Shipping"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-grey-900/90 via-grey-900/40 to-transparent flex items-end p-6">
+                <div>
+                  <h3 className="text-grey-50 font-bold text-2xl mb-2">Designer Furniture</h3>
+                  <p className="text-grey-300 text-sm">White-glove furniture handling</p>
+                </div>
+              </div>
+            </div>
+            <div className="relative h-64 rounded-xl overflow-hidden border-2 border-grey-700 shadow-xl group">
+              <Image
+                src="/3.jpg"
+                alt="Medical Equipment Shipping"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-grey-900/90 via-grey-900/40 to-transparent flex items-end p-6">
+                <div>
+                  <h3 className="text-grey-50 font-bold text-2xl mb-2">Medical Equipment</h3>
+                  <p className="text-grey-300 text-sm">HIPAA-compliant transport</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

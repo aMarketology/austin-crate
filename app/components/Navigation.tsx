@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
@@ -23,7 +22,7 @@ export default function Navigation() {
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/90 backdrop-blur-lg shadow-lg'
+          ? 'bg-grey-900/95 backdrop-blur-lg shadow-lg border-b border-grey-700'
           : 'bg-transparent'
       }`}
     >
@@ -34,13 +33,13 @@ export default function Navigation() {
               whileHover={{ scale: 1.05 }}
               className="flex items-center"
             >
-              <Image
-                src="/fireup-logo.png"
-                alt="Fire Up Hibachi"
-                width={120}
-                height={120}
-                className="h-16 w-auto"
-              />
+              <span className={`text-2xl font-bold transition-colors ${
+                scrolled
+                  ? 'text-grey-50'
+                  : 'text-grey-50'
+              }`}>
+                Austin Crate
+              </span>
             </motion.div>
           </Link>
 
@@ -57,26 +56,26 @@ export default function Navigation() {
                   href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
                   className={`font-medium transition-colors relative group ${
                     scrolled
-                      ? 'text-gray-700 hover:text-orange-500'
-                      : 'text-white hover:text-orange-400'
+                      ? 'text-grey-200 hover:text-emerald'
+                      : 'text-grey-200 hover:text-emerald'
                   }`}
                 >
                   {item}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-500 transition-all group-hover:w-full" />
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald transition-all group-hover:w-full" />
                 </Link>
               </motion.div>
             ))}
             <motion.a
-              href="tel:(858) 434-7166"
+              href="tel:(512) 240-9818"
               className={`font-semibold px-6 py-2 rounded-lg transition-all ${
                 scrolled
-                  ? 'text-gray-900 hover:text-orange-500'
-                  : 'text-white hover:text-orange-400'
+                  ? 'text-grey-50 hover:text-emerald'
+                  : 'text-grey-50 hover:text-emerald'
               }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              (858) 434-7166
+              (512) 240-9818
             </motion.a>
           </div>
 
@@ -87,26 +86,20 @@ export default function Navigation() {
             whileTap={{ scale: 0.9 }}
           >
             <motion.div
-              className={`w-6 h-0.5 transition-all ${
-                scrolled ? 'bg-gray-900' : 'bg-white'
-              }`}
+              className="w-6 h-0.5 bg-grey-50 transition-all"
               animate={{
                 rotate: mobileMenuOpen ? 45 : 0,
                 y: mobileMenuOpen ? 8 : 0,
               }}
             />
             <motion.div
-              className={`w-6 h-0.5 transition-all ${
-                scrolled ? 'bg-gray-900' : 'bg-white'
-              }`}
+              className="w-6 h-0.5 bg-grey-50 transition-all"
               animate={{
                 opacity: mobileMenuOpen ? 0 : 1,
               }}
             />
             <motion.div
-              className={`w-6 h-0.5 transition-all ${
-                scrolled ? 'bg-gray-900' : 'bg-white'
-              }`}
+              className="w-6 h-0.5 bg-grey-50 transition-all"
               animate={{
                 rotate: mobileMenuOpen ? -45 : 0,
                 y: mobileMenuOpen ? -8 : 0,
@@ -124,7 +117,7 @@ export default function Navigation() {
               exit={{ opacity: 0, height: 0 }}
               className="md:hidden overflow-hidden"
             >
-              <div className="py-4 space-y-1 bg-white/95 backdrop-blur-lg rounded-lg mt-4 shadow-xl">
+              <div className="py-4 space-y-1 bg-grey-800/95 backdrop-blur-lg rounded-lg mt-4 shadow-xl border border-grey-700">
                 {['Home', 'Services', 'Gallery', 'About', 'Contact'].map((item, index) => (
                   <motion.div
                     key={item}
@@ -134,7 +127,7 @@ export default function Navigation() {
                   >
                     <Link
                       href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
-                      className="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-500 transition font-medium rounded"
+                      className="block px-4 py-3 text-grey-200 hover:bg-primary/10 hover:text-emerald transition font-medium rounded"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item}
@@ -143,10 +136,10 @@ export default function Navigation() {
                 ))}
                 <div className="px-4 pt-2">
                   <a
-                    href="tel:(858) 434-7166"
-                    className="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-semibold px-6 py-3 rounded-lg transition"
+                    href="tel:(512) 240-9818"
+                    className="block w-full bg-gradient-to-r from-primary to-primary-light hover:shadow-lg text-white text-center font-semibold px-6 py-3 rounded-lg transition"
                   >
-                    (858) 434-7166
+                    (512) 240-9818
                   </a>
                 </div>
               </div>

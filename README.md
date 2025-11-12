@@ -1,7 +1,7 @@
 # Tampa Bay Concrete Coatings Website
 
 ## Project Overview
-A modern Next.js 13+ website built with React and TypeScript that matches the design of https://tampabayconcretecoatings.com/
+A modern Next.js 13+ website built with React and TypeScript for Tampa Bay Concrete Coatings - a premier concrete coating company serving Florida.
 
 ## Tech Stack
 - **Framework**: Next.js 14
@@ -38,16 +38,17 @@ public/
 ### Homepage (`/`)
 - Hero section with CTA buttons
 - About section
-- Services overview
-- Service areas list
-- Address and social links
-- Google ratings
+- Services overview (Epoxy Garage Floors, Metallic Resin Floors, Concrete Polishing)
+- Service areas list (Tampa Bay & Surrounding Areas)
+- Contact information: (727) 743-7242
 - Image gallery
 - Final CTA
 
 ### Services (`/services`)
 - Detailed service descriptions:
   - Epoxy Garage Floors
+  - Metallic Resin Floors
+  - Concrete Polishing
   - Metallic Resin Floors
   - Concrete Polishing
 - Key benefits and applications for each service

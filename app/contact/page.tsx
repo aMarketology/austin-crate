@@ -9,11 +9,17 @@ export default function Contact() {
     name: '',
     email: '',
     phone: '',
+    serviceType: 'shipping',
+    length: '',
+    width: '',
+    height: '',
+    weight: '',
+    zipcode: '',
     message: ''
   })
   const [submitted, setSubmitted] = useState(false)
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
     setFormData(prev => ({
       ...prev,
@@ -26,7 +32,18 @@ export default function Contact() {
     // TODO: Send form data to server
     console.log('Form submitted:', formData)
     setSubmitted(true)
-    setFormData({ name: '', email: '', phone: '', message: '' })
+    setFormData({ 
+      name: '', 
+      email: '', 
+      phone: '', 
+      serviceType: 'shipping',
+      length: '',
+      width: '',
+      height: '',
+      weight: '',
+      zipcode: '',
+      message: '' 
+    })
     setTimeout(() => setSubmitted(false), 5000)
   }
 
@@ -35,10 +52,10 @@ export default function Contact() {
       <Navigation />
 
       {/* Page Header */}
-      <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 px-4">
+      <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-5xl font-bold mb-4">Contact Us</h1>
-          <p className="text-xl text-gray-300">Get your free quote today</p>
+          <p className="text-xl text-grey-300">Get your free shipping quote today</p>
         </div>
       </section>
 
@@ -50,7 +67,7 @@ export default function Contact() {
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Get In Touch</h2>
             <p className="text-gray-700 mb-8 leading-relaxed">
-              Ready to transform your concrete surfaces? Contact us today for a free consultation and quote. We're here to answer all your questions and help you find the perfect solution for your space.
+              Ready to ship your fine art, designer furniture, or medical equipment? Contact us today for a free consultation and quote. We're here to answer all your questions and provide expert specialty shipping solutions.
             </p>
 
             <div className="space-y-8">
@@ -59,8 +76,8 @@ export default function Contact() {
                 <div className="text-3xl">📞</div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Phone</h3>
-                  <a href="tel:(727) 743-7242" className="text-orange-500 font-bold hover:text-orange-600">
-                    (727) 743-7242
+                  <a href="tel:(512) 240-9818" className="text-emerald-600 font-bold hover:text-emerald-700">
+                    (512) 240-9818
                   </a>
                 </div>
               </div>
@@ -70,8 +87,8 @@ export default function Contact() {
                 <div className="text-3xl">✉️</div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Email</h3>
-                  <a href="mailto:info@tampabayconcretecoatings.com" className="text-orange-500 font-bold hover:text-orange-600">
-                    info@tampabayconcretecoatings.com
+                  <a href="mailto:hello@austincrate.com" className="text-emerald-600 font-bold hover:text-emerald-700">
+                    hello@austincrate.com
                   </a>
                 </div>
               </div>
@@ -81,7 +98,7 @@ export default function Contact() {
                 <div className="text-3xl">📍</div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Location</h3>
-                  <p className="text-gray-700">386 Tavernier Cir<br/>Oldsmar, FL 34677</p>
+                  <p className="text-gray-700">3112 Windsor Rd<br/>Austin, TX 78703</p>
                 </div>
               </div>
 
@@ -91,8 +108,8 @@ export default function Contact() {
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Hours</h3>
                   <p className="text-gray-700">
-                    Monday - Friday: 8am - 6pm<br/>
-                    Saturday: 9am - 4pm<br/>
+                    Monday - Friday: Open - 6pm<br/>
+                    Saturday: By Appointment<br/>
                     Sunday: Closed
                   </p>
                 </div>
@@ -105,7 +122,7 @@ export default function Contact() {
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Request a Free Quote</h2>
             
             {submitted && (
-              <div className="mb-6 p-4 bg-green-50 border border-green-200 text-green-700 rounded">
+              <div className="mb-6 p-4 bg-emerald-50 border border-emerald-200 text-emerald-700 rounded">
                 Thank you for your message! We will contact you soon.
               </div>
             )}
@@ -123,7 +140,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   placeholder="John Doe"
-                  className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
                 />
               </div>
 
@@ -139,7 +156,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   placeholder="john@example.com"
-                  className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
                 />
               </div>
 
@@ -154,29 +171,132 @@ export default function Contact() {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  placeholder="(727) 743-7242"
-                  className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  placeholder="(512) 240-9818"
+                  className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
                 />
               </div>
 
               <div>
+                <label htmlFor="serviceType" className="block text-gray-700 font-semibold mb-2">
+                  Service Type *
+                </label>
+                <select
+                  id="serviceType"
+                  name="serviceType"
+                  value={formData.serviceType}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                >
+                  <option value="shipping">Shipping Service</option>
+                  <option value="crate">Crate Purchase Only</option>
+                </select>
+              </div>
+
+              {/* Dimensions Grid */}
+              <div className="grid grid-cols-3 gap-3">
+                <div>
+                  <label htmlFor="length" className="block text-gray-700 font-semibold mb-2">
+                    Length (in) *
+                  </label>
+                  <input
+                    type="number"
+                    id="length"
+                    name="length"
+                    value={formData.length}
+                    onChange={handleChange}
+                    required
+                    placeholder="48"
+                    className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="width" className="block text-gray-700 font-semibold mb-2">
+                    Width (in) *
+                  </label>
+                  <input
+                    type="number"
+                    id="width"
+                    name="width"
+                    value={formData.width}
+                    onChange={handleChange}
+                    required
+                    placeholder="36"
+                    className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="height" className="block text-gray-700 font-semibold mb-2">
+                    Height (in) *
+                  </label>
+                  <input
+                    type="number"
+                    id="height"
+                    name="height"
+                    value={formData.height}
+                    onChange={handleChange}
+                    required
+                    placeholder="24"
+                    className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label htmlFor="weight" className="block text-gray-700 font-semibold mb-2">
+                  Weight (lbs) *
+                </label>
+                <input
+                  type="number"
+                  id="weight"
+                  name="weight"
+                  value={formData.weight}
+                  onChange={handleChange}
+                  required
+                  placeholder="150"
+                  className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                />
+              </div>
+
+              {/* Conditionally show zipcode for shipping */}
+              {formData.serviceType === 'shipping' && (
+                <div>
+                  <label htmlFor="zipcode" className="block text-gray-700 font-semibold mb-2">
+                    Destination Zipcode *
+                  </label>
+                  <input
+                    type="text"
+                    id="zipcode"
+                    name="zipcode"
+                    value={formData.zipcode}
+                    onChange={handleChange}
+                    required={formData.serviceType === 'shipping'}
+                    placeholder="78703"
+                    maxLength={5}
+                    pattern="[0-9]{5}"
+                    className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  />
+                </div>
+              )}
+
+              <div>
                 <label htmlFor="message" className="block text-gray-700 font-semibold mb-2">
-                  Message
+                  Additional Details
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Tell us about your project..."
+                  placeholder="Tell us about your shipping needs..."
                   rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-500 resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500 resize-none"
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded transition transform hover:-translate-y-1"
+                className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded transition transform hover:-translate-y-1"
               >
                 Send Message
               </button>
