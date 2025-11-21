@@ -155,7 +155,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="py-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-          <p>&copy; 2024 Austin Crate. All rights reserved.</p>
+          <p>&copy; 2025 Austin Crate. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="#" className="hover:text-emerald transition">Privacy Policy</Link>
             <Link href="#" className="hover:text-emerald transition">Terms of Service</Link>
