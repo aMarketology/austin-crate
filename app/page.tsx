@@ -46,12 +46,12 @@ export default function Home() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="space-y-4 relative z-50"
+                className="space-y-4 relative z-50 pb-4"
               >
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-light text-grey-50 tracking-tight leading-tight relative z-50">
+                <h1 className="text-5xl md:text-7xl lg:text-8xl font-light text-grey-50 tracking-tight leading-relaxed relative z-50 pb-2">
                   Austin Crate
                 </h1>
-                <h2 className="text-5xl md:text-7xl lg:text-8xl font-normal bg-gradient-to-r from-primary-light via-emerald to-sage bg-clip-text text-transparent leading-tight relative z-50">
+                <h2 className="text-5xl md:text-7xl lg:text-8xl font-normal bg-gradient-to-r from-primary-light via-emerald to-sage bg-clip-text text-transparent leading-relaxed relative z-50 pb-3">
                   & Freight
                 </h2>
               </motion.div>
@@ -117,9 +117,11 @@ export default function Home() {
                 <div className="relative h-64 rounded-2xl overflow-hidden border-2 border-grey-700 shadow-xl">
                   <Image
                     src="/1.jpg"
-                    alt="Fine Art Shipping - Austin Crate & Freight"
+                    alt="Fine Art Shipping Services Austin Texas - Museum Quality Crating and Transport"
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover"
+                    priority
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-grey-900/80 to-transparent flex items-end p-6">
                     <span className="text-grey-50 font-semibold">Fine Art Expertise</span>
@@ -131,9 +133,11 @@ export default function Home() {
                   <div className="relative h-32 rounded-xl overflow-hidden border border-grey-700 shadow-lg">
                     <Image
                       src="/2.jpg"
-                      alt="Designer Furniture Shipping - Austin Crate & Freight"
+                      alt="Designer Furniture Shipping Austin - White Glove Furniture Transport Services"
                       fill
+                      sizes="(max-width: 768px) 50vw, 25vw"
                       className="object-cover"
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-grey-900/70 to-transparent flex items-end p-4">
                       <span className="text-grey-50 text-sm font-medium">Furniture Transport</span>
@@ -142,9 +146,11 @@ export default function Home() {
                   <div className="relative h-32 rounded-xl overflow-hidden border border-grey-700 shadow-lg">
                     <Image
                       src="/3.jpg"
-                      alt="Medical Equipment Shipping - Austin Crate & Freight"
+                      alt="Medical Equipment Shipping Austin TX - HIPAA Compliant Medical Device Transport"
                       fill
+                      sizes="(max-width: 768px) 50vw, 25vw"
                       className="object-cover"
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-grey-900/70 to-transparent flex items-end p-4">
                       <span className="text-grey-50 text-sm font-medium">Medical Equipment</span>
