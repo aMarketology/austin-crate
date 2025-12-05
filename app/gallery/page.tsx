@@ -5,14 +5,14 @@ import Footer from '../components/Footer'
 
 export default function Gallery() {
   const galleryImages = [
-    { id: 1, title: 'Epoxy Garage Floor - Project 1', category: 'Epoxy' },
-    { id: 2, title: 'Metallic Resin Floor - Project 2', category: 'Metallic' },
-    { id: 3, title: 'Polished Concrete - Project 3', category: 'Polishing' },
-    { id: 4, title: 'Epoxy Garage Floor - Project 4', category: 'Epoxy' },
-    { id: 5, title: 'Metallic Resin Floor - Project 5', category: 'Metallic' },
-    { id: 6, title: 'Polished Concrete - Project 6', category: 'Polishing' },
-    { id: 7, title: 'Epoxy Garage Floor - Project 7', category: 'Epoxy' },
-    { id: 8, title: 'Metallic Resin Floor - Project 8', category: 'Metallic' },
+    { id: 1, title: 'Fine Art Crating - Project 1', category: 'Fine Art' },
+    { id: 2, title: 'Designer Furniture Transport - Project 2', category: 'Furniture' },
+    { id: 3, title: 'Medical Equipment Shipping - Project 3', category: 'Medical' },
+    { id: 4, title: 'Custom Crating Solution - Project 4', category: 'Fine Art' },
+    { id: 5, title: 'White-Glove Delivery - Project 5', category: 'Furniture' },
+    { id: 6, title: 'HIPAA Compliant Transport - Project 6', category: 'Medical' },
+    { id: 7, title: 'Museum Quality Packing - Project 7', category: 'Fine Art' },
+    { id: 8, title: 'Luxury Furniture Handling - Project 8', category: 'Furniture' },
   ]
 
   return (
@@ -20,7 +20,7 @@ export default function Gallery() {
       <Navigation />
 
       {/* Page Header */}
-      <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 px-4">
+      <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 px-4 mt-20">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-5xl font-bold mb-4">Gallery</h1>
           <p className="text-xl text-gray-300">View our completed projects</p>

@@ -1,24 +1,34 @@
-'use client'
+﻿'use client'
 
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
+  const [darkMode, setDarkMode] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50)
+    // Check for saved theme preference or default to light mode
+    const savedTheme = localStorage.getItem('theme')
+    if (savedTheme === 'dark') {
+      setDarkMode(true)
+      document.documentElement.classList.add('dark')
     }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode)
+    if (!darkMode) {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('theme', 'dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem('theme', 'light')
+    }
+  }
+
   const services = [
-    { name: 'All Services', href: '/services' },
     { name: 'Fine Art Shipping', href: '/services/fine-art' },
     { name: 'Designer Furniture', href: '/services/furniture' },
     { name: 'Medical Equipment', href: '/services/medical-equipment' },
@@ -26,232 +36,100 @@ export default function Navigation() {
   ]
 
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-grey-900/95 backdrop-blur-lg shadow-lg border-b border-grey-700'
-          : 'bg-transparent'
-      }`}
-    >
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-grey-900 shadow-md border-b-2 border-grey-200 dark:border-grey-700">
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <Link href="/" className="flex-shrink-0">
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="flex items-center"
+          <div className="flex items-center gap-4">
+            <Link href="/" className="flex-shrink-0 text-2xl font-bold text-grey-900 dark:text-white">
+              Austin <span className="text-emerald">Crate</span>
+            </Link>
+            
+            <button 
+              onClick={toggleDarkMode}
+              className="p-2 rounded-lg bg-grey-100 dark:bg-grey-800 hover:bg-grey-200 dark:hover:bg-grey-700 transition-colors"
+              aria-label="Toggle dark mode"
             >
-              <span className={`text-2xl font-bold transition-colors ${
-                scrolled
-                  ? 'text-grey-50'
-                  : 'text-grey-50'
-              }`}>
-                Austin Crate
-              </span>
-            </motion.div>
-          </Link>
+              {darkMode ? (
+                <svg className="w-5 h-5 text-grey-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              ) : (
+                <svg className="w-5 h-5 text-grey-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
+              )}
+            </button>
+          </div>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex gap-8 items-center">
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0 }}
-            >
-              <Link
-                href="/"
-                className={`font-medium transition-colors relative group ${
-                  scrolled
-                    ? 'text-grey-200 hover:text-emerald'
-                    : 'text-grey-200 hover:text-emerald'
-                }`}
-              >
-                Home
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald transition-all group-hover:w-full" />
-              </Link>
-            </motion.div>
+            <Link href="/" className="font-semibold text-grey-800 dark:text-grey-200 hover:text-emerald transition-colors">
+              Home
+            </Link>
 
-            {/* Services Dropdown */}
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
-              className="relative"
-              onMouseEnter={() => setServicesOpen(true)}
-              onMouseLeave={() => setServicesOpen(false)}
-            >
-              <button
-                className={`font-medium transition-colors relative group flex items-center gap-1 ${
-                  scrolled
-                    ? 'text-grey-200 hover:text-emerald'
-                    : 'text-grey-200 hover:text-emerald'
-                }`}
-              >
+            <div className="relative group" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
+              <Link href="/services" className="font-semibold text-grey-800 dark:text-grey-200 hover:text-emerald transition-colors flex items-center gap-1">
                 Services
-                <svg className={`w-4 h-4 transition-transform ${servicesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald transition-all group-hover:w-full" />
-              </button>
+              </Link>
 
-              {/* Dropdown Menu */}
-              <AnimatePresence>
-                {servicesOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 10 }}
-                    transition={{ duration: 0.2 }}
-                    className="absolute top-full left-0 mt-2 w-64 bg-grey-900/98 backdrop-blur-lg border border-grey-700 rounded-lg shadow-2xl overflow-hidden"
-                  >
+              {servicesOpen && (
+                <div className="absolute top-full left-0 pt-2 z-[100]">
+                  <div className="w-64 bg-white dark:bg-grey-800 border-2 border-grey-200 dark:border-grey-700 rounded-lg shadow-xl">
                     {services.map((service, i) => (
-                      <Link
-                        key={i}
-                        href={service.href}
-                        className={`block px-4 py-3 text-grey-200 hover:bg-emerald/10 hover:text-emerald transition-all ${
-                          i !== services.length - 1 ? 'border-b border-grey-800' : ''
-                        }`}
-                      >
+                      <Link key={i} href={service.href} className="block px-4 py-3 text-grey-700 dark:text-grey-200 font-medium hover:bg-emerald/10 hover:text-emerald transition-all border-b border-grey-200 dark:border-grey-700 last:border-b-0 first:rounded-t-lg last:rounded-b-lg">
                         {service.name}
                       </Link>
                     ))}
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </motion.div>
+                  </div>
+                </div>
+              )}
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-            >
-              <Link
-                href="/contact"
-                className={`font-medium transition-colors relative group ${
-                  scrolled
-                    ? 'text-grey-200 hover:text-emerald'
-                    : 'text-grey-200 hover:text-emerald'
-                }`}
-              >
-                Contact
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald transition-all group-hover:w-full" />
-              </Link>
-            </motion.div>
-            <motion.a
-              href="tel:(512) 240-9818"
-              className={`font-semibold px-6 py-2 rounded-lg transition-all ${
-                scrolled
-                  ? 'text-grey-50 hover:text-emerald'
-                  : 'text-grey-50 hover:text-emerald'
-              }`}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
+            <Link href="/contact" className="font-semibold text-grey-800 dark:text-grey-200 hover:text-emerald transition-colors">
+              Contact
+            </Link>
+
+            <a href="tel:(512) 240-9818" className="px-6 py-2.5 rounded-lg bg-emerald text-white font-bold hover:bg-emerald-600 transition-all shadow-md">
               (512) 240-9818
-            </motion.a>
+            </a>
           </div>
 
-          {/* Mobile Menu Button */}
-          <motion.button
-            className="md:hidden flex flex-col gap-1.5 z-50"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            whileTap={{ scale: 0.9 }}
-          >
-            <motion.div
-              className="w-6 h-0.5 bg-grey-50 transition-all"
-              animate={{
-                rotate: mobileMenuOpen ? 45 : 0,
-                y: mobileMenuOpen ? 8 : 0,
-              }}
-            />
-            <motion.div
-              className="w-6 h-0.5 bg-grey-50 transition-all"
-              animate={{
-                opacity: mobileMenuOpen ? 0 : 1,
-              }}
-            />
-            <motion.div
-              className="w-6 h-0.5 bg-grey-50 transition-all"
-              animate={{
-                rotate: mobileMenuOpen ? -45 : 0,
-                y: mobileMenuOpen ? -8 : 0,
-              }}
-            />
-          </motion.button>
+          <button className="md:hidden flex flex-col gap-1.5" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+            <div className="w-6 h-0.5 bg-grey-900 dark:bg-grey-200"></div>
+            <div className="w-6 h-0.5 bg-grey-900 dark:bg-grey-200"></div>
+            <div className="w-6 h-0.5 bg-grey-900 dark:bg-grey-200"></div>
+          </button>
         </div>
 
-        {/* Mobile Menu */}
-        <AnimatePresence>
-          {mobileMenuOpen && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              className="md:hidden overflow-hidden"
-            >
-              <div className="py-4 space-y-1 bg-grey-800/95 backdrop-blur-lg rounded-lg mt-4 shadow-xl border border-grey-700">
-                <motion.div
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0 }}
-                >
-                  <Link
-                    href="/"
-                    className="block px-4 py-3 text-grey-200 hover:bg-primary/10 hover:text-emerald transition font-medium rounded"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Home
-                  </Link>
-                </motion.div>
-                
-                {/* Services in Mobile */}
-                <motion.div
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.1 }}
-                >
-                  <div className="px-4 py-2 text-grey-400 text-sm font-semibold uppercase tracking-wider">
-                    Services
-                  </div>
-                  {services.map((service, i) => (
-                    <Link
-                      key={i}
-                      href={service.href}
-                      className="block px-8 py-2 text-grey-200 hover:bg-primary/10 hover:text-emerald transition font-medium rounded"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      {service.name}
-                    </Link>
-                  ))}
-                </motion.div>
+        {mobileMenuOpen && (
+          <div className="md:hidden mt-4">
+            <div className="py-4 space-y-1 bg-white dark:bg-grey-800 rounded-lg shadow-xl border-2 border-grey-200 dark:border-grey-700">
+              <Link href="/" className="block px-4 py-3 text-grey-800 dark:text-grey-200 font-semibold hover:bg-emerald/10 hover:text-emerald transition rounded" onClick={() => setMobileMenuOpen(false)}>
+                Home
+              </Link>
+              
+              <div className="px-4 py-2 text-grey-600 dark:text-grey-400 text-sm font-bold uppercase">Services</div>
+              {services.map((service, i) => (
+                <Link key={i} href={service.href} className="block px-8 py-2 text-grey-700 dark:text-grey-300 font-medium hover:bg-emerald/10 hover:text-emerald transition rounded" onClick={() => setMobileMenuOpen(false)}>
+                  {service.name}
+                </Link>
+              ))}
 
-                <motion.div
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.2 }}
-                >
-                  <Link
-                    href="/contact"
-                    className="block px-4 py-3 text-grey-200 hover:bg-primary/10 hover:text-emerald transition font-medium rounded"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Contact
-                  </Link>
-                </motion.div>
-                <div className="px-4 pt-2">
-                  <a
-                    href="tel:(512) 240-9818"
-                    className="block w-full bg-gradient-to-r from-primary to-primary-light hover:shadow-lg text-white text-center font-semibold px-6 py-3 rounded-lg transition"
-                  >
-                    (512) 240-9818
-                  </a>
-                </div>
+              <Link href="/contact" className="block px-4 py-3 text-grey-800 dark:text-grey-200 font-semibold hover:bg-emerald/10 hover:text-emerald transition rounded" onClick={() => setMobileMenuOpen(false)}>
+                Contact
+              </Link>
+
+              <div className="px-4 pt-2">
+                <a href="tel:(512) 240-9818" className="block w-full bg-emerald hover:bg-emerald-600 text-white text-center font-bold px-6 py-3 rounded-lg transition shadow-md">
+                  (512) 240-9818
+                </a>
               </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+            </div>
+          </div>
+        )}
       </div>
-    </motion.nav>
+    </nav>
   )
 }

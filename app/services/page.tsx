@@ -11,7 +11,7 @@ export default function Services() {
       <Navigation />
 
       {/* Page Header */}
-      <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-16 px-4">
+      <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-16 px-4 mt-20">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-5xl font-bold mb-4">Specialty Shipping Services</h1>
           <p className="text-xl text-grey-300">White-Glove Handling for Fine Art, Furniture & Medical Equipment</p>
@@ -27,6 +27,7 @@ export default function Services() {
                 src="/1.jpg"
                 alt="Fine Art Shipping Services"
                 fill
+                loading="lazy"
                 className="object-cover transition-transform duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-grey-900/90 via-grey-900/40 to-transparent flex items-end p-6">
@@ -41,6 +42,7 @@ export default function Services() {
                 src="/2.jpg"
                 alt="Designer Furniture Shipping"
                 fill
+                loading="lazy"
                 className="object-cover transition-transform duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-grey-900/90 via-grey-900/40 to-transparent flex items-end p-6">
@@ -55,6 +57,7 @@ export default function Services() {
                 src="/3.jpg"
                 alt="Medical Equipment Shipping"
                 fill
+                loading="lazy"
                 className="object-cover transition-transform duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-grey-900/90 via-grey-900/40 to-transparent flex items-end p-6">
@@ -86,10 +89,6 @@ export default function Services() {
 
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Key Benefits:</h3>
             <ul className="space-y-3 mb-8">
-              <li className="flex gap-3 text-gray-700">
-                <span className="text-emerald font-bold">✓</span>
-                <span><strong>Climate-Controlled Transport:</strong> Temperature and humidity regulated throughout shipping</span>
-              </li>
               <li className="flex gap-3 text-gray-700">
                 <span className="text-emerald font-bold">✓</span>
                 <span><strong>Custom Crating:</strong> Built-to-spec wooden crates for each unique piece</span>

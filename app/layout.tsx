@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { organizationSchema, servicesSchema, reviewSchema } from '@/lib/schema'
+import StickyQuoteButton from './components/StickyQuoteButton'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -128,6 +129,7 @@ export default function RootLayout({
       </head>
       <body>
         {children}
+        <StickyQuoteButton />
       </body>
     </html>
   )
