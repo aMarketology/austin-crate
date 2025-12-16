@@ -1,18 +1,27 @@
 'use client'
 
+import Image from 'next/image'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 
 export default function Gallery() {
   const galleryImages = [
-    { id: 1, title: 'Fine Art Crating - Project 1', category: 'Fine Art' },
-    { id: 2, title: 'Designer Furniture Transport - Project 2', category: 'Furniture' },
-    { id: 3, title: 'Medical Equipment Shipping - Project 3', category: 'Medical' },
-    { id: 4, title: 'Custom Crating Solution - Project 4', category: 'Fine Art' },
-    { id: 5, title: 'White-Glove Delivery - Project 5', category: 'Furniture' },
-    { id: 6, title: 'HIPAA Compliant Transport - Project 6', category: 'Medical' },
-    { id: 7, title: 'Museum Quality Packing - Project 7', category: 'Fine Art' },
-    { id: 8, title: 'Luxury Furniture Handling - Project 8', category: 'Furniture' },
+    { id: 1, src: '/1.jpg', title: 'Fine Art Crating', category: 'Fine Art' },
+    { id: 2, src: '/2.jpg', title: 'Furniture Transport', category: 'Furniture' },
+    { id: 3, src: '/3.jpg', title: 'Medical Equipment', category: 'Medical' },
+    { id: 4, src: '/IMG_3105.jpg', title: 'Custom Crating Solution', category: 'Crating' },
+    { id: 5, src: '/IMG_3112.jpg', title: 'Specialty Packaging', category: 'Packaging' },
+    { id: 6, src: '/IMG_3114.jpg', title: 'Secure Transport Setup', category: 'Transport' },
+    { id: 7, src: '/IMG_3611.jpg', title: 'White-Glove Delivery', category: 'Delivery' },
+    { id: 8, src: '/IMG_3748.jpg', title: 'Professional Handling', category: 'Handling' },
+    { id: 9, src: '/IMG_3760.jpg', title: 'Freight Services', category: 'Freight' },
+    { id: 10, src: '/IMG_3770.jpg', title: 'Warehouse Operations', category: 'Operations' },
+    { id: 11, src: '/IMG_3832_1681922619689.jpg', title: 'Museum-Quality Crating', category: 'Crating' },
+    { id: 12, src: '/IMG_3954_1686069785125.jpg', title: 'Delicate Item Packaging', category: 'Packaging' },
+    { id: 13, src: '/IMG_3979_1686773817157.jpg', title: 'Climate-Controlled Storage', category: 'Storage' },
+    { id: 14, src: '/IMG_4196_1695841417957.jpg', title: 'Oversized Item Shipping', category: 'Shipping' },
+    { id: 15, src: '/IMG_4446_1703172460423.jpg', title: 'General Shipping & Crates', category: 'General' },
+    { id: 16, src: '/IMG_5091_1714149760004.jpg', title: 'Secure Loading', category: 'Loading' },
   ]
 
   return (
@@ -20,10 +29,10 @@ export default function Gallery() {
       <Navigation />
 
       {/* Page Header */}
-      <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 px-4 mt-20">
+      <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-16 px-4 mt-20">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-5xl font-bold mb-4">Gallery</h1>
-          <p className="text-xl text-gray-300">View our completed projects</p>
+          <h1 className="text-5xl md:text-5xl font-bold mb-4">Our Work</h1>
+          <p className="text-xl text-grey-300">Professional crating, packaging, and shipping solutions</p>
         </div>
       </section>
 
@@ -32,13 +41,22 @@ export default function Gallery() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {galleryImages.map((image) => (
-              <div key={image.id} className="group relative overflow-hidden rounded-lg shadow-lg bg-gray-300 h-64">
-                <div className="w-full h-full bg-gradient-to-br from-gray-400 to-gray-500 flex items-center justify-center text-white font-bold group-hover:from-orange-400 group-hover:to-orange-500 transition">
-                  {image.title}
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 text-white opacity-0 group-hover:opacity-100 transition">
-                  <p className="font-semibold">{image.title}</p>
-                  <p className="text-sm text-gray-300">{image.category}</p>
+              <div key={image.id} className="group relative overflow-hidden rounded-xl shadow-lg bg-grey-100 h-64">
+                <Image
+                  src={image.src}
+                  alt={image.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                  quality={75}
+                  placeholder="blur"
+                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMH/8QAHxAAAgICAgMBAAAAAAAAAAAAAQIDBAARBRITISJB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEA/AMW4q5Hj5RUtVJY5F+m0fkjAycrbI7E7Oc1qhZB3JP/Z"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-grey-900/80 via-grey-900/20 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                  <p className="font-bold text-lg">{image.title}</p>
+                  <p className="text-sm text-grey-300">{image.category}</p>
                 </div>
               </div>
             ))}
@@ -47,13 +65,19 @@ export default function Gallery() {
       </section>
 
       {/* CTA */}
-      <section className="bg-gray-50 py-12 px-4 text-center">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">Ready to see your project here?</h2>
+      <section className="bg-grey-50 py-16 px-4 text-center">
+        <h2 className="text-3xl font-bold text-grey-900 mb-4">Need Custom Crating or Shipping?</h2>
+        <p className="text-grey-600 mb-8 max-w-2xl mx-auto">
+          From fine art to medical equipment, we handle your most valuable items with museum-quality care.
+        </p>
         <a 
-          href="tel:(727) 743-7242" 
-          className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded inline-block transition"
+          href="tel:(512) 240-9818" 
+          className="bg-emerald hover:bg-emerald-600 text-white font-bold py-4 px-10 rounded-lg inline-flex items-center gap-3 transition shadow-lg"
         >
-          Call Now
+          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+          </svg>
+          Call (512) 240-9818
         </a>
       </section>
 

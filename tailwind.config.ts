@@ -1,7 +1,6 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
-  darkMode: 'class',
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -14,7 +13,8 @@ const config: Config = {
         primary: '#2d5f3f',          // Deep forest green
         'primary-light': '#3d8b5c',   // Medium sage green
         'primary-dark': '#1a3d28',    // Dark hunter green
-        emerald: '#50c878',           // Vibrant emerald accent
+        emerald: '#1e6b4a',           // Deep trustworthy green
+        'emerald-600': '#185c3e',     // Darker hover state
         sage: '#87a96b',              // Soft sage green
         
         // Pink Accents (Premium touch)

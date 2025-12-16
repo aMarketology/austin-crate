@@ -11,7 +11,7 @@ export default function FurnitureShipping() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-20 px-4">
+      <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white pt-28 md:pt-32 pb-16 md:pb-20 px-4">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>

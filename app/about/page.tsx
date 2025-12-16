@@ -12,7 +12,7 @@ export default function About() {
       <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 px-4 mt-20">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-5xl font-bold mb-4">About Us</h1>
-          <p className="text-xl text-gray-300">Learn about Austin Crate & Freight</p>
+          <p className="text-xl text-gray-300">Learn about Tampa Bay Concrete Coatings</p>
         </div>
       </section>
 
@@ -21,31 +21,31 @@ export default function About() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            We are a premier specialty shipping company in Austin, Texas. We are often celebrated for our innovative approach and outstanding work. We serve local Austin communities with a commitment to quality, reliability, and a seamless experience.
+            We are a premier design-build firm in Tampa Bay. We are often celebrated for our innovative approach and outstanding work. We serve local Tampa Bay Communities with a commitment to quality, sustainability, and a seamless experience.
           </p>
 
           <h2 className="text-4xl font-bold text-gray-900 mb-6 mt-12">Our Mission</h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            We're proud to provide Austin with specialty shipping services that ensure your valuable items arrive safely. With over 10 years of experience, Austin Crate & Freight is your point of contact for fine art, designer furniture, and medical equipment shipping in Texas.
+            We're proud to transform Tampa Bay homes with spaces that inspire and endure. With over 20 years of experience, Tampa Bay Concrete is your point of contact for concrete services and luxury flooring services in Florida.
           </p>
 
           <h2 className="text-4xl font-bold text-gray-900 mb-6 mt-12">Why Choose Us?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-2xl font-bold text-emerald mb-3">Expertise</h3>
-              <p className="text-gray-700">Over 10 years of experience in specialty shipping and white-glove handling services.</p>
+              <h3 className="text-2xl font-bold text-orange-500 mb-3">Expertise</h3>
+              <p className="text-gray-700">Over 20 years of experience in concrete coatings and flooring services.</p>
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-emerald mb-3">Quality</h3>
-              <p className="text-gray-700">We use premium crating materials and proven techniques for safe, secure transport.</p>
+              <h3 className="text-2xl font-bold text-orange-500 mb-3">Quality</h3>
+              <p className="text-gray-700">We use premium materials and proven techniques for lasting results.</p>
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-emerald mb-3">Service</h3>
+              <h3 className="text-2xl font-bold text-orange-500 mb-3">Service</h3>
               <p className="text-gray-700">Dedicated to customer satisfaction with professional and friendly service.</p>
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-emerald mb-3">Innovation</h3>
-              <p className="text-gray-700">Always exploring new packing and shipping techniques to serve you better.</p>
+              <h3 className="text-2xl font-bold text-orange-500 mb-3">Innovation</h3>
+              <p className="text-gray-700">Always exploring new techniques and products to serve you better.</p>
             </div>
           </div>
 
@@ -55,10 +55,10 @@ export default function About() {
               Ready to work with us? Get in touch today for a free consultation and quote.
             </p>
             <a 
-              href="tel:(512) 240-9818" 
-              className="bg-emerald hover:bg-emerald-600 text-white font-bold py-3 px-8 rounded inline-block transition"
+              href="tel:(727) 743-7242" 
+              className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded inline-block transition"
             >
-              Call (512) 240-9818
+              Call (727) 743-7242
             </a>
           </div>
         </div>

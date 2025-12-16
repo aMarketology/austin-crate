@@ -48,7 +48,7 @@ export default function BuyACrate() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-20 px-4">
+      <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white pt-28 md:pt-32 pb-16 md:pb-20 px-4">
         <div className="max-w-5xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-grey-700 bg-grey-800/50 backdrop-blur-sm mb-6">
             <span className="text-xs font-medium text-grey-300 uppercase tracking-widest">Shipping Supplies</span>

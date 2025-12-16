@@ -3,8 +3,10 @@
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 
 export default function Contact() {
+  const router = useRouter()
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -17,7 +19,8 @@ export default function Contact() {
     zipcode: '',
     message: ''
   })
-  const [submitted, setSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [error, setError] = useState('')
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
@@ -29,22 +32,28 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // TODO: Send form data to server
-    console.log('Form submitted:', formData)
-    setSubmitted(true)
-    setFormData({ 
-      name: '', 
-      email: '', 
-      phone: '', 
-      serviceType: 'shipping',
-      length: '',
-      width: '',
-      height: '',
-      weight: '',
-      zipcode: '',
-      message: '' 
-    })
-    setTimeout(() => setSubmitted(false), 5000)
+    setIsSubmitting(true)
+    setError('')
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to send message')
+      }
+
+      // Redirect to thank you page on success
+      router.push('/thank-you')
+    } catch (err) {
+      setError('Something went wrong. Please try again or call us directly.')
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -121,9 +130,9 @@ export default function Contact() {
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Request a Free Quote</h2>
             
-            {submitted && (
-              <div className="mb-6 p-4 bg-emerald-50 border border-emerald-200 text-emerald-700 rounded">
-                Thank you for your message! We will contact you soon.
+            {error && (
+              <div className="mb-6 p-4 bg-red-50 border border-red-200 text-red-700 rounded">
+                {error}
               </div>
             )}
 
@@ -296,9 +305,10 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded transition transform hover:-translate-y-1"
+                disabled={isSubmitting}
+                className="w-full bg-emerald-600 hover:bg-emerald-700 disabled:bg-emerald-400 disabled:cursor-not-allowed text-white font-bold py-3 px-6 rounded transition transform hover:-translate-y-1 disabled:hover:translate-y-0"
               >
-                Send Message
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           </div>

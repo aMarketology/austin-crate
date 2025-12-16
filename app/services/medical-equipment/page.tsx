@@ -11,7 +11,7 @@ export default function MedicalEquipment() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-20 px-4">
+      <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white pt-28 md:pt-32 pb-16 md:pb-20 px-4">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -165,7 +165,7 @@ export default function MedicalEquipment() {
             {[
               { title: 'HIPAA Compliance', items: ['Privacy safeguards', 'Secure documentation', 'Data protection protocols', 'Staff training & certification'] },
               { title: 'FDA Regulations', items: ['GMP compliance', 'Quality system requirements', 'Device handling standards', 'Temperature monitoring'] },
-              { title: 'DOT Requirements', items: ['Proper labeling', 'Transport documentation', 'Driver qualifications', 'Safety protocols'] },
+              { title: 'DOT Requirements', items: ['Hazmat certification', 'Proper labeling', 'Transport documentation', 'Driver qualifications'] },
               { title: 'Insurance Coverage', items: ['Equipment value protection', 'Liability coverage', 'Cargo insurance', 'Professional indemnity'] }
             ].map((section, i) => (
               <div key={i} className="p-6 rounded-xl bg-gray-50 border border-gray-200">
