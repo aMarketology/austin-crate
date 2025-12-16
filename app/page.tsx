@@ -17,12 +17,19 @@ export default function Home() {
     const ctx = canvas.getContext('2d')
     if (!ctx) return
 
-    const resizeCanvas = () => {
-      canvas.width = window.innerWidth
-      canvas.height = window.innerHeight
+    // Get the parent section's dimensions
+    const getParentDimensions = () => {
+      const section = canvas.closest('section')
+      if (section) {
+        canvas.width = section.offsetWidth
+        canvas.height = section.offsetHeight
+      } else {
+        canvas.width = window.innerWidth
+        canvas.height = window.innerHeight
+      }
     }
-    resizeCanvas()
-    window.addEventListener('resize', resizeCanvas)
+    getParentDimensions()
+    window.addEventListener('resize', getParentDimensions)
 
     const dotSpacing = 24
     const baseDotSize = 1.5
@@ -53,12 +60,14 @@ export default function Home() {
     let colorOffset = 0 // Cycles the starting color
 
     const handleMouseMove = (e: MouseEvent) => {
-      currentMouse = { x: e.clientX, y: e.clientY }
+      // Get position relative to canvas
+      const rect = canvas.getBoundingClientRect()
+      currentMouse = { x: e.clientX - rect.left, y: e.clientY - rect.top }
       
       // Add to trail only if moved enough distance (creates tighter line)
       if (mouseTrail.length === 0 || 
-          Math.sqrt((e.clientX - mouseTrail[0].x) ** 2 + (e.clientY - mouseTrail[0].y) ** 2) > 3) {
-        mouseTrail.unshift({ x: e.clientX, y: e.clientY })
+          Math.sqrt((currentMouse.x - mouseTrail[0].x) ** 2 + (currentMouse.y - mouseTrail[0].y) ** 2) > 3) {
+        mouseTrail.unshift({ x: currentMouse.x, y: currentMouse.y })
         colorOffset = (colorOffset + 1) % prismColors.length // Cycle starting color
       }
       
@@ -75,20 +84,9 @@ export default function Home() {
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height)
 
-      // Calculate center fade
-      const centerX = canvas.width / 2
-      const centerY = canvas.height / 2
-      const maxFadeDistance = Math.min(canvas.width, canvas.height) * 0.5
-
       for (let x = 0; x < canvas.width; x += dotSpacing) {
         for (let y = 0; y < canvas.height; y += dotSpacing) {
           const dotKey = `${x},${y}`
-          
-          // Distance from center for radial fade
-          const distFromCenter = Math.sqrt((x - centerX) ** 2 + (y - centerY) ** 2)
-          const centerFade = Math.max(0, Math.min(1, (distFromCenter - maxFadeDistance * 0.45) / (maxFadeDistance * 0.55)))
-          
-          if (centerFade === 0) continue // Skip dots in clear center area
 
           // Check influence from trail (closest point in trail)
           let maxInfluence = 0
@@ -140,8 +138,8 @@ export default function Home() {
           // Save state for next frame
           dotStates.set(dotKey, { size: dotSize, colorIndex: finalColorIndex, influence: smoothInfluence })
 
-          // Apply center fade to alpha
-          const alpha = centerFade * (0.6 + smoothInfluence * 0.4)
+          // Full opacity (no radial fade)
+          const alpha = 0.6 + smoothInfluence * 0.4
 
           ctx.beginPath()
           ctx.arc(x, y, dotSize, 0, Math.PI * 2)
@@ -166,7 +164,7 @@ export default function Home() {
     animate()
 
     return () => {
-      window.removeEventListener('resize', resizeCanvas)
+      window.removeEventListener('resize', getParentDimensions)
       window.removeEventListener('mousemove', handleMouseMove)
       cancelAnimationFrame(animationId)
     }
@@ -274,12 +272,12 @@ export default function Home() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="space-y-4 relative z-50 pb-4"
+                className="space-y-0 relative z-50"
               >
-                <h1 className="text-8xl font-bold text-grey-900 tracking-tight leading-relaxed relative z-50 pb-2">
+                <h1 className="text-8xl font-bold text-grey-900 tracking-tight leading-none relative z-50">
                   Austin Crate
                 </h1>
-                <h2 className="text-8xl font-bold text-emerald leading-relaxed relative z-50 pb-3">
+                <h2 className="text-8xl font-bold text-emerald leading-none relative z-50">
                   & Freight
                 </h2>
               </motion.div>
@@ -289,7 +287,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.35 }}
-                className="text-4xl text-grey-800 font-medium leading-tight"
+                className="text-4xl text-grey-800 font-medium leading-tight -mt-2"
               >
                 White-Glove Specialty Shipping for Your Most Valuable Assets
               </motion.h3>
@@ -347,8 +345,9 @@ export default function Home() {
                     src="/2.jpg"
                     alt="Designer Furniture Shipping Austin - White Glove Furniture Transport Services"
                     fill
-                    sizes="33vw"
+                    sizes="(max-width: 1024px) 100vw, 33vw"
                     className="object-cover"
+                    quality={75}
                     priority
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-6">
@@ -363,9 +362,12 @@ export default function Home() {
                       src="/1.jpg"
                       alt="Fine Art Shipping Services Austin Texas - Museum Quality Crating and Transport"
                       fill
-                      sizes="25vw"
+                      sizes="(max-width: 1024px) 50vw, 25vw"
                       className="object-cover"
+                      quality={75}
                       loading="lazy"
+                      placeholder="blur"
+                      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgIBAwQDAAAAAAAAAAAAAQIDBAAFESEGEjFBE1Fx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEEECCDggEeD5rR+mdQu3tFr2b0rTTsZcyP7Pnf2ffsV1EaFEBBqAn//2Q=="
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-4">
                       <span className="text-white text-sm font-bold">Fine Art Expertise</span>
@@ -376,9 +378,12 @@ export default function Home() {
                       src="/3.jpg"
                       alt="Medical Equipment Shipping Austin TX - HIPAA Compliant Medical Device Transport"
                       fill
-                      sizes="25vw"
+                      sizes="(max-width: 1024px) 50vw, 25vw"
                       className="object-cover"
+                      quality={75}
                       loading="lazy"
+                      placeholder="blur"
+                      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgIBAwQDAAAAAAAAAAAAAQIDBAAFESEGEjFBE1Fx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEEECCDggEeD5rR+mdQu3tFr2b0rTTsZcyP7Pnf2ffsV1EaFEBBqAn//2Q=="
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-4">
                       <span className="text-white text-sm font-bold">Medical Equipment</span>
@@ -392,9 +397,12 @@ export default function Home() {
                     src="/IMG_4446_1703172460423.jpg"
                     alt="General Shipping and Crating Services Austin TX"
                     fill
-                    sizes="50vw"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover"
+                    quality={75}
                     loading="lazy"
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgIBAwQDAAAAAAAAAAAAAQIDBAAFESEGEjFBE1Fx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEZEQA/ANE6Z1C7e0WvZvStNOxlzI/s+d/Z9+xXURoUQEGoCf/Z"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-4">
                     <span className="text-white text-sm font-bold">General Shipping & Crates</span>

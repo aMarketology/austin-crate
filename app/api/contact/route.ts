@@ -97,7 +97,7 @@ This message was sent from the Austin Crate website contact form.
     // Send email via SendGrid
     const msg = {
       to: 'hello@austincrate.com', // Recipient email
-      from: 'hello@austincrate.com', // Must be verified sender in SendGrid
+      from: 'info@amarketology.com', // Verified sender in SendGrid
       replyTo: email, // Customer's email for easy reply
       subject: `New Quote Request from ${name} - Austin Crate`,
       text: emailContent,
@@ -107,10 +107,16 @@ This message was sent from the Austin Crate website contact form.
     await sgMail.send(msg)
 
     return NextResponse.json({ success: true, message: 'Email sent successfully' })
-  } catch (error) {
+  } catch (error: any) {
     console.error('SendGrid error:', error)
+    
+    // Log detailed error info
+    if (error.response) {
+      console.error('SendGrid response body:', JSON.stringify(error.response.body, null, 2))
+    }
+    
     return NextResponse.json(
-      { error: 'Failed to send email' },
+      { error: 'Failed to send email', details: error.response?.body?.errors || error.message },
       { status: 500 }
     )
   }
