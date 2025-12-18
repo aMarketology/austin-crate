@@ -32,10 +32,12 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    console.log('Form submitted, preventing default...')
     setIsSubmitting(true)
     setError('')
 
     try {
+      console.log('Sending data to API:', formData)
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
@@ -44,14 +46,19 @@ export default function Contact() {
         body: JSON.stringify(formData),
       })
 
+      console.log('Response status:', response.status)
+      const data = await response.json()
+      console.log('Response data:', data)
+
       if (!response.ok) {
-        throw new Error('Failed to send message')
+        throw new Error(data.error || 'Failed to send message')
       }
 
       // Redirect to thank you page on success
       router.push('/thank-you')
-    } catch (err) {
-      setError('Something went wrong. Please try again or call us directly.')
+    } catch (err: any) {
+      console.error('Form submission error:', err)
+      setError(err.message || 'Something went wrong. Please try again or call us directly.')
       setIsSubmitting(false)
     }
   }

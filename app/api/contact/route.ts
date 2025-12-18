@@ -5,17 +5,24 @@ import sgMail from '@sendgrid/mail'
 sgMail.setApiKey(process.env.SENDGRID_API_KEY!)
 
 export async function POST(request: NextRequest) {
+  console.log('📧 Contact form submission received')
+  
   try {
     const body = await request.json()
+    console.log('📋 Form data received:', JSON.stringify(body, null, 2))
+    
     const { name, email, phone, serviceType, length, width, height, weight, zipcode, message } = body
 
     // Validate required fields
     if (!name || !email || !phone || !serviceType || !length || !width || !height || !weight) {
+      console.log('❌ Missing required fields')
       return NextResponse.json(
         { error: 'Missing required fields' },
         { status: 400 }
       )
     }
+    
+    console.log('✅ Validation passed, preparing to send email...')
 
     // Format the email content
     const serviceLabel = serviceType === 'shipping' ? 'Shipping Service' : 'Crate Purchase Only'
@@ -94,9 +101,17 @@ This message was sent from the Austin Crate website contact form.
 </html>
     `.trim()
 
+    // Get notification emails from environment variables
+    const notificationEmails = [
+      process.env.NOTIFICATION_EMAIL_1,
+      process.env.NOTIFICATION_EMAIL_2
+    ].filter(Boolean) as string[] // Filter out any undefined values
+
+    console.log('📬 Sending to:', notificationEmails)
+
     // Send email via SendGrid
     const msg = {
-      to: 'hello@austincrate.com', // Recipient email
+      to: notificationEmails, // Send to both notification emails
       from: 'info@amarketology.com', // Verified sender in SendGrid
       replyTo: email, // Customer's email for easy reply
       subject: `New Quote Request from ${name} - Austin Crate`,
@@ -105,10 +120,11 @@ This message was sent from the Austin Crate website contact form.
     }
 
     await sgMail.send(msg)
+    console.log('✅ Email sent successfully!')
 
     return NextResponse.json({ success: true, message: 'Email sent successfully' })
   } catch (error: any) {
-    console.error('SendGrid error:', error)
+    console.error('❌ SendGrid error:', error)
     
     // Log detailed error info
     if (error.response) {

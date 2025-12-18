@@ -35,7 +35,7 @@ export default function ThankYou() {
 
           {/* Message */}
           <p className={`text-xl text-grey-300 mb-8 transition-all duration-700 delay-300 ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
-            We've received your quote request and will get back to you within 24 hours.
+            We've received your quote request and will get back to you within 24 business hours.
           </p>
 
           {/* Contact Info */}

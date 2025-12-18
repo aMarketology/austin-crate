@@ -299,7 +299,7 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="text-2xl text-grey-600 leading-relaxed max-w-2xl"
               >
-                Expert crating and freight services for fine art, designer furniture, and medical equipment. We handle your treasures with museum-quality care, delivering peace of mind with every shipment.
+                Expert crating and freight services for your valuable items inlcuding, fine art, designer furniture, and medical equipment. We handle your treasures with museum-quality care, delivering peace of mind with every shipment.
               </motion.p>
 
               {/* CTA Buttons Row */}
@@ -376,7 +376,7 @@ export default function Home() {
                   <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md bg-white">
                     <Image
                       src="/3.jpg"
-                      alt="Medical Equipment Shipping Austin TX - HIPAA Compliant Medical Device Transport"
+                      alt="Medical Equipment Shipping Austin TX - Compliant Medical Device Transport"
                       fill
                       sizes="(max-width: 1024px) 50vw, 25vw"
                       className="object-cover"
@@ -462,7 +462,7 @@ export default function Home() {
 
               {/* Feature List */}
               <ul className="space-y-2 mb-4 md:mb-6">
-                {['Climate-Controlled', 'Custom Crating', 'Insurance Coverage', 'Gallery-Standard Care'].map((feature, i) => (
+                {['Custom Crating', 'Insurance Coverage', 'Gallery-Standard Care'].map((feature, i) => (
                   <li key={i} className="flex items-center gap-2 text-sm text-grey-700">
                     <svg className="w-4 h-4 text-emerald" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -491,11 +491,11 @@ export default function Home() {
 
               <h3 className="text-xl md:text-2xl font-bold text-grey-900 mb-3 md:mb-4">Designer Furniture</h3>
               <p className="text-grey-600 mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
-                White-glove furniture handling for luxury pieces and designer collections. Expert disassembly, protective wrapping, and precision reassembly included.
+                White-glove furniture handling for luxury pieces and designer collections. Expert protective wrapping, and precision shipping.
               </p>
 
               <ul className="space-y-2 mb-4 md:mb-6">
-                {['White-Glove Service', 'Protective Wrapping', 'Assembly/Disassembly', 'Scratch-Free Transport'].map((feature, i) => (
+                {['White-Glove Service', 'Protective Wrapping', 'Scratch-Free Transport'].map((feature, i) => (
                   <li key={i} className="flex items-center gap-2 text-sm text-grey-700">
                     <svg className="w-4 h-4 text-emerald" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -523,11 +523,11 @@ export default function Home() {
 
               <h3 className="text-xl md:text-2xl font-bold text-grey-900 mb-3 md:mb-4">Medical Equipment</h3>
               <p className="text-grey-600 mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
-                HIPAA-compliant transport for sensitive medical devices and laboratory equipment. Specialized handling with chain-of-custody documentation and calibration protection.
+                Transport for sensitive medical devices and laboratory equipment. Specialized handling with chain-of-custody documentation and calibration protection.
               </p>
 
               <ul className="space-y-2 mb-4 md:mb-6">
-                {['HIPAA Compliant', 'Chain of Custody', 'Temperature Control', 'Calibration Safe'].map((feature, i) => (
+                {['Chain of Custody', 'Calibration Safe'].map((feature, i) => (
                   <li key={i} className="flex items-center gap-2 text-sm text-grey-700">
                     <svg className="w-4 h-4 text-emerald" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />

@@ -1,10 +1,15 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 
 export default function StickyQuoteButton() {
   const [isVisible, setIsVisible] = useState(false)
+  const pathname = usePathname()
+
+  // Don't show the button on the contact page
+  const isContactPage = pathname === '/contact'
 
   useEffect(() => {
     const toggleVisibility = () => {
@@ -20,6 +25,11 @@ export default function StickyQuoteButton() {
 
     return () => window.removeEventListener('scroll', toggleVisibility)
   }, [])
+
+  // Hide on contact page
+  if (isContactPage) {
+    return null
+  }
 
   return (
     <>
