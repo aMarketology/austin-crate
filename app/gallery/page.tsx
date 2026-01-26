@@ -1,8 +1,15 @@
-'use client'
-
 import Image from 'next/image'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
+import { Metadata } from 'next'
+import { generateMetadata } from '@/lib/seo-utils'
+
+export const metadata: Metadata = generateMetadata({
+  title: 'Gallery | Austin Crate & Freight - See Our Work',
+  description: 'View photos of our custom crating, white-glove furniture handling, fine art shipping, and medical equipment transport services. See the quality of Austin Crate & Freight.',
+  keywords: ['Austin shipping gallery', 'crating photos Austin', 'white glove service photos', 'art shipping examples'],
+  canonical: 'https://austincrate.com/gallery',
+})
 
 export default function Gallery() {
   const galleryImages = [

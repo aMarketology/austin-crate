@@ -1,13 +1,45 @@
-'use client'
-
 import Navigation from '../../components/Navigation'
 import Footer from '../../components/Footer'
 import Link from 'next/link'
 import Image from 'next/image'
+import { Metadata } from 'next'
+import { generateServiceMetadata, generateServiceSchema, SITE_CONFIG } from '@/lib/seo-utils'
+import { medicalFAQSchema } from '@/lib/faq-schema'
+
+export const metadata: Metadata = generateServiceMetadata(
+  'Medical Equipment Transport Austin',
+  'HIPAA-compliant medical equipment transport. Specialized handling for diagnostic imaging, laboratory equipment, and sensitive medical devices. Chain-of-custody documentation',
+  [
+    'medical equipment transport Austin',
+    'HIPAA compliant shipping Austin TX',
+    'medical device movers Austin',
+    'laboratory equipment transport',
+    'hospital equipment moving Austin',
+    'diagnostic imaging transport',
+  ],
+  '/3.jpg'
+)
 
 export default function MedicalEquipment() {
+  const serviceSchema = generateServiceSchema(
+    'Medical Equipment Transport',
+    'HIPAA-compliant transport for sensitive medical devices and laboratory equipment. Specialized handling with chain-of-custody documentation',
+    'Medical Equipment Transport',
+    `${SITE_CONFIG.url}/services/medical-equipment`
+  )
+
   return (
     <div className="min-h-screen bg-white flex flex-col">
+      {/* JSON-LD Schemas */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalFAQSchema) }}
+      />
+      
       <Navigation />
 
       {/* Hero Section */}

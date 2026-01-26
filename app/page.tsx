@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { useState, useEffect, useRef } from 'react'
 import Navigation from './components/Navigation'
 import Footer from './components/Footer'
+import { faqSchema } from '@/lib/faq-schema'
 
 export default function Home() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -172,6 +173,12 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* JSON-LD FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      
       <Navigation />
 
       {/* === MOBILE/TABLET HERO SECTION (hidden on lg+) === */}

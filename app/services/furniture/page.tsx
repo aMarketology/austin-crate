@@ -1,13 +1,45 @@
-'use client'
-
 import Navigation from '../../components/Navigation'
 import Footer from '../../components/Footer'
 import Link from 'next/link'
 import Image from 'next/image'
+import { Metadata } from 'next'
+import { generateServiceMetadata, generateServiceSchema, SITE_CONFIG } from '@/lib/seo-utils'
+import { furnitureFAQSchema } from '@/lib/faq-schema'
+
+export const metadata: Metadata = generateServiceMetadata(
+  'Designer Furniture Shipping Austin',
+  'Premium white-glove furniture shipping. Expert disassembly, protective wrapping, reassembly for luxury furniture and designer pieces. Scratch-free guarantee',
+  [
+    'furniture shipping Austin',
+    'white glove movers Austin TX',
+    'designer furniture transport',
+    'luxury furniture moving Austin',
+    'furniture assembly Austin',
+    'high-end furniture movers',
+  ],
+  '/2.jpg'
+)
 
 export default function FurnitureShipping() {
+  const serviceSchema = generateServiceSchema(
+    'Designer Furniture Shipping',
+    'White-glove furniture handling for luxury pieces and designer collections. Expert disassembly, protective wrapping, and precision reassembly',
+    'Specialty Shipping',
+    `${SITE_CONFIG.url}/services/furniture`
+  )
+
   return (
     <div className="min-h-screen bg-white flex flex-col">
+      {/* JSON-LD Schemas */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(furnitureFAQSchema) }}
+      />
+      
       <Navigation />
 
       {/* Hero Section */}

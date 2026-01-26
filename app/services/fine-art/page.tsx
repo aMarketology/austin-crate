@@ -1,13 +1,46 @@
-'use client'
-
 import Navigation from '../../components/Navigation'
 import Footer from '../../components/Footer'
 import Link from 'next/link'
 import Image from 'next/image'
+import { Metadata } from 'next'
+import { generateServiceMetadata, generateServiceSchema, SITE_CONFIG } from '@/lib/seo-utils'
+import { fineArtFAQSchema } from '@/lib/faq-schema'
+
+export const metadata: Metadata = generateServiceMetadata(
+  'Fine Art Shipping Austin',
+  'Professional fine art shipping and crating services. Museum-quality care, climate-controlled transport, comprehensive insurance. Trusted by galleries, museums, and collectors',
+  [
+    'fine art shipping Austin',
+    'art crating Austin TX',
+    'museum transport Austin',
+    'painting shipping Austin',
+    'sculpture transport Austin',
+    'gallery shipping services',
+    'climate controlled art transport',
+  ],
+  '/1.jpg'
+)
 
 export default function FineArtShipping() {
+  const serviceSchema = generateServiceSchema(
+    'Fine Art Shipping',
+    'Museum-quality crating and climate-controlled transport for paintings, sculptures, and collectibles',
+    'Specialty Shipping',
+    `${SITE_CONFIG.url}/services/fine-art`
+  )
+
   return (
     <div className="min-h-screen bg-white flex flex-col">
+      {/* JSON-LD Schemas */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(fineArtFAQSchema) }}
+      />
+      
       <Navigation />
 
       {/* Hero Section */}

@@ -5,21 +5,41 @@ import { motion } from 'framer-motion'
 
 export default function Footer() {
   const services = [
-    'Fine Art Shipping',
-    'Designer Furniture',
-    'Medical Equipment',
+    { name: 'Fine Art Shipping', href: '/services/fine-art' },
+    { name: 'Designer Furniture', href: '/services/furniture' },
+    { name: 'Medical Equipment', href: '/services/medical-equipment' },
+    { name: 'All Services', href: '/services' },
   ]
 
   const quickLinks = [
     { name: 'Home', href: '/' },
-    { name: 'Services', href: '/services' },
+    { name: 'About Us', href: '/about' },
     { name: 'Gallery', href: '/gallery' },
-    { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
+    { name: 'Buy a Crate', href: '/buy-a-crate' },
+  ]
+
+  const locations = [
+    { name: 'Austin', href: '/' },
+    { name: 'Round Rock', href: '/locations/round-rock' },
+    { name: 'Cedar Park', href: '/locations/cedar-park' },
+    { name: 'Georgetown', href: '/locations/georgetown' },
+  ]
+
+  const resources = [
+    { name: 'Shipping Resources', href: '/resources' },
+    { name: 'Prepare Artwork Guide', href: '/resources/prepare-artwork' },
   ]
 
   const serviceAreas = [
-    'Austin', 'Round Rock', 'Cedar Park', 'Georgetown', 'Pflugerville'
+    'Austin',
+    'Round Rock',
+    'Cedar Park',
+    'Georgetown',
+    'Pflugerville',
+    'Leander',
+    'Kyle',
+    'Dripping Springs'
   ]
 
   return (
@@ -98,12 +118,14 @@ export default function Footer() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="text-grey-700 font-medium flex items-center gap-2"
                 >
-                  <svg className="w-4 h-4 text-emerald" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  {service}
+                  <Link
+                    href={service.href}
+                    className="text-grey-700 font-medium hover:text-emerald transition flex items-center gap-2 group"
+                  >
+                    <span className="w-0 h-0.5 bg-emerald group-hover:w-4 transition-all" />
+                    {service.name}
+                  </Link>
                 </motion.li>
               ))}
             </ul>

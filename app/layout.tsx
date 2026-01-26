@@ -1,6 +1,10 @@
 import type { Metadata } from 'next'
+import { Suspense } from 'react'
 import { organizationSchema, servicesSchema, reviewSchema } from '@/lib/schema'
+import { websiteSchema } from '@/lib/website-schema'
 import StickyQuoteButton from './components/StickyQuoteButton'
+import FooterEnhanced from './components/FooterEnhanced'
+import Analytics from './components/Analytics'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -120,6 +124,12 @@ export default function RootLayout({
             __html: JSON.stringify(reviewSchema),
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
+          }}
+        />
         {/* Google Search Console Verification */}
         <meta name="google-site-verification" content="your-google-verification" />
         {/* Additional Meta Tags */}
@@ -128,7 +138,11 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </head>
       <body>
+        <Suspense fallback={null}>
+          <Analytics />
+        </Suspense>
         {children}
+        <FooterEnhanced />
         <StickyQuoteButton />
       </body>
     </html>

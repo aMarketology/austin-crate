@@ -109,18 +109,22 @@ This message was sent from the Austin Crate website contact form.
 
     console.log('📬 Sending to:', notificationEmails)
 
-    // Send email via SendGrid
-    const msg = {
-      to: notificationEmails, // Send to both notification emails
-      from: 'info@amarketology.com', // Verified sender in SendGrid
-      replyTo: email, // Customer's email for easy reply
-      subject: `New Quote Request from ${name} - Austin Crate`,
-      text: emailContent,
-      html: htmlContent,
-    }
+    // Send separate emails to each recipient for better deliverability
+    const emailPromises = notificationEmails.map(recipientEmail => {
+      const msg = {
+        to: recipientEmail,
+        from: 'info@amarketology.com', // Verified sender in SendGrid
+        replyTo: email, // Customer's email for easy reply
+        subject: `New Quote Request from ${name} - Austin Crate`,
+        text: emailContent,
+        html: htmlContent,
+      }
+      console.log(`📧 Sending email to: ${recipientEmail}`)
+      return sgMail.send(msg)
+    })
 
-    await sgMail.send(msg)
-    console.log('✅ Email sent successfully!')
+    await Promise.all(emailPromises)
+    console.log('✅ All emails sent successfully!')
 
     return NextResponse.json({ success: true, message: 'Email sent successfully' })
   } catch (error: any) {
