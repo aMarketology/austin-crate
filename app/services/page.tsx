@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
+import Breadcrumbs from '../components/Breadcrumbs'
 import Link from 'next/link'
 import Image from 'next/image'
 

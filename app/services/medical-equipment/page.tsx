@@ -1,15 +1,16 @@
 import Navigation from '../../components/Navigation'
 import Footer from '../../components/Footer'
+import Breadcrumbs from '../../components/Breadcrumbs'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Metadata } from 'next'
 import { generateServiceMetadata, generateServiceSchema, SITE_CONFIG } from '@/lib/seo-utils'
 import { medicalFAQSchema } from '@/lib/faq-schema'
 
-export const metadata: Metadata = generateServiceMetadata(
-  'Medical Equipment Transport Austin',
-  'HIPAA-compliant medical equipment transport. Specialized handling for diagnostic imaging, laboratory equipment, and sensitive medical devices. Chain-of-custody documentation',
-  [
+export const metadata: Metadata = generateServiceMetadata({
+  serviceName: 'Medical Equipment Transport Austin',
+  description: 'HIPAA-compliant medical equipment transport. Specialized handling for diagnostic imaging, laboratory equipment, and sensitive medical devices. Chain-of-custody documentation',
+  keywords: [
     'medical equipment transport Austin',
     'HIPAA compliant shipping Austin TX',
     'medical device movers Austin',
@@ -17,16 +18,16 @@ export const metadata: Metadata = generateServiceMetadata(
     'hospital equipment moving Austin',
     'diagnostic imaging transport',
   ],
-  '/3.jpg'
-)
+  serviceUrl: '/services/medical-equipment',
+  ogImage: '/3.jpg',
+})
 
 export default function MedicalEquipment() {
-  const serviceSchema = generateServiceSchema(
-    'Medical Equipment Transport',
-    'HIPAA-compliant transport for sensitive medical devices and laboratory equipment. Specialized handling with chain-of-custody documentation',
-    'Medical Equipment Transport',
-    `${SITE_CONFIG.url}/services/medical-equipment`
-  )
+  const serviceSchema = generateServiceSchema({
+    serviceName: 'Medical Equipment Transport',
+    description: 'HIPAA-compliant transport for sensitive medical devices and laboratory equipment. Specialized handling with chain-of-custody documentation',
+    serviceType: 'Medical Equipment Transport',
+  })
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
@@ -41,6 +42,7 @@ export default function MedicalEquipment() {
       />
       
       <Navigation />
+      <Breadcrumbs />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white pt-28 md:pt-32 pb-16 md:pb-20 px-4">

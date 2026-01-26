@@ -5,10 +5,20 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 import { generateLocationMetadata, generateLocalBusinessSchema } from '@/lib/seo-utils'
 
-export const metadata: Metadata = generateLocationMetadata('Georgetown')
+export const metadata: Metadata = generateLocationMetadata({
+  locationName: 'Georgetown',
+  description: 'Expert specialty shipping in Georgetown, Texas. Museum-quality art transport, designer furniture moving, and HIPAA-compliant medical equipment shipping. Serving Georgetown with care.',
+  keywords: ['Georgetown shipping', 'Georgetown crating', 'specialty freight Georgetown', 'art shipping Georgetown'],
+  locationUrl: '/locations/georgetown',
+})
 
 export default function Georgetown() {
-  const localSchema = generateLocalBusinessSchema('Georgetown', { lat: 30.6327, lng: -97.6779 })
+  const localSchema = generateLocalBusinessSchema({
+    locationName: 'Georgetown',
+    description: 'Specialty shipping services in Georgetown, Texas',
+    latitude: 30.6327,
+    longitude: -97.6779,
+  })
 
   return (
     <div className="min-h-screen bg-white flex flex-col">

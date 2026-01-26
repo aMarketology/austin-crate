@@ -1,15 +1,16 @@
 import Navigation from '../../components/Navigation'
 import Footer from '../../components/Footer'
+import Breadcrumbs from '../../components/Breadcrumbs'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Metadata } from 'next'
 import { generateServiceMetadata, generateServiceSchema, SITE_CONFIG } from '@/lib/seo-utils'
 import { furnitureFAQSchema } from '@/lib/faq-schema'
 
-export const metadata: Metadata = generateServiceMetadata(
-  'Designer Furniture Shipping Austin',
-  'Premium white-glove furniture shipping. Expert disassembly, protective wrapping, reassembly for luxury furniture and designer pieces. Scratch-free guarantee',
-  [
+export const metadata: Metadata = generateServiceMetadata({
+  serviceName: 'Designer Furniture Shipping Austin',
+  description: 'Premium white-glove furniture shipping. Expert disassembly, protective wrapping, reassembly for luxury furniture and designer pieces. Scratch-free guarantee',
+  keywords: [
     'furniture shipping Austin',
     'white glove movers Austin TX',
     'designer furniture transport',
@@ -17,16 +18,16 @@ export const metadata: Metadata = generateServiceMetadata(
     'furniture assembly Austin',
     'high-end furniture movers',
   ],
-  '/2.jpg'
-)
+  serviceUrl: '/services/furniture',
+  ogImage: '/2.jpg',
+})
 
 export default function FurnitureShipping() {
-  const serviceSchema = generateServiceSchema(
-    'Designer Furniture Shipping',
-    'White-glove furniture handling for luxury pieces and designer collections. Expert disassembly, protective wrapping, and precision reassembly',
-    'Specialty Shipping',
-    `${SITE_CONFIG.url}/services/furniture`
-  )
+  const serviceSchema = generateServiceSchema({
+    serviceName: 'Designer Furniture Shipping',
+    description: 'White-glove furniture handling for luxury pieces and designer collections. Expert disassembly, protective wrapping, and precision reassembly',
+    serviceType: 'Specialty Shipping',
+  })
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
@@ -41,6 +42,7 @@ export default function FurnitureShipping() {
       />
       
       <Navigation />
+      <Breadcrumbs />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white pt-28 md:pt-32 pb-16 md:pb-20 px-4">

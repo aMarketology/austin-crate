@@ -182,32 +182,52 @@ export default function Home() {
       <Navigation />
 
       {/* === MOBILE/TABLET HERO SECTION (hidden on lg+) === */}
-      <section className="lg:hidden relative bg-grey-900 pt-24 pb-12 px-4">
-        <div className="max-w-xl mx-auto text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-emerald/50 bg-emerald/10 mb-4">
-            <div className="w-1.5 h-1.5 rounded-full bg-emerald" />
+      <section className="lg:hidden relative bg-gradient-to-br from-grey-950 via-grey-800 to-grey-900 pt-24 pb-12 px-4 overflow-hidden">
+        {/* Multi-layered background effects */}
+        <div className="absolute inset-0">
+          {/* Base gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-grey-900/80 via-transparent to-grey-950/40" />
+          
+          {/* Emerald accent gradient */}
+          <div className="absolute inset-0 bg-gradient-to-br from-emerald/5 via-transparent to-emerald/8" />
+          
+          {/* Large glowing orbs in corners */}
+          <div className="absolute -top-32 -right-32 w-[500px] h-[500px] bg-emerald/20 rounded-full blur-[100px] animate-pulse" style={{ animationDuration: '4s' }} />
+          <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] bg-emerald/15 rounded-full blur-[100px] animate-pulse" style={{ animationDuration: '5s' }} />
+          
+          {/* Smaller accent orbs */}
+          <div className="absolute top-1/3 right-8 w-48 h-48 bg-emerald/10 rounded-full blur-[60px]" />
+          <div className="absolute bottom-1/4 left-8 w-40 h-40 bg-emerald/8 rounded-full blur-[50px]" />
+          
+          {/* Radial gradient from center */}
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(17,24,39,0.4)_100%)]" />
+        </div>
+        
+        <div className="max-w-xl mx-auto text-center relative z-10">
+          {/* Badge with enhanced glow */}
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-emerald/50 bg-emerald/10 backdrop-blur-sm mb-4 shadow-lg shadow-emerald/20">
+            <div className="w-1.5 h-1.5 rounded-full bg-emerald shadow-sm shadow-emerald" />
             <span className="text-xs font-semibold text-emerald uppercase tracking-widest">Austin, Texas</span>
           </div>
 
-          {/* Headline */}
-          <h1 className="text-4xl font-bold text-white mb-1">
+          {/* Headline with text shadow for depth */}
+          <h1 className="text-4xl font-bold text-white mb-1 drop-shadow-lg">
             Austin Crate
           </h1>
-          <h2 className="text-4xl font-bold text-emerald mb-4">
+          <h2 className="text-4xl font-bold text-emerald mb-4 drop-shadow-[0_0_15px_rgba(80,200,120,0.3)]">
             & Freight
           </h2>
 
-          {/* Tagline */}
-          <p className="text-lg text-grey-300 mb-6">
+          {/* Tagline with subtle glow */}
+          <p className="text-lg text-grey-200 mb-6 drop-shadow-md">
             White-Glove Specialty Shipping for Fine Art, Furniture & Medical Equipment
           </p>
 
-          {/* CTA Buttons */}
+          {/* CTA Buttons with enhanced styling */}
           <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">
             <a
               href="tel:(512) 240-9818"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-emerald rounded-lg font-bold text-white text-base"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-emerald hover:bg-emerald/90 rounded-lg font-bold text-white text-base shadow-lg shadow-emerald/30 transition-all hover:shadow-xl hover:shadow-emerald/40 hover:scale-105"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
@@ -216,31 +236,31 @@ export default function Home() {
             </a>
             <Link
               href="/services"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-transparent border-2 border-grey-600 rounded-lg font-bold text-white text-base"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-transparent border-2 border-grey-600 hover:border-emerald/50 rounded-lg font-bold text-white text-base backdrop-blur-sm hover:bg-emerald/5 transition-all"
             >
               Our Services
             </Link>
           </div>
 
-          {/* Service Badges */}
+          {/* Service Badges with backdrop blur */}
           <div className="flex flex-wrap justify-center gap-2 mb-6">
             {['Fine Art', 'Furniture', 'Medical Equipment'].map((item, i) => (
-              <span key={i} className="px-3 py-1.5 bg-grey-800 text-grey-300 text-sm font-medium rounded-full border border-grey-700">
+              <span key={i} className="px-3 py-1.5 bg-grey-800/70 backdrop-blur-sm text-grey-200 text-sm font-medium rounded-full border border-grey-700/50 shadow-md">
                 {item}
               </span>
             ))}
           </div>
 
-          {/* Stats Row */}
+          {/* Stats Row with enhanced glass effect */}
           <div className="grid grid-cols-3 gap-3">
             {[
               { value: '10+', label: 'Years' },
               { value: '100%', label: 'Insured' },
               { value: '24/7', label: 'Tracking' }
             ].map((stat, i) => (
-              <div key={i} className="p-3 bg-grey-800/50 rounded-lg border border-grey-700">
-                <div className="text-2xl font-bold text-emerald">{stat.value}</div>
-                <div className="text-xs text-grey-400 uppercase tracking-wide">{stat.label}</div>
+              <div key={i} className="p-3 bg-grey-800/60 backdrop-blur-md rounded-lg border border-grey-700/50 shadow-lg hover:bg-grey-800/70 transition-all">
+                <div className="text-2xl font-bold text-emerald drop-shadow-[0_0_10px_rgba(80,200,120,0.3)]">{stat.value}</div>
+                <div className="text-xs text-grey-300 uppercase tracking-wide">{stat.label}</div>
               </div>
             ))}
           </div>

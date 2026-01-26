@@ -2,6 +2,7 @@
 
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
+import Breadcrumbs from '../components/Breadcrumbs'
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 
@@ -66,6 +67,7 @@ export default function ContactClient() {
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <Navigation />
+      <Breadcrumbs />
 
       {/* Page Header */}
       <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-24 px-4 mt-20">

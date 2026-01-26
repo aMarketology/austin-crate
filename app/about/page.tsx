@@ -1,5 +1,6 @@
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
+import Breadcrumbs from '../components/Breadcrumbs'
 import { Metadata } from 'next'
 import { generateMetadata } from '@/lib/seo-utils'
 
@@ -7,7 +8,7 @@ export const metadata: Metadata = generateMetadata({
   title: 'About Austin Crate & Freight | Specialty Shipping Experts',
   description: 'Learn about Austin Crate & Freight, Central Texas\'s premier white-glove specialty shipping company. Serving Austin since 2010 with museum-quality care for art, furniture, and medical equipment.',
   keywords: ['Austin shipping company history', 'specialty freight Austin', 'white glove movers Austin', 'about Austin Crate'],
-  canonical: 'https://austincrate.com/about',
+  canonicalUrl: '/about',
   ogImage: '/og-image.jpg',
 })
 
@@ -15,6 +16,7 @@ export default function About() {
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <Navigation />
+      <Breadcrumbs />
 
       {/* Page Header */}
       <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 px-4 mt-20">

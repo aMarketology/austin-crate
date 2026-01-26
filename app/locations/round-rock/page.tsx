@@ -5,10 +5,20 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 import { generateLocationMetadata, generateLocalBusinessSchema } from '@/lib/seo-utils'
 
-export const metadata: Metadata = generateLocationMetadata('Round Rock')
+export const metadata: Metadata = generateLocationMetadata({
+  locationName: 'Round Rock',
+  description: 'Specialty shipping services in Round Rock, Texas. Professional fine art transport, furniture moving, and medical equipment crating. White-glove service you can trust.',
+  keywords: ['Round Rock shipping', 'Round Rock crating', 'specialty freight Round Rock', 'art shipping Round Rock'],
+  locationUrl: '/locations/round-rock',
+})
 
 export default function RoundRock() {
-  const localSchema = generateLocalBusinessSchema('Round Rock', { lat: 30.5088, lng: -97.6789 })
+  const localSchema = generateLocalBusinessSchema({
+    locationName: 'Round Rock',
+    description: 'Specialty shipping services in Round Rock, Texas',
+    latitude: 30.5088,
+    longitude: -97.6789,
+  })
 
   return (
     <div className="min-h-screen bg-white flex flex-col">

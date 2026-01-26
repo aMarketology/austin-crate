@@ -5,10 +5,20 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 import { generateLocationMetadata, generateLocalBusinessSchema } from '@/lib/seo-utils'
 
-export const metadata: Metadata = generateLocationMetadata('Cedar Park')
+export const metadata: Metadata = generateLocationMetadata({
+  locationName: 'Cedar Park',
+  description: 'Professional specialty shipping services in Cedar Park, Texas. Museum-quality fine art transport, designer furniture moving, and medical equipment shipping. Expert crating and white-glove delivery.',
+  keywords: ['Cedar Park shipping', 'Cedar Park crating', 'specialty freight Cedar Park', 'art shipping Cedar Park'],
+  locationUrl: '/locations/cedar-park',
+})
 
 export default function CedarPark() {
-  const localSchema = generateLocalBusinessSchema('Cedar Park', { lat: 30.5051, lng: -97.8203 })
+  const localSchema = generateLocalBusinessSchema({
+    locationName: 'Cedar Park',
+    description: 'Specialty shipping services in Cedar Park, Texas',
+    latitude: 30.5051,
+    longitude: -97.8203,
+  })
 
   return (
     <div className="min-h-screen bg-white flex flex-col">

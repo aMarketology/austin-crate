@@ -2,6 +2,7 @@
 
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
+import Breadcrumbs from '../components/Breadcrumbs'
 import Link from 'next/link'
 import { useState } from 'react'
 
@@ -46,6 +47,7 @@ export default function BuyACrate() {
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <Navigation />
+      <Breadcrumbs />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white pt-28 md:pt-32 pb-16 md:pb-20 px-4">
