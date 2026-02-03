@@ -34,25 +34,26 @@ export default function Home() {
 
     const dotSpacing = 24
     const baseDotSize = 1.5
-    const maxDotSize = 4
-    const trailLength = 150 // Longer trail
+    const maxDotSize = 6 // Increased from 4 for bigger dots
+    const trailLength = 250 // Increased from 150 for longer trails
 
-    // True light prism spectrum colors (rainbow order)
+    // Enhanced vibrant prism spectrum colors (more saturated and colorful)
     const prismColors = [
-      { r: 255, g: 0, b: 0 },      // red
-      { r: 255, g: 69, b: 0 },     // red-orange
-      { r: 255, g: 140, b: 0 },    // orange
-      { r: 255, g: 200, b: 0 },    // yellow-orange
-      { r: 255, g: 255, b: 0 },    // yellow
-      { r: 180, g: 255, b: 0 },    // yellow-green
-      { r: 0, g: 255, b: 100 },    // green
-      { r: 0, g: 220, b: 180 },    // cyan-green
-      { r: 0, g: 200, b: 255 },    // cyan
-      { r: 0, g: 150, b: 255 },    // light blue
-      { r: 65, g: 105, b: 225 },   // blue
-      { r: 100, g: 80, b: 220 },   // indigo
-      { r: 138, g: 43, b: 226 },   // violet
-      { r: 180, g: 0, b: 255 },    // purple
+      { r: 255, g: 20, b: 20 },     // bright red
+      { r: 255, g: 80, b: 0 },      // red-orange
+      { r: 255, g: 150, b: 0 },     // bright orange
+      { r: 255, g: 200, b: 0 },     // golden
+      { r: 255, g: 255, b: 0 },     // yellow
+      { r: 200, g: 255, b: 0 },     // yellow-green
+      { r: 100, g: 255, b: 50 },    // lime green
+      { r: 0, g: 255, b: 150 },     // spring green
+      { r: 0, g: 230, b: 230 },     // cyan
+      { r: 0, g: 180, b: 255 },     // sky blue
+      { r: 80, g: 120, b: 255 },    // bright blue
+      { r: 130, g: 80, b: 255 },    // indigo
+      { r: 180, g: 50, b: 255 },    // violet
+      { r: 230, g: 0, b: 255 },     // magenta
+      { r: 255, g: 0, b: 180 },     // pink
     ]
 
     let animationId: number
@@ -96,9 +97,9 @@ export default function Home() {
           for (let i = 0; i < mouseTrail.length; i++) {
             const trailPoint = mouseTrail[i]
             const distFromTrail = Math.sqrt((x - trailPoint.x) ** 2 + (y - trailPoint.y) ** 2)
-            const trailRadius = 35 - (i * 0.15) // Slower shrink for longer persistence
-            const influence = Math.max(0, 1 - distFromTrail / Math.max(trailRadius, 12))
-            const fadedInfluence = influence * (1 - (i / trailLength) * 0.85) // Fade along trail
+            const trailRadius = 80 - (i * 0.2) // Increased from 35, bigger surface area
+            const influence = Math.max(0, 1 - distFromTrail / Math.max(trailRadius, 20)) // Increased min from 12
+            const fadedInfluence = influence * (1 - (i / trailLength) * 0.75) // Reduced fade from 0.85 for more visibility
             
             if (fadedInfluence > maxInfluence) {
               maxInfluence = fadedInfluence
@@ -130,7 +131,7 @@ export default function Home() {
           
           if (smoothInfluence > 0.05) {
             const prismColor = prismColors[finalColorIndex]
-            const blend = Math.min(smoothInfluence * 1.0, 0.7) // Color blend at 0.7
+            const blend = Math.min(smoothInfluence * 1.2, 0.85) // Increased from 0.7 for more vibrant colors
             r = Math.round(r + (prismColor.r - r) * blend)
             g = Math.round(g + (prismColor.g - g) * blend)
             b = Math.round(b + (prismColor.b - b) * blend)
@@ -139,8 +140,8 @@ export default function Home() {
           // Save state for next frame
           dotStates.set(dotKey, { size: dotSize, colorIndex: finalColorIndex, influence: smoothInfluence })
 
-          // Full opacity (no radial fade)
-          const alpha = 0.6 + smoothInfluence * 0.4
+          // Enhanced opacity for more visible colors
+          const alpha = 0.7 + smoothInfluence * 0.3 // Increased base from 0.6
 
           ctx.beginPath()
           ctx.arc(x, y, dotSize, 0, Math.PI * 2)
@@ -182,93 +183,157 @@ export default function Home() {
       <Navigation />
 
       {/* === MOBILE/TABLET HERO SECTION (hidden on lg+) === */}
-      <section className="lg:hidden relative bg-gradient-to-br from-grey-950 via-grey-800 to-grey-900 pt-24 pb-12 px-4 overflow-hidden">
-        {/* Multi-layered background effects */}
-        <div className="absolute inset-0">
-          {/* Base gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-grey-900/80 via-transparent to-grey-950/40" />
-          
-          {/* Emerald accent gradient */}
-          <div className="absolute inset-0 bg-gradient-to-br from-emerald/5 via-transparent to-emerald/8" />
-          
-          {/* Large glowing orbs in corners */}
-          <div className="absolute -top-32 -right-32 w-[500px] h-[500px] bg-emerald/20 rounded-full blur-[100px] animate-pulse" style={{ animationDuration: '4s' }} />
-          <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] bg-emerald/15 rounded-full blur-[100px] animate-pulse" style={{ animationDuration: '5s' }} />
-          
-          {/* Smaller accent orbs */}
-          <div className="absolute top-1/3 right-8 w-48 h-48 bg-emerald/10 rounded-full blur-[60px]" />
-          <div className="absolute bottom-1/4 left-8 w-40 h-40 bg-emerald/8 rounded-full blur-[50px]" />
-          
-          {/* Radial gradient from center */}
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(17,24,39,0.4)_100%)]" />
-        </div>
+      <section className="lg:hidden relative min-h-screen flex items-center overflow-hidden bg-grey-50 pt-20 pb-16 px-4">
+        {/* Darker overlay for better contrast - 10% opacity */}
+        <div className="absolute inset-0 bg-black/10" style={{ zIndex: 0 }} />
         
-        <div className="max-w-xl mx-auto text-center relative z-10">
+        {/* Interactive Dot Canvas */}
+        <canvas 
+          ref={canvasRef}
+          className="absolute inset-0 pointer-events-none"
+          style={{ zIndex: 1 }}
+        />
+        
+        <div className="max-w-xl mx-auto text-center relative z-10 w-full">
           {/* Badge with enhanced glow */}
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-emerald/50 bg-emerald/10 backdrop-blur-sm mb-4 shadow-lg shadow-emerald/20">
-            <div className="w-1.5 h-1.5 rounded-full bg-emerald shadow-sm shadow-emerald" />
-            <span className="text-xs font-semibold text-emerald uppercase tracking-widest">Austin, Texas</span>
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border-2 border-emerald/30 bg-emerald/5 mb-6">
+              <div className="w-1.5 h-1.5 rounded-full bg-emerald" />
+              <span className="text-xs font-semibold text-grey-800 uppercase tracking-widest">Austin, Texas</span>
+            </div>
+          </motion.div>
 
-          {/* Headline with text shadow for depth */}
-          <h1 className="text-4xl font-bold text-white mb-1 drop-shadow-lg">
-            Austin Crate
-          </h1>
-          <h2 className="text-4xl font-bold text-emerald mb-4 drop-shadow-[0_0_15px_rgba(80,200,120,0.3)]">
-            & Freight
-          </h2>
+          {/* Headline with animation */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="space-y-0"
+          >
+            <h1 className="font-serif text-5xl sm:text-6xl font-bold text-grey-900 tracking-tight leading-none">
+              Austin Crate
+            </h1>
+            <h2 className="font-serif text-5xl sm:text-6xl font-bold text-emerald leading-none tracking-tight">
+              & Freight
+            </h2>
+          </motion.div>
 
-          {/* Tagline with subtle glow */}
-          <p className="text-lg text-grey-200 mb-6 drop-shadow-md">
-            White-Glove Specialty Shipping for Fine Art, Furniture & Medical Equipment
-          </p>
+          {/* Tagline with animation */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.35 }}
+            className="font-sans text-base sm:text-lg text-grey-700 mt-6 mb-8 font-light leading-relaxed max-w-md mx-auto px-2"
+          >
+            White-Glove Specialty Shipping for Fine Art, Designer Furniture & Medical Equipment
+          </motion.p>
 
-          {/* CTA Buttons with enhanced styling */}
-          <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">
+          {/* CTA Buttons - Animated */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="flex flex-col sm:flex-row gap-3 justify-center mb-8 px-4"
+          >
             <a
               href="tel:(512) 240-9818"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-emerald hover:bg-emerald/90 rounded-lg font-bold text-white text-base shadow-lg shadow-emerald/30 transition-all hover:shadow-xl hover:shadow-emerald/40 hover:scale-105"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-emerald hover:bg-emerald-600 rounded-xl font-bold text-white text-base shadow-lg hover:shadow-xl transition-all hover:scale-[1.02] active:scale-95"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
               </svg>
-              (512) 240-9818
+              <span>(512) 240-9818</span>
             </a>
             <Link
-              href="/services"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-transparent border-2 border-grey-600 hover:border-emerald/50 rounded-lg font-bold text-white text-base backdrop-blur-sm hover:bg-emerald/5 transition-all"
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border-2 border-grey-600 hover:border-emerald rounded-xl font-bold text-grey-800 text-base hover:bg-emerald/5 transition-all hover:scale-[1.02] active:scale-95"
             >
-              Our Services
+              <span>Get Quote</span>
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
             </Link>
-          </div>
+          </motion.div>
 
-          {/* Service Badges with backdrop blur */}
-          <div className="flex flex-wrap justify-center gap-2 mb-6">
-            {['Fine Art', 'Furniture', 'Medical Equipment'].map((item, i) => (
-              <span key={i} className="px-3 py-1.5 bg-grey-800/70 backdrop-blur-sm text-grey-200 text-sm font-medium rounded-full border border-grey-700/50 shadow-md">
-                {item}
+          {/* Service Badges - Animated */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.65 }}
+            className="flex flex-wrap justify-center gap-2 mb-8 px-4"
+          >
+            {[
+              { icon: '🎨', label: 'Fine Art' },
+              { icon: '🪑', label: 'Furniture' },
+              { icon: '⚕️', label: 'Medical' }
+            ].map((item, i) => (
+              <span key={i} className="px-4 py-2 bg-grey-100/80 backdrop-blur-sm text-grey-700 text-sm font-semibold rounded-full border border-grey-300 shadow-sm hover:shadow-md hover:scale-105 transition-all">
+                <span className="mr-1.5">{item.icon}</span>
+                {item.label}
               </span>
             ))}
-          </div>
+          </motion.div>
 
-          {/* Stats Row with enhanced glass effect */}
-          <div className="grid grid-cols-3 gap-3">
+          {/* Stats Row - Animated */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="grid grid-cols-3 gap-3 px-4 mb-8"
+          >
             {[
-              { value: '10+', label: 'Years' },
-              { value: '100%', label: 'Insured' },
-              { value: '24/7', label: 'Tracking' }
+              { value: '15+', label: 'Years', icon: '⭐' },
+              { value: '100%', label: 'Insured', icon: '🛡️' },
+              { value: '24/7', label: 'Support', icon: '💬' }
             ].map((stat, i) => (
-              <div key={i} className="p-3 bg-grey-800/60 backdrop-blur-md rounded-lg border border-grey-700/50 shadow-lg hover:bg-grey-800/70 transition-all">
-                <div className="text-2xl font-bold text-emerald drop-shadow-[0_0_10px_rgba(80,200,120,0.3)]">{stat.value}</div>
-                <div className="text-xs text-grey-300 uppercase tracking-wide">{stat.label}</div>
+              <div key={i} className="p-4 bg-white/80 backdrop-blur-sm rounded-2xl border border-grey-200 shadow-sm hover:shadow-lg hover:scale-105 transition-all">
+                <div className="text-2xl mb-1">{stat.icon}</div>
+                <div className="text-2xl sm:text-3xl font-bold text-emerald mb-1">{stat.value}</div>
+                <div className="text-[10px] sm:text-xs text-grey-600 uppercase tracking-wider font-medium">{stat.label}</div>
               </div>
             ))}
-          </div>
+          </motion.div>
+
+          {/* Trust Indicators - Animated */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.95 }}
+            className="flex flex-wrap items-center justify-center gap-3 text-xs text-grey-600 px-4"
+          >
+            <div className="flex items-center gap-1.5">
+              <svg className="w-4 h-4 text-emerald" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              <span className="font-medium">Licensed</span>
+            </div>
+            <span className="text-grey-400">•</span>
+            <div className="flex items-center gap-1.5">
+              <svg className="w-4 h-4 text-emerald" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              <span className="font-medium">Insured</span>
+            </div>
+            <span className="text-grey-400">•</span>
+            <div className="flex items-center gap-1.5">
+              <svg className="w-4 h-4 text-emerald" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <span className="font-medium">5-Star</span>
+            </div>
+          </motion.div>
         </div>
       </section>
 
       {/* === DESKTOP HERO SECTION (hidden below lg) === */}
-      <section className="hidden lg:flex relative min-h-screen items-center overflow-hidden bg-grey-50 pt-24">
+      <section className="hidden lg:flex relative min-h-screen items-center overflow-hidden bg-grey-50">
+        {/* Darker overlay for better contrast - 10% opacity */}
+        <div className="absolute inset-0 bg-black/10" style={{ zIndex: 0 }} />
+        
         {/* Interactive Dot Canvas */}
         <canvas 
           ref={canvasRef}
@@ -277,7 +342,7 @@ export default function Home() {
         />
 
         {/* Content Container */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-8 py-32">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-8 py-20">
           <div className="grid grid-cols-12 gap-12 items-center">
             
             {/* Left Column - Text Content */}
@@ -301,10 +366,10 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="space-y-0 relative z-50"
               >
-                <h1 className="text-8xl font-bold text-grey-900 tracking-tight leading-none relative z-50">
+                <h1 className="font-serif text-7xl md:text-8xl lg:text-9xl font-bold text-grey-900 tracking-tighter leading-none relative z-50">
                   Austin Crate
                 </h1>
-                <h2 className="text-8xl font-bold text-emerald leading-none relative z-50">
+                <h2 className="font-serif text-7xl md:text-8xl lg:text-9xl font-bold text-emerald leading-none relative z-50 tracking-tighter">
                   & Freight
                 </h2>
               </motion.div>
@@ -314,7 +379,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.35 }}
-                className="text-4xl text-grey-800 font-medium leading-tight -mt-2"
+                className="font-sans text-3xl md:text-4xl text-grey-800 font-light leading-tight -mt-2"
               >
                 White-Glove Specialty Shipping for Your Most Valuable Assets
               </motion.h3>
@@ -324,7 +389,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="text-2xl text-grey-600 leading-relaxed max-w-2xl"
+                className="font-sans text-xl md:text-2xl text-grey-600 font-light leading-relaxed max-w-2xl"
               >
                 Expert crating and freight services for your valuable items inlcuding, fine art, designer furniture, and medical equipment. We handle your treasures with museum-quality care, delivering peace of mind with every shipment.
               </motion.p>
@@ -366,60 +431,67 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.8 }}
                 className="space-y-4"
               >
-                {/* Featured Image */}
-                <div className="relative h-52 rounded-2xl overflow-hidden border-2 border-grey-200 shadow-lg bg-white">
-                  <Image
-                    src="/2.jpg"
-                    alt="Designer Furniture Shipping Austin - White Glove Furniture Transport Services"
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 33vw"
-                    className="object-cover"
-                    quality={75}
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-6">
-                    <span className="text-white font-bold text-lg">Furniture Transport</span>
+                {/* Featured Image - Furniture Transport */}
+                <Link href="/services#furniture" className="block">
+                  <div className="relative h-52 rounded-2xl overflow-hidden border-2 border-grey-200 shadow-lg bg-white hover:border-emerald transition-all hover:scale-[1.02] cursor-pointer">
+                    <Image
+                      src="/2.jpg"
+                      alt="Designer Furniture Shipping Austin - White Glove Furniture Transport Services"
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 33vw"
+                      className="object-cover"
+                      quality={75}
+                      priority
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-6">
+                      <span className="text-white font-bold text-lg">Furniture Transport</span>
+                    </div>
                   </div>
-                </div>
+                </Link>
 
                 {/* Two Column Grid */}
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md bg-white">
-                    <Image
-                      src="/1.jpg"
-                      alt="Fine Art Shipping Services Austin Texas - Museum Quality Crating and Transport"
-                      fill
-                      sizes="(max-width: 1024px) 50vw, 25vw"
-                      className="object-cover"
-                      quality={75}
-                      loading="lazy"
-                      placeholder="blur"
-                      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgIBAwQDAAAAAAAAAAAAAQIDBAAFESEGEjFBE1Fx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEEECCDggEeD5rR+mdQu3tFr2b0rTTsZcyP7Pnf2ffsV1EaFEBBqAn//2Q=="
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-4">
-                      <span className="text-white text-sm font-bold">Fine Art Expertise</span>
+                  <Link href="/services#fine-art" className="block">
+                    <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md bg-white hover:border-emerald transition-all hover:scale-[1.02] cursor-pointer">
+                      <Image
+                        src="/1.jpg"
+                        alt="Fine Art Shipping Services Austin Texas - Museum Quality Crating and Transport"
+                        fill
+                        sizes="(max-width: 1024px) 50vw, 25vw"
+                        className="object-cover"
+                        quality={75}
+                        loading="lazy"
+                        placeholder="blur"
+                        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgIBAwQDAAAAAAAAAAAAAQIDBAAFESEGEjFBE1Fx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEEECCDggEeD5rR+mdQu3tFr2b0rTTsZcyP7Pnf2ffsV1EaFEBBqAn//2Q=="
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-4">
+                        <span className="text-white text-sm font-bold">Fine Art Expertise</span>
+                      </div>
                     </div>
-                  </div>
-                  <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md bg-white">
-                    <Image
-                      src="/3.jpg"
-                      alt="Medical Equipment Shipping Austin TX - Compliant Medical Device Transport"
-                      fill
-                      sizes="(max-width: 1024px) 50vw, 25vw"
-                      className="object-cover"
-                      quality={75}
-                      loading="lazy"
-                      placeholder="blur"
-                      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgIBAwQDAAAAAAAAAAAAAQIDBAAFESEGEjFBE1Fx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEEECCDggEeD5rR+mdQu3tFr2b0rTTsZcyP7Pnf2ffsV1EaFEBBqAn//2Q=="
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-4">
-                      <span className="text-white text-sm font-bold">Medical Equipment</span>
+                  </Link>
+                  <Link href="/services#medical" className="block">
+                    <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md bg-white hover:border-emerald transition-all hover:scale-[1.02] cursor-pointer">
+                      <Image
+                        src="/3.jpg"
+                        alt="Medical Equipment Shipping Austin TX - Compliant Medical Device Transport"
+                        fill
+                        sizes="(max-width: 1024px) 50vw, 25vw"
+                        className="object-cover"
+                        quality={75}
+                        loading="lazy"
+                        placeholder="blur"
+                        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgIBAwQDAAAAAAAAAAAAAQIDBAAFESEGEjFBE1Fx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEEECCDggEeD5rR+mdQu3tFr2b0rTTsZcyP7Pnf2ffsV1EaFEBBqAn//2Q=="
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-4">
+                        <span className="text-white text-sm font-bold">Medical Equipment</span>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
 
                 {/* General Shipping Box */}
-                <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md bg-white mt-4">
+                <Link href="/services#general" className="block">
+                  <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md bg-white mt-4 hover:border-emerald transition-all hover:scale-[1.02] cursor-pointer">
                   <Image
                     src="/IMG_4446_1703172460423.jpg"
                     alt="General Shipping and Crating Services Austin TX"
@@ -435,6 +507,7 @@ export default function Home() {
                     <span className="text-white text-sm font-bold">General Shipping & Crates</span>
                   </div>
                 </div>
+                </Link>
 
                 {/* Stats Row */}
                 <div className="pt-3">
@@ -458,13 +531,13 @@ export default function Home() {
             <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full border-2 border-emerald/30 bg-emerald/5 mb-3 md:mb-6">
               <span className="text-[10px] md:text-xs font-semibold text-grey-800 uppercase tracking-widest">Austin's Premier Specialty Shipping</span>
             </div>
-            <h2 className="text-2xl md:text-4xl lg:text-7xl font-bold text-grey-900 mb-2 md:mb-4">
+            <h2 className="font-serif text-3xl md:text-5xl lg:text-7xl font-bold text-grey-900 mb-2 md:mb-4 tracking-tight">
               Why Choose <span className="text-emerald">Austin Crate</span>
             </h2>
-            <h3 className="text-lg md:text-xl lg:text-3xl font-semibold text-grey-700 mb-3 md:mb-6">
+            <h3 className="font-serif text-xl md:text-2xl lg:text-4xl font-semibold text-grey-700 mb-3 md:mb-6 tracking-tight">
               Premium Shipping for Every Need
             </h3>
-            <p className="text-sm md:text-base lg:text-xl text-grey-600 max-w-3xl mx-auto">
+            <p className="font-sans text-sm md:text-base lg:text-xl text-grey-600 max-w-3xl mx-auto leading-relaxed font-light">
               Austin Crate provides white-glove specialty shipping services for fine art, designer furniture, and medical equipment. Our expert team combines meticulous handling with cutting-edge logistics to ensure your most precious items arrive safely.
             </p>
           </div>
@@ -482,8 +555,8 @@ export default function Home() {
               </div>
 
               {/* Content */}
-              <h3 className="text-xl md:text-2xl font-bold text-grey-900 mb-3 md:mb-4">Fine Art Shipping</h3>
-              <p className="text-grey-600 mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
+              <h3 className="font-serif text-xl md:text-2xl font-bold text-grey-900 mb-3 md:mb-4 tracking-tight">Fine Art Shipping</h3>
+              <p className="font-sans text-grey-600 mb-4 md:mb-6 leading-relaxed text-sm md:text-base font-light">
                 Museum-quality crating and transport for paintings, sculptures, and collectibles. Our climate-controlled handling ensures your artwork arrives in pristine condition.
               </p>
 
@@ -516,8 +589,8 @@ export default function Home() {
                 </svg>
               </div>
 
-              <h3 className="text-xl md:text-2xl font-bold text-grey-900 mb-3 md:mb-4">Designer Furniture</h3>
-              <p className="text-grey-600 mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
+              <h3 className="font-serif text-xl md:text-2xl font-bold text-grey-900 mb-3 md:mb-4 tracking-tight">Designer Furniture</h3>
+              <p className="font-sans text-grey-600 mb-4 md:mb-6 leading-relaxed text-sm md:text-base font-light">
                 White-glove furniture handling for luxury pieces and designer collections. Expert protective wrapping, and precision shipping.
               </p>
 
@@ -548,8 +621,8 @@ export default function Home() {
                 </svg>
               </div>
 
-              <h3 className="text-xl md:text-2xl font-bold text-grey-900 mb-3 md:mb-4">Medical Equipment</h3>
-              <p className="text-grey-600 mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
+              <h3 className="font-serif text-xl md:text-2xl font-bold text-grey-900 mb-3 md:mb-4 tracking-tight">Medical Equipment</h3>
+              <p className="font-sans text-grey-600 mb-4 md:mb-6 leading-relaxed text-sm md:text-base font-light">
                 Transport for sensitive medical devices and laboratory equipment. Specialized handling with chain-of-custody documentation and calibration protection.
               </p>
 

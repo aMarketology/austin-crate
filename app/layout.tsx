@@ -1,11 +1,28 @@
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
+import { Playfair_Display, Inter } from 'next/font/google'
 import { organizationSchema, servicesSchema, reviewSchema } from '@/lib/schema'
 import { websiteSchema } from '@/lib/website-schema'
 import StickyQuoteButton from './components/StickyQuoteButton'
 import FooterEnhanced from './components/FooterEnhanced'
 import Analytics from './components/Analytics'
 import './globals.css'
+
+// Elegant serif font for headings
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800', '900'],
+  variable: '--font-playfair',
+  display: 'swap',
+})
+
+// Clean sans-serif for body text
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-inter',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: {
@@ -137,7 +154,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </head>
-      <body>
+      <body className={`${playfair.variable} ${inter.variable} font-sans antialiased`}>
         <Suspense fallback={null}>
           <Analytics />
         </Suspense>

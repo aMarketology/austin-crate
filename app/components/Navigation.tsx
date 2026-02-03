@@ -1,11 +1,38 @@
 ﻿'use client'
 
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
+  const [isVisible, setIsVisible] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    // Check if mobile on mount and resize
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768) // md breakpoint
+    }
+    
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+
+    const handleScroll = () => {
+      // Show navigation after scrolling down 100px (only on desktop)
+      if (window.scrollY > 100) {
+        setIsVisible(true)
+      } else {
+        setIsVisible(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('resize', checkMobile)
+    }
+  }, [])
 
   const services = [
     { name: 'Fine Art Shipping', href: '/services/fine-art' },
@@ -15,7 +42,7 @@ export default function Navigation() {
   ]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md border-b-2 border-grey-200">
+    <nav className={`fixed top-0 left-0 right-0 z-50 bg-white shadow-md border-b-2 border-grey-200 transition-transform duration-300 ${isMobile || isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-4">

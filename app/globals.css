@@ -9,12 +9,59 @@
 }
 
 body {
-  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--font-inter), 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
   color: #333;
   background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+@layer components {
+  /* Elegant heading styles */
+  .heading-xl {
+    @apply font-serif text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight;
+  }
+  
+  .heading-lg {
+    @apply font-serif text-5xl md:text-6xl font-bold tracking-tight;
+  }
+  
+  .heading-md {
+    @apply font-serif text-4xl md:text-5xl font-semibold tracking-tight;
+  }
+  
+  .heading-sm {
+    @apply font-serif text-3xl md:text-4xl font-semibold tracking-tight;
+  }
+  
+  /* Body text variations */
+  .body-lg {
+    @apply font-sans text-xl md:text-2xl font-light leading-relaxed;
+  }
+  
+  .body-md {
+    @apply font-sans text-lg md:text-xl font-normal leading-relaxed;
+  }
+  
+  /* Elegant buttons */
+  .btn-elegant {
+    @apply font-serif font-semibold tracking-wide uppercase text-sm letter-spacing-wider;
+  }
+  
+  /* Display text for hero sections */
+  .display-text {
+    @apply font-serif font-bold text-7xl md:text-8xl lg:text-9xl tracking-tighter leading-none;
+  }
 }

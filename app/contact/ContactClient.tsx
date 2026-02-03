@@ -67,7 +67,6 @@ export default function ContactClient() {
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <Navigation />
-      <Breadcrumbs />
 
       {/* Page Header */}
       <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-24 px-4 mt-20">
