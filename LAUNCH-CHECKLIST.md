@@ -11,8 +11,10 @@ Use this checklist to ensure everything is ready before going live.
 
 - [ ] Created `.env.local` file
 - [ ] Added `NEXT_PUBLIC_GA_ID` (Google Analytics 4 Measurement ID)
-- [ ] Added `SENDGRID_API_KEY` (SendGrid API key)
-- [ ] Added `CONTACT_EMAIL` (info@austincrate.com)
+- [ ] Added `MAILJET_API_KEY` (Mailjet API key)
+- [ ] Added `MAILJET_SECRET_KEY` (Mailjet secret key)
+- [ ] Added `NOTIFICATION_EMAIL_1` (hello@austincrate.com)
+- [ ] Added `NOTIFICATION_EMAIL_2` (info@amarketology.com)
 - [ ] Added `NEXT_PUBLIC_SITE_URL` (https://austincrate.com)
 
 ### Google Services
@@ -25,9 +27,10 @@ Use this checklist to ensure everything is ready before going live.
 
 ### Email Setup
 
-- [ ] Created SendGrid account
-- [ ] Generated API key
-- [ ] Verified sender email (info@austincrate.com)
+- [ ] Created Mailjet account
+- [ ] Generated API key and secret key
+- [ ] Verified sender email (info@amarketology.com)
+- [ ] Added SPF and DKIM records to domain
 - [ ] Tested contact form submission
 
 ### Content & Images
@@ -228,7 +231,7 @@ Use this checklist to ensure everything is ready before going live.
 - [ ] Search Console access shared (if needed)
 - [ ] Hosting dashboard access documented
 - [ ] Domain registrar access documented
-- [ ] SendGrid access documented
+- [ ] Mailjet access documented
 
 ---
 
@@ -239,7 +242,7 @@ Use this checklist to ensure everything is ready before going live.
 - [ ] All API keys secured (not in code)
 - [ ] Environment variables not committed to git
 - [ ] `.env.local` in `.gitignore`
-- [ ] SendGrid API key secured
+- [ ] Mailjet API credentials secured
 - [ ] Google Analytics not publicly accessible
 - [ ] Admin passwords strong (16+ chars)
 
@@ -320,7 +323,7 @@ Use this checklist to ensure everything is ready before going live.
 
 ### Service Issues
 
-- **SendGrid Support**: https://support.sendgrid.com
+- **Mailjet Support**: https://www.mailjet.com/support/
 - **Google Analytics**: https://support.google.com/analytics
 - **Vercel/Netlify**: [Hosting support]
 

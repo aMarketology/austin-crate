@@ -1,11 +1,25 @@
 import { NextRequest, NextResponse } from 'next/server'
-import sgMail from '@sendgrid/mail'
+import Mailjet from 'node-mailjet'
 
-// Initialize SendGrid with API key
-sgMail.setApiKey(process.env.SENDGRID_API_KEY!)
+// Initialize Mailjet with API key and secret (only if keys are available)
+const mailjet = process.env.MAILJET_API_KEY && process.env.MAILJET_SECRET_KEY
+  ? Mailjet.apiConnect(
+      process.env.MAILJET_API_KEY,
+      process.env.MAILJET_SECRET_KEY
+    )
+  : null
 
 export async function POST(request: NextRequest) {
   console.log('📧 Contact form submission received')
+  
+  // Check if Mailjet is configured
+  if (!mailjet) {
+    console.error('❌ Mailjet is not configured')
+    return NextResponse.json(
+      { error: 'Email service is not configured. Please contact the administrator.' },
+      { status: 500 }
+    )
+  }
   
   try {
     const body = await request.json()
@@ -109,18 +123,37 @@ This message was sent from the Austin Crate website contact form.
 
     console.log('📬 Sending to:', notificationEmails)
 
-    // Send separate emails to each recipient for better deliverability
-    const emailPromises = notificationEmails.map(recipientEmail => {
-      const msg = {
-        to: recipientEmail,
-        from: 'info@amarketology.com', // Verified sender in SendGrid
-        replyTo: email, // Customer's email for easy reply
-        subject: `New Quote Request from ${name} - Austin Crate`,
-        text: emailContent,
-        html: htmlContent,
-      }
+    // Send separate emails to each recipient using Mailjet
+    const emailPromises = notificationEmails.map(async (recipientEmail) => {
       console.log(`📧 Sending email to: ${recipientEmail}`)
-      return sgMail.send(msg)
+      
+      const request = mailjet
+        .post('send', { version: 'v3.1' })
+        .request({
+          Messages: [
+            {
+              From: {
+                Email: 'info@amarketology.com',
+                Name: 'Austin Crate'
+              },
+              To: [
+                {
+                  Email: recipientEmail,
+                  Name: 'Austin Crate Team'
+                }
+              ],
+              ReplyTo: {
+                Email: email,
+                Name: name
+              },
+              Subject: `New Quote Request from ${name} - Austin Crate`,
+              TextPart: emailContent,
+              HTMLPart: htmlContent
+            }
+          ]
+        })
+      
+      return request
     })
 
     await Promise.all(emailPromises)
@@ -128,15 +161,15 @@ This message was sent from the Austin Crate website contact form.
 
     return NextResponse.json({ success: true, message: 'Email sent successfully' })
   } catch (error: any) {
-    console.error('❌ SendGrid error:', error)
+    console.error('❌ Mailjet error:', error)
     
     // Log detailed error info
-    if (error.response) {
-      console.error('SendGrid response body:', JSON.stringify(error.response.body, null, 2))
+    if (error.statusCode) {
+      console.error('Mailjet response:', JSON.stringify(error.response?.body || error, null, 2))
     }
     
     return NextResponse.json(
-      { error: 'Failed to send email', details: error.response?.body?.errors || error.message },
+      { error: 'Failed to send email', details: error.response?.body || error.message },
       { status: 500 }
     )
   }

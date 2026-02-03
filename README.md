@@ -23,7 +23,7 @@ A production-ready, enterprise-grade website for Austin Crate & Freight - Centra
 - **Styling**: Tailwind CSS
 - **Animations**: Framer Motion
 - **Analytics**: Google Analytics 4
-- **Email**: SendGrid
+- **Email**: Mailjet
 - **SEO**: Custom enterprise utilities
 - **Package Manager**: npm
 
@@ -162,7 +162,7 @@ austin-crate/
 - ✅ **Server components** (default)
 - ✅ **Client components** (where needed)
 - ✅ **API routes** for forms
-- ✅ **SendGrid integration** for emails
+- ✅ **Mailjet integration** for emails
 - ✅ **Environment variables** for config
 
 ---
@@ -223,8 +223,10 @@ cp .env.example .env.local
 
 # Edit .env.local with your values:
 # - NEXT_PUBLIC_GA_ID (Google Analytics 4 Measurement ID)
-# - SENDGRID_API_KEY (SendGrid API key for contact form)
-# - CONTACT_EMAIL (where form submissions go)
+# - MAILJET_API_KEY (Mailjet API key for contact form)
+# - MAILJET_SECRET_KEY (Mailjet secret key)
+# - NOTIFICATION_EMAIL_1 (primary notification email)
+# - NOTIFICATION_EMAIL_2 (secondary notification email)
 ```
 
 4. **Run development server**:
@@ -352,13 +354,15 @@ Required variables (create `.env.local`):
 # Google Analytics (required for tracking)
 NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 
-# SendGrid (required for contact form)
-SENDGRID_API_KEY=SG.xxxxxxxxxxxxx
+# Mailjet (required for contact form)
+MAILJET_API_KEY=your_api_key_here
+MAILJET_SECRET_KEY=your_secret_key_here
 
-# Contact email
-CONTACT_EMAIL=info@austincrate.com
+# Notification emails
+NOTIFICATION_EMAIL_1=hello@austincrate.com
+NOTIFICATION_EMAIL_2=info@amarketology.com
 
-# Site URL
+# Production URL# Site URL
 NEXT_PUBLIC_SITE_URL=https://austincrate.com
 ```
 
@@ -457,8 +461,9 @@ See [DEPLOYMENT-GUIDE.md](./DEPLOYMENT-GUIDE.md) for detailed instructions.
 - Disable ad blockers for testing
 
 **Contact form not working**:
-- Verify `SENDGRID_API_KEY` is set
-- Check SendGrid dashboard for errors
+- Verify `MAILJET_API_KEY` and `MAILJET_SECRET_KEY` are set
+- Check Mailjet dashboard for errors
+- Verify sender email is authenticated in Mailjet
 - Verify sender email is verified
 
 **Pages not indexing**:
@@ -515,7 +520,7 @@ This project is proprietary and confidential.
 - TypeScript - Type safety
 - Tailwind CSS - Utility-first CSS
 - Framer Motion - Animations
-- SendGrid - Email delivery
+- Mailjet - Email delivery
 - Google Analytics 4 - Analytics
 
 **Enterprise SEO System**:
