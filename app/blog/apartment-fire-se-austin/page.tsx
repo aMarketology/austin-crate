@@ -1,11 +1,32 @@
-'use client'
-
+import { Metadata } from 'next'
 import Link from 'next/link'
 import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
+import SEOWrapper from '@/app/components/SEOWrapper'
+import { getEntry } from '@/lib/content-registry'
+
+const SLUG = '/blog/apartment-fire-se-austin'
+
+export function generateMetadata(): Metadata {
+  const entry = getEntry(SLUG)
+  return {
+    title: entry?.title,
+    description: entry?.description,
+    alternates: { canonical: `https://austincrate.com${SLUG}` },
+    openGraph: {
+      type: 'article',
+      title: entry?.title,
+      description: entry?.description,
+      url: `https://austincrate.com${SLUG}`,
+      publishedTime: entry?.publishDate,
+      modifiedTime: entry?.modifiedDate,
+    },
+  }
+}
 
 export default function ApartmentFireBlog() {
   return (
+    <SEOWrapper slug={SLUG}>
     <div className="min-h-screen bg-grey-50 flex flex-col">
       <Navigation />
 
@@ -126,5 +147,6 @@ export default function ApartmentFireBlog() {
 
       <Footer />
     </div>
+    </SEOWrapper>
   )
 }

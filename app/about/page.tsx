@@ -3,6 +3,7 @@ import Footer from '../components/Footer'
 import Breadcrumbs from '../components/Breadcrumbs'
 import { Metadata } from 'next'
 import { generateMetadata } from '@/lib/seo-utils'
+import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = generateMetadata({
   title: 'About Austin Crate & Freight | Specialty Shipping Experts',
@@ -14,6 +15,7 @@ export const metadata: Metadata = generateMetadata({
 
 export default function About() {
   return (
+    <SEOWrapper slug="/about">
     <div className="min-h-screen bg-white flex flex-col">
       <Navigation />
       <Breadcrumbs />
@@ -79,5 +81,6 @@ export default function About() {
 
       <Footer />
     </div>
+    </SEOWrapper>
   )
 }

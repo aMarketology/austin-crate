@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import PrepareArtworkClient from './PrepareArtworkClient'
+import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = {
   title: 'How to Prepare Artwork for Shipping | Austin Crate & Freight',
@@ -8,5 +9,9 @@ export const metadata: Metadata = {
 }
 
 export default function PrepareArtwork() {
-  return <PrepareArtworkClient />
+  return (
+    <SEOWrapper slug="/resources/prepare-artwork">
+      <PrepareArtworkClient />
+    </SEOWrapper>
+  )
 }

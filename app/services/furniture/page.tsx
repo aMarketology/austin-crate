@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { Metadata } from 'next'
 import { generateServiceMetadata, generateServiceSchema, SITE_CONFIG } from '@/lib/seo-utils'
 import { furnitureFAQSchema } from '@/lib/faq-schema'
+import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = generateServiceMetadata({
   serviceName: 'Designer Furniture Shipping Austin',
@@ -30,6 +31,7 @@ export default function FurnitureShipping() {
   })
 
   return (
+    <SEOWrapper slug="/services/furniture">
     <div className="min-h-screen bg-white flex flex-col">
       {/* JSON-LD Schemas */}
       <script
@@ -243,5 +245,6 @@ export default function FurnitureShipping() {
 
       <Footer />
     </div>
+    </SEOWrapper>
   )
 }

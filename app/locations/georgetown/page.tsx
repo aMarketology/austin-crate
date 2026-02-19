@@ -4,6 +4,7 @@ import Breadcrumbs from '../../components/Breadcrumbs'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import { generateLocationMetadata, generateLocalBusinessSchema } from '@/lib/seo-utils'
+import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = generateLocationMetadata({
   locationName: 'Georgetown',
@@ -21,6 +22,7 @@ export default function Georgetown() {
   })
 
   return (
+    <SEOWrapper slug="/locations/georgetown">
     <div className="min-h-screen bg-white flex flex-col">
       <script
         type="application/ld+json"
@@ -182,5 +184,6 @@ export default function Georgetown() {
 
       <Footer />
     </div>
+    </SEOWrapper>
   )
 }

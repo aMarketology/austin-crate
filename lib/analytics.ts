@@ -9,7 +9,7 @@
  * 4. Import and use in app/layout.tsx
  */
 
-export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || ''
+export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-8G3X2DX8L2'
 
 // Send pageview event
 export const pageview = (url: string) => {

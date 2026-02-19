@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import Breadcrumbs from '../components/Breadcrumbs'
 import { Metadata } from 'next'
 import { generateMetadata } from '@/lib/seo-utils'
+import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = generateMetadata({
   title: 'Gallery | Austin Crate & Freight - See Our Work',
@@ -33,6 +34,7 @@ export default function Gallery() {
   ]
 
   return (
+    <SEOWrapper slug="/gallery">
     <div className="min-h-screen bg-white flex flex-col">
       <Navigation />
 
@@ -91,5 +93,6 @@ export default function Gallery() {
 
       <Footer />
     </div>
+    </SEOWrapper>
   )
 }

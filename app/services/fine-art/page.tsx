@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { Metadata } from 'next'
 import { generateServiceMetadata, generateServiceSchema, SITE_CONFIG } from '@/lib/seo-utils'
 import { fineArtFAQSchema } from '@/lib/faq-schema'
+import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = generateServiceMetadata({
   serviceName: 'Fine Art Specialty Shipping Austin Texas | Museum-Quality Transport',
@@ -34,6 +35,7 @@ export default function FineArtShipping() {
   })
 
   return (
+    <SEOWrapper slug="/services/fine-art">
     <div className="min-h-screen bg-white flex flex-col">
       {/* JSON-LD Schemas */}
       <script
@@ -410,5 +412,6 @@ export default function FineArtShipping() {
 
       <Footer />
     </div>
+    </SEOWrapper>
   )
 }

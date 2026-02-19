@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import ResourcesClient from './ResourcesClient'
+import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = {
   title: 'Shipping Resources & Guides | Austin Crate & Freight',
@@ -8,5 +9,9 @@ export const metadata: Metadata = {
 }
 
 export default function Resources() {
-  return <ResourcesClient />
+  return (
+    <SEOWrapper slug="/resources">
+      <ResourcesClient />
+    </SEOWrapper>
+  )
 }

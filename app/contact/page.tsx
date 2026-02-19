@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import { generateMetadata } from '@/lib/seo-utils'
 import ContactClient from './ContactClient'
+import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = generateMetadata({
   title: 'Contact Austin Crate & Freight | Get Your Free Shipping Quote',
@@ -10,5 +11,9 @@ export const metadata: Metadata = generateMetadata({
 })
 
 export default function Contact() {
-  return <ContactClient />
+  return (
+    <SEOWrapper slug="/contact">
+      <ContactClient />
+    </SEOWrapper>
+  )
 }
