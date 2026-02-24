@@ -44,7 +44,7 @@ export default function ContactClient() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, sourceUrl: window.location.href }),
       })
 
       console.log('Response status:', response.status)
@@ -67,6 +67,7 @@ export default function ContactClient() {
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <Navigation />
+      <Breadcrumbs />
 
       {/* Page Header */}
       <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-24 px-4 mt-20">
