@@ -8,8 +8,8 @@ import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = generateLocationMetadata({
   locationName: 'Georgetown',
-  description: 'Expert specialty shipping in Georgetown, Texas. Museum-quality art transport, designer furniture moving, and HIPAA-compliant medical equipment shipping. Serving Georgetown with care.',
-  keywords: ['Georgetown shipping', 'Georgetown crating', 'specialty freight Georgetown', 'art shipping Georgetown'],
+  description: 'Expert specialty shipping in Georgetown, TX — custom furniture shipping, heavy package pickup, fine art transport, oversized item shipping & HIPAA-compliant medical equipment crating. Serving Georgetown with care.',
+  keywords: ['Georgetown shipping', 'Georgetown crating', 'specialty freight Georgetown', 'art shipping Georgetown', 'custom furniture shipping Georgetown', 'heavy package pickup Georgetown', 'oversized shipping Georgetown', 'heavy item pickup Georgetown TX'],
   locationUrl: '/locations/georgetown',
 })
 
@@ -40,7 +40,7 @@ export default function Georgetown() {
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Specialty Shipping in Georgetown, TX</h1>
           <p className="text-xl text-gray-300 mb-8 max-w-3xl">
-            Premium white-glove shipping for Georgetown's historic downtown, Sun City, and surrounding communities. Museum-quality care for your fine art, luxury furniture, and medical equipment.
+            Premium white-glove shipping for Georgetown's historic downtown, Sun City, and surrounding communities. Custom furniture shipping, heavy package pickup, fine art crating, oversized item transport, and medical equipment delivery — all with museum-quality care.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
@@ -67,7 +67,7 @@ export default function Georgetown() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 mb-12">Our Services in Georgetown</h2>
           
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <div className="p-6 border border-gray-200 rounded-xl hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -87,8 +87,8 @@ export default function Georgetown() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Designer Furniture</h3>
-              <p className="text-gray-600 mb-4">White-glove moving for Georgetown's beautiful historic homes and luxury properties.</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Custom Furniture Shipping</h3>
+              <p className="text-gray-600 mb-4">White-glove custom furniture shipping for Georgetown's beautiful historic homes and luxury properties.</p>
               <Link href="/services/furniture" className="text-emerald-600 hover:text-emerald-700 font-medium">
                 Learn More →
               </Link>
@@ -103,6 +103,32 @@ export default function Georgetown() {
               <h3 className="text-xl font-bold text-gray-900 mb-3">Medical Equipment</h3>
               <p className="text-gray-600 mb-4">HIPAA-compliant service for Georgetown healthcare providers and medical centers.</p>
               <Link href="/services/medical-equipment" className="text-emerald-600 hover:text-emerald-700 font-medium">
+                Learn More →
+              </Link>
+            </div>
+
+            <div className="p-6 border border-gray-200 rounded-xl hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Pickup</h3>
+              <p className="text-gray-600 mb-4">Heavy package pickup in Georgetown for items too large for standard carriers — safes, pianos, appliances, and more.</p>
+              <Link href="/services/heavy-items" className="text-emerald-600 hover:text-emerald-700 font-medium">
+                Learn More →
+              </Link>
+            </div>
+
+            <div className="p-6 border border-gray-200 rounded-xl hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Oversized Shipping</h3>
+              <p className="text-gray-600 mb-4">Oversized item shipping for Georgetown — items that exceed standard carrier limits. Custom crating and freight solutions.</p>
+              <Link href="/services/oversized-shipping" className="text-emerald-600 hover:text-emerald-700 font-medium">
                 Learn More →
               </Link>
             </div>
@@ -169,9 +195,29 @@ export default function Georgetown() {
             </div>
           </div>
 
+          {/* Cross-Links to Other Locations */}
+          <div className="bg-gray-100 rounded-2xl p-8 mb-12">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">We Also Serve Nearby Cities</h3>
+            <p className="text-gray-600 mb-6">Austin Crate & Freight provides the same white-glove specialty shipping, custom furniture shipping, and heavy package pickup throughout the greater Austin area.</p>
+            <div className="flex flex-wrap gap-4">
+              <Link href="/locations/round-rock" className="px-5 py-2.5 bg-white border border-gray-200 rounded-lg text-gray-700 hover:border-emerald-500 hover:text-emerald-700 transition-colors font-medium">
+                Round Rock, TX
+              </Link>
+              <Link href="/locations/cedar-park" className="px-5 py-2.5 bg-white border border-gray-200 rounded-lg text-gray-700 hover:border-emerald-500 hover:text-emerald-700 transition-colors font-medium">
+                Cedar Park, TX
+              </Link>
+              <Link href="/services" className="px-5 py-2.5 bg-white border border-gray-200 rounded-lg text-gray-700 hover:border-emerald-500 hover:text-emerald-700 transition-colors font-medium">
+                All Services
+              </Link>
+              <Link href="/buy-a-crate" className="px-5 py-2.5 bg-white border border-gray-200 rounded-lg text-gray-700 hover:border-emerald-500 hover:text-emerald-700 transition-colors font-medium">
+                Buy a Custom Crate
+              </Link>
+            </div>
+          </div>
+
           <div className="text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Serving Georgetown with Pride</h3>
-            <p className="text-gray-600 mb-6">Contact us for expert shipping services throughout Georgetown and Williamson County.</p>
+            <p className="text-gray-600 mb-6">Contact us for expert custom furniture shipping, heavy package pickup, and specialty shipping throughout Georgetown and Williamson County.</p>
             <a
               href="tel:(512) 240-9818"
               className="inline-flex items-center gap-2 px-8 py-4 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors font-medium"

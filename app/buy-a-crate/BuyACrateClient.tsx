@@ -55,9 +55,9 @@ export default function BuyACrateClient() {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-grey-700 bg-grey-800/50 backdrop-blur-sm mb-6">
             <span className="text-xs font-medium text-grey-300 uppercase tracking-widest">Shipping Supplies</span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Buy a Crate</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">Custom Wood Shipping Crates in Austin, TX</h1>
           <p className="text-xl text-grey-300 mb-8 max-w-3xl mx-auto">
-            Professional-grade shipping crates built to museum standards. Perfect for shipping fine art, furniture, or sensitive equipment with confidence.
+            Professional-grade custom crating built to museum standards. Perfect for shipping fine art, heavy furniture, oversized items, or sensitive equipment. Custom wood crates near Austin, Texas — built to order.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -237,9 +237,9 @@ export default function BuyACrateClient() {
       {/* Custom Crates CTA */}
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Need a Custom Size?</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Need a Custom Size Crate?</h2>
           <p className="text-xl text-gray-600 mb-8">
-            We specialize in building custom crates for unique items. From oversized sculptures to delicate antiques, we can create the perfect crate for your needs.
+            We specialize in building custom wood crates for unique items in Austin. From oversized sculptures to delicate antiques, heavy machinery to medical equipment — we engineer the perfect crate for your needs.
           </p>
           <Link
             href="/contact"
@@ -253,9 +253,9 @@ export default function BuyACrateClient() {
       {/* CTA Section */}
       <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Order Your Crate?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Order Your Custom Crate?</h2>
           <p className="text-xl text-grey-300 mb-10">
-            Call us today to place your order or discuss custom crating options for your specific needs.
+            Call us today to order a custom wood shipping crate in Austin. We build crates for heavy items, oversized packages, fine art, and furniture.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -273,6 +273,25 @@ export default function BuyACrateClient() {
             >
               Contact Us
             </Link>
+          </div>
+
+          {/* Related Services Links */}
+          <div className="mt-12 pt-8 border-t border-grey-700">
+            <p className="text-grey-400 mb-4 text-sm uppercase tracking-widest">Our Shipping Services</p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link href="/services/heavy-items" className="text-emerald hover:text-emerald/80 font-medium transition-colors">
+                Heavy Item Pickup &rarr;
+              </Link>
+              <Link href="/services/oversized-shipping" className="text-emerald hover:text-emerald/80 font-medium transition-colors">
+                Oversized Shipping &rarr;
+              </Link>
+              <Link href="/services/furniture" className="text-emerald hover:text-emerald/80 font-medium transition-colors">
+                Custom Furniture Shipping &rarr;
+              </Link>
+              <Link href="/services/fine-art" className="text-emerald hover:text-emerald/80 font-medium transition-colors">
+                Fine Art Shipping &rarr;
+              </Link>
+            </div>
           </div>
         </div>
       </section>

@@ -18,9 +18,9 @@ export default function ServicesClient() {
       features: ['Climate-Controlled', 'Custom Crating', 'Full Insurance', 'Gallery-Standard'],
     },
     {
-      title: 'Designer Furniture',
+      title: 'Custom Furniture Shipping',
       subtitle: 'White-Glove Service',
-      description: 'Premium handling for luxury pieces with expert disassembly, wrapping, and reassembly.',
+      description: 'White-glove custom furniture shipping with expert disassembly, protective crating, and precision reassembly for designer and antique pieces.',
       image: '/2.jpg',
       href: '/services/furniture',
       features: ['Assembly/Disassembly', 'Protective Wrapping', 'Inside Delivery', 'Scratch-Free'],
@@ -32,6 +32,22 @@ export default function ServicesClient() {
       image: '/3.jpg',
       href: '/services/medical-equipment',
       features: ['HIPAA Certified', 'Chain of Custody', 'Calibration Safe', 'Temperature Control'],
+    },
+    {
+      title: 'Heavy Item Pickup',
+      subtitle: 'No Weight Limit',
+      description: 'Heavy package pickup and shipping for items over 70 lbs. Custom crating, reinforced packaging, and freight transport across Austin and nationwide.',
+      image: '/IMG_4446_1703172460423.jpg',
+      href: '/services/heavy-items',
+      features: ['Free Local Pickup', 'Custom Crating', 'Freight Coordination', 'Any Weight'],
+    },
+    {
+      title: 'Oversized Shipping',
+      subtitle: 'Beyond Carrier Limits',
+      description: 'Ship items too big for FedEx or UPS. Custom crating and freight for furniture, equipment, and any oversized package from Austin, Texas.',
+      image: '/IMG_3748.jpg',
+      href: '/services/oversized-shipping',
+      features: ['No Size Limit', 'Door-to-Door', 'Fully Insured', 'Nationwide'],
     },
   ]
 
@@ -139,8 +155,8 @@ export default function ServicesClient() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xl md:text-2xl text-grey-300 mb-10 leading-relaxed"
             >
-              Expert handling for fine art, designer furniture, and medical equipment. 
-              Museum-quality care, fully insured, delivered with precision.
+              Austin, Texas specialty shipping for fine art, custom furniture, heavy items, oversized packages, and medical equipment. 
+              Museum-quality crating, fully insured, delivered with precision.
             </motion.p>
 
             <motion.div
@@ -201,7 +217,7 @@ export default function ServicesClient() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, i) => (
               <motion.div
                 key={i}
@@ -359,7 +375,7 @@ export default function ServicesClient() {
             <span className="text-emerald">Valuable Items?</span>
           </h2>
           <p className="text-xl text-grey-400 mb-10 max-w-2xl mx-auto">
-            Get a free quote today. Our team is standing by to help with your specialty shipping needs.
+            Get a free quote for specialty shipping in Austin. Whether you need custom furniture shipping, heavy package pickup, oversized freight, or fine art crating — we handle it all.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -377,6 +393,16 @@ export default function ServicesClient() {
             >
               Request Quote Online
             </Link>
+          </div>
+
+          {/* Quick Links */}
+          <div className="mt-12 pt-8 border-t border-grey-800">
+            <div className="flex flex-wrap justify-center gap-6 text-sm">
+              <Link href="/services/heavy-items" className="text-emerald hover:text-emerald/80 font-medium transition-colors">Heavy Item Pickup</Link>
+              <Link href="/services/oversized-shipping" className="text-emerald hover:text-emerald/80 font-medium transition-colors">Oversized Shipping</Link>
+              <Link href="/buy-a-crate" className="text-emerald hover:text-emerald/80 font-medium transition-colors">Buy a Custom Crate</Link>
+              <Link href="/contact" className="text-emerald hover:text-emerald/80 font-medium transition-colors">Get a Free Quote</Link>
+            </div>
           </div>
         </div>
       </section>

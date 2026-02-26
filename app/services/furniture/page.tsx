@@ -4,20 +4,23 @@ import Breadcrumbs from '../../components/Breadcrumbs'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Metadata } from 'next'
-import { generateServiceMetadata, generateServiceSchema, SITE_CONFIG } from '@/lib/seo-utils'
+import { generateServiceMetadata, generateServiceSchema, generateLocalBusinessSchema, SITE_CONFIG } from '@/lib/seo-utils'
 import { furnitureFAQSchema } from '@/lib/faq-schema'
 import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = generateServiceMetadata({
-  serviceName: 'Designer Furniture Shipping Austin',
-  description: 'Premium white-glove furniture shipping. Expert disassembly, protective wrapping, reassembly for luxury furniture and designer pieces. Scratch-free guarantee',
+  serviceName: 'Custom Furniture Shipping Austin TX',
+  description: 'Custom furniture shipping in Austin, Texas. White-glove pickup, expert disassembly, protective crating, and precision reassembly for designer, antique & heavy furniture. Scratch-free guarantee.',
   keywords: [
-    'furniture shipping Austin',
-    'white glove movers Austin TX',
-    'designer furniture transport',
+    'custom furniture shipping Austin',
+    'furniture shipping Austin TX',
+    'heavy furniture pickup Austin TX',
+    'antique furniture shipping Texas',
+    'furniture crating Austin',
+    'white glove furniture movers Austin',
+    'designer furniture transport Austin',
     'luxury furniture moving Austin',
     'furniture assembly Austin',
-    'high-end furniture movers',
   ],
   serviceUrl: '/services/furniture',
   ogImage: '/2.jpg',
@@ -25,9 +28,16 @@ export const metadata: Metadata = generateServiceMetadata({
 
 export default function FurnitureShipping() {
   const serviceSchema = generateServiceSchema({
-    serviceName: 'Designer Furniture Shipping',
-    description: 'White-glove furniture handling for luxury pieces and designer collections. Expert disassembly, protective wrapping, and precision reassembly',
+    serviceName: 'Custom Furniture Shipping Austin',
+    description: 'Custom furniture shipping and crating in Austin, Texas. White-glove handling for designer, antique, and heavy furniture with expert disassembly, protective wrapping, and precision reassembly.',
     serviceType: 'Specialty Shipping',
+  })
+
+  const localBusinessSchema = generateLocalBusinessSchema({
+    locationName: 'Austin',
+    description: 'Custom furniture shipping in Austin, Texas. White-glove pickup, expert disassembly, custom crating, and precision reassembly for designer, antique, and heavy furniture.',
+    latitude: 30.2972,
+    longitude: -97.7594,
   })
 
   return (
@@ -42,6 +52,10 @@ export default function FurnitureShipping() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(furnitureFAQSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
       
       <Navigation />
       <Breadcrumbs />
@@ -54,9 +68,9 @@ export default function FurnitureShipping() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-grey-700 bg-grey-800/50 backdrop-blur-sm mb-6">
                 <span className="text-xs font-medium text-grey-300 uppercase tracking-widest">Specialty Shipping</span>
               </div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">Designer Furniture Shipping</h1>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">Custom Furniture Shipping in Austin, Texas</h1>
               <p className="text-xl text-grey-300 mb-8">
-                White-glove furniture handling for luxury pieces and designer collections. Expert disassembly, protective wrapping, and precision reassembly included.
+                White-glove custom furniture shipping for designer, antique, and heavy furniture pieces across Austin and nationwide. Expert disassembly, custom crating, protective wrapping, and precision reassembly — all with a scratch-free guarantee.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -219,9 +233,9 @@ export default function FurnitureShipping() {
       {/* CTA Section */}
       <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Ship Your Designer Furniture?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Ship Your Furniture?</h2>
           <p className="text-xl text-grey-300 mb-10">
-            Get a free quote for white-glove furniture shipping. We handle every detail so you don't have to.
+            Get a free quote for custom furniture shipping in Austin. Whether it&apos;s a designer sofa, antique armoire, or heavy dining set, we handle every detail so you don&apos;t have to.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -239,6 +253,25 @@ export default function FurnitureShipping() {
             >
               Request a Quote
             </Link>
+          </div>
+
+          {/* Related Services Links */}
+          <div className="mt-12 pt-8 border-t border-grey-700">
+            <p className="text-grey-400 mb-4 text-sm uppercase tracking-widest">Related Services</p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link href="/services/heavy-items" className="text-emerald hover:text-emerald/80 font-medium transition-colors">
+                Heavy Item Pickup &rarr;
+              </Link>
+              <Link href="/services/fine-art" className="text-emerald hover:text-emerald/80 font-medium transition-colors">
+                Fine Art Shipping &rarr;
+              </Link>
+              <Link href="/buy-a-crate" className="text-emerald hover:text-emerald/80 font-medium transition-colors">
+                Buy a Custom Crate &rarr;
+              </Link>
+              <Link href="/locations/round-rock" className="text-emerald hover:text-emerald/80 font-medium transition-colors">
+                Round Rock Service &rarr;
+              </Link>
+            </div>
           </div>
         </div>
       </section>

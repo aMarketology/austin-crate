@@ -229,7 +229,7 @@ export default function HomeClient() {
             transition={{ duration: 0.8, delay: 0.35 }}
             className="font-sans text-base sm:text-lg text-grey-700 mt-6 mb-8 font-light leading-relaxed max-w-md mx-auto px-2"
           >
-            White-Glove Specialty Shipping for Fine Art, Designer Furniture & Medical Equipment
+            Austin&apos;s premier specialty shipping company — custom furniture shipping, heavy package pickup, fine art crating &amp; medical equipment transport.
           </motion.p>
 
           {/* CTA Buttons - Animated */}
@@ -381,7 +381,7 @@ export default function HomeClient() {
                 transition={{ duration: 0.8, delay: 0.35 }}
                 className="font-sans text-3xl md:text-4xl text-grey-800 font-light leading-tight -mt-2"
               >
-                White-Glove Specialty Shipping for Your Most Valuable Assets
+                Austin&apos;s Premier Specialty Shipping — Custom Crating, Furniture Transport &amp; Heavy Package Pickup
               </motion.h3>
 
               {/* Description */}
@@ -391,7 +391,7 @@ export default function HomeClient() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="font-sans text-xl md:text-2xl text-grey-600 font-light leading-relaxed max-w-2xl"
               >
-                Expert crating and freight services for your valuable items inlcuding, fine art, designer furniture, and medical equipment. We handle your treasures with museum-quality care, delivering peace of mind with every shipment.
+                Austin&apos;s trusted specialty shipping company for custom furniture shipping, heavy item pickup, fine art crating, and medical equipment transport. We handle your most valuable items with museum-quality care, delivering peace of mind with every shipment across Austin, Texas and nationwide.
               </motion.p>
 
               {/* CTA Buttons Row */}
@@ -489,25 +489,37 @@ export default function HomeClient() {
                   </Link>
                 </div>
 
-                {/* General Shipping Box */}
-                <Link href="/services#general" className="block">
-                  <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md bg-white mt-4 hover:border-emerald transition-all hover:scale-[1.02] cursor-pointer">
-                  <Image
-                    src="/IMG_4446_1703172460423.jpg"
-                    alt="General Shipping and Crating Services Austin TX"
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="object-cover"
-                    quality={75}
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgIBAwQDAAAAAAAAAAAAAQIDBAAFESEGEjFBE1Fx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEZEQA/ANE6Z1C7e0WvZvStNOxlzI/s+d/Z9+xXURoUQEGoCf/Z"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-4">
-                    <span className="text-white text-sm font-bold">General Shipping & Crates</span>
-                  </div>
+                {/* Heavy Items & General Shipping Grid */}
+                <div className="grid grid-cols-2 gap-4">
+                  <Link href="/services/heavy-items" className="block">
+                    <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md bg-white hover:border-emerald transition-all hover:scale-[1.02] cursor-pointer">
+                      <div className="absolute inset-0 bg-gradient-to-br from-emerald/90 to-emerald-600/90 flex flex-col items-center justify-center p-4">
+                        <svg className="w-8 h-8 text-white mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                        </svg>
+                        <span className="text-white text-sm font-bold text-center">Heavy Item Pickup</span>
+                      </div>
+                    </div>
+                  </Link>
+                  <Link href="/services#general" className="block">
+                    <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md bg-white hover:border-emerald transition-all hover:scale-[1.02] cursor-pointer">
+                      <Image
+                        src="/IMG_4446_1703172460423.jpg"
+                        alt="General Shipping and Crating Services Austin TX"
+                        fill
+                        sizes="(max-width: 1024px) 50vw, 25vw"
+                        className="object-cover"
+                        quality={75}
+                        loading="lazy"
+                        placeholder="blur"
+                        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgIBAwQDAAAAAAAAAAAAAQIDBAAFESEGEjFBE1Fx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEZEQA/ANE6Z1C7e0WvZvStNOxlzI/s+d/Z9+xXURoUQEGoCf/Z"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-4">
+                        <span className="text-white text-sm font-bold">General Shipping & Crates</span>
+                      </div>
+                    </div>
+                  </Link>
                 </div>
-                </Link>
 
                 {/* Stats Row */}
                 <div className="pt-3">
@@ -538,7 +550,7 @@ export default function HomeClient() {
               Premium Shipping for Every Need
             </h3>
             <p className="font-sans text-sm md:text-base lg:text-xl text-grey-600 max-w-3xl mx-auto leading-relaxed font-light">
-              Austin Crate provides white-glove specialty shipping services for fine art, designer furniture, and medical equipment. Our expert team combines meticulous handling with cutting-edge logistics to ensure your most precious items arrive safely.
+              Austin Crate provides specialty shipping in Austin, Texas for fine art, custom furniture, heavy items, and medical equipment. From heavy package pickup to custom crating, our expert team ensures your most valuable items arrive safely — locally or nationwide.
             </p>
           </div>
 
@@ -826,7 +838,7 @@ export default function HomeClient() {
           </h2>
           
           <p className="text-sm md:text-lg lg:text-xl text-grey-600 mb-6 md:mb-10 lg:mb-12 max-w-2xl mx-auto">
-            Request your free shipping quote today. Let our expert team handle your fine art, furniture, or medical equipment with care.
+            Request your free specialty shipping quote today. Whether you need custom furniture shipping, heavy package pickup, or fine art crating in Austin, our expert team handles it all.
           </p>
 
           {/* CTA Buttons Row */}

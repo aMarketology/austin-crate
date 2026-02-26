@@ -4,7 +4,7 @@ import Breadcrumbs from '../../components/Breadcrumbs'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Metadata } from 'next'
-import { generateServiceMetadata, generateServiceSchema, SITE_CONFIG } from '@/lib/seo-utils'
+import { generateServiceMetadata, generateServiceSchema, generateLocalBusinessSchema, SITE_CONFIG } from '@/lib/seo-utils'
 import { fineArtFAQSchema } from '@/lib/faq-schema'
 import SEOWrapper from '@/app/components/SEOWrapper'
 
@@ -34,6 +34,13 @@ export default function FineArtShipping() {
     serviceType: 'Specialty Shipping',
   })
 
+  const localBusinessSchema = generateLocalBusinessSchema({
+    locationName: 'Austin',
+    description: 'Fine art specialty shipping in Austin, Texas. Museum-quality crating, climate-controlled transport, and expert art handlers for galleries, collectors, and museums.',
+    latitude: 30.2972,
+    longitude: -97.7594,
+  })
+
   return (
     <SEOWrapper slug="/services/fine-art">
     <div className="min-h-screen bg-white flex flex-col">
@@ -45,6 +52,10 @@ export default function FineArtShipping() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(fineArtFAQSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
       
       <Navigation />
@@ -394,16 +405,20 @@ export default function FineArtShipping() {
           <div className="border-t border-grey-700 pt-8">
             <p className="text-grey-400 mb-4">Also explore our other specialty shipping services:</p>
             <div className="flex flex-wrap justify-center gap-4">
+              <Link href="/services/heavy-items" className="text-emerald hover:text-emerald/80 font-medium transition-colors">
+                Heavy Item Pickup &rarr;
+              </Link>
+              <span className="text-grey-600">•</span>
               <Link href="/services/furniture" className="text-emerald hover:text-emerald/80 font-medium transition-colors">
-                Designer Furniture Shipping
+                Custom Furniture Shipping
               </Link>
               <span className="text-grey-600">•</span>
               <Link href="/services/medical-equipment" className="text-emerald hover:text-emerald/80 font-medium transition-colors">
                 Medical Equipment Transport
               </Link>
               <span className="text-grey-600">•</span>
-              <Link href="/services" className="text-emerald hover:text-emerald/80 font-medium transition-colors">
-                View All Services
+              <Link href="/buy-a-crate" className="text-emerald hover:text-emerald/80 font-medium transition-colors">
+                Buy a Custom Crate
               </Link>
             </div>
           </div>

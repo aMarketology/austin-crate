@@ -20,6 +20,7 @@ export default function ContactClient() {
     zipcode: '',
     message: ''
   })
+  const [unknownDimensions, setUnknownDimensions] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState('')
 
@@ -82,7 +83,7 @@ export default function ContactClient() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
           
           {/* Contact Info */}
-          <div>
+          <div className="order-2 md:order-1">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Get In Touch</h2>
             <p className="text-gray-700 mb-8 leading-relaxed">
               Ready to ship your fine art, designer furniture, or medical equipment? Contact us today for a free consultation and quote. We're here to answer all your questions and provide expert specialty shipping solutions.
@@ -136,7 +137,7 @@ export default function ContactClient() {
           </div>
 
           {/* Contact Form */}
-          <div>
+          <div className="order-1 md:order-2">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Request a Free Quote</h2>
             
             {error && (
@@ -211,70 +212,93 @@ export default function ContactClient() {
                 </select>
               </div>
 
-              {/* Dimensions Grid */}
-              <div className="grid grid-cols-3 gap-3">
-                <div>
-                  <label htmlFor="length" className="block text-gray-700 font-semibold mb-2">
-                    Length (in) *
-                  </label>
-                  <input
-                    type="number"
-                    id="length"
-                    name="length"
-                    value={formData.length}
-                    onChange={handleChange}
-                    required
-                    placeholder="48"
-                    className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="width" className="block text-gray-700 font-semibold mb-2">
-                    Width (in) *
-                  </label>
-                  <input
-                    type="number"
-                    id="width"
-                    name="width"
-                    value={formData.width}
-                    onChange={handleChange}
-                    required
-                    placeholder="36"
-                    className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="height" className="block text-gray-700 font-semibold mb-2">
-                    Height (in) *
-                  </label>
-                  <input
-                    type="number"
-                    id="height"
-                    name="height"
-                    value={formData.height}
-                    onChange={handleChange}
-                    required
-                    placeholder="24"
-                    className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                  />
-                </div>
+              {/* Unknown Dimensions Checkbox */}
+              <div className="flex items-center gap-3 p-3 bg-emerald-50 border border-emerald-200 rounded">
+                <input
+                  type="checkbox"
+                  id="unknownDimensions"
+                  checked={unknownDimensions}
+                  onChange={(e) => {
+                    setUnknownDimensions(e.target.checked)
+                    if (e.target.checked) {
+                      setFormData(prev => ({ ...prev, length: '', width: '', height: '', weight: '' }))
+                    }
+                  }}
+                  className="w-5 h-5 accent-emerald-600 cursor-pointer"
+                />
+                <label htmlFor="unknownDimensions" className="text-gray-700 font-semibold cursor-pointer">
+                  I don&apos;t know the dimensions — we&apos;ll figure it out together
+                </label>
               </div>
 
-              <div>
-                <label htmlFor="weight" className="block text-gray-700 font-semibold mb-2">
-                  Weight (lbs) *
-                </label>
-                <input
-                  type="number"
-                  id="weight"
-                  name="weight"
-                  value={formData.weight}
-                  onChange={handleChange}
-                  required
-                  placeholder="150"
-                  className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                />
-              </div>
+              {/* Dimensions Grid */}
+              {!unknownDimensions && (
+                <>
+                  <div className="grid grid-cols-3 gap-3">
+                    <div>
+                      <label htmlFor="length" className="block text-gray-700 font-semibold mb-2">
+                        Length (in) *
+                      </label>
+                      <input
+                        type="number"
+                        id="length"
+                        name="length"
+                        value={formData.length}
+                        onChange={handleChange}
+                        required
+                        placeholder="48"
+                        className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="width" className="block text-gray-700 font-semibold mb-2">
+                        Width (in) *
+                      </label>
+                      <input
+                        type="number"
+                        id="width"
+                        name="width"
+                        value={formData.width}
+                        onChange={handleChange}
+                        required
+                        placeholder="36"
+                        className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="height" className="block text-gray-700 font-semibold mb-2">
+                        Height (in) *
+                      </label>
+                      <input
+                        type="number"
+                        id="height"
+                        name="height"
+                        value={formData.height}
+                        onChange={handleChange}
+                        required
+                        placeholder="24"
+                        className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label htmlFor="weight" className="block text-gray-700 font-semibold mb-2">
+                      Weight (lbs) *
+                    </label>
+                    <input
+                      type="number"
+                      id="weight"
+                      name="weight"
+                      value={formData.weight}
+                      onChange={handleChange}
+                      required
+                      placeholder="150"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                    />
+                  </div>
+                </>
+              )}
 
               {/* Conditionally show zipcode for shipping */}
               {formData.serviceType === 'shipping' && (

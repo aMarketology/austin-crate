@@ -8,7 +8,7 @@
  *   1. Add or update the entry below
  *   2. Set `modifiedDate` to today's date
  *
- * Last updated: 2026-02-19
+ * Last updated: 2026-02-26
  */
 
 export interface ContentEntry {
@@ -38,13 +38,13 @@ export const contentRegistry: ContentEntry[] = [
   // ── Core Pages ──────────────────────────────────────────────────────────────
   {
     slug: '/',
-    title: 'Austin Crate & Freight | White-Glove Specialty Shipping in Austin, TX',
+    title: 'Austin Specialty Shipping | Custom Crating & Heavy Item Pickup | Austin Crate & Freight',
     description:
-      'Premier specialty shipping in Austin, Texas. White-glove services for fine art, designer furniture, and medical equipment. Museum-quality crating, HIPAA-compliant transport. Call (512) 240-9818.',
+      'Austin, Texas specialty shipping company. White-glove services for fine art, custom furniture shipping, heavy package pickup, and medical equipment transport. Museum-quality crating. Call (512) 240-9818.',
     publishDate: '2024-01-01',
-    modifiedDate: '2026-02-19',
+    modifiedDate: '2026-02-26',
     category: 'Core',
-    tags: ['specialty shipping', 'white glove', 'Austin TX', 'fine art', 'furniture', 'medical equipment'],
+    tags: ['specialty shipping', 'white glove', 'Austin TX', 'fine art', 'furniture', 'medical equipment', 'heavy items', 'custom crating'],
     author: 'Austin Crate & Freight',
     priority: 1.0,
     changeFrequency: 'weekly',
@@ -90,28 +90,28 @@ export const contentRegistry: ContentEntry[] = [
   },
   {
     slug: '/buy-a-crate',
-    title: 'Buy a Crate | Custom Wood Crates Austin TX',
+    title: 'Custom Wood Shipping Crates Austin TX | Buy a Crate | Austin Crate & Freight',
     description:
-      'Order custom wood shipping crates from Austin Crate & Freight. Museum-quality crating built to spec for art, antiques, equipment, and more. Austin, TX local pickup and delivery.',
+      'Order custom wood shipping crates in Austin, Texas. Museum-quality crating for fine art, heavy items, oversized packages, and furniture. Built to spec, fully insured. Call (512) 240-9818.',
     publishDate: '2024-01-01',
-    modifiedDate: '2026-02-01',
+    modifiedDate: '2026-02-26',
     category: 'Core',
-    tags: ['buy a crate', 'custom crates', 'wood crates', 'Austin TX'],
+    tags: ['custom crating Austin', 'wood crates', 'custom shipping crate', 'crating near me', 'Austin TX'],
     author: 'Austin Crate & Freight',
-    priority: 0.7,
+    priority: 0.8,
     changeFrequency: 'monthly',
   },
 
   // ── Services ────────────────────────────────────────────────────────────────
   {
     slug: '/services',
-    title: 'Specialty Shipping Services | Austin Crate & Freight',
+    title: 'Specialty Shipping Services Austin TX | Furniture, Art & Heavy Items | Austin Crate & Freight',
     description:
-      'Expert specialty shipping services in Austin, TX: fine art crating, designer furniture transport, and HIPAA-compliant medical equipment shipping. Request a free quote today.',
+      'Austin, Texas specialty shipping services. Custom furniture shipping, heavy item pickup, fine art crating, oversized freight, and medical equipment transport. White-glove, fully insured.',
     publishDate: '2024-01-01',
-    modifiedDate: '2026-02-01',
+    modifiedDate: '2026-02-26',
     category: 'Services',
-    tags: ['specialty shipping', 'fine art', 'furniture', 'medical equipment', 'Austin TX'],
+    tags: ['specialty shipping', 'fine art', 'furniture', 'medical equipment', 'heavy items', 'oversized shipping', 'Austin TX'],
     author: 'Austin Crate & Freight',
     priority: 0.9,
     changeFrequency: 'weekly',
@@ -131,15 +131,15 @@ export const contentRegistry: ContentEntry[] = [
   },
   {
     slug: '/services/furniture',
-    title: 'Designer Furniture Shipping Austin TX | White-Glove Transport',
+    title: 'Custom Furniture Shipping Austin TX | White-Glove Crating & Transport',
     description:
-      'White-glove designer furniture shipping and transport in Austin, Texas. Antiques, luxury pieces, and custom furnishings handled with museum-quality care. Serving Central Texas.',
+      'Custom furniture shipping in Austin, Texas. White-glove pickup, expert disassembly, protective crating, and precision reassembly for designer, antique & heavy furniture. Scratch-free guarantee.',
     publishDate: '2024-01-01',
-    modifiedDate: '2026-02-01',
+    modifiedDate: '2026-02-26',
     category: 'Services',
-    tags: ['furniture shipping', 'designer furniture', 'white glove', 'antiques', 'Austin TX'],
+    tags: ['custom furniture shipping', 'furniture crating', 'heavy furniture pickup', 'antique furniture shipping', 'designer furniture', 'white glove', 'Austin TX'],
     author: 'Austin Crate & Freight',
-    priority: 0.8,
+    priority: 0.9,
     changeFrequency: 'monthly',
   },
   {
@@ -155,45 +155,71 @@ export const contentRegistry: ContentEntry[] = [
     priority: 0.8,
     changeFrequency: 'monthly',
   },
+  {
+    slug: '/services/heavy-items',
+    title: 'Heavy Item Pickup & Shipping Austin TX | Austin Crate & Freight',
+    description:
+      'Heavy package pickup and oversized item shipping in Austin, TX. Custom crating for furniture, equipment, and machinery. Free local pickup. Call (512) 240-9818.',
+    publishDate: '2026-02-26',
+    modifiedDate: '2026-02-26',
+    category: 'Services',
+    tags: ['heavy items', 'heavy package pickup', 'oversized shipping', 'Austin TX', 'custom crating', 'specialty shipping'],
+    author: 'Austin Crate & Freight',
+    priority: 0.9,
+    changeFrequency: 'weekly',
+  },
+  {
+    slug: '/services/oversized-shipping',
+    title: 'Oversized Item Shipping Austin TX | Large Package Transport',
+    description:
+      'Ship oversized items from Austin, Texas. Custom crating and freight for items too large for FedEx or UPS. White-glove pickup, fully insured. Free quotes.',
+    publishDate: '2026-02-26',
+    modifiedDate: '2026-02-26',
+    category: 'Services',
+    tags: ['oversized shipping', 'large items', 'freight', 'Austin TX', 'custom crating', 'bulky items'],
+    author: 'Austin Crate & Freight',
+    priority: 0.8,
+    changeFrequency: 'weekly',
+  },
 
   // ── Locations ────────────────────────────────────────────────────────────────
   {
     slug: '/locations/round-rock',
-    title: 'Specialty Shipping Round Rock TX | Austin Crate & Freight',
+    title: 'Specialty Shipping Round Rock TX | Custom Furniture & Heavy Items | Austin Crate',
     description:
-      'White-glove specialty shipping serving Round Rock, TX. Fine art crating, furniture transport, and medical equipment shipping. Local experts serving Round Rock and North Austin.',
+      'White-glove specialty shipping in Round Rock, TX — custom furniture shipping, heavy package pickup, fine art crating, oversized item transport & medical equipment. Local experts.',
     publishDate: '2024-01-01',
-    modifiedDate: '2026-02-01',
+    modifiedDate: '2026-02-26',
     category: 'Locations',
-    tags: ['Round Rock', 'specialty shipping', 'white glove', 'Austin TX'],
+    tags: ['Round Rock', 'specialty shipping', 'custom furniture shipping', 'heavy package pickup', 'oversized shipping', 'Austin TX'],
     author: 'Austin Crate & Freight',
-    priority: 0.7,
+    priority: 0.8,
     changeFrequency: 'monthly',
   },
   {
     slug: '/locations/cedar-park',
-    title: 'Specialty Shipping Cedar Park TX | Austin Crate & Freight',
+    title: 'Specialty Shipping Cedar Park TX | Custom Furniture & Heavy Items | Austin Crate',
     description:
-      'White-glove specialty shipping serving Cedar Park, TX. Fine art crating, furniture transport, and medical equipment shipping. Serving Cedar Park and Northwest Austin.',
+      'Professional specialty shipping in Cedar Park, TX — custom furniture shipping, heavy package pickup, fine art crating, oversized item transport & medical equipment shipping.',
     publishDate: '2024-01-01',
-    modifiedDate: '2026-02-01',
+    modifiedDate: '2026-02-26',
     category: 'Locations',
-    tags: ['Cedar Park', 'specialty shipping', 'white glove', 'Austin TX'],
+    tags: ['Cedar Park', 'specialty shipping', 'custom furniture shipping', 'heavy package pickup', 'oversized shipping', 'Austin TX'],
     author: 'Austin Crate & Freight',
-    priority: 0.7,
+    priority: 0.8,
     changeFrequency: 'monthly',
   },
   {
     slug: '/locations/georgetown',
-    title: 'Specialty Shipping Georgetown TX | Austin Crate & Freight',
+    title: 'Specialty Shipping Georgetown TX | Custom Furniture & Heavy Items | Austin Crate',
     description:
-      'White-glove specialty shipping serving Georgetown, TX. Fine art crating, furniture transport, and medical equipment shipping. Serving Georgetown and surrounding Williamson County.',
+      'Expert specialty shipping in Georgetown, TX — custom furniture shipping, heavy package pickup, fine art crating, oversized item transport & medical equipment. Serving Williamson County.',
     publishDate: '2024-01-01',
-    modifiedDate: '2026-02-01',
+    modifiedDate: '2026-02-26',
     category: 'Locations',
-    tags: ['Georgetown', 'specialty shipping', 'white glove', 'Williamson County'],
+    tags: ['Georgetown', 'specialty shipping', 'custom furniture shipping', 'heavy package pickup', 'oversized shipping', 'Williamson County'],
     author: 'Austin Crate & Freight',
-    priority: 0.7,
+    priority: 0.8,
     changeFrequency: 'monthly',
   },
 
@@ -232,7 +258,7 @@ export const contentRegistry: ContentEntry[] = [
     description:
       'Austin local news, industry updates, and expert tips on specialty shipping for fine art, furniture, and medical equipment from Austin Crate & Freight.',
     publishDate: '2024-01-01',
-    modifiedDate: '2026-02-19',
+    modifiedDate: '2026-02-26',
     category: 'Blog',
     tags: ['blog', 'Austin news', 'shipping tips', 'local'],
     author: 'Austin Crate & Freight',
@@ -276,6 +302,19 @@ export const contentRegistry: ContentEntry[] = [
     tags: ['lottery', 'Round Rock', 'Texas Lottery', 'local news', 'Austin area'],
     author: 'Austin Crate & Freight',
     priority: 0.5,
+    changeFrequency: 'monthly',
+  },
+  {
+    slug: '/blog/cost-to-ship-heavy-items-austin',
+    title: 'How Much Does It Cost to Ship Heavy Items in Austin? (2026 Price Guide)',
+    description:
+      'Complete pricing guide for shipping heavy items in Austin, TX. Compare costs for heavy package pickup, custom furniture shipping, oversized item transport, and freight solutions.',
+    publishDate: '2026-02-26',
+    modifiedDate: '2026-02-26',
+    category: 'Blog',
+    tags: ['cost to ship heavy items Austin', 'heavy package pickup', 'custom furniture shipping', 'oversized shipping', 'pricing guide', 'Austin TX'],
+    author: 'Austin Crate & Freight',
+    priority: 0.8,
     changeFrequency: 'monthly',
   },
 ]

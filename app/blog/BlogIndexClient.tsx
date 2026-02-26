@@ -8,6 +8,15 @@ import Footer from '@/app/components/Footer'
 export default function BlogIndexClient() {
   const blogPosts = [
     {
+      slug: 'cost-to-ship-heavy-items-austin',
+      title: 'How Much Does It Cost to Ship Heavy Items in Austin? (2026 Price Guide)',
+      excerpt: 'Complete pricing guide for shipping heavy items in Austin, TX. Compare costs for heavy package pickup, custom furniture shipping, oversized item transport, and freight solutions.',
+      date: 'February 26, 2026',
+      category: 'Shipping Guide',
+      readTime: '8 min read',
+      image: '📦',
+    },
+    {
       slug: 'austin-marathon-2026',
       title: 'Austin Marathon 2026: Everything You Need to Know',
       excerpt: 'Join 30,000 runners from around the world on February 15, 2026, for the running social event of the year. Complete guide including registration, course details, and race weekend schedule.',

@@ -165,6 +165,108 @@ export const furnitureFAQSchema = {
   ]
 }
 
+export const heavyItemsFAQSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How much does it cost to ship a heavy item in Austin?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Heavy item shipping costs in Austin depend on weight, dimensions, fragility, and destination. Most local heavy item shipments start at $150–$300. Long-distance freight starts at $300+. Call (512) 240-9818 for a free quote.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you pick up heavy packages in Austin?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Austin Crate & Freight offers free heavy package pickup throughout Greater Austin, Round Rock, Cedar Park, and Georgetown. We bring all equipment needed for safe loading — dollies, straps, ramps, and a trained crew.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'What is considered a heavy item for shipping?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Any item over 70 lbs or too large for standard carrier boxes (over 108 inches combined length + girth) is considered heavy or oversized. This includes furniture, appliances, gym equipment, machinery, safes, and pool tables.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'Can you ship heavy items outside of Austin?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. We ship heavy and oversized items nationwide. We custom-crate your item in Austin and coordinate freight transport to any destination in the US, with door-to-door delivery available.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you provide custom crating for heavy items?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, every heavy item we ship gets a custom-built wood crate engineered for its exact weight and dimensions. We use kiln-dried lumber, stainless steel hardware, shock-absorbing foam, and reinforced framing.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: "What's the heaviest item you can ship?",
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "We have no strict weight limit. We've shipped items exceeding 2,000 lbs including industrial machinery, commercial safes, and marble sculptures. If it exists, we can crate and ship it."
+      }
+    }
+  ]
+}
+
+export const oversizedShippingFAQSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How do I ship something too big for FedEx or UPS?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Call Austin Crate & Freight at (512) 240-9818. We pick up oversized items at your location, build a custom crate at our Austin facility, and coordinate freight transport to any destination in the US. No size or weight limit.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'How much does it cost to ship an oversized item from Austin?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Pricing depends on item dimensions, weight, fragility, and destination. Local Austin-area oversized shipments typically start at $150-$400. Regional freight ranges from $300-$800. National shipments start at $500+. Call for a free quote.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the largest item you can ship?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We have no size limit. We have shipped 12-foot conference tables, industrial machinery, large marble sculptures, and entire trade show booth setups. If it fits in a truck, we can crate and ship it.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you offer inside delivery for oversized items?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Our white-glove service includes inside delivery, room placement, unpacking, assembly if applicable, and debris removal. We deliver your oversized item exactly where you need it.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'Can you ship oversized items outside of Texas?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Absolutely. We ship oversized items nationwide. We custom-crate your item at our Austin facility and coordinate with trusted freight carriers for door-to-door delivery to any US destination.'
+      }
+    },
+  ]
+}
+
 export const medicalFAQSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
