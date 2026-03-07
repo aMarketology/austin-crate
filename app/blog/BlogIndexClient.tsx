@@ -1,12 +1,22 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
 
 export default function BlogIndexClient() {
   const blogPosts = [
+    {
+      slug: 'safety-speed-6400-panel-saw',
+      title: 'New Equipment Spotlight: Safety Speed 6400 Panel Saw',
+      excerpt: 'We just added the Safety Speed 6400 vertical panel saw to our shop. See how this precision machine is raising the bar on every custom crate we build.',
+      date: 'March 7, 2026',
+      category: 'Equipment & Shop',
+      readTime: '5 min read',
+      image: '/IMG_8539.jpeg',
+    },
     {
       slug: 'cost-to-ship-heavy-items-austin',
       title: 'How Much Does It Cost to Ship Heavy Items in Austin? (2026 Price Guide)',
@@ -84,9 +94,20 @@ export default function BlogIndexClient() {
                 <Link href={`/blog/${post.slug}`}>
                   <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden h-full flex flex-col group">
                     {/* Icon/Image Header */}
-                    <div className="bg-gradient-to-br from-emerald-600 to-emerald-700 p-8 text-center">
-                      <span className="text-6xl">{post.image}</span>
-                    </div>
+                    {post.image.startsWith('/') ? (
+                      <div className="relative w-full overflow-hidden" style={{ aspectRatio: '16/9' }}>
+                        <Image
+                          src={post.image}
+                          alt={post.title}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    ) : (
+                      <div className="bg-gradient-to-br from-emerald-600 to-emerald-700 p-8 text-center">
+                        <span className="text-6xl">{post.image}</span>
+                      </div>
+                    )}
                     
                     {/* Content */}
                     <div className="p-6 flex-1 flex flex-col">

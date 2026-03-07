@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #f3f4f6; font-family: 'Helvetica Neue', Arial, sans-serif; color: #374151; }
+    .wrapper { max-width: 620px; margin: 32px auto; background: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+    .header { background: linear-gradient(135deg, #1a3d28 0%, #2d5f3f 60%, #3d8b5c 100%); padding: 36px 32px; text-align: center; }
+    .header-logo { font-size: 22px; font-weight: 800; color: #ffffff; letter-spacing: 0.5px; margin-bottom: 4px; }
+    .header-sub { font-size: 13px; color: rgba(255,255,255,0.75); letter-spacing: 1px; text-transform: uppercase; }
+    .header-badge { display: inline-block; margin-top: 14px; background: rgba(255,255,255,0.15); color: #fff; font-size: 14px; font-weight: 600; padding: 6px 18px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.3); }
+    .alert-bar { background: #d4a5a5; text-align: center; padding: 10px 16px; font-size: 13px; font-weight: 700; color: #1a3d28; letter-spacing: 0.3px; }
+    .body { padding: 28px 32px; }
+    .section { margin-bottom: 22px; }
+    .section-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: #2d5f3f; border-bottom: 2px solid #2d5f3f; padding-bottom: 6px; margin-bottom: 14px; }
+    .field { display: flex; gap: 10px; padding: 7px 0; border-bottom: 1px solid #f3f4f6; font-size: 14px; }
+    .field:last-child { border-bottom: none; }
+    .field-label { font-weight: 600; color: #6b7280; min-width: 130px; flex-shrink: 0; }
+    .field-value { color: #111827; }
+    .field-value a { color: #2d5f3f; text-decoration: none; font-weight: 600; }
+    .message-box { background: #f9fafb; border-left: 4px solid #2d5f3f; border-radius: 4px; padding: 14px 16px; font-size: 14px; line-height: 1.6; color: #374151; }
+    .source-box { background: #f3f4f6; border-radius: 6px; padding: 10px 14px; font-size: 12px; color: #6b7280; word-break: break-all; }
+    .source-box a { color: #2d5f3f; text-decoration: none; }
+    .cta { text-align: center; padding: 8px 0 24px; }
+    .cta a { display: inline-block; background: #2d5f3f; color: #fff; font-size: 14px; font-weight: 700; padding: 12px 32px; border-radius: 6px; text-decoration: none; letter-spacing: 0.3px; }
+    .footer { background: #1a3d28; padding: 20px 32px; text-align: center; }
+    .footer p { color: rgba(255,255,255,0.6); font-size: 12px; line-height: 1.7; }
+    .footer a { color: rgba(255,255,255,0.85); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="header">
+      <div class="header-logo">Austin Crate &amp; Freight</div>
+      <div class="header-sub">White-Glove Specialty Shipping · Austin, TX</div>
+      <div class="header-badge">&#128228; New Quote Request</div>
+    </div>
+
+    <div class="alert-bar">Action Required — A new lead has submitted a quote request</div>
+
+    <div class="body">
+
+      <div class="section">
+        <div class="section-title">Contact Information</div>
+        <div class="field"><span class="field-label">Name</span><span class="field-value">{{from_name}}</span></div>
+        <div class="field"><span class="field-label">Email</span><span class="field-value"><a href="mailto:{{from_email}}">{{from_email}}</a></span></div>
+        <div class="field"><span class="field-label">Phone</span><span class="field-value"><a href="tel:{{from_phone}}">{{from_phone}}</a></span></div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Service Details</div>
+        <div class="field"><span class="field-label">Service Type</span><span class="field-value">{{service_type}}</span></div>
+        <div class="field"><span class="field-label">Dimensions</span><span class="field-value">{{dimensions}}</span></div>
+        <div class="field"><span class="field-label">Weight</span><span class="field-value">{{weight}}</span></div>
+        <div class="field"><span class="field-label">Destination ZIP</span><span class="field-value">{{destination_zip}}</span></div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Additional Details</div>
+        <div class="message-box">{{message}}</div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Lead Source</div>
+        <div class="source-box"><a href="{{source_url}}" target="_blank">{{source_url}}</a></div>
+      </div>
+
+      <div class="cta">
+        <a href="mailto:{{reply_to}}?subject=Re: Your Austin Crate Quote Request">Reply to {{from_name}}</a>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <p>
+        <strong style="color:#fff">Austin Crate &amp; Freight</strong><br />
+        <a href="tel:5122409818">(512) 240-9818</a> &nbsp;·&nbsp;
+        <a href="https://austincrate.com">austincrate.com</a><br />
+        Serving Austin, Round Rock, Cedar Park &amp; Georgetown, TX
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
+
+<!--
+=== HOW TO USE THIS TEMPLATE IN EMAILJS ===
+
+1. Go to https://www.emailjs.com → Email Templates → Create New Template
+2. Set the Subject to: New Quote Request from {{from_name}} - Austin Crate
+3. Paste the HTML above into the "Content" tab (HTML editor)
+4. Set "Reply To" to: {{reply_to}}
+5. Save the template and copy the Template ID → paste into .env.local
+
+Template variables used:
+  {{from_name}}       - customer full name
+  {{from_email}}      - customer email
+  {{from_phone}}      - customer phone
+  {{service_type}}    - "Shipping Service" or "Crate Purchase Only"
+  {{dimensions}}      - e.g. "48" L × 36" W × 24" H" or "Unknown"
+  {{weight}}          - e.g. "150 lbs" or "Unknown"
+  {{destination_zip}} - destination ZIP or "N/A"
+  {{message}}         - additional notes from customer
+  {{source_url}}      - page URL where form was submitted
+  {{reply_to}}        - same as from_email (for Reply-To header)
+-->

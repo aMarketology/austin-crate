@@ -131,13 +131,13 @@ export const contentRegistry: ContentEntry[] = [
   },
   {
     slug: '/services/furniture',
-    title: 'Custom Furniture Shipping Austin TX | White-Glove Crating & Transport',
+    title: 'Furniture Shipping & Crating Austin Texas | White-Glove Service | Austin Crate & Freight',
     description:
-      'Custom furniture shipping in Austin, Texas. White-glove pickup, expert disassembly, protective crating, and precision reassembly for designer, antique & heavy furniture. Scratch-free guarantee.',
+      'Expert furniture shipping and crating in Austin, Texas. Custom wood crates built in-house, white-glove pickup, disassembly & reassembly for designer, antique & heavy furniture. Scratch-free guarantee. Call (512) 240-9818.',
     publishDate: '2024-01-01',
-    modifiedDate: '2026-02-26',
+    modifiedDate: '2026-03-07',
     category: 'Services',
-    tags: ['custom furniture shipping', 'furniture crating', 'heavy furniture pickup', 'antique furniture shipping', 'designer furniture', 'white glove', 'Austin TX'],
+    tags: ['furniture shipping and crating Austin Texas', 'furniture crating Austin TX', 'custom furniture crating Austin', 'furniture shipping Austin Texas', 'antique furniture shipping Texas', 'white glove furniture movers Austin', 'heavy furniture pickup Austin TX'],
     author: 'Austin Crate & Freight',
     priority: 0.9,
     changeFrequency: 'monthly',
@@ -315,6 +315,19 @@ export const contentRegistry: ContentEntry[] = [
     tags: ['cost to ship heavy items Austin', 'heavy package pickup', 'custom furniture shipping', 'oversized shipping', 'pricing guide', 'Austin TX'],
     author: 'Austin Crate & Freight',
     priority: 0.8,
+    changeFrequency: 'monthly',
+  },
+  {
+    slug: '/blog/safety-speed-6400-panel-saw',
+    title: 'New Equipment Spotlight: Safety Speed 6400 Panel Saw | Austin Crate & Freight',
+    description:
+      'Austin Crate & Freight adds the Safety Speed 6400 vertical panel saw to our shop. Learn how this precision machine improves every custom crate we build for art, furniture, and heavy equipment.',
+    publishDate: '2026-03-07',
+    modifiedDate: '2026-03-07',
+    category: 'Blog',
+    tags: ['custom crating Austin', 'panel saw', 'Safety Speed 6400', 'crate building', 'shop equipment', 'precision crating', 'Austin TX'],
+    author: 'Austin Crate & Freight',
+    priority: 0.7,
     changeFrequency: 'monthly',
   },
 ]

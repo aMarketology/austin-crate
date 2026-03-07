@@ -140,26 +140,50 @@ export const furnitureFAQSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'How do you protect furniture from scratches and damage?',
+      name: 'How much does furniture shipping and crating cost in Austin, Texas?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We use furniture blankets, stretch wrap, corner protectors, and custom crating when needed. All surfaces are covered, and pieces are secured to prevent shifting during transport. We offer a scratch-free guarantee.'
+        text: 'Local furniture shipping in Austin typically starts at $200–$500 depending on size, weight, and whether crating is needed. Custom furniture crating starts around $150–$400 depending on dimensions. Long-distance furniture freight is priced by weight-class and destination. Call (512) 240-9818 for a free, no-obligation quote.'
       }
     },
     {
       '@type': 'Question',
-      name: 'Can you handle antique furniture?',
+      name: 'Do you build custom furniture crates in Austin?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, we specialize in antique and vintage furniture transport. Our team is trained in period furniture construction, proper handling techniques, and restoration-friendly disassembly methods.'
+        text: 'Yes — we build every crate in-house at our Austin, Texas shop. We do not order generic crates or use cardboard. Each crate is built to the exact dimensions of your furniture piece, with interior foam blocking and a screw-closure lid for easy inspection.'
       }
     },
     {
       '@type': 'Question',
-      name: 'Do you provide storage options?',
+      name: 'Can you ship antique furniture without damaging it?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, we offer climate-controlled storage for furniture in our secure facility. This is ideal for staging between homes or when delivery dates don\'t align with moving schedules.'
+        text: 'Absolutely. Antique furniture is one of our specialties. We use period-correct handling techniques, avoid adhesives or materials that could damage finishes, and build custom crates for pieces that cannot be padded adequately. Our team is trained in proper disassembly for antique joinery.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you offer furniture pickup in Austin?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. We offer free furniture pickup throughout Greater Austin and surrounding communities including Round Rock, Cedar Park, Georgetown, Pflugerville, Kyle, and Buda. Our crew arrives with all necessary equipment — no trip to a drop-off location required.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'Can you ship furniture across the country from Austin?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. We ship furniture from Austin to all 50 states. For long-distance shipments we use fully insured specialty LTL freight carriers experienced with high-value goods. Crating is strongly recommended for cross-country furniture shipments.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'How do you protect furniture from scratches and damage during shipping?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We use furniture blankets, stretch wrap, corner protectors, and custom wood crating when needed. All surfaces are covered, pieces are secured to prevent shifting during transport, and we offer a scratch-free guarantee on every job.'
       }
     }
   ]
