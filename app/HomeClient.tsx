@@ -203,7 +203,7 @@ export default function HomeClient() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border-2 border-emerald/30 bg-emerald/5 mb-6">
               <div className="w-1.5 h-1.5 rounded-full bg-emerald" />
-              <span className="text-xs font-semibold text-grey-800 uppercase tracking-widest">Austin, Texas</span>
+              <span className="text-xs font-semibold text-grey-800 uppercase tracking-widest">Specialty Shipping — Austin, Texas</span>
             </div>
           </motion.div>
 
@@ -229,7 +229,7 @@ export default function HomeClient() {
             transition={{ duration: 0.8, delay: 0.35 }}
             className="font-sans text-base sm:text-lg text-grey-700 mt-6 mb-8 font-light leading-relaxed max-w-md mx-auto px-2"
           >
-            Austin&apos;s premier specialty shipping company — custom furniture shipping, heavy package pickup, fine art crating &amp; medical equipment transport.
+            Austin&apos;s premier specialty shipping &amp; custom crating company — furniture shipping &amp; crating, heavy package pickup, fine art transport &amp; medical equipment shipping.
           </motion.p>
 
           {/* CTA Buttons - Animated */}
@@ -267,9 +267,9 @@ export default function HomeClient() {
             className="flex flex-wrap justify-center gap-2 mb-8 px-4"
           >
             {[
-              { icon: '🎨', label: 'Fine Art' },
-              { icon: '🪑', label: 'Furniture' },
-              { icon: '⚕️', label: 'Medical' }
+              { icon: '🎨', label: 'Fine Art Crating' },
+              { icon: '🪑', label: 'Furniture Crating' },
+              { icon: '⚕️', label: 'Medical Shipping' }
             ].map((item, i) => (
               <span key={i} className="px-4 py-2 bg-grey-100/80 backdrop-blur-sm text-grey-700 text-sm font-semibold rounded-full border border-grey-300 shadow-sm hover:shadow-md hover:scale-105 transition-all">
                 <span className="mr-1.5">{item.icon}</span>
@@ -355,7 +355,7 @@ export default function HomeClient() {
               >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border-2 border-emerald/30 bg-emerald/5">
                   <div className="w-1.5 h-1.5 rounded-full bg-emerald" />
-                  <span className="text-xs font-semibold text-grey-800 uppercase tracking-widest">Austin, Texas</span>
+                  <span className="text-xs font-semibold text-grey-800 uppercase tracking-widest">Specialty Shipping & Custom Crating — Austin, Texas</span>
                 </div>
               </motion.div>
 
@@ -381,7 +381,7 @@ export default function HomeClient() {
                 transition={{ duration: 0.8, delay: 0.35 }}
                 className="font-sans text-3xl md:text-4xl text-grey-800 font-light leading-tight -mt-2"
               >
-                Austin&apos;s Premier Specialty Shipping — Custom Crating, Furniture Transport &amp; Heavy Package Pickup
+                Austin&apos;s Premier Specialty Shipping — Custom Crating, Furniture Shipping &amp; Crating, Heavy Pickup &amp; Fine Art Transport
               </motion.h3>
 
               {/* Description */}
@@ -391,7 +391,7 @@ export default function HomeClient() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="font-sans text-xl md:text-2xl text-grey-600 font-light leading-relaxed max-w-2xl"
               >
-                Austin&apos;s trusted specialty shipping company for custom furniture shipping, heavy item pickup, fine art crating, and medical equipment transport. We handle your most valuable items with museum-quality care, delivering peace of mind with every shipment across Austin, Texas and nationwide.
+                Austin&apos;s trusted specialty shipping &amp; custom crating company. Expert furniture shipping and crating, heavy item pickup, fine art crating, and medical equipment transport — delivered with museum-quality care across Austin, Texas and nationwide.
               </motion.p>
 
               {/* CTA Buttons Row */}
@@ -550,7 +550,7 @@ export default function HomeClient() {
               Premium Shipping for Every Need
             </h3>
             <p className="font-sans text-sm md:text-base lg:text-xl text-grey-600 max-w-3xl mx-auto leading-relaxed font-light">
-              Austin Crate provides specialty shipping in Austin, Texas for fine art, custom furniture, heavy items, and medical equipment. From heavy package pickup to custom crating, our expert team ensures your most valuable items arrive safely — locally or nationwide.
+              Austin Crate &amp; Freight provides specialty shipping and custom crating in Austin, Texas — furniture shipping and crating, fine art transport, heavy item pickup, and medical equipment shipping. Our expert team ensures your most valuable items arrive safely, locally or nationwide.
             </p>
           </div>
 
@@ -795,16 +795,34 @@ export default function HomeClient() {
             </p>
           </div>
 
-          {/* Cities Grid - 5 Columns */}
+          {/* Cities Grid - linked pages + remaining cities */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 md:gap-3 lg:gap-4 mb-6 md:mb-10 lg:mb-12">
-            {['Austin', 'Round Rock', 'Cedar Park', 'Georgetown', 'Pflugerville', 'Leander', 'Lakeway', 'Bee Cave', 'Dripping Springs', 'Kyle'].map((city, i) => (
+            {[
+              { city: 'Round Rock', href: '/locations/round-rock' },
+              { city: 'Cedar Park', href: '/locations/cedar-park' },
+              { city: 'Georgetown', href: '/locations/georgetown' },
+            ].map((item, i) => (
+              <Link
+                key={i}
+                href={item.href}
+                className="p-4 rounded-xl bg-white border-2 border-grey-200 hover:border-emerald hover:shadow-md transition-all text-center"
+              >
+                <div className="flex items-center justify-center gap-2">
+                  <svg className="w-4 h-4 text-emerald" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-sm font-semibold text-grey-800">{item.city}</span>
+                </div>
+              </Link>
+            ))}
+            {['Austin', 'Pflugerville', 'Leander', 'Lakeway', 'Bee Cave', 'Dripping Springs', 'Kyle'].map((city, i) => (
               <div
                 key={i}
                 className="p-4 rounded-xl bg-white border-2 border-grey-200 hover:border-emerald hover:shadow-md transition-all text-center"
               >
                 <div className="flex items-center justify-center gap-2">
                   <svg className="w-4 h-4 text-emerald" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-sm font-semibold text-grey-800">{city}</span>
                 </div>

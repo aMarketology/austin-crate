@@ -258,26 +258,27 @@ export default function FurnitureShipping() {
           <p className="text-center text-gray-600 text-lg mb-12">If it is worth something to you, it is worth crating properly.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              { name: 'Designer Sofas & Sectionals', desc: 'Luxury seating from top brands — properly wrapped and crated' },
-              { name: 'Antique & Heirloom Furniture', desc: 'Period-correct handling for furniture that cannot be replaced' },
-              { name: 'Dining Tables & Sets', desc: 'Large tables, chairs, buffets, and china cabinets' },
-              { name: 'Bedroom Furniture', desc: 'Platform beds, sleigh beds, dressers, and armoires' },
-              { name: 'Custom & Handmade Pieces', desc: 'One-of-a-kind builds by local Austin craftsmen' },
-              { name: 'Executive & Office Furniture', desc: 'Desks, conference tables, and credenzas' },
-              { name: 'Oversized & Heavy Furniture', desc: 'Pieces too large or heavy for standard carriers' },
-              { name: 'Outdoor & Patio Furniture', desc: 'Teak, wrought iron, and high-end outdoor collections' },
+              { name: 'Designer Sofas & Sectionals', desc: 'Luxury seating from top brands — properly wrapped and crated', href: '/services/furniture/designer-sofas-sectionals' },
+              { name: 'Antique & Heirloom Furniture', desc: 'Period-correct handling for furniture that cannot be replaced', href: '/services/furniture/antique-heirloom-furniture' },
+              { name: 'Dining Tables & Sets', desc: 'Large tables, chairs, buffets, and china cabinets', href: '/services/furniture/dining-tables-sets' },
+              { name: 'Bedroom Furniture', desc: 'Platform beds, sleigh beds, dressers, and armoires', href: '/services/furniture/bedroom-furniture' },
+              { name: 'Custom & Handmade Pieces', desc: 'One-of-a-kind builds by local Austin craftsmen', href: '/services/furniture/custom-handmade-furniture' },
+              { name: 'Executive & Office Furniture', desc: 'Desks, conference tables, and credenzas', href: '/services/furniture/executive-office-furniture' },
+              { name: 'Oversized & Heavy Furniture', desc: 'Pieces too large or heavy for standard carriers', href: '/services/furniture/oversized-heavy-furniture' },
+              { name: 'Outdoor & Patio Furniture', desc: 'Teak, wrought iron, and high-end outdoor collections', href: '/services/furniture/outdoor-patio-furniture' },
             ].map((item, i) => (
-              <div key={i} className="flex gap-4 p-6 bg-gray-50 rounded-lg border border-gray-200">
-                <div className="flex-shrink-0">
+              <Link key={i} href={item.href} className="flex gap-4 p-6 bg-gray-50 rounded-lg border border-gray-200 hover:border-emerald/50 hover:shadow-md transition-all group">
+                <div className="flex-shrink-0 mt-1">
                   <svg className="w-6 h-6 text-emerald" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <div>
-                  <h4 className="text-lg font-bold text-gray-900 mb-1">{item.name}</h4>
-                  <p className="text-gray-600">{item.desc}</p>
+                <div className="flex-1">
+                  <h4 className="text-lg font-bold text-gray-900 mb-1 group-hover:text-emerald transition-colors">{item.name}</h4>
+                  <p className="text-gray-600 text-sm mb-2">{item.desc}</p>
+                  <span className="text-emerald text-sm font-medium">Learn more →</span>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

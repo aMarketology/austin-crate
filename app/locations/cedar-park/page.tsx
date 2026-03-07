@@ -8,8 +8,23 @@ import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = generateLocationMetadata({
   locationName: 'Cedar Park',
-  description: 'Professional specialty shipping in Cedar Park, TX — custom furniture shipping, heavy package pickup, fine art transport, oversized item shipping & medical equipment crating. Expert white-glove service.',
-  keywords: ['Cedar Park shipping', 'Cedar Park crating', 'specialty freight Cedar Park', 'art shipping Cedar Park', 'custom furniture shipping Cedar Park', 'heavy package pickup Cedar Park', 'oversized shipping Cedar Park', 'heavy item pickup Cedar Park TX'],
+  description: 'Specialty shipping & custom crating in Cedar Park, TX — furniture shipping and crating, fine art transport, heavy item pickup, oversized shipping & medical equipment. White-glove service from Austin Crate & Freight.',
+  keywords: [
+    'specialty shipping Cedar Park TX',
+    'specialty shipping Cedar Park Texas',
+    'specialty crating Cedar Park TX',
+    'specialty crating Cedar Park Texas',
+    'furniture shipping and crating Cedar Park',
+    'furniture crating Cedar Park TX',
+    'custom furniture shipping Cedar Park',
+    'fine art shipping Cedar Park',
+    'heavy package pickup Cedar Park',
+    'heavy item pickup Cedar Park TX',
+    'oversized shipping Cedar Park',
+    'white glove shipping Cedar Park TX',
+    'Cedar Park shipping company',
+    'Cedar Park crating',
+  ],
   locationUrl: '/locations/cedar-park',
 })
 
@@ -36,11 +51,11 @@ export default function CedarPark() {
       <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-700 bg-gray-800/50 backdrop-blur-sm mb-6">
-            <span className="text-xs font-medium text-gray-300 uppercase tracking-widest">Local Service Area</span>
+            <span className="text-xs font-medium text-gray-300 uppercase tracking-widest">Specialty Shipping & Crating — Cedar Park, TX</span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Specialty Shipping in Cedar Park, TX</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">Specialty Shipping & Crating in Cedar Park, TX</h1>
           <p className="text-xl text-gray-300 mb-8 max-w-3xl">
-            Trusted white-glove shipping for Cedar Park homes and businesses. Serving the H-E-B Center area, Buttercup Creek, and throughout Cedar Park with custom furniture shipping, heavy package pickup, fine art crating, oversized item transport, and medical equipment delivery.
+            Austin Crate &amp; Freight brings museum-quality specialty shipping and custom crating to Cedar Park. From furniture shipping and crating to fine art transport, heavy item pickup, and medical equipment delivery — we serve the H-E-B Center area, Buttercup Creek, Anderson Mill, and all of Cedar Park with expert white-glove care.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
@@ -65,7 +80,8 @@ export default function CedarPark() {
       {/* Services Overview */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12">Our Services in Cedar Park</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Specialty Shipping & Crating Services in Cedar Park</h2>
+          <p className="text-lg text-gray-600 mb-12 max-w-3xl">Every service we offer in Cedar Park is backed by custom crating expertise built in-house. Whether you need furniture shipping and crating, fine art transport, or heavy item pickup, we deliver with the same white-glove standard as our Austin location.</p>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <div className="p-6 border border-gray-200 rounded-xl hover:shadow-lg transition-shadow">
@@ -134,8 +150,30 @@ export default function CedarPark() {
             </div>
           </div>
 
+          {/* Specialty Crating Section */}
+          <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-8 mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Custom Crating & Specialty Shipping — Cedar Park, TX</h2>
+            <p className="text-gray-700 mb-6">
+              Need specialty crating in Cedar Park? We build every custom crate in-house at our Austin facility using our Safety Speed 6400 panel saw — cutting each piece to exact dimensions for a perfect fit. Cedar Park residents and businesses rely on us for crating furniture before long-distance moves, protecting art collections during home renovations, and shipping oversized items that standard carriers won't touch.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6 mb-6">
+              <div className="bg-white rounded-xl p-5 border border-emerald-100">
+                <h3 className="font-bold text-gray-900 mb-2">Furniture Shipping &amp; Crating</h3>
+                <p className="text-gray-600 text-sm">Custom-built crates for sofas, dining tables, antiques, bedroom sets, and designer pieces. Full furniture shipping and crating service Cedar Park residents trust.</p>
+              </div>
+              <div className="bg-white rounded-xl p-5 border border-emerald-100">
+                <h3 className="font-bold text-gray-900 mb-2">Fine Art &amp; Collectibles</h3>
+                <p className="text-gray-600 text-sm">Museum-standard crating for paintings, sculptures, and gallery pieces. Interior designers across Cedar Park use us for art collection moves and installations.</p>
+              </div>
+              <div className="bg-white rounded-xl p-5 border border-emerald-100">
+                <h3 className="font-bold text-gray-900 mb-2">Oversized &amp; Heavy Items</h3>
+                <p className="text-gray-600 text-sm">Custom crating for safes, medical equipment, industrial machinery, and anything UPS or FedEx won't ship. Liftgate-equipped trucks and two-man crews available.</p>
+              </div>
+            </div>
+          </div>
+
           <div className="bg-gray-50 rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Serving Cedar Park with Excellence</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Cedar Park Chooses Austin Crate &amp; Freight</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
@@ -191,6 +229,33 @@ export default function CedarPark() {
                   <h3 className="font-bold text-gray-900 mb-2">Competitive Pricing</h3>
                   <p className="text-gray-600">Fair, transparent pricing with no hidden fees. Free quotes for all Cedar Park shipments.</p>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* FAQ Section */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Specialty Shipping Cedar Park TX — Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div className="border border-gray-200 rounded-xl p-6">
+                <h3 className="font-bold text-gray-900 mb-2">Do you offer specialty shipping and crating in Cedar Park, TX?</h3>
+                <p className="text-gray-600">Yes. Austin Crate &amp; Freight provides full specialty shipping and custom crating services throughout Cedar Park, Texas — including pickup from your Cedar Park home or business, in-house crating at our Austin facility, and delivery anywhere in the US.</p>
+              </div>
+              <div className="border border-gray-200 rounded-xl p-6">
+                <h3 className="font-bold text-gray-900 mb-2">Can you handle furniture shipping and crating for Cedar Park residents?</h3>
+                <p className="text-gray-600">Absolutely. We specialize in furniture shipping and crating for Cedar Park — from designer sectionals and antique dining tables to bedroom sets and executive office furniture. We custom-build every crate in-house for a perfect fit and maximum protection.</p>
+              </div>
+              <div className="border border-gray-200 rounded-xl p-6">
+                <h3 className="font-bold text-gray-900 mb-2">What areas of Cedar Park do you serve?</h3>
+                <p className="text-gray-600">We serve all Cedar Park neighborhoods and zip codes including Anderson Mill, Buttercup Creek, Brushy Creek, the H-E-B Center area, Crystal Falls, Forest Creek, and all surrounding communities. Same-day quotes available.</p>
+              </div>
+              <div className="border border-gray-200 rounded-xl p-6">
+                <h3 className="font-bold text-gray-900 mb-2">How much does specialty shipping cost in Cedar Park?</h3>
+                <p className="text-gray-600">Pricing depends on the size, weight, and destination of your shipment. We always provide free, no-obligation quotes. Call us at (512) 240-9818 or submit a quote request online and we'll respond same day.</p>
+              </div>
+              <div className="border border-gray-200 rounded-xl p-6">
+                <h3 className="font-bold text-gray-900 mb-2">Do you ship from Cedar Park to other states?</h3>
+                <p className="text-gray-600">Yes — we handle both local Cedar Park deliveries and nationwide freight. We coordinate with trusted LTL (less-than-truckload) carriers for cross-country shipments, ensuring your items are crated and protected for the full journey.</p>
               </div>
             </div>
           </div>
