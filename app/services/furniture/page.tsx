@@ -373,6 +373,36 @@ export default function FurnitureShipping() {
         </div>
       </section>
 
+      {/* Furniture Specialist Services */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 mb-3 text-center">Furniture Specialist Services</h2>
+          <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">Every furniture type has its own shipping challenges. We specialize in all of them — click to learn about your specific piece.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              { href: '/services/furniture/designer-sofas-sectionals', title: 'Luxury Sofas & Sectionals', desc: 'RH, Natuzzi, Roche Bobois, and custom sectionals — fabric and leather-safe wrapping, modular disassembly, and white-glove placement.' },
+              { href: '/services/furniture/dining-tables-sets', title: 'Dining Tables & Sets', desc: 'Large solid-wood, live-edge, glass-top, and extension tables — leg removal, separate glass crating, and chair bundling.' },
+              { href: '/services/furniture/bedroom-furniture', title: 'Bedroom Furniture', desc: 'Beds, dressers, armoires, and complete bedroom sets — full disassembly, mirror crating, and reassembly at delivery.' },
+              { href: '/services/furniture/designer-chairs', title: 'Designer Chairs', desc: 'Eames, Herman Miller, Knoll, and Barcelona chairs — geometry-specific crating for exposed frames and delicate upholstery.' },
+              { href: '/services/furniture/cabinets-credenzas', title: 'Cabinets & Credenzas', desc: 'Media credenzas, china cabinets, sideboards, and display cabinets — glass panel protection and door-securing crating.' },
+              { href: '/services/furniture/grandfather-clock-shipping', title: 'Grandfather Clocks', desc: 'Pendulum removal, weight packaging, chime rod padding, and tall-case crating for floor clocks and longcase movements.' },
+              { href: '/services/furniture/marble-stone-furniture', title: 'Marble & Stone Furniture', desc: 'Marble dining tables, travertine tops, granite surfaces — weight-rated crating, edge protection, and top/base separation.' },
+              { href: '/services/furniture/antique-heirloom-furniture', title: 'Antique & Heirloom Furniture', desc: 'Museum-safe techniques for period furniture — no adhesives on antique finishes, custom joinery-aware disassembly.' },
+              { href: '/services/furniture/antique-furniture-shipping', title: 'Antique Furniture Shipping TX', desc: 'Texas-wide and nationwide shipping for antique dealers, auction houses, and private collectors.' },
+              { href: '/services/furniture/custom-handmade-furniture', title: 'Custom & Handmade Furniture', desc: 'One-of-a-kind pieces from Austin artisans and custom woodworkers — shipping your custom piece like it was made to be shipped.' },
+              { href: '/services/furniture/executive-office-furniture', title: 'Executive Office Furniture', desc: 'Executive desks, credenzas, conference tables, and high-value workstations — professional crating for office relocations.' },
+              { href: '/services/furniture/outdoor-patio-furniture', title: 'Outdoor & Patio Furniture', desc: 'Heavy teak, wrought iron, and luxury outdoor sets — protected shipping for weather-grade and designer patio pieces.' },
+              { href: '/services/furniture/oversized-heavy-furniture', title: 'Oversized & Heavy Furniture', desc: 'Pieces too large or heavy for standard carriers — liftgate service, two-person crews, and freight-rated crating.' },
+            ].map((item, i) => (
+              <Link key={i} href={item.href} className="group block bg-white border border-gray-200 rounded-xl p-5 hover:border-emerald/50 hover:shadow-sm transition-all duration-200">
+                <h3 className="font-bold text-gray-900 mb-2 group-hover:text-emerald transition-colors">{item.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">

@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 import { generateServiceMetadata, generateServiceSchema, SITE_CONFIG } from '@/lib/seo-utils'
 import SEOWrapper from '@/app/components/SEOWrapper'
-import { getEntry } from '@/lib/content-registry'
+import ServicesGrid from '@/app/components/ServicesGrid'
 
 const SLUG = '/services/furniture/designer-sofas-sectionals'
 
@@ -122,6 +122,7 @@ export default function DesignerSofaShipping() {
                 { q: 'Do you ship sectionals in one piece or disassembled?', a: 'We assess each sectional individually. Most large sectionals ship disassembled into their modular sections, with all hardware carefully bagged and labeled. We reassemble on delivery.' },
                 { q: 'Will you crate my sofa for cross-country shipping?', a: 'Yes. For any long-distance shipment going through LTL freight, we strongly recommend a custom wood crate built in our Austin shop. We provide this end-to-end.' },
                 { q: 'How much does sofa shipping cost in Austin?', a: 'Local designer sofa delivery in Austin typically starts at $200–$400 depending on size and access. Long-distance crated freight starts at $400+. Call (512) 240-9818 for a free quote.' },
+                { q: 'Can you ship a European brand sectional (Roche Bobois, B&B Italia)?', a: 'Yes. We ship international designer sectionals regularly. Pieces from Ligne Roset, Roche Bobois, B&B Italia, and Cassina require specialist handling due to precision-fit modular connections and premium leather or fabric finishes. We photograph every connection point and bag all hardware for correct reassembly at the destination.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                   <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>
@@ -131,6 +132,8 @@ export default function DesignerSofaShipping() {
             </div>
           </div>
         </section>
+
+        <ServicesGrid title="More Furniture Shipping Services" showSubLinks exclude={['/services/furniture']} />
 
         {/* CTA */}
         <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-16 px-4">
@@ -146,11 +149,19 @@ export default function DesignerSofaShipping() {
                 Get a Free Quote
               </Link>
             </div>
-            <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm text-grey-400">
-              <Link href="/services/furniture/antique-heirloom-furniture" className="hover:text-emerald transition">Antique Furniture →</Link>
-              <Link href="/services/furniture/dining-tables-sets" className="hover:text-emerald transition">Dining Tables →</Link>
-              <Link href="/services/furniture/oversized-heavy-furniture" className="hover:text-emerald transition">Oversized Furniture →</Link>
-              <Link href="/services/furniture" className="hover:text-emerald transition">All Furniture Shipping →</Link>
+            <div className="mt-8 border-t border-grey-700 pt-6">
+              <p className="text-grey-400 text-xs uppercase tracking-wider mb-3">All Furniture Services</p>
+              <div className="flex flex-wrap justify-center gap-2 text-sm">
+                <Link href="/services/furniture/dining-tables-sets" className="px-3 py-1 border border-grey-700 rounded-full text-grey-300 hover:text-emerald hover:border-emerald/50 transition-colors">Dining Tables</Link>
+                <Link href="/services/furniture/bedroom-furniture" className="px-3 py-1 border border-grey-700 rounded-full text-grey-300 hover:text-emerald hover:border-emerald/50 transition-colors">Bedroom Furniture</Link>
+                <Link href="/services/furniture/designer-chairs" className="px-3 py-1 border border-grey-700 rounded-full text-grey-300 hover:text-emerald hover:border-emerald/50 transition-colors">Designer Chairs</Link>
+                <Link href="/services/furniture/cabinets-credenzas" className="px-3 py-1 border border-grey-700 rounded-full text-grey-300 hover:text-emerald hover:border-emerald/50 transition-colors">Cabinets &amp; Credenzas</Link>
+                <Link href="/services/furniture/grandfather-clock-shipping" className="px-3 py-1 border border-grey-700 rounded-full text-grey-300 hover:text-emerald hover:border-emerald/50 transition-colors">Grandfather Clocks</Link>
+                <Link href="/services/furniture/marble-stone-furniture" className="px-3 py-1 border border-grey-700 rounded-full text-grey-300 hover:text-emerald hover:border-emerald/50 transition-colors">Marble &amp; Stone</Link>
+                <Link href="/services/furniture/antique-heirloom-furniture" className="px-3 py-1 border border-grey-700 rounded-full text-grey-300 hover:text-emerald hover:border-emerald/50 transition-colors">Antique Heirloom</Link>
+                <Link href="/services/furniture/oversized-heavy-furniture" className="px-3 py-1 border border-grey-700 rounded-full text-grey-300 hover:text-emerald hover:border-emerald/50 transition-colors">Oversized Furniture</Link>
+                <Link href="/services/furniture" className="px-3 py-1 border border-emerald/40 rounded-full text-emerald hover:bg-emerald/10 transition-colors">All Furniture →</Link>
+              </div>
             </div>
           </div>
         </section>

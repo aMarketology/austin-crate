@@ -378,6 +378,34 @@ export default function FineArtShipping() {
         </div>
       </section>
 
+      {/* Fine Art Specialist Services */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-3">Fine Art Specialist Services</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">Every category of fine art has unique shipping requirements. Explore our specialist pages for your specific type of artwork or collection.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              { href: '/services/fine-art/painting-shipping', title: 'Painting Shipping', desc: 'Canvas, framed art, oil paintings, watercolors — acid-free crating with glazing protection.' },
+              { href: '/services/fine-art/sculpture-shipping', title: 'Sculpture Shipping', desc: 'Bronze, stone, ceramic, wood, and glass sculpture — custom cradles and vibration isolation.' },
+              { href: '/services/fine-art/art-installation-shipping', title: 'Art Installation Shipping', desc: 'Multi-component installations, large-scale works, and site-specific pieces.' },
+              { href: '/services/fine-art/fragile-item-shipping', title: 'Fragile Item Shipping', desc: 'Glass, ceramics, mirrors, electronics, and anything that standard carriers refuse.' },
+              { href: '/services/fine-art/gallery-exhibit-shipping', title: 'Gallery Exhibit Shipping', desc: 'Gallery show logistics, art fair shipping, and traveling exhibition management.' },
+              { href: '/services/fine-art/antique-artifacts-shipping', title: 'Antique Artifact Shipping', desc: 'Museum-quality crating for pre-Columbian, Asian antiques, and archaeological objects.' },
+              { href: '/services/fine-art/rare-collectibles-shipping', title: 'Rare Collectibles Shipping', desc: 'Graded cards, coins, sports memorabilia, vintage toys — tamper-evident and documented.' },
+              { href: '/services/fine-art/glass-art-shipping', title: 'Glass Art Shipping', desc: 'Blown glass, cast glass, stained glass panels — vibration isolation engineering.' },
+              { href: '/services/fine-art/museum-display-shipping', title: 'Museum Display Shipping', desc: 'Loan agreement compliance, Object ID documentation, courier coordination for institutions.' },
+            ].map((service) => (
+              <Link key={service.href} href={service.href} className="group p-5 bg-gray-50 border border-gray-200 rounded-xl hover:border-emerald/40 hover:shadow-md transition-all duration-200">
+                <h3 className="font-bold text-gray-900 mb-2 group-hover:text-emerald transition-colors">{service.title} →</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{service.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">

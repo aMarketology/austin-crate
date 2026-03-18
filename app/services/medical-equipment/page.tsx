@@ -259,6 +259,55 @@ export default function MedicalEquipment() {
         </div>
       </section>
 
+      {/* Medical Specialist Services */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 mb-3 text-center">Specialist Medical Equipment Services</h2>
+          <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">
+            Each category of medical equipment has its own handling requirements. Explore our dedicated services.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              {
+                href: '/services/medical-equipment/imaging-equipment',
+                title: 'Imaging Equipment',
+                desc: 'X-ray, MRI, CT, ultrasound, and fluoroscopy systems with OEM-spec shock protection and orientation control.',
+              },
+              {
+                href: '/services/medical-equipment/lab-equipment',
+                title: 'Lab Equipment',
+                desc: 'Centrifuges, analyzers, microscopes, PCR machines, and biosafety cabinets with rotor protection and decontamination documentation.',
+              },
+              {
+                href: '/services/medical-equipment/diagnostic-devices',
+                title: 'Diagnostic Devices',
+                desc: 'Patient monitors, ECG machines, analyzers, and portable diagnostics with display panel and probe protection.',
+              },
+              {
+                href: '/services/medical-equipment/surgical-equipment',
+                title: 'Surgical Equipment',
+                desc: 'OR tables, surgical lights, laparoscopic towers, and robotic systems with precision rigging and sterile barrier maintenance.',
+              },
+              {
+                href: '/services/medical-equipment/sensitive-electronics',
+                title: 'Sensitive Electronics',
+                desc: 'Infusion pumps, defibrillators, ventilators, and calibration-critical devices with anti-static and shock-isolated crating.',
+              },
+            ].map(({ href, title, desc }) => (
+              <a
+                key={href}
+                href={href}
+                className="group bg-white rounded-xl border border-gray-200 p-6 hover:border-emerald-400 hover:shadow-md transition-all"
+              >
+                <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-emerald-700 transition-colors">{title}</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{desc}</p>
+                <span className="mt-4 inline-block text-sm font-medium text-emerald-600 group-hover:underline">Learn more →</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">

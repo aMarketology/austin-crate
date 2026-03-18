@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 import { generateServiceMetadata, generateServiceSchema, SITE_CONFIG } from '@/lib/seo-utils'
 import SEOWrapper from '@/app/components/SEOWrapper'
+import ServicesGrid from '@/app/components/ServicesGrid'
 
 const SLUG = '/services/furniture/dining-tables-sets'
 
@@ -134,6 +135,7 @@ export default function DiningTableShipping() {
                 { q: 'Do you handle glass-top dining tables?', a: 'Yes. Glass tops travel in a dedicated crate, independently padded on all sides with foam and rigid framing. We do not combine glass tops with the table base in the same crate.' },
                 { q: 'Will you disassemble and reassemble my dining table?', a: 'Yes. Leg removal and reinstallation is included in our service. All hardware is bagged and labeled. We reassemble at delivery and level the table in place.' },
                 { q: 'How much does dining table shipping cost in Austin?', a: 'Local dining table shipping in Austin starts around $200–$350. Long-distance crated freight depends on dimensions and destination. Call (512) 240-9818 for a free, itemized quote.' },
+                { q: 'Can you ship a live-edge or single-slab dining table?', a: 'Yes. Live-edge and single-slab tables are some of the most challenging pieces — they are often very heavy, irregularly shaped, and have finished undersides as well as tops. We build the crate for the exact shape of the slab with continuous edge support and foam blocking to prevent any flex along the grain.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                   <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>
@@ -143,6 +145,8 @@ export default function DiningTableShipping() {
             </div>
           </div>
         </section>
+
+        <ServicesGrid title="More Furniture Shipping Services" showSubLinks exclude={['/services/furniture']} />
 
         {/* CTA */}
         <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-16 px-4">
@@ -158,11 +162,19 @@ export default function DiningTableShipping() {
                 Get a Free Quote
               </Link>
             </div>
-            <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm text-grey-400">
-              <Link href="/services/furniture/antique-heirloom-furniture" className="hover:text-emerald transition">Antique Furniture →</Link>
-              <Link href="/services/furniture/bedroom-furniture" className="hover:text-emerald transition">Bedroom Furniture →</Link>
-              <Link href="/services/furniture/oversized-heavy-furniture" className="hover:text-emerald transition">Oversized Furniture →</Link>
-              <Link href="/services/furniture" className="hover:text-emerald transition">All Furniture Shipping →</Link>
+            <div className="mt-8 border-t border-grey-700 pt-6">
+              <p className="text-grey-400 text-xs uppercase tracking-wider mb-3">All Furniture Services</p>
+              <div className="flex flex-wrap justify-center gap-2 text-sm">
+                <Link href="/services/furniture/designer-sofas-sectionals" className="px-3 py-1 border border-grey-700 rounded-full text-grey-300 hover:text-emerald hover:border-emerald/50 transition-colors">Sofas &amp; Sectionals</Link>
+                <Link href="/services/furniture/bedroom-furniture" className="px-3 py-1 border border-grey-700 rounded-full text-grey-300 hover:text-emerald hover:border-emerald/50 transition-colors">Bedroom Furniture</Link>
+                <Link href="/services/furniture/designer-chairs" className="px-3 py-1 border border-grey-700 rounded-full text-grey-300 hover:text-emerald hover:border-emerald/50 transition-colors">Designer Chairs</Link>
+                <Link href="/services/furniture/cabinets-credenzas" className="px-3 py-1 border border-grey-700 rounded-full text-grey-300 hover:text-emerald hover:border-emerald/50 transition-colors">Cabinets &amp; Credenzas</Link>
+                <Link href="/services/furniture/grandfather-clock-shipping" className="px-3 py-1 border border-grey-700 rounded-full text-grey-300 hover:text-emerald hover:border-emerald/50 transition-colors">Grandfather Clocks</Link>
+                <Link href="/services/furniture/marble-stone-furniture" className="px-3 py-1 border border-grey-700 rounded-full text-grey-300 hover:text-emerald hover:border-emerald/50 transition-colors">Marble &amp; Stone</Link>
+                <Link href="/services/furniture/antique-heirloom-furniture" className="px-3 py-1 border border-grey-700 rounded-full text-grey-300 hover:text-emerald hover:border-emerald/50 transition-colors">Antique Heirloom</Link>
+                <Link href="/services/furniture/oversized-heavy-furniture" className="px-3 py-1 border border-grey-700 rounded-full text-grey-300 hover:text-emerald hover:border-emerald/50 transition-colors">Oversized Furniture</Link>
+                <Link href="/services/furniture" className="px-3 py-1 border border-emerald/40 rounded-full text-emerald hover:bg-emerald/10 transition-colors">All Furniture →</Link>
+              </div>
             </div>
           </div>
         </section>

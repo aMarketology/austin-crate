@@ -9,6 +9,33 @@ import Footer from '@/app/components/Footer'
 export default function BlogIndexClient() {
   const blogPosts = [
     {
+      slug: 'what-is-white-glove-shipping',
+      title: 'What Is White-Glove Shipping? (And Is It Worth It?)',
+      excerpt: 'A plain-English explanation of white-glove delivery — what it includes, when to choose it, and whether the cost is worth it for your item.',
+      date: 'March 25, 2026',
+      category: 'Shipping Guide',
+      readTime: '5 min read',
+      image: '🤍',
+    },
+    {
+      slug: 'piano-shipping-austin',
+      title: 'Piano Shipping in Austin, Texas: Complete Guide & Costs for 2026',
+      excerpt: 'From uprights to concert grands — professional piano crating, moving, and transport in Central Texas. Costs, process, and what to ask before booking.',
+      date: 'March 22, 2026',
+      category: 'Specialist Shipping',
+      readTime: '6 min read',
+      image: '🎹',
+    },
+    {
+      slug: 'ship-large-furniture-texas',
+      title: 'How to Ship Large Furniture Across Texas (Without the Headaches)',
+      excerpt: 'Custom crating, costs, and what to expect when moving large furniture pieces across the Lone Star State — antiques, designer sofas, dining tables, and more.',
+      date: 'March 18, 2026',
+      category: 'Shipping Guide',
+      readTime: '7 min read',
+      image: '🛋️',
+    },
+    {
       slug: 'safety-speed-6400-panel-saw',
       title: 'New Equipment Spotlight: Safety Speed 6400 Panel Saw',
       excerpt: 'We just added the Safety Speed 6400 vertical panel saw to our shop. See how this precision machine is raising the bar on every custom crate we build.',
