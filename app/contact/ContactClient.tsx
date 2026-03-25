@@ -136,16 +136,8 @@ export default function ContactClient() {
       <Navigation />
       <Breadcrumbs />
 
-      {/* Page Header */}
-      <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-24 px-4 mt-20">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-5xl font-bold mb-4">Contact Us</h1>
-          <p className="text-xl text-grey-300">Get your free shipping quote today</p>
-        </div>
-      </section>
-
       {/* Contact Section */}
-      <section className="flex-1 py-16 px-4 bg-white">
+      <section className="flex-1 py-16 px-4 bg-white mt-20">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
           
           {/* Contact Info */}

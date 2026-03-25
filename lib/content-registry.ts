@@ -631,6 +631,58 @@ export const contentRegistry: ContentEntry[] = [
     changeFrequency: 'monthly',
   },
   {
+    slug: '/blog/exxonmobil-redomicile-texas',
+    title: 'ExxonMobil Looks to Move Its Legal Home from New Jersey to Texas | Austin TX',
+    description:
+      "ExxonMobil's board unanimously recommends redomiciling its corporate registration from New Jersey to Texas, citing the state's legal environment and the new Texas Business Court.",
+    publishDate: '2026-03-10',
+    modifiedDate: '2026-03-10',
+    category: 'Blog',
+    tags: ['ExxonMobil Texas', 'ExxonMobil redomicile', 'Texas business news', 'corporate relocation Texas', 'Texas Business Court', 'Spring Texas', 'Texas economy 2026'],
+    author: 'Austin Crate & Freight',
+    priority: 0.7,
+    changeFrequency: 'monthly',
+  },
+  {
+    slug: '/blog/austin-kiva-hub-small-business-microloans',
+    title: 'City of Austin Launches Kiva Hub to Support Small Business Owners | Austin TX',
+    description:
+      'Austin partners with global nonprofit Kiva to launch its first Kiva Hub — offering crowdfunded microloans from $1,000 to $15,000 at 0% interest with no minimum credit score required.',
+    publishDate: '2026-03-24',
+    modifiedDate: '2026-03-24',
+    category: 'Blog',
+    tags: ['Kiva Hub Austin', 'small business loans Austin', 'Austin microloan', 'Austin Economic Development', '0% interest business loan', 'Austin entrepreneur resources'],
+    author: 'Austin Crate & Freight',
+    priority: 0.7,
+    changeFrequency: 'monthly',
+  },
+  {
+    slug: '/blog/best-furniture-stores-austin-texas',
+    title: 'Best Furniture Stores in Austin, Texas (2026 Guide) | Austin Crate & Freight',
+    description:
+      'From Four Hands Home in South Austin to sustainable woodworkers in East Austin — the top-rated furniture stores in the Austin area for 2026, plus budget-friendly and free furniture resources.',
+    publishDate: '2026-03-25',
+    modifiedDate: '2026-03-25',
+    category: 'Blog',
+    tags: ['best furniture stores Austin', 'Austin furniture', 'Four Hands Home Austin', 'Mockingbird Made', 'Louis Shanks Austin', 'mid-century modern Austin', 'furniture shopping Austin TX'],
+    author: 'Austin Crate & Freight',
+    priority: 0.7,
+    changeFrequency: 'monthly',
+  },
+  {
+    slug: '/blog/moveoutatx-austin-resource-recovery-returns-in-partnership-to-ut-office-of-sustainability',
+    title: 'MoveOutATX and Free Furniture Market Return for Summer 2026 | Austin TX',
+    description:
+      'Austin Resource Recovery and the UT Office of Sustainability bring back MoveOutATX for summer 2026 — donation stations and free furniture market returning to West Campus in late July.',
+    publishDate: '2026-03-25',
+    modifiedDate: '2026-03-25',
+    category: 'Blog',
+    tags: ['MoveOutATX', 'Austin Resource Recovery', 'free furniture Austin', 'UT Austin sustainability', 'West Campus Austin', 'community events Austin 2026'],
+    author: 'Austin Crate & Freight',
+    priority: 0.6,
+    changeFrequency: 'monthly',
+  },
+  {
     slug: '/blog/lottery-ticket-round-rock',
     title: '$1 Million Scratch Lottery Ticket Sold at Round Rock Gas Station',
     description:
