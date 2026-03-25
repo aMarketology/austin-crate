@@ -214,22 +214,32 @@ export default function HomeClient() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-0"
           >
-            <h1 className="font-serif text-5xl sm:text-6xl font-bold text-grey-900 tracking-tight leading-none">
+            <h1 className="font-serif text-6xl sm:text-7xl font-bold text-grey-900 tracking-tighter leading-none">
               Austin Crate
             </h1>
-            <h2 className="font-serif text-5xl sm:text-6xl font-bold text-emerald leading-none tracking-tight">
-              & Freight
+            <h2 className="font-serif text-6xl sm:text-7xl font-bold text-emerald leading-none tracking-tighter">
+              &amp; Freight
             </h2>
           </motion.div>
 
-          {/* Tagline with animation */}
+          {/* Tagline h3 */}
+          <motion.h3
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.30 }}
+            className="font-sans text-lg sm:text-xl text-grey-800 font-light leading-snug mt-4 px-2"
+          >
+            Austin&apos;s Premier Specialty Shipping: Custom Crating, Furniture Shipping &amp; Crating, Heavy Pickup &amp; Fine Art Transport
+          </motion.h3>
+
+          {/* Description */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.35 }}
-            className="font-sans text-base sm:text-lg text-grey-700 mt-6 mb-8 font-light leading-relaxed max-w-md mx-auto px-2"
+            className="font-sans text-sm sm:text-base text-grey-600 mt-3 mb-6 font-light leading-relaxed max-w-md mx-auto px-2"
           >
-            Austin&apos;s premier specialty shipping &amp; custom crating company — furniture shipping &amp; crating, heavy package pickup, fine art transport &amp; medical equipment shipping.
+            Austin&apos;s trusted specialty shipping &amp; custom crating company. Expert furniture shipping and crating, heavy item pickup, fine art crating, and medical equipment transport, delivered with museum-quality care across Austin and nationwide.
           </motion.p>
 
           {/* CTA Buttons - Animated */}
@@ -249,10 +259,10 @@ export default function HomeClient() {
               <span>(512) 240-9818</span>
             </a>
             <Link
-              href="/contact"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border-2 border-grey-600 hover:border-emerald rounded-xl font-bold text-grey-800 text-base hover:bg-emerald/5 transition-all hover:scale-[1.02] active:scale-95"
+              href="/services"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white border-2 border-emerald rounded-xl font-bold text-emerald text-base hover:bg-emerald hover:text-white transition-all hover:scale-[1.02] active:scale-95"
             >
-              <span>Get Quote</span>
+              <span>Our Services</span>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
@@ -324,6 +334,104 @@ export default function HomeClient() {
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
               </svg>
               <span className="font-medium">5-Star</span>
+            </div>
+          </motion.div>
+
+          {/* Image Gallery — mirrors desktop right column */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.1 }}
+            className="w-full mt-8 space-y-3 px-2"
+          >
+            {/* Featured image */}
+            <Link href="/services/furniture" className="block">
+              <div className="relative h-48 rounded-2xl overflow-hidden border-2 border-grey-200 shadow-lg hover:border-emerald transition-all hover:scale-[1.02]">
+                <Image
+                  src="/2.jpg"
+                  alt="Designer Furniture Shipping Austin — White Glove Furniture Transport Services"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                  quality={75}
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-5">
+                  <span className="text-white font-bold text-base">Furniture Transport</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Fine Art + Medical row */}
+            <div className="grid grid-cols-2 gap-3">
+              <Link href="/services/fine-art" className="block">
+                <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md hover:border-emerald transition-all hover:scale-[1.02]">
+                  <Image
+                    src="/1.jpg"
+                    alt="Fine Art Shipping Austin Texas — Museum Quality Crating"
+                    fill
+                    sizes="50vw"
+                    className="object-cover"
+                    quality={75}
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-3">
+                    <span className="text-white text-sm font-bold">Fine Art Expertise</span>
+                  </div>
+                </div>
+              </Link>
+              <Link href="/services/medical-equipment" className="block">
+                <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md hover:border-emerald transition-all hover:scale-[1.02]">
+                  <Image
+                    src="/3.jpg"
+                    alt="Medical Equipment Shipping Austin TX"
+                    fill
+                    sizes="50vw"
+                    className="object-cover"
+                    quality={75}
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-3">
+                    <span className="text-white text-sm font-bold">Medical Equipment</span>
+                  </div>
+                </div>
+              </Link>
+            </div>
+
+            {/* Heavy Items + General row */}
+            <div className="grid grid-cols-2 gap-3">
+              <Link href="/services/shipping-and-crating" className="block">
+                <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md hover:border-emerald transition-all hover:scale-[1.02]">
+                  <div className="absolute inset-0 bg-gradient-to-br from-emerald/90 to-emerald-600/90 flex flex-col items-center justify-center p-3">
+                    <svg className="w-7 h-7 text-white mb-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                    </svg>
+                    <span className="text-white text-sm font-bold text-center">Heavy Item Pickup</span>
+                  </div>
+                </div>
+              </Link>
+              <Link href="/services" className="block">
+                <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md hover:border-emerald transition-all hover:scale-[1.02]">
+                  <Image
+                    src="/IMG_4446_1703172460423.jpg"
+                    alt="General Shipping and Crating Austin TX"
+                    fill
+                    sizes="50vw"
+                    className="object-cover"
+                    quality={75}
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-3">
+                    <span className="text-white text-sm font-bold">General Shipping</span>
+                  </div>
+                </div>
+              </Link>
+            </div>
+
+            {/* Experience badge */}
+            <div className="p-4 rounded-xl bg-white border-2 border-emerald/20 text-center shadow-sm">
+              <div className="text-3xl font-bold text-emerald mb-0.5">10+</div>
+              <div className="text-xs text-grey-600 font-medium uppercase tracking-wider">Years Experience</div>
             </div>
           </motion.div>
         </div>
