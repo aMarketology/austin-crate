@@ -115,6 +115,14 @@ export default function ContactClient() {
         templateParams,
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       )
+      // Fire Google Ads conversion before redirecting
+      if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
+        ;(window as any).gtag('event', 'conversion', {
+          send_to: 'AW-17672216220/jQfaCPH1vI8cEJy94upB',
+          value: 20.0,
+          currency: 'USD',
+        })
+      }
       router.push('/thank-you')
     } catch (err: any) {
       console.error('EmailJS error:', err)

@@ -1,36 +1,16 @@
-'use client'
-
-import { useEffect } from 'react'
-import { usePathname, useSearchParams } from 'next/navigation'
-import { pageview, GA_MEASUREMENT_ID } from '@/lib/analytics'
+const AW_TAG_ID = 'AW-17672216220'
 
 /**
- * Google Analytics Component
- * Automatically tracks page views on route changes
- * 
- * Usage: Add to app/layout.tsx as a client component
+ * Google Ads tag (gtag.js)
+ * Tracks conversions for Google Ads campaign AW-17672216220
  */
 export default function Analytics() {
-  const pathname = usePathname()
-  const searchParams = useSearchParams()
-
-  useEffect(() => {
-    if (pathname && GA_MEASUREMENT_ID) {
-      const url = pathname + (searchParams?.toString() ? `?${searchParams.toString()}` : '')
-      pageview(url)
-    }
-  }, [pathname, searchParams])
-
-  if (!GA_MEASUREMENT_ID) {
-    return null
-  }
-
   return (
     <>
-      {/* Google Analytics gtag.js */}
+      {/* Google tag (gtag.js) */}
       <script
         async
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${AW_TAG_ID}`}
       />
       <script
         dangerouslySetInnerHTML={{
@@ -38,12 +18,7 @@ export default function Analytics() {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}', {
-              page_path: window.location.pathname,
-              send_page_view: true,
-              anonymize_ip: true,
-              cookie_flags: 'SameSite=None;Secure'
-            });
+            gtag('config', '${AW_TAG_ID}');
           `,
         }}
       />

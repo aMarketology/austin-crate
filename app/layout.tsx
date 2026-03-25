@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { Suspense } from 'react'
 import { Playfair_Display, Inter } from 'next/font/google'
 import { organizationSchema, servicesSchema, reviewSchema } from '@/lib/schema'
 import { websiteSchema } from '@/lib/website-schema'
@@ -155,9 +154,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </head>
       <body className={`${playfair.variable} ${inter.variable} font-sans antialiased`}>
-        <Suspense fallback={null}>
-          <Analytics />
-        </Suspense>
+        <Analytics />
         {children}
         <FooterEnhanced />
         <StickyQuoteButton />
