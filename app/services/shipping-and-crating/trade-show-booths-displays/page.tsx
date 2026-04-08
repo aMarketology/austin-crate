@@ -52,7 +52,7 @@ export default function TradeShowBoothsDisplays() {
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-5">Trade Show Booth & Display Shipping in Austin, TX</h1>
             <p className="text-xl text-grey-300 mb-8 max-w-3xl">
-              Trade show deadlines are absolute. We schedule carriers that hit show-site delivery windows, log every component, and handle return pickups — so your booth arrives ready to build and comes home in one piece.
+              Trade show deadlines are absolute. We schedule carriers that hit show-site delivery windows, log every component, and handle return pickups   so your booth arrives ready to build and comes home in one piece.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a

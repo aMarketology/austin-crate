@@ -72,15 +72,15 @@ export default function SafetySpeed6400Blog() {
           <article className="max-w-3xl mx-auto prose prose-lg">
 
             <p className="lead text-xl text-grey-700 mb-8">
-              We are excited to introduce the newest addition to the Austin Crate &amp; Freight shop floor: the <strong>Safety Speed 6400 vertical panel saw</strong>. This machine is a serious upgrade — and it directly translates into tighter, cleaner, and more reliable custom crates for every customer we serve.
+              We are excited to introduce the newest addition to the Austin Crate &amp; Freight shop floor: the <strong>Safety Speed 6400 vertical panel saw</strong>. This machine is a serious upgrade   and it directly translates into tighter, cleaner, and more reliable custom crates for every customer we serve.
             </p>
 
             <h2>What Is the Safety Speed 6400?</h2>
             <p>
-              The Safety Speed 6400 is a heavy-duty vertical panel saw built for professional woodworking and industrial applications. Designed and manufactured in the United States, it is purpose-built to rip and crosscut large sheet goods — plywood, OSB, MDF, and hardwood panels — with extreme accuracy and repeatable results.
+              The Safety Speed 6400 is a heavy-duty vertical panel saw built for professional woodworking and industrial applications. Designed and manufactured in the United States, it is purpose-built to rip and crosscut large sheet goods   plywood, OSB, MDF, and hardwood panels   with extreme accuracy and repeatable results.
             </p>
             <p>
-              Unlike a standard table saw, a vertical panel saw holds the material upright against a wall-mounted frame. This means we can safely and efficiently process full 4×8 and 4×10 sheets without taking up a massive footprint on the shop floor — and without the safety hazards that come with man-handling large panels through a horizontal blade.
+              Unlike a standard table saw, a vertical panel saw holds the material upright against a wall-mounted frame. This means we can safely and efficiently process full 4×8 and 4×10 sheets without taking up a massive footprint on the shop floor   and without the safety hazards that come with man-handling large panels through a horizontal blade.
             </p>
 
             <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 my-8 not-prose">
@@ -97,7 +97,7 @@ export default function SafetySpeed6400Blog() {
 
             <h2>Why a Panel Saw Matters for Custom Crating</h2>
             <p>
-              Custom shipping crates are only as good as the cuts that build them. When panels are even a fraction of an inch off, gaps form, corners won&apos;t close flush, and the structural integrity of the crate is compromised. For items like fine art, medical equipment, and antique furniture — where vibration, moisture, and impact protection are critical — there is zero room for sloppy joinery.
+              Custom shipping crates are only as good as the cuts that build them. When panels are even a fraction of an inch off, gaps form, corners won&apos;t close flush, and the structural integrity of the crate is compromised. For items like fine art, medical equipment, and antique furniture   where vibration, moisture, and impact protection are critical   there is zero room for sloppy joinery.
             </p>
             <p>
               Before adding the Safety Speed 6400 to our shop, our team was already producing high-quality crates. But we knew that investing in a dedicated panel saw would allow us to cut faster, hold tighter tolerances, and waste less material in the process.
@@ -107,17 +107,17 @@ export default function SafetySpeed6400Blog() {
 
             <h3>Tighter Tolerances, Stronger Crates</h3>
             <p>
-              The 6400&apos;s precision fence system and roller-bearing carriage allow cuts accurate to within 1/32". For museum-quality crating — where foam inserts must fit perfectly and panels must seal completely — that level of precision matters enormously.
+              The 6400&apos;s precision fence system and roller-bearing carriage allow cuts accurate to within 1/32". For museum-quality crating   where foam inserts must fit perfectly and panels must seal completely   that level of precision matters enormously.
             </p>
 
             <h3>Faster Turnaround</h3>
             <p>
-              A vertical panel saw dramatically reduces the time it takes to process sheet goods. What used to require two people and multiple setups can now be handled by one operator in a single pass. That means we can quote faster builds without sacrificing quality — a direct win for customers with tight timelines.
+              A vertical panel saw dramatically reduces the time it takes to process sheet goods. What used to require two people and multiple setups can now be handled by one operator in a single pass. That means we can quote faster builds without sacrificing quality   a direct win for customers with tight timelines.
             </p>
 
             <h3>Cleaner Cuts on Fine Materials</h3>
             <p>
-              The 6400 pairs with a fine-tooth scoring blade that virtually eliminates tearout on plywood face veneers. When we are building interior panels for fine art crates or decorative furniture pieces, the finish quality of every cut panel matters — both structurally and aesthetically.
+              The 6400 pairs with a fine-tooth scoring blade that virtually eliminates tearout on plywood face veneers. When we are building interior panels for fine art crates or decorative furniture pieces, the finish quality of every cut panel matters   both structurally and aesthetically.
             </p>
 
             <h3>Improved Safety in the Shop</h3>
@@ -131,22 +131,22 @@ export default function SafetySpeed6400Blog() {
                 The Safety Speed 6400 is now part of every custom crate build at Austin Crate &amp; Freight. That includes:
               </p>
               <ul className="text-grey-700 space-y-2">
-                <li>✅ <strong>Fine art crates</strong> — museum-spec panel crates for paintings, sculpture, and prints</li>
-                <li>✅ <strong>Custom furniture crates</strong> — snug-fit crates for antiques, designer pieces, and upholstered items</li>
-                <li>✅ <strong>Medical equipment packaging</strong> — reinforced crates for sensitive devices and imaging equipment</li>
-                <li>✅ <strong>Oversized & heavy item crates</strong> — industrial-spec crates for machinery, equipment, and trade show displays</li>
+                <li>✅ <strong>Fine art crates</strong>   museum-spec panel crates for paintings, sculpture, and prints</li>
+                <li>✅ <strong>Custom furniture crates</strong>   snug-fit crates for antiques, designer pieces, and upholstered items</li>
+                <li>✅ <strong>Medical equipment packaging</strong>   reinforced crates for sensitive devices and imaging equipment</li>
+                <li>✅ <strong>Oversized & heavy item crates</strong>   industrial-spec crates for machinery, equipment, and trade show displays</li>
               </ul>
             </div>
 
             <h2>A Note From the Team</h2>
             <blockquote className="border-l-4 border-emerald pl-6 italic my-8">
-              &ldquo;We take a lot of pride in the quality of our crates. Adding the Safety Speed 6400 lets us work faster without cutting corners — pun intended. Every panel comes off that saw clean and square. It shows in the finished product.&rdquo;
-              <footer className="text-grey-600 mt-2">— Austin Crate &amp; Freight Shop Team</footer>
+              &ldquo;We take a lot of pride in the quality of our crates. Adding the Safety Speed 6400 lets us work faster without cutting corners   pun intended. Every panel comes off that saw clean and square. It shows in the finished product.&rdquo;
+              <footer className="text-grey-600 mt-2">  Austin Crate &amp; Freight Shop Team</footer>
             </blockquote>
 
             <h2>What This Means if You Need a Custom Crate</h2>
             <p>
-              If you have been putting off getting a quote for a custom shipping crate, now is a great time to reach out. With the Safety Speed 6400 in the shop, we are producing better crates, faster — and we are ready to take on projects of any size.
+              If you have been putting off getting a quote for a custom shipping crate, now is a great time to reach out. With the Safety Speed 6400 in the shop, we are producing better crates, faster   and we are ready to take on projects of any size.
             </p>
             <p>
               Whether you need a single specialty crate for a valuable piece of art or a production run of crates for an equipment rollout, Austin Crate &amp; Freight has the equipment and experience to get it done right.
@@ -155,7 +155,7 @@ export default function SafetySpeed6400Blog() {
             <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 my-8 not-prose">
               <p className="font-semibold text-emerald-800 mb-3 text-lg">📞 Ready to Get a Quote?</p>
               <p className="text-grey-700 mb-4">
-                Call us at <strong>(512) 240-9818</strong> or fill out our online form. We will get back to you with a custom quote — usually within 24 hours.
+                Call us at <strong>(512) 240-9818</strong> or fill out our online form. We will get back to you with a custom quote   usually within 24 hours.
               </p>
               <Link
                 href="/contact"

@@ -37,7 +37,7 @@ export function generateMetadata(): Metadata {
 export default function CostToShipHeavyItemsBlog() {
   const localSchema = generateLocalBusinessSchema({
     locationName: 'Austin',
-    description: 'Austin Crate & Freight — specialty shipping for heavy items, custom furniture, fine art, and oversized packages in Austin, TX.',
+    description: 'Austin Crate & Freight   specialty shipping for heavy items, custom furniture, fine art, and oversized packages in Austin, TX.',
     latitude: 30.2672,
     longitude: -97.7431,
   })

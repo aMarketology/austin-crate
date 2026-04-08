@@ -187,7 +187,7 @@ export default function OversizedShipping() {
                     </svg>
                   ),
                   title: 'Exceeds Weight Limits',
-                  description: 'Standard ground services cap at 150 lbs. Many oversized items weigh 200-2,000+ lbs — well beyond what parcel carriers handle.',
+                  description: 'Standard ground services cap at 150 lbs. Many oversized items weigh 200-2,000+ lbs   well beyond what parcel carriers handle.',
                 },
                 {
                   icon: (
@@ -242,7 +242,7 @@ export default function OversizedShipping() {
                 {
                   step: 1,
                   title: 'Free Assessment & Quote',
-                  desc: 'Tell us what you need to ship. We evaluate dimensions, weight, fragility, and destination to provide a no-obligation quote — usually within 24 hours.',
+                  desc: 'Tell us what you need to ship. We evaluate dimensions, weight, fragility, and destination to provide a no-obligation quote   usually within 24 hours.',
                 },
                 {
                   step: 2,
@@ -257,7 +257,7 @@ export default function OversizedShipping() {
                 {
                   step: 4,
                   title: 'Freight Coordination',
-                  desc: 'We book the optimal freight carrier for your shipment — LTL, full truckload, or air freight. Climate-controlled and liftgate service available for fragile or heavy items.',
+                  desc: 'We book the optimal freight carrier for your shipment   LTL, full truckload, or air freight. Climate-controlled and liftgate service available for fragile or heavy items.',
                 },
                 {
                   step: 5,
@@ -293,19 +293,19 @@ export default function OversizedShipping() {
                 {
                   tier: 'Local',
                   range: 'Austin Metro Area',
-                  price: '$150 – $400',
+                  price: '$150 - $400',
                   items: ['Pickup within 30 miles', 'Same-day available', 'Protective blankets included', 'Inside delivery option'],
                 },
                 {
                   tier: 'Regional',
                   range: 'Texas / Neighboring States',
-                  price: '$300 – $800',
+                  price: '$300 - $800',
                   items: ['Custom crating included', 'LTL freight transport', 'Full insurance coverage', 'Door-to-door delivery'],
                 },
                 {
                   tier: 'National',
                   range: 'Anywhere in the US',
-                  price: '$500 – $2,000+',
+                  price: '$500 - $2,000+',
                   items: ['Custom crating + freight', 'Climate-controlled option', 'Liftgate delivery', 'White-glove placement'],
                 },
               ].map((plan, i) => (
@@ -401,7 +401,7 @@ export default function OversizedShipping() {
                 },
                 {
                   q: 'Do you offer inside delivery for oversized items?',
-                  a: 'Yes. Our white-glove service includes inside delivery, room placement, unpacking, assembly (if applicable), and debris removal. We deliver your oversized item exactly where you need it — not just to the curb.',
+                  a: 'Yes. Our white-glove service includes inside delivery, room placement, unpacking, assembly (if applicable), and debris removal. We deliver your oversized item exactly where you need it   not just to the curb.',
                 },
                 {
                   q: 'Can you ship oversized items outside of Texas?',

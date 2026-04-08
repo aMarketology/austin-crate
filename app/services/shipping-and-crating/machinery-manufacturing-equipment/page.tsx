@@ -52,7 +52,7 @@ export default function MachineryManufacturingEquipment() {
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-5">Machinery & Manufacturing Equipment Shipping in Austin, TX</h1>
             <p className="text-xl text-grey-300 mb-8 max-w-3xl">
-              CNC machining centers, laser cutters, and industrial presses don&apos;t ship in a box. We rig it, skid it, coordinate the freight, and deliver it ready to be set in place — no carrier surprises, no equipment damage.
+              CNC machining centers, laser cutters, and industrial presses don&apos;t ship in a box. We rig it, skid it, coordinate the freight, and deliver it ready to be set in place   no carrier surprises, no equipment damage.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a

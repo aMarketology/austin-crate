@@ -115,7 +115,7 @@ export default function AerospaceSpecialtyParts() {
           </div>
           <div className="max-w-4xl mx-auto mt-10 p-6 bg-gray-50 rounded-xl border border-gray-200">
             <p className="text-gray-700">
-              Austin&apos;s growing aerospace and defense sector — from SpaceX Starbase logistics to private aerospace firms — demands shipping partners who understand the paperwork as well as the packaging. We do both. Call for a quote on your next parts move.
+              Austin&apos;s growing aerospace and defense sector   from SpaceX Starbase logistics to private aerospace firms   demands shipping partners who understand the paperwork as well as the packaging. We do both. Call for a quote on your next parts move.
             </p>
           </div>
         </section>

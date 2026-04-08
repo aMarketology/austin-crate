@@ -30,7 +30,7 @@ export function generateMetadata(): Metadata {
 export default function WhenCarriersRefuse() {
   const serviceSchema = generateServiceSchema({
     serviceName: 'Oversized Shipping Solutions When Carriers Refuse Austin Texas',
-    description: 'Specialty freight solutions for oversized, overweight, and carrier-rejected shipments in Austin, TX — custom crating, liftgate service, and freight coordination.',
+    description: 'Specialty freight solutions for oversized, overweight, and carrier-rejected shipments in Austin, TX   custom crating, liftgate service, and freight coordination.',
     serviceType: 'Specialty Shipping',
   })
 
@@ -56,7 +56,7 @@ export default function WhenCarriersRefuse() {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">When UPS &amp; FedEx Refuse Your Shipment: Austin Oversized Freight Solutions</h1>
             <p className="text-xl text-grey-300 mb-8 max-w-3xl">
-              Standard carriers have strict size and weight limits — and they enforce them. If UPS, FedEx, or USPS has rejected your shipment, Austin Crate &amp; Freight provides the specialty freight solution you need. We handle items that standard carriers cannot, will not, or should not touch.
+              Standard carriers have strict size and weight limits   and they enforce them. If UPS, FedEx, or USPS has rejected your shipment, Austin Crate &amp; Freight provides the specialty freight solution you need. We handle items that standard carriers cannot, will not, or should not touch.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={`tel:${SITE_CONFIG.phone}`} className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald rounded-lg font-medium text-white hover:bg-emerald/90 transition-all duration-300">
@@ -75,13 +75,13 @@ export default function WhenCarriersRefuse() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Why UPS, FedEx &amp; USPS Refuse Certain Shipments</h2>
             <p className="text-gray-700 text-lg mb-4">
-              Standard parcel carriers run automated sorting facilities where packages move through conveyors, chutes, and scanners. Their systems are designed for boxes under 150 lbs with dimensions that fit on a conveyor belt. Anything outside those parameters breaks their process — which is why they charge penalty fees or refuse outright.
+              Standard parcel carriers run automated sorting facilities where packages move through conveyors, chutes, and scanners. Their systems are designed for boxes under 150 lbs with dimensions that fit on a conveyor belt. Anything outside those parameters breaks their process   which is why they charge penalty fees or refuse outright.
             </p>
             <p className="text-gray-700 text-lg mb-4">
               UPS and FedEx also carry liability limits on declared value for oversized items. If your item is too large and gets damaged, their maximum claim payout may not cover your loss. This creates a situation where even if they technically accept the shipment, the coverage gap makes it a bad financial decision.
             </p>
             <p className="text-gray-700 text-lg">
-              The good news: the same items that pose problems for standard carriers are exactly what specialty freight companies handle well. Custom crating, liftgate service, freight coordination, and full-value coverage are standard features of specialty shipping — not add-ons.
+              The good news: the same items that pose problems for standard carriers are exactly what specialty freight companies handle well. Custom crating, liftgate service, freight coordination, and full-value coverage are standard features of specialty shipping   not add-ons.
             </p>
           </div>
         </section>
@@ -127,7 +127,7 @@ export default function WhenCarriersRefuse() {
               ))}
             </div>
             <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 text-sm text-gray-700">
-              <strong>Important:</strong> Carriers measure girth as the combined length + 2× width + 2× height. Many items that appear to be within size limits actually exceed the girth formula. A piece of furniture that is 72&quot; long × 36&quot; wide × 36&quot; tall has a girth measurement of 72 + (2×36) + (2×36) = 216 inches — well over the 165-inch limit for UPS and FedEx.
+              <strong>Important:</strong> Carriers measure girth as the combined length + 2× width + 2× height. Many items that appear to be within size limits actually exceed the girth formula. A piece of furniture that is 72&quot; long × 36&quot; wide × 36&quot; tall has a girth measurement of 72 + (2×36) + (2×36) = 216 inches   well over the 165-inch limit for UPS and FedEx.
             </div>
           </div>
         </section>
@@ -142,9 +142,9 @@ export default function WhenCarriersRefuse() {
                 { title: 'Custom Crating at Our Austin Facility', desc: 'We build a crate precisely sized for your item. Proper crating is required by LTL freight carriers and significantly reduces the risk of damage and claim denial.' },
                 { title: 'LTL Freight Coordination', desc: 'Less-than-truckload (LTL) freight handles items up to several thousand pounds with no girth restrictions. We select the right carrier, class, and service level for your item and budget.' },
                 { title: 'Liftgate Pickup & Delivery', desc: 'Freight deliveries to residential or retail addresses require a liftgate truck, which standard carriers do not provide. We coordinate liftgate service at both ends at no surprise to you.' },
-                { title: 'White-Glove Inside Delivery', desc: 'Beyond curbside drop-off, we can arrange inside delivery, room-of-choice placement, and packaging removal — especially valuable for furniture, equipment, and commercial fixtures.' },
+                { title: 'White-Glove Inside Delivery', desc: 'Beyond curbside drop-off, we can arrange inside delivery, room-of-choice placement, and packaging removal   especially valuable for furniture, equipment, and commercial fixtures.' },
                 { title: 'Full-Value Insurance Coverage', desc: 'Standard carriers cap declared value at $100 without purchase of additional coverage. Specialty freight allows full-value coverage matching the actual value of your item.' },
-                { title: 'Same-Week Pickup in Austin', desc: 'We typically offer pickup within 1–3 business days in Austin and the surrounding metro area. If your item needs to move fast, call us directly and we will prioritize your shipment.' },
+                { title: 'Same-Week Pickup in Austin', desc: 'We typically offer pickup within 1-3 business days in Austin and the surrounding metro area. If your item needs to move fast, call us directly and we will prioritize your shipment.' },
               ].map((item, i) => (
                 <div key={i} className="p-5 bg-gray-50 border border-gray-200 rounded-xl">
                   <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
@@ -189,13 +189,13 @@ export default function WhenCarriersRefuse() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">What Does Specialty Freight Cost vs. Standard Carriers?</h2>
             <p className="text-gray-700 text-lg mb-4">
-              Specialty freight is more expensive than standard parcel shipping for small items — but for oversized items, the comparison is often closer than you think. Standard carriers apply oversize surcharges of $200–$900+ per shipment in addition to the base rate, which quickly closes the gap with specialty freight pricing.
+              Specialty freight is more expensive than standard parcel shipping for small items   but for oversized items, the comparison is often closer than you think. Standard carriers apply oversize surcharges of $200-$900+ per shipment in addition to the base rate, which quickly closes the gap with specialty freight pricing.
             </p>
             <p className="text-gray-700 text-lg mb-4">
               More importantly: the hidden cost of a damage claim at inadequate coverage levels can dwarf any savings on the rate. A $600 sofa damaged at a carrier facility, claimed at the $100 default coverage limit, is a $500 loss that no rate discount recovers.
             </p>
             <p className="text-gray-700 text-lg">
-              Our specialty freight quotes factor in proper crating, full-value coverage, liftgate service, and verified carrier handling — giving you a true apples-to-apples cost. Call us at {SITE_CONFIG.phone} for a quote on your specific item and we will be straightforward about when specialty freight makes sense and when it does not.
+              Our specialty freight quotes factor in proper crating, full-value coverage, liftgate service, and verified carrier handling   giving you a true apples-to-apples cost. Call us at {SITE_CONFIG.phone} for a quote on your specific item and we will be straightforward about when specialty freight makes sense and when it does not.
             </p>
           </div>
         </section>
@@ -206,10 +206,10 @@ export default function WhenCarriersRefuse() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
             <div className="space-y-5">
               {[
-                { q: 'UPS told me my item is too large. What are my options?', a: 'Your best options are LTL freight (less-than-truckload) or specialty freight. LTL carriers handle palletized and crated freight up to several thousand pounds with no girth restrictions. We can crate your item at our Austin facility and coordinate the LTL shipment, typically within 1–3 business days.' },
-                { q: 'FedEx charged me $800 in oversize surcharges. Is specialty freight cheaper?', a: 'Often yes. Once standard carriers apply their oversize tier 2 or tier 3 surcharges, specialty freight rates are competitive — and you get proper crating, liftgate service, and full-value coverage in the price. Call us with your item dimensions and destination for a direct comparison.' },
+                { q: 'UPS told me my item is too large. What are my options?', a: 'Your best options are LTL freight (less-than-truckload) or specialty freight. LTL carriers handle palletized and crated freight up to several thousand pounds with no girth restrictions. We can crate your item at our Austin facility and coordinate the LTL shipment, typically within 1-3 business days.' },
+                { q: 'FedEx charged me $800 in oversize surcharges. Is specialty freight cheaper?', a: 'Often yes. Once standard carriers apply their oversize tier 2 or tier 3 surcharges, specialty freight rates are competitive   and you get proper crating, liftgate service, and full-value coverage in the price. Call us with your item dimensions and destination for a direct comparison.' },
                 { q: 'My item weighs over 150 lbs. Can you pick it up in Austin?', a: 'Yes. We handle items well over 150 lbs routinely. We have equipment for safe handling including furniture dollies, moving blankets, and liftgate trucks. There is no upper weight limit on what we can crate and coordinate for freight shipment.' },
-                { q: 'How long does specialty freight take compared to FedEx Ground?', a: 'LTL freight transit times are longer than parcel — typically 3–7 business days within Texas and 5–10 days for cross-country shipments, versus 2–5 days for FedEx Ground. For time-sensitive oversized shipments, expedited freight options are available at a higher rate. We will quote both when timing matters.' },
+                { q: 'How long does specialty freight take compared to FedEx Ground?', a: 'LTL freight transit times are longer than parcel   typically 3-7 business days within Texas and 5-10 days for cross-country shipments, versus 2-5 days for FedEx Ground. For time-sensitive oversized shipments, expedited freight options are available at a higher rate. We will quote both when timing matters.' },
                 { q: 'Do you ship carrier-refused items from Austin to other states?', a: 'Absolutely. We ship regularly to destinations across the US. We build the crate in Austin, coordinate the carrier, and manage the freight process through to delivery. Long-distance shipments are quoted based on freight class, dimensions, and destination zip code.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-white border border-gray-200 rounded-xl p-5">

@@ -30,7 +30,7 @@ export function generateMetadata(): Metadata {
 export default function AntiqueFurnitureShipping() {
   const serviceSchema = generateServiceSchema({
     serviceName: 'Antique Furniture Shipping Across Texas',
-    description: 'Expert antique furniture shipping and custom crating across Texas — Victorian, French Provincial, Mid-Century Modern, and all antique styles handled with museum-quality care.',
+    description: 'Expert antique furniture shipping and custom crating across Texas   Victorian, French Provincial, Mid-Century Modern, and all antique styles handled with museum-quality care.',
     serviceType: 'Specialty Shipping',
   })
 
@@ -56,7 +56,7 @@ export default function AntiqueFurnitureShipping() {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Antique Furniture Shipping Across Texas</h1>
             <p className="text-xl text-grey-300 mb-8 max-w-3xl">
-              Antique furniture carries value that cannot be replaced — financial, historical, and personal. Austin Crate &amp; Freight ships antique pieces across Texas using custom crating, padded blanket wrap, climate-aware packaging, and white-glove handling at every step.
+              Antique furniture carries value that cannot be replaced   financial, historical, and personal. Austin Crate &amp; Freight ships antique pieces across Texas using custom crating, padded blanket wrap, climate-aware packaging, and white-glove handling at every step.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={`tel:${SITE_CONFIG.phone}`} className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald rounded-lg font-medium text-white hover:bg-emerald/90 transition-all duration-300">
@@ -75,10 +75,10 @@ export default function AntiqueFurnitureShipping() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Antique Furniture Requires a Different Approach</h2>
             <p className="text-gray-700 text-lg mb-4">
-              Antique furniture is not just old — it is structurally different from modern furniture. Joints are held with animal-hide glue that becomes brittle over time. Veneer is thin and adhered with period-appropriate methods that do not tolerate moisture or vibration. Finishes have accumulated patina that cannot be replicated if damaged. A scratch on a 200-year-old secretary desk does not sell as &quot;distressed&quot; — it devalues the piece and breaks a chain of preservation.
+              Antique furniture is not just old   it is structurally different from modern furniture. Joints are held with animal-hide glue that becomes brittle over time. Veneer is thin and adhered with period-appropriate methods that do not tolerate moisture or vibration. Finishes have accumulated patina that cannot be replicated if damaged. A scratch on a 200-year-old secretary desk does not sell as &quot;distressed&quot;   it devalues the piece and breaks a chain of preservation.
             </p>
             <p className="text-gray-700 text-lg mb-4">
-              Standard shipping methods — cardboard boxes, moving blankets thrown in a truck, plastic wrap against the finish — are not adequate for pieces worth hundreds to tens of thousands of dollars. The risk is not just damage in transit; it is the wrong packaging material degrading the finish before the piece even arrives.
+              Standard shipping methods   cardboard boxes, moving blankets thrown in a truck, plastic wrap against the finish   are not adequate for pieces worth hundreds to tens of thousands of dollars. The risk is not just damage in transit; it is the wrong packaging material degrading the finish before the piece even arrives.
             </p>
             <p className="text-gray-700 text-lg">
               We use acid-free tissue paper against all finished surfaces, padded blanket wrap for secondary protection, and custom wood crates for pieces requiring hard-shell protection. Every decision is made with the specific piece in mind, not a generic protocol applied to all furniture regardless of age or value.
@@ -93,11 +93,11 @@ export default function AntiqueFurnitureShipping() {
             <p className="text-gray-600 mb-8">Every antique shipment follows a hands-on process developed over years of handling irreplaceable pieces.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                { title: 'Condition Assessment Before Pickup', desc: 'We photograph and document the piece before it leaves the origin — noting any pre-existing wear, repairs, or fragile areas. This protects both you and us and establishes a baseline for insurance purposes.' },
-                { title: 'Acid-Free Material Contact Layer', desc: 'Acid-free tissue paper is applied directly to all finished surfaces before any other material touches the piece. Never plastic wrap directly on lacquer, shellac, or wax finishes — moisture traps and adhesives damage period finishes.' },
-                { title: 'Padded Blanket Wrap', desc: 'Thick padded moving blankets are applied over the tissue layer. Blankets are secured with stretch wrap only on the outer layer — not against the wood. For complex pieces with legs, arms, or projections, each element is padded individually.' },
+                { title: 'Condition Assessment Before Pickup', desc: 'We photograph and document the piece before it leaves the origin   noting any pre-existing wear, repairs, or fragile areas. This protects both you and us and establishes a baseline for insurance purposes.' },
+                { title: 'Acid-Free Material Contact Layer', desc: 'Acid-free tissue paper is applied directly to all finished surfaces before any other material touches the piece. Never plastic wrap directly on lacquer, shellac, or wax finishes   moisture traps and adhesives damage period finishes.' },
+                { title: 'Padded Blanket Wrap', desc: 'Thick padded moving blankets are applied over the tissue layer. Blankets are secured with stretch wrap only on the outer layer   not against the wood. For complex pieces with legs, arms, or projections, each element is padded individually.' },
                 { title: 'Custom Crating When Required', desc: 'Particularly fragile, high-value, or long-distance shipments warrant a wood crate. We build the crate around the wrapped piece, adding internal blocking to prevent movement and external corner protectors to handle dock contact.' },
-                { title: 'Climate-Aware Packaging Options', desc: 'For humid or temperature-variable routes across Texas, we can add moisture-barrier wrapping. Wood and veneer are sensitive to rapid humidity changes — proper packaging prevents wood movement and veneer lifting.' },
+                { title: 'Climate-Aware Packaging Options', desc: 'For humid or temperature-variable routes across Texas, we can add moisture-barrier wrapping. Wood and veneer are sensitive to rapid humidity changes   proper packaging prevents wood movement and veneer lifting.' },
                 { title: 'White-Glove Delivery & Placement', desc: 'At destination, we unwrap the piece while you are present. We will not leave until you have inspected the furniture and confirmed it arrived in the same condition it left. We document the delivery with photos as well.' },
               ].map((item, i) => (
                 <div key={i} className="p-5 bg-white border border-gray-200 rounded-xl">
@@ -116,18 +116,18 @@ export default function AntiqueFurnitureShipping() {
             <p className="text-gray-600 mb-8">Each period and style has specific vulnerabilities. We handle all of the following with appropriate care protocols.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                'Victorian & Edwardian (1837–1910) — Ornate carvings, velvet upholstery',
-                'French Provincial & Louis XV/XVI — Carved gilt frames, delicate legs',
-                'American Federal & Empire (1780–1840) — Mahogany veneer, brass hardware',
-                'Arts & Crafts / Mission Style (1880–1920) — Quarter-sawn oak, mortise joints',
-                'Art Deco (1920s–1930s) — Lacquered finishes, exotic wood veneers',
-                'Mid-Century Modern (1950s–1960s) — Teak, walnut, hairpin legs',
-                'Rustic & Texas Primitive — Reclaimed wood, hand-wrought iron',
-                'Asian Antiques — Lacquerwork, inlay panels, hand-painted surfaces',
+                'Victorian & Edwardian (1837-1910)   Ornate carvings, velvet upholstery',
+                'French Provincial & Louis XV/XVI   Carved gilt frames, delicate legs',
+                'American Federal & Empire (1780-1840)   Mahogany veneer, brass hardware',
+                'Arts & Crafts / Mission Style (1880-1920)   Quarter-sawn oak, mortise joints',
+                'Art Deco (1920s-1930s)   Lacquered finishes, exotic wood veneers',
+                'Mid-Century Modern (1950s-1960s)   Teak, walnut, hairpin legs',
+                'Rustic & Texas Primitive   Reclaimed wood, hand-wrought iron',
+                'Asian Antiques   Lacquerwork, inlay panels, hand-painted surfaces',
                 'European Armoires, Secretaries & Highboys (pre-1900)',
                 'Antique Dining Tables & Matching Chair Sets',
                 'Vintage Credenzas, Sideboards & Buffets',
-                'Antique Beds — Canopy, Sleigh & Four-Poster Frames',
+                'Antique Beds   Canopy, Sleigh & Four-Poster Frames',
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3 p-4 bg-gray-50 border border-gray-200 rounded-lg">
                   <svg className="w-5 h-5 text-emerald flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
@@ -143,10 +143,10 @@ export default function AntiqueFurnitureShipping() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Antique Furniture Shipping Across All of Texas</h2>
             <p className="text-gray-700 text-lg mb-4">
-              Texas is one of the most active antique markets in the country. Roundtop Antiques — held twice yearly near La Grange — draws buyers from across the state and nation. Houston has dozens of antique galleries along Westheimer. San Antonio&apos;s King William Historic District has significant Victorian and Mission Revival furniture. Dallas-Fort Worth has established antique dealer communities in Design District and Highland Park. Austin itself has growing collector and gallery networks.
+              Texas is one of the most active antique markets in the country. Roundtop Antiques   held twice yearly near La Grange   draws buyers from across the state and nation. Houston has dozens of antique galleries along Westheimer. San Antonio&apos;s King William Historic District has significant Victorian and Mission Revival furniture. Dallas-Fort Worth has established antique dealer communities in Design District and Highland Park. Austin itself has growing collector and gallery networks.
             </p>
             <p className="text-gray-700 text-lg mb-4">
-              We ship from and to every corner of Texas — from El Paso to Beaumont, from Amarillo to Brownsville. We pick up at estate sales, antique markets, galleries, and private residences. Delivery goes wherever the buyer is: apartment, ranch, storage facility, or commercial gallery.
+              We ship from and to every corner of Texas   from El Paso to Beaumont, from Amarillo to Brownsville. We pick up at estate sales, antique markets, galleries, and private residences. Delivery goes wherever the buyer is: apartment, ranch, storage facility, or commercial gallery.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6">
               {[
@@ -167,7 +167,7 @@ export default function AntiqueFurnitureShipping() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Insurance &amp; Valuation for Antique Furniture Shipments</h2>
             <p className="text-gray-700 text-lg mb-4">
-              Standard freight carriers default to a liability of $0.10–$0.25 per pound. A 200 lb Victorian sideboard worth $8,000 at auction would be covered for $20–$50 under default terms. That gap is not acceptable for irreplaceable antiques.
+              Standard freight carriers default to a liability of $0.10-$0.25 per pound. A 200 lb Victorian sideboard worth $8,000 at auction would be covered for $20-$50 under default terms. That gap is not acceptable for irreplaceable antiques.
             </p>
             <p className="text-gray-700 text-lg mb-4">
               We recommend declared value coverage at the full appraised or insured value of the piece. Before shipping a high-value antique, have it appraised in writing if you do not already have documentation. An appraisal from a certified appraiser is the best protection you have in a claim.
@@ -184,11 +184,11 @@ export default function AntiqueFurnitureShipping() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Frequently Asked Questions About Antique Furniture Shipping in Texas</h2>
             <div className="space-y-5">
               {[
-                { q: 'How much does it cost to ship antique furniture across Texas?', a: 'Antique furniture shipping across Texas typically ranges from $300–$900 depending on the piece size, fragility, destination, and whether a custom crate is required. A single chair shipping from Austin to Houston might be $250–$400; a large armoire requiring a custom crate shipping to Dallas might be $600–$1,200. Call us for an exact quote.' },
+                { q: 'How much does it cost to ship antique furniture across Texas?', a: 'Antique furniture shipping across Texas typically ranges from $300-$900 depending on the piece size, fragility, destination, and whether a custom crate is required. A single chair shipping from Austin to Houston might be $250-$400; a large armoire requiring a custom crate shipping to Dallas might be $600-$1,200. Call us for an exact quote.' },
                 { q: 'Is it safe to ship antique furniture without a crate?', a: 'For many antiques, padded blanket wrap in a dedicated specialty freight vehicle is safe. For pieces over $3,000 in value, with very fragile veneer or surface finish, or for long-distance Texas or out-of-state routes, a custom crate provides significantly better protection. We will make an honest recommendation based on the specific piece.' },
-                { q: 'Can you pick up from estate sales, auctions, or antique markets?', a: 'Yes. We regularly pick up antique furniture from estate sales, auction houses, and antique markets including the Roundtop Antiques show. We can coordinate pickup to coincide with the end of an event or auction. Call us in advance to schedule — Roundtop pickups in particular book up quickly around show dates.' },
-                { q: 'What should I tell you when requesting a quote?', a: 'The most helpful information is: the piece description (type, approximate age, dimensions, weight if known), origin city/zip, destination city/zip, and any known fragility issues (veneer damage, gilt that chips, structural repairs). Photos are also very helpful — you can email or text them to us.' },
-                { q: 'Do you ship antique furniture out of Texas to other states?', a: 'Yes. We ship antique furniture across the US. For out-of-state shipments, we typically use LTL freight with a custom crate, which provides the safest combination of protection and cost for long-distance moves. Transit time varies by destination — typically 5–10 business days for cross-country delivery.' },
+                { q: 'Can you pick up from estate sales, auctions, or antique markets?', a: 'Yes. We regularly pick up antique furniture from estate sales, auction houses, and antique markets including the Roundtop Antiques show. We can coordinate pickup to coincide with the end of an event or auction. Call us in advance to schedule   Roundtop pickups in particular book up quickly around show dates.' },
+                { q: 'What should I tell you when requesting a quote?', a: 'The most helpful information is: the piece description (type, approximate age, dimensions, weight if known), origin city/zip, destination city/zip, and any known fragility issues (veneer damage, gilt that chips, structural repairs). Photos are also very helpful   you can email or text them to us.' },
+                { q: 'Do you ship antique furniture out of Texas to other states?', a: 'Yes. We ship antique furniture across the US. For out-of-state shipments, we typically use LTL freight with a custom crate, which provides the safest combination of protection and cost for long-distance moves. Transit time varies by destination   typically 5-10 business days for cross-country delivery.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-white border border-gray-200 rounded-xl p-5">
                   <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

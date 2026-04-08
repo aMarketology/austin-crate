@@ -104,7 +104,7 @@ export default function ApartmentFireBlog() {
 
           <blockquote className="border-l-4 border-emerald pl-6 italic my-8">
             "This has been a safety hazard waiting to happen. We've been asking the city to do something about this property for years. It's fortunate that no one was hurt, but this could have been prevented." 
-            <footer className="text-grey-600 mt-2">— Local Neighborhood Association President</footer>
+            <footer className="text-grey-600 mt-2">  Local Neighborhood Association President</footer>
           </blockquote>
 
           <h2>Safety Reminder for Austin Residents</h2>

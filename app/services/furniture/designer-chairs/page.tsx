@@ -12,7 +12,7 @@ const SLUG = '/services/furniture/designer-chairs'
 export function generateMetadata(): Metadata {
   return generateServiceMetadata({
     serviceName: 'Designer Chair Shipping & Crating Austin Texas',
-    description: 'Specialist shipping and crating for designer chairs in Austin, Texas. Eames, Knoll, Herman Miller, custom armchairs, accent chairs, and dining chairs — scratch-free white-glove delivery. Call (512) 240-9818.',
+    description: 'Specialist shipping and crating for designer chairs in Austin, Texas. Eames, Knoll, Herman Miller, custom armchairs, accent chairs, and dining chairs   scratch-free white-glove delivery. Call (512) 240-9818.',
     keywords: [
       'designer chair shipping Austin TX',
       'accent chair shipping Austin Texas',
@@ -30,7 +30,7 @@ export function generateMetadata(): Metadata {
 export default function DesignerChairShipping() {
   const serviceSchema = generateServiceSchema({
     serviceName: 'Designer Chair Shipping & Crating Austin Texas',
-    description: 'White-glove shipping and crating for designer and luxury chairs in Austin, TX — Eames, Knoll, Herman Miller, custom armchairs, and accent seating.',
+    description: 'White-glove shipping and crating for designer and luxury chairs in Austin, TX   Eames, Knoll, Herman Miller, custom armchairs, and accent seating.',
     serviceType: 'Specialty Shipping',
   })
 
@@ -71,10 +71,10 @@ export default function DesignerChairShipping() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Designer Chairs Are Harder to Ship Than They Look</h2>
             <p className="text-gray-700 text-lg mb-4">
-              Chairs are deceptively tricky to ship well. Their shape — with protruding legs, arms, and backs — creates leverage points that concentrate impact forces during transit. A molded fiberglass Eames shell is vulnerable to cracking at its mounting points. A Knoll Bertoia Diamond Chair has dozens of individual wire welds that can stress under pressure. A carved wooden accent chair has delicate details that are easily chipped or snapped.
+              Chairs are deceptively tricky to ship well. Their shape   with protruding legs, arms, and backs   creates leverage points that concentrate impact forces during transit. A molded fiberglass Eames shell is vulnerable to cracking at its mounting points. A Knoll Bertoia Diamond Chair has dozens of individual wire welds that can stress under pressure. A carved wooden accent chair has delicate details that are easily chipped or snapped.
             </p>
             <p className="text-gray-700 text-lg mb-4">
-              Standard box-and-peanuts packing puts a designer chair at serious risk. The chair needs to be suspended in its crate — not resting on a bottom foam pad — so that the weight of the piece distributes across the foam rather than concentrating at the legs. This is the difference between a crate built by someone who understands furniture geometry and one that is not.
+              Standard box-and-peanuts packing puts a designer chair at serious risk. The chair needs to be suspended in its crate   not resting on a bottom foam pad   so that the weight of the piece distributes across the foam rather than concentrating at the legs. This is the difference between a crate built by someone who understands furniture geometry and one that is not.
             </p>
             <p className="text-gray-700 text-lg">
               For sets of dining chairs, we build multi-compartment crates where each chair sits in its own padded bay, isolated from its neighbors, so a shift during transit does not cause contact damage between pieces.
@@ -89,12 +89,12 @@ export default function DesignerChairShipping() {
             <p className="text-gray-600 mb-8">Every step is oriented toward protecting the specific vulnerabilities of each chair type.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                { title: 'Geometry-Specific Foam Cutting', desc: 'Foam inserts are cut to match the exact profile of the chair — legs, arms, base, and back. The chair is fully supported at all contact points, not just resting on a flat pad.' },
+                { title: 'Geometry-Specific Foam Cutting', desc: 'Foam inserts are cut to match the exact profile of the chair   legs, arms, base, and back. The chair is fully supported at all contact points, not just resting on a flat pad.' },
                 { title: 'Leg & Arm Padding', desc: 'Exposed legs and armrests are individually wrapped before any foam or wrap contact. This prevents surface transfer from packaging materials and impact concentration at protruding points.' },
                 { title: 'Upholstery Protection', desc: 'Fabric and leather upholstery is wrapped in breathable furniture blanket, never stretch film directly on fabric, to prevent compression marks, snagging, or heat transfer.' },
                 { title: 'Disassembly Where Needed', desc: 'Chairs with removable bases (office chairs, swivel bases, Herman Miller mechanisms) are disassembled and each component packed separately. All hardware is bagged and labeled.' },
-                { title: 'Multi-Chair Crating', desc: 'Dining chair sets of 4, 6, or 8 are crated in shared frames with individual bays — each chair protected from its neighbors, reducing freight cost versus individual crating.' },
-                { title: 'Fragile Point Reinforcement', desc: 'Known fragile attachment points — shell-to-base mounts on Eames chairs, leg-to-seat joints on carved wood pieces — get additional foam blocking to prevent flex during transit.' },
+                { title: 'Multi-Chair Crating', desc: 'Dining chair sets of 4, 6, or 8 are crated in shared frames with individual bays   each chair protected from its neighbors, reducing freight cost versus individual crating.' },
+                { title: 'Fragile Point Reinforcement', desc: 'Known fragile attachment points   shell-to-base mounts on Eames chairs, leg-to-seat joints on carved wood pieces   get additional foam blocking to prevent flex during transit.' },
               ].map((item, i) => (
                 <div key={i} className="p-5 bg-white border border-gray-200 rounded-xl">
                   <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
@@ -137,8 +137,8 @@ export default function DesignerChairShipping() {
                 { q: 'Can you ship a single Eames Lounge Chair safely?', a: 'Yes. The Eames Lounge Chair is one of the most commonly requested designer pieces we ship. The shell-to-base mount and the ottoman leg connections are the known fragile points, and we build the crate specifically to protect these. We ship chairs to collectors, buyers, and galleries nationwide.' },
                 { q: 'How do you handle a set of 8 designer dining chairs?', a: 'Multi-chair sets are crated in shared frames with individual bays. Each chair occupies a padded compartment and cannot contact adjacent chairs during transit. This is more cost-effective than individual crating for each chair while providing the same per-chair protection.' },
                 { q: 'Do you ship vintage mid-century chairs that might be fragile?', a: 'Yes. Older pieces with original upholstery, original finish, or known repair history are assessed before we commit to a crating approach. For very fragile vintage pieces, we may recommend additional support structures inside the crate. We will advise you honestly at the assessment stage.' },
-                { q: 'Can you pick up a designer chair at an estate sale or showroom in Austin?', a: 'Yes. We pick up from estates, showrooms, auction houses, and private sellers throughout Greater Austin and the surrounding area. We bring the right materials for the pickup — no blankets borrowed from a moving truck.' },
-                { q: 'What does shipping a designer chair cost?', a: 'A single chair shipped locally in Austin typically starts at $150–$250. Long-distance crated freight depends on the chair dimensions and destination. A set of dining chairs runs proportionally. Call us at (512) 240-9818 for a free, specific quote.' },
+                { q: 'Can you pick up a designer chair at an estate sale or showroom in Austin?', a: 'Yes. We pick up from estates, showrooms, auction houses, and private sellers throughout Greater Austin and the surrounding area. We bring the right materials for the pickup   no blankets borrowed from a moving truck.' },
+                { q: 'What does shipping a designer chair cost?', a: 'A single chair shipped locally in Austin typically starts at $150-$250. Long-distance crated freight depends on the chair dimensions and destination. A set of dining chairs runs proportionally. Call us at (512) 240-9818 for a free, specific quote.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-white border border-gray-200 rounded-xl p-5">
                   <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>
@@ -155,7 +155,7 @@ export default function DesignerChairShipping() {
         <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-16 px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Ship Your Designer Chairs from Austin</h2>
-            <p className="text-grey-300 text-lg mb-8">One chair or a full set — custom crating, white-glove pickup, and delivery anywhere in the US.</p>
+            <p className="text-grey-300 text-lg mb-8">One chair or a full set   custom crating, white-glove pickup, and delivery anywhere in the US.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href={`tel:${SITE_CONFIG.phone}`} className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-emerald rounded-lg font-semibold text-white hover:bg-emerald/90 transition">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg>

@@ -60,7 +60,7 @@ export default function SEOWrapper({ slug, children }: SEOWrapperProps) {
   const entry = getEntry(slug)
 
   if (!entry) {
-    // Page isn't in registry — render children without extra schema
+    // Page isn't in registry   render children without extra schema
     return <>{children}</>
   }
 

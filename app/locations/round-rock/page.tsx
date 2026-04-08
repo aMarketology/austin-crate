@@ -8,7 +8,7 @@ import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = generateLocationMetadata({
   locationName: 'Round Rock',
-  description: 'Specialty shipping & custom crating in Round Rock, TX — furniture shipping and crating, fine art transport, heavy item pickup, oversized shipping & medical equipment. White-glove service from Austin Crate & Freight.',
+  description: 'Specialty shipping & custom crating in Round Rock, TX   furniture shipping and crating, fine art transport, heavy item pickup, oversized shipping & medical equipment. White-glove service from Austin Crate & Freight.',
   keywords: [
     'specialty shipping Round Rock TX',
     'specialty shipping Round Rock Texas',
@@ -51,11 +51,11 @@ export default function RoundRock() {
       <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-700 bg-gray-800/50 backdrop-blur-sm mb-6">
-            <span className="text-xs font-medium text-gray-300 uppercase tracking-widest">Specialty Shipping & Crating — Round Rock, TX</span>
+            <span className="text-xs font-medium text-gray-300 uppercase tracking-widest">Specialty Shipping & Crating   Round Rock, TX</span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Specialty Shipping & Crating in Round Rock, TX</h1>
           <p className="text-xl text-gray-300 mb-8 max-w-3xl">
-            Austin Crate &amp; Freight brings expert specialty shipping and custom crating to Round Rock. From Dell Diamond to Old Town, we serve Round Rock homes and businesses with furniture shipping and crating, fine art transport, heavy item pickup, and medical equipment delivery — all with museum-quality white-glove care.
+            Austin Crate &amp; Freight brings expert specialty shipping and custom crating to Round Rock. From Dell Diamond to Old Town, we serve Round Rock homes and businesses with furniture shipping and crating, fine art transport, heavy item pickup, and medical equipment delivery   all with museum-quality white-glove care.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
@@ -130,7 +130,7 @@ export default function RoundRock() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Pickup</h3>
-              <p className="text-gray-600 mb-4">Heavy package pickup in Round Rock for items too large or heavy for standard carriers — safes, appliances, equipment, and more.</p>
+              <p className="text-gray-600 mb-4">Heavy package pickup in Round Rock for items too large or heavy for standard carriers   safes, appliances, equipment, and more.</p>
               <Link href="/services/heavy-items" className="text-emerald-600 hover:text-emerald-700 font-medium">
                 Learn More →
               </Link>
@@ -143,7 +143,7 @@ export default function RoundRock() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Oversized Shipping</h3>
-              <p className="text-gray-600 mb-4">Oversized item shipping for Round Rock — items that exceed standard carrier limits. Custom crating and freight solutions.</p>
+              <p className="text-gray-600 mb-4">Oversized item shipping for Round Rock   items that exceed standard carrier limits. Custom crating and freight solutions.</p>
               <Link href="/services/oversized-shipping" className="text-emerald-600 hover:text-emerald-700 font-medium">
                 Learn More →
               </Link>
@@ -152,9 +152,9 @@ export default function RoundRock() {
 
           {/* Specialty Crating Section */}
           <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Custom Crating & Specialty Shipping — Round Rock, TX</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Custom Crating & Specialty Shipping   Round Rock, TX</h2>
             <p className="text-gray-700 mb-6">
-              Round Rock is home to tech professionals, growing families, and businesses that need specialty shipping done right. Whether you're shipping designer furniture from a new home build in Teravista, crating fine art from a Round Rock gallery, or moving heavy equipment from a local business — we build every custom crate in-house at our Austin facility for a precision fit and maximum protection.
+              Round Rock is home to tech professionals, growing families, and businesses that need specialty shipping done right. Whether you're shipping designer furniture from a new home build in Teravista, crating fine art from a Round Rock gallery, or moving heavy equipment from a local business   we build every custom crate in-house at our Austin facility for a precision fit and maximum protection.
             </p>
             <div className="grid md:grid-cols-3 gap-6 mb-6">
               <div className="bg-white rounded-xl p-5 border border-emerald-100">
@@ -235,7 +235,7 @@ export default function RoundRock() {
 
           {/* FAQ Section */}
           <div className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Specialty Shipping Round Rock TX — Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Specialty Shipping Round Rock TX   Frequently Asked Questions</h2>
             <div className="space-y-6">
               <div className="border border-gray-200 rounded-xl p-6">
                 <h3 className="font-bold text-gray-900 mb-2">Do you offer specialty shipping and crating in Round Rock, TX?</h3>
@@ -243,7 +243,7 @@ export default function RoundRock() {
               </div>
               <div className="border border-gray-200 rounded-xl p-6">
                 <h3 className="font-bold text-gray-900 mb-2">Can you handle furniture shipping and crating for Round Rock residents?</h3>
-                <p className="text-gray-600">Absolutely. We specialize in furniture shipping and crating for Round Rock — from sectional sofas and dining tables to bedroom sets and office furniture. Every piece gets a custom-built wood crate for maximum protection in transit.</p>
+                <p className="text-gray-600">Absolutely. We specialize in furniture shipping and crating for Round Rock   from sectional sofas and dining tables to bedroom sets and office furniture. Every piece gets a custom-built wood crate for maximum protection in transit.</p>
               </div>
               <div className="border border-gray-200 rounded-xl p-6">
                 <h3 className="font-bold text-gray-900 mb-2">What Round Rock neighborhoods do you serve?</h3>
@@ -251,7 +251,7 @@ export default function RoundRock() {
               </div>
               <div className="border border-gray-200 rounded-xl p-6">
                 <h3 className="font-bold text-gray-900 mb-2">Do you handle Round Rock to nationwide shipping?</h3>
-                <p className="text-gray-600">Yes — we coordinate LTL freight nationwide for Round Rock customers. After custom crating at our Austin facility, we work with trusted freight carriers to deliver your items anywhere in the US with full insurance coverage.</p>
+                <p className="text-gray-600">Yes   we coordinate LTL freight nationwide for Round Rock customers. After custom crating at our Austin facility, we work with trusted freight carriers to deliver your items anywhere in the US with full insurance coverage.</p>
               </div>
               <div className="border border-gray-200 rounded-xl p-6">
                 <h3 className="font-bold text-gray-900 mb-2">How quickly can you pick up in Round Rock?</h3>

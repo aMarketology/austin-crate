@@ -11,7 +11,7 @@ export default function BlogIndexClient() {
     {
       slug: 'what-is-white-glove-shipping',
       title: 'What Is White-Glove Shipping? (And Is It Worth It?)',
-      excerpt: 'A plain-English explanation of white-glove delivery — what it includes, when to choose it, and whether the cost is worth it for your item.',
+      excerpt: 'A plain-English explanation of white-glove delivery   what it includes, when to choose it, and whether the cost is worth it for your item.',
       date: 'March 25, 2026',
       category: 'Shipping Guide',
       readTime: '5 min read',
@@ -20,7 +20,7 @@ export default function BlogIndexClient() {
     {
       slug: 'piano-shipping-austin',
       title: 'Piano Shipping in Austin, Texas: Complete Guide & Costs for 2026',
-      excerpt: 'From uprights to concert grands — professional piano crating, moving, and transport in Central Texas. Costs, process, and what to ask before booking.',
+      excerpt: 'From uprights to concert grands   professional piano crating, moving, and transport in Central Texas. Costs, process, and what to ask before booking.',
       date: 'March 22, 2026',
       category: 'Specialist Shipping',
       readTime: '6 min read',
@@ -29,7 +29,7 @@ export default function BlogIndexClient() {
     {
       slug: 'ship-large-furniture-texas',
       title: 'How to Ship Large Furniture Across Texas (Without the Headaches)',
-      excerpt: 'Custom crating, costs, and what to expect when moving large furniture pieces across the Lone Star State — antiques, designer sofas, dining tables, and more.',
+      excerpt: 'Custom crating, costs, and what to expect when moving large furniture pieces across the Lone Star State   antiques, designer sofas, dining tables, and more.',
       date: 'March 18, 2026',
       category: 'Shipping Guide',
       readTime: '7 min read',
@@ -83,7 +83,7 @@ export default function BlogIndexClient() {
     {
       slug: 'austin-kiva-hub-small-business-microloans',
       title: 'City of Austin Launches Kiva Hub to Support Small Business Owners',
-      excerpt: 'Austin partners with global nonprofit Kiva to offer crowdfunded microloans from $1,000–$15,000 at 0% interest with no minimum credit score required.',
+      excerpt: 'Austin partners with global nonprofit Kiva to offer crowdfunded microloans from $1,000-$15,000 at 0% interest with no minimum credit score required.',
       date: 'March 24, 2026',
       category: 'Local Business',
       readTime: '3 min read',
@@ -92,7 +92,7 @@ export default function BlogIndexClient() {
     {
       slug: 'best-furniture-stores-austin-texas',
       title: 'Best Furniture Stores in Austin, Texas (2026 Guide)',
-      excerpt: 'From Four Hands Home to Mockingbird Made — the top-rated furniture stores in Austin for 2026, plus budget-friendly and free furniture resources.',
+      excerpt: 'From Four Hands Home to Mockingbird Made   the top-rated furniture stores in Austin for 2026, plus budget-friendly and free furniture resources.',
       date: 'March 25, 2026',
       category: 'Austin Living',
       readTime: '5 min read',
@@ -101,7 +101,7 @@ export default function BlogIndexClient() {
     {
       slug: 'moveoutatx-austin-resource-recovery-returns-in-partnership-to-ut-office-of-sustainability',
       title: 'MoveOutATX and Free Furniture Market Return for Summer 2026',
-      excerpt: 'Austin Resource Recovery and the UT Office of Sustainability bring back MoveOutATX — donation stations and a free furniture market returning to West Campus in late July 2026.',
+      excerpt: 'Austin Resource Recovery and the UT Office of Sustainability bring back MoveOutATX   donation stations and a free furniture market returning to West Campus in late July 2026.',
       date: 'March 25, 2026',
       category: 'Community',
       readTime: '4 min read',

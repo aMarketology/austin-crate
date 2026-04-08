@@ -3,7 +3,7 @@ import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
 
 /**
- * BlogSeoAtx — Google News–optimised blog layout for Austin Crate & Freight
+ * BlogSeoAtx   Google News-optimised blog layout for Austin Crate & Freight
  *
  * Props:
  *   title        - Article H1 and <title> text
@@ -126,7 +126,7 @@ export default function BlogSeoAtx({
             <p className="text-lg text-grey-300 mb-6 max-w-3xl">{description}</p>
           )}
 
-          {/* Meta row — author, date, read time (Google News signals) */}
+          {/* Meta row   author, date, read time (Google News signals) */}
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-grey-400">
             <span className="flex items-center gap-1.5">
               <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
@@ -190,7 +190,7 @@ export default function BlogSeoAtx({
               <div>
                 <p className="font-semibold text-gray-900 text-sm">{author}</p>
                 <p className="text-gray-500 text-sm">
-                  Austin Crate &amp; Freight — specialty crating and white-glove shipping in Austin, TX since 2018.
+                  Austin Crate &amp; Freight   specialty crating and white-glove shipping in Austin, TX since 2018.
                 </p>
               </div>
             </div>

@@ -30,7 +30,7 @@ export function generateMetadata(): Metadata {
 export default function GrandfatherClockShipping() {
   const serviceSchema = generateServiceSchema({
     serviceName: 'Grandfather Clock Shipping Austin Texas',
-    description: 'Specialist shipping and crating for grandfather clocks, floor clocks, and longcase clocks in Austin, TX — pendulum removal, movement protection, and custom tall-case crating.',
+    description: 'Specialist shipping and crating for grandfather clocks, floor clocks, and longcase clocks in Austin, TX   pendulum removal, movement protection, and custom tall-case crating.',
     serviceType: 'Specialty Shipping',
   })
 
@@ -52,7 +52,7 @@ export default function GrandfatherClockShipping() {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Grandfather Clock Shipping &amp; Crating in Austin, Texas</h1>
             <p className="text-xl text-grey-300 mb-8 max-w-3xl">
-              Grandfather clocks sit at the intersection of furniture and precision machinery. Moving one requires securing a mechanical movement with suspended weights and a pendulum, inside a tall, narrow case that is inherently vulnerable to tipping — all without interrupting the clock&#39;s calibration or damaging its finish.
+              Grandfather clocks sit at the intersection of furniture and precision machinery. Moving one requires securing a mechanical movement with suspended weights and a pendulum, inside a tall, narrow case that is inherently vulnerable to tipping   all without interrupting the clock&#39;s calibration or damaging its finish.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={`tel:${SITE_CONFIG.phone}`} className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald rounded-lg font-medium text-white hover:bg-emerald/90 transition-all duration-300">
@@ -71,10 +71,10 @@ export default function GrandfatherClockShipping() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Grandfather Clocks Require Specialist Handling</h2>
             <p className="text-gray-700 text-lg mb-4">
-              A grandfather clock is not just tall furniture — it contains a mechanical movement with weighted chains or cables, a precision-balanced pendulum, chime rods, and glass panels, often housed in a case of solid hardwood or antique veneer that can be over 200 years old. Each of these elements has its own vulnerability.
+              A grandfather clock is not just tall furniture   it contains a mechanical movement with weighted chains or cables, a precision-balanced pendulum, chime rods, and glass panels, often housed in a case of solid hardwood or antique veneer that can be over 200 years old. Each of these elements has its own vulnerability.
             </p>
             <p className="text-gray-700 text-lg mb-4">
-              The pendulum can be damaged or knocked out of regulation by even small vibrations if not removed and individually packaged. The weights, if left hanging in the case, can swing and impact the chime rods or the case interior during loading. The movement itself — a finely calibrated gear train — should not be transported in a running state. And the tall, narrow form factor makes the entire piece susceptible to lateral tip-over risk in ways a low credenza is not.
+              The pendulum can be damaged or knocked out of regulation by even small vibrations if not removed and individually packaged. The weights, if left hanging in the case, can swing and impact the chime rods or the case interior during loading. The movement itself   a finely calibrated gear train   should not be transported in a running state. And the tall, narrow form factor makes the entire piece susceptible to lateral tip-over risk in ways a low credenza is not.
             </p>
             <p className="text-gray-700 text-lg">
               Our technicians know how to properly stop, remove, and package each internal component before the case is wrapped and crated. We label every component with reinstallation notes so setup at the destination is straightforward.
@@ -94,7 +94,7 @@ export default function GrandfatherClockShipping() {
                 { title: 'Movement Protection', desc: 'The movement is stopped, and if accessible, the suspension spring is protected. Foam blocking is fitted around the movement to prevent it vibrating against the case or the seat board.' },
                 { title: 'Chime Rod Padding', desc: 'Chime rods and hammers are padded to prevent metal-to-metal contact during transit. This is a common damage point overlooked by general movers.' },
                 { title: 'Glass Door &amp; Panel Protection', desc: 'Glass panels on the bonnet (hood) and lower door are face-padded before any wrap is applied. We use Tyvek between glass and foam to prevent any adhesion or transfer.' },
-                { title: 'Tall-Case Crating', desc: 'The crated case is built to resist lateral racking forces. The crate base is weighted and the case is secured at multiple vertical points — the key cause of tip-over damage is addressed at the crate design stage.' },
+                { title: 'Tall-Case Crating', desc: 'The crated case is built to resist lateral racking forces. The crate base is weighted and the case is secured at multiple vertical points   the key cause of tip-over damage is addressed at the crate design stage.' },
               ].map((item, i) => (
                 <div key={i} className="p-5 bg-white border border-gray-200 rounded-xl">
                   <h3 className="font-bold text-gray-900 mb-2" dangerouslySetInnerHTML={{ __html: item.title }} />
@@ -109,7 +109,7 @@ export default function GrandfatherClockShipping() {
         <section className="py-16 px-4 bg-white">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-3">Clocks &amp; Timepieces We Ship</h2>
-            <p className="text-gray-600 mb-8">From antique longcase movements to modern floor clocks — all handled with the same care.</p>
+            <p className="text-gray-600 mb-8">From antique longcase movements to modern floor clocks   all handled with the same care.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
                 'Grandfather (longcase) clocks', 'Grandmother clocks',
@@ -134,11 +134,11 @@ export default function GrandfatherClockShipping() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
             <div className="space-y-5">
               {[
-                { q: 'Do I need to do anything to the clock before you arrive?', a: 'Ideally, let the clock run down naturally or stop the pendulum a few hours before pickup. If you are unsure how to stop it safely, leave it — our technicians will stop the movement and remove the pendulum during the packing appointment.' },
+                { q: 'Do I need to do anything to the clock before you arrive?', a: 'Ideally, let the clock run down naturally or stop the pendulum a few hours before pickup. If you are unsure how to stop it safely, leave it   our technicians will stop the movement and remove the pendulum during the packing appointment.' },
                 { q: 'Can you ship an antique grandfather clock cross-country?', a: 'Yes. We regularly ship antique longcase clocks from Austin to other states. The clock travels crated, not on an open truck. We can coordinate with a white-glove freight carrier for cross-country routes.' },
-                { q: 'Will the clock need to be re-calibrated after shipping?', a: 'The pendulum will need to be re-hung and the clock set into beat at the destination — this is always required after moving a pendulum clock. Our packing documentation includes the suspension spring position and bob adjustment notes to make this easier for you or a local clocksmith.' },
-                { q: 'What does crating a grandfather clock cost?', a: 'Basic local grandfather clock delivery starts at around $300–$450 including packing, crating, and setup. Long-distance pricing depends on freight lane and clock dimensions. Call (512) 240-9818 for a specific quote.' },
-                { q: 'Can you also move the clock from inside my house?', a: 'Yes. Our crew will carefully move the crated clock from any room, including up or down stairs. We use specialized furniture dollies and always have two technicians for clock moves — tipping is the primary risk and it requires two people to manage safely.' },
+                { q: 'Will the clock need to be re-calibrated after shipping?', a: 'The pendulum will need to be re-hung and the clock set into beat at the destination   this is always required after moving a pendulum clock. Our packing documentation includes the suspension spring position and bob adjustment notes to make this easier for you or a local clocksmith.' },
+                { q: 'What does crating a grandfather clock cost?', a: 'Basic local grandfather clock delivery starts at around $300-$450 including packing, crating, and setup. Long-distance pricing depends on freight lane and clock dimensions. Call (512) 240-9818 for a specific quote.' },
+                { q: 'Can you also move the clock from inside my house?', a: 'Yes. Our crew will carefully move the crated clock from any room, including up or down stairs. We use specialized furniture dollies and always have two technicians for clock moves   tipping is the primary risk and it requires two people to manage safely.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-white border border-gray-200 rounded-xl p-5">
                   <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

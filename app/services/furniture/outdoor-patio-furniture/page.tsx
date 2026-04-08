@@ -11,7 +11,7 @@ const SLUG = '/services/furniture/outdoor-patio-furniture'
 export function generateMetadata(): Metadata {
   return generateServiceMetadata({
     serviceName: 'Outdoor & Patio Furniture Shipping Austin Texas',
-    description: 'Specialist outdoor and patio furniture shipping and crating in Austin, Texas. Teak, wrought iron, wicker, and high-end outdoor collections — white-glove service. Call (512) 240-9818.',
+    description: 'Specialist outdoor and patio furniture shipping and crating in Austin, Texas. Teak, wrought iron, wicker, and high-end outdoor collections   white-glove service. Call (512) 240-9818.',
     keywords: [
       'outdoor furniture shipping Austin Texas',
       'patio furniture shipping Austin TX',
@@ -30,7 +30,7 @@ export function generateMetadata(): Metadata {
 export default function OutdoorFurnitureShipping() {
   const serviceSchema = generateServiceSchema({
     serviceName: 'Outdoor & Patio Furniture Shipping Austin Texas',
-    description: 'White-glove shipping and crating for outdoor and patio furniture in Austin, TX — teak, wrought iron, wicker, and premium outdoor collections.',
+    description: 'White-glove shipping and crating for outdoor and patio furniture in Austin, TX   teak, wrought iron, wicker, and premium outdoor collections.',
     serviceType: 'Specialty Shipping',
   })
 
@@ -56,7 +56,7 @@ export default function OutdoorFurnitureShipping() {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Outdoor &amp; Patio Furniture Shipping in Austin, Texas</h1>
             <p className="text-xl text-grey-300 mb-8 max-w-3xl">
-              Premium outdoor furniture — teak dining sets, wrought iron collections, luxury wicker, and high-end patio pieces — is worth protecting properly. We ship and crate outdoor furniture in Austin and nationwide with the same care we give fine art.
+              Premium outdoor furniture   teak dining sets, wrought iron collections, luxury wicker, and high-end patio pieces   is worth protecting properly. We ship and crate outdoor furniture in Austin and nationwide with the same care we give fine art.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="tel:(512) 240-9818" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald rounded-lg font-medium text-white hover:bg-emerald/90 transition-all duration-300">
@@ -75,17 +75,17 @@ export default function OutdoorFurnitureShipping() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Outdoor Furniture Needs Specialist Shipping</h2>
             <p className="text-gray-700 text-lg mb-4">
-              People assume outdoor furniture is tough. In some ways it is — but premium teak, wrought iron, powder-coated aluminum, and all-weather wicker are all vulnerable to specific transit risks: surface scratches, bending, broken welds, and finish damage from improper wrapping or impact.
+              People assume outdoor furniture is tough. In some ways it is   but premium teak, wrought iron, powder-coated aluminum, and all-weather wicker are all vulnerable to specific transit risks: surface scratches, bending, broken welds, and finish damage from improper wrapping or impact.
             </p>
             <p className="text-gray-700 text-lg mb-8">
-              A high-end teak dining set or a Gloster outdoor sofa collection represents a significant investment. We treat it accordingly — proper disassembly, material-specific wrapping, and custom crating for anything going long-distance.
+              A high-end teak dining set or a Gloster outdoor sofa collection represents a significant investment. We treat it accordingly   proper disassembly, material-specific wrapping, and custom crating for anything going long-distance.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 { title: 'Teak & Hardwood Handling', desc: 'Teak and ipe furniture are heavy and dense. We use proper lift equipment and face-pad wood surfaces to prevent transit scratches on oiled or finished faces.' },
                 { title: 'Powder-Coat & Paint Protection', desc: 'Aluminum and steel frames with powder-coat finishes are wrapped in non-reactive padding to prevent scratching or chipping during transit.' },
                 { title: 'Wicker & Resin Weave Care', desc: 'All-weather wicker and resin weave panels are fragile under point impact. We build rigid crates around wicker pieces to prevent crush damage.' },
-                { title: 'Glass Tabletop Crating', desc: 'Outdoor glass tabletops — tempered or otherwise — travel in dedicated crates with foam edge and face padding, separately from table bases.' },
+                { title: 'Glass Tabletop Crating', desc: 'Outdoor glass tabletops   tempered or otherwise   travel in dedicated crates with foam edge and face padding, separately from table bases.' },
                 { title: 'Umbrella & Accessory Handling', desc: 'Outdoor umbrella bases, parasols, and accessories are padded and crated to ship alongside the main furniture set.' },
                 { title: 'Set Coordination', desc: 'Large patio sets with multiple chairs, ottomans, a table, and umbrella are inventoried and shipped together with a complete packing list.' },
               ].map((item, i) => (
@@ -130,10 +130,10 @@ export default function OutdoorFurnitureShipping() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
             <div className="space-y-5">
               {[
-                { q: 'Can you ship a complete patio dining set from Austin?', a: 'Yes. We inventory, wrap, and crate complete outdoor dining sets — table, chairs, umbrella, and base — and ship them together with a complete manifest.' },
+                { q: 'Can you ship a complete patio dining set from Austin?', a: 'Yes. We inventory, wrap, and crate complete outdoor dining sets   table, chairs, umbrella, and base   and ship them together with a complete manifest.' },
                 { q: 'Do you ship teak furniture from Austin?', a: 'Yes. Teak is one of the heavier outdoor furniture materials and benefits from proper lift equipment and our liftgate trucks. We wrap teak surfaces to prevent transit scratches on aged or oiled finishes.' },
                 { q: 'Can you ship outdoor furniture cross-country from Austin?', a: 'Yes. We regularly ship outdoor furniture from Austin to all 50 states. Custom crating is strongly recommended for long-distance outdoor furniture shipments.' },
-                { q: 'How much does patio furniture shipping cost in Austin?', a: 'Local patio furniture shipping in Austin starts at $200–$400 for a chair-and-table set. Long-distance crated freight for a full patio set starts at $500+. Call (512) 240-9818 for an accurate quote.' },
+                { q: 'How much does patio furniture shipping cost in Austin?', a: 'Local patio furniture shipping in Austin starts at $200-$400 for a chair-and-table set. Long-distance crated freight for a full patio set starts at $500+. Call (512) 240-9818 for an accurate quote.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                   <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

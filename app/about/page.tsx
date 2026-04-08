@@ -33,7 +33,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Founded in 2010, Austin Crate & Freight has established itself as Central Texas's most trusted specialty shipping company. We recognized the need for professional, white-glove services for high-value items—fine art, designer furniture, and sensitive medical equipment—that demand more than standard freight handling.
+            Founded in 2010, Austin Crate & Freight has established itself as Central Texas's most trusted specialty shipping company. We recognized the need for professional, white-glove services for high-value items fine art, designer furniture, and sensitive medical equipment that demand more than standard freight handling.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             What started as a small custom crating operation has grown into a full-service specialty shipping company serving galleries, museums, interior designers, medical facilities, and private collectors throughout Austin, Round Rock, Cedar Park, Georgetown, and beyond.
@@ -41,7 +41,7 @@ export default function About() {
 
           <h2 className="text-4xl font-bold text-gray-900 mb-6 mt-12">Our Mission</h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            To provide museum-quality care and white-glove service for every shipment, treating each item with the attention and expertise it deserves. We're committed to protecting what matters most to you—whether it's irreplaceable artwork, luxury furnishings, or life-saving medical equipment.
+            To provide museum-quality care and white-glove service for every shipment, treating each item with the attention and expertise it deserves. We're committed to protecting what matters most to you whether it's irreplaceable artwork, luxury furnishings, or life-saving medical equipment.
           </p>
 
           <h2 className="text-4xl font-bold text-gray-900 mb-6 mt-12">Why Choose Austin Crate & Freight?</h2>
@@ -56,7 +56,7 @@ export default function About() {
             </div>
             <div>
               <h3 className="text-2xl font-bold text-emerald-600 mb-3">White-Glove Service</h3>
-              <p className="text-gray-700">Professional handling from start to finish—including disassembly, secure packing, careful transport, inside delivery, and reassembly when needed.</p>
+              <p className="text-gray-700">Professional handling from start to finish including disassembly, secure packing, careful transport, inside delivery, and reassembly when needed.</p>
             </div>
             <div>
               <h3 className="text-2xl font-bold text-emerald-600 mb-3">Local Knowledge</h3>

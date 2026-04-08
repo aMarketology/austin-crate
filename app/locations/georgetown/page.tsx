@@ -8,7 +8,7 @@ import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = generateLocationMetadata({
   locationName: 'Georgetown',
-  description: 'Specialty shipping & custom crating in Georgetown, TX — furniture shipping and crating, fine art transport, heavy item pickup, oversized shipping & medical equipment. White-glove service from Austin Crate & Freight.',
+  description: 'Specialty shipping & custom crating in Georgetown, TX   furniture shipping and crating, fine art transport, heavy item pickup, oversized shipping & medical equipment. White-glove service from Austin Crate & Freight.',
   keywords: [
     'specialty shipping Georgetown TX',
     'specialty shipping Georgetown Texas',
@@ -52,7 +52,7 @@ export default function Georgetown() {
       <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-700 bg-gray-800/50 backdrop-blur-sm mb-6">
-            <span className="text-xs font-medium text-gray-300 uppercase tracking-widest">Specialty Shipping & Crating — Georgetown, TX</span>
+            <span className="text-xs font-medium text-gray-300 uppercase tracking-widest">Specialty Shipping & Crating   Georgetown, TX</span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Specialty Shipping & Crating in Georgetown, TX</h1>
           <p className="text-xl text-gray-300 mb-8 max-w-3xl">
@@ -82,7 +82,7 @@ export default function Georgetown() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Specialty Shipping & Crating Services in Georgetown</h2>
-          <p className="text-lg text-gray-600 mb-12 max-w-3xl">Georgetown's Victorian-era homes, antique collections, and growing luxury neighborhoods deserve a shipping company that understands precision crating. Every service we offer in Georgetown includes in-house custom crating — built to fit, built to protect.</p>
+          <p className="text-lg text-gray-600 mb-12 max-w-3xl">Georgetown's Victorian-era homes, antique collections, and growing luxury neighborhoods deserve a shipping company that understands precision crating. Every service we offer in Georgetown includes in-house custom crating   built to fit, built to protect.</p>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <div className="p-6 border border-gray-200 rounded-xl hover:shadow-lg transition-shadow">
@@ -131,7 +131,7 @@ export default function Georgetown() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Pickup</h3>
-              <p className="text-gray-600 mb-4">Heavy package pickup in Georgetown for items too large for standard carriers — safes, pianos, appliances, and more.</p>
+              <p className="text-gray-600 mb-4">Heavy package pickup in Georgetown for items too large for standard carriers   safes, pianos, appliances, and more.</p>
               <Link href="/services/heavy-items" className="text-emerald-600 hover:text-emerald-700 font-medium">
                 Learn More →
               </Link>
@@ -144,7 +144,7 @@ export default function Georgetown() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Oversized Shipping</h3>
-              <p className="text-gray-600 mb-4">Oversized item shipping for Georgetown — items that exceed standard carrier limits. Custom crating and freight solutions.</p>
+              <p className="text-gray-600 mb-4">Oversized item shipping for Georgetown   items that exceed standard carrier limits. Custom crating and freight solutions.</p>
               <Link href="/services/oversized-shipping" className="text-emerald-600 hover:text-emerald-700 font-medium">
                 Learn More →
               </Link>
@@ -153,9 +153,9 @@ export default function Georgetown() {
 
           {/* Specialty Crating Section */}
           <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Custom Crating & Specialty Shipping — Georgetown, TX</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Custom Crating & Specialty Shipping   Georgetown, TX</h2>
             <p className="text-gray-700 mb-6">
-              Georgetown's historic homes and growing luxury communities have unique shipping challenges. Antique furniture from Georgetown's famous downtown square, art from the Williamson Museum, and large items from sprawling Sun City estates — we custom-build every crate in-house for a perfect fit. Our specialty crating service Georgetown TX residents rely on handles everything from a single heirloom to a full estate move.
+              Georgetown's historic homes and growing luxury communities have unique shipping challenges. Antique furniture from Georgetown's famous downtown square, art from the Williamson Museum, and large items from sprawling Sun City estates   we custom-build every crate in-house for a perfect fit. Our specialty crating service Georgetown TX residents rely on handles everything from a single heirloom to a full estate move.
             </p>
             <div className="grid md:grid-cols-3 gap-6 mb-6">
               <div className="bg-white rounded-xl p-5 border border-emerald-100">
@@ -168,7 +168,7 @@ export default function Georgetown() {
               </div>
               <div className="bg-white rounded-xl p-5 border border-emerald-100">
                 <h3 className="font-bold text-gray-900 mb-2">Furniture Shipping & Crating</h3>
-                <p className="text-gray-600 text-sm">Full furniture shipping and crating service for Georgetown — dining tables, bedroom sets, sofas, and executive office furniture. Every piece custom-crated in-house.</p>
+                <p className="text-gray-600 text-sm">Full furniture shipping and crating service for Georgetown   dining tables, bedroom sets, sofas, and executive office furniture. Every piece custom-crated in-house.</p>
               </div>
             </div>
           </div>
@@ -236,23 +236,23 @@ export default function Georgetown() {
 
           {/* FAQ Section */}
           <div className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Specialty Shipping Georgetown TX — Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Specialty Shipping Georgetown TX   Frequently Asked Questions</h2>
             <div className="space-y-6">
               <div className="border border-gray-200 rounded-xl p-6">
                 <h3 className="font-bold text-gray-900 mb-2">Do you provide specialty shipping and crating in Georgetown, TX?</h3>
-                <p className="text-gray-600">Yes. Austin Crate &amp; Freight serves Georgetown with full specialty shipping and custom crating — including pickup, in-house crate building, and delivery locally or nationwide. We serve Georgetown's historic downtown, Sun City, Berry Creek, and all surrounding zip codes.</p>
+                <p className="text-gray-600">Yes. Austin Crate &amp; Freight serves Georgetown with full specialty shipping and custom crating   including pickup, in-house crate building, and delivery locally or nationwide. We serve Georgetown's historic downtown, Sun City, Berry Creek, and all surrounding zip codes.</p>
               </div>
               <div className="border border-gray-200 rounded-xl p-6">
                 <h3 className="font-bold text-gray-900 mb-2">Can you ship antique furniture from Georgetown?</h3>
-                <p className="text-gray-600">Absolutely — antique and heirloom furniture shipping is one of our specialties. We build custom-fitted wood crates that protect delicate joints, inlaid surfaces, and period finishes. Georgetown's antique dealers and collectors regularly trust us with their most valuable pieces.</p>
+                <p className="text-gray-600">Absolutely   antique and heirloom furniture shipping is one of our specialties. We build custom-fitted wood crates that protect delicate joints, inlaid surfaces, and period finishes. Georgetown's antique dealers and collectors regularly trust us with their most valuable pieces.</p>
               </div>
               <div className="border border-gray-200 rounded-xl p-6">
                 <h3 className="font-bold text-gray-900 mb-2">Do you serve Sun City Georgetown?</h3>
-                <p className="text-gray-600">Yes — we regularly serve Sun City and other Georgetown senior communities. Our team is patient, professional, and familiar with the unique access requirements of Sun City properties. We handle everything from furniture shipping to downsizing moves.</p>
+                <p className="text-gray-600">Yes   we regularly serve Sun City and other Georgetown senior communities. Our team is patient, professional, and familiar with the unique access requirements of Sun City properties. We handle everything from furniture shipping to downsizing moves.</p>
               </div>
               <div className="border border-gray-200 rounded-xl p-6">
                 <h3 className="font-bold text-gray-900 mb-2">How do I get a specialty shipping quote for Georgetown?</h3>
-                <p className="text-gray-600">Call us at (512) 240-9818 or submit an online quote request — we respond same day. Just describe your item, destination, and timeline, and we'll provide a transparent, no-obligation price.</p>
+                <p className="text-gray-600">Call us at (512) 240-9818 or submit an online quote request   we respond same day. Just describe your item, destination, and timeline, and we'll provide a transparent, no-obligation price.</p>
               </div>
               <div className="border border-gray-200 rounded-xl p-6">
                 <h3 className="font-bold text-gray-900 mb-2">Can you ship from Georgetown to other states?</h3>

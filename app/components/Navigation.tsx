@@ -1,6 +1,7 @@
 ﻿'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState, useEffect } from 'react'
 
 export default function Navigation() {
@@ -46,8 +47,15 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-4">
-            <Link href="/" className="flex-shrink-0 text-2xl font-bold text-grey-900">
-              Austin <span className="text-emerald">Crate</span>
+            <Link href="/" className="flex-shrink-0">
+              <Image
+                src="/austin-crate-logo.png"
+                alt="Austin Crate & Freight"
+                width={160}
+                height={48}
+                className="h-12 w-auto object-contain"
+                priority
+              />
             </Link>
           </div>
 

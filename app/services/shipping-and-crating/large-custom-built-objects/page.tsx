@@ -52,7 +52,7 @@ export default function LargeCustomBuiltObjects() {
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-5">Large Custom-Built Object Shipping in Austin, TX</h1>
             <p className="text-xl text-grey-300 mb-8 max-w-3xl">
-              No two custom-built objects are the same — and no standard packaging solution fits them. We assess the piece, design the crate around it, and ship it. Full stop.
+              No two custom-built objects are the same   and no standard packaging solution fits them. We assess the piece, design the crate around it, and ship it. Full stop.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
@@ -115,7 +115,7 @@ export default function LargeCustomBuiltObjects() {
           </div>
           <div className="max-w-4xl mx-auto mt-10 p-6 bg-gray-50 rounded-xl border border-gray-200">
             <p className="text-gray-700">
-              If you built it from scratch, we can ship it. Austin&apos;s creative community — artists, fabricators, prop houses, makers — trusts us to get one-of-a-kind pieces to their destination without damage, on time, and with full documentation.
+              If you built it from scratch, we can ship it. Austin&apos;s creative community   artists, fabricators, prop houses, makers   trusts us to get one-of-a-kind pieces to their destination without damage, on time, and with full documentation.
             </p>
           </div>
         </section>

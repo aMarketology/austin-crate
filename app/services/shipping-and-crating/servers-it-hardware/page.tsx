@@ -116,7 +116,7 @@ export default function ServersITHardware() {
           </div>
           <div className="max-w-4xl mx-auto mt-10 p-6 bg-gray-50 rounded-xl border border-gray-200">
             <p className="text-gray-700">
-              Every IT hardware shipment gets a delivery-window quote and a pre-ship condition report. We work around data-center access schedules and carrier weight restrictions — no guesswork, no carrier refusals.
+              Every IT hardware shipment gets a delivery-window quote and a pre-ship condition report. We work around data-center access schedules and carrier weight restrictions   no guesswork, no carrier refusals.
             </p>
           </div>
         </section>

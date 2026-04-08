@@ -57,7 +57,7 @@ export default function DesignerSofaShipping() {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Designer Sofa &amp; Sectional Shipping in Austin, Texas</h1>
             <p className="text-xl text-grey-300 mb-8 max-w-3xl">
-              Your RH, Restoration Hardware, Natuzzi, or custom sectional deserves more than bubble wrap and a truck. We ship and crate designer sofas and sectionals across Austin and nationwide — with white-glove handling and a scratch-free guarantee.
+              Your RH, Restoration Hardware, Natuzzi, or custom sectional deserves more than bubble wrap and a truck. We ship and crate designer sofas and sectionals across Austin and nationwide   with white-glove handling and a scratch-free guarantee.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="tel:(512) 240-9818" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald rounded-lg font-medium text-white hover:bg-emerald/90 transition-all duration-300">
@@ -79,14 +79,14 @@ export default function DesignerSofaShipping() {
               A standard moving company treats a $12,000 sectional the same way they treat a $400 IKEA sofa. At Austin Crate &amp; Freight, we do not. Designer sofas and sectionals present unique challenges: exposed fabric, delicate legs, modular connectors, down fills, and high-gloss or leather finishes that scratch, scuff, or crease under ordinary wrap-and-go handling.
             </p>
             <p className="text-gray-700 text-lg mb-6">
-              Our process starts with the right wrap materials for the finish — breathable blankets for leather, stretch film for fabric — and ends with custom wood crating when the piece is going long-distance or through an LTL freight network where multiple handlers will touch it.
+              Our process starts with the right wrap materials for the finish   breathable blankets for leather, stretch film for fabric   and ends with custom wood crating when the piece is going long-distance or through an LTL freight network where multiple handlers will touch it.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
               {[
                 { title: 'Fabric & Upholstery Protection', desc: 'Breathable furniture blankets and acid-free wrapping prevent crushing, snagging, and compression marks on delicate upholstery.' },
                 { title: 'Leather & Vinyl Care', desc: 'We use specific wrap techniques and padding profiles that prevent creasing, cracking, or surface transfer on premium leather.' },
                 { title: 'Modular & Sectional Disassembly', desc: 'Sectional connectors are carefully documented, removed, and bagged so your sofa reassembles perfectly at delivery.' },
-                { title: 'Custom Crating for Long-Haul', desc: 'Cross-country shipments get a bespoke wood crate built in our Austin shop — exact dimensions, interior blocking, screw lid.' },
+                { title: 'Custom Crating for Long-Haul', desc: 'Cross-country shipments get a bespoke wood crate built in our Austin shop   exact dimensions, interior blocking, screw lid.' },
                 { title: 'Leg & Hardware Protection', desc: 'Exposed wooden or metal legs are individually wrapped and padded to prevent impact damage during transit.' },
                 { title: 'White-Glove Placement', desc: 'We bring the piece inside, position it where you want it, reassemble all sections, and remove all packing materials.' },
               ].map((item, i) => (
@@ -118,10 +118,10 @@ export default function DesignerSofaShipping() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
             <div className="space-y-5">
               {[
-                { q: 'Can you pick up my designer sofa in Austin?', a: 'Yes — we offer free pickup anywhere in Greater Austin, Round Rock, Cedar Park, Georgetown, and surrounding areas. Our crew arrives with all the right equipment and materials.' },
+                { q: 'Can you pick up my designer sofa in Austin?', a: 'Yes   we offer free pickup anywhere in Greater Austin, Round Rock, Cedar Park, Georgetown, and surrounding areas. Our crew arrives with all the right equipment and materials.' },
                 { q: 'Do you ship sectionals in one piece or disassembled?', a: 'We assess each sectional individually. Most large sectionals ship disassembled into their modular sections, with all hardware carefully bagged and labeled. We reassemble on delivery.' },
                 { q: 'Will you crate my sofa for cross-country shipping?', a: 'Yes. For any long-distance shipment going through LTL freight, we strongly recommend a custom wood crate built in our Austin shop. We provide this end-to-end.' },
-                { q: 'How much does sofa shipping cost in Austin?', a: 'Local designer sofa delivery in Austin typically starts at $200–$400 depending on size and access. Long-distance crated freight starts at $400+. Call (512) 240-9818 for a free quote.' },
+                { q: 'How much does sofa shipping cost in Austin?', a: 'Local designer sofa delivery in Austin typically starts at $200-$400 depending on size and access. Long-distance crated freight starts at $400+. Call (512) 240-9818 for a free quote.' },
                 { q: 'Can you ship a European brand sectional (Roche Bobois, B&B Italia)?', a: 'Yes. We ship international designer sectionals regularly. Pieces from Ligne Roset, Roche Bobois, B&B Italia, and Cassina require specialist handling due to precision-fit modular connections and premium leather or fabric finishes. We photograph every connection point and bag all hardware for correct reassembly at the destination.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-gray-50 border border-gray-200 rounded-xl p-5">

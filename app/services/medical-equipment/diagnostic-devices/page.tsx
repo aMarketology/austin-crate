@@ -30,7 +30,7 @@ export function generateMetadata(): Metadata {
 export default function DiagnosticDevicesShipping() {
   const serviceSchema = generateServiceSchema({
     serviceName: 'Diagnostic Device Shipping Austin Texas',
-    description: 'Specialist shipping and crating for diagnostic medical devices in Austin, TX — patient monitors, ECG machines, portable diagnostic equipment, and clinical analyzers.',
+    description: 'Specialist shipping and crating for diagnostic medical devices in Austin, TX   patient monitors, ECG machines, portable diagnostic equipment, and clinical analyzers.',
     serviceType: 'Medical Equipment Transport',
   })
 
@@ -52,7 +52,7 @@ export default function DiagnosticDevicesShipping() {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Diagnostic Device Shipping in Austin, Texas</h1>
             <p className="text-xl text-grey-300 mb-8 max-w-3xl">
-              Diagnostic devices — from patient monitors to portable ECG units to point-of-care analyzers — are the workhorses of clinical environments. They are purchased, leased, refurbished, and relocated constantly. Each move carries the same risk: a device that arrived appearing intact but arrives with an internal calibration error or a damaged display connector that only shows up in the next patient encounter.
+              Diagnostic devices   from patient monitors to portable ECG units to point-of-care analyzers   are the workhorses of clinical environments. They are purchased, leased, refurbished, and relocated constantly. Each move carries the same risk: a device that arrived appearing intact but arrives with an internal calibration error or a damaged display connector that only shows up in the next patient encounter.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={`tel:${SITE_CONFIG.phone}`} className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald rounded-lg font-medium text-white hover:bg-emerald/90 transition-all duration-300">
@@ -71,13 +71,13 @@ export default function DiagnosticDevicesShipping() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Diagnostic Devices Need Specialist Handling</h2>
             <p className="text-gray-700 text-lg mb-4">
-              Patient monitors and diagnostic devices look rugged on the outside — they have to be, in a clinical environment. But their internal electronics, display panels, and connected probe assemblies are not designed for the shock profiles of freight handling. A 5G shock event — common during LTL freight loading — is outside the operating specification of most clinical monitors. Displays are particularly vulnerable: a cracked backplane on a bedside monitor may not be visually apparent but will fail within weeks of return to service.
+              Patient monitors and diagnostic devices look rugged on the outside   they have to be, in a clinical environment. But their internal electronics, display panels, and connected probe assemblies are not designed for the shock profiles of freight handling. A 5G shock event   common during LTL freight loading   is outside the operating specification of most clinical monitors. Displays are particularly vulnerable: a cracked backplane on a bedside monitor may not be visually apparent but will fail within weeks of return to service.
             </p>
             <p className="text-gray-700 text-lg mb-4">
-              Probes and accessories — SpO₂ probes, NIBP cuffs, ECG lead sets, temperature probes — are often the most expensive peripherals and the most commonly damaged in transit because they are packed alongside the main unit without proper individual protection. We pack accessories separately and log every component against the unit's serial number.
+              Probes and accessories   SpO₂ probes, NIBP cuffs, ECG lead sets, temperature probes   are often the most expensive peripherals and the most commonly damaged in transit because they are packed alongside the main unit without proper individual protection. We pack accessories separately and log every component against the unit's serial number.
             </p>
             <p className="text-gray-700 text-lg">
-              For devices being sold, leased, or transferred between facilities, we provide the condition documentation that biomedical engineers and equipment leasing companies require before the transaction can close — a time-stamped photo log of all components and a transport event log showing the custody chain from pickup to delivery.
+              For devices being sold, leased, or transferred between facilities, we provide the condition documentation that biomedical engineers and equipment leasing companies require before the transaction can close   a time-stamped photo log of all components and a transport event log showing the custody chain from pickup to delivery.
             </p>
           </div>
         </section>
@@ -94,7 +94,7 @@ export default function DiagnosticDevicesShipping() {
                 { title: 'Anti-Static Handling', desc: 'Devices with exposed PCBs or diagnostic ports are handled in anti-static environments. Connector ports are capped to prevent contamination or ESD damage during transit.' },
                 { title: 'Shock-Isolated Crating', desc: 'We use closed-cell foam at density appropriate to the device weight and fragility. Devices do not touch the crate walls at any point.' },
                 { title: 'Storage Media Protocols', desc: 'Devices that store patient data are handled per HIPAA requirements. We do not access, transfer, or inspect data storage components. PHI handling is coordinated with your facility\'s privacy officer.' },
-                { title: 'Condition Documentation', desc: 'Time-stamped photo documentation of every unit — screens, connectors, housing condition, attached accessories — before and after transport. Suitable for equipment sale or lease transactions.' },
+                { title: 'Condition Documentation', desc: 'Time-stamped photo documentation of every unit   screens, connectors, housing condition, attached accessories   before and after transport. Suitable for equipment sale or lease transactions.' },
               ].map((item, i) => (
                 <div key={i} className="p-5 bg-white border border-gray-200 rounded-xl">
                   <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
@@ -142,9 +142,9 @@ export default function DiagnosticDevicesShipping() {
               {[
                 { q: 'Can you pick up multiple patient monitors at once from a hospital?', a: 'Yes. We regularly handle multi-unit pickups for hospital equipment relocation and fleet refurbishment projects. We bring serial-number tracking sheets and condition photo logs for each unit.' },
                 { q: 'How do you handle patient data stored on diagnostic devices?', a: 'We do not access, inspect, or interact with patient data in any way. Devices that require data wiping or PHI removal before transport must be cleared by your facility\'s biomedical or IT team before we take custody. We can coordinate timing with that process.' },
-                { q: 'Can you move diagnostic equipment between Austin medical facilities?', a: 'Yes — between hospitals, outpatient clinics, physician offices, urgent care centers, and storage facilities anywhere in Greater Austin. We can work within your facility\'s vendor credentialing requirements.' },
+                { q: 'Can you move diagnostic equipment between Austin medical facilities?', a: 'Yes   between hospitals, outpatient clinics, physician offices, urgent care centers, and storage facilities anywhere in Greater Austin. We can work within your facility\'s vendor credentialing requirements.' },
                 { q: 'Do you transport diagnostic devices for equipment dealers and remarketers?', a: 'Yes. We work with medical equipment dealers, hospital liquidators, and biomedical refurbishment companies. We provide the condition documentation photos and chain-of-custody records that equipment transactions require.' },
-                { q: 'What does diagnostic device shipping cost?', a: 'Single-unit local moves start at $150–$300 depending on device size and access. Multi-unit projects are priced per project. Call (512) 240-9818 for a free quote.' },
+                { q: 'What does diagnostic device shipping cost?', a: 'Single-unit local moves start at $150-$300 depending on device size and access. Multi-unit projects are priced per project. Call (512) 240-9818 for a free quote.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-white border border-gray-200 rounded-xl p-5">
                   <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

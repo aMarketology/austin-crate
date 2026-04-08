@@ -78,7 +78,7 @@ export default function HeavyItemsShipping() {
                 </h1>
                 <p className="text-xl text-grey-300 mb-8">
                   Too heavy for FedEx or UPS? We pick up, custom-crate, and ship heavy and
-                  oversized items — furniture, equipment, machinery, and more — from anywhere in
+                  oversized items   furniture, equipment, machinery, and more   from anywhere in
                   the Greater Austin area. No weight limits, no size restrictions.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -175,7 +175,7 @@ export default function HeavyItemsShipping() {
               Heavy Items We Pick Up &amp; Ship from Austin
             </h2>
             <p className="text-center text-gray-600 text-lg mb-12 max-w-3xl mx-auto">
-              If it's too big, too heavy, or too valuable for standard carriers — we handle it.
+              If it's too big, too heavy, or too valuable for standard carriers   we handle it.
               Here's what Austin residents and businesses trust us to ship.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -272,12 +272,12 @@ export default function HeavyItemsShipping() {
                 {
                   step: 1,
                   title: 'Free Quote & Assessment',
-                  desc: 'Tell us what you need shipped — dimensions, weight, pickup and delivery locations. We provide a detailed quote within 24 hours with no hidden fees.',
+                  desc: 'Tell us what you need shipped   dimensions, weight, pickup and delivery locations. We provide a detailed quote within 24 hours with no hidden fees.',
                 },
                 {
                   step: 2,
                   title: 'Scheduled Pickup at Your Location',
-                  desc: 'Our team arrives at your home or business with all equipment needed — dollies, straps, ramps, and a crew trained in heavy-item handling. Free pickup in the Greater Austin area.',
+                  desc: 'Our team arrives at your home or business with all equipment needed   dollies, straps, ramps, and a crew trained in heavy-item handling. Free pickup in the Greater Austin area.',
                 },
                 {
                   step: 3,
@@ -292,7 +292,7 @@ export default function HeavyItemsShipping() {
                 {
                   step: 5,
                   title: 'White-Glove Delivery & Placement',
-                  desc: 'We deliver your item inside — not just to the curb. Unpacking, placement in your desired location, and debris removal are all included.',
+                  desc: 'We deliver your item inside   not just to the curb. Unpacking, placement in your desired location, and debris removal are all included.',
                 },
               ].map((item) => (
                 <div key={item.step} className="flex gap-6 items-start">
@@ -377,7 +377,7 @@ export default function HeavyItemsShipping() {
               <p className="text-lg text-gray-800 font-medium mb-2">
                 Most local heavy item shipments in Austin start at
               </p>
-              <p className="text-4xl font-bold text-emerald mb-2">$150 – $500+</p>
+              <p className="text-4xl font-bold text-emerald mb-2">$150 - $500+</p>
               <p className="text-gray-600 mb-6">
                 Depending on item size, weight, and destination. Nationwide freight quotes
                 available.
@@ -457,11 +457,11 @@ export default function HeavyItemsShipping() {
               {[
                 {
                   q: 'How much does it cost to ship a heavy item in Austin?',
-                  a: 'Heavy item shipping costs in Austin depend on weight, dimensions, fragility, and destination. Most local heavy item shipments start at $150–$300. Long-distance freight starts at $300+. Call (512) 240-9818 for a free, no-obligation quote.',
+                  a: 'Heavy item shipping costs in Austin depend on weight, dimensions, fragility, and destination. Most local heavy item shipments start at $150-$300. Long-distance freight starts at $300+. Call (512) 240-9818 for a free, no-obligation quote.',
                 },
                 {
                   q: 'Do you pick up heavy packages in Austin?',
-                  a: 'Yes! Austin Crate & Freight offers free heavy package pickup throughout Greater Austin, including Round Rock, Cedar Park, Georgetown, Pflugerville, and surrounding areas. Our crew arrives with all necessary equipment — dollies, straps, ramps, and a truck.',
+                  a: 'Yes! Austin Crate & Freight offers free heavy package pickup throughout Greater Austin, including Round Rock, Cedar Park, Georgetown, Pflugerville, and surrounding areas. Our crew arrives with all necessary equipment   dollies, straps, ramps, and a truck.',
                 },
                 {
                   q: 'What is considered a heavy item for shipping?',
@@ -523,7 +523,7 @@ export default function HeavyItemsShipping() {
                   ),
                   title: 'Trained Heavy-Lift Crew',
                   description:
-                    'Our team is trained and equipped for heavy item handling — proper lifting techniques, rigging, and specialized equipment.',
+                    'Our team is trained and equipped for heavy item handling   proper lifting techniques, rigging, and specialized equipment.',
                 },
                 {
                   icon: (
@@ -553,7 +553,7 @@ export default function HeavyItemsShipping() {
                   ),
                   title: 'Inside Delivery',
                   description:
-                    'We deliver inside your home or business — not just to the curb. Placement in your desired room included.',
+                    'We deliver inside your home or business   not just to the curb. Placement in your desired room included.',
                 },
                 {
                   icon: (
@@ -632,7 +632,7 @@ export default function HeavyItemsShipping() {
               Need to Ship Something Heavy in Austin?
             </h2>
             <p className="text-xl text-grey-300 mb-10">
-              Get a free quote for heavy item pickup and shipping. We handle everything — pickup,
+              Get a free quote for heavy item pickup and shipping. We handle everything   pickup,
               custom crating, and door-to-door delivery. No weight limits.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

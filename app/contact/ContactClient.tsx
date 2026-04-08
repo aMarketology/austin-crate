@@ -7,7 +7,7 @@ import { useState, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 import emailjs from '@emailjs/browser'
 
-// Common item size presets — lets customers skip manual measurement entry
+// Common item size presets   lets customers skip manual measurement entry
 const SIZE_PRESETS = [
   { label: 'Small Box', icon: '📦', desc: 'Under 2 cu ft · ~50 lbs', length: '24', width: '18', height: '12', weight: '50' },
   { label: 'Artwork / Print', icon: '🎨', desc: 'Framed or canvas piece', length: '48', width: '36', height: '4', weight: '15' },
@@ -35,7 +35,7 @@ export default function ContactClient() {
   })
   const [unknownDimensions, setUnknownDimensions] = useState(false)
   const [selectedPreset, setSelectedPreset] = useState<string | null>(null)
-  // Honeypot — hidden from real users; bots will fill it
+  // Honeypot   hidden from real users; bots will fill it
   const [honeyPot, setHoneyPot] = useState('')
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState('')
@@ -74,13 +74,13 @@ export default function ContactClient() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
-    // Spam guard 1 — honeypot filled = bot
+    // Spam guard 1   honeypot filled = bot
     if (honeyPot) {
       router.push('/thank-you')
       return
     }
 
-    // Spam guard 2 — submitted in under 4 seconds = bot
+    // Spam guard 2   submitted in under 4 seconds = bot
     if (Date.now() - formLoadTime.current < 4000) {
       router.push('/thank-you')
       return
@@ -90,7 +90,7 @@ export default function ContactClient() {
     setError('')
 
     const dimensionsText = unknownDimensions
-      ? 'Unknown — customer will discuss'
+      ? 'Unknown   customer will discuss'
       : `${formData.length}" L × ${formData.width}" W × ${formData.height}" H`
     const weightText = unknownDimensions ? 'Unknown' : `${formData.weight} lbs`
     const serviceLabel = formData.serviceType === 'shipping' ? 'Shipping Service' : 'Crate Purchase Only'
@@ -197,7 +197,7 @@ export default function ContactClient() {
           {/* Contact Form */}
           <div className="order-1 md:order-2">
             <h2 className="text-3xl font-bold text-gray-900 mb-2">Request a Free Quote</h2>
-            <p className="text-gray-500 mb-6 text-sm">Takes about 60 seconds — no commitment required</p>
+            <p className="text-gray-500 mb-6 text-sm">Takes about 60 seconds   no commitment required</p>
 
             {error && (
               <div className="mb-6 p-4 bg-red-50 border border-red-200 text-red-700 rounded">
@@ -207,7 +207,7 @@ export default function ContactClient() {
 
             <form onSubmit={handleSubmit} className="space-y-5">
 
-              {/* Honeypot — must stay hidden from real users */}
+              {/* Honeypot   must stay hidden from real users */}
               <div style={{ display: 'none' }} aria-hidden="true">
                 <input
                   type="text"
@@ -331,11 +331,11 @@ export default function ContactClient() {
                   </button>
                 </div>
 
-                {/* Manual entry — shown when no preset or "unknown" not selected */}
+                {/* Manual entry   shown when no preset or "unknown" not selected */}
                 {!unknownDimensions && (
                   <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 space-y-3">
                     <p className="text-xs text-gray-500 font-semibold uppercase tracking-wide">
-                      Approximate dimensions &amp; weight — your best guess is fine
+                      Approximate dimensions &amp; weight   your best guess is fine
                     </p>
                     <div className="grid grid-cols-3 gap-3">
                       <div>
@@ -408,12 +408,12 @@ export default function ContactClient() {
 
                 {unknownDimensions && (
                   <p className="text-sm text-emerald-700 bg-emerald-50 border border-emerald-200 rounded px-4 py-2">
-                    ✅ No problem — we&apos;ll reach out to get measurements or send someone to take a look.
+                    ✅ No problem   we&apos;ll reach out to get measurements or send someone to take a look.
                   </p>
                 )}
               </div>
 
-              {/* Destination ZIP — only for shipping */}
+              {/* Destination ZIP   only for shipping */}
               {formData.serviceType === 'shipping' && (
                 <div>
                   <label htmlFor="zipcode" className="block text-gray-700 font-semibold mb-1">

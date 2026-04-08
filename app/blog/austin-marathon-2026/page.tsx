@@ -224,8 +224,8 @@ export default function AustinMarathonBlog() {
           </p>
 
           <blockquote className="border-l-4 border-emerald pl-6 italic my-8">
-            "The Austin Marathon is more than just a race – it's a celebration of our city's vibrant running community. The energy from the crowds, the live music, and the incredible volunteers make it an unforgettable experience."
-            <footer className="text-grey-600 mt-2">— 2025 Marathon Participant</footer>
+            "The Austin Marathon is more than just a race - it's a celebration of our city's vibrant running community. The energy from the crowds, the live music, and the incredible volunteers make it an unforgettable experience."
+            <footer className="text-grey-600 mt-2">  2025 Marathon Participant</footer>
           </blockquote>
 
           <ul>
@@ -244,7 +244,7 @@ export default function AustinMarathonBlog() {
 
           <h2>Register Now</h2>
           <p>
-            Don't wait – registration prices increase as race day approaches. Visit{' '}
+            Don't wait - registration prices increase as race day approaches. Visit{' '}
             <a href="https://youraustinmarathon.com" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:underline">
               youraustinmarathon.com
             </a>

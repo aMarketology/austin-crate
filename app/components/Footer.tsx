@@ -4,42 +4,51 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 
 export default function Footer() {
-  const services = [
-    { name: 'Fine Art Shipping', href: '/services/fine-art' },
-    { name: 'Designer Furniture', href: '/services/furniture' },
+  const furnitureLinks = [
+    { name: 'Designer Sofas & Sectionals', href: '/services/furniture/designer-sofas-sectionals' },
+    { name: 'Antique Furniture', href: '/services/furniture/antique-furniture-shipping' },
+    { name: 'Dining Tables & Sets', href: '/services/furniture/dining-tables-sets' },
+    { name: 'Marble & Stone', href: '/services/furniture/marble-stone-furniture' },
+    { name: 'Bedroom Furniture', href: '/services/furniture/bedroom-furniture' },
+    { name: 'All Furniture', href: '/services/furniture' },
+  ]
+
+  const fineArtLinks = [
+    { name: 'Painting Shipping', href: '/services/fine-art/painting-shipping' },
+    { name: 'Sculpture Shipping', href: '/services/fine-art/sculpture-shipping' },
+    { name: 'Glass Art Shipping', href: '/services/fine-art/glass-art-shipping' },
+    { name: 'Rare Collectibles', href: '/services/fine-art/rare-collectibles-shipping' },
+    { name: 'Gallery & Exhibit', href: '/services/fine-art/gallery-exhibit-shipping' },
+    { name: 'All Fine Art', href: '/services/fine-art' },
+  ]
+
+  const specialtyLinks = [
     { name: 'Medical Equipment', href: '/services/medical-equipment' },
-    { name: 'All Services', href: '/services' },
+    { name: 'Heavy Items', href: '/services/heavy-items' },
+    { name: 'Pool Table Shipping', href: '/services/heavy-items/pool-table-shipping' },
+    { name: 'Motorcycle Crating', href: '/services/heavy-items/motorcycle-crating' },
+    { name: 'IT & Server Hardware', href: '/services/shipping-and-crating/servers-it-hardware' },
+    { name: 'Buy a Crate', href: '/buy-a-crate' },
   ]
 
   const quickLinks = [
     { name: 'Home', href: '/' },
     { name: 'About Us', href: '/about' },
     { name: 'Gallery', href: '/gallery' },
+    { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' },
-    { name: 'Buy a Crate', href: '/buy-a-crate' },
+    { name: 'Get a Quote', href: '/contact' },
   ]
 
   const locations = [
-    { name: 'Austin', href: '/' },
     { name: 'Round Rock', href: '/locations/round-rock' },
     { name: 'Cedar Park', href: '/locations/cedar-park' },
     { name: 'Georgetown', href: '/locations/georgetown' },
   ]
 
-  const resources = [
-    { name: 'Shipping Resources', href: '/resources' },
-    { name: 'Prepare Artwork Guide', href: '/resources/prepare-artwork' },
-  ]
-
   const serviceAreas = [
-    'Austin',
-    'Round Rock',
-    'Cedar Park',
-    'Georgetown',
-    'Pflugerville',
-    'Leander',
-    'Kyle',
-    'Dripping Springs'
+    'Austin', 'Round Rock', 'Cedar Park', 'Georgetown',
+    'Pflugerville', 'Leander', 'Kyle', 'Dripping Springs'
   ]
 
   return (
@@ -111,7 +120,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-6 text-grey-900">Our Services</h3>
             <ul className="space-y-3">
-              {services.map((service, index) => (
+              {specialtyLinks.map((service, index) => (
                 <motion.li
                   key={index}
                   initial={{ opacity: 0, x: -10 }}

@@ -12,7 +12,7 @@ const SLUG = '/services/fine-art/rare-collectibles-shipping'
 export function generateMetadata(): Metadata {
   return generateServiceMetadata({
     serviceName: 'Rare Collectibles Shipping & Crating Austin Texas',
-    description: 'Specialist shipping for rare collectibles in Austin, Texas — coins, sports memorabilia, graded cards, vintage toys, autographed items, and numismatic collections. Tamper-evident, insured, and documented. Call (512) 240-9818.',
+    description: 'Specialist shipping for rare collectibles in Austin, Texas   coins, sports memorabilia, graded cards, vintage toys, autographed items, and numismatic collections. Tamper-evident, insured, and documented. Call (512) 240-9818.',
     keywords: [
       'rare collectibles shipping Austin TX',
       'coin collection shipping Austin Texas',
@@ -30,7 +30,7 @@ export function generateMetadata(): Metadata {
 export default function RareCollectiblesShipping() {
   const serviceSchema = generateServiceSchema({
     serviceName: 'Rare Collectibles Shipping & Crating Austin Texas',
-    description: 'Specialist shipping and crating for rare collectibles in Austin, TX — coins, sports memorabilia, graded cards, vintage toys, autographed items, and numismatic collections.',
+    description: 'Specialist shipping and crating for rare collectibles in Austin, TX   coins, sports memorabilia, graded cards, vintage toys, autographed items, and numismatic collections.',
     serviceType: 'Specialty Shipping',
   })
 
@@ -71,10 +71,10 @@ export default function RareCollectiblesShipping() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Rare Collectibles Need Specialist Shipping</h2>
             <p className="text-gray-700 text-lg mb-4">
-              Rare collectibles are not just fragile — they are grade-sensitive. A graded PSA or BGS slab dropped during shipping is not just physically damaged; its holder is cracked, its grade is compromised, and its resale value may be permanently impacted even after re-holdering. A rare coin pressed against a rigid surface in an inadequate package develops bag marks that reduce its grade. An autographed item exposed to humidity sees ink migration that can ruin a signature worth thousands.
+              Rare collectibles are not just fragile   they are grade-sensitive. A graded PSA or BGS slab dropped during shipping is not just physically damaged; its holder is cracked, its grade is compromised, and its resale value may be permanently impacted even after re-holdering. A rare coin pressed against a rigid surface in an inadequate package develops bag marks that reduce its grade. An autographed item exposed to humidity sees ink migration that can ruin a signature worth thousands.
             </p>
             <p className="text-gray-700 text-lg mb-4">
-              Standard carriers are not set up to recognize these risks. Their handlers do not know what a PSA 10 population report means, or why a coin in a PCGS holder that shifts inside its packing is being damaged by the act of transit itself. We do — and we build the packing around these specific threat vectors.
+              Standard carriers are not set up to recognize these risks. Their handlers do not know what a PSA 10 population report means, or why a coin in a PCGS holder that shifts inside its packing is being damaged by the act of transit itself. We do   and we build the packing around these specific threat vectors.
             </p>
             <p className="text-gray-700 text-lg">
               We also provide tamper-evident sealing and chain-of-custody documentation so that when a valuable collectible arrives and any party questions what happened during shipping, you have a complete record.
@@ -91,7 +91,7 @@ export default function RareCollectiblesShipping() {
               {[
                 { title: 'Item-Level Documentation', desc: 'Each individual collectible is photographed and catalogued before packing. For graded cards and coins, we record the holder serial number and grade. For memorabilia, we document the authentication certificate number. This becomes your chain-of-custody record.' },
                 { title: 'Tamper-Evident Sealing', desc: 'Once packed, boxes are sealed with tamper-evident tape. Any breach of the seal is visible on arrival. For very high-value collections, we can use serialized security tape that shows attempted re-entry.' },
-                { title: 'Grade-Safe Foam Density', desc: 'Graded slabs (PSA, BGS, CGC) are packed in foam that prevents the slab from moving at all — not just from bouncing. The slab holder should arrive with zero evidence of internal movement.' },
+                { title: 'Grade-Safe Foam Density', desc: 'Graded slabs (PSA, BGS, CGC) are packed in foam that prevents the slab from moving at all   not just from bouncing. The slab holder should arrive with zero evidence of internal movement.' },
                 { title: 'Coin-Safe Materials', desc: 'All coin-contact materials are chemically inert. No PVC in any soft packaging layer. Holders are individually immobilized. Sulfur-free tissue where tissue contact is needed.' },
                 { title: 'Humidity Protection', desc: 'Autographed items, vintage trading cards, and paper-based collectibles are sealed inside polyethylene barrier layers before outer packing. Desiccant packets where appropriate for long-distance shipments.' },
                 { title: 'Insurance Coordination', desc: 'We can advise on declared value requirements for your shipment. We document replacement value based on current market grades when you provide supporting documentation.' },
@@ -109,7 +109,7 @@ export default function RareCollectiblesShipping() {
         <section className="py-16 px-4 bg-white">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-3">Rare Collectibles We Ship</h2>
-            <p className="text-gray-600 mb-8">High-value collectibles in every category — treated with the same care as fine art.</p>
+            <p className="text-gray-600 mb-8">High-value collectibles in every category   treated with the same care as fine art.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
                 'Graded sports cards (PSA, BGS, SGC slabs)', 'Raw vintage trading cards & unopened wax',
@@ -135,7 +135,7 @@ export default function RareCollectiblesShipping() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 { title: 'Private Collectors', desc: 'Collectors selling or buying on the secondary market, consigning to auction, or moving collections between storage locations or residences. We provide the professional packing documentation that high-end consignment houses require.' },
-                { title: 'Dealers & Show Vendors', desc: 'Dealers attending national trade shows and conventions — Dallas, Houston, Chicago, New York. Show inventory packing, booth display shipping, and return logistics handled by a crating company that understands the value of what it is handling.' },
+                { title: 'Dealers & Show Vendors', desc: 'Dealers attending national trade shows and conventions   Dallas, Houston, Chicago, New York. Show inventory packing, booth display shipping, and return logistics handled by a crating company that understands the value of what it is handling.' },
                 { title: 'Estate Administrators', desc: 'Estates that include valuable collectible holdings require specialist handling. We work with estate attorneys and administrators to document, pack, and ship collections for appraisal, division, or auction consignment.' },
               ].map((card, i) => (
                 <div key={i} className="p-6 bg-white border border-gray-200 rounded-xl">
@@ -154,10 +154,10 @@ export default function RareCollectiblesShipping() {
             <div className="space-y-5">
               {[
                 { q: 'Do you handle large coin collection moves?', a: 'Yes. Large numismatic collections require careful cataloguing, item-level documentation, and appropriate containment so individual coins cannot rub against each other or against holder edges. We can manage collections of hundreds or thousands of individual items.' },
-                { q: 'Can you ship graded cards in bulk (dealer inventory)?', a: 'Yes. Dealer card inventory — mixed grades, raw, and graded slabs — is a standard request. We pack slabs in foam trays, raw cards in rigid containers with foam backing and separators. Full inventory list provided on request.' },
+                { q: 'Can you ship graded cards in bulk (dealer inventory)?', a: 'Yes. Dealer card inventory   mixed grades, raw, and graded slabs   is a standard request. We pack slabs in foam trays, raw cards in rigid containers with foam backing and separators. Full inventory list provided on request.' },
                 { q: 'What is your process for ensuring tamper evidence on high-value shipments?', a: 'Boxes are sealed with tamper-evident security tape after final documentation. We photograph the sealed package before handoff. The seal signature and photo form part of your chain-of-custody documentation. Any tampering is detectable on arrival.' },
                 { q: 'How do you document autographed items before shipping?', a: 'We photograph each autographed piece at close range under controlled lighting before packing, showing the signature clearly. Authentication certificate numbers are noted. This record establishes pre-shipping condition in detail.' },
-                { q: 'Can you ship across state lines or to other countries?', a: 'Yes to both. Domestic interstate shipping is routine for us. International shipping requires appropriate customs documentation and carrier selection. For registered firearms or regulated items, additional documentation requirements apply — contact us early in your planning.' },
+                { q: 'Can you ship across state lines or to other countries?', a: 'Yes to both. Domestic interstate shipping is routine for us. International shipping requires appropriate customs documentation and carrier selection. For registered firearms or regulated items, additional documentation requirements apply   contact us early in your planning.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                   <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

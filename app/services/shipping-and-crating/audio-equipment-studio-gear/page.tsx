@@ -53,7 +53,7 @@ export default function AudioEquipmentStudioGear() {
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-5">Audio Equipment & Studio Gear Shipping in Austin, TX</h1>
             <p className="text-xl text-grey-300 mb-8 max-w-3xl">
-              Studio monitors, console faders, tube preamps, and vintage synthesizers are built to make sound — not survive a drop. We build shock-isolated crates, protect every speaker cone and glass panel, and ship pro audio gear the way it deserves.
+              Studio monitors, console faders, tube preamps, and vintage synthesizers are built to make sound   not survive a drop. We build shock-isolated crates, protect every speaker cone and glass panel, and ship pro audio gear the way it deserves.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
