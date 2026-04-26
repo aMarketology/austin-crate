@@ -185,16 +185,16 @@ export default function PianoShippingAustin() {
 
             <h3>Local Austin Metro (Under 50 Miles)</h3>
             <ul>
-              <li><strong>Upright piano:</strong> $200–$400 (moving and delivery, no crating required for local)</li>
-              <li><strong>Baby grand:</strong> $400–$700 (disassembly, move, and reassembly)</li>
-              <li><strong>Concert grand:</strong> $600–$1,200</li>
+              <li><strong>Upright piano:</strong> $200-$400 (moving and delivery, no crating required for local)</li>
+              <li><strong>Baby grand:</strong> $400-$700 (disassembly, move, and reassembly)</li>
+              <li><strong>Concert grand:</strong> $600-$1,200</li>
             </ul>
 
-            <h3>Statewide Texas Shipping (50–500 Miles)</h3>
+            <h3>Statewide Texas Shipping (50-500 Miles)</h3>
             <ul>
-              <li><strong>Upright piano (crated):</strong> $500–$1,200</li>
-              <li><strong>Baby grand (crated):</strong> $900–$2,500</li>
-              <li><strong>Concert grand:</strong> $2,000–$5,000+</li>
+              <li><strong>Upright piano (crated):</strong> $500-$1,200</li>
+              <li><strong>Baby grand (crated):</strong> $900-$2,500</li>
+              <li><strong>Concert grand:</strong> $2,000-$5,000+</li>
             </ul>
 
             <h3>Interstate or National Shipping</h3>

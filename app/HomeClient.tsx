@@ -357,7 +357,7 @@ export default function HomeClient() {
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-5">
-                  <span className="text-white font-bold text-base">Furniture Transport</span>
+                  <span className="text-white font-bold text-base">Furniture Shipping &amp; Crating</span>
                 </div>
               </div>
             </Link>
@@ -376,7 +376,7 @@ export default function HomeClient() {
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-3">
-                    <span className="text-white text-sm font-bold">Fine Art Expertise</span>
+                    <span className="text-white text-sm font-bold">Fine Art Crating</span>
                   </div>
                 </div>
               </Link>
@@ -384,7 +384,7 @@ export default function HomeClient() {
                 <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md hover:border-emerald transition-all hover:scale-[1.02]">
                   <Image
                     src="/3.jpg"
-                    alt="Medical Equipment Shipping Austin TX"
+                    alt="Medical Equipment Shipping and Crating Austin TX"
                     fill
                     sizes="50vw"
                     className="object-cover"
@@ -392,7 +392,7 @@ export default function HomeClient() {
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-3">
-                    <span className="text-white text-sm font-bold">Medical Equipment</span>
+                    <span className="text-white text-sm font-bold">Medical Equipment Shipping</span>
                   </div>
                 </div>
               </Link>
@@ -400,21 +400,21 @@ export default function HomeClient() {
 
             {/* Heavy Items + General row */}
             <div className="grid grid-cols-2 gap-3">
-              <Link href="/services/shipping-and-crating" className="block">
+              <Link href="/services/heavy-items" className="block">
                 <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md hover:border-emerald transition-all hover:scale-[1.02]">
                   <div className="absolute inset-0 bg-gradient-to-br from-emerald/90 to-emerald-600/90 flex flex-col items-center justify-center p-3">
                     <svg className="w-7 h-7 text-white mb-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                     </svg>
-                    <span className="text-white text-sm font-bold text-center">Heavy Item Pickup</span>
+                    <span className="text-white text-sm font-bold text-center">Heavy Item Shipping</span>
                   </div>
                 </div>
               </Link>
-              <Link href="/services" className="block">
+              <Link href="/services/shipping-and-crating" className="block">
                 <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md hover:border-emerald transition-all hover:scale-[1.02]">
                   <Image
                     src="/IMG_4446_1703172460423.jpg"
-                    alt="General Shipping and Crating Austin TX"
+                    alt="Specialty Shipping and Custom Crating Austin TX"
                     fill
                     sizes="50vw"
                     className="object-cover"
@@ -422,7 +422,7 @@ export default function HomeClient() {
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-3">
-                    <span className="text-white text-sm font-bold">General Shipping</span>
+                    <span className="text-white text-sm font-bold">Specialty Shipping &amp; Crating</span>
                   </div>
                 </div>
               </Link>
@@ -540,11 +540,11 @@ export default function HomeClient() {
                 className="space-y-4"
               >
                 {/* Featured Image - Furniture Transport */}
-                <Link href="/services#furniture" className="block">
+                <Link href="/services/furniture" className="block">
                   <div className="relative h-52 rounded-2xl overflow-hidden border-2 border-grey-200 shadow-lg bg-white hover:border-emerald transition-all hover:scale-[1.02] cursor-pointer">
                     <Image
                       src="/2.jpg"
-                      alt="Designer Furniture Shipping Austin - White Glove Furniture Transport Services"
+                      alt="Furniture Shipping and Crating Austin TX - White Glove Transport"
                       fill
                       sizes="(max-width: 1024px) 100vw, 33vw"
                       className="object-cover"
@@ -552,18 +552,18 @@ export default function HomeClient() {
                       priority
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-6">
-                      <span className="text-white font-bold text-lg">Furniture Transport</span>
+                      <span className="text-white font-bold text-lg">Furniture Shipping &amp; Crating</span>
                     </div>
                   </div>
                 </Link>
 
                 {/* Two Column Grid */}
                 <div className="grid grid-cols-2 gap-4">
-                  <Link href="/services#fine-art" className="block">
+                  <Link href="/services/fine-art" className="block">
                     <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md bg-white hover:border-emerald transition-all hover:scale-[1.02] cursor-pointer">
                       <Image
                         src="/1.jpg"
-                        alt="Fine Art Shipping Services Austin Texas - Museum Quality Crating and Transport"
+                        alt="Fine Art Crating and Shipping Austin TX - Museum Quality Transport"
                         fill
                         sizes="(max-width: 1024px) 50vw, 25vw"
                         className="object-cover"
@@ -573,15 +573,15 @@ export default function HomeClient() {
                         blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgIBAwQDAAAAAAAAAAAAAQIDBAAFESEGEjFBE1Fx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEEECCDggEeD5rR+mdQu3tFr2b0rTTsZcyP7Pnf2ffsV1EaFEBBqAn//2Q=="
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-4">
-                        <span className="text-white text-sm font-bold">Fine Art Expertise</span>
+                        <span className="text-white text-sm font-bold">Fine Art Crating</span>
                       </div>
                     </div>
                   </Link>
-                  <Link href="/services#medical" className="block">
+                  <Link href="/services/medical-equipment" className="block">
                     <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md bg-white hover:border-emerald transition-all hover:scale-[1.02] cursor-pointer">
                       <Image
                         src="/3.jpg"
-                        alt="Medical Equipment Shipping Austin TX - Compliant Medical Device Transport"
+                        alt="Medical Equipment Shipping and Crating Austin TX - Compliant Device Transport"
                         fill
                         sizes="(max-width: 1024px) 50vw, 25vw"
                         className="object-cover"
@@ -591,7 +591,7 @@ export default function HomeClient() {
                         blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgIBAwQDAAAAAAAAAAAAAQIDBAAFESEGEjFBE1Fx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEEECCDggEeD5rR+mdQu3tFr2b0rTTsZcyP7Pnf2ffsV1EaFEBBqAn//2Q=="
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-4">
-                        <span className="text-white text-sm font-bold">Medical Equipment</span>
+                        <span className="text-white text-sm font-bold">Medical Equipment Shipping</span>
                       </div>
                     </div>
                   </Link>
@@ -605,15 +605,15 @@ export default function HomeClient() {
                         <svg className="w-8 h-8 text-white mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                         </svg>
-                        <span className="text-white text-sm font-bold text-center">Heavy Item Pickup</span>
+                        <span className="text-white text-sm font-bold text-center">Heavy Item Shipping</span>
                       </div>
                     </div>
                   </Link>
-                  <Link href="/services#general" className="block">
+                  <Link href="/services/shipping-and-crating" className="block">
                     <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md bg-white hover:border-emerald transition-all hover:scale-[1.02] cursor-pointer">
                       <Image
                         src="/IMG_4446_1703172460423.jpg"
-                        alt="General Shipping and Crating Services Austin TX"
+                        alt="Specialty Shipping and Custom Crating Austin TX"
                         fill
                         sizes="(max-width: 1024px) 50vw, 25vw"
                         className="object-cover"
@@ -623,7 +623,7 @@ export default function HomeClient() {
                         blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgIBAwQDAAAAAAAAAAAAAQIDBAAFESEGEjFBE1Fx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEZEQA/ANE6Z1C7e0WvZvStNOxlzI/s+d/Z9+xXURoUQEGoCf/Z"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-4">
-                        <span className="text-white text-sm font-bold">General Shipping & Crates</span>
+                        <span className="text-white text-sm font-bold">Specialty Shipping &amp; Crating</span>
                       </div>
                     </div>
                   </Link>

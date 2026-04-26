@@ -71,7 +71,7 @@ export default function AustinKivaHubBlog() {
             </thead>
             <tbody className="divide-y divide-gray-100">
               {[
-                ['Loan Range', '$1,000 – $15,000'],
+                ['Loan Range', '$1,000 - $15,000'],
                 ['Interest Rate', '0%'],
                 ['Fees', 'None'],
                 ['Credit Score Minimum', 'None'],

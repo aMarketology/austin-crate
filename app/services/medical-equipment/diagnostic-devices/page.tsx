@@ -144,7 +144,7 @@ export default function DiagnosticDevicesShipping() {
                 { q: 'How do you handle patient data stored on diagnostic devices?', a: 'We do not access, inspect, or interact with patient data in any way. Devices that require data wiping or PHI removal before transport must be cleared by your facility\'s biomedical or IT team before we take custody. We can coordinate timing with that process.' },
                 { q: 'Can you move diagnostic equipment between Austin medical facilities?', a: 'Yes, between hospitals, outpatient clinics, physician offices, urgent care centers, and storage facilities anywhere in Greater Austin. We can work within your facility\'s vendor credentialing requirements.' },
                 { q: 'Do you transport diagnostic devices for equipment dealers and remarketers?', a: 'Yes. We work with medical equipment dealers, hospital liquidators, and biomedical refurbishment companies. We provide the condition documentation photos and chain-of-custody records that equipment transactions require.' },
-                { q: 'What does diagnostic device shipping cost?', a: 'Single-unit local moves start at $150–$300 depending on device size and access. Multi-unit projects are priced per project. Call (512) 240-9818 for a free quote.' },
+                { q: 'What does diagnostic device shipping cost?', a: 'Single-unit local moves start at $150-$300 depending on device size and access. Multi-unit projects are priced per project. Call (512) 240-9818 for a free quote.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-white border border-gray-200 rounded-xl p-5">
                   <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

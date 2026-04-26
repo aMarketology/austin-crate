@@ -83,7 +83,7 @@ export default function BlogIndexClient() {
     {
       slug: 'austin-kiva-hub-small-business-microloans',
       title: 'City of Austin Launches Kiva Hub to Support Small Business Owners',
-      excerpt: 'Austin partners with global nonprofit Kiva to offer crowdfunded microloans from $1,000–$15,000 at 0% interest with no minimum credit score required.',
+      excerpt: 'Austin partners with global nonprofit Kiva to offer crowdfunded microloans from $1,000-$15,000 at 0% interest with no minimum credit score required.',
       date: 'March 24, 2026',
       category: 'Local Business',
       readTime: '3 min read',

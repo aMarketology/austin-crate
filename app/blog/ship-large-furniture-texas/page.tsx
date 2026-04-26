@@ -183,7 +183,7 @@ export default function ShipLargeFurnitureTexas() {
                 <strong>Schedule pickup:</strong> We come to your location, home, gallery, warehouse, or estate, and take careful measurements before we build.
               </li>
               <li>
-                <strong>Build the crate:</strong> All crating happens in our Austin shop or on-site for very large pieces. Turnaround is typically 24–72 hours depending on complexity.
+                <strong>Build the crate:</strong> All crating happens in our Austin shop or on-site for very large pieces. Turnaround is typically 24-72 hours depending on complexity.
               </li>
               <li>
                 <strong>Coordinate the carrier:</strong> We work with vetted freight carriers across Texas who handle crated freight correctly. You do not need to find a trucking company yourself.
@@ -198,11 +198,11 @@ export default function ShipLargeFurnitureTexas() {
               Costs depend on size, weight, distance, and fragility. As a general benchmark for Texas shipments:
             </p>
             <ul>
-              <li><strong>Single dining chair:</strong> $150–$300 crated and shipped</li>
-              <li><strong>Large dining table:</strong> $400–$900 depending on size and destination</li>
-              <li><strong>Full bedroom set (4 pieces):</strong> $800–$2,000</li>
-              <li><strong>Antique armoire or wardrobe:</strong> $500–$1,200</li>
-              <li><strong>Custom sectional sofa:</strong> $600–$1,500</li>
+              <li><strong>Single dining chair:</strong> $150-$300 crated and shipped</li>
+              <li><strong>Large dining table:</strong> $400-$900 depending on size and destination</li>
+              <li><strong>Full bedroom set (4 pieces):</strong> $800-$2,000</li>
+              <li><strong>Antique armoire or wardrobe:</strong> $500-$1,200</li>
+              <li><strong>Custom sectional sofa:</strong> $600-$1,500</li>
             </ul>
             <p>
               These ranges include crating labor, materials, and standard freight. White-glove delivery, uncrating and placement at destination, adds to the cost but is often worth it for valuable pieces.

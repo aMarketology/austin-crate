@@ -244,7 +244,7 @@ export default function AustinMarathonBlog() {
 
           <h2>Register Now</h2>
           <p>
-            Don't wait – registration prices increase as race day approaches. Visit{' '}
+            Don't wait - registration prices increase as race day approaches. Visit{' '}
             <a href="https://youraustinmarathon.com" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:underline">
               youraustinmarathon.com
             </a>

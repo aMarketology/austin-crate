@@ -377,7 +377,7 @@ export default function HeavyItemsShipping() {
               <p className="text-lg text-gray-800 font-medium mb-2">
                 Most local heavy item shipments in Austin start at
               </p>
-              <p className="text-4xl font-bold text-emerald mb-2">$150 – $500+</p>
+              <p className="text-4xl font-bold text-emerald mb-2">$150 - $500+</p>
               <p className="text-gray-600 mb-6">
                 Depending on item size, weight, and destination. Nationwide freight quotes
                 available.
@@ -457,7 +457,7 @@ export default function HeavyItemsShipping() {
               {[
                 {
                   q: 'How much does it cost to ship a heavy item in Austin?',
-                  a: 'Heavy item shipping costs in Austin depend on weight, dimensions, fragility, and destination. Most local heavy item shipments start at $150–$300. Long-distance freight starts at $300+. Call (512) 240-9818 for a free, no-obligation quote.',
+                  a: 'Heavy item shipping costs in Austin depend on weight, dimensions, fragility, and destination. Most local heavy item shipments start at $150-$300. Long-distance freight starts at $300+. Call (512) 240-9818 for a free, no-obligation quote.',
                 },
                 {
                   q: 'Do you pick up heavy packages in Austin?',

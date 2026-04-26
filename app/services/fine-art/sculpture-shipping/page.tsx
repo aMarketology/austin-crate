@@ -141,8 +141,8 @@ export default function SculptureShipping() {
             <p className="text-gray-700 text-lg mb-6">Cost depends on size, weight, material fragility, and destination. As a rough guide for crating at our Austin facility:</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               {[
-                { range: '$150–$400', label: 'Small Sculpture', desc: 'Under 2 ft, light to moderate weight. Custom foam mount, small wood crate.' },
-                { range: '$350–$900', label: 'Medium Sculpture', desc: '2–4 ft, up to 100 lbs. Precision foam saddle, full wood crate with vibration layer.' },
+                { range: '$150-$400', label: 'Small Sculpture', desc: 'Under 2 ft, light to moderate weight. Custom foam mount, small wood crate.' },
+                { range: '$350-$900', label: 'Medium Sculpture', desc: '2-4 ft, up to 100 lbs. Precision foam saddle, full wood crate with vibration layer.' },
                 { range: 'Custom Quote', label: 'Large / Heavy Sculpture', desc: 'Over 4 ft or over 100 lbs. Engineered crate, forklift entry, liftgate coordination.' },
               ].map((tier, i) => (
                 <div key={i} className="p-5 bg-white border border-gray-200 rounded-xl text-center">

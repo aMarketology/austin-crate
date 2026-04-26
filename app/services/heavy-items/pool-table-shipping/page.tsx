@@ -127,7 +127,7 @@ export default function PoolTableShipping() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
             <div className="space-y-5">
               {[
-                { q: 'How much does it cost to ship a pool table in Austin?', a: 'Local Austin pool table moves (under 50 miles) typically run $400–$800 including disassembly and reassembly. Long-distance Texas shipping adds freight carrier costs. Call (512) 240-9818 for a fast quote based on your specific table and move.' },
+                { q: 'How much does it cost to ship a pool table in Austin?', a: 'Local Austin pool table moves (under 50 miles) typically run $400-$800 including disassembly and reassembly. Long-distance Texas shipping adds freight carrier costs. Call (512) 240-9818 for a fast quote based on your specific table and move.' },
                 { q: 'Do you reassemble the pool table at the destination?', a: 'Yes. We provide full reassembly including precise slate leveling, felt stretching, and rail installation. We do not leave until the table is level and playable.' },
                 { q: 'Can you ship a pool table from Austin to another state?', a: 'Absolutely. We have crated and shipped pool tables across the US. We build custom slate crates at our Austin facility and coordinate with vetted freight carriers for long-haul moves.' },
                 { q: 'Do I need new felt after the move?', a: 'Not necessarily. Felt in good condition can be removed, preserved, and reinstalled. Felt that is already worn or has existing damage is a good candidate for replacement during the move, we can arrange that.' },

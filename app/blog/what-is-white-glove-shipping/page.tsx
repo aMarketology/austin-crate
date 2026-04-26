@@ -226,9 +226,9 @@ export default function WhiteGloveShippingBlog() {
               White-glove shipping costs more than standard freight, typically 30–80% over a standard LTL shipment, depending on the service level, item size, and route. Some Austin benchmarks:
             </p>
             <ul>
-              <li><strong>Local Austin white-glove delivery (under 30 miles):</strong> $150–$400 depending on complexity</li>
-              <li><strong>Austin to Houston or Dallas:</strong> $400–$1,200 for furniture-sized items</li>
-              <li><strong>Full white-glove with custom crating for fine art or antiques:</strong> $600–$3,000+ depending on item size and distance</li>
+              <li><strong>Local Austin white-glove delivery (under 30 miles):</strong> $150-$400 depending on complexity</li>
+              <li><strong>Austin to Houston or Dallas:</strong> $400-$1,200 for furniture-sized items</li>
+              <li><strong>Full white-glove with custom crating for fine art or antiques:</strong> $600-$3,000+ depending on item size and distance</li>
             </ul>
             <p>
               The right question is not just &ldquo;what does it cost?&rdquo; but &ldquo;what does damage or loss cost?&rdquo; For most items that genuinely need white-glove shipping, the premium is small relative to the value at risk.

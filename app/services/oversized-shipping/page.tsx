@@ -293,19 +293,19 @@ export default function OversizedShipping() {
                 {
                   tier: 'Local',
                   range: 'Austin Metro Area',
-                  price: '$150 – $400',
+                  price: '$150 - $400',
                   items: ['Pickup within 30 miles', 'Same-day available', 'Protective blankets included', 'Inside delivery option'],
                 },
                 {
                   tier: 'Regional',
                   range: 'Texas / Neighboring States',
-                  price: '$300 – $800',
+                  price: '$300 - $800',
                   items: ['Custom crating included', 'LTL freight transport', 'Full insurance coverage', 'Door-to-door delivery'],
                 },
                 {
                   tier: 'National',
                   range: 'Anywhere in the US',
-                  price: '$500 – $2,000+',
+                  price: '$500 - $2,000+',
                   items: ['Custom crating + freight', 'Climate-controlled option', 'Liftgate delivery', 'White-glove placement'],
                 },
               ].map((plan, i) => (

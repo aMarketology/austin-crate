@@ -144,7 +144,7 @@ export default function WhenCarriersRefuse() {
                 { title: 'Liftgate Pickup & Delivery', desc: 'Freight deliveries to residential or retail addresses require a liftgate truck, which standard carriers do not provide. We coordinate liftgate service at both ends at no surprise to you.' },
                 { title: 'White-Glove Inside Delivery', desc: 'Beyond curbside drop-off, we can arrange inside delivery, room-of-choice placement, and packaging removal, especially valuable for furniture, equipment, and commercial fixtures.' },
                 { title: 'Full-Value Insurance Coverage', desc: 'Standard carriers cap declared value at $100 without purchase of additional coverage. Specialty freight allows full-value coverage matching the actual value of your item.' },
-                { title: 'Same-Week Pickup in Austin', desc: 'We typically offer pickup within 1–3 business days in Austin and the surrounding metro area. If your item needs to move fast, call us directly and we will prioritize your shipment.' },
+                { title: 'Same-Week Pickup in Austin', desc: 'We typically offer pickup within 1-3 business days in Austin and the surrounding metro area. If your item needs to move fast, call us directly and we will prioritize your shipment.' },
               ].map((item, i) => (
                 <div key={i} className="p-5 bg-gray-50 border border-gray-200 rounded-xl">
                   <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>

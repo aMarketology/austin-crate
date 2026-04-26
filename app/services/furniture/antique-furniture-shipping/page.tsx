@@ -167,7 +167,7 @@ export default function AntiqueFurnitureShipping() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Insurance &amp; Valuation for Antique Furniture Shipments</h2>
             <p className="text-gray-700 text-lg mb-4">
-              Standard freight carriers default to a liability of $0.10–$0.25 per pound. A 200 lb Victorian sideboard worth $8,000 at auction would be covered for $20–$50 under default terms. That gap is not acceptable for irreplaceable antiques.
+              Standard freight carriers default to a liability of $0.10-$0.25 per pound. A 200 lb Victorian sideboard worth $8,000 at auction would be covered for $20-$50 under default terms. That gap is not acceptable for irreplaceable antiques.
             </p>
             <p className="text-gray-700 text-lg mb-4">
               We recommend declared value coverage at the full appraised or insured value of the piece. Before shipping a high-value antique, have it appraised in writing if you do not already have documentation. An appraisal from a certified appraiser is the best protection you have in a claim.
@@ -184,7 +184,7 @@ export default function AntiqueFurnitureShipping() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Frequently Asked Questions About Antique Furniture Shipping in Texas</h2>
             <div className="space-y-5">
               {[
-                { q: 'How much does it cost to ship antique furniture across Texas?', a: 'Antique furniture shipping across Texas typically ranges from $300–$900 depending on the piece size, fragility, destination, and whether a custom crate is required. A single chair shipping from Austin to Houston might be $250–$400; a large armoire requiring a custom crate shipping to Dallas might be $600–$1,200. Call us for an exact quote.' },
+                { q: 'How much does it cost to ship antique furniture across Texas?', a: 'Antique furniture shipping across Texas typically ranges from $300-$900 depending on the piece size, fragility, destination, and whether a custom crate is required. A single chair shipping from Austin to Houston might be $250-$400; a large armoire requiring a custom crate shipping to Dallas might be $600-$1,200. Call us for an exact quote.' },
                 { q: 'Is it safe to ship antique furniture without a crate?', a: 'For many antiques, padded blanket wrap in a dedicated specialty freight vehicle is safe. For pieces over $3,000 in value, with very fragile veneer or surface finish, or for long-distance Texas or out-of-state routes, a custom crate provides significantly better protection. We will make an honest recommendation based on the specific piece.' },
                 { q: 'Can you pick up from estate sales, auctions, or antique markets?', a: 'Yes. We regularly pick up antique furniture from estate sales, auction houses, and antique markets including the Roundtop Antiques show. We can coordinate pickup to coincide with the end of an event or auction. Call us in advance to schedule, Roundtop pickups in particular book up quickly around show dates.' },
                 { q: 'What should I tell you when requesting a quote?', a: 'The most helpful information is: the piece description (type, approximate age, dimensions, weight if known), origin city/zip, destination city/zip, and any known fragility issues (veneer damage, gilt that chips, structural repairs). Photos are also very helpful, you can email or text them to us.' },

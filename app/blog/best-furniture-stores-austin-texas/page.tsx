@@ -76,7 +76,7 @@ export default function BestFurnitureStoresAustin() {
         </p>
         <p>
           Austin&apos;s &ldquo;Furniture Row&rdquo; on Burnet Road is anchored by shops that specialise in the
-          1950s–1970s aesthetic. Austin Natural Mattress &amp; Mid-Century stands out for its sustainably made mattresses
+          1950s-1970s aesthetic. Austin Natural Mattress &amp; Mid-Century stands out for its sustainably made mattresses
           alongside an authentic mid-century modern inventory.
         </p>
         <ul>

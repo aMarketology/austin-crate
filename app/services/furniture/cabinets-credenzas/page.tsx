@@ -138,7 +138,7 @@ export default function CabinetsCredenazasShipping() {
                 { q: 'Do you remove cabinet legs before shipping?', a: 'When legs are designed to be removable, yes, we remove them, wrap them, and label them for reinstallation. Fixed-leg cabinets have their legs individually wrapped with foam padding to protect against impact at the vulnerable joint between leg and case.' },
                 { q: 'Can you move a credenza that is very long (over 8 feet)?', a: 'Yes. We have built crates for credenzas and sideboards up to 12 feet in length. Long pieces are susceptible to mid-span flex in transit, so our crate design adds longitudinal reinforcement along the crate floor.' },
                 { q: 'What is your coverage area for cabinet pickup in Austin?', a: 'We pick up throughout Greater Austin, Round Rock, Cedar Park, Georgetown, Pflugerville, and surrounding areas. For larger pieces, we send a two-person crew with appliance dollies and furniture pads for building-safe movement from the room to our truck.' },
-                { q: 'How much does shipping a credenza cost?', a: 'A local Austin credenza delivery typically starts around $200–$350. Long-distance crated freight pricing depends on dimensions and destination. Contact us at (512) 240-9818 for a free itemized quote.' },
+                { q: 'How much does shipping a credenza cost?', a: 'A local Austin credenza delivery typically starts around $200-$350. Long-distance crated freight pricing depends on dimensions and destination. Contact us at (512) 240-9818 for a free itemized quote.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-white border border-gray-200 rounded-xl p-5">
                   <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

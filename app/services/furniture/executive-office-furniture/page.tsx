@@ -133,7 +133,7 @@ export default function OfficeFurnitureShipping() {
                 { q: 'Can you ship a large executive desk from Austin to another state?', a: 'Yes. We ship executive desks nationwide regularly. We disassemble, crate each component, and coordinate LTL freight with a white-glove delivery carrier at the destination.' },
                 { q: 'Do you work with Austin office furniture dealers and showrooms?', a: 'Yes. We pick up directly from dealers and showrooms. Many Austin-area commercial furniture dealers refer their clients to us for specialty shipping.' },
                 { q: 'Can you ship an entire office worth of furniture?', a: 'Yes. For larger jobs we assess the full scope, provide a detailed quote, and coordinate staging and loading to ensure everything is packed and tracked together.' },
-                { q: 'How much does office furniture shipping cost in Austin?', a: 'A single executive desk shipped locally starts at $250–$400. Long-distance crated freight for an executive desk starts at $500+. Call (512) 240-9818 for an itemized quote.' },
+                { q: 'How much does office furniture shipping cost in Austin?', a: 'A single executive desk shipped locally starts at $250-$400. Long-distance crated freight for an executive desk starts at $500+. Call (512) 240-9818 for an itemized quote.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                   <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

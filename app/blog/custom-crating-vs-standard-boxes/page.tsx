@@ -208,23 +208,23 @@ export default function CustomCratingVsStandardBoxes() {
                   <tbody>
                     <tr className="border-b border-grey-200">
                       <td className="py-2 pr-4">Oil painting, canvas, 24×36"</td>
-                      <td className="py-2 pr-4">$120–$200</td>
-                      <td className="py-2">$500–$5,000+ (irreplaceable)</td>
+                      <td className="py-2 pr-4">$120-$200</td>
+                      <td className="py-2">$500-$5,000+ (irreplaceable)</td>
                     </tr>
                     <tr className="border-b border-grey-200">
                       <td className="py-2 pr-4">Antique dining table</td>
-                      <td className="py-2 pr-4">$200–$400</td>
-                      <td className="py-2">$1,000–$8,000 (refinish, repair, or total loss)</td>
+                      <td className="py-2 pr-4">$200-$400</td>
+                      <td className="py-2">$1,000-$8,000 (refinish, repair, or total loss)</td>
                     </tr>
                     <tr className="border-b border-grey-200">
                       <td className="py-2 pr-4">Medical imaging device</td>
-                      <td className="py-2 pr-4">$300–$600</td>
-                      <td className="py-2">$5,000–$50,000+ (recalibration, replacement)</td>
+                      <td className="py-2 pr-4">$300-$600</td>
+                      <td className="py-2">$5,000-$50,000+ (recalibration, replacement)</td>
                     </tr>
                     <tr>
                       <td className="py-2 pr-4">Grand piano</td>
-                      <td className="py-2 pr-4">$500–$1,200</td>
-                      <td className="py-2">$2,000–$full replacement</td>
+                      <td className="py-2 pr-4">$500-$1,200</td>
+                      <td className="py-2">$2,000-$full replacement</td>
                     </tr>
                   </tbody>
                 </table>

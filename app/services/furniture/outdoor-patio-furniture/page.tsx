@@ -133,7 +133,7 @@ export default function OutdoorFurnitureShipping() {
                 { q: 'Can you ship a complete patio dining set from Austin?', a: 'Yes. We inventory, wrap, and crate complete outdoor dining sets, table, chairs, umbrella, and base, and ship them together with a complete manifest.' },
                 { q: 'Do you ship teak furniture from Austin?', a: 'Yes. Teak is one of the heavier outdoor furniture materials and benefits from proper lift equipment and our liftgate trucks. We wrap teak surfaces to prevent transit scratches on aged or oiled finishes.' },
                 { q: 'Can you ship outdoor furniture cross-country from Austin?', a: 'Yes. We regularly ship outdoor furniture from Austin to all 50 states. Custom crating is strongly recommended for long-distance outdoor furniture shipments.' },
-                { q: 'How much does patio furniture shipping cost in Austin?', a: 'Local patio furniture shipping in Austin starts at $200–$400 for a chair-and-table set. Long-distance crated freight for a full patio set starts at $500+. Call (512) 240-9818 for an accurate quote.' },
+                { q: 'How much does patio furniture shipping cost in Austin?', a: 'Local patio furniture shipping in Austin starts at $200-$400 for a chair-and-table set. Long-distance crated freight for a full patio set starts at $500+. Call (512) 240-9818 for an accurate quote.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                   <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>
