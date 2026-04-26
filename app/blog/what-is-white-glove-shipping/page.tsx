@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+﻿import { Metadata } from 'next'
 import Link from 'next/link'
 import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
@@ -83,7 +83,7 @@ export default function WhiteGloveShippingBlog() {
               What Is White-Glove Shipping? (And Is It Worth It?)
             </h1>
             <p className="text-xl text-grey-300 mb-6">
-              A plain-English explanation of white-glove delivery — what it includes, when to choose it, and how it works in Austin, TX
+              A plain-English explanation of white-glove delivery, what it includes, when to choose it, and how it works in Austin, TX
             </p>
             <div className="flex flex-wrap gap-4 text-grey-300 text-sm">
               <span>📅 March 25, 2026</span>
@@ -112,7 +112,7 @@ export default function WhiteGloveShippingBlog() {
 
             <h2>The Short Definition</h2>
             <p>
-              White-glove shipping is a premium delivery and handling service where trained specialists — not standard freight handlers — manage every aspect of your shipment. The term comes from the idea of handling items so carefully that you could do it wearing white gloves without leaving a mark.
+              White-glove shipping is a premium delivery and handling service where trained specialists, not standard freight handlers, manage every aspect of your shipment. The term comes from the idea of handling items so carefully that you could do it wearing white gloves without leaving a mark.
             </p>
             <p>In practice, white-glove service typically includes some or all of the following:</p>
             <ul>
@@ -127,12 +127,12 @@ export default function WhiteGloveShippingBlog() {
             <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 my-8 not-prose">
               <p className="font-semibold text-emerald-800 mb-2 text-lg">🤍 What White-Glove Delivery Includes</p>
               <ul className="text-grey-700 space-y-2 mt-3">
-                <li>✅ <strong>Custom crating/packaging</strong> at origin — not just a blanket wrap</li>
-                <li>✅ <strong>Assigned specialist crew</strong> — same team handles origin through delivery</li>
-                <li>✅ <strong>Inside delivery</strong> — through the door, to the room, not curbside</li>
-                <li>✅ <strong>Placement &amp; assembly</strong> — positioned correctly, not just left in a hallway</li>
-                <li>✅ <strong>Debris removal</strong> — packaging materials leave with the crew</li>
-                <li>✅ <strong>Photo documentation</strong> — condition recorded before and after</li>
+                <li>✅ <strong>Custom crating/packaging</strong> at origin, not just a blanket wrap</li>
+                <li>✅ <strong>Assigned specialist crew</strong>, same team handles origin through delivery</li>
+                <li>✅ <strong>Inside delivery</strong>, through the door, to the room, not curbside</li>
+                <li>✅ <strong>Placement &amp; assembly</strong>, positioned correctly, not just left in a hallway</li>
+                <li>✅ <strong>Debris removal</strong>, packaging materials leave with the crew</li>
+                <li>✅ <strong>Photo documentation</strong>, condition recorded before and after</li>
               </ul>
             </div>
 
@@ -160,7 +160,7 @@ export default function WhiteGloveShippingBlog() {
 
             <h3>The Item Is High Value or Irreplaceable</h3>
             <p>
-              Fine art, antique furniture, medical equipment, and musical instruments fall into this category. The cost difference between standard freight and white-glove is almost always justified when a claim would result in a loss you cannot recover from — financially or emotionally.
+              Fine art, antique furniture, medical equipment, and musical instruments fall into this category. The cost difference between standard freight and white-glove is almost always justified when a claim would result in a loss you cannot recover from, financially or emotionally.
             </p>
 
             <h3>The Item Requires Professional Assembly or Placement</h3>
@@ -170,7 +170,7 @@ export default function WhiteGloveShippingBlog() {
 
             <h3>The Destination Has Access Challenges</h3>
             <p>
-              Stairways, freight elevators, narrow doorways, parking restrictions — all of these require experienced crews. Standard freight drivers are not expected to navigate these situations. White-glove crews are.
+              Stairways, freight elevators, narrow doorways, parking restrictions, all of these require experienced crews. Standard freight drivers are not expected to navigate these situations. White-glove crews are.
             </p>
 
             <h3>You Are Moving Business-Critical Equipment</h3>
@@ -223,7 +223,7 @@ export default function WhiteGloveShippingBlog() {
 
             <h2>What Does White-Glove Shipping Cost in Austin?</h2>
             <p>
-              White-glove shipping costs more than standard freight — typically 30–80% over a standard LTL shipment, depending on the service level, item size, and route. Some Austin benchmarks:
+              White-glove shipping costs more than standard freight, typically 30–80% over a standard LTL shipment, depending on the service level, item size, and route. Some Austin benchmarks:
             </p>
             <ul>
               <li><strong>Local Austin white-glove delivery (under 30 miles):</strong> $150–$400 depending on complexity</li>
@@ -237,28 +237,28 @@ export default function WhiteGloveShippingBlog() {
             <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 my-8 not-prose">
               <p className="font-semibold text-emerald-800 mb-3 text-lg">Is White-Glove Worth It?</p>
               <p className="text-grey-700 mb-3">
-                <strong>Yes</strong> — for fine art, antique furniture, pianos, medical equipment, and anything with a replacement cost or sentimental value that outweighs the service premium.
+                <strong>Yes</strong>, for fine art, antique furniture, pianos, medical equipment, and anything with a replacement cost or sentimental value that outweighs the service premium.
               </p>
               <p className="text-grey-700">
-                <strong>No</strong> — for standard consumer goods, flat-pack furniture, or items that are easily and inexpensively replaceable.
+                <strong>No</strong>, for standard consumer goods, flat-pack furniture, or items that are easily and inexpensively replaceable.
               </p>
             </div>
 
             <h2>Who Uses White-Glove Shipping in Austin, TX</h2>
             <p>The Austin area customers who most commonly request white-glove shipping from Austin Crate &amp; Freight:</p>
             <ul>
-              <li><strong>Interior designers and decorators</strong> — moving client furniture into staged homes or permanent installations</li>
-              <li><strong>Art collectors and galleries</strong> — shipping paintings, sculpture, and prints to collectors, exhibitions, and auction houses</li>
-              <li><strong>Homeowners relocating</strong> — especially those with antiques, custom dining sets, or irreplaceable heirlooms</li>
-              <li><strong>Medical offices and clinics</strong> — imaging equipment, specialized devices, and procedure room installations</li>
-              <li><strong>Musicians and music schools</strong> — grand piano moves within Austin and statewide</li>
-              <li><strong>Trade show exhibitors</strong> — display fixtures, booth components, and promotional equipment that must arrive perfect</li>
+              <li><strong>Interior designers and decorators</strong>, moving client furniture into staged homes or permanent installations</li>
+              <li><strong>Art collectors and galleries</strong>, shipping paintings, sculpture, and prints to collectors, exhibitions, and auction houses</li>
+              <li><strong>Homeowners relocating</strong>, especially those with antiques, custom dining sets, or irreplaceable heirlooms</li>
+              <li><strong>Medical offices and clinics</strong>, imaging equipment, specialized devices, and procedure room installations</li>
+              <li><strong>Musicians and music schools</strong>, grand piano moves within Austin and statewide</li>
+              <li><strong>Trade show exhibitors</strong>, display fixtures, booth components, and promotional equipment that must arrive perfect</li>
             </ul>
 
             <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 my-8 not-prose">
               <p className="font-semibold text-emerald-800 mb-3 text-lg">📞 Need White-Glove Shipping in Austin?</p>
               <p className="text-grey-700 mb-4">
-                Austin Crate &amp; Freight provides full white-glove shipping services — custom crating, specialist handling, and careful delivery anywhere in Texas. Call <strong>(512) 240-9818</strong> or request a quote online.
+                Austin Crate &amp; Freight provides full white-glove shipping services, custom crating, specialist handling, and careful delivery anywhere in Texas. Call <strong>(512) 240-9818</strong> or request a quote online.
               </p>
               <Link
                 href="/contact"

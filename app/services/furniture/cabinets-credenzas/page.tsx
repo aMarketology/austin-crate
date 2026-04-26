@@ -1,4 +1,4 @@
-import Navigation from '@/app/components/Navigation'
+﻿import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
 import Breadcrumbs from '@/app/components/Breadcrumbs'
 import ServicesGrid from '@/app/components/ServicesGrid'
@@ -12,7 +12,7 @@ const SLUG = '/services/furniture/cabinets-credenzas'
 export function generateMetadata(): Metadata {
   return generateServiceMetadata({
     serviceName: 'Cabinet & Credenza Shipping Austin Texas',
-    description: 'Specialist cabinet and credenza shipping in Austin, Texas. Display cabinets, media credenzas, china cabinets, bar cabinets, and sideboards — custom crating and white-glove delivery. Call (512) 240-9818.',
+    description: 'Specialist cabinet and credenza shipping in Austin, Texas. Display cabinets, media credenzas, china cabinets, bar cabinets, and sideboards, custom crating and white-glove delivery. Call (512) 240-9818.',
     keywords: [
       'cabinet shipping Austin Texas',
       'credenza shipping Austin TX',
@@ -30,7 +30,7 @@ export function generateMetadata(): Metadata {
 export default function CabinetsCredenazasShipping() {
   const serviceSchema = generateServiceSchema({
     serviceName: 'Cabinet & Credenza Shipping Austin Texas',
-    description: 'Specialist shipping and crating for cabinets, credenzas, sideboards, and china cabinets in Austin, TX — custom wood crates, glass protection, and white-glove delivery.',
+    description: 'Specialist shipping and crating for cabinets, credenzas, sideboards, and china cabinets in Austin, TX, custom wood crates, glass protection, and white-glove delivery.',
     serviceType: 'Specialty Shipping',
   })
 
@@ -52,7 +52,7 @@ export default function CabinetsCredenazasShipping() {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Cabinet &amp; Credenza Shipping in Austin, Texas</h1>
             <p className="text-xl text-grey-300 mb-8 max-w-3xl">
-              Cabinets and credenzas combine weight, glass, delicate hardware, and high-quality finishes in a single piece. Shipping them requires more than blanket wrap — it requires crating that protects the glass, supports the case structure, and keeps doors and drawers from shifting during transit.
+              Cabinets and credenzas combine weight, glass, delicate hardware, and high-quality finishes in a single piece. Shipping them requires more than blanket wrap, it requires crating that protects the glass, supports the case structure, and keeps doors and drawers from shifting during transit.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={`tel:${SITE_CONFIG.phone}`} className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald rounded-lg font-medium text-white hover:bg-emerald/90 transition-all duration-300">
@@ -71,13 +71,13 @@ export default function CabinetsCredenazasShipping() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">What Makes Cabinets &amp; Credenzas Difficult to Ship</h2>
             <p className="text-gray-700 text-lg mb-4">
-              A credenza looks like a straightforward box — but it is actually a complex assembly of panels, doors, hinges, shelving, hardware, and often glass, all of which behave differently under the stresses of freight transport. The case panels flex; the doors can jar open; drawer slides can misalign if the piece is racked; glass doors or panels can crack if the outer crate is stressed.
+              A credenza looks like a straightforward box, but it is actually a complex assembly of panels, doors, hinges, shelving, hardware, and often glass, all of which behave differently under the stresses of freight transport. The case panels flex; the doors can jar open; drawer slides can misalign if the piece is racked; glass doors or panels can crack if the outer crate is stressed.
             </p>
             <p className="text-gray-700 text-lg mb-4">
-              Cabinets are also commonly very heavy, which compounds the risk. A solid hardwood sideboard at 200 lbs becomes a battering ram inside an under-built crate if it shifts. Our crates are built to hold position — the piece does not move inside the crate, at all, from origin to destination.
+              Cabinets are also commonly very heavy, which compounds the risk. A solid hardwood sideboard at 200 lbs becomes a battering ram inside an under-built crate if it shifts. Our crates are built to hold position, the piece does not move inside the crate, at all, from origin to destination.
             </p>
             <p className="text-gray-700 text-lg">
-              China cabinets and display cabinets with large glass panel areas need glass-specific protection — face padding that prevents the glass from flexing at the frame edges, and reinforced crate panels so no impact force reaches the glass directly.
+              China cabinets and display cabinets with large glass panel areas need glass-specific protection, face padding that prevents the glass from flexing at the frame edges, and reinforced crate panels so no impact force reaches the glass directly.
             </p>
           </div>
         </section>
@@ -135,7 +135,7 @@ export default function CabinetsCredenazasShipping() {
             <div className="space-y-5">
               {[
                 { q: 'Can you ship a large china cabinet with multiple glass panels?', a: 'Yes. China cabinets are among our most common requests. We remove glass doors where possible, face-pad in-place glass where removal is not practical, and build crates with reinforced front panels to prevent impacts reaching glass surfaces.' },
-                { q: 'Do you remove cabinet legs before shipping?', a: 'When legs are designed to be removable, yes — we remove them, wrap them, and label them for reinstallation. Fixed-leg cabinets have their legs individually wrapped with foam padding to protect against impact at the vulnerable joint between leg and case.' },
+                { q: 'Do you remove cabinet legs before shipping?', a: 'When legs are designed to be removable, yes, we remove them, wrap them, and label them for reinstallation. Fixed-leg cabinets have their legs individually wrapped with foam padding to protect against impact at the vulnerable joint between leg and case.' },
                 { q: 'Can you move a credenza that is very long (over 8 feet)?', a: 'Yes. We have built crates for credenzas and sideboards up to 12 feet in length. Long pieces are susceptible to mid-span flex in transit, so our crate design adds longitudinal reinforcement along the crate floor.' },
                 { q: 'What is your coverage area for cabinet pickup in Austin?', a: 'We pick up throughout Greater Austin, Round Rock, Cedar Park, Georgetown, Pflugerville, and surrounding areas. For larger pieces, we send a two-person crew with appliance dollies and furniture pads for building-safe movement from the room to our truck.' },
                 { q: 'How much does shipping a credenza cost?', a: 'A local Austin credenza delivery typically starts around $200–$350. Long-distance crated freight pricing depends on dimensions and destination. Contact us at (512) 240-9818 for a free itemized quote.' },

@@ -1,4 +1,4 @@
-import Navigation from '@/app/components/Navigation'
+﻿import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
 import Breadcrumbs from '@/app/components/Breadcrumbs'
 import ServicesGrid from '@/app/components/ServicesGrid'
@@ -12,7 +12,7 @@ const SLUG = '/services/furniture/marble-stone-furniture'
 export function generateMetadata(): Metadata {
   return generateServiceMetadata({
     serviceName: 'Marble & Stone Furniture Shipping Austin Texas',
-    description: 'Expert marble and stone furniture shipping and crating in Austin, Texas. Marble dining tables, marble top dressers, travertine, granite, and custom stone pieces — safe delivery nationwide. Call (512) 240-9818.',
+    description: 'Expert marble and stone furniture shipping and crating in Austin, Texas. Marble dining tables, marble top dressers, travertine, granite, and custom stone pieces, safe delivery nationwide. Call (512) 240-9818.',
     keywords: [
       'marble furniture shipping Austin Texas',
       'stone table shipping Austin TX',
@@ -30,7 +30,7 @@ export function generateMetadata(): Metadata {
 export default function MarbleStoneFurnitureShipping() {
   const serviceSchema = generateServiceSchema({
     serviceName: 'Marble & Stone Furniture Shipping Austin Texas',
-    description: 'Specialist shipping and crating for marble and stone furniture in Austin, TX — marble dining tables, travertine tops, granite surfaces, and carved stone pieces. Custom weight-rated crating.',
+    description: 'Specialist shipping and crating for marble and stone furniture in Austin, TX, marble dining tables, travertine tops, granite surfaces, and carved stone pieces. Custom weight-rated crating.',
     serviceType: 'Specialty Shipping',
   })
 
@@ -52,7 +52,7 @@ export default function MarbleStoneFurnitureShipping() {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Marble &amp; Stone Furniture Shipping in Austin, Texas</h1>
             <p className="text-xl text-grey-300 mb-8 max-w-3xl">
-              Stone and marble furniture is unforgiving during transit. Marble cracks along invisible crystalline grain lines under flex stress. Polished edges chip from single impacts. And the sheer weight of stone — a marble dining table can exceed 400 lbs — means that the crate structure must be engineered to distribute load, not just contain the piece.
+              Stone and marble furniture is unforgiving during transit. Marble cracks along invisible crystalline grain lines under flex stress. Polished edges chip from single impacts. And the sheer weight of stone, a marble dining table can exceed 400 lbs, means that the crate structure must be engineered to distribute load, not just contain the piece.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={`tel:${SITE_CONFIG.phone}`} className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald rounded-lg font-medium text-white hover:bg-emerald/90 transition-all duration-300">
@@ -71,10 +71,10 @@ export default function MarbleStoneFurnitureShipping() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Stone &amp; Marble Furniture Needs Specialist Crating</h2>
             <p className="text-gray-700 text-lg mb-4">
-              Marble and stone present risks that wood furniture does not. The first is weight — a large marble dining table can weigh twice what an equivalent wood table weighs, and that weight produces much higher impact forces during any loading, corner, or braking event. Standard furniture crates are sized and built for wood-weight assumptions; undersized crate floors can fail under stone.
+              Marble and stone present risks that wood furniture does not. The first is weight, a large marble dining table can weigh twice what an equivalent wood table weighs, and that weight produces much higher impact forces during any loading, corner, or braking event. Standard furniture crates are sized and built for wood-weight assumptions; undersized crate floors can fail under stone.
             </p>
             <p className="text-gray-700 text-lg mb-4">
-              The second risk is stone&#39;s tendency to crack along grain lines under flex. A marble slab that is allowed to flex even slightly during transit — because it is under-supported midspan — can propagate existing micro-fractures into visible cracks. Face-up vs. face-down orientation is a meaningful engineering decision: face-up for thick slabs, face-down with edge-pad support for thin ones.
+              The second risk is stone&#39;s tendency to crack along grain lines under flex. A marble slab that is allowed to flex even slightly during transit, because it is under-supported midspan, can propagate existing micro-fractures into visible cracks. Face-up vs. face-down orientation is a meaningful engineering decision: face-up for thick slabs, face-down with edge-pad support for thin ones.
             </p>
             <p className="text-gray-700 text-lg">
               Tops and bases typically ship separately. We detach the marble or stone top, crate it independently on a foam-lined plywood base with corner foam blocks, and crate the base separately. This keeps each element fully supported and eliminates any relative movement between stone and wood/metal during transit.
@@ -140,11 +140,11 @@ export default function MarbleStoneFurnitureShipping() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
             <div className="space-y-5">
               {[
-                { q: 'Is marble furniture safe to ship cross-country?', a: 'Yes, with proper crating. Marble that is fully supported across its span, with polished edges protected by dense foam, and loaded in the correct orientation, will arrive safely across any distance. The risk comes from under-built crates or improper orientation — both of which we engineer against.' },
+                { q: 'Is marble furniture safe to ship cross-country?', a: 'Yes, with proper crating. Marble that is fully supported across its span, with polished edges protected by dense foam, and loaded in the correct orientation, will arrive safely across any distance. The risk comes from under-built crates or improper orientation, both of which we engineer against.' },
                 { q: 'Can you ship a large round marble dining table?', a: 'Yes. Round and oval tops are among the pieces most prone to chipping at the edges during shipping (because the entire perimeter is edge). We use continuous edge foam that follows the full circumference of the table, not just corner blocks.' },
-                { q: 'Do I need to detach the marble top before you arrive?', a: 'No — we will detach it during the packing appointment. We document the original assembly with photos so the top can be reinstalled correctly at the destination.' },
+                { q: 'Do I need to detach the marble top before you arrive?', a: 'No, we will detach it during the packing appointment. We document the original assembly with photos so the top can be reinstalled correctly at the destination.' },
                 { q: 'How much does marble furniture shipping cost?', a: 'Local Austin marble table delivery typically starts at $350–$600 depending on weight and dimensions. Long-distance pricing depends on the freight lane and crate size. Call (512) 240-9818 for a specific quote for your piece.' },
-                { q: 'What is the difference between shipping marble vs. granite?', a: 'Granite is generally harder and less prone to flex-cracking than marble, but it is often heavier — both require the same weight-rated crating approach. Our process is the same for both: separated top crating, continuous edge protection, and oriented face-up with midspan support.' },
+                { q: 'What is the difference between shipping marble vs. granite?', a: 'Granite is generally harder and less prone to flex-cracking than marble, but it is often heavier, both require the same weight-rated crating approach. Our process is the same for both: separated top crating, continuous edge protection, and oriented face-up with midspan support.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-white border border-gray-200 rounded-xl p-5">
                   <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { motion } from 'framer-motion'
 import Navigation from '../components/Navigation'
@@ -375,7 +375,7 @@ export default function ServicesClient() {
             <span className="text-emerald">Valuable Items?</span>
           </h2>
           <p className="text-xl text-grey-400 mb-10 max-w-2xl mx-auto">
-            Get a free quote for specialty shipping in Austin. Whether you need custom furniture shipping, heavy package pickup, oversized freight, or fine art crating — we handle it all.
+            Get a free quote for specialty shipping in Austin. Whether you need custom furniture shipping, heavy package pickup, oversized freight, or fine art crating, we handle it all.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

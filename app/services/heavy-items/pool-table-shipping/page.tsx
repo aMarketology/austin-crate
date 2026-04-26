@@ -1,4 +1,4 @@
-import Navigation from '@/app/components/Navigation'
+﻿import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
 import Breadcrumbs from '@/app/components/Breadcrumbs'
 import Link from 'next/link'
@@ -29,7 +29,7 @@ export function generateMetadata(): Metadata {
 export default function PoolTableShipping() {
   const serviceSchema = generateServiceSchema({
     serviceName: 'Pool Table Shipping & Crating Austin Texas',
-    description: 'Professional pool table disassembly, crating, and shipping in Austin, TX — slate protection, felt preservation, white-glove reassembly.',
+    description: 'Professional pool table disassembly, crating, and shipping in Austin, TX, slate protection, felt preservation, white-glove reassembly.',
     serviceType: 'Specialty Shipping',
   })
 
@@ -55,7 +55,7 @@ export default function PoolTableShipping() {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Pool Table Shipping &amp; Crating in Austin, Texas</h1>
             <p className="text-xl text-grey-300 mb-8 max-w-3xl">
-              Pool tables require expert disassembly, professional slate crating, and precision reassembly at destination. Austin Crate &amp; Freight handles every step — from the first bolt to the final level.
+              Pool tables require expert disassembly, professional slate crating, and precision reassembly at destination. Austin Crate &amp; Freight handles every step, from the first bolt to the final level.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="tel:(512) 240-9818" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald rounded-lg font-medium text-white hover:bg-emerald/90 transition-all duration-300">
@@ -74,7 +74,7 @@ export default function PoolTableShipping() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Pool Tables Require Specialist Handling</h2>
             <p className="text-gray-700 text-lg mb-4">
-              A standard 8-foot pool table weighs 700–1,000 lbs — much of that in three separate slate pieces that must be crated individually and reassembled level to within 1/32&quot;. Move a pool table wrong and you end up with cracked slate, warped felt, broken rails, or a permanently uneven playing surface.
+              A standard 8-foot pool table weighs 700–1,000 lbs, much of that in three separate slate pieces that must be crated individually and reassembled level to within 1/32&quot;. Move a pool table wrong and you end up with cracked slate, warped felt, broken rails, or a permanently uneven playing surface.
             </p>
             <p className="text-gray-700 text-lg mb-8">
               We disassemble, crate, transport, and reassemble pool tables in Austin and throughout Texas. Every step follows a proven process designed to protect the slate, preserve the felt, and ensure the table plays as well after the move as it did before.
@@ -84,7 +84,7 @@ export default function PoolTableShipping() {
                 { title: 'Slate Disassembly &amp; Individual Crating', desc: 'Each slate piece is carefully removed, wrapped in protective padding, and crated in its own custom wood enclosure to prevent cracking in transit.' },
                 { title: 'Felt Preservation', desc: 'The felt is rolled (not folded) and stored separately to prevent permanent crease lines. New felt installation available at destination if preferred.' },
                 { title: 'Rail &amp; Pocket Protection', desc: 'Rails are padded and strapped to prevent chip or scratch damage to the wood finish. Pockets are bagged and packed with the hardware.' },
-                { title: 'Frame &amp; Leg Handling', desc: 'The frame and legs are wrapped and moved with furniture dollies designed for the weight — no dragging, no tipping, no floor damage.' },
+                { title: 'Frame &amp; Leg Handling', desc: 'The frame and legs are wrapped and moved with furniture dollies designed for the weight, no dragging, no tipping, no floor damage.' },
                 { title: 'Precision Leveling at Destination', desc: 'Reassembly includes precise slate leveling using a precision spirit level. We do not leave until the table plays correctly.' },
                 { title: 'Full-Service or Crate-Only', desc: 'We offer full disassembly + ship + reassembly, or crate-only for customers who have their own movers. Flexible to your needs.' },
               ].map((item, i) => (
@@ -130,8 +130,8 @@ export default function PoolTableShipping() {
                 { q: 'How much does it cost to ship a pool table in Austin?', a: 'Local Austin pool table moves (under 50 miles) typically run $400–$800 including disassembly and reassembly. Long-distance Texas shipping adds freight carrier costs. Call (512) 240-9818 for a fast quote based on your specific table and move.' },
                 { q: 'Do you reassemble the pool table at the destination?', a: 'Yes. We provide full reassembly including precise slate leveling, felt stretching, and rail installation. We do not leave until the table is level and playable.' },
                 { q: 'Can you ship a pool table from Austin to another state?', a: 'Absolutely. We have crated and shipped pool tables across the US. We build custom slate crates at our Austin facility and coordinate with vetted freight carriers for long-haul moves.' },
-                { q: 'Do I need new felt after the move?', a: 'Not necessarily. Felt in good condition can be removed, preserved, and reinstalled. Felt that is already worn or has existing damage is a good candidate for replacement during the move — we can arrange that.' },
-                { q: 'How long does pool table shipping take?', a: 'Local Austin moves are typically completed in one day. Long-distance Texas and interstate shipments vary by destination — usually 3–7 business days after crating.' },
+                { q: 'Do I need new felt after the move?', a: 'Not necessarily. Felt in good condition can be removed, preserved, and reinstalled. Felt that is already worn or has existing damage is a good candidate for replacement during the move, we can arrange that.' },
+                { q: 'How long does pool table shipping take?', a: 'Local Austin moves are typically completed in one day. Long-distance Texas and interstate shipments vary by destination, usually 3–7 business days after crating.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                   <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>
@@ -146,7 +146,7 @@ export default function PoolTableShipping() {
         <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-16 px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Get a Pool Table Shipping Quote in Austin</h2>
-            <p className="text-grey-300 text-lg mb-8">Tell us the table brand, size, and destination. We will come back with a fair quote — usually within a few hours.</p>
+            <p className="text-grey-300 text-lg mb-8">Tell us the table brand, size, and destination. We will come back with a fair quote, usually within a few hours.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:(512) 240-9818" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-emerald rounded-lg font-semibold text-white hover:bg-emerald/90 transition">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg>

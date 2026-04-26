@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+﻿import { Metadata } from 'next'
 import SEOWrapper from '@/app/components/SEOWrapper'
 import BlogSeoAtx from '@/app/components/BlogSeoAtx'
 import { getEntry } from '@/lib/content-registry'
@@ -32,10 +32,10 @@ export default function AustinKivaHubBlog() {
         author="Laurel Pinchback Austin"
         category="Local Business"
         readTime="3 min read"
-        description="Austin becomes the latest city to partner with global nonprofit Kiva, launching a crowdfunded microloan program offering 0% interest loans from $1,000 to $15,000 — with no minimum credit score required."
+        description="Austin becomes the latest city to partner with global nonprofit Kiva, launching a crowdfunded microloan program offering 0% interest loans from $1,000 to $15,000, with no minimum credit score required."
       >
         <p className="lead text-xl text-gray-700 mb-8">
-          <strong>AUSTIN, Texas —</strong> A new funding resource for small business owners has been announced by the
+          <strong>AUSTIN, Texas , </strong> A new funding resource for small business owners has been announced by the
           City of Austin. In partnership with global nonprofit{' '}
           <a
             href="https://spectrumlocalnews.com/tx/austin/news/2026/03/24/city-of-austin-launches-hub-to-financially-support-small-business-owners"
@@ -51,12 +51,12 @@ export default function AustinKivaHubBlog() {
         <p>
           The program offers <strong>0% interest and no fees</strong> for loans ranging from{' '}
           <strong>$1,000 to $15,000</strong>. Critically, the loans have{' '}
-          <strong>no minimum credit score requirement</strong> — removing one of the most common barriers that prevents
+          <strong>no minimum credit score requirement</strong>, removing one of the most common barriers that prevents
           small business owners from accessing traditional financing.
         </p>
         <p>
           The loans are crowdfunded, meaning the capital comes directly from the local community and a global network of
-          Kiva lenders worldwide. This model allows anyone — from an Austin neighbour to an international supporter — to
+          Kiva lenders worldwide. This model allows anyone, from an Austin neighbour to an international supporter, to
           back a local business they believe in.
         </p>
 
@@ -94,7 +94,7 @@ export default function AustinKivaHubBlog() {
         </p>
         <blockquote>
           <p>
-            &ldquo;Partnering with Kiva showcases our shared commitment to empower small business owners — regardless of
+            &ldquo;Partnering with Kiva showcases our shared commitment to empower small business owners, regardless of
             background.&rdquo;
           </p>
         </blockquote>
@@ -112,12 +112,12 @@ export default function AustinKivaHubBlog() {
         <p>
           Access to capital is consistently cited as one of the top challenges facing small business owners, particularly
           for entrepreneurs from underserved communities who may lack credit history or collateral. The Kiva Hub model
-          sidesteps traditional bank lending entirely — instead relying on community trust and a proven global crowdfunding
+          sidesteps traditional bank lending entirely, instead relying on community trust and a proven global crowdfunding
           platform that has deployed over $2 billion in loans across 90+ countries.
         </p>
         <p>
-          For Austin&apos;s growing community of independent business owners — from food truck operators to boutique
-          retailers to specialty freight and logistics startups — this program represents a meaningful new on-ramp to
+          For Austin&apos;s growing community of independent business owners, from food truck operators to boutique
+          retailers to specialty freight and logistics startups, this program represents a meaningful new on-ramp to
           growth capital.
         </p>
 
@@ -129,7 +129,7 @@ export default function AustinKivaHubBlog() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Spectrum News Austin — City of Austin launches hub to financially support small business owners
+              Spectrum News Austin, City of Austin launches hub to financially support small business owners
             </a>
             , reported by Laurel Pinchback Austin, March 24, 2026.
           </em>

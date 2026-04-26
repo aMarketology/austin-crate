@@ -1,4 +1,4 @@
-import Navigation from '@/app/components/Navigation'
+﻿import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
 import Breadcrumbs from '@/app/components/Breadcrumbs'
 import ServicesGrid from '@/app/components/ServicesGrid'
@@ -30,7 +30,7 @@ export function generateMetadata(): Metadata {
 export default function SurgicalEquipmentShipping() {
   const serviceSchema = generateServiceSchema({
     serviceName: 'Surgical Equipment Shipping Austin Texas',
-    description: 'Specialist shipping and crating for surgical equipment in Austin, TX — operating tables, surgical lights, laparoscopic towers, robotic systems, and sterile instrument sets.',
+    description: 'Specialist shipping and crating for surgical equipment in Austin, TX, operating tables, surgical lights, laparoscopic towers, robotic systems, and sterile instrument sets.',
     serviceType: 'Medical Equipment Transport',
   })
 
@@ -71,13 +71,13 @@ export default function SurgicalEquipmentShipping() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">The High Stakes of Surgical Equipment Transport</h2>
             <p className="text-gray-700 text-lg mb-4">
-              Surgical equipment operates in environments where failure has immediate patient-safety consequences. This shapes how transport must be approached: every component that could be damaged in transit — a motor drive in an OR table, a light head in a surgical ceiling pendant, a camera head in a laparoscopic tower — needs to be individually assessed and protected, not generically wrapped.
+              Surgical equipment operates in environments where failure has immediate patient-safety consequences. This shapes how transport must be approached: every component that could be damaged in transit, a motor drive in an OR table, a light head in a surgical ceiling pendant, a camera head in a laparoscopic tower, needs to be individually assessed and protected, not generically wrapped.
             </p>
             <p className="text-gray-700 text-lg mb-4">
               OR tables and surgical positioning equipment are heavy, have multiple articulating sections, and often contain hydraulic or electrical systems that must be transported in specific configurations. Surgical lights contain precision-balanced multi-LED arrays and counterbalanced suspension arms that can be damaged if the arm is transported extended. Laparoscopic and endoscopic towers combine rack-mounted electronics with high-resolution camera systems, light sources, and insufflation equipment that all have individual fragility profiles.
             </p>
             <p className="text-gray-700 text-lg">
-              For robotic surgery systems — da Vinci and similar platforms — transport is a multi-component project requiring close coordination with your facility's clinical engineering team and the OEM's field service group. We handle the physical protection and logistics; clinical engineering handles the commissioning on the other end. We have done it before and know what documentation each party needs.
+              For robotic surgery systems, da Vinci and similar platforms, transport is a multi-component project requiring close coordination with your facility's clinical engineering team and the OEM's field service group. We handle the physical protection and logistics; clinical engineering handles the commissioning on the other end. We have done it before and know what documentation each party needs.
             </p>
           </div>
         </section>
@@ -90,7 +90,7 @@ export default function SurgicalEquipmentShipping() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 { title: 'Articulating Section Securing', desc: 'OR table sections, surgical chair backs, and articulating components are locked in the transport position before the unit is moved. This prevents hydraulic drift and mechanical stress on pivot points.' },
-                { title: 'Sterile Barrier Maintenance', desc: 'Sterile-field components — drapes, instrument trays, wrapped sets — are handled with gloves and kept in sealed packaging during transport. We do not break sterile packaging.' },
+                { title: 'Sterile Barrier Maintenance', desc: 'Sterile-field components, drapes, instrument trays, wrapped sets, are handled with gloves and kept in sealed packaging during transport. We do not break sterile packaging.' },
                 { title: 'Optical Component Protection', desc: 'Laparoscope and endoscope optics, camera heads, and light guide cables are individually wrapped in foam and transported in padded cases separate from the main tower.' },
                 { title: 'Heavy Rigging Capability', desc: 'OR tables and large surgical systems often exceed 500 lbs. We use hydraulic hand trucks and appliance dollies rated for the actual weight, with two-person crews for any item over 300 lbs.' },
                 { title: 'Fluid System Preparation', desc: 'Insufflation units and fluid management systems require purging and drying of all internal lines before transport. We coordinate this step with your clinical engineering team.' },
@@ -109,7 +109,7 @@ export default function SurgicalEquipmentShipping() {
         <section className="py-16 px-4 bg-white">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-3">Surgical Equipment We Transport</h2>
-            <p className="text-gray-600 mb-8">OR suites, procedural rooms, and sterile processing environments — all equipment types handled.</p>
+            <p className="text-gray-600 mb-8">OR suites, procedural rooms, and sterile processing environments, all equipment types handled.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
                 'Operating room tables (electric & hydraulic)',
@@ -140,7 +140,7 @@ export default function SurgicalEquipmentShipping() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
             <div className="space-y-5">
               {[
-                { q: 'Can you move an OR table within the same hospital?', a: 'Yes — within-facility moves are common and we handle them regularly. We work within your OR schedule windows (typically overnight or weekend) and coordinate with your facilities and clinical engineering teams.' },
+                { q: 'Can you move an OR table within the same hospital?', a: 'Yes, within-facility moves are common and we handle them regularly. We work within your OR schedule windows (typically overnight or weekend) and coordinate with your facilities and clinical engineering teams.' },
                 { q: 'Can you ship a laparoscopic tower to another facility in Texas?', a: 'Yes. Laparoscopic towers ship as multi-component systems. We document and pack the rack unit, all associated components (insufflator, light source, camera processor, monitor), and the scope cases separately.' },
                 { q: 'Do you transport anesthesia machines?', a: 'Yes. Anesthesia machines require the vaporizer(s) to be removed and transported separately (they are shipped upright to prevent liquid anesthetic from migrating into the vaporizer internals). We handle this step and label all components for correct reassembly.' },
                 { q: 'What preparation does my facility need to do before you pick up surgical equipment?', a: 'Primarily: decontamination sign-off for any equipment that has been in the OR, vaporizer removal from anesthesia machines, and fluid system purging for insufflators and fluid management units. We will walk through the checklist with your clinical engineering team at scheduling.' },

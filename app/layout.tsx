@@ -1,5 +1,5 @@
-import type { Metadata } from 'next'
-import { Playfair_Display, Inter } from 'next/font/google'
+﻿import type { Metadata } from 'next'
+import { Fraunces, DM_Sans } from 'next/font/google'
 import { organizationSchema, servicesSchema, reviewSchema } from '@/lib/schema'
 import { websiteSchema } from '@/lib/website-schema'
 import StickyQuoteButton from './components/StickyQuoteButton'
@@ -7,19 +7,19 @@ import FooterEnhanced from './components/FooterEnhanced'
 import Analytics from './components/Analytics'
 import './globals.css'
 
-// Elegant serif font for headings
-const playfair = Playfair_Display({
+// Warm, characterful display serif for headings, confident craftsman energy
+const fraunces = Fraunces({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800', '900'],
-  variable: '--font-playfair',
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-fraunces',
   display: 'swap',
 })
 
-// Clean sans-serif for body text
-const inter = Inter({
+// Friendly geometric sans-serif for body text
+const dmSans = DM_Sans({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-inter',
+  variable: '--font-dm-sans',
   display: 'swap',
 })
 
@@ -153,7 +153,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </head>
-      <body className={`${playfair.variable} ${inter.variable} font-sans antialiased`}>
+      <body className={`${fraunces.variable} ${dmSans.variable} font-sans antialiased`}>
         <Analytics />
         {children}
         <FooterEnhanced />

@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+﻿import { Metadata } from 'next'
 import SEOWrapper from '@/app/components/SEOWrapper'
 import BlogSeoAtx from '@/app/components/BlogSeoAtx'
 import { getEntry } from '@/lib/content-registry'
@@ -32,10 +32,10 @@ export default function ExxonMobilRedomicileBlog() {
         author="Katharine Finnerty & Valencia Jones"
         category="Texas Business"
         readTime="4 min read"
-        description="ExxonMobil's board unanimously recommends redomiciling its corporate registration from New Jersey to Texas — citing the state's legal environment, the new Texas Business Court, and alignment with its Spring, TX headquarters."
+        description="ExxonMobil's board unanimously recommends redomiciling its corporate registration from New Jersey to Texas, citing the state's legal environment, the new Texas Business Court, and alignment with its Spring, TX headquarters."
       >
         <p className="lead text-xl text-gray-700 mb-8">
-          <strong>TEXAS —</strong> ExxonMobil announced on Tuesday that it is recommending moving its corporate
+          <strong>TEXAS , </strong> ExxonMobil announced on Tuesday that it is recommending moving its corporate
           registration from New Jersey to Texas, where its headquarters has been located since 1989. The move, known
           as a{' '}
           <a
@@ -51,7 +51,7 @@ export default function ExxonMobilRedomicileBlog() {
         <h2>What Is Redomiciliation?</h2>
         <p>
           Redomiciling is the process of moving a corporation&apos;s <strong>legal home</strong> to a new jurisdiction
-          while maintaining its existing legal existence. It does not create a new company or dissolve the old one —
+          while maintaining its existing legal existence. It does not create a new company or dissolve the old one , 
           it simply shifts which state&apos;s corporate law governs the business.
         </p>
         <p>
@@ -66,7 +66,7 @@ export default function ExxonMobilRedomicileBlog() {
         <ul>
           <li>Texas&apos; <strong>legal and regulatory environment</strong>, which the company says is more aligned with
           its business interests than New Jersey&apos;s.</li>
-          <li>The creation of the <strong>Texas Business Court</strong> — a specialised court system designed to handle
+          <li>The creation of the <strong>Texas Business Court</strong>, a specialised court system designed to handle
           complex commercial disputes, which launched in 2024.</li>
         </ul>
 
@@ -103,8 +103,8 @@ export default function ExxonMobilRedomicileBlog() {
         </p>
         <p>
           The company joins a growing list of major corporations that have shifted their legal or operational home to
-          Texas. Most notably, both <strong>SpaceX</strong> and <strong>Tesla</strong> — previously incorporated in
-          Delaware — relocated to Texas under Elon Musk&apos;s leadership.
+          Texas. Most notably, both <strong>SpaceX</strong> and <strong>Tesla</strong>, previously incorporated in
+          Delaware, relocated to Texas under Elon Musk&apos;s leadership.
         </p>
 
         <h2>What Happens Next?</h2>
@@ -149,7 +149,7 @@ export default function ExxonMobilRedomicileBlog() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Spectrum News Austin — ExxonMobil looks to move its legal home from New Jersey to Texas
+              Spectrum News Austin, ExxonMobil looks to move its legal home from New Jersey to Texas
             </a>
             , reported by Katharine Finnerty and Valencia Jones, March 10, 2026.
           </em>

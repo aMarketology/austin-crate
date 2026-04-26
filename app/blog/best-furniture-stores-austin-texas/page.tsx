@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+﻿import { Metadata } from 'next'
 import Link from 'next/link'
 import SEOWrapper from '@/app/components/SEOWrapper'
 import BlogSeoAtx from '@/app/components/BlogSeoAtx'
@@ -33,7 +33,7 @@ export default function BestFurnitureStoresAustin() {
         author="Austin Crate & Freight"
         category="Austin Living"
         readTime="5 min read"
-        description="From high-concept showrooms in South Austin to sustainable custom woodworkers in East Austin — here are the top-rated furniture stores in the Austin area for 2026, curated from local sentiment and the Austin American-Statesman."
+        description="From high-concept showrooms in South Austin to sustainable custom woodworkers in East Austin, here are the top-rated furniture stores in the Austin area for 2026, curated from local sentiment and the Austin American-Statesman."
       >
         <p className="lead text-xl text-gray-700 mb-8">
           Whether you just moved to Austin or are finally furnishing that new home, the city has a furniture scene as
@@ -60,7 +60,7 @@ export default function BestFurnitureStoresAustin() {
         </p>
         <ul>
           <li>
-            <strong>Best For:</strong> High-quality statement pieces — sofas, dining tables, and lighting that look like
+            <strong>Best For:</strong> High-quality statement pieces, sofas, dining tables, and lighting that look like
             they belong in a design magazine.
           </li>
           <li>
@@ -104,7 +104,7 @@ export default function BestFurnitureStoresAustin() {
           </li>
           <li>
             <strong>Local Tip:</strong> They frequently collaborate with local metalworkers, creating a distinct
-            &ldquo;Texas Industrial&rdquo; look — raw steel paired with live-edge wood.
+            &ldquo;Texas Industrial&rdquo; look, raw steel paired with live-edge wood.
           </li>
         </ul>
 
@@ -135,7 +135,7 @@ export default function BestFurnitureStoresAustin() {
         </p>
         <ul>
           <li>
-            <strong>Best For:</strong> Seeing many styles under one roof — great for furnishing an entire home in a single
+            <strong>Best For:</strong> Seeing many styles under one roof, great for furnishing an entire home in a single
             afternoon.
           </li>
         </ul>
@@ -160,7 +160,7 @@ export default function BestFurnitureStoresAustin() {
               {[
                 ['Austin Creative Reuse', 'Small furniture items, decor, and DIY supplies', 'Multiple drop-off sites'],
                 ['Habitat for Humanity ReStore', 'Gently used furniture at deep discounts', 'Comal St & Research Blvd'],
-                ['MoveOutATX (Seasonal)', 'Free furniture market — late July only', 'West Campus, UT Austin area'],
+                ['MoveOutATX (Seasonal)', 'Free furniture market, late July only', 'West Campus, UT Austin area'],
               ].map(([name, desc, loc]) => (
                 <tr key={name} className="even:bg-gray-50">
                   <td className="px-4 py-3 font-medium text-gray-900">{name}</td>

@@ -1,4 +1,4 @@
-import Navigation from '@/app/components/Navigation'
+﻿import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
 import Breadcrumbs from '@/app/components/Breadcrumbs'
 import ServicesGrid from '@/app/components/ServicesGrid'
@@ -11,9 +11,9 @@ const SLUG = '/services/shipping-and-crating/oversized-one-off-items'
 
 export function generateMetadata(): Metadata {
   return generateServiceMetadata({
-    serviceName: 'Oversized & One-Off Item Shipping Austin TX — When UPS & FedEx Say No',
+    serviceName: 'Oversized & One-Off Item Shipping Austin TX, When UPS & FedEx Say No',
     description:
-      'Custom crating and freight for oversized, overweight, or one-of-a-kind items that standard carriers refuse in Austin, TX. We quote it, crate it, and ship it — no matter the size or shape. Call (512) 240-9818.',
+      'Custom crating and freight for oversized, overweight, or one-of-a-kind items that standard carriers refuse in Austin, TX. We quote it, crate it, and ship it, no matter the size or shape. Call (512) 240-9818.',
     keywords: [
       'oversized item shipping Austin TX',
       'when UPS refuses to ship Austin',
@@ -51,9 +51,9 @@ export default function OversizedOneOffItems() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-grey-700 bg-grey-800/50 mb-6 ml-4">
               <span className="text-xs font-medium text-grey-300 uppercase tracking-widest">Oversized Shipping · Austin, TX</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-5">Oversized One-Off Item Shipping in Austin, TX — When UPS & FedEx Say No</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-5">Oversized One-Off Item Shipping in Austin, TX, When UPS & FedEx Say No</h1>
             <p className="text-xl text-grey-300 mb-8 max-w-3xl">
-              If the item is over 150 lbs, over 165&quot; combined dimensions, or just too unusual for a standard carrier to handle, we quote it, crate it, and ship it. Every single one is a custom job — and that&apos;s exactly what we do.
+              If the item is over 150 lbs, over 165&quot; combined dimensions, or just too unusual for a standard carrier to handle, we quote it, crate it, and ship it. Every single one is a custom job, and that&apos;s exactly what we do.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
@@ -99,7 +99,7 @@ export default function OversizedOneOffItems() {
               <h2 className="text-2xl font-bold text-gray-900 mb-4">How We Handle It</h2>
               <ul className="space-y-2 text-gray-700">
                 {[
-                  'Custom-assessed per item — no boilerplate',
+                  'Custom-assessed per item, no boilerplate',
                   'One project manager end-to-end',
                   'Built-to-fit crating every time',
                   'Freight carrier matched to size and value',
@@ -115,7 +115,7 @@ export default function OversizedOneOffItems() {
           </div>
           <div className="max-w-4xl mx-auto mt-10 p-6 bg-gray-50 rounded-xl border border-gray-200">
             <p className="text-gray-700">
-              If UPS, FedEx, and your regular freight broker have all said no — or said yes at a number that doesn&apos;t make sense — call us. We deal with these situations every week, and we have never met an item we couldn&apos;t figure out how to ship.
+              If UPS, FedEx, and your regular freight broker have all said no, or said yes at a number that doesn&apos;t make sense, call us. We deal with these situations every week, and we have never met an item we couldn&apos;t figure out how to ship.
             </p>
           </div>
         </section>

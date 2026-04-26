@@ -1,4 +1,4 @@
-import Navigation from '@/app/components/Navigation'
+﻿import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
 import Breadcrumbs from '@/app/components/Breadcrumbs'
 import Link from 'next/link'
@@ -56,7 +56,7 @@ export default function AntiqueFurnitureShipping() {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Antique &amp; Heirloom Furniture Shipping in Austin, Texas</h1>
             <p className="text-xl text-grey-300 mb-8 max-w-3xl">
-              Irreplaceable pieces require more than care — they require expertise. We ship and crate antique and heirloom furniture in Austin using period-correct handling techniques and museum-quality crating built in our own shop.
+              Irreplaceable pieces require more than care, they require expertise. We ship and crate antique and heirloom furniture in Austin using period-correct handling techniques and museum-quality crating built in our own shop.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="tel:(512) 240-9818" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald rounded-lg font-medium text-white hover:bg-emerald/90 transition-all duration-300">
@@ -75,7 +75,7 @@ export default function AntiqueFurnitureShipping() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Antique Furniture Demands Specialist Handling</h2>
             <p className="text-gray-700 text-lg mb-4">
-              Antique furniture was not built to modern standards because it did not need to be — it was built to last generations in a home, not to survive a freight trailer. Hide glue joints, hand-cut dovetails, gilt finishes, inlay work, and aged veneers are all highly vulnerable to the stresses of transit: vibration, humidity swings, and rough handling.
+              Antique furniture was not built to modern standards because it did not need to be, it was built to last generations in a home, not to survive a freight trailer. Hide glue joints, hand-cut dovetails, gilt finishes, inlay work, and aged veneers are all highly vulnerable to the stresses of transit: vibration, humidity swings, and rough handling.
             </p>
             <p className="text-gray-700 text-lg mb-8">
               Our team is trained in identifying original construction methods, understanding how period pieces should and should not be disassembled, and selecting crating and padding materials that will not react chemically with aged finishes or wood.
@@ -83,11 +83,11 @@ export default function AntiqueFurnitureShipping() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 { title: 'No Adhesive Tapes on Surfaces', desc: 'We never apply tape directly to antique wood, veneer, or gilt. All fastening is done with acid-free padding and wrap.' },
-                { title: 'Hide Glue Joint Awareness', desc: 'Antique joints are often repaired with hide glue — we know how to move pieces without stressing joints that could fail under tension.' },
+                { title: 'Hide Glue Joint Awareness', desc: 'Antique joints are often repaired with hide glue, we know how to move pieces without stressing joints that could fail under tension.' },
                 { title: 'Veneer & Inlay Protection', desc: 'Fragile veneers and inlay work are individually padded and crated with rigid internal bracing to prevent flex.' },
                 { title: 'Climate-Aware Crating', desc: 'For long-distance shipments we use moisture-resistant crating materials and can include desiccant packs to protect against humidity.' },
-                { title: 'Documented Condition Reports', desc: 'We photograph your piece before and after handling so condition is documented — important for insurance and peace of mind.' },
-                { title: 'Custom Fit — No Generic Boxes', desc: 'Every antique piece gets a crate built to its dimensions. We do not use generic boxes that allow movement inside.' },
+                { title: 'Documented Condition Reports', desc: 'We photograph your piece before and after handling so condition is documented, important for insurance and peace of mind.' },
+                { title: 'Custom Fit, No Generic Boxes', desc: 'Every antique piece gets a crate built to its dimensions. We do not use generic boxes that allow movement inside.' },
               ].map((item, i) => (
                 <div key={i} className="p-5 bg-gray-50 border border-gray-200 rounded-xl">
                   <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>

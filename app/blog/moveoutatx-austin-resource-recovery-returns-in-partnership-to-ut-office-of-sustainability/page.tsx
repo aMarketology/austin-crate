@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+﻿import { Metadata } from 'next'
 import Link from 'next/link'
 import SEOWrapper from '@/app/components/SEOWrapper'
 import BlogSeoAtx from '@/app/components/BlogSeoAtx'
@@ -33,10 +33,10 @@ export default function MoveOutATXBlog() {
         author="Austin Crate & Freight"
         category="Community"
         readTime="4 min read"
-        description="Austin Resource Recovery, in partnership with the UT Office of Sustainability, confirms MoveOutATX returns to West Campus in late July 2026 — diverting tons of reusable items from area landfills."
+        description="Austin Resource Recovery, in partnership with the UT Office of Sustainability, confirms MoveOutATX returns to West Campus in late July 2026, diverting tons of reusable items from area landfills."
       >
         <p className="lead text-xl text-grey-700 mb-8">
-          <strong>AUSTIN, TX —</strong> Austin Resource Recovery, in partnership with the UT Office of Sustainability,
+          <strong>AUSTIN, TX , </strong> Austin Resource Recovery, in partnership with the UT Office of Sustainability,
           has confirmed that MoveOutATX will return to the West Campus area in late July 2026. The initiative aims to divert
           tons of reusable items from landfills during the heavy student move-out season, providing donation stations and the
           popular Free Furniture Market.
@@ -86,7 +86,7 @@ export default function MoveOutATXBlog() {
                 ['Ticketing', 'Tickets establish place-in-line; usually distributed starting at 6:00 p.m.'],
                 ['Limits', 'Typically limited to two items per person.'],
                 ['Requirements', 'Must be 18+ (or with a guardian) and sign a liability waiver.'],
-                ['Transport', 'You must be able to load and move items yourself — bring a truck or dolly.'],
+                ['Transport', 'You must be able to load and move items yourself, bring a truck or dolly.'],
               ].map(([feature, guideline]) => (
                 <tr key={feature} className="even:bg-gray-50">
                   <td className="px-4 py-3 font-medium text-gray-900">{feature}</td>
@@ -99,7 +99,7 @@ export default function MoveOutATXBlog() {
 
         <h2>Impact and Partnerships</h2>
         <p>
-          Since its inception, MoveOutATX has diverted over <strong>249 tons</strong> of material from local landfills —
+          Since its inception, MoveOutATX has diverted over <strong>249 tons</strong> of material from local landfills , 
           roughly the weight of 50 African elephants. The program partners with several local reuse organizations, including:
         </p>
         <ul>

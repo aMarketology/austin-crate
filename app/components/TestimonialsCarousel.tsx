@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -20,35 +20,35 @@ export const TestimonialsCarousel: React.FC<TestimonialsCarouselProps> = ({
   testimonials = [
     {
       id: 1,
-      name: 'John Smith',
-      role: 'Homeowner',
-      content: 'Amazing work! My garage looks completely transformed. The team was professional and efficient.',
+      name: 'Sarah M.',
+      role: 'Interior Designer, South Austin',
+      content: "I've shipped furniture with three other companies before finding Austin Crate. The others always damaged something. These guys built a custom crate for a $12,000 dining table and it arrived without a scratch. They've earned every future job I have.",
       rating: 5,
-      image: '👨‍💼',
+      image: '🪑',
     },
     {
       id: 2,
-      name: 'Sarah Johnson',
-      role: 'Business Owner',
-      content: 'Best concrete coating service in Tampa Bay. Highly recommended for commercial spaces.',
+      name: 'James T.',
+      role: 'Art Collector, Tarrytown',
+      content: 'Moved six pieces from our home to a gallery in Dallas. They wrapped, crated, and documented every item before it left the door. The gallery director said it was the best-packaged shipment they had received all year.',
       rating: 5,
-      image: '👩‍💼',
+      image: '🎨',
     },
     {
       id: 3,
-      name: 'Mike Davis',
-      role: 'Homeowner',
-      content: 'Excellent customer service and superior quality. Worth every penny!',
+      name: 'Dr. Rachel K.',
+      role: 'Medical Director, Austin',
+      content: 'We relocated imaging equipment under strict handling requirements. Austin Crate understood our compliance needs without us having to explain them twice. On time, properly handled, zero issues.',
       rating: 5,
-      image: '👨‍🔧',
+      image: '⚕️',
     },
     {
       id: 4,
-      name: 'Emily Rodriguez',
-      role: 'Property Manager',
-      content: 'Professional team, on-time delivery, and fantastic results. Highly satisfied!',
+      name: 'Marcus W.',
+      role: 'Homeowner, Round Rock',
+      content: 'Pool table, second floor, tight staircase, shipping to Denver. I expected a nightmare. They had it crated and out the door in three hours. Arrived in perfect shape. Worth every dollar.',
       rating: 5,
-      image: '👩‍💼',
+      image: '🎱',
     },
   ],
 }) => {
@@ -103,14 +103,14 @@ export const TestimonialsCarousel: React.FC<TestimonialsCarouselProps> = ({
             }}
             className="absolute w-full"
           >
-            <div className="bg-white rounded-lg shadow-lg p-8 border-l-4 border-orange-500">
+            <div className="bg-white rounded-lg shadow-lg p-8 border-l-4 border-emerald">
               <div className="flex items-start gap-4 mb-4">
                 <div className="text-5xl">{currentTestimonial.image}</div>
                 <div>
-                  <h4 className="font-bold text-xl text-gray-900">
+                  <h4 className="font-bold text-xl text-grey-900">
                     {currentTestimonial.name}
                   </h4>
-                  <p className="text-sm text-orange-500 font-semibold">
+                  <p className="text-sm text-emerald font-semibold">
                     {currentTestimonial.role}
                   </p>
                 </div>
@@ -122,7 +122,7 @@ export const TestimonialsCarousel: React.FC<TestimonialsCarouselProps> = ({
                   </span>
                 ))}
               </div>
-              <p className="text-gray-600 text-lg leading-relaxed italic">
+              <p className="text-grey-600 text-lg leading-relaxed italic">
                 "{currentTestimonial.content}"
               </p>
             </div>
@@ -132,7 +132,7 @@ export const TestimonialsCarousel: React.FC<TestimonialsCarouselProps> = ({
         {/* Navigation Buttons */}
         <button
           onClick={() => paginate(-1)}
-          className="absolute left-0 z-10 -translate-x-12 md:-translate-x-16 w-10 h-10 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center transition shadow-lg"
+          className="absolute left-0 z-10 -translate-x-12 md:-translate-x-16 w-10 h-10 bg-emerald hover:bg-emerald-600 text-white rounded-full flex items-center justify-center transition shadow-lg"
         >
           <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
             <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -141,7 +141,7 @@ export const TestimonialsCarousel: React.FC<TestimonialsCarouselProps> = ({
 
         <button
           onClick={() => paginate(1)}
-          className="absolute right-0 z-10 translate-x-12 md:translate-x-16 w-10 h-10 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center transition shadow-lg"
+          className="absolute right-0 z-10 translate-x-12 md:translate-x-16 w-10 h-10 bg-emerald hover:bg-emerald-600 text-white rounded-full flex items-center justify-center transition shadow-lg"
         >
           <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
             <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
@@ -159,7 +159,7 @@ export const TestimonialsCarousel: React.FC<TestimonialsCarouselProps> = ({
               setCurrentIndex(index)
             }}
             className={`w-3 h-3 rounded-full transition ${
-              index === currentIndex ? 'bg-orange-500' : 'bg-gray-300'
+              index === currentIndex ? 'bg-emerald' : 'bg-grey-300'
             }`}
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}

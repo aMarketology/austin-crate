@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
@@ -57,7 +57,7 @@ export default function BuyACrateClient() {
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Custom Wood Shipping Crates in Austin, TX</h1>
           <p className="text-xl text-grey-300 mb-8 max-w-3xl mx-auto">
-            Professional-grade custom crating built to museum standards. Perfect for shipping fine art, heavy furniture, oversized items, or sensitive equipment. Custom wood crates near Austin, Texas — built to order.
+            Professional-grade custom crating built to museum standards. Perfect for shipping fine art, heavy furniture, oversized items, or sensitive equipment. Custom wood crates near Austin, Texas, built to order.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -239,7 +239,7 @@ export default function BuyACrateClient() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Need a Custom Size Crate?</h2>
           <p className="text-xl text-gray-600 mb-8">
-            We specialize in building custom wood crates for unique items in Austin. From oversized sculptures to delicate antiques, heavy machinery to medical equipment — we engineer the perfect crate for your needs.
+            We specialize in building custom wood crates for unique items in Austin. From oversized sculptures to delicate antiques, heavy machinery to medical equipment, we engineer the perfect crate for your needs.
           </p>
           <Link
             href="/contact"

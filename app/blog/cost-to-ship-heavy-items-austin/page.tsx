@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+﻿import { Metadata } from 'next'
 import Link from 'next/link'
 import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
@@ -37,7 +37,7 @@ export function generateMetadata(): Metadata {
 export default function CostToShipHeavyItemsBlog() {
   const localSchema = generateLocalBusinessSchema({
     locationName: 'Austin',
-    description: 'Austin Crate & Freight — specialty shipping for heavy items, custom furniture, fine art, and oversized packages in Austin, TX.',
+    description: 'Austin Crate & Freight, specialty shipping for heavy items, custom furniture, fine art, and oversized packages in Austin, TX.',
     latitude: 30.2672,
     longitude: -97.7431,
   })

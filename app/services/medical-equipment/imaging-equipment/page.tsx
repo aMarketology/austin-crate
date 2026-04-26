@@ -1,4 +1,4 @@
-import Navigation from '@/app/components/Navigation'
+﻿import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
 import Breadcrumbs from '@/app/components/Breadcrumbs'
 import ServicesGrid from '@/app/components/ServicesGrid'
@@ -12,7 +12,7 @@ const SLUG = '/services/medical-equipment/imaging-equipment'
 export function generateMetadata(): Metadata {
   return generateServiceMetadata({
     serviceName: 'Medical Imaging Equipment Shipping Austin Texas',
-    description: 'Specialist shipping and crating for medical imaging equipment in Austin, Texas. X-ray machines, ultrasound units, MRI systems, CT scanners — HIPAA-compliant transport with calibration protection. Call (512) 240-9818.',
+    description: 'Specialist shipping and crating for medical imaging equipment in Austin, Texas. X-ray machines, ultrasound units, MRI systems, CT scanners, HIPAA-compliant transport with calibration protection. Call (512) 240-9818.',
     keywords: [
       'imaging equipment shipping Austin Texas',
       'X-ray machine shipping Austin TX',
@@ -30,7 +30,7 @@ export function generateMetadata(): Metadata {
 export default function ImagingEquipmentShipping() {
   const serviceSchema = generateServiceSchema({
     serviceName: 'Medical Imaging Equipment Shipping Austin Texas',
-    description: 'Specialist shipping and crating for medical imaging equipment in Austin, TX — X-ray, ultrasound, MRI, CT, and fluoroscopy systems. HIPAA-compliant with calibration protection.',
+    description: 'Specialist shipping and crating for medical imaging equipment in Austin, TX, X-ray, ultrasound, MRI, CT, and fluoroscopy systems. HIPAA-compliant with calibration protection.',
     serviceType: 'Medical Equipment Transport',
   })
 
@@ -52,7 +52,7 @@ export default function ImagingEquipmentShipping() {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Medical Imaging Equipment Shipping in Austin, Texas</h1>
             <p className="text-xl text-grey-300 mb-8 max-w-3xl">
-              X-ray machines, ultrasound units, MRI systems, and CT scanners represent some of the most expensive and calibration-sensitive equipment in any clinical setting. A shipping error does not just risk physical damage — it can knock a machine out of regulatory compliance and require costly re-certification before the next patient ever sees it.
+              X-ray machines, ultrasound units, MRI systems, and CT scanners represent some of the most expensive and calibration-sensitive equipment in any clinical setting. A shipping error does not just risk physical damage, it can knock a machine out of regulatory compliance and require costly re-certification before the next patient ever sees it.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={`tel:${SITE_CONFIG.phone}`} className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald rounded-lg font-medium text-white hover:bg-emerald/90 transition-all duration-300">
@@ -74,10 +74,10 @@ export default function ImagingEquipmentShipping() {
               Medical imaging systems operate to tolerances that are measured in fractions of a millimeter. MRI machines have superconducting magnets that must be transported in specific orientations and kept within tight environmental limits. CT gantries contain precision-balanced rotating assemblies that can be damaged by vibrations that would be unremarkable for a piece of furniture. X-ray tubes are vacuum-sealed glass components that shatter under point impact even through their housing.
             </p>
             <p className="text-gray-700 text-lg mb-4">
-              Beyond the physical protection needs, imaging equipment in a clinical facility is governed by federal and state regulations. Moving a fluoroscope or mammography unit requires proper decommissioning documentation, chain-of-custody records, and — for units with X-ray tubes — compliance with radiation control programs. We coordinate with your biomedical engineering team to ensure transport documentation aligns with re-certification requirements at the destination.
+              Beyond the physical protection needs, imaging equipment in a clinical facility is governed by federal and state regulations. Moving a fluoroscope or mammography unit requires proper decommissioning documentation, chain-of-custody records, and, for units with X-ray tubes, compliance with radiation control programs. We coordinate with your biomedical engineering team to ensure transport documentation aligns with re-certification requirements at the destination.
             </p>
             <p className="text-gray-700 text-lg">
-              Our crates for imaging equipment are engineered to the actual shock and vibration specifications published by the OEM where available, and to conservative safe-handling standards where they are not. Fragile components are individually immobilized using closed-cell foam inserts cut to exact profile — not generic padding that allows residual movement.
+              Our crates for imaging equipment are engineered to the actual shock and vibration specifications published by the OEM where available, and to conservative safe-handling standards where they are not. Fragile components are individually immobilized using closed-cell foam inserts cut to exact profile, not generic padding that allows residual movement.
             </p>
           </div>
         </section>
@@ -90,7 +90,7 @@ export default function ImagingEquipmentShipping() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 { title: 'OEM-Spec Shock Protection', desc: 'Crates and foam inserts are designed to the manufacturer\'s published shock specifications. For systems without published specs, we apply conservative biomedical equipment standards.' },
-                { title: 'Orientation Control', desc: 'Many imaging systems must travel in one specific orientation. We engineer the crate so this is enforced mechanically — not just noted on a label that a freight handler may ignore.' },
+                { title: 'Orientation Control', desc: 'Many imaging systems must travel in one specific orientation. We engineer the crate so this is enforced mechanically, not just noted on a label that a freight handler may ignore.' },
                 { title: 'Chain-of-Custody Documentation', desc: 'Complete sign-off documentation for every transport handover point, supporting re-certification and regulatory compliance requirements at the destination facility.' },
                 { title: 'HIPAA-Compliant Handling', desc: 'All personnel involved in the pick-up, transport, and delivery handle equipment in compliance with healthcare privacy and security requirements, including storage media protocols.' },
                 { title: 'Pre-Transport Assessment', desc: 'We photograph all components, document existing condition, and record serial numbers and calibration tags before anything is disconnected or moved.' },
@@ -109,7 +109,7 @@ export default function ImagingEquipmentShipping() {
         <section className="py-16 px-4 bg-white">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-3">Imaging Equipment We Transport</h2>
-            <p className="text-gray-600 mb-8">Full-system transport — gantries, generators, workstations, and all associated peripherals.</p>
+            <p className="text-gray-600 mb-8">Full-system transport, gantries, generators, workstations, and all associated peripherals.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
                 'Portable X-ray machines (DR/CR)', 'Fixed radiography systems',
@@ -136,8 +136,8 @@ export default function ImagingEquipmentShipping() {
               {[
                 { q: 'Can you transport a portable X-ray unit within Austin?', a: 'Yes. Portable and mobile X-ray units are among our most common medical equipment moves. We can handle same-facility moves (between departments or floors), building-to-building moves within one campus, and off-site transport to physicians offices or imaging centers.' },
                 { q: 'Do you handle the radiation control compliance documentation for X-ray transport?', a: 'We provide chain-of-custody transport documentation and work with your facility\'s radiation safety officer or biomedical team. Regulatory compliance (e.g., state radiation control program notifications) is the facility\'s responsibility, but we provide the transport records that support those filings.' },
-                { q: 'Can you ship an MRI machine?', a: 'We transport MRI components — gradient coil assemblies, RF cages, patient tables, and associated electronics. Full magnet system transport (requiring magnet quench and re-ramping) requires coordination with the OEM or a specialist MRI rigging company; we can refer you to appropriate partners for that scope.' },
-                { q: 'How do you protect ultrasound transducers during transport?', a: 'Transducer arrays are among the most fragile components in any imaging system — the piezoelectric elements inside crack under point impact. We individually wrap each transducer with custom profile foam inserts, and they travel in a dedicated padded case or compartment inside the main crate.' },
+                { q: 'Can you ship an MRI machine?', a: 'We transport MRI components, gradient coil assemblies, RF cages, patient tables, and associated electronics. Full magnet system transport (requiring magnet quench and re-ramping) requires coordination with the OEM or a specialist MRI rigging company; we can refer you to appropriate partners for that scope.' },
+                { q: 'How do you protect ultrasound transducers during transport?', a: 'Transducer arrays are among the most fragile components in any imaging system, the piezoelectric elements inside crack under point impact. We individually wrap each transducer with custom profile foam inserts, and they travel in a dedicated padded case or compartment inside the main crate.' },
                 { q: 'What does imaging equipment transport cost?', a: 'Local Austin transport for portable imaging units typically starts at $300–$600. Multi-component system transport (CT, fixed X-ray) is priced per project based on the component count and preparation required. Call (512) 240-9818 for a free assessment.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-white border border-gray-200 rounded-xl p-5">

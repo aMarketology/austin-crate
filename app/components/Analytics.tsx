@@ -1,11 +1,11 @@
-const GA4_ID = 'G-8G3X2DX8L2'
+﻿const GA4_ID = 'G-8G3X2DX8L2'
 const AW_TAG_ID = 'AW-17672216220'
 
 /**
  * Google tag (gtag.js)
  * GA4 measurement: G-8G3X2DX8L2
  * Google Ads conversion: AW-17672216220
- * One script tag per page — both IDs configured here.
+ * One script tag per page, both IDs configured here.
  */
 export default function Analytics() {
   return (

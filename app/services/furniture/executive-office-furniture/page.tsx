@@ -1,4 +1,4 @@
-import Navigation from '@/app/components/Navigation'
+﻿import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
 import Breadcrumbs from '@/app/components/Breadcrumbs'
 import Link from 'next/link'
@@ -11,7 +11,7 @@ const SLUG = '/services/furniture/executive-office-furniture'
 export function generateMetadata(): Metadata {
   return generateServiceMetadata({
     serviceName: 'Executive & Office Furniture Shipping Austin Texas',
-    description: 'Specialist office and executive furniture shipping and crating in Austin, Texas. Executive desks, conference tables, credenzas, and full office sets — white-glove service. Call (512) 240-9818.',
+    description: 'Specialist office and executive furniture shipping and crating in Austin, Texas. Executive desks, conference tables, credenzas, and full office sets, white-glove service. Call (512) 240-9818.',
     keywords: [
       'office furniture shipping Austin Texas',
       'executive desk shipping Austin TX',
@@ -30,7 +30,7 @@ export function generateMetadata(): Metadata {
 export default function OfficeFurnitureShipping() {
   const serviceSchema = generateServiceSchema({
     serviceName: 'Executive & Office Furniture Shipping Austin Texas',
-    description: 'White-glove office and executive furniture shipping and crating in Austin, TX — desks, conference tables, credenzas, and complete office sets.',
+    description: 'White-glove office and executive furniture shipping and crating in Austin, TX, desks, conference tables, credenzas, and complete office sets.',
     serviceType: 'Specialty Shipping',
   })
 
@@ -56,7 +56,7 @@ export default function OfficeFurnitureShipping() {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Executive &amp; Office Furniture Shipping in Austin, Texas</h1>
             <p className="text-xl text-grey-300 mb-8 max-w-3xl">
-              Moving offices, furnishing a new space from an Austin dealer, or shipping an executive desk across the country — we provide the crating, logistics, and white-glove service your commercial furniture requires.
+              Moving offices, furnishing a new space from an Austin dealer, or shipping an executive desk across the country, we provide the crating, logistics, and white-glove service your commercial furniture requires.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="tel:(512) 240-9818" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald rounded-lg font-medium text-white hover:bg-emerald/90 transition-all duration-300">
@@ -83,7 +83,7 @@ export default function OfficeFurnitureShipping() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 { title: 'Executive Desk Crating', desc: 'Large L-shape and U-shape desks are disassembled, each panel individually wrapped, and crated with labeled hardware for clean reassembly.' },
-                { title: 'Conference Table Shipping', desc: 'Conference tables — including glass, stone, and solid wood tops — get their own custom crates with rigid edge protection and foam face padding.' },
+                { title: 'Conference Table Shipping', desc: 'Conference tables, including glass, stone, and solid wood tops, get their own custom crates with rigid edge protection and foam face padding.' },
                 { title: 'Credenza & Lateral File Protection', desc: 'Glass-front credenzas have glass removed and crated separately. Lateral file drawers are secured and padded before crating.' },
                 { title: 'Modular System Coordination', desc: 'For system furniture (Knoll, Herman Miller, Haworth), we photograph, label, and document every component before disassembly to ensure correct reinstallation.' },
                 { title: 'Dealer & Showroom Pickups', desc: 'We pick up directly from Austin furniture showrooms and deliver to your office, home office, or commercial space anywhere in the US.' },
@@ -148,7 +148,7 @@ export default function OfficeFurnitureShipping() {
         <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-16 px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Ship Your Office Furniture from Austin</h2>
-            <p className="text-grey-300 text-lg mb-8">From a single executive desk to a full office — we crate it, ship it, and deliver it right.</p>
+            <p className="text-grey-300 text-lg mb-8">From a single executive desk to a full office, we crate it, ship it, and deliver it right.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:(512) 240-9818" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-emerald rounded-lg font-semibold text-white hover:bg-emerald/90 transition">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg>

@@ -1,4 +1,4 @@
-import Navigation from '@/app/components/Navigation'
+﻿import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
 import Breadcrumbs from '@/app/components/Breadcrumbs'
 import ServicesGrid from '@/app/components/ServicesGrid'
@@ -30,7 +30,7 @@ export function generateMetadata(): Metadata {
 export default function GalleryExhibitShipping() {
   const serviceSchema = generateServiceSchema({
     serviceName: 'Gallery Exhibit Shipping & Crating Austin Texas',
-    description: 'Full-service gallery exhibit shipping and crating in Austin, TX — outgoing and return logistics for gallery shows, art fairs, and traveling exhibitions.',
+    description: 'Full-service gallery exhibit shipping and crating in Austin, TX, outgoing and return logistics for gallery shows, art fairs, and traveling exhibitions.',
     serviceType: 'Specialty Shipping',
   })
 
@@ -52,7 +52,7 @@ export default function GalleryExhibitShipping() {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Gallery Exhibit Shipping &amp; Crating in Austin, Texas</h1>
             <p className="text-xl text-grey-300 mb-8 max-w-3xl">
-              Austin galleries need a shipping partner who understands the rhythm of exhibition schedules, the condition reporting standards that protect consigned work, and the logistics of getting multiple works to a venue on time — and back safely afterward.
+              Austin galleries need a shipping partner who understands the rhythm of exhibition schedules, the condition reporting standards that protect consigned work, and the logistics of getting multiple works to a venue on time, and back safely afterward.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={`tel:${SITE_CONFIG.phone}`} className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald rounded-lg font-medium text-white hover:bg-emerald/90 transition-all duration-300">
@@ -89,10 +89,10 @@ export default function GalleryExhibitShipping() {
             <p className="text-gray-600 mb-8">From a single walk-in show shipment to ongoing logistics for your full exhibition program.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                { title: 'Exhibition Launch Shipping', desc: 'Crating and freight for outgoing shows — collector loans, gallery inventory, and artist-consigned works. We work to your opening date, not to a standard transit estimate.' },
+                { title: 'Exhibition Launch Shipping', desc: 'Crating and freight for outgoing shows, collector loans, gallery inventory, and artist-consigned works. We work to your opening date, not to a standard transit estimate.' },
                 { title: 'Art Fair Logistics', desc: 'Booth crating and shipping for Austin-area fairs and national art fairs (Expo Chicago, Dallas Art Fair, The Armory Show). We handle the crating; you handle the booth. Advance warehouse delivery coordinated with fair organizers.' },
                 { title: 'Condition Reporting', desc: 'Standardized condition reports at intake and delivery for every work in your show shipment. Documents pre-existing condition, protects you in consignor disputes, and meets insurance requirements.' },
-                { title: 'Return Shipping Coordination', desc: 'Exhibition close logistics — works returned to gallery, to consignors, or to next venue. The same condition records from the outgoing shipment are used to confirm return condition.' },
+                { title: 'Return Shipping Coordination', desc: 'Exhibition close logistics, works returned to gallery, to consignors, or to next venue. The same condition records from the outgoing shipment are used to confirm return condition.' },
                 { title: 'Artist Pickups & Deliveries', desc: 'We pick up from artists\' studios in and around Austin and deliver directly to your gallery. We handle the pieces with the same white-glove standard as a $50,000 work from a major collector.' },
                 { title: 'Storage Crating', desc: 'Works going into long-term storage benefit from a proper storage crate, not just a padded blanket. We build storage crates that protect works indefinitely without off-gassing or creating pressure points.' },
               ].map((item, i) => (
@@ -113,7 +113,7 @@ export default function GalleryExhibitShipping() {
               Austin&apos;s art gallery ecosystem spans contemporary spaces on East 6th Street, established galleries along South Congress, museum-affiliated venues near UT, and a growing constellation of artist-run spaces. The city hosts Austin Art Week, SXSW gallery activations, and significant participation in the Texas regional art fair circuit.
             </p>
             <p className="text-gray-700 text-lg mb-4">
-              Having a local crating company rather than a national freight broker means faster turnaround, the ability to inspect unusual pieces before committing to a crating approach, and the flexibility to accommodate last-minute additions to a show shipment. We are in Austin — when something changes, we can respond the same day.
+              Having a local crating company rather than a national freight broker means faster turnaround, the ability to inspect unusual pieces before committing to a crating approach, and the flexibility to accommodate last-minute additions to a show shipment. We are in Austin, when something changes, we can respond the same day.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6">
               {[
@@ -136,8 +136,8 @@ export default function GalleryExhibitShipping() {
               {[
                 { q: 'Can you accommodate last-minute additions to a show shipment?', a: 'Often yes, but call us as soon as you know. Same-day crating for add-on pieces is possible when our shop schedule allows. We recommend contacting us 5–7 business days before pickup to allow time for custom crating, especially for works requiring non-standard crate sizes.' },
                 { q: 'Do you provide condition reports that artists and consignors can sign off on?', a: 'Yes. Our condition reports document the state of each work at the time of pickup with photographs and written notes. We can share these with consignors for their records. This is standard practice for gallery shipments and protects both the gallery and the consignor.' },
-                { q: 'Can you handle a gallery move — taking all inventory from one location to another?', a: 'Yes. Full gallery relocations are within our scope — artwork inventory, display hardware, storage racks, and framing materials. We treat every piece in active inventory with the same care as a consigned work. Get in touch for a walk-through quote.' },
-                { q: 'Do you work with galleries on a recurring account basis?', a: 'Yes. Galleries with regular shipping needs benefit from an established account relationship — consistent crating standards, familiar condition reporting, and volume pricing. Contact us to discuss an ongoing arrangement.' },
+                { q: 'Can you handle a gallery move, taking all inventory from one location to another?', a: 'Yes. Full gallery relocations are within our scope, artwork inventory, display hardware, storage racks, and framing materials. We treat every piece in active inventory with the same care as a consigned work. Get in touch for a walk-through quote.' },
+                { q: 'Do you work with galleries on a recurring account basis?', a: 'Yes. Galleries with regular shipping needs benefit from an established account relationship, consistent crating standards, familiar condition reporting, and volume pricing. Contact us to discuss an ongoing arrangement.' },
                 { q: 'What is your standard timeline for a gallery show shipment?', a: 'For a show requiring 5–15 works crated and freighted, we typically need 5–10 business days from intake to delivery. Complex installations or large shows need more lead time. Art fair shipments should be planned 3–4 weeks in advance to accommodate fair organizer receiving windows.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-white border border-gray-200 rounded-xl p-5">

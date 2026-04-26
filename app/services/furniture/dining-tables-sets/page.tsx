@@ -1,4 +1,4 @@
-import Navigation from '@/app/components/Navigation'
+﻿import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
 import Breadcrumbs from '@/app/components/Breadcrumbs'
 import Link from 'next/link'
@@ -12,7 +12,7 @@ const SLUG = '/services/furniture/dining-tables-sets'
 export function generateMetadata(): Metadata {
   return generateServiceMetadata({
     serviceName: 'Dining Table & Set Shipping Austin Texas',
-    description: 'Specialty shipping and crating for dining tables and sets in Austin, Texas. Large tables, chairs, china cabinets, and buffets — white-glove pickup and delivery. Call (512) 240-9818.',
+    description: 'Specialty shipping and crating for dining tables and sets in Austin, Texas. Large tables, chairs, china cabinets, and buffets, white-glove pickup and delivery. Call (512) 240-9818.',
     keywords: [
       'dining table shipping Austin Texas',
       'dining set shipping Austin TX',
@@ -76,18 +76,18 @@ export default function DiningTableShipping() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">The Challenges of Shipping Dining Tables</h2>
             <p className="text-gray-700 text-lg mb-4">
-              A dining table seems straightforward — until you try to ship one. Large single-slab tables, extension tables with leaves, glass tops, pedestal bases, and fragile leg assemblies all create specific risks that standard carriers handle poorly. A glass-top table dropped once is gone forever. A cracked table leg on a $6,000 custom piece is a serious problem.
+              A dining table seems straightforward, until you try to ship one. Large single-slab tables, extension tables with leaves, glass tops, pedestal bases, and fragile leg assemblies all create specific risks that standard carriers handle poorly. A glass-top table dropped once is gone forever. A cracked table leg on a $6,000 custom piece is a serious problem.
             </p>
             <p className="text-gray-700 text-lg mb-8">
-              We ship dining tables by building the crate around them — not by finding a box they will fit in. Tables get their legs removed, surfaces face-padded, glass tops crated separately, and every piece rides in a rigid wood frame with internal blocking.
+              We ship dining tables by building the crate around them, not by finding a box they will fit in. Tables get their legs removed, surfaces face-padded, glass tops crated separately, and every piece rides in a rigid wood frame with internal blocking.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 { title: 'Leg Removal & Labeling', desc: 'Table legs are removed, individually wrapped, and labeled for precise reinstallation at delivery.' },
                 { title: 'Glass Top Crating', desc: 'Glass tops travel in their own dedicated crate, face-padded, with foam edge protection and rigid framing.' },
-                { title: 'Extension Leaf Management', desc: 'Table leaves are wrapped together and labeled in order — no guessing which goes where on delivery day.' },
+                { title: 'Extension Leaf Management', desc: 'Table leaves are wrapped together and labeled in order, no guessing which goes where on delivery day.' },
                 { title: 'Chair Bundling & Wrapping', desc: 'Chair sets are wrapped individually and bundled together, stacked safely to minimize footprint and prevent contact damage.' },
-                { title: 'China Cabinet Glass Protection', desc: 'Cabinet glass panes are padded and braced inside the crate — or removed and crated separately for long-distance freight.' },
+                { title: 'China Cabinet Glass Protection', desc: 'Cabinet glass panes are padded and braced inside the crate, or removed and crated separately for long-distance freight.' },
                 { title: 'Surface Finish Protection', desc: 'Lacquered, oiled, and stained table tops are wrapped in breathable pads that will not transfer or stick to fine finishes.' },
               ].map((item, i) => (
                 <div key={i} className="p-5 bg-gray-50 border border-gray-200 rounded-xl">
@@ -135,7 +135,7 @@ export default function DiningTableShipping() {
                 { q: 'Do you handle glass-top dining tables?', a: 'Yes. Glass tops travel in a dedicated crate, independently padded on all sides with foam and rigid framing. We do not combine glass tops with the table base in the same crate.' },
                 { q: 'Will you disassemble and reassemble my dining table?', a: 'Yes. Leg removal and reinstallation is included in our service. All hardware is bagged and labeled. We reassemble at delivery and level the table in place.' },
                 { q: 'How much does dining table shipping cost in Austin?', a: 'Local dining table shipping in Austin starts around $200–$350. Long-distance crated freight depends on dimensions and destination. Call (512) 240-9818 for a free, itemized quote.' },
-                { q: 'Can you ship a live-edge or single-slab dining table?', a: 'Yes. Live-edge and single-slab tables are some of the most challenging pieces — they are often very heavy, irregularly shaped, and have finished undersides as well as tops. We build the crate for the exact shape of the slab with continuous edge support and foam blocking to prevent any flex along the grain.' },
+                { q: 'Can you ship a live-edge or single-slab dining table?', a: 'Yes. Live-edge and single-slab tables are some of the most challenging pieces, they are often very heavy, irregularly shaped, and have finished undersides as well as tops. We build the crate for the exact shape of the slab with continuous edge support and foam blocking to prevent any flex along the grain.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                   <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

@@ -1,4 +1,4 @@
-import Navigation from '../../components/Navigation'
+﻿import Navigation from '../../components/Navigation'
 import Footer from '../../components/Footer'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import Link from 'next/link'
@@ -73,7 +73,7 @@ export default function FurnitureShipping() {
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Furniture Shipping &amp; Crating in Austin, Texas</h1>
               <p className="text-xl text-grey-300 mb-8">
-                Austin&apos;s specialist in furniture shipping and crating. We build every crate in-house at our Austin shop, and provide white-glove pickup, expert disassembly, and precision reassembly for designer, antique, and heavy furniture — locally and nationwide.
+                Austin&apos;s specialist in furniture shipping and crating. We build every crate in-house at our Austin shop, and provide white-glove pickup, expert disassembly, and precision reassembly for designer, antique, and heavy furniture, locally and nationwide.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -109,7 +109,7 @@ export default function FurnitureShipping() {
       <section className="py-6 px-4 bg-emerald-600 text-white">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-wrap justify-center gap-8 text-sm font-medium">
-            <span className="flex items-center gap-2">✅ Crates Built In-House — Austin, TX</span>
+            <span className="flex items-center gap-2">✅ Crates Built In-House, Austin, TX</span>
             <span className="flex items-center gap-2">✅ Scratch-Free Guarantee</span>
             <span className="flex items-center gap-2">✅ Fully Insured &amp; Licensed</span>
             <span className="flex items-center gap-2">✅ Free Local Pickup</span>
@@ -123,7 +123,7 @@ export default function FurnitureShipping() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">Why Austin Crate &amp; Freight for Furniture Shipping?</h2>
           <p className="text-center text-gray-600 text-lg mb-16 max-w-3xl mx-auto">
-            We are not a moving company — we are a specialty shipping and crating company based in Austin, Texas. That distinction matters when you are protecting something valuable.
+            We are not a moving company, we are a specialty shipping and crating company based in Austin, Texas. That distinction matters when you are protecting something valuable.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
@@ -200,9 +200,9 @@ export default function FurnitureShipping() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <span className="inline-block px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-semibold rounded-full mb-4 uppercase tracking-widest">Built In Austin</span>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Custom Furniture Crating — Built In-House</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">Custom Furniture Crating, Built In-House</h2>
               <p className="text-gray-700 text-lg mb-4">
-                Most shipping companies wrap furniture in blankets and hope for the best. We go further. For valuable, fragile, or oversized furniture, we build a <strong>custom wood crate around your piece</strong> — engineered to its exact dimensions — right here at our Austin, Texas shop.
+                Most shipping companies wrap furniture in blankets and hope for the best. We go further. For valuable, fragile, or oversized furniture, we build a <strong>custom wood crate around your piece</strong>, engineered to its exact dimensions, right here at our Austin, Texas shop.
               </p>
               <p className="text-gray-700 text-lg mb-6">
                 Our shop runs a <strong>Safety Speed 6400 vertical panel saw</strong> that cuts every panel to within 1/32&quot; accuracy. That means your crate fits tight, closes flush, and protects your furniture the way museum-quality shipping demands.
@@ -212,7 +212,7 @@ export default function FurnitureShipping() {
                   'Crates built to your furniture\'s exact dimensions',
                   'Interior foam blocking and padding included',
                   'Screw-closure lids for easy inspection at delivery',
-                  'Moisture-resistant plywood — no warping in Texas heat',
+                  'Moisture-resistant plywood, no warping in Texas heat',
                   'Suitable for LTL freight, air freight, and international shipping',
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
@@ -228,7 +228,7 @@ export default function FurnitureShipping() {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">When Do You Need a Furniture Crate?</h3>
               <div className="space-y-4">
                 {[
-                  { trigger: 'Antique or heirloom pieces', reason: 'Irreplaceable items need hard-shell protection — not just blankets.' },
+                  { trigger: 'Antique or heirloom pieces', reason: 'Irreplaceable items need hard-shell protection, not just blankets.' },
                   { trigger: 'LTL freight or cross-country shipping', reason: 'Multiple handling points mean higher impact risk without a solid crate.' },
                   { trigger: 'International or air freight', reason: 'Customs and air carriers require ISPM-15 compliant crating.' },
                   { trigger: 'Oversized or awkward pieces', reason: 'Custom crates stabilize irregular shapes that standard carriers cannot handle.' },
@@ -244,7 +244,7 @@ export default function FurnitureShipping() {
                 ))}
               </div>
               <div className="mt-6 p-4 bg-emerald-50 border border-emerald-200 rounded-lg text-sm text-emerald-800">
-                <strong>Not sure if you need a crate?</strong> Call us at (512) 240-9818 and we will advise you honestly — no upsell, no pressure.
+                <strong>Not sure if you need a crate?</strong> Call us at (512) 240-9818 and we will advise you honestly, no upsell, no pressure.
               </div>
             </div>
           </div>
@@ -258,7 +258,7 @@ export default function FurnitureShipping() {
           <p className="text-center text-gray-600 text-lg mb-12">If it is worth something to you, it is worth crating properly.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              { name: 'Designer Sofas & Sectionals', desc: 'Luxury seating from top brands — properly wrapped and crated', href: '/services/furniture/designer-sofas-sectionals' },
+              { name: 'Designer Sofas & Sectionals', desc: 'Luxury seating from top brands, properly wrapped and crated', href: '/services/furniture/designer-sofas-sectionals' },
               { name: 'Antique & Heirloom Furniture', desc: 'Period-correct handling for furniture that cannot be replaced', href: '/services/furniture/antique-heirloom-furniture' },
               { name: 'Dining Tables & Sets', desc: 'Large tables, chairs, buffets, and china cabinets', href: '/services/furniture/dining-tables-sets' },
               { name: 'Bedroom Furniture', desc: 'Platform beds, sleigh beds, dressers, and armoires', href: '/services/furniture/bedroom-furniture' },
@@ -288,14 +288,14 @@ export default function FurnitureShipping() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">Our Furniture Shipping &amp; Crating Process</h2>
-          <p className="text-center text-gray-600 text-lg mb-12">From your Austin home or business to anywhere in the country — here is how we do it.</p>
+          <p className="text-center text-gray-600 text-lg mb-12">From your Austin home or business to anywhere in the country, here is how we do it.</p>
           <div className="space-y-8">
             {[
-              { step: 1, title: 'Free Quote & Assessment', desc: 'Call (512) 240-9818 or fill out our contact form. We assess your furniture, ask the right questions, and give you an honest quote — no surprises.' },
+              { step: 1, title: 'Free Quote & Assessment', desc: 'Call (512) 240-9818 or fill out our contact form. We assess your furniture, ask the right questions, and give you an honest quote, no surprises.' },
               { step: 2, title: 'Pickup Anywhere in Greater Austin', desc: 'Our crew arrives with the right equipment: moving blankets, dollies, straps, and lift-gate trucks. We cover Austin, Round Rock, Cedar Park, Georgetown, and surrounding areas.' },
-              { step: 3, title: 'Expert Disassembly', desc: 'For beds, sectionals, and large case pieces, we carefully disassemble using proper techniques — hardware is bagged and labeled so nothing gets lost.' },
+              { step: 3, title: 'Expert Disassembly', desc: 'For beds, sectionals, and large case pieces, we carefully disassemble using proper techniques, hardware is bagged and labeled so nothing gets lost.' },
               { step: 4, title: 'Custom Crating or Premium Wrapping', desc: 'Valuable or fragile pieces get a custom wood crate built in our Austin shop. Other pieces receive multi-layer furniture blankets and stretch wrap.' },
-              { step: 5, title: 'Secure Transport', desc: 'Furniture rides in our climate-controlled trucks — fully padded and strapped. For long-haul, we use insured LTL freight carriers with specialty freight experience.' },
+              { step: 5, title: 'Secure Transport', desc: 'Furniture rides in our climate-controlled trucks, fully padded and strapped. For long-haul, we use insured LTL freight carriers with specialty freight experience.' },
               { step: 6, title: 'Reassembly & White-Glove Delivery', desc: 'We place and reassemble your furniture exactly where you want it, remove all packing materials, and leave your space clean.' },
             ].map((item) => (
               <div key={item.step} className="flex gap-6 items-start">
@@ -317,7 +317,7 @@ export default function FurnitureShipping() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Furniture Shipping &amp; Crating Across Greater Austin</h2>
           <p className="text-gray-600 text-lg mb-10">
-            We serve the entire Austin metro area. If you are not sure whether we cover your location, just call — we almost certainly do.
+            We serve the entire Austin metro area. If you are not sure whether we cover your location, just call, we almost certainly do.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
@@ -336,7 +336,7 @@ export default function FurnitureShipping() {
       {/* FAQ Section */}
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Furniture Shipping &amp; Crating — Frequently Asked Questions</h2>
+          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Furniture Shipping &amp; Crating, Frequently Asked Questions</h2>
           <div className="space-y-6">
             {[
               {
@@ -345,7 +345,7 @@ export default function FurnitureShipping() {
               },
               {
                 q: 'Do you build custom furniture crates in Austin?',
-                a: 'Yes — we build every crate in-house at our Austin, Texas shop. We do not order generic crates or use cardboard. Each crate is built to the exact dimensions of your furniture piece, with interior foam blocking and a screw-closure lid for easy inspection.',
+                a: 'Yes, we build every crate in-house at our Austin, Texas shop. We do not order generic crates or use cardboard. Each crate is built to the exact dimensions of your furniture piece, with interior foam blocking and a screw-closure lid for easy inspection.',
               },
               {
                 q: 'Can you ship antique furniture without damaging it?',
@@ -353,7 +353,7 @@ export default function FurnitureShipping() {
               },
               {
                 q: 'Do you offer furniture pickup in Austin?',
-                a: 'Yes. We offer free furniture pickup throughout Greater Austin and surrounding communities including Round Rock, Cedar Park, Georgetown, Pflugerville, Kyle, and Buda. Our crew arrives with all necessary equipment — no trip to a drop-off location required.',
+                a: 'Yes. We offer free furniture pickup throughout Greater Austin and surrounding communities including Round Rock, Cedar Park, Georgetown, Pflugerville, Kyle, and Buda. Our crew arrives with all necessary equipment, no trip to a drop-off location required.',
               },
               {
                 q: 'Can you ship furniture across the country from Austin?',
@@ -361,7 +361,7 @@ export default function FurnitureShipping() {
               },
               {
                 q: 'What is the difference between furniture shipping and furniture moving?',
-                a: 'Furniture movers handle local household moves and are optimized for volume and speed. We are a specialty shipping company — we focus on single valuable pieces or small jobs where craftsmanship and protection are the priority. We crate, wrap, and ship furniture the same way museums ship fine art.',
+                a: 'Furniture movers handle local household moves and are optimized for volume and speed. We are a specialty shipping company, we focus on single valuable pieces or small jobs where craftsmanship and protection are the priority. We crate, wrap, and ship furniture the same way museums ship fine art.',
               },
             ].map((faq, i) => (
               <div key={i} className="bg-white border border-gray-200 rounded-xl p-6">
@@ -377,22 +377,22 @@ export default function FurnitureShipping() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-3 text-center">Furniture Specialist Services</h2>
-          <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">Every furniture type has its own shipping challenges. We specialize in all of them — click to learn about your specific piece.</p>
+          <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">Every furniture type has its own shipping challenges. We specialize in all of them, click to learn about your specific piece.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { href: '/services/furniture/designer-sofas-sectionals', title: 'Luxury Sofas & Sectionals', desc: 'RH, Natuzzi, Roche Bobois, and custom sectionals — fabric and leather-safe wrapping, modular disassembly, and white-glove placement.' },
-              { href: '/services/furniture/dining-tables-sets', title: 'Dining Tables & Sets', desc: 'Large solid-wood, live-edge, glass-top, and extension tables — leg removal, separate glass crating, and chair bundling.' },
-              { href: '/services/furniture/bedroom-furniture', title: 'Bedroom Furniture', desc: 'Beds, dressers, armoires, and complete bedroom sets — full disassembly, mirror crating, and reassembly at delivery.' },
-              { href: '/services/furniture/designer-chairs', title: 'Designer Chairs', desc: 'Eames, Herman Miller, Knoll, and Barcelona chairs — geometry-specific crating for exposed frames and delicate upholstery.' },
-              { href: '/services/furniture/cabinets-credenzas', title: 'Cabinets & Credenzas', desc: 'Media credenzas, china cabinets, sideboards, and display cabinets — glass panel protection and door-securing crating.' },
+              { href: '/services/furniture/designer-sofas-sectionals', title: 'Luxury Sofas & Sectionals', desc: 'RH, Natuzzi, Roche Bobois, and custom sectionals, fabric and leather-safe wrapping, modular disassembly, and white-glove placement.' },
+              { href: '/services/furniture/dining-tables-sets', title: 'Dining Tables & Sets', desc: 'Large solid-wood, live-edge, glass-top, and extension tables, leg removal, separate glass crating, and chair bundling.' },
+              { href: '/services/furniture/bedroom-furniture', title: 'Bedroom Furniture', desc: 'Beds, dressers, armoires, and complete bedroom sets, full disassembly, mirror crating, and reassembly at delivery.' },
+              { href: '/services/furniture/designer-chairs', title: 'Designer Chairs', desc: 'Eames, Herman Miller, Knoll, and Barcelona chairs, geometry-specific crating for exposed frames and delicate upholstery.' },
+              { href: '/services/furniture/cabinets-credenzas', title: 'Cabinets & Credenzas', desc: 'Media credenzas, china cabinets, sideboards, and display cabinets, glass panel protection and door-securing crating.' },
               { href: '/services/furniture/grandfather-clock-shipping', title: 'Grandfather Clocks', desc: 'Pendulum removal, weight packaging, chime rod padding, and tall-case crating for floor clocks and longcase movements.' },
-              { href: '/services/furniture/marble-stone-furniture', title: 'Marble & Stone Furniture', desc: 'Marble dining tables, travertine tops, granite surfaces — weight-rated crating, edge protection, and top/base separation.' },
-              { href: '/services/furniture/antique-heirloom-furniture', title: 'Antique & Heirloom Furniture', desc: 'Museum-safe techniques for period furniture — no adhesives on antique finishes, custom joinery-aware disassembly.' },
+              { href: '/services/furniture/marble-stone-furniture', title: 'Marble & Stone Furniture', desc: 'Marble dining tables, travertine tops, granite surfaces, weight-rated crating, edge protection, and top/base separation.' },
+              { href: '/services/furniture/antique-heirloom-furniture', title: 'Antique & Heirloom Furniture', desc: 'Museum-safe techniques for period furniture, no adhesives on antique finishes, custom joinery-aware disassembly.' },
               { href: '/services/furniture/antique-furniture-shipping', title: 'Antique Furniture Shipping TX', desc: 'Texas-wide and nationwide shipping for antique dealers, auction houses, and private collectors.' },
-              { href: '/services/furniture/custom-handmade-furniture', title: 'Custom & Handmade Furniture', desc: 'One-of-a-kind pieces from Austin artisans and custom woodworkers — shipping your custom piece like it was made to be shipped.' },
-              { href: '/services/furniture/executive-office-furniture', title: 'Executive Office Furniture', desc: 'Executive desks, credenzas, conference tables, and high-value workstations — professional crating for office relocations.' },
-              { href: '/services/furniture/outdoor-patio-furniture', title: 'Outdoor & Patio Furniture', desc: 'Heavy teak, wrought iron, and luxury outdoor sets — protected shipping for weather-grade and designer patio pieces.' },
-              { href: '/services/furniture/oversized-heavy-furniture', title: 'Oversized & Heavy Furniture', desc: 'Pieces too large or heavy for standard carriers — liftgate service, two-person crews, and freight-rated crating.' },
+              { href: '/services/furniture/custom-handmade-furniture', title: 'Custom & Handmade Furniture', desc: 'One-of-a-kind pieces from Austin artisans and custom woodworkers, shipping your custom piece like it was made to be shipped.' },
+              { href: '/services/furniture/executive-office-furniture', title: 'Executive Office Furniture', desc: 'Executive desks, credenzas, conference tables, and high-value workstations, professional crating for office relocations.' },
+              { href: '/services/furniture/outdoor-patio-furniture', title: 'Outdoor & Patio Furniture', desc: 'Heavy teak, wrought iron, and luxury outdoor sets, protected shipping for weather-grade and designer patio pieces.' },
+              { href: '/services/furniture/oversized-heavy-furniture', title: 'Oversized & Heavy Furniture', desc: 'Pieces too large or heavy for standard carriers, liftgate service, two-person crews, and freight-rated crating.' },
             ].map((item, i) => (
               <Link key={i} href={item.href} className="group block bg-white border border-gray-200 rounded-xl p-5 hover:border-emerald/50 hover:shadow-sm transition-all duration-200">
                 <h3 className="font-bold text-gray-900 mb-2 group-hover:text-emerald transition-colors">{item.title}</h3>
@@ -408,7 +408,7 @@ export default function FurnitureShipping() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Need Furniture Shipping or Crating in Austin?</h2>
           <p className="text-xl text-grey-300 mb-10">
-            Whether it&apos;s a designer sofa, a family heirloom, or a commercial delivery — Austin Crate &amp; Freight builds the crate and ships it right. Free pickup anywhere in Greater Austin. Get a quote today.
+            Whether it&apos;s a designer sofa, a family heirloom, or a commercial delivery, Austin Crate &amp; Freight builds the crate and ships it right. Free pickup anywhere in Greater Austin. Get a quote today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

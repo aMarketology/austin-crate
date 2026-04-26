@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+﻿import { Metadata } from 'next'
 import Link from 'next/link'
 import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
@@ -38,7 +38,7 @@ export default function ShipLargeFurnitureTexas() {
     '@type': 'Article',
     headline: 'How to Ship Large Furniture Across Texas (Without the Headaches)',
     description:
-      'Complete guide to shipping large furniture across Texas — custom crating, preparation tips, costs, and how to find the right specialty carrier.',
+      'Complete guide to shipping large furniture across Texas, custom crating, preparation tips, costs, and how to find the right specialty carrier.',
     image: 'https://austincrate.com/og-default.jpg',
     datePublished: '2026-03-18',
     dateModified: '2026-03-18',
@@ -107,7 +107,7 @@ export default function ShipLargeFurnitureTexas() {
         <section className="flex-1 py-16 px-4 bg-white">
           <article className="max-w-3xl mx-auto prose prose-lg">
             <p className="lead text-xl text-grey-700 mb-8">
-              Texas is huge. Shipping furniture from Austin to Dallas, Houston to El Paso, or anywhere in between involves more than booking a moving truck. Large, heavy, or uniquely shaped pieces — antiques, designer sofas, dining tables, vintage cabinets — require custom packaging and the right carrier. Here is everything you need to know before you send a single piece of furniture across the state.
+              Texas is huge. Shipping furniture from Austin to Dallas, Houston to El Paso, or anywhere in between involves more than booking a moving truck. Large, heavy, or uniquely shaped pieces, antiques, designer sofas, dining tables, vintage cabinets, require custom packaging and the right carrier. Here is everything you need to know before you send a single piece of furniture across the state.
             </p>
 
             <h2>Why Furniture Shipping Across Texas Is Different</h2>
@@ -117,7 +117,7 @@ export default function ShipLargeFurnitureTexas() {
             <p>The challenges are straightforward:</p>
             <ul>
               <li>
-                <strong>Size and weight:</strong> Large furniture does not fit in a standard shipping box. It needs structural support — a proper wood crate.
+                <strong>Size and weight:</strong> Large furniture does not fit in a standard shipping box. It needs structural support, a proper wood crate.
               </li>
               <li>
                 <strong>Surface sensitivity:</strong> Lacquered finishes, veneer, upholstery, and decorative hardware scratch and dent easily in transit.
@@ -135,17 +135,17 @@ export default function ShipLargeFurnitureTexas() {
               A custom shipping crate is built specifically around your piece. The crate walls are cut to match the outer dimensions. Interior foam or padding is layered to absorb vibration and prevent movement. The result behaves more like an armored container than a cardboard box.
             </p>
             <p>
-              At Austin Crate &amp; Freight, we build every furniture crate from scratch — using precision panel saws for accurate cuts, then assembling with industrial screws, corner reinforcements, and foam inserts cut to the exact profile of your piece.
+              At Austin Crate &amp; Freight, we build every furniture crate from scratch, using precision panel saws for accurate cuts, then assembling with industrial screws, corner reinforcements, and foam inserts cut to the exact profile of your piece.
             </p>
 
             <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 my-8 not-prose">
               <p className="font-semibold text-emerald-800 mb-2 text-lg">📦 What Goes Into a Furniture Crate</p>
               <ul className="text-grey-700 space-y-2 mt-3">
-                <li>✅ <strong>Custom-cut plywood panels</strong> — sized to your piece, not a generic template</li>
-                <li>✅ <strong>Foam perimeter blocking</strong> — prevents movement in all six directions</li>
-                <li>✅ <strong>Internal bracing</strong> — corner posts and cross-members for structural rigidity</li>
-                <li>✅ <strong>Hardware protection</strong> — padding over legs, hardware, and decorative elements</li>
-                <li>✅ <strong>Vapor barrier</strong> — optional moisture protection for long-haul or climate-sensitive pieces</li>
+                <li>✅ <strong>Custom-cut plywood panels</strong>, sized to your piece, not a generic template</li>
+                <li>✅ <strong>Foam perimeter blocking</strong>, prevents movement in all six directions</li>
+                <li>✅ <strong>Internal bracing</strong>, corner posts and cross-members for structural rigidity</li>
+                <li>✅ <strong>Hardware protection</strong>, padding over legs, hardware, and decorative elements</li>
+                <li>✅ <strong>Vapor barrier</strong>, optional moisture protection for long-haul or climate-sensitive pieces</li>
               </ul>
             </div>
 
@@ -158,7 +158,7 @@ export default function ShipLargeFurnitureTexas() {
 
             <h3>Designer and High-End Contemporary Furniture</h3>
             <p>
-              Expensive modern pieces — Italian marble tables, designer sectionals, hand-crafted wooden furniture — require the same level of care. We make crates for pieces that cost more than most cars, and we treat them accordingly.
+              Expensive modern pieces, Italian marble tables, designer sectionals, hand-crafted wooden furniture, require the same level of care. We make crates for pieces that cost more than most cars, and we treat them accordingly.
             </p>
 
             <h3>Large Bedroom Sets and Dining Room Tables</h3>
@@ -168,7 +168,7 @@ export default function ShipLargeFurnitureTexas() {
 
             <h3>Upholstered Pieces</h3>
             <p>
-              Sofas and upholstered chairs are vulnerable to soiling, compression, and crushing. We wrap upholstered pieces in protective layers before boxing — keeping the fabric clean and the cushion profile intact throughout the journey.
+              Sofas and upholstered chairs are vulnerable to soiling, compression, and crushing. We wrap upholstered pieces in protective layers before boxing, keeping the fabric clean and the cushion profile intact throughout the journey.
             </p>
 
             <h2>How the Process Works</h2>
@@ -180,7 +180,7 @@ export default function ShipLargeFurnitureTexas() {
                 <strong>Get a quote:</strong> Share the dimensions, weight, material, and destination. We will tell you what protective packaging is appropriate and give you a flat price.
               </li>
               <li>
-                <strong>Schedule pickup:</strong> We come to your location — home, gallery, warehouse, or estate — and take careful measurements before we build.
+                <strong>Schedule pickup:</strong> We come to your location, home, gallery, warehouse, or estate, and take careful measurements before we build.
               </li>
               <li>
                 <strong>Build the crate:</strong> All crating happens in our Austin shop or on-site for very large pieces. Turnaround is typically 24–72 hours depending on complexity.
@@ -205,32 +205,32 @@ export default function ShipLargeFurnitureTexas() {
               <li><strong>Custom sectional sofa:</strong> $600–$1,500</li>
             </ul>
             <p>
-              These ranges include crating labor, materials, and standard freight. White-glove delivery — uncrating and placement at destination — adds to the cost but is often worth it for valuable pieces.
+              These ranges include crating labor, materials, and standard freight. White-glove delivery, uncrating and placement at destination, adds to the cost but is often worth it for valuable pieces.
             </p>
 
             <div className="bg-grey-100 p-6 rounded-lg my-8 not-prose">
               <h3 className="text-xl font-bold mb-3 text-grey-900">🛋️ Prepare Your Furniture Before Pickup</h3>
               <p className="text-grey-700 mb-3">A few simple steps on your end speed up the process significantly:</p>
               <ul className="text-grey-700 space-y-2">
-                <li>✅ <strong>Remove detachable parts</strong> — shelves, leaves, knobs, pulls, and decorative elements wrap separately</li>
-                <li>✅ <strong>Document the condition</strong> — photograph all surfaces under good light before we arrive</li>
-                <li>✅ <strong>Measure doorways</strong> — note any tight access points at the origin or destination</li>
-                <li>✅ <strong>Note any sensitivities</strong> — lacquered finishes, veneer edges, or fragile hardware worth flagging</li>
+                <li>✅ <strong>Remove detachable parts</strong>, shelves, leaves, knobs, pulls, and decorative elements wrap separately</li>
+                <li>✅ <strong>Document the condition</strong>, photograph all surfaces under good light before we arrive</li>
+                <li>✅ <strong>Measure doorways</strong>, note any tight access points at the origin or destination</li>
+                <li>✅ <strong>Note any sensitivities</strong>, lacquered finishes, veneer edges, or fragile hardware worth flagging</li>
               </ul>
             </div>
 
             <h2>Local vs. Long-Distance Furniture Shipping in Texas</h2>
             <p>
-              Moving a piece from Austin to Round Rock is different from shipping to El Paso or across state lines. For short-haul moves under 100 miles, we often use our own vehicles — ensuring direct handling and no third-party freight exposure. For long-haul Texas shipping (100+ miles) or interstate, we use vetted LTL freight partners who specialize in crated cargo.
+              Moving a piece from Austin to Round Rock is different from shipping to El Paso or across state lines. For short-haul moves under 100 miles, we often use our own vehicles, ensuring direct handling and no third-party freight exposure. For long-haul Texas shipping (100+ miles) or interstate, we use vetted LTL freight partners who specialize in crated cargo.
             </p>
             <p>
-              Interstate shipping to neighboring states — New Mexico, Louisiana, Oklahoma, Colorado — is a common request. The same crating principles apply; the carrier legs are simply longer.
+              Interstate shipping to neighboring states, New Mexico, Louisiana, Oklahoma, Colorado, is a common request. The same crating principles apply; the carrier legs are simply longer.
             </p>
 
             <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 my-8 not-prose">
               <p className="font-semibold text-emerald-800 mb-3 text-lg">📞 Ready to Move Your Furniture?</p>
               <p className="text-grey-700 mb-4">
-                Call <strong>(512) 240-9818</strong> or fill out our quote form. Share the piece dimensions and destination and we will get back to you — usually within a few hours.
+                Call <strong>(512) 240-9818</strong> or fill out our quote form. Share the piece dimensions and destination and we will get back to you, usually within a few hours.
               </p>
               <Link
                 href="/contact"

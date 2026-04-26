@@ -1,5 +1,5 @@
-/**
- * ServicesGrid — Reusable SEO-optimized service cards component.
+﻿/**
+ * ServicesGrid, Reusable SEO-optimized service cards component.
  *
  * Displays all primary service categories with keyword-rich descriptions and
  * links to every service page and key sub-pages. Embed this on location pages,
@@ -81,7 +81,7 @@ const SERVICES = [
     ),
     title: 'Heavy Item Pickup & Shipping',
     description:
-      'Pickup and crating for items over 150 lbs that standard carriers refuse. Safe jacks, furniture dollies, liftgate service, and freight coordination — anywhere in Texas.',
+      'Pickup and crating for items over 150 lbs that standard carriers refuse. Safe jacks, furniture dollies, liftgate service, and freight coordination, anywhere in Texas.',
     subLinks: [
       { label: 'Pool Table Shipping', href: '/services/heavy-items/pool-table-shipping' },
       { label: 'Motorcycle Crating', href: '/services/heavy-items/motorcycle-crating' },
@@ -156,7 +156,7 @@ export default function ServicesGrid({
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-900 mb-3 text-center">{title}</h2>
         <p className="text-gray-500 text-center mb-10 max-w-2xl mx-auto">
-          Austin Crate &amp; Freight serves the entire Austin metro — custom crating, white-glove pickup, and specialty freight for items that standard carriers cannot handle.
+          Austin Crate &amp; Freight serves the entire Austin metro, custom crating, white-glove pickup, and specialty freight for items that standard carriers cannot handle.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filtered.map((svc) => (

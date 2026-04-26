@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+﻿import { Metadata } from 'next'
 import Link from 'next/link'
 import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
@@ -38,7 +38,7 @@ export default function CustomCratingVsStandardBoxes() {
     '@type': 'Article',
     headline: 'Custom Crating vs. Standard Boxes: When You Actually Need a Crate',
     description:
-      'Not everything needs a custom wood crate — but some items absolutely do. A clear breakdown of when to crate vs. when standard packaging is fine, with real examples.',
+      'Not everything needs a custom wood crate, but some items absolutely do. A clear breakdown of when to crate vs. when standard packaging is fine, with real examples.',
     image: 'https://austincrate.com/og-default.jpg',
     datePublished: '2026-03-28',
     dateModified: '2026-03-28',
@@ -83,7 +83,7 @@ export default function CustomCratingVsStandardBoxes() {
               Custom Crating vs. Standard Boxes: When You Actually Need a Crate
             </h1>
             <p className="text-xl text-grey-300 mb-6">
-              Most things ship fine in a box. Some things absolutely cannot. Here&apos;s how to tell the difference — and avoid a costly mistake.
+              Most things ship fine in a box. Some things absolutely cannot. Here&apos;s how to tell the difference, and avoid a costly mistake.
             </p>
             <div className="flex flex-wrap gap-4 text-grey-300 text-sm">
               <span>📅 March 28, 2026</span>
@@ -107,14 +107,14 @@ export default function CustomCratingVsStandardBoxes() {
         <section className="flex-1 py-16 px-4 bg-white">
           <article className="max-w-3xl mx-auto prose prose-lg">
             <p className="lead text-xl text-grey-700 mb-8">
-              We get this question every week: &ldquo;Do I really need a custom crate, or can this go in a double-walled box?&rdquo; Honest answer: it depends. Custom wood crating is not always necessary — but when it is, there is no substitute. Using a box when you need a crate is how expensive things get destroyed. This guide cuts through the guesswork.
+              We get this question every week: &ldquo;Do I really need a custom crate, or can this go in a double-walled box?&rdquo; Honest answer: it depends. Custom wood crating is not always necessary, but when it is, there is no substitute. Using a box when you need a crate is how expensive things get destroyed. This guide cuts through the guesswork.
             </p>
 
             <h2>The Short Answer: Use a Crate When the Loss Would Be Catastrophic</h2>
             <p>
-              If the item is expensive, irreplaceable, structurally fragile, or too large/heavy for standard cardboard to support — you need a crate. If it is standard consumer goods, small electronics, or items that are cheap to replace — a quality box with the right void fill is often fine.
+              If the item is expensive, irreplaceable, structurally fragile, or too large/heavy for standard cardboard to support, you need a crate. If it is standard consumer goods, small electronics, or items that are cheap to replace, a quality box with the right void fill is often fine.
             </p>
-            <p>The real question is not &ldquo;what costs less to pack?&rdquo; — it is &ldquo;what does damage or loss actually cost you?&rdquo;</p>
+            <p>The real question is not &ldquo;what costs less to pack?&rdquo;, it is &ldquo;what does damage or loss actually cost you?&rdquo;</p>
 
             <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 my-8 not-prose">
               <p className="font-semibold text-emerald-800 mb-2 text-lg">📦 Quick Decision Framework</p>
@@ -133,7 +133,7 @@ export default function CustomCratingVsStandardBoxes() {
               A custom wood crate is a rigid structural container built specifically around your item. It is cut from plywood or OSB to the exact dimensions of the piece, assembled with screws instead of nails for consistent clamping strength, and lined with foam, padding, or blocking to prevent internal movement.
             </p>
             <p>
-              Unlike a double-walled cardboard box — which relies on the box itself and void fill to protect the item — a wood crate provides rigid structural protection that cardboard cannot match. A wood crate will not collapse under a 200 lb pallet placed on top of it. Cardboard will.
+              Unlike a double-walled cardboard box, which relies on the box itself and void fill to protect the item, a wood crate provides rigid structural protection that cardboard cannot match. A wood crate will not collapse under a 200 lb pallet placed on top of it. Cardboard will.
             </p>
 
             <h2>What Standard Cardboard Boxes Are Good For</h2>
@@ -147,14 +147,14 @@ export default function CustomCratingVsStandardBoxes() {
               <li>Shipments via standard parcel carriers (UPS, FedEx, USPS) within their size limits</li>
             </ul>
             <p>
-              Even within these categories, how you pack matters. A poorly packed box with bad void fill will damage items that would have survived perfectly in a properly packed box. The box is not the problem — insufficient internal support is.
+              Even within these categories, how you pack matters. A poorly packed box with bad void fill will damage items that would have survived perfectly in a properly packed box. The box is not the problem, insufficient internal support is.
             </p>
 
             <h2>What Custom Crating Is Required For</h2>
 
-            <h3>Fine Art — Paintings, Sculpture, Prints</h3>
+            <h3>Fine Art, Paintings, Sculpture, Prints</h3>
             <p>
-              A painting on stretched canvas shipped in a box almost always arrives with corner dents, cracked gesso, or worse. The canvas has no rigid support behind it — one compression event on a loading dock and the damage is done. A crate with a built-in face frame and interior foam spacers eliminates this risk entirely.
+              A painting on stretched canvas shipped in a box almost always arrives with corner dents, cracked gesso, or worse. The canvas has no rigid support behind it, one compression event on a loading dock and the damage is done. A crate with a built-in face frame and interior foam spacers eliminates this risk entirely.
             </p>
             <p>
               For sculpture and three-dimensional art, a crate lets you build a custom foam cradle that holds the piece in orientation, preventing it from shifting, tipping, or contacting hard surfaces.
@@ -162,7 +162,7 @@ export default function CustomCratingVsStandardBoxes() {
 
             <h3>Antique and High-Value Furniture</h3>
             <p>
-              An 18th century French cabinet going from Austin to New York cannot go in a moving blanket on an LTL truck. The veneer will lift. The finish will scratch. The legs will crack. A crate built to fit the piece — with foam blocking at every structural stress point — is the only safe option.
+              An 18th century French cabinet going from Austin to New York cannot go in a moving blanket on an LTL truck. The veneer will lift. The finish will scratch. The legs will crack. A crate built to fit the piece, with foam blocking at every structural stress point, is the only safe option.
             </p>
 
             <h3>Items Over 70 lbs</h3>
@@ -172,7 +172,7 @@ export default function CustomCratingVsStandardBoxes() {
 
             <h3>Items with Mechanical or Electronic Components</h3>
             <p>
-              Medical equipment, industrial machinery, audio gear with tubes, vintage electronics — any item where the internal components are sensitive to shock or vibration — benefits strongly from custom crating with vibration-damping foam. Cardboard provides no meaningful vibration attenuation.
+              Medical equipment, industrial machinery, audio gear with tubes, vintage electronics, any item where the internal components are sensitive to shock or vibration, benefits strongly from custom crating with vibration-damping foam. Cardboard provides no meaningful vibration attenuation.
             </p>
 
             <h3>Items with Legs or Protruding Elements</h3>
@@ -182,16 +182,16 @@ export default function CustomCratingVsStandardBoxes() {
 
             <h2>The Hidden Cost of Under-Packaging</h2>
             <p>
-              The cost argument against crating usually goes: &ldquo;A crate adds $75–$350 — I will just take my chances with a box.&rdquo; This logic only holds until the item arrives damaged.
+              The cost argument against crating usually goes: &ldquo;A crate adds $75–$350, I will just take my chances with a box.&rdquo; This logic only holds until the item arrives damaged.
             </p>
             <p>Freight insurance claim realities for under-packaged items:</p>
             <ul>
-              <li>Carriers often deny claims when packaging is deemed inadequate — and &ldquo;inadequate&rdquo; is assessed post-damage by the carrier&apos;s own claim adjuster</li>
+              <li>Carriers often deny claims when packaging is deemed inadequate, and &ldquo;inadequate&rdquo; is assessed post-damage by the carrier&apos;s own claim adjuster</li>
               <li>Most policies have a declared value limit that does not cover full replacement for antiques or art</li>
               <li>The &ldquo;consequential loss&rdquo; (an art installation that can no longer be displayed, a medical device that causes a clinic to close) is almost never covered</li>
             </ul>
             <p>
-              A $200 crate for a $3,000 piece of furniture is not an expense — it is 6.7% insurance that the job goes right.
+              A $200 crate for a $3,000 piece of furniture is not an expense, it is 6.7% insurance that the job goes right.
             </p>
 
             <div className="bg-grey-100 p-6 rounded-lg my-8 not-prose">
@@ -236,7 +236,7 @@ export default function CustomCratingVsStandardBoxes() {
               When you call us with a shipping job, we ask the same questions every time: What is it? How much does it weigh? What are the dimensions? How fragile is it? What is the destination? What is it worth to you?
             </p>
             <p>
-              We are not going to upsell you to a $500 crate if a $120 crate and good foam blocking does the job. We are also not going to let you ship a hand-carved 19th century chest in a cardboard box because it saves money on packaging. Our reputation is built on items arriving intact — and we are protective of that.
+              We are not going to upsell you to a $500 crate if a $120 crate and good foam blocking does the job. We are also not going to let you ship a hand-carved 19th century chest in a cardboard box because it saves money on packaging. Our reputation is built on items arriving intact, and we are protective of that.
             </p>
 
             <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 my-8 not-prose">
@@ -261,7 +261,7 @@ export default function CustomCratingVsStandardBoxes() {
             <div className="grid gap-4">
               <Link href="/blog/prepare-furniture-for-shipping" className="p-4 bg-white rounded-lg shadow hover:shadow-lg transition">
                 <h3 className="font-bold text-lg text-grey-900 mb-2">How to Prepare Furniture for Shipping (Step-by-Step)</h3>
-                <p className="text-grey-600 text-sm">A practical checklist for getting furniture ready for pickup and transit — before we arrive.</p>
+                <p className="text-grey-600 text-sm">A practical checklist for getting furniture ready for pickup and transit, before we arrive.</p>
               </Link>
               <Link href="/blog/ship-large-furniture-texas" className="p-4 bg-white rounded-lg shadow hover:shadow-lg transition">
                 <h3 className="font-bold text-lg text-grey-900 mb-2">How to Ship Large Furniture Across Texas</h3>

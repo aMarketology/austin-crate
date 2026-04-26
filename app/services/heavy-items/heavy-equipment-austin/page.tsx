@@ -1,4 +1,4 @@
-import Navigation from '@/app/components/Navigation'
+﻿import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
 import Breadcrumbs from '@/app/components/Breadcrumbs'
 import ServicesGrid from '@/app/components/ServicesGrid'
@@ -12,7 +12,7 @@ const SLUG = '/services/heavy-items/heavy-equipment-austin'
 export function generateMetadata(): Metadata {
   return generateServiceMetadata({
     serviceName: 'Heavy Equipment Shipping for Austin Businesses',
-    description: 'Heavy equipment shipping and crating in Austin, Texas. Industrial machinery, manufacturing equipment, trade show displays, and commercial fixtures — liftgate service and LTL freight. Call (512) 240-9818.',
+    description: 'Heavy equipment shipping and crating in Austin, Texas. Industrial machinery, manufacturing equipment, trade show displays, and commercial fixtures, liftgate service and LTL freight. Call (512) 240-9818.',
     keywords: [
       'heavy equipment shipping Austin',
       'industrial equipment transport Austin TX',
@@ -30,7 +30,7 @@ export function generateMetadata(): Metadata {
 export default function HeavyEquipmentAustin() {
   const serviceSchema = generateServiceSchema({
     serviceName: 'Heavy Equipment Shipping for Austin Businesses',
-    description: 'Heavy equipment and industrial machinery shipping in Austin, TX — custom crating, liftgate service, and LTL freight coordination for businesses throughout the Austin metro.',
+    description: 'Heavy equipment and industrial machinery shipping in Austin, TX, custom crating, liftgate service, and LTL freight coordination for businesses throughout the Austin metro.',
     serviceType: 'Specialty Shipping',
   })
 
@@ -98,7 +98,7 @@ export default function HeavyEquipmentAustin() {
                 { title: 'Freight Classification & Carrier Selection', desc: 'LTL freight is priced by freight class (1–500), which is based on density, stowability, handling characteristics, and liability. We classify your shipment correctly to avoid reclassification charges and select the best carrier for the equipment type.' },
                 { title: 'Liftgate Coordination at Both Ends', desc: 'Business locations without loading docks require a liftgate truck for both pickup and delivery. We coordinate this at both the origin and destination so there are no surprises on arrival day.' },
                 { title: 'Chain-of-Custody Documentation', desc: 'For regulated equipment (medical devices, hazmat-adjacent machinery) we provide condition reports, crate inspection records, and carrier POD documentation. This protects you in insurance claims and compliance audits.' },
-                { title: 'Shipping Insurance & Declared Value', desc: 'We ensure your equipment is covered at its actual replacement value — not LTL carriers\' default $0.10/lb rate, which would leave a $20,000 machine valued at only $200 in their liability calculation.' },
+                { title: 'Shipping Insurance & Declared Value', desc: 'We ensure your equipment is covered at its actual replacement value, not LTL carriers\' default $0.10/lb rate, which would leave a $20,000 machine valued at only $200 in their liability calculation.' },
               ].map((item, i) => (
                 <div key={i} className="p-5 bg-white border border-gray-200 rounded-xl">
                   <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
@@ -113,7 +113,7 @@ export default function HeavyEquipmentAustin() {
         <section className="py-16 px-4 bg-white">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Heavy Equipment We Crate &amp; Ship from Austin</h2>
-            <p className="text-gray-600 mb-8">We ship equipment in all of the following categories and have handled dozens of variations within each. If you do not see your equipment type listed, call us — we almost certainly can help.</p>
+            <p className="text-gray-600 mb-8">We ship equipment in all of the following categories and have handled dozens of variations within each. If you do not see your equipment type listed, call us, we almost certainly can help.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
                 'CNC Machines & Manufacturing Equipment',
@@ -146,7 +146,7 @@ export default function HeavyEquipmentAustin() {
               Austin is home to major events including SXSW, the Austin City Limits Music Festival, and a growing roster of business and technology conferences. Companies exhibiting at Austin events and shipping their displays to other national venues need reliable, repeatable freight solutions.
             </p>
             <p className="text-gray-700 text-lg mb-4">
-              Trade show displays present a unique combination of challenges: they are large and heavy, they have fragile branded graphics and lighting components, and they operate on hard deadlines. A display that arrives damaged or late does not just cost the repair — it costs the entire show investment.
+              Trade show displays present a unique combination of challenges: they are large and heavy, they have fragile branded graphics and lighting components, and they operate on hard deadlines. A display that arrives damaged or late does not just cost the repair, it costs the entire show investment.
             </p>
             <p className="text-gray-700 text-lg">
               We build crates specifically designed for exhibit components, with internal dividers, foam padding on graphic faces, and labeled packing lists so reinstallation at destination is straightforward. We also coordinate advance warehouse delivery and show-floor timing when required by the venue.
@@ -186,7 +186,7 @@ export default function HeavyEquipmentAustin() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
             <div className="space-y-5">
               {[
-                { q: 'Do you require a loading dock for heavy equipment pickup?', a: 'Not necessarily. We have liftgate trucks for pickup at locations without loading docks — manufacturing facilities, retail locations, residences, and construction sites. Tell us your pickup location and we will send the right truck.' },
+                { q: 'Do you require a loading dock for heavy equipment pickup?', a: 'Not necessarily. We have liftgate trucks for pickup at locations without loading docks, manufacturing facilities, retail locations, residences, and construction sites. Tell us your pickup location and we will send the right truck.' },
                 { q: 'Can you disassemble equipment before crating?', a: 'For equipment that requires partial disassembly for safe transport (removing large appendages, lifting arms, detachable components), we can coordinate disassembly. For equipment requiring specialized technical knowledge, we work alongside your technicians to ensure proper procedure.' },
                 { q: 'How is LTL freight classified for heavy equipment?', a: 'LTL freight class is determined by four factors: density, stowability, handling, and liability. Most heavy industrial equipment falls into class 50–85, which are the lower-cost classes. Equipment with high liability (sensitive electronics, medical devices) is classified higher. We assess your equipment and classify it correctly to avoid expensive reclassification at the carrier facility.' },
                 { q: 'Do you ship heavy equipment to trade show venues like Las Vegas or Chicago?', a: 'Yes. We ship to major trade show venues across the US including Las Vegas Convention Center, McCormick Place Chicago, Orange County Convention Center, and others. We coordinate advance warehouse delivery and show move-in timing when required.' },

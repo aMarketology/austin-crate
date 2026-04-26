@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+﻿import { Metadata } from 'next'
 import Link from 'next/link'
 import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
@@ -38,7 +38,7 @@ export default function PianoShippingAustin() {
     '@type': 'Article',
     headline: 'Piano Shipping in Austin, Texas: Complete Guide & Costs for 2026',
     description:
-      'Complete guide to piano shipping in Austin, TX — uprights to concert grands. Costs, custom crating process, and what to ask before booking a piano transport company.',
+      'Complete guide to piano shipping in Austin, TX, uprights to concert grands. Costs, custom crating process, and what to ask before booking a piano transport company.',
     image: 'https://austincrate.com/og-default.jpg',
     datePublished: '2026-03-22',
     dateModified: '2026-03-22',
@@ -83,7 +83,7 @@ export default function PianoShippingAustin() {
               Piano Shipping in Austin, Texas: Complete Guide &amp; Costs for 2026
             </h1>
             <p className="text-xl text-grey-300 mb-6">
-              From uprights to concert grands — professional piano crating, moving, and transport in Central Texas
+              From uprights to concert grands, professional piano crating, moving, and transport in Central Texas
             </p>
             <div className="flex flex-wrap gap-4 text-grey-300 text-sm">
               <span>📅 March 22, 2026</span>
@@ -107,26 +107,26 @@ export default function PianoShippingAustin() {
         <section className="flex-1 py-16 px-4 bg-white">
           <article className="max-w-3xl mx-auto prose prose-lg">
             <p className="lead text-xl text-grey-700 mb-8">
-              Pianos are among the most challenging items to ship. They are heavy, fragile, acoustically sensitive, and irreplaceable if something goes wrong. Whether you are moving an upright piano across Austin or shipping a grand piano to another state, the packaging and handling need to be done right the first time. This guide explains what professional piano shipping actually involves — and what it costs in Austin, Texas in 2026.
+              Pianos are among the most challenging items to ship. They are heavy, fragile, acoustically sensitive, and irreplaceable if something goes wrong. Whether you are moving an upright piano across Austin or shipping a grand piano to another state, the packaging and handling need to be done right the first time. This guide explains what professional piano shipping actually involves, and what it costs in Austin, Texas in 2026.
             </p>
 
             <h2>Why Piano Shipping Is Uniquely Challenging</h2>
             <p>
-              A piano is not just heavy — a standard upright weighs 400–600 lbs. The real challenge is its combination of weight, fragile internal mechanics, delicate wood or lacquer finish, and precise internal calibration that can be disturbed by rough handling.
+              A piano is not just heavy, a standard upright weighs 400–600 lbs. The real challenge is its combination of weight, fragile internal mechanics, delicate wood or lacquer finish, and precise internal calibration that can be disturbed by rough handling.
             </p>
             <p>The most common problems we see with improperly shipped pianos:</p>
             <ul>
               <li>
-                <strong>Cracked soundboard</strong> — the large internal wood panel that gives a piano its resonance; almost impossible to repair without a full rebuild
+                <strong>Cracked soundboard</strong>, the large internal wood panel that gives a piano its resonance; almost impossible to repair without a full rebuild
               </li>
               <li>
-                <strong>Damaged action</strong> — the mechanical assembly of hammers, dampers, and keys; highly sensitive to impact and humidity
+                <strong>Damaged action</strong>, the mechanical assembly of hammers, dampers, and keys; highly sensitive to impact and humidity
               </li>
               <li>
-                <strong>Finish damage</strong> — lacquered and polished piano finishes are unforgiving; even light contact can leave permanent marks
+                <strong>Finish damage</strong>, lacquered and polished piano finishes are unforgiving; even light contact can leave permanent marks
               </li>
               <li>
-                <strong>Leg and pedal damage</strong> — grand piano legs are both structural and decorative; they are frequently snapped off in improper moves
+                <strong>Leg and pedal damage</strong>, grand piano legs are both structural and decorative; they are frequently snapped off in improper moves
               </li>
             </ul>
 
@@ -134,7 +134,7 @@ export default function PianoShippingAustin() {
 
             <h3>Upright Pianos (Spinets, Consoles, Studios, Uprights)</h3>
             <p>
-              Upright pianos are the most common. They range from 36&quot; spinets to full 52&quot; professional uprights. The primary risks are finish damage and impact to the back panel during loading. Most upright pianos can be moved on a reinforced dolly with proper padding — but long-distance shipping requires a custom crate or, at minimum, a dedicated freight blanket on a piano-only carrier.
+              Upright pianos are the most common. They range from 36&quot; spinets to full 52&quot; professional uprights. The primary risks are finish damage and impact to the back panel during loading. Most upright pianos can be moved on a reinforced dolly with proper padding, but long-distance shipping requires a custom crate or, at minimum, a dedicated freight blanket on a piano-only carrier.
             </p>
 
             <h3>Baby Grand and Grand Pianos</h3>
@@ -144,7 +144,7 @@ export default function PianoShippingAustin() {
 
             <h3>Concert and Studio Grands</h3>
             <p>
-              Concert grands — Steinway Model D and equivalents — require the highest level of professional handling. These instruments can be worth $100,000 or more. Custom crating is mandatory, and climate-controlled transit is strongly recommended.
+              Concert grands, Steinway Model D and equivalents, require the highest level of professional handling. These instruments can be worth $100,000 or more. Custom crating is mandatory, and climate-controlled transit is strongly recommended.
             </p>
 
             <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 my-8 not-prose">
@@ -168,13 +168,13 @@ export default function PianoShippingAustin() {
                 <strong>Disassembly:</strong> For grands, we remove legs, lyre (pedal assembly), and lid. Each part is wrapped individually.
               </li>
               <li>
-                <strong>Wrapping:</strong> The piano body is wrapped in furniture pads and then in stretch wrap before it goes into the crate — no surface contact with hard materials.
+                <strong>Wrapping:</strong> The piano body is wrapped in furniture pads and then in stretch wrap before it goes into the crate, no surface contact with hard materials.
               </li>
               <li>
                 <strong>Crating:</strong> A custom wood crate is built around the wrapped instrument. Interior foam or high-density padding is added to all six sides.
               </li>
               <li>
-                <strong>Carrier coordination:</strong> We work with carriers experienced in musical instrument freight — not general cargo handlers who will treat a piano like a pallet of boxes.
+                <strong>Carrier coordination:</strong> We work with carriers experienced in musical instrument freight, not general cargo handlers who will treat a piano like a pallet of boxes.
               </li>
             </ol>
 
@@ -201,7 +201,7 @@ export default function PianoShippingAustin() {
             <ul>
               <li><strong>Upright piano:</strong> $800–$2,000</li>
               <li><strong>Baby grand:</strong> $1,500–$4,000</li>
-              <li><strong>Concert grand / vintage Steinway:</strong> Price on application — varies by instrument and carrier</li>
+              <li><strong>Concert grand / vintage Steinway:</strong> Price on application, varies by instrument and carrier</li>
             </ul>
 
             <div className="bg-grey-100 p-6 rounded-lg my-8 not-prose">
@@ -218,7 +218,7 @@ export default function PianoShippingAustin() {
 
             <h2>Austin Crate &amp; Freight&apos;s Approach to Piano Shipping</h2>
             <p>
-              We treat every piano like the irreplaceable instrument it is. Our shop in Austin builds custom wood crates to the exact dimensions of your instrument. We have shipped uprights, baby grands, and full concert grands — within Austin, across Texas, and to other states. Every crate we build for a piano is designed to survive the freight carrier&apos;s handling — because we know what happens on a loading dock.
+              We treat every piano like the irreplaceable instrument it is. Our shop in Austin builds custom wood crates to the exact dimensions of your instrument. We have shipped uprights, baby grands, and full concert grands, within Austin, across Texas, and to other states. Every crate we build for a piano is designed to survive the freight carrier&apos;s handling, because we know what happens on a loading dock.
             </p>
             <p>
               If you are considering piano shipping in Austin, the most important thing you can do is get a quote from a company that actually builds custom crates. Pad-wrap alone is not sufficient for long-distance transport, and a damaged piano is not a recoverable situation. Get it crated properly the first time.
@@ -227,7 +227,7 @@ export default function PianoShippingAustin() {
             <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 my-8 not-prose">
               <p className="font-semibold text-emerald-800 mb-3 text-lg">📞 Get a Piano Shipping Quote</p>
               <p className="text-grey-700 mb-4">
-                Call <strong>(512) 240-9818</strong> or fill out our contact form. Share the piano type, dimensions, and destination and we will respond fast — usually within a few hours.
+                Call <strong>(512) 240-9818</strong> or fill out our contact form. Share the piano type, dimensions, and destination and we will respond fast, usually within a few hours.
               </p>
               <Link
                 href="/contact"

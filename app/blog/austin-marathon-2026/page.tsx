@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+﻿import { Metadata } from 'next'
 import Link from 'next/link'
 import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
@@ -225,7 +225,7 @@ export default function AustinMarathonBlog() {
 
           <blockquote className="border-l-4 border-emerald pl-6 italic my-8">
             "The Austin Marathon is more than just a race – it's a celebration of our city's vibrant running community. The energy from the crowds, the live music, and the incredible volunteers make it an unforgettable experience."
-            <footer className="text-grey-600 mt-2">— 2025 Marathon Participant</footer>
+            <footer className="text-grey-600 mt-2">2025 Marathon Participant</footer>
           </blockquote>
 
           <ul>

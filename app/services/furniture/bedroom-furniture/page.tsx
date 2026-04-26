@@ -1,4 +1,4 @@
-import Navigation from '@/app/components/Navigation'
+﻿import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
 import Breadcrumbs from '@/app/components/Breadcrumbs'
 import Link from 'next/link'
@@ -12,7 +12,7 @@ const SLUG = '/services/furniture/bedroom-furniture'
 export function generateMetadata(): Metadata {
   return generateServiceMetadata({
     serviceName: 'Bedroom Furniture Shipping Austin Texas',
-    description: 'Specialist bedroom furniture shipping and crating in Austin, Texas. Platform beds, sleigh beds, dressers, armoires, and nightstands — white-glove pickup, disassembly & delivery. Call (512) 240-9818.',
+    description: 'Specialist bedroom furniture shipping and crating in Austin, Texas. Platform beds, sleigh beds, dressers, armoires, and nightstands, white-glove pickup, disassembly & delivery. Call (512) 240-9818.',
     keywords: [
       'bedroom furniture shipping Austin Texas',
       'bed frame shipping Austin TX',
@@ -31,7 +31,7 @@ export function generateMetadata(): Metadata {
 export default function BedroomFurnitureShipping() {
   const serviceSchema = generateServiceSchema({
     serviceName: 'Bedroom Furniture Shipping Austin Texas',
-    description: 'White-glove bedroom furniture shipping and crating in Austin, TX — beds, dressers, armoires, and full bedroom sets.',
+    description: 'White-glove bedroom furniture shipping and crating in Austin, TX, beds, dressers, armoires, and full bedroom sets.',
     serviceType: 'Specialty Shipping',
   })
 
@@ -57,7 +57,7 @@ export default function BedroomFurnitureShipping() {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Bedroom Furniture Shipping in Austin, Texas</h1>
             <p className="text-xl text-grey-300 mb-8 max-w-3xl">
-              Platform beds, sleigh beds, four-poster frames, dressers, armoires, and complete bedroom sets — shipped and crated safely from Austin to anywhere. Full disassembly, expert crating, and white-glove reassembly included.
+              Platform beds, sleigh beds, four-poster frames, dressers, armoires, and complete bedroom sets, shipped and crated safely from Austin to anywhere. Full disassembly, expert crating, and white-glove reassembly included.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="tel:(512) 240-9818" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald rounded-lg font-medium text-white hover:bg-emerald/90 transition-all duration-300">
@@ -80,12 +80,12 @@ export default function BedroomFurnitureShipping() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
               {[
-                { title: 'Bed Frame Disassembly', desc: 'All bed frames are fully disassembled — headboards, footboards, side rails, and slats — with all hardware bagged and labeled by location.' },
+                { title: 'Bed Frame Disassembly', desc: 'All bed frames are fully disassembled, headboards, footboards, side rails, and slats, with all hardware bagged and labeled by location.' },
                 { title: 'Mirror & Glass Removal', desc: 'Dresser and armoire mirrors are removed, edge-padded, and crated separately for full protection during transit.' },
                 { title: 'Drawer Removal & Padding', desc: 'Drawers are removed, wrapped, and loaded flat. This prevents them from sliding open and adds structural protection to drawer boxes.' },
                 { title: 'Tall Piece Crating', desc: 'Armoires and tall dressers that are prone to tipping are fitted with rigid corner and edge bracing inside their crates.' },
                 { title: 'Finish Protection', desc: 'High-gloss lacquer, painted, or hand-rubbed finishes all get breathable, non-reactive wrapping that will not transfer or damage surfaces.' },
-                { title: 'Full Reassembly', desc: 'We reassemble every piece in your new space — beds fully made up on their frames, mirrors rehung, drawers returned to their correct positions.' },
+                { title: 'Full Reassembly', desc: 'We reassemble every piece in your new space, beds fully made up on their frames, mirrors rehung, drawers returned to their correct positions.' },
               ].map((item, i) => (
                 <div key={i} className="p-5 bg-gray-50 border border-gray-200 rounded-xl">
                   <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
@@ -128,11 +128,11 @@ export default function BedroomFurnitureShipping() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
             <div className="space-y-5">
               {[
-                { q: 'Do you ship full bedroom sets from Austin?', a: 'Yes. We handle complete bedroom set shipping — bed frame, dresser, nightstands, armoire, and mirror. Every piece is tracked, wrapped, and delivered together.' },
+                { q: 'Do you ship full bedroom sets from Austin?', a: 'Yes. We handle complete bedroom set shipping, bed frame, dresser, nightstands, armoire, and mirror. Every piece is tracked, wrapped, and delivered together.' },
                 { q: 'Can you move a king-size bed frame and headboard?', a: 'Yes, including oversized California King and custom headboards. We disassemble, wrap, and crate at the appropriate protection level for the piece.' },
                 { q: 'Do you ship bedroom furniture long distance from Austin?', a: 'Yes. We offer long-distance bedroom furniture shipping to all 50 states. Crating is recommended for cross-country shipments to protect against multiple freight handling points.' },
                 { q: 'How long does bedroom furniture shipping take from Austin?', a: 'Local delivery in Austin is typically same-week. Long-distance freight to most US destinations takes 3–7 business days depending on destination and carrier. Call (512) 240-9818 for specifics.' },
-                { q: 'Can you ship an upholstered headboard without damaging the fabric?', a: 'Yes. Upholstered headboards are wrapped in breathable furniture blankets — never stretch film directly on fabric, which can leave compression marks. Button-tufted headboards get individual pocket padding for each button. We adjust wrap technique to the specific upholstery type.' },
+                { q: 'Can you ship an upholstered headboard without damaging the fabric?', a: 'Yes. Upholstered headboards are wrapped in breathable furniture blankets, never stretch film directly on fabric, which can leave compression marks. Button-tufted headboards get individual pocket padding for each button. We adjust wrap technique to the specific upholstery type.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                   <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

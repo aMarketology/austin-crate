@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
@@ -203,7 +203,7 @@ export default function HomeClient() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border-2 border-emerald/30 bg-emerald/5 mb-6">
               <div className="w-1.5 h-1.5 rounded-full bg-emerald" />
-              <span className="text-xs font-semibold text-grey-800 uppercase tracking-widest">Specialty Shipping — Austin, Texas</span>
+              <span className="text-xs font-semibold text-grey-800 uppercase tracking-widest">Specialty Shipping, Austin, Texas</span>
             </div>
           </motion.div>
 
@@ -229,7 +229,7 @@ export default function HomeClient() {
             transition={{ duration: 0.8, delay: 0.30 }}
             className="font-sans text-lg sm:text-xl text-grey-800 font-light leading-snug mt-4 px-2"
           >
-            Austin&apos;s Premier Specialty Shipping: Custom Crating, Furniture Shipping &amp; Crating, Heavy Pickup &amp; Fine Art Transport
+            For the shipments that can&apos;t afford to go wrong.
           </motion.h3>
 
           {/* Description */}
@@ -239,7 +239,7 @@ export default function HomeClient() {
             transition={{ duration: 0.8, delay: 0.35 }}
             className="font-sans text-sm sm:text-base text-grey-600 mt-3 mb-6 font-light leading-relaxed max-w-md mx-auto px-2"
           >
-            Austin&apos;s trusted specialty shipping &amp; custom crating company. Expert furniture shipping and crating, heavy item pickup, fine art crating, and medical equipment transport, delivered with museum-quality care across Austin and nationwide.
+            Pool tables, pianos, original paintings, designer furniture, medical equipment, if it&apos;s fragile, irreplaceable, or too heavy for a regular carrier, this is who Austin calls. Locally based, fully insured, serving Austin and nationwide since 2010.
           </motion.p>
 
           {/* CTA Buttons - Animated */}
@@ -337,7 +337,7 @@ export default function HomeClient() {
             </div>
           </motion.div>
 
-          {/* Image Gallery — mirrors desktop right column */}
+          {/* Image Gallery, mirrors desktop right column */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
@@ -349,7 +349,7 @@ export default function HomeClient() {
               <div className="relative h-48 rounded-2xl overflow-hidden border-2 border-grey-200 shadow-lg hover:border-emerald transition-all hover:scale-[1.02]">
                 <Image
                   src="/2.jpg"
-                  alt="Designer Furniture Shipping Austin — White Glove Furniture Transport Services"
+                  alt="Designer Furniture Shipping Austin, White Glove Furniture Transport Services"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
@@ -368,7 +368,7 @@ export default function HomeClient() {
                 <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md hover:border-emerald transition-all hover:scale-[1.02]">
                   <Image
                     src="/1.jpg"
-                    alt="Fine Art Shipping Austin Texas — Museum Quality Crating"
+                    alt="Fine Art Shipping Austin Texas, Museum Quality Crating"
                     fill
                     sizes="50vw"
                     className="object-cover"
@@ -430,7 +430,7 @@ export default function HomeClient() {
 
             {/* Experience badge */}
             <div className="p-4 rounded-xl bg-white border-2 border-emerald/20 text-center shadow-sm">
-              <div className="text-3xl font-bold text-emerald mb-0.5">10+</div>
+              <div className="text-3xl font-bold text-emerald mb-0.5">15+</div>
               <div className="text-xs text-grey-600 font-medium uppercase tracking-wider">Years Experience</div>
             </div>
           </motion.div>
@@ -463,7 +463,7 @@ export default function HomeClient() {
               >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border-2 border-emerald/30 bg-emerald/5">
                   <div className="w-1.5 h-1.5 rounded-full bg-emerald" />
-                  <span className="text-xs font-semibold text-grey-800 uppercase tracking-widest">Specialty Shipping & Custom Crating — Austin, Texas</span>
+                  <span className="text-xs font-semibold text-grey-800 uppercase tracking-widest">Specialty Shipping & Custom Crating, Austin, Texas</span>
                 </div>
               </motion.div>
 
@@ -489,7 +489,7 @@ export default function HomeClient() {
                 transition={{ duration: 0.8, delay: 0.35 }}
                 className="font-sans text-3xl md:text-4xl text-grey-800 font-light leading-tight -mt-2"
               >
-                Austin&apos;s Premier Specialty Shipping — Custom Crating, Furniture Shipping &amp; Crating, Heavy Pickup &amp; Fine Art Transport
+                For the shipments that can&apos;t afford to go wrong.
               </motion.h3>
 
               {/* Description */}
@@ -499,7 +499,7 @@ export default function HomeClient() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="font-sans text-xl md:text-2xl text-grey-600 font-light leading-relaxed max-w-2xl"
               >
-                Austin&apos;s trusted specialty shipping &amp; custom crating company. Expert furniture shipping and crating, heavy item pickup, fine art crating, and medical equipment transport — delivered with museum-quality care across Austin, Texas and nationwide.
+                Pool tables, pianos, original paintings, designer furniture, medical equipment, if it&apos;s fragile, irreplaceable, or too heavy for a regular carrier, this is who Austin calls. Locally based, fully insured, serving Austin and nationwide since 2010.
               </motion.p>
 
               {/* CTA Buttons Row */}
@@ -632,7 +632,7 @@ export default function HomeClient() {
                 {/* Stats Row */}
                 <div className="pt-3">
                   <div className="p-4 rounded-xl bg-white border-2 border-emerald/20 text-center shadow-sm">
-                    <div className="text-3xl font-bold text-emerald mb-1">10+</div>
+                    <div className="text-3xl font-bold text-emerald mb-1">15+</div>
                     <div className="text-xs text-grey-600 font-medium">Years Experience</div>
                   </div>
                 </div>
@@ -655,10 +655,10 @@ export default function HomeClient() {
               Why Choose <span className="text-emerald">Austin Crate</span>
             </h2>
             <h3 className="font-serif text-xl md:text-2xl lg:text-4xl font-semibold text-grey-700 mb-3 md:mb-6 tracking-tight">
-              Premium Shipping for Every Need
+              Built for the jobs regular freight gets wrong.
             </h3>
             <p className="font-sans text-sm md:text-base lg:text-xl text-grey-600 max-w-3xl mx-auto leading-relaxed font-light">
-              Austin Crate &amp; Freight provides specialty shipping and custom crating in Austin, Texas — furniture shipping and crating, fine art transport, heavy item pickup, and medical equipment shipping. Our expert team ensures your most valuable items arrive safely, locally or nationwide.
+              Austin Crate &amp; Freight handles the specialty jobs that national carriers aren&apos;t set up for, custom wood crates, oversized pickups, fine art handling, and white-glove medical equipment transport. We&apos;ve been doing this in Austin since 2010, and we&apos;ve never had a complaint we couldn&apos;t resolve.
             </p>
           </div>
 
@@ -677,12 +677,12 @@ export default function HomeClient() {
               {/* Content */}
               <h3 className="font-serif text-xl md:text-2xl font-bold text-grey-900 mb-3 md:mb-4 tracking-tight">Fine Art Shipping</h3>
               <p className="font-sans text-grey-600 mb-4 md:mb-6 leading-relaxed text-sm md:text-base font-light">
-                Museum-quality crating and transport for paintings, sculptures, and collectibles. Our climate-controlled handling ensures your artwork arrives in pristine condition.
+                Custom kiln-dried lumber crates, acid-free padding, and careful handling for paintings, sculptures, and collections. We crate for galleries, private collectors, and estate moves.
               </p>
 
               {/* Feature List */}
               <ul className="space-y-2 mb-4 md:mb-6">
-                {['Custom Crating', 'Insurance Coverage', 'Gallery-Standard Care'].map((feature, i) => (
+                {['Kiln-Dried Lumber Crates', 'Full Declared Value Coverage', 'Acid-Free Padding & Wrapping'].map((feature, i) => (
                   <li key={i} className="flex items-center gap-2 text-sm text-grey-700">
                     <svg className="w-4 h-4 text-emerald" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -711,11 +711,11 @@ export default function HomeClient() {
 
               <h3 className="font-serif text-xl md:text-2xl font-bold text-grey-900 mb-3 md:mb-4 tracking-tight">Designer Furniture</h3>
               <p className="font-sans text-grey-600 mb-4 md:mb-6 leading-relaxed text-sm md:text-base font-light">
-                White-glove furniture handling for luxury pieces and designer collections. Expert protective wrapping, and precision shipping.
+                From single statement pieces to full room sets, we disassemble, blanket-wrap, custom-crate, and deliver without a scratch. Trusted by Austin interior designers and homeowners alike.
               </p>
 
               <ul className="space-y-2 mb-4 md:mb-6">
-                {['White-Glove Service', 'Protective Wrapping', 'Scratch-Free Transport'].map((feature, i) => (
+                {['Disassembly & Reassembly', 'Blanket Wrap + Custom Crate', 'Scratch-Free Guarantee'].map((feature, i) => (
                   <li key={i} className="flex items-center gap-2 text-sm text-grey-700">
                     <svg className="w-4 h-4 text-emerald" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -743,11 +743,11 @@ export default function HomeClient() {
 
               <h3 className="font-serif text-xl md:text-2xl font-bold text-grey-900 mb-3 md:mb-4 tracking-tight">Medical Equipment</h3>
               <p className="font-sans text-grey-600 mb-4 md:mb-6 leading-relaxed text-sm md:text-base font-light">
-                Transport for sensitive medical devices and laboratory equipment. Specialized handling with chain-of-custody documentation and calibration protection.
+                Hospitals, clinics, and labs trust us for imaging systems, lab equipment, and devices that can&apos;t be mishandled. Chain-of-custody documentation included on every job.
               </p>
 
               <ul className="space-y-2 mb-4 md:mb-6">
-                {['Chain of Custody', 'Calibration Safe'].map((feature, i) => (
+                {['Chain-of-Custody Docs', 'Calibration-Safe Handling', 'Compliant Medical Transport'].map((feature, i) => (
                   <li key={i} className="flex items-center gap-2 text-sm text-grey-700">
                     <svg className="w-4 h-4 text-emerald" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -769,10 +769,10 @@ export default function HomeClient() {
           {/* Features Grid - 4 Columns */}
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
             {[
-              { title: 'Museum-Quality Care', desc: 'White-glove handling for every shipment' },
-              { title: 'Custom Crating', desc: 'Tailored packaging solutions' },
-              { title: 'Insured & Certified', desc: 'Full coverage and compliance' },
-              { title: 'Real-Time Tracking', desc: 'Monitor your shipment 24/7' }
+              { title: 'Free Austin Pickup', desc: 'We come to you anywhere in the Greater Austin metro' },
+              { title: 'Handbuilt Wood Crates', desc: 'Kiln-dried lumber, stainless hardware, custom-fit every time' },
+              { title: 'Fully Insured', desc: 'Licensed, bonded, and covered for full declared value' },
+              { title: 'Ship Anywhere', desc: 'Local delivery or nationwide, your call' }
             ].map((item, i) => (
               <div key={i} className="flex flex-col items-center text-center p-4 md:p-6 rounded-xl bg-grey-50 border-2 border-grey-200">
                 <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-emerald flex items-center justify-center mb-3 md:mb-4">

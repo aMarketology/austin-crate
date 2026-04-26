@@ -1,4 +1,4 @@
-import Navigation from '@/app/components/Navigation'
+﻿import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
 import Breadcrumbs from '@/app/components/Breadcrumbs'
 import ServicesGrid from '@/app/components/ServicesGrid'
@@ -37,7 +37,7 @@ export default function ShippingAndCrating() {
     {
       href: '/services/shipping-and-crating/servers-it-hardware',
       title: 'Servers & IT Hardware',
-      desc: 'Rack servers, storage arrays, networking gear — anti-static crating and component logging.',
+      desc: 'Rack servers, storage arrays, networking gear, anti-static crating and component logging.',
     },
     {
       href: '/services/shipping-and-crating/audio-equipment-studio-gear',
@@ -80,7 +80,7 @@ export default function ShippingAndCrating() {
     {
       href: '/services/shipping-and-crating/oversized-one-off-items',
       title: 'Oversized One-Off Items',
-      desc: 'Anything UPS and FedEx refuse — custom-quoted and custom-crated every time.',
+      desc: 'Anything UPS and FedEx refuse, custom-quoted and custom-crated every time.',
     },
   ]
 
@@ -96,7 +96,7 @@ export default function ShippingAndCrating() {
           <div className="max-w-5xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Specialty Shipping & Custom Crating in Austin, TX</h1>
             <p className="text-xl text-grey-300 mb-8 max-w-3xl">
-              When standard carriers say no — or when your item is too valuable to risk them saying yes — Austin Crate &amp; Freight builds the crate, coordinates the freight, and gets it there.
+              When standard carriers say no, or when your item is too valuable to risk them saying yes, Austin Crate &amp; Freight builds the crate, coordinates the freight, and gets it there.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a

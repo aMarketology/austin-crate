@@ -1,4 +1,4 @@
-import Navigation from '@/app/components/Navigation'
+﻿import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
 import Breadcrumbs from '@/app/components/Breadcrumbs'
 import ServicesGrid from '@/app/components/ServicesGrid'
@@ -12,7 +12,7 @@ const SLUG = '/services/medical-equipment/sensitive-electronics'
 export function generateMetadata(): Metadata {
   return generateServiceMetadata({
     serviceName: 'Sensitive Medical Electronics Shipping Austin Texas',
-    description: 'Specialist shipping for sensitive medical electronics and calibration-critical devices in Austin, Texas. Infusion pumps, defibrillators, ventilators, and precision clinical electronics — safe transport with calibration protection. Call (512) 240-9818.',
+    description: 'Specialist shipping for sensitive medical electronics and calibration-critical devices in Austin, Texas. Infusion pumps, defibrillators, ventilators, and precision clinical electronics, safe transport with calibration protection. Call (512) 240-9818.',
     keywords: [
       'sensitive medical electronics shipping Austin Texas',
       'calibration equipment transport Austin TX',
@@ -30,7 +30,7 @@ export function generateMetadata(): Metadata {
 export default function SensitiveElectronicsShipping() {
   const serviceSchema = generateServiceSchema({
     serviceName: 'Sensitive Medical Electronics Shipping Austin Texas',
-    description: 'Specialist shipping and crating for calibration-critical medical electronics in Austin, TX — infusion pumps, defibrillators, ventilators, and precision clinical devices.',
+    description: 'Specialist shipping and crating for calibration-critical medical electronics in Austin, TX, infusion pumps, defibrillators, ventilators, and precision clinical devices.',
     serviceType: 'Medical Equipment Transport',
   })
 
@@ -52,7 +52,7 @@ export default function SensitiveElectronicsShipping() {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Sensitive Medical Electronics &amp; Calibration Device Shipping in Austin</h1>
             <p className="text-xl text-grey-300 mb-8 max-w-3xl">
-              Infusion pumps, defibrillators, ventilators, and precision clinical electronics are calibrated to FDA-regulated tolerances. In many cases, a single calibration event costs more than the transport itself. Our job is to ensure the device arrives in the same calibration state it left — no shock events, no ESD damage, no connector stress.
+              Infusion pumps, defibrillators, ventilators, and precision clinical electronics are calibrated to FDA-regulated tolerances. In many cases, a single calibration event costs more than the transport itself. Our job is to ensure the device arrives in the same calibration state it left, no shock events, no ESD damage, no connector stress.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={`tel:${SITE_CONFIG.phone}`} className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald rounded-lg font-medium text-white hover:bg-emerald/90 transition-all duration-300">
@@ -71,13 +71,13 @@ export default function SensitiveElectronicsShipping() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Calibration-Critical Devices Need Specialist Transport</h2>
             <p className="text-gray-700 text-lg mb-4">
-              A defibrillator that delivers inconsistent energy output, an infusion pump with a flow-rate error, or a ventilator with a tidal volume drift are not just equipment problems — they are patient safety events. These devices are calibrated to be accurate within tight tolerances because clinical decisions depend on them. Shipping them incorrectly can displace internal calibration references, stress sensing elements, or introduce contact corrosion on precision connectors.
+              A defibrillator that delivers inconsistent energy output, an infusion pump with a flow-rate error, or a ventilator with a tidal volume drift are not just equipment problems, they are patient safety events. These devices are calibrated to be accurate within tight tolerances because clinical decisions depend on them. Shipping them incorrectly can displace internal calibration references, stress sensing elements, or introduce contact corrosion on precision connectors.
             </p>
             <p className="text-gray-700 text-lg mb-4">
               Electrostatic discharge (ESD) is a specific risk that general freight carriers ignore entirely. Handling a device with an exposed PCB or sensor port in a low-humidity environment without anti-static precautions can damage components that appear fully functional but degrade within weeks. Our team uses anti-static packaging materials and follows ESD-safe handling procedures for all electronics with exposed components or open connectors.
             </p>
             <p className="text-gray-700 text-lg">
-              For biomedical engineering teams managing large fleets of infusion pumps, ventilators, or defibrillators — regular transport between facilities, to service depots, and to storage — we provide repeatable, documented processes that fit into your PM (preventive maintenance) and biomedical inventory workflows.
+              For biomedical engineering teams managing large fleets of infusion pumps, ventilators, or defibrillators, regular transport between facilities, to service depots, and to storage, we provide repeatable, documented processes that fit into your PM (preventive maintenance) and biomedical inventory workflows.
             </p>
           </div>
         </section>
@@ -91,10 +91,10 @@ export default function SensitiveElectronicsShipping() {
               {[
                 { title: 'Anti-Static Packaging', desc: 'Devices with exposed PCBs, sensor ports, or open connectors are packed in anti-static foam and bags. All personnel use ESD-safe grounding procedures for these units.' },
                 { title: 'Shock-Isolated Crating', desc: 'Foam density and crate design are selected to the device\'s specific weight and fragility. Internal components do not contact the crate at any point. We target shock levels well below the device\'s rated transport specification.' },
-                { title: 'Connector & Port Protection', desc: 'All external connectors — power, data, probe, and accessory ports — are capped before packing to prevent contamination and mechanical stress on connector bodies during transit.' },
+                { title: 'Connector & Port Protection', desc: 'All external connectors, power, data, probe, and accessory ports, are capped before packing to prevent contamination and mechanical stress on connector bodies during transit.' },
                 { title: 'Battery Handling', desc: 'Devices with internal batteries are checked for charge state. Lithium-ion batteries must ship at less than 30% charge for ground freight. We coordinate with your biomedical team on battery preparation if needed.' },
                 { title: 'Accessory Component Tracking', desc: 'All accessories (power supplies, cables, brackets, docking stations) are listed per unit serial number and packed in a labeled accessory bag inside the primary crate. Nothing goes untracked.' },
-                { title: 'HIPAA-Compliant Data Handling', desc: 'Devices containing patient data — infusion pump logs, defibrillator event records, ventilator patient profiles — are handled without accessing stored data. PHI purging is your biomedical team\'s scope; we document that it was completed.' },
+                { title: 'HIPAA-Compliant Data Handling', desc: 'Devices containing patient data, infusion pump logs, defibrillator event records, ventilator patient profiles, are handled without accessing stored data. PHI purging is your biomedical team\'s scope; we document that it was completed.' },
               ].map((item, i) => (
                 <div key={i} className="p-5 bg-white border border-gray-200 rounded-xl">
                   <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
@@ -140,10 +140,10 @@ export default function SensitiveElectronicsShipping() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
             <div className="space-y-5">
               {[
-                { q: 'Do infusion pumps need to be inspected after transport?', a: 'Yes — biomedical engineering should perform a post-transport functional check and verify calibration before returning any pump to patient use. We transport pumps in a condition that minimizes the probability of calibration shift, but post-transport verification is best practice and required by most facility PM protocols.' },
+                { q: 'Do infusion pumps need to be inspected after transport?', a: 'Yes, biomedical engineering should perform a post-transport functional check and verify calibration before returning any pump to patient use. We transport pumps in a condition that minimizes the probability of calibration shift, but post-transport verification is best practice and required by most facility PM protocols.' },
                 { q: 'Can you ship a fleet of defibrillators from one hospital system to another?', a: 'Yes. We handle hospital fleet transfers regularly. We can coordinate with your biomedical and asset management teams on serial number tracking, accessory accountability, and transport documentation for each unit.' },
                 { q: 'How do you handle lithium battery regulations for medical devices in transit?', a: 'Lithium-ion batteries in medical devices fall under DOT 49 CFR Part 173 regulations for shipping. We follow the applicable ground transport rules: battery state of charge at or below 30%, proper labeling, and documentation. We coordinate with your team to ensure devices are prepared correctly before pickup.' },
-                { q: 'Can you transport ventilators on short notice for emergency facility needs?', a: 'We can often accommodate same-day or next-day transport for urgent clinical needs within Austin. Call (512) 240-9818 directly to discuss timeline — urgent medical equipment moves are something we prioritize.' },
+                { q: 'Can you transport ventilators on short notice for emergency facility needs?', a: 'We can often accommodate same-day or next-day transport for urgent clinical needs within Austin. Call (512) 240-9818 directly to discuss timeline, urgent medical equipment moves are something we prioritize.' },
                 { q: 'What does sensitive medical electronics transport cost?', a: 'Individual units typically start at $150–$350 for local Austin moves. High-value or highly fragile devices that require custom crating are priced per project. Fleet moves are priced per unit at a volume rate. Call (512) 240-9818 for a free quote.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-white border border-gray-200 rounded-xl p-5">

@@ -1,4 +1,4 @@
-import Navigation from '@/app/components/Navigation'
+﻿import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
 import Breadcrumbs from '@/app/components/Breadcrumbs'
 import ServicesGrid from '@/app/components/ServicesGrid'
@@ -12,7 +12,7 @@ const SLUG = '/services/fine-art/sculpture-shipping'
 export function generateMetadata(): Metadata {
   return generateServiceMetadata({
     serviceName: 'Sculpture Shipping & Crating Austin Texas',
-    description: 'Expert sculpture shipping and custom crating in Austin, Texas. Bronze, stone, ceramic, glass, and mixed-media sculptures — custom foam mounts, vibration isolation, and white-glove handling. Call (512) 240-9818.',
+    description: 'Expert sculpture shipping and custom crating in Austin, Texas. Bronze, stone, ceramic, glass, and mixed-media sculptures, custom foam mounts, vibration isolation, and white-glove handling. Call (512) 240-9818.',
     keywords: [
       'sculpture shipping Austin TX',
       'sculpture crating Austin Texas',
@@ -30,7 +30,7 @@ export function generateMetadata(): Metadata {
 export default function SculptureShipping() {
   const serviceSchema = generateServiceSchema({
     serviceName: 'Sculpture Shipping & Crating Austin Texas',
-    description: 'Custom crating and white-glove shipping for sculptures in Austin, TX — bronze, stone, ceramic, glass, and mixed media handled with precision foam mounts and vibration isolation.',
+    description: 'Custom crating and white-glove shipping for sculptures in Austin, TX, bronze, stone, ceramic, glass, and mixed media handled with precision foam mounts and vibration isolation.',
     serviceType: 'Specialty Shipping',
   })
 
@@ -74,7 +74,7 @@ export default function SculptureShipping() {
               A painting has two faces and lives in one plane. A sculpture exists in three dimensions, and each dimension introduces new vulnerabilities. A bronze figure with an outstretched arm will break at the shoulder in a drop if the arm is not independently supported in its crate. A ceramic piece with a narrow neck will fracture at the neck under vibration if the body and head are not separately immobilized. A stone torso will chip at every sharp edge that contacts the crate interior.
             </p>
             <p className="text-gray-700 text-lg mb-4">
-              The solution is not more bubble wrap — it is a custom foam mount that holds the sculpture in the specific position that distributes its weight correctly and isolates every vulnerable projection. We make cardboard templates of complex sculptures before cutting foam, ensuring the mounting fits the actual piece rather than our approximation of it.
+              The solution is not more bubble wrap, it is a custom foam mount that holds the sculpture in the specific position that distributes its weight correctly and isolates every vulnerable projection. We make cardboard templates of complex sculptures before cutting foam, ensuring the mounting fits the actual piece rather than our approximation of it.
             </p>
             <p className="text-gray-700 text-lg">
               Heavy stone and bronze sculptures present an additional challenge: they are dense, so even a small size carries significant weight. A marble bust that weighs 80 lbs needs a crate rated for the weight, with internal bracing that prevents the sculpture from shifting under its own momentum during hard braking or a sudden lift.
@@ -86,13 +86,13 @@ export default function SculptureShipping() {
         <section className="py-16 px-4 bg-gray-50">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-3">How We Crate Sculptures for Shipping</h2>
-            <p className="text-gray-600 mb-8">Our sculpture crating process is built around the individual piece — not a standard protocol applied regardless of geometry or material.</p>
+            <p className="text-gray-600 mb-8">Our sculpture crating process is built around the individual piece, not a standard protocol applied regardless of geometry or material.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                { title: 'Geometry Assessment & Template Making', desc: 'For complex sculptures, we make a cardboard template of the base profile before cutting foam. This ensures the foam mount holds the piece in the correct orientation — not slightly off-axis where it would create pressure on a specific point.' },
-                { title: 'Precision Foam Saddle Construction', desc: 'Foam is cut to support the sculpture at its strongest structural points — the base, major mass areas — not at thin or projecting sections. Projections are individually padded to prevent any contact with the crate interior.' },
+                { title: 'Geometry Assessment & Template Making', desc: 'For complex sculptures, we make a cardboard template of the base profile before cutting foam. This ensures the foam mount holds the piece in the correct orientation, not slightly off-axis where it would create pressure on a specific point.' },
+                { title: 'Precision Foam Saddle Construction', desc: 'Foam is cut to support the sculpture at its strongest structural points, the base, major mass areas, not at thin or projecting sections. Projections are individually padded to prevent any contact with the crate interior.' },
                 { title: 'Vibration Isolation Layer', desc: 'A secondary foam layer below the sculpture mount absorbs road vibration before it reaches the piece. This is particularly important for ceramic and glass sculptures, which micro-fracture under sustained vibration before any single visible impact occurs.' },
-                { title: 'Individual Projection Padding', desc: 'Every element that extends from the main mass — arms, horns, handles, pedestals, thin branches — is wrapped individually before any enclosing material is applied. These are the points where sculptures fail in transit.' },
+                { title: 'Individual Projection Padding', desc: 'Every element that extends from the main mass, arms, horns, handles, pedestals, thin branches, is wrapped individually before any enclosing material is applied. These are the points where sculptures fail in transit.' },
                 { title: 'Surface Contact Materials', desc: 'Metal sculptures with patina (bronze, copper, silver) are wrapped in acid-free tissue to prevent chemical reaction with foam or plastic. Stone and ceramic surfaces are padded with soft foam; glass with polyethylene foam at appropriate density.' },
                 { title: 'Weight-Rated Crate Construction', desc: 'Crate lumber grade is selected based on sculpture weight. A 150 lb bronze warrior requires heavier joinery and a reinforced base compared to a 10 lb ceramic vessel. Forklift entry points are engineered into large sculpture crates.' },
               ].map((item, i) => (
@@ -162,10 +162,10 @@ export default function SculptureShipping() {
             <div className="space-y-5">
               {[
                 { q: 'Can you ship a large outdoor bronze sculpture?', a: 'Yes. Large bronze sculptures are some of the most common pieces we crate. They require weight-rated lumber, engineered internal bracing, and liftgate service at both ends. We assess large sculptures on-site before crating to confirm the approach.' },
-                { q: 'What do you place against a patinated bronze surface?', a: 'Acid-free tissue paper is placed against all patinated metal surfaces. Never foam or plastic directly against bronze — both can react with or adhere to the patina over time. After tissue, soft foam padding is applied for secondary protection.' },
+                { q: 'What do you place against a patinated bronze surface?', a: 'Acid-free tissue paper is placed against all patinated metal surfaces. Never foam or plastic directly against bronze, both can react with or adhere to the patina over time. After tissue, soft foam padding is applied for secondary protection.' },
                 { q: 'Can you ship a kinetic or moving sculpture?', a: 'Yes, with additional planning. Kinetic elements need to be immobilized or removed for packing to prevent self-damage during transit. We assess which elements can be secured in place and which should be packed separately, then document reassembly for the recipient.' },
-                { q: 'Do you ship sculpture to galleries outside Austin?', a: 'Absolutely. We ship sculpture to galleries, exhibitions, and collectors across Texas and nationally. The crating standard is the same regardless of destination — only the freight method changes (local delivery vs. LTL freight vs. dedicated van).' },
-                { q: 'How much insurance do I need for a valuable sculpture?', a: 'Coverage at full replacement value is always recommended. LTL carriers default to $0.10–$0.25 per pound liability — catastrophically low for a $20,000 sculpture. We coordinate declared value coverage through the freight carrier at actual insured value.' },
+                { q: 'Do you ship sculpture to galleries outside Austin?', a: 'Absolutely. We ship sculpture to galleries, exhibitions, and collectors across Texas and nationally. The crating standard is the same regardless of destination, only the freight method changes (local delivery vs. LTL freight vs. dedicated van).' },
+                { q: 'How much insurance do I need for a valuable sculpture?', a: 'Coverage at full replacement value is always recommended. LTL carriers default to $0.10–$0.25 per pound liability, catastrophically low for a $20,000 sculpture. We coordinate declared value coverage through the freight carrier at actual insured value.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                   <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

@@ -1,4 +1,4 @@
-import Navigation from '@/app/components/Navigation'
+﻿import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
 import Breadcrumbs from '@/app/components/Breadcrumbs'
 import ServicesGrid from '@/app/components/ServicesGrid'
@@ -12,7 +12,7 @@ const SLUG = '/services/fine-art/art-installation-shipping'
 export function generateMetadata(): Metadata {
   return generateServiceMetadata({
     serviceName: 'Art Installation Shipping & Crating Austin Texas',
-    description: 'Specialist shipping and crating for art installations in Austin, Texas. Multi-component, oversized, and complex installations — component-by-component crating, documentation, and installation coordination. Call (512) 240-9818.',
+    description: 'Specialist shipping and crating for art installations in Austin, Texas. Multi-component, oversized, and complex installations, component-by-component crating, documentation, and installation coordination. Call (512) 240-9818.',
     keywords: [
       'art installation shipping Austin TX',
       'art installation transport Austin Texas',
@@ -30,7 +30,7 @@ export function generateMetadata(): Metadata {
 export default function ArtInstallationShipping() {
   const serviceSchema = generateServiceSchema({
     serviceName: 'Art Installation Shipping & Crating Austin Texas',
-    description: 'Specialist shipping, crating, and logistics for art installations in Austin, TX — multi-component crating, condition documentation, and end-to-end coordination.',
+    description: 'Specialist shipping, crating, and logistics for art installations in Austin, TX, multi-component crating, condition documentation, and end-to-end coordination.',
     serviceType: 'Specialty Shipping',
   })
 
@@ -52,7 +52,7 @@ export default function ArtInstallationShipping() {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Art Installation Shipping &amp; Crating in Austin, Texas</h1>
             <p className="text-xl text-grey-300 mb-8 max-w-3xl">
-              Art installations present the most complex logistics challenge in the fine art shipping world — multiple components, site-specific assembly requirements, and often materials that do not lend themselves to standard crating. Austin Crate &amp; Freight handles the full logistics process from component inventory to crating to delivery coordination.
+              Art installations present the most complex logistics challenge in the fine art shipping world, multiple components, site-specific assembly requirements, and often materials that do not lend themselves to standard crating. Austin Crate &amp; Freight handles the full logistics process from component inventory to crating to delivery coordination.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={`tel:${SITE_CONFIG.phone}`} className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald rounded-lg font-medium text-white hover:bg-emerald/90 transition-all duration-300">
@@ -71,13 +71,13 @@ export default function ArtInstallationShipping() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">The Unique Logistics Challenge of Art Installations</h2>
             <p className="text-gray-700 text-lg mb-4">
-              An art installation is not a single object — it is a system. It may have 10 components or 300. Some may be fragile and irreplaceable; others may be durable structural elements. The artistic integrity of the work depends on all components arriving intact and being assembled correctly at the destination.
+              An art installation is not a single object, it is a system. It may have 10 components or 300. Some may be fragile and irreplaceable; others may be durable structural elements. The artistic integrity of the work depends on all components arriving intact and being assembled correctly at the destination.
             </p>
             <p className="text-gray-700 text-lg mb-4">
-              This creates logistics requirements that standard art shippers are not set up to handle. Components need to be individually catalogued, crated in a way that makes deinstallation and reinstallation logical, and shipped on a schedule that coordinates with venue availability. Documentation — photographs of the fully installed work, component condition reports, assembly notes — is as important as the physical crating.
+              This creates logistics requirements that standard art shippers are not set up to handle. Components need to be individually catalogued, crated in a way that makes deinstallation and reinstallation logical, and shipped on a schedule that coordinates with venue availability. Documentation, photographs of the fully installed work, component condition reports, assembly notes, is as important as the physical crating.
             </p>
             <p className="text-gray-700 text-lg">
-              We work directly with artists, galleries, and venue coordinators to build a logistics plan for each installation before a single crate is built. The plan defines what gets crated with what, in what order, and what documentation travels with each crate. Installations that have been properly planned arrive ready for reinstallation — not requiring a frantic phone call to the artist to figure out what goes where.
+              We work directly with artists, galleries, and venue coordinators to build a logistics plan for each installation before a single crate is built. The plan defines what gets crated with what, in what order, and what documentation travels with each crate. Installations that have been properly planned arrive ready for reinstallation, not requiring a frantic phone call to the artist to figure out what goes where.
             </p>
           </div>
         </section>
@@ -86,15 +86,15 @@ export default function ArtInstallationShipping() {
         <section className="py-16 px-4 bg-gray-50">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-3">Our Art Installation Logistics Process</h2>
-            <p className="text-gray-600 mb-8">Every installation engagement begins with planning — before any crating begins.</p>
+            <p className="text-gray-600 mb-8">Every installation engagement begins with planning, before any crating begins.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 { title: 'Component Inventory & Photography', desc: 'We photograph and catalogue every component of the installation, noting pre-existing condition, material type, and any special handling requirements. This inventory travels with the shipment and is used for condition check at delivery.' },
-                { title: 'Crating Plan Development', desc: 'We design a crating plan that groups components logically for reinstallation — structural elements together, fragile elements in their own crates, hardware and fasteners in labeled bags inside the relevant crates. The sequence of crate opening at destination mirrors the installation sequence.' },
+                { title: 'Crating Plan Development', desc: 'We design a crating plan that groups components logically for reinstallation, structural elements together, fragile elements in their own crates, hardware and fasteners in labeled bags inside the relevant crates. The sequence of crate opening at destination mirrors the installation sequence.' },
                 { title: 'Component-by-Component Custom Crating', desc: 'Each component group is crated with appropriate materials for its specific fragility. A neon light element gets completely different treatment than a welded steel frame element. Materials are selected for each crate, not applied uniformly across the full installation.' },
                 { title: 'Assembly Documentation', desc: 'We photograph the installation in its complete state before deinstallation begins. For complex installations, we create numbered component photos and written assembly notes that travel inside the crate. The goal is that someone other than the artist can reinstall the work using the documentation.' },
                 { title: 'Freight Coordination & Timing', desc: 'Installation shipping often operates on tight venue timelines. We coordinate with receiving venues on advance warehouse acceptance, loading dock scheduling, and any weight or height restrictions at the delivery location. Missed installation windows cost exhibitions and contracts.' },
-                { title: 'Return Shipping Planning', desc: 'Many installation shipments are round-trips — to an exhibition and back. We retain the crating plan and can coordinate return packing at the venue after the exhibition closes, using the same documentation and crating approach for the return journey.' },
+                { title: 'Return Shipping Planning', desc: 'Many installation shipments are round-trips, to an exhibition and back. We retain the crating plan and can coordinate return packing at the venue after the exhibition closes, using the same documentation and crating approach for the return journey.' },
               ].map((item, i) => (
                 <div key={i} className="p-5 bg-white border border-gray-200 rounded-xl">
                   <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
@@ -138,13 +138,13 @@ export default function ArtInstallationShipping() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Working with Austin Artists &amp; Galleries on Installation Logistics</h2>
             <p className="text-gray-700 text-lg mb-4">
-              Austin&apos;s contemporary art scene includes institutions like Blanton Museum of Art, MASS Gallery, Big Medium, Pump Project, and Canopy Studios — all of which engage artists whose work involves installation. We have experience working within gallery and museum shipping protocols, including condition reporting standards and vendor credentialing requirements.
+              Austin&apos;s contemporary art scene includes institutions like Blanton Museum of Art, MASS Gallery, Big Medium, Pump Project, and Canopy Studios, all of which engage artists whose work involves installation. We have experience working within gallery and museum shipping protocols, including condition reporting standards and vendor credentialing requirements.
             </p>
             <p className="text-gray-700 text-lg mb-4">
-              For traveling exhibitions — works that move from Austin to Houston, Dallas, New York, or international venues — we coordinate the full outgoing and return shipping in a single engagement, so the artist or gallery deals with one company rather than a different vendor at each venue.
+              For traveling exhibitions, works that move from Austin to Houston, Dallas, New York, or international venues, we coordinate the full outgoing and return shipping in a single engagement, so the artist or gallery deals with one company rather than a different vendor at each venue.
             </p>
             <p className="text-gray-700 text-lg">
-              We also work with SXSW and Austin Art Week exhibitors who need installation freight solutions on tight show timelines. Call us early in the planning process — installation logistics require lead time that standard package shipping does not.
+              We also work with SXSW and Austin Art Week exhibitors who need installation freight solutions on tight show timelines. Call us early in the planning process, installation logistics require lead time that standard package shipping does not.
             </p>
           </div>
         </section>
@@ -157,9 +157,9 @@ export default function ArtInstallationShipping() {
               {[
                 { q: 'How far in advance do I need to contact you for an installation shipment?', a: 'For a complex multi-component installation, 2–3 weeks of lead time is ideal. This allows us to conduct a planning session, design the crating approach, build the crates, and coordinate freight timing. Smaller installations with fewer components can often be turned around in 5–7 business days.' },
                 { q: 'Can you deinstall the work at the venue and pack it for return?', a: 'Yes. We can coordinate a return-packing visit at the receiving venue after an exhibition closes. We retain the crating documentation and component inventory from the original shipment, making return packing systematic rather than improvised.' },
-                { q: 'Do you handle electronic components in an installation?', a: 'Yes, with appropriate anti-static precautions. Electronic components — projectors, media players, speakers, interactive sensors — are packed in anti-static foam and labeled with handling requirements. We do not test or program equipment, but we do ensure it arrives physically intact.' },
-                { q: 'How is freight insurance handled for a multi-component installation?', a: 'The installation as a whole should be insured at its full replacement value — not component-by-component, which is both complex and potentially undervalues the work as an integrated piece. We recommend working with your fine art insurer and can provide the component inventory and condition documentation they require.' },
-                { q: 'Can you ship to a venue that does not have a loading dock?', a: 'Yes. Liftgate service is available for venues without loading docks. We coordinate this when booking the freight carrier. Advance notice of the venue\'s physical access situation is important — a liftgate truck cannot access some alleys or underground loading areas.' },
+                { q: 'Do you handle electronic components in an installation?', a: 'Yes, with appropriate anti-static precautions. Electronic components, projectors, media players, speakers, interactive sensors, are packed in anti-static foam and labeled with handling requirements. We do not test or program equipment, but we do ensure it arrives physically intact.' },
+                { q: 'How is freight insurance handled for a multi-component installation?', a: 'The installation as a whole should be insured at its full replacement value, not component-by-component, which is both complex and potentially undervalues the work as an integrated piece. We recommend working with your fine art insurer and can provide the component inventory and condition documentation they require.' },
+                { q: 'Can you ship to a venue that does not have a loading dock?', a: 'Yes. Liftgate service is available for venues without loading docks. We coordinate this when booking the freight carrier. Advance notice of the venue\'s physical access situation is important, a liftgate truck cannot access some alleys or underground loading areas.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                   <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>
