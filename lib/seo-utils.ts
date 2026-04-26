@@ -17,7 +17,7 @@ export const SITE_CONFIG = {
     twitter: 'https://twitter.com/austincrate',
     linkedin: 'https://linkedin.com/company/austincrate',
   },
-  defaultImage: '/images/austin-crate-og.jpg',
+  defaultImage: '/1.jpg',
 }
 
 interface GenerateMetadataParams {
@@ -189,6 +189,8 @@ interface LocalBusinessSchemaParams {
   latitude?: number
   longitude?: number
   additionalType?: string
+  image?: string
+  serviceUrl?: string
 }
 
 export function generateLocalBusinessSchema({
@@ -197,34 +199,83 @@ export function generateLocalBusinessSchema({
   latitude,
   longitude,
   additionalType = 'MovingCompany',
+  image,
+  serviceUrl,
 }: LocalBusinessSchemaParams) {
+  const pageUrl = serviceUrl ? `${SITE_CONFIG.url}${serviceUrl}` : SITE_CONFIG.url
+  const imageUrl = image
+    ? (image.startsWith('http') ? image : `${SITE_CONFIG.url}${image}`)
+    : `${SITE_CONFIG.url}/austin-crate-logo.png`
+
   const schema: any = {
     '@context': 'https://schema.org',
     '@type': ['LocalBusiness', additionalType],
+    '@id': `${pageUrl}#localbusiness`,
     name: `${SITE_CONFIG.name} - ${locationName}`,
     description,
-    telephone: SITE_CONFIG.phone,
+    telephone: `+1${SITE_CONFIG.phone.replace(/\D/g, '')}`,
     email: SITE_CONFIG.email,
-    url: SITE_CONFIG.url,
-    priceRange: '$$',
+    url: pageUrl,
+    image: imageUrl,
+    logo: `${SITE_CONFIG.url}/austin-crate-logo.png`,
+    priceRange: '$$$',
+    currenciesAccepted: 'USD',
+    paymentAccepted: 'Cash, Credit Card, Invoice',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: locationName,
-      addressRegion: 'TX',
+      streetAddress: SITE_CONFIG.address.street,
+      addressLocality: SITE_CONFIG.address.city,
+      addressRegion: SITE_CONFIG.address.state,
+      postalCode: SITE_CONFIG.address.zip,
       addressCountry: 'US',
+    },
+    hasMap: 'https://www.google.com/maps/search/?api=1&query=Austin+Crate+%26+Freight+3112+Windsor+Rd+Austin+TX+78703',
+    sameAs: [
+      SITE_CONFIG.social.facebook,
+      SITE_CONFIG.social.linkedin,
+    ],
+    areaServed: [
+      { '@type': 'City', name: 'Austin' },
+      { '@type': 'City', name: 'Round Rock' },
+      { '@type': 'City', name: 'Cedar Park' },
+      { '@type': 'City', name: 'Georgetown' },
+      { '@type': 'City', name: 'Pflugerville' },
+      { '@type': 'City', name: 'Leander' },
+      { '@type': 'City', name: 'Lakeway' },
+      { '@type': 'City', name: 'Bee Cave' },
+      { '@type': 'City', name: 'Dripping Springs' },
+      { '@type': 'State', name: 'Texas' },
+    ],
+    serviceArea: {
+      '@type': 'GeoCircle',
+      geoMidpoint: {
+        '@type': 'GeoCoordinates',
+        latitude: latitude ?? 30.2972,
+        longitude: longitude ?? -97.7594,
+      },
+      geoRadius: '80000', // 80 km / ~50 miles
     },
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
         opens: '08:00',
-        closes: '17:00',
+        closes: '18:00',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: 'Saturday',
+        opens: '09:00',
+        closes: '14:00',
+        description: 'By appointment',
       },
     ],
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      reviewCount: '127',
+      ratingValue: '5.0',
+      reviewCount: '28',
+      bestRating: '5',
+      worstRating: '1',
     },
   }
 
