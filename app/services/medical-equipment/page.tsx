@@ -35,6 +35,8 @@ export default function MedicalEquipment() {
     description: 'HIPAA-compliant medical equipment transport in Austin, Texas. Specialized handling for diagnostic imaging, laboratory equipment, and sensitive medical devices.',
     latitude: 30.2972,
     longitude: -97.7594,
+    image: '/3.jpg',
+    serviceUrl: '/services/medical-equipment',
   })
 
   return (
@@ -90,9 +92,13 @@ export default function MedicalEquipment() {
             <div className="relative h-96 rounded-2xl overflow-hidden border-2 border-grey-700 shadow-xl">
               <Image
                 src="/3.jpg"
-                alt="Medical Equipment Transport - HIPAA Compliant"
+                alt="HIPAA-compliant medical equipment transport and crating in Austin Texas by Austin Crate & Freight"
                 fill
                 className="object-cover"
+                priority
+                fetchPriority="high"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                quality={80}
               />
             </div>
           </div>
@@ -304,6 +310,78 @@ export default function MedicalEquipment() {
                 <span className="mt-4 inline-block text-sm font-medium text-emerald-600 group-hover:underline">Learn more →</span>
               </a>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Workshop Gallery */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Medical Equipment Crating &amp; Shipping Projects in Austin</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">A look inside our Austin workshop at 3112 Windsor Rd, where every medical equipment crate is engineered for HIPAA-compliant, chain-of-custody transport across Texas and the U.S.</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {[
+              { src: '/IMG_3114.jpg', alt: 'Custom medical equipment crate construction at Austin Crate & Freight workshop, Austin TX' },
+              { src: '/IMG_3832_1681922619689.jpg', alt: 'Secure packaging in progress for medical device shipping from Austin Texas' },
+              { src: '/IMG_3954_1686069785125.jpg', alt: 'Medical equipment crated for HIPAA-compliant transport by Austin Crate & Freight' },
+              { src: '/IMG_3979_1686773817157.jpg', alt: 'Sensitive medical device prepared for chain-of-custody shipping in Austin TX' },
+              { src: '/IMG_4196_1695841417957.jpg', alt: 'Completed medical equipment crate ready for insured freight from Austin Texas' },
+              { src: '/IMG_5091_1714149760004.jpg', alt: 'Lab and medical equipment packed and crated at Austin Crate & Freight facility' },
+            ].map((img, i) => (
+              <div key={i} className="relative aspect-square rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-lg transition-shadow">
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  loading="lazy"
+                  sizes="(max-width: 768px) 50vw, 33vw"
+                  className="object-cover"
+                  quality={70}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Visit Our Workshop / NAP + Map */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Visit Our Austin Crating Workshop</h2>
+              <p className="text-gray-700 text-lg mb-6">
+                Austin Crate &amp; Freight is locally based at <strong>3112 Windsor Rd, Austin, TX 78703</strong>. We provide HIPAA-compliant medical equipment transport and custom crating for healthcare facilities throughout Austin and Central Texas.
+              </p>
+              <ul className="space-y-3 text-gray-700 mb-8">
+                <li className="flex gap-3"><span className="text-emerald font-bold">✓</span> <span><strong>Address:</strong> 3112 Windsor Rd, Austin, TX 78703</span></li>
+                <li className="flex gap-3"><span className="text-emerald font-bold">✓</span> <span><strong>Phone:</strong> <a href="tel:(512) 240-9818" className="text-emerald hover:underline">(512) 240-9818</a></span></li>
+                <li className="flex gap-3"><span className="text-emerald font-bold">✓</span> <span><strong>Hours:</strong> Mon-Fri 8am-6pm, Sat by appointment</span></li>
+                <li className="flex gap-3"><span className="text-emerald font-bold">✓</span> <span><strong>Service area:</strong> Austin, Round Rock, Cedar Park, Georgetown, Pflugerville, Leander, Lakeway, Bee Cave, Dripping Springs</span></li>
+              </ul>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Austin+Crate+%26+Freight+3112+Windsor+Rd+Austin+TX+78703"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-emerald text-white rounded-lg font-semibold hover:bg-emerald/90 transition-all"
+              >
+                Get Directions on Google Maps
+              </a>
+            </div>
+            <div className="relative aspect-video rounded-2xl overflow-hidden border border-gray-200 shadow-lg">
+              <iframe
+                src="https://www.google.com/maps?q=3112+Windsor+Rd+Austin+TX+78703&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Austin Crate & Freight location at 3112 Windsor Rd, Austin, TX 78703"
+                allowFullScreen
+              />
+            </div>
           </div>
         </div>
       </section>

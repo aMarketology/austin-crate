@@ -2,6 +2,7 @@
 import Footer from '../../components/Footer'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Metadata } from 'next'
 import { generateLocationMetadata, generateLocalBusinessSchema } from '@/lib/seo-utils'
 import SEOWrapper from '@/app/components/SEOWrapper'
@@ -35,6 +36,8 @@ export default function Georgetown() {
     description: 'Specialty shipping services in Georgetown, Texas',
     latitude: 30.6327,
     longitude: -97.6779,
+    image: '/1.jpg',
+    serviceUrl: '/locations/georgetown',
   })
 
   return (
@@ -51,29 +54,45 @@ export default function Georgetown() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-700 bg-gray-800/50 backdrop-blur-sm mb-6">
-            <span className="text-xs font-medium text-gray-300 uppercase tracking-widest">Specialty Shipping & Crating, Georgetown, TX</span>
-          </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Specialty Shipping & Crating in Georgetown, TX</h1>
-          <p className="text-xl text-gray-300 mb-8 max-w-3xl">
-            Austin Crate &amp; Freight delivers expert specialty shipping and custom crating to Georgetown, Texas. We serve historic downtown Georgetown, Sun City, Berry Creek, and all surrounding communities with white-glove furniture shipping and crating, fine art transport, heavy item pickup, and medical equipment delivery.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="tel:(512) 240-9818"
-              className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald-600 rounded-lg font-medium text-white hover:bg-emerald-700 transition-all duration-300"
-            >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-              </svg>
-              (512) 240-9818
-            </a>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-gray-800/50 border border-gray-700 rounded-lg font-medium text-gray-200 hover:bg-gray-700/50 backdrop-blur-sm transition-all duration-300"
-            >
-              Get Free Quote
-            </Link>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-700 bg-gray-800/50 backdrop-blur-sm mb-6">
+                <span className="text-xs font-medium text-gray-300 uppercase tracking-widest">Specialty Shipping & Crating, Georgetown, TX</span>
+              </div>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">Specialty Shipping & Crating in Georgetown, TX</h1>
+              <p className="text-xl text-gray-300 mb-8">
+                Austin Crate &amp; Freight delivers expert specialty shipping and custom crating to Georgetown, Texas. We serve historic downtown Georgetown, Sun City, Berry Creek, and all surrounding communities with white-glove furniture shipping and crating, fine art transport, heavy item pickup, and medical equipment delivery.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="tel:(512) 240-9818"
+                  className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald-600 rounded-lg font-medium text-white hover:bg-emerald-700 transition-all duration-300"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                  </svg>
+                  (512) 240-9818
+                </a>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-gray-800/50 border border-gray-700 rounded-lg font-medium text-gray-200 hover:bg-gray-700/50 backdrop-blur-sm transition-all duration-300"
+                >
+                  Get Free Quote
+                </Link>
+              </div>
+            </div>
+            <div className="relative h-96 rounded-2xl overflow-hidden border-2 border-gray-700 shadow-xl">
+              <Image
+                src="/1.jpg"
+                alt="Specialty shipping and custom crating in Georgetown Texas by Austin Crate & Freight"
+                fill
+                className="object-cover"
+                priority
+                fetchPriority="high"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                quality={80}
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -290,6 +309,46 @@ export default function Georgetown() {
             >
               Call (512) 240-9818
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Serving Georgetown / NAP + Map */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Serving Our Team in Georgetown</h2>
+              <p className="text-gray-700 text-lg mb-6">
+                Austin Crate &amp; Freight serves Georgetown from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, just 35 minutes from Georgetown's historic town square via I-35. Free pickup throughout Georgetown, TX 78626, 78627, and 78628.
+              </p>
+              <ul className="space-y-3 text-gray-700 mb-8">
+                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Address:</strong> 3112 Windsor Rd, Austin, TX 78703</span></li>
+                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Phone:</strong> <a href="tel:(512) 240-9818" className="text-emerald-600 hover:underline">(512) 240-9818</a></span></li>
+                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Hours:</strong> Mon-Fri 8am-6pm, Sat by appointment</span></li>
+                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Georgetown pickup:</strong> Free throughout Georgetown, Round Rock, Cedar Park, and Greater Austin</span></li>
+              </ul>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Austin+Crate+%26+Freight+3112+Windsor+Rd+Austin+TX+78703"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-700 transition-all"
+              >
+                Get Directions on Google Maps
+              </a>
+            </div>
+            <div className="relative aspect-video rounded-2xl overflow-hidden border border-gray-200 shadow-lg">
+              <iframe
+                src="https://www.google.com/maps?q=3112+Windsor+Rd+Austin+TX+78703&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Austin Crate & Freight workshop serving Georgetown TX"
+                allowFullScreen
+              />
+            </div>
           </div>
         </div>
       </section>

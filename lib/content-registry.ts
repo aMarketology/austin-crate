@@ -135,7 +135,7 @@ export const contentRegistry: ContentEntry[] = [
     description:
       'Expert furniture shipping and crating in Austin, Texas. Custom wood crates built in-house, white-glove pickup, disassembly & reassembly for designer, antique & heavy furniture. Scratch-free guarantee. Call (512) 240-9818.',
     publishDate: '2024-01-01',
-    modifiedDate: '2026-03-07',
+    modifiedDate: '2026-04-27',
     category: 'Services',
     tags: ['furniture shipping and crating Austin Texas', 'furniture crating Austin TX', 'custom furniture crating Austin', 'furniture shipping Austin Texas', 'antique furniture shipping Texas', 'white glove furniture movers Austin', 'heavy furniture pickup Austin TX'],
     author: 'Austin Crate & Freight',
@@ -292,7 +292,7 @@ export const contentRegistry: ContentEntry[] = [
     description:
       'HIPAA-compliant medical equipment transport in Austin, TX. Secure shipping for surgical instruments, imaging machines, lab equipment, and sensitive devices. Fully insured and bonded.',
     publishDate: '2024-01-01',
-    modifiedDate: '2026-02-01',
+    modifiedDate: '2026-04-27',
     category: 'Services',
     tags: ['medical equipment', 'HIPAA', 'medical transport', 'surgical instruments', 'Austin TX'],
     author: 'Austin Crate & Freight',
@@ -370,7 +370,7 @@ export const contentRegistry: ContentEntry[] = [
     description:
       'Heavy package pickup and oversized item shipping in Austin, TX. Custom crating for furniture, equipment, and machinery. Free local pickup. Call (512) 240-9818.',
     publishDate: '2026-02-26',
-    modifiedDate: '2026-02-26',
+    modifiedDate: '2026-04-27',
     category: 'Services',
     tags: ['heavy items', 'heavy package pickup', 'oversized shipping', 'Austin TX', 'custom crating', 'specialty shipping'],
     author: 'Austin Crate & Freight',
@@ -383,7 +383,7 @@ export const contentRegistry: ContentEntry[] = [
     description:
       'Ship oversized items from Austin, Texas. Custom crating and freight for items too large for FedEx or UPS. White-glove pickup, fully insured. Free quotes.',
     publishDate: '2026-02-26',
-    modifiedDate: '2026-02-26',
+    modifiedDate: '2026-04-27',
     category: 'Services',
     tags: ['oversized shipping', 'large items', 'freight', 'Austin TX', 'custom crating', 'bulky items'],
     author: 'Austin Crate & Freight',
@@ -528,7 +528,7 @@ export const contentRegistry: ContentEntry[] = [
     description:
       'Specialty shipping & custom crating in Round Rock, TX — furniture shipping and crating, fine art transport, heavy item pickup & medical equipment. White-glove service. Call (512) 240-9818.',
     publishDate: '2024-01-01',
-    modifiedDate: '2026-03-07',
+    modifiedDate: '2026-04-27',
     category: 'Locations',
     tags: ['Round Rock', 'specialty shipping', 'specialty crating', 'furniture shipping and crating', 'custom furniture shipping', 'heavy package pickup', 'white glove shipping'],
     author: 'Austin Crate & Freight',
@@ -541,7 +541,7 @@ export const contentRegistry: ContentEntry[] = [
     description:
       'Specialty shipping & custom crating in Cedar Park, TX — furniture shipping and crating, fine art transport, heavy item pickup & medical equipment. White-glove service. Call (512) 240-9818.',
     publishDate: '2024-01-01',
-    modifiedDate: '2026-03-07',
+    modifiedDate: '2026-04-27',
     category: 'Locations',
     tags: ['Cedar Park', 'specialty shipping', 'specialty crating', 'furniture shipping and crating', 'custom furniture shipping', 'heavy package pickup', 'white glove shipping'],
     author: 'Austin Crate & Freight',
@@ -554,7 +554,7 @@ export const contentRegistry: ContentEntry[] = [
     description:
       'Specialty shipping & custom crating in Georgetown, TX — furniture shipping and crating, antique transport, fine art shipping, heavy item pickup & medical equipment. White-glove. Call (512) 240-9818.',
     publishDate: '2024-01-01',
-    modifiedDate: '2026-03-07',
+    modifiedDate: '2026-04-27',
     category: 'Locations',
     tags: ['Georgetown', 'specialty shipping', 'specialty crating', 'furniture shipping and crating', 'antique shipping', 'custom furniture shipping', 'heavy package pickup', 'Williamson County'],
     author: 'Austin Crate & Freight',

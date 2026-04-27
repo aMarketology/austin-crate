@@ -2,6 +2,7 @@
 import Footer from '../../components/Footer'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Metadata } from 'next'
 import { generateServiceMetadata, generateServiceSchema, generateLocalBusinessSchema, SITE_CONFIG } from '@/lib/seo-utils'
 import { oversizedShippingFAQSchema } from '@/lib/faq-schema'
@@ -24,7 +25,7 @@ export const metadata: Metadata = generateServiceMetadata({
     'custom crating oversized items',
   ],
   serviceUrl: '/services/oversized-shipping',
-  ogImage: '/IMG_4446_1703172460423.jpg',
+  ogImage: '/IMG_8539.jpeg',
 })
 
 export default function OversizedShipping() {
@@ -40,6 +41,8 @@ export default function OversizedShipping() {
     description: 'Oversized item shipping from Austin, Texas. Custom crating and freight for items too large for FedEx or UPS. White-glove pickup, fully insured.',
     latitude: 30.2972,
     longitude: -97.7594,
+    image: '/IMG_8539.jpeg',
+    serviceUrl: '/services/oversized-shipping',
   })
 
   return (
@@ -65,32 +68,46 @@ export default function OversizedShipping() {
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white pt-28 md:pt-32 pb-16 md:pb-20 px-4">
           <div className="max-w-5xl mx-auto">
-            <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-grey-700 bg-grey-800/50 backdrop-blur-sm mb-6">
-                <span className="text-xs font-medium text-grey-300 uppercase tracking-widest">Specialty Shipping</span>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-grey-700 bg-grey-800/50 backdrop-blur-sm mb-6">
+                  <span className="text-xs font-medium text-grey-300 uppercase tracking-widest">Specialty Shipping</span>
+                </div>
+                <h1 className="text-5xl md:text-6xl font-bold mb-6">
+                  Oversized Item Shipping &amp; Transport in Austin, TX
+                </h1>
+                <p className="text-xl text-grey-300 mb-8">
+                  Too big for FedEx or UPS? We specialize in shipping oversized items from Austin, Texas. Custom crating, freight coordination, and door-to-door delivery for items that standard carriers refuse.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <a
+                    href="tel:(512) 240-9818"
+                    className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald rounded-lg font-medium text-white hover:bg-emerald/90 transition-all duration-300"
+                  >
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    </svg>
+                    (512) 240-9818
+                  </a>
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-grey-800/50 border border-grey-700 rounded-lg font-medium text-grey-200 hover:bg-grey-700/50 hover:border-grey-600 backdrop-blur-sm transition-all duration-300"
+                  >
+                    Get Free Quote
+                  </Link>
+                </div>
               </div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">
-                Oversized Item Shipping &amp; Transport in Austin, TX
-              </h1>
-              <p className="text-xl text-grey-300 mb-8 max-w-2xl">
-                Too big for FedEx or UPS? We specialize in shipping oversized items from Austin, Texas. Custom crating, freight coordination, and door-to-door delivery for items that standard carriers refuse.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="tel:(512) 240-9818"
-                  className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald rounded-lg font-medium text-white hover:bg-emerald/90 transition-all duration-300"
-                >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                  </svg>
-                  (512) 240-9818
-                </a>
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-grey-800/50 border border-grey-700 rounded-lg font-medium text-grey-200 hover:bg-grey-700/50 hover:border-grey-600 backdrop-blur-sm transition-all duration-300"
-                >
-                  Get Free Quote
-                </Link>
+              <div className="relative h-96 rounded-2xl overflow-hidden border-2 border-grey-700 shadow-xl">
+                <Image
+                  src="/IMG_8539.jpeg"
+                  alt="Oversized item custom crating and shipping in Austin Texas by Austin Crate & Freight"
+                  fill
+                  className="object-cover"
+                  priority
+                  fetchPriority="high"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  quality={80}
+                />
               </div>
             </div>
           </div>
@@ -457,6 +474,78 @@ export default function OversizedShipping() {
                 <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-emerald transition-colors">Buy a Custom Crate</h3>
                 <p className="text-gray-600 text-sm">Order a custom-built wood shipping crate for your oversized item. Engineered for protection.</p>
               </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Workshop Gallery */}
+        <section className="py-20 px-4 bg-gray-50">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Oversized Item Crating &amp; Shipping Projects in Austin</h2>
+              <p className="text-gray-600 max-w-2xl mx-auto">A look inside our Austin workshop at 3112 Windsor Rd, where every crate for oversized items is custom-built for secure freight transport across Texas and the U.S.</p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { src: '/IMG_3114.jpg', alt: 'Custom oversized item crate being constructed at Austin Crate & Freight, Austin TX' },
+                { src: '/IMG_3832_1681922619689.jpg', alt: 'Oversized package crating in progress at Austin Crate & Freight workshop' },
+                { src: '/IMG_3954_1686069785125.jpg', alt: 'Large custom crate for oversized freight shipping from Austin Texas' },
+                { src: '/IMG_3979_1686773817157.jpg', alt: 'Oversized item prepared for custom wood crating at Austin Crate & Freight facility' },
+                { src: '/IMG_4196_1695841417957.jpg', alt: 'Completed oversized shipping crate ready for LTL freight from Austin TX' },
+                { src: '/IMG_5091_1714149760004.jpg', alt: 'Bulky oversized item crated for nationwide freight shipping from Austin Texas' },
+              ].map((img, i) => (
+                <div key={i} className="relative aspect-square rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-lg transition-shadow">
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    fill
+                    loading="lazy"
+                    sizes="(max-width: 768px) 50vw, 33vw"
+                    className="object-cover"
+                    quality={70}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Visit Our Workshop / NAP + Map */}
+        <section className="py-20 px-4 bg-white">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Visit Our Austin Crating Workshop</h2>
+                <p className="text-gray-700 text-lg mb-6">
+                  Austin Crate &amp; Freight is locally based at <strong>3112 Windsor Rd, Austin, TX 78703</strong>. We pick up oversized items across the Austin metro, build custom crates in our shop, and ship them door-to-door anywhere in the U.S.
+                </p>
+                <ul className="space-y-3 text-gray-700 mb-8">
+                  <li className="flex gap-3"><span className="text-emerald font-bold">✓</span> <span><strong>Address:</strong> 3112 Windsor Rd, Austin, TX 78703</span></li>
+                  <li className="flex gap-3"><span className="text-emerald font-bold">✓</span> <span><strong>Phone:</strong> <a href="tel:(512) 240-9818" className="text-emerald hover:underline">(512) 240-9818</a></span></li>
+                  <li className="flex gap-3"><span className="text-emerald font-bold">✓</span> <span><strong>Hours:</strong> Mon-Fri 8am-6pm, Sat by appointment</span></li>
+                  <li className="flex gap-3"><span className="text-emerald font-bold">✓</span> <span><strong>Service area:</strong> Austin, Round Rock, Cedar Park, Georgetown, Pflugerville, Leander, Lakeway, Bee Cave, Dripping Springs</span></li>
+                </ul>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Austin+Crate+%26+Freight+3112+Windsor+Rd+Austin+TX+78703"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-emerald text-white rounded-lg font-semibold hover:bg-emerald/90 transition-all"
+                >
+                  Get Directions on Google Maps
+                </a>
+              </div>
+              <div className="relative aspect-video rounded-2xl overflow-hidden border border-gray-200 shadow-lg">
+                <iframe
+                  src="https://www.google.com/maps?q=3112+Windsor+Rd+Austin+TX+78703&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Austin Crate & Freight location at 3112 Windsor Rd, Austin, TX 78703"
+                  allowFullScreen
+                />
+              </div>
             </div>
           </div>
         </section>
