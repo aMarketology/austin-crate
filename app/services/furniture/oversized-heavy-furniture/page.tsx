@@ -1,6 +1,7 @@
 ﻿import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
 import Breadcrumbs from '@/app/components/Breadcrumbs'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import { generateServiceMetadata, generateServiceSchema, SITE_CONFIG } from '@/lib/seo-utils'
@@ -48,6 +49,8 @@ export default function OversizedFurnitureShipping() {
         {/* Hero */}
         <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white pt-28 md:pt-32 pb-16 px-4">
           <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
             <Link href="/services/furniture" className="text-emerald hover:underline mb-4 inline-block text-sm">
               ← Furniture Shipping & Crating
             </Link>
@@ -68,6 +71,20 @@ export default function OversizedFurnitureShipping() {
               </Link>
             </div>
           </div>
+            <div className="relative h-96 rounded-2xl overflow-hidden border-2 border-grey-700 shadow-xl">
+              <Image
+                src="/1.jpg"
+                alt="Oversized heavy furniture shipping Austin Texas"
+                fill
+                className="object-cover"
+                priority
+                fetchPriority="high"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                quality={80}
+              />
+            </div>
+          </div>
+</div>
         </section>
 
         {/* When Standard Carriers Fail */}
