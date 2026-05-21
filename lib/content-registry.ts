@@ -866,6 +866,19 @@ export const contentRegistry: ContentEntry[] = [
     changeFrequency: 'monthly',
   },
   {
+    slug: '/blog/safe-vault-moving-austin',
+    title: 'Safe & Vault Moving in Austin, TX: What It Actually Takes (2026 Guide) | Austin Crate & Freight',
+    description:
+      'Everything Austin homeowners and businesses need to know before moving a safe or vault — weight limits, stair fees, what movers won\'t touch, and how custom crating protects your investment.',
+    publishDate: '2026-05-21',
+    modifiedDate: '2026-05-21',
+    category: 'Blog',
+    tags: ['safe moving Austin TX', 'vault moving Austin', 'gun safe movers Austin', 'heavy safe moving', 'safe transport Austin Texas', 'commercial vault moving Austin'],
+    author: 'Peter Hall',
+    priority: 0.8,
+    changeFrequency: 'monthly',
+  },
+  {
     slug: '/blog/custom-crating-vs-standard-boxes',
     title: 'Custom Crating vs. Standard Boxes: When You Need a Crate | Austin Crate & Freight',
     description:
