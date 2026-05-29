@@ -344,11 +344,11 @@ export default function HomeClient() {
             transition={{ duration: 0.8, delay: 1.1 }}
             className="w-full mt-8 space-y-3 px-2"
           >
-            {/* Featured image */}
+            {/* Featured image — Unsplash luxury furniture */}
             <Link href="/services/furniture" className="block">
               <div className="relative h-48 rounded-2xl overflow-hidden border-2 border-grey-200 shadow-lg hover:border-emerald transition-all hover:scale-[1.02]">
                 <Image
-                  src="/2.jpg"
+                  src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=80&fit=crop&auto=format"
                   alt="Furniture Shipping and Crating Austin TX - White Glove Transport"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -367,7 +367,7 @@ export default function HomeClient() {
               <Link href="/services/fine-art" className="block">
                 <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md hover:border-emerald transition-all hover:scale-[1.02]">
                   <Image
-                    src="/1.jpg"
+                    src="https://images.unsplash.com/photo-1541367777708-7905fe3296c0?w=600&q=80&fit=crop&auto=format"
                     alt="Fine Art Crating and Shipping Austin TX - Museum Quality Transport"
                     fill
                     sizes="50vw"
@@ -383,7 +383,7 @@ export default function HomeClient() {
               <Link href="/services/medical-equipment" className="block">
                 <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md hover:border-emerald transition-all hover:scale-[1.02]">
                   <Image
-                    src="/3.jpg"
+                    src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80&fit=crop&auto=format"
                     alt="Medical Equipment Shipping and Crating Austin TX"
                     fill
                     sizes="50vw"
@@ -430,7 +430,7 @@ export default function HomeClient() {
 
             {/* Experience badge */}
             <div className="p-4 rounded-xl bg-white border-2 border-emerald/20 text-center shadow-sm">
-              <div className="text-3xl font-bold text-emerald mb-0.5">10+</div>
+              <div className="text-3xl font-bold text-emerald mb-0.5">15+</div>
               <div className="text-xs text-grey-600 font-medium uppercase tracking-wider">Years Experience</div>
             </div>
           </motion.div>
@@ -539,11 +539,11 @@ export default function HomeClient() {
                 transition={{ duration: 0.8, delay: 0.8 }}
                 className="space-y-4"
               >
-                {/* Featured Image - Furniture Transport */}
+                {/* Featured Image — Unsplash luxury furniture */}
                 <Link href="/services/furniture" className="block">
                   <div className="relative h-52 rounded-2xl overflow-hidden border-2 border-grey-200 shadow-lg bg-white hover:border-emerald transition-all hover:scale-[1.02] cursor-pointer">
                     <Image
-                      src="/2.jpg"
+                      src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&q=80&fit=crop&auto=format"
                       alt="Furniture Shipping and Crating Austin TX - White Glove Transport"
                       fill
                       sizes="(max-width: 1024px) 100vw, 33vw"
@@ -562,15 +562,13 @@ export default function HomeClient() {
                   <Link href="/services/fine-art" className="block">
                     <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md bg-white hover:border-emerald transition-all hover:scale-[1.02] cursor-pointer">
                       <Image
-                        src="/1.jpg"
+                        src="https://images.unsplash.com/photo-1541367777708-7905fe3296c0?w=600&q=80&fit=crop&auto=format"
                         alt="Fine Art Crating and Shipping Austin TX - Museum Quality Transport"
                         fill
                         sizes="(max-width: 1024px) 50vw, 25vw"
                         className="object-cover"
                         quality={75}
                         loading="lazy"
-                        placeholder="blur"
-                        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgIBAwQDAAAAAAAAAAAAAQIDBAAFESEGEjFBE1Fx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEEECCDggEeD5rR+mdQu3tFr2b0rTTsZcyP7Pnf2ffsV1EaFEBBqAn//2Q=="
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-4">
                         <span className="text-white text-sm font-bold">Fine Art Crating</span>
@@ -580,15 +578,13 @@ export default function HomeClient() {
                   <Link href="/services/medical-equipment" className="block">
                     <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md bg-white hover:border-emerald transition-all hover:scale-[1.02] cursor-pointer">
                       <Image
-                        src="/3.jpg"
+                        src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80&fit=crop&auto=format"
                         alt="Medical Equipment Shipping and Crating Austin TX - Compliant Device Transport"
                         fill
                         sizes="(max-width: 1024px) 50vw, 25vw"
                         className="object-cover"
                         quality={75}
                         loading="lazy"
-                        placeholder="blur"
-                        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgIBAwQDAAAAAAAAAAAAAQIDBAAFESEGEjFBE1Fx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEEECCDggEeD5rR+mdQu3tFr2b0rTTsZcyP7Pnf2ffsV1EaFEBBqAn//2Q=="
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-grey-900/60 to-transparent flex items-end p-4">
                         <span className="text-white text-sm font-bold">Medical Equipment Shipping</span>
@@ -632,7 +628,7 @@ export default function HomeClient() {
                 {/* Stats Row */}
                 <div className="pt-3">
                   <div className="p-4 rounded-xl bg-white border-2 border-emerald/20 text-center shadow-sm">
-                    <div className="text-3xl font-bold text-emerald mb-1">10+</div>
+                    <div className="text-3xl font-bold text-emerald mb-1">15+</div>
                     <div className="text-xs text-grey-600 font-medium">Years Experience</div>
                   </div>
                 </div>
@@ -950,6 +946,149 @@ export default function HomeClient() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* === REAL WORK GALLERY + GOOGLE REVIEW SECTION === */}
+      <section className="relative py-10 md:py-20 bg-white border-t-4 border-grey-100">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+
+          {/* Section header */}
+          <div className="text-center mb-10 md:mb-14">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border-2 border-emerald/30 bg-emerald/5 mb-4">
+              <span className="text-xs font-semibold text-grey-800 uppercase tracking-widest">Real Jobs. Real Results.</span>
+            </div>
+            <h2 className="font-serif text-3xl md:text-5xl font-bold text-grey-900 mb-3 tracking-tight">
+              Austin Crate &amp; Freight <span className="text-emerald">in Action</span>
+            </h2>
+            <p className="text-grey-500 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+              Every crate is hand-built by Peter Hall and his crew at 3112 Windsor Rd, Austin, TX. These are real photos from real jobs across Central Texas.
+            </p>
+          </div>
+
+          {/* Photo grid — real business photos */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 mb-12">
+            {[
+              { src: '/IMG_3105.jpg', alt: 'Custom crate build — Austin Crate & Freight' },
+              { src: '/IMG_3748.jpg', alt: 'Specialty freight crating Austin TX' },
+              { src: '/IMG_4196_1695841417957.jpg', alt: 'White-glove packing service Austin' },
+              { src: '/IMG_4446_1703172460423.jpg', alt: 'Heavy item crating and shipping Austin' },
+              { src: '/IMG_5091_1714149760004.jpg', alt: 'Custom wood crate fabrication Austin TX' },
+              { src: '/IMG_3954_1686069785125.jpg', alt: 'Specialty shipping Austin Texas' },
+              { src: '/IMG_3979_1686773817157.jpg', alt: 'Museum-quality packing Austin Crate' },
+              { src: '/IMG_3832_1681922619689.jpg', alt: 'Fine art crating Austin TX' },
+            ].map((photo, i) => (
+              <Link key={i} href="/gallery" className="block group">
+                <div className="relative h-36 md:h-44 rounded-xl overflow-hidden border border-grey-200 shadow-sm hover:border-emerald hover:shadow-md transition-all hover:scale-[1.02]">
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt}
+                    fill
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    quality={70}
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          {/* Google Review + Meet the Team split */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
+
+            {/* Google Review Card */}
+            <div className="bg-gray-50 rounded-2xl border border-gray-100 p-8">
+              <div className="flex items-center gap-3 mb-5">
+                {/* Google G */}
+                <div className="w-10 h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center shrink-0">
+                  <svg viewBox="0 0 24 24" className="w-6 h-6" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                  </svg>
+                </div>
+                <div>
+                  <div className="flex text-yellow-400 text-lg leading-none mb-0.5">★★★★★</div>
+                  <p className="text-sm font-bold text-gray-900">5.0 · Google Reviews</p>
+                </div>
+              </div>
+
+              <blockquote className="text-gray-700 leading-relaxed text-base italic mb-5">
+                "Austin Crate &amp; Freight is exactly what you need when you have something truly irreplaceable to ship. Peter and his team built a custom crate that protected our piece perfectly — arrived without a scratch. Professional, communicative, and priced fairly. Will use again without question."
+              </blockquote>
+
+              <div className="flex items-center gap-3">
+                <div className="w-9 h-9 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 font-bold text-sm shrink-0">
+                  AC
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-gray-900">Verified Google Customer</p>
+                  <p className="text-xs text-gray-400">Austin, TX · via Google Business</p>
+                </div>
+              </div>
+
+              <div className="mt-5 pt-5 border-t border-gray-100 flex items-center justify-between">
+                <div className="text-xs text-gray-400">3112 Windsor Rd, Austin, TX 78703</div>
+                <div className="text-xs font-semibold text-emerald-600">Mon–Fri: 8 AM – 6 PM</div>
+              </div>
+            </div>
+
+            {/* Meet the Team Card */}
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white">
+              <div className="flex items-center gap-2 mb-5">
+                <div className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                <span className="text-xs font-semibold text-emerald-400 uppercase tracking-widest">The People Behind the Crates</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-6">Meet the Team</h3>
+
+              <div className="space-y-5">
+                <Link href="/authors/peter-hall" className="flex items-center gap-4 group">
+                  <div className="w-12 h-12 rounded-full bg-emerald-600 flex items-center justify-center text-white font-bold text-lg shrink-0 group-hover:bg-emerald-500 transition-colors">
+                    PH
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="font-bold text-white group-hover:text-emerald-300 transition-colors">Peter Hall</p>
+                    <p className="text-sm text-gray-400">Owner &amp; Master Crate Builder · 15+ years</p>
+                  </div>
+                  <svg className="w-4 h-4 text-gray-500 group-hover:text-emerald-400 transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+
+                <div className="border-t border-gray-700" />
+
+                <Link href="/authors/max-deleonardis" className="flex items-center gap-4 group">
+                  <div className="w-12 h-12 rounded-full bg-sky-600 flex items-center justify-center text-white font-bold text-lg shrink-0 group-hover:bg-sky-500 transition-colors">
+                    MD
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="font-bold text-white group-hover:text-sky-300 transition-colors">Max DeLeonardis</p>
+                    <p className="text-sm text-gray-400">Operations Manager · Freight &amp; Logistics</p>
+                  </div>
+                  <svg className="w-4 h-4 text-gray-500 group-hover:text-sky-400 transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+
+              <div className="mt-8 pt-5 border-t border-gray-700">
+                <p className="text-gray-400 text-sm mb-4">
+                  Our blog is written by the same people who build your crates — firsthand expertise, real Austin pricing, no fluff.
+                </p>
+                <div className="flex gap-3">
+                  <Link href="/about" className="flex-1 text-center text-sm font-semibold bg-white/10 hover:bg-white/20 text-white py-2.5 rounded-lg transition-colors">
+                    About Us →
+                  </Link>
+                  <Link href="/blog" className="flex-1 text-center text-sm font-semibold bg-emerald-600 hover:bg-emerald-500 text-white py-2.5 rounded-lg transition-colors">
+                    Read the Blog →
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
