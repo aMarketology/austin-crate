@@ -49,9 +49,10 @@ export default function CostToShipHeavyItemsBlog() {
     description:
       'Complete pricing guide for shipping heavy items in Austin, TX. Compare costs for heavy package pickup, custom furniture shipping, oversized item transport, and freight solutions.',
     author: {
-      '@type': 'Organization',
-      name: 'Austin Crate & Freight',
-      url: 'https://austincrate.com',
+      '@type': 'Person',
+      name: 'Max DeLeonardis',
+      url: 'https://austincrate.com/authors/max-deleonardis',
+      jobTitle: 'Operations Manager',
     },
     publisher: {
       '@type': 'Organization',

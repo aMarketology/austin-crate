@@ -45,15 +45,15 @@ export default function WhiteGloveShippingBlog() {
     author: [
       {
         '@type': 'Person',
-        name: 'Max-de',
-        url: 'https://austincrate.com/about',
-        jobTitle: 'Marketing Director',
+        name: 'Max DeLeonardis',
+        url: 'https://austincrate.com/authors/max-deleonardis',
+        jobTitle: 'Operations Manager',
       },
       {
         '@type': 'Person',
         name: 'Peter Hall',
-        url: 'https://austincrate.com/about',
-        jobTitle: 'Owner',
+        url: 'https://austincrate.com/authors/peter-hall',
+        jobTitle: 'Owner & Master Crate Builder',
       },
     ],
     publisher: {
@@ -89,11 +89,11 @@ export default function WhiteGloveShippingBlog() {
               <span>📅 March 25, 2026</span>
               <span>
                 ✍️{' '}
-                <Link href="/about" className="text-emerald hover:underline">
-                  Max-de
+                <Link href="/authors/max-deleonardis" className="text-emerald hover:underline">
+                  Max DeLeonardis
                 </Link>{' '}
                 &amp;{' '}
-                <Link href="/about" className="text-emerald hover:underline">
+                <Link href="/authors/peter-hall" className="text-emerald hover:underline">
                   Peter Hall
                 </Link>
               </span>

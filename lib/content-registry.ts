@@ -892,6 +892,34 @@ export const contentRegistry: ContentEntry[] = [
     changeFrequency: 'monthly',
   },
 
+  // ── Author Pages ─────────────────────────────────────────────────────────────
+  {
+    slug: '/authors/peter-hall',
+    title: 'Peter Hall — Owner & Master Crate Builder | Austin Crate & Freight',
+    description:
+      'Peter Hall is the founder and owner of Austin Crate & Freight. With over 15 years building custom crates and shipping high-value freight across Texas, Peter writes about specialty shipping, fine-art crating, and white-glove logistics.',
+    publishDate: '2026-05-28',
+    modifiedDate: '2026-05-28',
+    category: 'Core',
+    tags: ['Peter Hall', 'Austin Crate owner', 'specialty shipping expert Austin', 'custom crating Austin Texas'],
+    author: 'Peter Hall',
+    priority: 0.7,
+    changeFrequency: 'monthly',
+  },
+  {
+    slug: '/authors/max-deleonardis',
+    title: 'Max DeLeonardis — Operations Manager | Austin Crate & Freight',
+    description:
+      'Max DeLeonardis is the Operations Manager at Austin Crate & Freight. He oversees specialty freight logistics across Central Texas and writes about cost-saving shipping strategies, equipment crating, and Austin-area freight.',
+    publishDate: '2026-05-28',
+    modifiedDate: '2026-05-28',
+    category: 'Core',
+    tags: ['Max DeLeonardis', 'Austin Crate operations', 'specialty freight logistics Austin', 'equipment crating Austin'],
+    author: 'Max DeLeonardis',
+    priority: 0.7,
+    changeFrequency: 'monthly',
+  },
+
   // ── Service Sub-Pages ─────────────────────────────────────────────────────────
   {
     slug: '/services/heavy-items/pool-table-shipping',

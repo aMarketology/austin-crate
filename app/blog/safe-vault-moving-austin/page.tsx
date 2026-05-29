@@ -48,7 +48,7 @@ export default function SafeVaultMovingAustin() {
       {
         '@type': 'Person',
         name: 'Peter Hall',
-        url: 'https://austincrate.com/about',
+        url: 'https://austincrate.com/authors/peter-hall',
         jobTitle: 'Owner',
       },
     ],
@@ -144,7 +144,7 @@ export default function SafeVaultMovingAustin() {
               <span>📅 May 21, 2026</span>
               <span>
                 ✍️{' '}
-                <Link href="/about" className="text-emerald hover:underline">
+                <Link href="/authors/peter-hall" className="text-emerald hover:underline">
                   Peter Hall
                 </Link>
               </span>

@@ -1,6 +1,7 @@
 ﻿import Link from 'next/link'
 import Navigation from '@/app/components/Navigation'
 import Footer from '@/app/components/Footer'
+import AuthorCard from '@/app/components/AuthorCard'
 
 /**
  * BlogSeoAtx, Google News–optimised blog layout for Austin Crate & Freight
@@ -10,6 +11,8 @@ import Footer from '@/app/components/Footer'
  *   date         - Human-readable publish date (e.g. "March 25, 2026")
  *   isoDate      - ISO 8601 date for structured data (e.g. "2026-03-25")
  *   author       - Author display name (defaults to "Austin Crate & Freight")
+ *   authorUrl    - URL to the author profile page (e.g. "/authors/peter-hall")
+ *   authorTitle  - Author job title shown in the byline
  *   category     - Article category badge (e.g. "Shipping Guide")
  *   readTime     - Estimated read time (e.g. "5 min read")
  *   description  - Article sub-headline / lead sentence shown in hero
@@ -21,6 +24,8 @@ interface BlogSeoAtxProps {
   date: string
   isoDate: string
   author?: string
+  authorUrl?: string
+  authorTitle?: string
   category?: string
   readTime?: string
   description?: string
@@ -92,6 +97,8 @@ export default function BlogSeoAtx({
   date,
   isoDate,
   author = 'Austin Crate & Freight',
+  authorUrl,
+  authorTitle,
   category,
   readTime,
   description,
@@ -133,7 +140,17 @@ export default function BlogSeoAtx({
                 <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
               </svg>
               <span>
-                By <span className="text-white font-medium">{author}</span>
+                By{' '}
+                {authorUrl ? (
+                  <Link href={authorUrl} className="text-white font-medium hover:underline">
+                    {author}
+                  </Link>
+                ) : (
+                  <span className="text-white font-medium">{author}</span>
+                )}
+                {authorTitle && (
+                  <span className="text-grey-400 ml-1.5 text-xs">— {authorTitle}</span>
+                )}
               </span>
             </span>
 
@@ -183,17 +200,27 @@ export default function BlogSeoAtx({
             {children}
 
             {/* Author byline footer */}
-            <div className="not-prose mt-12 pt-8 border-t border-gray-200 flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-emerald flex items-center justify-center text-white font-bold text-lg shrink-0">
-                AC
+            {authorUrl ? (
+              <AuthorCard
+                name={author}
+                title={authorTitle ?? 'Specialty Shipping Expert'}
+                bio="Austin Crate &amp; Freight provides white-glove custom crating and specialty freight services in Central Texas since 2018."
+                authorUrl={authorUrl}
+                initials={author.split(' ').map((w) => w[0]).join('').slice(0, 2).toUpperCase()}
+              />
+            ) : (
+              <div className="not-prose mt-12 pt-8 border-t border-gray-200 flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-emerald-600 flex items-center justify-center text-white font-bold text-lg shrink-0">
+                  AC
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900 text-sm">{author}</p>
+                  <p className="text-gray-500 text-sm">
+                    Austin Crate &amp; Freight, specialty crating and white-glove shipping in Austin, TX since 2018.
+                  </p>
+                </div>
               </div>
-              <div>
-                <p className="font-semibold text-gray-900 text-sm">{author}</p>
-                <p className="text-gray-500 text-sm">
-                  Austin Crate &amp; Freight, specialty crating and white-glove shipping in Austin, TX since 2018.
-                </p>
-              </div>
-            </div>
+            )}
           </article>
 
           {/* ── Sidebar ─────────────────────────────────────────────────── */}
