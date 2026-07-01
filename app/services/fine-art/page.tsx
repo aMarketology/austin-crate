@@ -420,9 +420,9 @@ export default function FineArtShipping() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { src: '/IMG_3105.jpg', alt: 'Custom wood art crate built in Austin Texas workshop for fine art shipping' },
-              { src: '/IMG_3112.jpg', alt: 'Museum-quality crating in progress at Austin Crate & Freight facility' },
-              { src: '/IMG_3611.jpg', alt: 'Padded fine art crate prepared for climate-controlled transport from Austin' },
+              { src: '/IMG_2981.jpg', alt: 'Custom wood art crate being built in Austin Texas workshop for fine art shipping' },
+              { src: '/IMG_2982.jpg', alt: 'Museum-quality crating in progress at Austin Crate & Freight facility' },
+              { src: '/IMG_3092.jpg', alt: 'Crate assembly for gallery shipping — Austin Crate & Freight shop' },
               { src: '/IMG_3748.jpg', alt: 'Large painting crate construction for gallery shipping in Austin Texas' },
               { src: '/IMG_3760.jpg', alt: 'Fine art handler securing artwork inside custom Austin-built crate' },
               { src: '/IMG_3770.jpg', alt: 'Completed fine art shipping crate ready for pickup in Austin Texas' },
@@ -439,6 +439,34 @@ export default function FineArtShipping() {
                 />
               </div>
             ))}
+          </div>
+          <div className="text-center mt-6">
+            <Link href="/gallery" className="text-emerald-600 font-semibold hover:underline text-sm">See the full project gallery →</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* From Our Blog */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">From the Austin Crate Blog</h2>
+          <p className="text-gray-500 mb-8">Expert shipping guides written by our team — real Austin pricing, real techniques.</p>
+          <div className="grid sm:grid-cols-3 gap-5">
+            <Link href="/blog/what-is-white-glove-shipping" className="group block bg-gray-50 border border-gray-200 rounded-xl p-5 hover:border-emerald/40 hover:shadow-md transition-all">
+              <span className="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">Shipping Guide</span>
+              <h3 className="font-bold text-gray-900 mt-2 mb-1 group-hover:text-emerald transition-colors">What Is White-Glove Shipping? (And Is It Worth It?)</h3>
+              <p className="text-gray-500 text-sm">What the premium service actually includes — and when it's justified.</p>
+            </Link>
+            <Link href="/blog/antique-shipping-guide" className="group block bg-gray-50 border border-gray-200 rounded-xl p-5 hover:border-emerald/40 hover:shadow-md transition-all">
+              <span className="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">Shipping Guide</span>
+              <h3 className="font-bold text-gray-900 mt-2 mb-1 group-hover:text-emerald transition-colors">Antique Shipping Guide: Protecting Heirlooms in Transit</h3>
+              <p className="text-gray-500 text-sm">Insurance, crating, and carriers — everything before an antique moves.</p>
+            </Link>
+            <Link href="/blog/custom-crating-vs-standard-boxes" className="group block bg-gray-50 border border-gray-200 rounded-xl p-5 hover:border-emerald/40 hover:shadow-md transition-all">
+              <span className="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">Crating Guide</span>
+              <h3 className="font-bold text-gray-900 mt-2 mb-1 group-hover:text-emerald transition-colors">Custom Crating vs. Standard Boxes</h3>
+              <p className="text-gray-500 text-sm">When you need a wood crate — and when a box will do.</p>
+            </Link>
           </div>
         </div>
       </section>

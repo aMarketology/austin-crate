@@ -140,8 +140,8 @@ export default function HomeClient() {
           // Save state for next frame
           dotStates.set(dotKey, { size: dotSize, colorIndex: finalColorIndex, influence: smoothInfluence })
 
-          // Enhanced opacity for more visible colors
-          const alpha = 0.7 + smoothInfluence * 0.3 // Increased base from 0.6
+          // Dots invisible at rest — only glow when cursor is near
+          const alpha = smoothInfluence
 
           ctx.beginPath()
           ctx.arc(x, y, dotSize, 0, Math.PI * 2)
@@ -184,9 +184,6 @@ export default function HomeClient() {
 
       {/* === MOBILE/TABLET HERO SECTION (hidden on lg+) === */}
       <section className="lg:hidden relative min-h-screen flex items-center overflow-hidden bg-grey-50 pt-20 pb-16 px-4">
-        {/* Darker overlay for better contrast - 10% opacity */}
-        <div className="absolute inset-0 bg-black/10" style={{ zIndex: 0 }} />
-        
         {/* Interactive Dot Canvas */}
         <canvas 
           ref={canvasRef}
@@ -288,55 +285,6 @@ export default function HomeClient() {
             ))}
           </motion.div>
 
-          {/* Stats Row - Animated */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="grid grid-cols-3 gap-3 px-4 mb-8"
-          >
-            {[
-              { value: '15+', label: 'Years', icon: '⭐' },
-              { value: '100%', label: 'Insured', icon: '🛡️' },
-              { value: '24/7', label: 'Support', icon: '💬' }
-            ].map((stat, i) => (
-              <div key={i} className="p-4 bg-white/80 backdrop-blur-sm rounded-2xl border border-grey-200 shadow-sm hover:shadow-lg hover:scale-105 transition-all">
-                <div className="text-2xl mb-1">{stat.icon}</div>
-                <div className="text-2xl sm:text-3xl font-bold text-emerald mb-1">{stat.value}</div>
-                <div className="text-[10px] sm:text-xs text-grey-600 uppercase tracking-wider font-medium">{stat.label}</div>
-              </div>
-            ))}
-          </motion.div>
-
-          {/* Trust Indicators - Animated */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.95 }}
-            className="flex flex-wrap items-center justify-center gap-3 text-xs text-grey-600 px-4"
-          >
-            <div className="flex items-center gap-1.5">
-              <svg className="w-4 h-4 text-emerald" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span className="font-medium">Licensed</span>
-            </div>
-            <span className="text-grey-400">•</span>
-            <div className="flex items-center gap-1.5">
-              <svg className="w-4 h-4 text-emerald" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span className="font-medium">Insured</span>
-            </div>
-            <span className="text-grey-400">•</span>
-            <div className="flex items-center gap-1.5">
-              <svg className="w-4 h-4 text-emerald" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-              <span className="font-medium">5-Star</span>
-            </div>
-          </motion.div>
-
           {/* Image Gallery — mirrors desktop right column */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -344,12 +292,12 @@ export default function HomeClient() {
             transition={{ duration: 0.8, delay: 1.1 }}
             className="w-full mt-8 space-y-3 px-2"
           >
-            {/* Featured image — Unsplash luxury furniture */}
+            {/* Featured image — real job photo */}
             <Link href="/services/furniture" className="block">
               <div className="relative h-48 rounded-2xl overflow-hidden border-2 border-grey-200 shadow-lg hover:border-emerald transition-all hover:scale-[1.02]">
                 <Image
-                  src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=80&fit=crop&auto=format"
-                  alt="Furniture Shipping and Crating Austin TX - White Glove Transport"
+                  src="/IMG_3155.jpg"
+                  alt="White-glove furniture shipping completed in Austin TX — Austin Crate & Freight"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
@@ -367,8 +315,8 @@ export default function HomeClient() {
               <Link href="/services/fine-art" className="block">
                 <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md hover:border-emerald transition-all hover:scale-[1.02]">
                   <Image
-                    src="https://images.unsplash.com/photo-1541367777708-7905fe3296c0?w=600&q=80&fit=crop&auto=format"
-                    alt="Fine Art Crating and Shipping Austin TX - Museum Quality Transport"
+                    src="/IMG_2981.jpg"
+                    alt="Custom wood crate fabrication for fine art shipping — Austin Crate & Freight shop"
                     fill
                     sizes="50vw"
                     className="object-cover"
@@ -383,8 +331,8 @@ export default function HomeClient() {
               <Link href="/services/medical-equipment" className="block">
                 <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md hover:border-emerald transition-all hover:scale-[1.02]">
                   <Image
-                    src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80&fit=crop&auto=format"
-                    alt="Medical Equipment Shipping and Crating Austin TX"
+                    src="/IMG_3092.jpg"
+                    alt="Workshop crate assembly for specialty shipping — Austin Crate & Freight"
                     fill
                     sizes="50vw"
                     className="object-cover"
@@ -428,10 +376,13 @@ export default function HomeClient() {
               </Link>
             </div>
 
-            {/* Experience badge */}
-            <div className="p-4 rounded-xl bg-white border-2 border-emerald/20 text-center shadow-sm">
-              <div className="text-3xl font-bold text-emerald mb-0.5">15+</div>
-              <div className="text-xs text-grey-600 font-medium uppercase tracking-wider">Years Experience</div>
+            {/* Trust Badge */}
+            <div className="flex items-center justify-center gap-3 px-5 py-4 rounded-xl bg-white border-2 border-emerald/20 shadow-sm text-sm font-semibold text-grey-700">
+              <span>Licensed &amp; Bonded</span>
+              <span className="text-grey-300">|</span>
+              <span>Fully Insured</span>
+              <span className="text-grey-300">|</span>
+              <span>5-Star Rated</span>
             </div>
           </motion.div>
         </div>
@@ -439,9 +390,6 @@ export default function HomeClient() {
 
       {/* === DESKTOP HERO SECTION (hidden below lg) === */}
       <section className="hidden lg:flex relative min-h-screen items-center overflow-hidden bg-grey-50">
-        {/* Darker overlay for better contrast - 10% opacity */}
-        <div className="absolute inset-0 bg-black/10" style={{ zIndex: 0 }} />
-        
         {/* Interactive Dot Canvas */}
         <canvas 
           ref={canvasRef}
@@ -539,12 +487,12 @@ export default function HomeClient() {
                 transition={{ duration: 0.8, delay: 0.8 }}
                 className="space-y-4"
               >
-                {/* Featured Image — Unsplash luxury furniture */}
+                {/* Featured Image — real job photo */}
                 <Link href="/services/furniture" className="block">
                   <div className="relative h-52 rounded-2xl overflow-hidden border-2 border-grey-200 shadow-lg bg-white hover:border-emerald transition-all hover:scale-[1.02] cursor-pointer">
                     <Image
-                      src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&q=80&fit=crop&auto=format"
-                      alt="Furniture Shipping and Crating Austin TX - White Glove Transport"
+                      src="/IMG_3155.jpg"
+                      alt="White-glove furniture shipping completed in Austin TX — Austin Crate & Freight"
                       fill
                       sizes="(max-width: 1024px) 100vw, 33vw"
                       className="object-cover"
@@ -562,8 +510,8 @@ export default function HomeClient() {
                   <Link href="/services/fine-art" className="block">
                     <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md bg-white hover:border-emerald transition-all hover:scale-[1.02] cursor-pointer">
                       <Image
-                        src="https://images.unsplash.com/photo-1541367777708-7905fe3296c0?w=600&q=80&fit=crop&auto=format"
-                        alt="Fine Art Crating and Shipping Austin TX - Museum Quality Transport"
+                        src="/IMG_2981.jpg"
+                        alt="Custom wood crate fabrication for fine art shipping — Austin Crate & Freight shop"
                         fill
                         sizes="(max-width: 1024px) 50vw, 25vw"
                         className="object-cover"
@@ -578,8 +526,8 @@ export default function HomeClient() {
                   <Link href="/services/medical-equipment" className="block">
                     <div className="relative h-32 rounded-xl overflow-hidden border border-grey-200 shadow-md bg-white hover:border-emerald transition-all hover:scale-[1.02] cursor-pointer">
                       <Image
-                        src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80&fit=crop&auto=format"
-                        alt="Medical Equipment Shipping and Crating Austin TX - Compliant Device Transport"
+                        src="/IMG_3092.jpg"
+                        alt="Workshop crate assembly for specialty shipping — Austin Crate & Freight"
                         fill
                         sizes="(max-width: 1024px) 50vw, 25vw"
                         className="object-cover"
@@ -625,11 +573,14 @@ export default function HomeClient() {
                   </Link>
                 </div>
 
-                {/* Stats Row */}
+                {/* Trust Badge */}
                 <div className="pt-3">
-                  <div className="p-4 rounded-xl bg-white border-2 border-emerald/20 text-center shadow-sm">
-                    <div className="text-3xl font-bold text-emerald mb-1">15+</div>
-                    <div className="text-xs text-grey-600 font-medium">Years Experience</div>
+                  <div className="flex items-center justify-center gap-3 px-5 py-4 rounded-xl bg-white border-2 border-emerald/20 shadow-sm text-sm font-semibold text-grey-700">
+                    <span>Licensed &amp; Bonded</span>
+                    <span className="text-grey-300">|</span>
+                    <span>Fully Insured</span>
+                    <span className="text-grey-300">|</span>
+                    <span>5-Star Rated</span>
                   </div>
                 </div>
               </motion.div>
@@ -989,6 +940,8 @@ export default function HomeClient() {
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                     quality={70}
                     loading="lazy"
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIBAAAgICAgMBAAAAAAAAAAAAAQIDBAUREiExQf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8Amz2tLSWyuoXlnmeZ2LSSMWZj6kk5J/tKUpWn/9k="
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>

@@ -639,10 +639,10 @@ export default function HeavyItemsShipping() {
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {[
-                { src: '/IMG_3114.jpg', alt: 'Custom heavy item crate being built at Austin Crate & Freight workshop, Austin TX' },
-                { src: '/IMG_3832_1681922619689.jpg', alt: 'Heavy oversized item packaged for freight shipping from Austin Texas' },
-                { src: '/IMG_3954_1686069785125.jpg', alt: 'Reinforced wood crate for heavy item pickup and shipping in Austin TX' },
-                { src: '/IMG_3979_1686773817157.jpg', alt: 'Two-person crew preparing heavy item for custom crating at Austin Crate & Freight' },
+                { src: '/IMG_2980.jpg', alt: 'Custom heavy item crate being built at Austin Crate & Freight workshop, Austin TX' },
+                { src: '/IMG_3037.jpg', alt: 'Large item custom crate in progress — Austin Crate & Freight shop' },
+                { src: '/IMG_3092.jpg', alt: 'Workshop crate assembly for heavy freight — Austin Crate & Freight' },
+                { src: '/IMG_2983.jpg', alt: 'Heavy oversized item secured and ready for freight shipping from Austin Texas' },
                 { src: '/IMG_4196_1695841417957.jpg', alt: 'Heavy freight crate completed and ready for oversized item shipping from Austin' },
                 { src: '/IMG_5091_1714149760004.jpg', alt: 'Large heavy item securely crated for door-to-door shipping from Austin Texas' },
               ].map((img, i) => (
@@ -658,6 +658,57 @@ export default function HeavyItemsShipping() {
                   />
                 </div>
               ))}
+            </div>
+            <div className="text-center mt-6">
+              <Link href="/gallery" className="text-emerald-600 font-semibold hover:underline text-sm">See the full project gallery →</Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Specialist Sub-Services */}
+        <section className="py-16 px-4 bg-white">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-3 text-center">Heavy Item Specialist Services</h2>
+            <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">Some items need more than a crate — they need a specialist. Click below for item-specific guidance on our most common heavy-item jobs.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              {[
+                { href: '/services/heavy-items/pool-table-shipping', title: 'Pool Table Shipping', desc: 'Slate disassembly, felt protection, and custom crating for all pool table sizes in Austin.' },
+                { href: '/services/heavy-items/motorcycle-crating', title: 'Motorcycle Crating', desc: 'Drain, secure, crate, and ship motorcycles and powersport vehicles nationwide.' },
+                { href: '/services/heavy-items/heavy-equipment-austin', title: 'Heavy Equipment Austin', desc: 'Generators, compressors, industrial machines, and construction equipment transport.' },
+                { href: '/services/shipping-and-crating/machinery-manufacturing-equipment', title: 'Machinery & Mfg Equipment', desc: 'CNC machines, lathes, presses, and precision manufacturing equipment crating.' },
+                { href: '/services/oversized-shipping/when-carriers-refuse', title: 'When Carriers Refuse', desc: 'We ship what UPS, FedEx, and standard freight companies won\'t accept.' },
+                { href: '/services/furniture', title: 'Heavy Furniture Shipping', desc: 'Marble tables, solid-wood dining sets, armoires, and oversized sofas.' },
+              ].map((s) => (
+                <Link key={s.href} href={s.href} className="group p-5 bg-gray-50 border border-gray-200 rounded-xl hover:border-emerald/40 hover:shadow-md transition-all duration-200">
+                  <h3 className="font-bold text-gray-900 mb-2 group-hover:text-emerald transition-colors">{s.title} →</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{s.desc}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* From Our Blog */}
+        <section className="py-16 px-4 bg-gray-50">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">From the Austin Crate Blog</h2>
+            <p className="text-gray-500 mb-8">Written by our team — real pricing, real process, no fluff.</p>
+            <div className="grid sm:grid-cols-3 gap-5">
+              <Link href="/blog/cost-to-ship-heavy-items-austin" className="group block bg-white border border-gray-200 rounded-xl p-5 hover:border-emerald/40 hover:shadow-md transition-all">
+                <span className="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">Pricing Guide</span>
+                <h3 className="font-bold text-gray-900 mt-2 mb-1 group-hover:text-emerald transition-colors">How Much Does It Cost to Ship Heavy Items in Austin?</h3>
+                <p className="text-gray-500 text-sm">Complete 2026 price guide with cost ranges by item type.</p>
+              </Link>
+              <Link href="/blog/safe-vault-moving-austin" className="group block bg-white border border-gray-200 rounded-xl p-5 hover:border-emerald/40 hover:shadow-md transition-all">
+                <span className="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">Heavy Items</span>
+                <h3 className="font-bold text-gray-900 mt-2 mb-1 group-hover:text-emerald transition-colors">Safe & Vault Moving in Austin, TX</h3>
+                <p className="text-gray-500 text-sm">What it actually takes to move a gun safe or commercial vault.</p>
+              </Link>
+              <Link href="/blog/custom-crating-vs-standard-boxes" className="group block bg-white border border-gray-200 rounded-xl p-5 hover:border-emerald/40 hover:shadow-md transition-all">
+                <span className="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">Crating Guide</span>
+                <h3 className="font-bold text-gray-900 mt-2 mb-1 group-hover:text-emerald transition-colors">Custom Crating vs. Standard Boxes</h3>
+                <p className="text-gray-500 text-sm">When you need a crate — and when you don't.</p>
+              </Link>
             </div>
           </div>
         </section>

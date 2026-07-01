@@ -418,9 +418,9 @@ export default function FurnitureShipping() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { src: '/IMG_3114.jpg', alt: 'Custom wood crate being built for furniture shipping in Austin Texas at Austin Crate & Freight workshop' },
-              { src: '/IMG_3832_1681922619689.jpg', alt: 'Furniture crating in progress at Austin Crate & Freight workshop, 3112 Windsor Rd Austin TX' },
-              { src: '/IMG_3954_1686069785125.jpg', alt: 'Designer furniture packed in custom crate for white-glove shipping from Austin Texas' },
+              { src: '/IMG_2984.jpg', alt: 'White-glove furniture prep at Austin Crate & Freight workshop' },
+              { src: '/IMG_2985.jpg', alt: 'Interior foam blocking detail for furniture crate — Austin TX' },
+              { src: '/IMG_3155.jpg', alt: 'Completed furniture job ready for delivery — Austin Crate & Freight' },
               { src: '/IMG_3979_1686773817157.jpg', alt: 'Austin craftsman building furniture shipping crate for local white-glove pickup' },
               { src: '/IMG_4196_1695841417957.jpg', alt: 'Completed furniture shipping crate ready for LTL freight from Austin Texas' },
               { src: '/IMG_5091_1714149760004.jpg', alt: 'Antique furniture wrapped and crated for safe transport by Austin Crate & Freight' },
@@ -437,6 +437,39 @@ export default function FurnitureShipping() {
                 />
               </div>
             ))}
+          </div>
+          <div className="text-center mt-6">
+            <Link href="/gallery" className="text-emerald-600 font-semibold hover:underline text-sm">See the full project gallery →</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* From Our Blog */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">From the Austin Crate Blog</h2>
+          <p className="text-gray-500 mb-8">Furniture shipping guides written by our team — real Austin pricing, real process.</p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <Link href="/blog/prepare-furniture-for-shipping" className="group block bg-gray-50 border border-gray-200 rounded-xl p-5 hover:border-emerald/40 hover:shadow-md transition-all">
+              <span className="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">How-To</span>
+              <h3 className="font-bold text-gray-900 mt-2 mb-1 group-hover:text-emerald transition-colors">How to Prepare Furniture for Shipping</h3>
+              <p className="text-gray-500 text-sm">Step-by-step checklist before pickup day.</p>
+            </Link>
+            <Link href="/blog/ship-large-furniture-texas" className="group block bg-gray-50 border border-gray-200 rounded-xl p-5 hover:border-emerald/40 hover:shadow-md transition-all">
+              <span className="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">Shipping Guide</span>
+              <h3 className="font-bold text-gray-900 mt-2 mb-1 group-hover:text-emerald transition-colors">Shipping Large Furniture Across Texas</h3>
+              <p className="text-gray-500 text-sm">Costs, process, and what to expect.</p>
+            </Link>
+            <Link href="/blog/antique-shipping-guide" className="group block bg-gray-50 border border-gray-200 rounded-xl p-5 hover:border-emerald/40 hover:shadow-md transition-all">
+              <span className="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">Antique Guide</span>
+              <h3 className="font-bold text-gray-900 mt-2 mb-1 group-hover:text-emerald transition-colors">Antique Shipping Guide</h3>
+              <p className="text-gray-500 text-sm">Insurance, crating, and protecting heirlooms.</p>
+            </Link>
+            <Link href="/blog/custom-crating-vs-standard-boxes" className="group block bg-gray-50 border border-gray-200 rounded-xl p-5 hover:border-emerald/40 hover:shadow-md transition-all">
+              <span className="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">Crating Guide</span>
+              <h3 className="font-bold text-gray-900 mt-2 mb-1 group-hover:text-emerald transition-colors">Custom Crating vs. Standard Boxes</h3>
+              <p className="text-gray-500 text-sm">When does furniture actually need a wood crate?</p>
+            </Link>
           </div>
         </div>
       </section>

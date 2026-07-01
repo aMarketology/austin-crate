@@ -892,6 +892,32 @@ export const contentRegistry: ContentEntry[] = [
     changeFrequency: 'monthly',
   },
   {
+    slug: '/blog/fine-art-shipping-austin',
+    title: 'Fine Art Shipping in Austin, TX: The Complete 2026 Guide | Austin Crate & Freight',
+    description:
+      'How to ship fine art in Austin, Texas — crating methods, climate protection, insurance, carrier selection, and real 2026 costs from Austin Crate & Freight.',
+    publishDate: '2026-07-01',
+    modifiedDate: '2026-07-01',
+    category: 'Blog',
+    tags: ['fine art shipping Austin TX', 'how to ship fine art Austin', 'art crating Austin Texas', 'painting shipping Austin', 'gallery shipping Austin'],
+    author: 'Peter Hall',
+    priority: 0.8,
+    changeFrequency: 'monthly',
+  },
+  {
+    slug: '/blog/oversized-furniture-shipping-austin',
+    title: 'Oversized Furniture Shipping in Austin, TX: What to Expect & Costs | Austin Crate & Freight',
+    description:
+      'A complete guide to shipping oversized furniture in Austin — what qualifies as oversized, which carriers accept it, crating options, and real 2026 cost ranges.',
+    publishDate: '2026-07-01',
+    modifiedDate: '2026-07-01',
+    category: 'Blog',
+    tags: ['oversized furniture shipping Austin TX', 'ship oversized furniture Austin', 'large furniture delivery Austin Texas', 'heavy furniture transport Austin'],
+    author: 'Max DeLeonardis',
+    priority: 0.8,
+    changeFrequency: 'monthly',
+  },
+  {
     slug: '/blog/prepare-furniture-for-shipping',
     title: 'How to Prepare Furniture for Shipping: A Step-by-Step Checklist | Austin Crate & Freight',
     description:

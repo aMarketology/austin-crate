@@ -9,6 +9,24 @@ import Footer from '@/app/components/Footer'
 export default function BlogIndexClient() {
   const blogPosts = [
     {
+      slug: 'fine-art-shipping-austin',
+      title: 'Fine Art Shipping in Austin, TX: The Complete 2026 Guide',
+      excerpt: 'Crating methods, climate protection, insurance, carrier selection, and real costs — everything Austin collectors and galleries need to know.',
+      date: 'July 1, 2026',
+      category: 'Fine Art',
+      readTime: '8 min read',
+      image: '🖼️',
+    },
+    {
+      slug: 'oversized-furniture-shipping-austin',
+      title: 'Oversized Furniture Shipping in Austin, TX: What to Expect & What It Costs',
+      excerpt: 'Standard carriers won\'t take it and movers aren\'t the right fit. Here is how oversized furniture shipping actually works in Austin.',
+      date: 'July 1, 2026',
+      category: 'Furniture Shipping',
+      readTime: '7 min read',
+      image: '🛋️',
+    },
+    {
       slug: 'antique-shipping-guide',
       title: 'Antique Shipping Guide: How to Protect Heirlooms in Transit',
       excerpt: 'Insurance, custom crating, carrier selection, and documentation — everything you need to know before an antique leaves your hands.',
