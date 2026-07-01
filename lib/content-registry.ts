@@ -891,6 +891,32 @@ export const contentRegistry: ContentEntry[] = [
     priority: 0.7,
     changeFrequency: 'monthly',
   },
+  {
+    slug: '/blog/prepare-furniture-for-shipping',
+    title: 'How to Prepare Furniture for Shipping: A Step-by-Step Checklist | Austin Crate & Freight',
+    description:
+      'A practical step-by-step guide to preparing furniture for pickup and transit — disassembly, documentation, padding tips, and what to leave for the professionals.',
+    publishDate: '2026-06-24',
+    modifiedDate: '2026-06-24',
+    category: 'Blog',
+    tags: ['how to prepare furniture for shipping', 'prepare furniture for shipping', 'furniture shipping prep Austin TX', 'furniture packing tips', 'furniture shipping checklist'],
+    author: 'Max DeLeonardis',
+    priority: 0.8,
+    changeFrequency: 'monthly',
+  },
+  {
+    slug: '/blog/antique-shipping-guide',
+    title: 'Antique Shipping Guide: How to Protect Heirlooms in Transit | Austin Crate & Freight',
+    description:
+      'Everything you need to know before shipping an antique — insurance, custom crating, carrier selection, documentation, and common mistakes that cause irreparable damage.',
+    publishDate: '2026-06-24',
+    modifiedDate: '2026-06-24',
+    category: 'Blog',
+    tags: ['antique shipping guide', 'how to ship antiques safely', 'antique furniture shipping Texas', 'shipping heirlooms', 'antique crating Austin TX'],
+    author: 'Max DeLeonardis',
+    priority: 0.8,
+    changeFrequency: 'monthly',
+  },
 
   // ── Author Pages ─────────────────────────────────────────────────────────────
   {
@@ -908,9 +934,9 @@ export const contentRegistry: ContentEntry[] = [
   },
   {
     slug: '/authors/max-deleonardis',
-    title: 'Max DeLeonardis — Operations Manager | Austin Crate & Freight',
+    title: 'Max DeLeonardis — Marketing Manager | Austin Crate & Freight',
     description:
-      'Max DeLeonardis is the Operations Manager at Austin Crate & Freight. He oversees specialty freight logistics across Central Texas and writes about cost-saving shipping strategies, equipment crating, and Austin-area freight.',
+      'Max DeLeonardis is the Marketing Manager at Austin Crate & Freight. He oversees specialty freight logistics across Central Texas and writes about cost-saving shipping strategies, equipment crating, and Austin-area freight.',
     publishDate: '2026-05-28',
     modifiedDate: '2026-05-28',
     category: 'Core',

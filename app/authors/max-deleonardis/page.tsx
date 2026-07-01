@@ -8,20 +8,20 @@ import Breadcrumbs from '@/app/components/Breadcrumbs'
 const SLUG = '/authors/max-deleonardis'
 
 export const metadata: Metadata = {
-  title: 'Max DeLeonardis — Operations Manager | Austin Crate & Freight',
+  title: 'Max DeLeonardis — Marketing Manager | Austin Crate & Freight',
   description:
-    'Max DeLeonardis is the Operations Manager at Austin Crate & Freight. He oversees specialty freight logistics across Central Texas and writes about cost-saving shipping strategies, equipment crating, and Austin-area freight.',
+    'Max DeLeonardis is the Marketing Manager at Austin Crate & Freight. He writes about specialty freight, cost-saving shipping strategies, equipment crating, and Austin-area logistics.',
   alternates: { canonical: `https://austincrate.com${SLUG}` },
   openGraph: {
     type: 'profile',
-    title: 'Max DeLeonardis — Operations Manager | Austin Crate & Freight',
+    title: 'Max DeLeonardis — Marketing Manager | Austin Crate & Freight',
     description:
-      'Operations Manager at Austin Crate & Freight. Expert in specialty freight logistics, equipment crating, and Austin-area shipping.',
+      'Marketing Manager at Austin Crate & Freight. Expert in specialty freight logistics, equipment crating, and Austin-area shipping.',
     url: `https://austincrate.com${SLUG}`,
   },
   keywords: [
     'Max DeLeonardis Austin Crate',
-    'Austin Crate operations manager',
+    'Austin Crate marketing manager',
     'specialty freight logistics Austin TX',
     'equipment crating Austin Texas',
     'Austin shipping expert',
@@ -33,14 +33,14 @@ const authorSchema = {
   '@type': 'Person',
   name: 'Max DeLeonardis',
   url: `https://austincrate.com${SLUG}`,
-  jobTitle: 'Operations Manager',
+  jobTitle: 'Marketing Manager',
   worksFor: {
     '@type': 'Organization',
     name: 'Austin Crate & Freight',
     url: 'https://austincrate.com',
   },
   description:
-    'Operations Manager at Austin Crate & Freight, responsible for coordinating specialty freight logistics across Central Texas. Max writes about cost strategies, equipment transport, and the operational side of white-glove shipping.',
+    'Marketing Manager at Austin Crate & Freight, responsible for content, growth, and helping Austin-area customers understand specialty freight. Max writes about cost strategies, equipment transport, and the operational side of white-glove shipping.',
   knowsAbout: [
     'Specialty freight logistics',
     'Equipment crating and transport',
@@ -59,6 +59,22 @@ const authorSchema = {
 }
 
 const MAX_ARTICLES = [
+  {
+    title: 'Antique Shipping Guide: How to Protect Heirlooms in Transit',
+    href: '/blog/antique-shipping-guide',
+    date: 'June 24, 2026',
+    category: 'Shipping Guide',
+    excerpt:
+      'Insurance, custom crating, carrier selection, and documentation — everything you need to know before an antique leaves your hands.',
+  },
+  {
+    title: 'How to Prepare Furniture for Shipping: A Step-by-Step Checklist',
+    href: '/blog/prepare-furniture-for-shipping',
+    date: 'June 24, 2026',
+    category: 'How-To Guide',
+    excerpt:
+      'What to do before pickup — disassembly, photo documentation, hardware removal, and what NOT to wrap yourself.',
+  },
   {
     title: 'How Much Does It Cost to Ship Heavy Items in Austin?',
     href: '/blog/cost-to-ship-heavy-items-austin',
@@ -118,7 +134,7 @@ export default function MaxDeLeonardisAuthorPage() {
               </p>
               <h1 className="text-4xl md:text-5xl font-bold mb-2">Max DeLeonardis</h1>
               <p className="text-sky-300 font-medium text-lg mb-4">
-                Operations Manager · Austin Crate &amp; Freight
+                Marketing Manager · Austin Crate &amp; Freight
               </p>
               <p className="text-gray-300 leading-relaxed max-w-2xl">
                 Max runs day-to-day freight operations at Austin Crate &amp; Freight — routing shipments, coordinating carriers, managing the crating crew, and keeping jobs on time and on budget. He brings a data-driven, cost-transparent perspective to the Austin Crate blog, writing for readers who want real numbers and actionable logistics advice.
@@ -145,32 +161,31 @@ export default function MaxDeLeonardisAuthorPage() {
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">About Max</h2>
                 <div className="prose prose-gray max-w-none">
                   <p>
-                    Max DeLeonardis joined Austin Crate &amp; Freight after several years coordinating commercial freight and warehouse logistics in Central Texas. As Operations Manager, he sits at the intersection of crating, carrier relationships, and client timelines — which gives him a uniquely ground-level view of what specialty freight really costs and why.
+                    Max DeLeonardis is the Marketing Manager at Austin Crate &amp; Freight, where he focuses on content, customer education, and growing Austin Crate's reach across Central Texas. He works closely with Peter and the crew day-to-day — sitting in on jobs, walking the shop floor, and translating real field experience into practical shipping guides for customers.
                   </p>
                   <p>
-                    Max handles the freight side that most customers never see: carrier vetting, rate negotiation, shipment routing, and the problem-solving that happens when a 900-pound piece of equipment needs to move from a third-floor Austin condo to a warehouse in Dallas by Thursday. He's handled thousands of jobs ranging from antique chandeliers to industrial panel saws.
+                    Max handles the content and marketing side that turns real jobs into useful resources: breaking down what specialty freight actually costs, explaining when you need a custom crate versus a box, and helping Austin-area businesses and homeowners make confident shipping decisions. He's been part of thousands of jobs ranging from antique chandeliers to industrial panel saws — and writes about all of it.
                   </p>
                   <p>
-                    On the Austin Crate blog, Max writes with a logistics operator's clarity — breaking down costs, explaining freight classes, and cutting through the jargon that makes shipping feel more complicated than it needs to be. His articles are especially useful for business owners, interior designers, and anyone managing recurring freight needs in Austin.
+                    On the Austin Crate blog, Max writes with a ground-level clarity — real numbers, real Austin pricing, and zero fluff. His articles are especially useful for business owners, interior designers, and anyone who wants to understand specialty freight before they commit to a carrier.
                   </p>
 
                   <h3>Areas of Expertise</h3>
                   <ul>
-                    <li>LTL (less-than-truckload) and FTL freight coordination</li>
-                    <li>Freight cost estimation and rate benchmarking</li>
-                    <li>Heavy equipment transport and rigging</li>
-                    <li>Commercial and industrial crating logistics</li>
+                    <li>Specialty freight content and customer education</li>
+                    <li>Freight cost estimation and pricing transparency</li>
+                    <li>Furniture and antique shipping preparation</li>
                     <li>Carrier selection for fragile and high-value freight</li>
-                    <li>Austin-area pickup, storage, and last-mile delivery</li>
-                    <li>Emergency freight and time-sensitive shipments</li>
+                    <li>Austin-area shipping logistics and market knowledge</li>
+                    <li>SEO and digital growth for local service businesses</li>
                   </ul>
 
                   <h3>Background</h3>
                   <ul>
-                    <li>Operations Manager, Austin Crate &amp; Freight</li>
-                    <li>Prior: Commercial freight coordination, Central Texas warehousing</li>
-                    <li>Austin, TX native — deep knowledge of local logistics networks</li>
-                    <li>Experience with industrial, commercial, and residential specialty freight</li>
+                    <li>Marketing Manager, Austin Crate &amp; Freight</li>
+                    <li>Based in Austin, TX — deep knowledge of Central Texas logistics</li>
+                    <li>Works alongside Peter Hall and the crating crew on active jobs</li>
+                    <li>Writes all buyer-intent content for austincrate.com</li>
                   </ul>
                 </div>
               </div>
@@ -213,7 +228,7 @@ export default function MaxDeLeonardisAuthorPage() {
                 <dl className="space-y-3 text-sm">
                   <div>
                     <dt className="text-gray-400 text-xs uppercase tracking-wider">Role</dt>
-                    <dd className="font-semibold text-gray-800">Operations Manager</dd>
+                    <dd className="font-semibold text-gray-800">Marketing Manager</dd>
                   </div>
                   <div>
                     <dt className="text-gray-400 text-xs uppercase tracking-wider">Company</dt>

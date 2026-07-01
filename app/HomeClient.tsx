@@ -970,14 +970,14 @@ export default function HomeClient() {
           {/* Photo grid — real business photos */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 mb-12">
             {[
+              { src: '/IMG_2980.jpg', alt: 'Custom crate build in progress — Austin Crate & Freight' },
+              { src: '/IMG_2983.jpg', alt: 'Secured freight ready to ship — Austin TX' },
+              { src: '/IMG_3037.jpg', alt: 'Large item custom crate — Austin Crate & Freight' },
+              { src: '/IMG_3092.jpg', alt: 'Workshop crate assembly — Austin TX' },
               { src: '/IMG_3105.jpg', alt: 'Custom crate build — Austin Crate & Freight' },
               { src: '/IMG_3748.jpg', alt: 'Specialty freight crating Austin TX' },
               { src: '/IMG_4196_1695841417957.jpg', alt: 'White-glove packing service Austin' },
-              { src: '/IMG_4446_1703172460423.jpg', alt: 'Heavy item crating and shipping Austin' },
-              { src: '/IMG_5091_1714149760004.jpg', alt: 'Custom wood crate fabrication Austin TX' },
-              { src: '/IMG_3954_1686069785125.jpg', alt: 'Specialty shipping Austin Texas' },
-              { src: '/IMG_3979_1686773817157.jpg', alt: 'Museum-quality packing Austin Crate' },
-              { src: '/IMG_3832_1681922619689.jpg', alt: 'Fine art crating Austin TX' },
+              { src: '/IMG_3954_1686069785125.jpg', alt: 'Museum-quality packing Austin Crate' },
             ].map((photo, i) => (
               <Link key={i} href="/gallery" className="block group">
                 <div className="relative h-36 md:h-44 rounded-xl overflow-hidden border border-grey-200 shadow-sm hover:border-emerald hover:shadow-md transition-all hover:scale-[1.02]">
@@ -1067,7 +1067,7 @@ export default function HomeClient() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="font-bold text-white group-hover:text-sky-300 transition-colors">Max DeLeonardis</p>
-                    <p className="text-sm text-gray-400">Operations Manager · Freight &amp; Logistics</p>
+                    <p className="text-sm text-gray-400">Marketing Manager · Content &amp; Growth</p>
                   </div>
                   <svg className="w-4 h-4 text-gray-500 group-hover:text-sky-400 transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

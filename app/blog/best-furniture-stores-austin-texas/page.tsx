@@ -32,7 +32,7 @@ export default function BestFurnitureStoresAustin() {
         isoDate="2026-03-25"
         author="Max DeLeonardis"
         authorUrl="/authors/max-deleonardis"
-        authorTitle="Operations Manager"
+        authorTitle="Marketing Manager"
         category="Austin Living"
         readTime="5 min read"
         description="From high-concept showrooms in South Austin to sustainable custom woodworkers in East Austin, here are the top-rated furniture stores in the Austin area for 2026, curated from local sentiment and the Austin American-Statesman."

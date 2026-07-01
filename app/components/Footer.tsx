@@ -42,7 +42,7 @@ export default function Footer() {
 
   const teamLinks = [
     { name: 'Peter Hall — Owner', href: '/authors/peter-hall' },
-    { name: 'Max DeLeonardis — Operations', href: '/authors/max-deleonardis' },
+    { name: 'Max DeLeonardis — Marketing', href: '/authors/max-deleonardis' },
   ]
 
   const serviceAreas = [

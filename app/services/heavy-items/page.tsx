@@ -198,7 +198,7 @@ export default function HeavyItemsShipping() {
                 {
                   name: 'Industrial Equipment',
                   desc: 'Machinery, generators, compressors, welding equipment, and shop tools',
-                  link: null,
+                  link: '/services/shipping-and-crating/machinery-manufacturing-equipment',
                 },
                 {
                   name: 'Medical Equipment',
@@ -213,7 +213,7 @@ export default function HeavyItemsShipping() {
                 {
                   name: 'Motorcycles & Powersports',
                   desc: 'Motorcycles, ATVs, jet skis, and recreational vehicles',
-                  link: null,
+                  link: '/services/heavy-items/motorcycle-crating',
                 },
                 {
                   name: 'Appliances',
@@ -223,12 +223,12 @@ export default function HeavyItemsShipping() {
                 {
                   name: 'Pool Tables & Game Tables',
                   desc: 'Slate pool tables, foosball tables, ping pong tables, and arcade machines',
-                  link: null,
+                  link: '/services/heavy-items/pool-table-shipping',
                 },
                 {
                   name: 'Safes & Vaults',
                   desc: 'Gun safes, fire safes, commercial vaults, and security cabinets',
-                  link: null,
+                  link: '/services/heavy-items/heavy-equipment-austin',
                 },
               ].map((item, i) => (
                 <div

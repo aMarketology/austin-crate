@@ -9,6 +9,24 @@ import Footer from '@/app/components/Footer'
 export default function BlogIndexClient() {
   const blogPosts = [
     {
+      slug: 'antique-shipping-guide',
+      title: 'Antique Shipping Guide: How to Protect Heirlooms in Transit',
+      excerpt: 'Insurance, custom crating, carrier selection, and documentation — everything you need to know before an antique leaves your hands.',
+      date: 'June 24, 2026',
+      category: 'Shipping Guide',
+      readTime: '8 min read',
+      image: '🪑',
+    },
+    {
+      slug: 'prepare-furniture-for-shipping',
+      title: 'How to Prepare Furniture for Shipping: A Step-by-Step Checklist',
+      excerpt: 'What to do before we arrive — disassembly, documentation, hardware removal, and what NOT to do — so your furniture ships without a scratch.',
+      date: 'June 24, 2026',
+      category: 'How-To Guide',
+      readTime: '7 min read',
+      image: '🛋️',
+    },
+    {
       slug: 'what-is-white-glove-shipping',
       title: 'What Is White-Glove Shipping? (And Is It Worth It?)',
       excerpt: 'A plain-English explanation of white-glove delivery, what it includes, when to choose it, and whether the cost is worth it for your item.',

@@ -1,4 +1,5 @@
 ﻿import Link from 'next/link'
+import Image from 'next/image'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 import Breadcrumbs from '../components/Breadcrumbs'
@@ -9,7 +10,7 @@ import SEOWrapper from '@/app/components/SEOWrapper'
 export const metadata: Metadata = generateMetadata({
   title: 'About Austin Crate & Freight | Meet the Team — Peter Hall & Max DeLeonardis',
   description:
-    'Meet the team behind Austin Crate & Freight — Peter Hall (Founder & Master Crate Builder) and Max DeLeonardis (Operations Manager). Central Texas\'s premier white-glove specialty shipping company since 2010.',
+    'Meet the team behind Austin Crate & Freight — Peter Hall (Founder & Master Crate Builder) and Max DeLeonardis (Marketing Manager). Central Texas\'s premier white-glove specialty shipping company since 2010.',
   keywords: [
     'about Austin Crate & Freight',
     'Peter Hall Austin Crate',
@@ -43,7 +44,7 @@ const organizationSchema = {
     {
       '@type': 'Person',
       name: 'Max DeLeonardis',
-      jobTitle: 'Operations Manager',
+      jobTitle: 'Marketing Manager',
       url: 'https://austincrate.com/authors/max-deleonardis',
     },
   ],
@@ -79,6 +80,34 @@ export default function About() {
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               What started as a small custom crating operation has grown into a full-service specialty shipping company serving galleries, museums, interior designers, medical facilities, and private collectors throughout Austin, Round Rock, Cedar Park, Georgetown, and beyond.
+            </p>
+
+            {/* ── Real shop photos strip ─────────────────────────────────────── */}
+            <div className="grid grid-cols-3 gap-3 my-10 rounded-2xl overflow-hidden">
+              {[
+                { src: '/IMG_2980.jpg', alt: 'Custom crate build in progress at Austin Crate & Freight shop' },
+                { src: '/IMG_3037.jpg', alt: 'Large item custom crate — Austin Crate & Freight' },
+                { src: '/IMG_3092.jpg', alt: 'Crate assembly in the Austin Crate workshop' },
+                { src: '/IMG_2983.jpg', alt: 'Freight secured and ready for pickup — Austin TX' },
+                { src: '/IMG_2984.jpg', alt: 'White-glove packing prep — Austin Crate & Freight' },
+                { src: '/IMG_3155.jpg', alt: 'Completed job — Austin Crate & Freight' },
+              ].map((photo, i) => (
+                <div key={i} className="relative h-44 rounded-xl overflow-hidden">
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt}
+                    fill
+                    sizes="(max-width: 768px) 33vw, 25vw"
+                    className="object-cover hover:scale-105 transition-transform duration-300"
+                    quality={75}
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
+            <p className="text-sm text-gray-400 text-center mb-10 -mt-4">
+              Photos from our shop at 3112 Windsor Rd, Austin, TX.{' '}
+              <Link href="/gallery" className="text-emerald-600 hover:underline">See the full gallery →</Link>
             </p>
 
             <h2 className="text-4xl font-bold text-gray-900 mb-6 mt-12">Our Mission</h2>
@@ -158,7 +187,7 @@ export default function About() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-gray-900">Max DeLeonardis</h3>
-                      <p className="text-sky-600 text-sm font-medium">Operations Manager</p>
+                      <p className="text-sky-600 text-sm font-medium">Marketing Manager</p>
                     </div>
                   </div>
                   <p className="text-gray-600 text-sm leading-relaxed flex-1">

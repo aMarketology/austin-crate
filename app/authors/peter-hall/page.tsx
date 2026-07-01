@@ -270,7 +270,7 @@ export default function PeterHallAuthorPage() {
                 </Link>
                 <div className="mt-3">
                   <Link href="/authors/max-deleonardis" className="text-sm text-emerald-600 font-medium hover:underline">
-                    Max DeLeonardis — Operations Manager →
+                    Max DeLeonardis — Marketing Manager →
                   </Link>
                 </div>
                 <div className="mt-3">

@@ -32,7 +32,7 @@ export default function MoveOutATXBlog() {
         isoDate="2026-03-25"
         author="Max DeLeonardis"
         authorUrl="/authors/max-deleonardis"
-        authorTitle="Operations Manager"
+        authorTitle="Marketing Manager"
         category="Community"
         readTime="4 min read"
         description="Austin Resource Recovery, in partnership with the UT Office of Sustainability, confirms MoveOutATX returns to West Campus in late July 2026, diverting tons of reusable items from area landfills."

@@ -15,9 +15,17 @@ export const metadata: Metadata = generateMetadata({
 
 export default function Gallery() {
   const galleryImages = [
-    { id: 1, src: '/1.jpg', title: 'Fine Art Crating', category: 'Fine Art' },
-    { id: 2, src: '/2.jpg', title: 'Furniture Transport', category: 'Furniture' },
-    { id: 3, src: '/3.jpg', title: 'Medical Equipment', category: 'Medical' },
+    // ── Fresh 2026 shop & job photos ──────────────────────────────────────────
+    { id: 17, src: '/IMG_2980.jpg', title: 'Custom Crate Build in Progress', category: 'Crating' },
+    { id: 18, src: '/IMG_2981.jpg', title: 'Wood Crate Fabrication', category: 'Crating' },
+    { id: 19, src: '/IMG_2982.jpg', title: 'Specialty Packing — Ready to Ship', category: 'Packaging' },
+    { id: 20, src: '/IMG_2983.jpg', title: 'Secured Freight on Pallet', category: 'Freight' },
+    { id: 21, src: '/IMG_2984.jpg', title: 'White-Glove Prep Work', category: 'Delivery' },
+    { id: 22, src: '/IMG_2985.jpg', title: 'Interior Foam Blocking Detail', category: 'Packaging' },
+    { id: 23, src: '/IMG_3037.jpg', title: 'Large Item Custom Crate', category: 'Crating' },
+    { id: 24, src: '/IMG_3092.jpg', title: 'Workshop — Crate Assembly', category: 'Crating' },
+    { id: 25, src: '/IMG_3155.jpg', title: 'Job Complete — Austin TX', category: 'Delivery' },
+    // ── Archive photos ────────────────────────────────────────────────────────
     { id: 4, src: '/IMG_3105.jpg', title: 'Custom Crating Solution', category: 'Crating' },
     { id: 5, src: '/IMG_3112.jpg', title: 'Specialty Packaging', category: 'Packaging' },
     { id: 6, src: '/IMG_3114.jpg', title: 'Secure Transport Setup', category: 'Transport' },
@@ -29,7 +37,7 @@ export default function Gallery() {
     { id: 12, src: '/IMG_3954_1686069785125.jpg', title: 'Delicate Item Packaging', category: 'Packaging' },
     { id: 13, src: '/IMG_3979_1686773817157.jpg', title: 'Climate-Controlled Storage', category: 'Storage' },
     { id: 14, src: '/IMG_4196_1695841417957.jpg', title: 'Oversized Item Shipping', category: 'Shipping' },
-    { id: 15, src: '/IMG_4446_1703172460423.jpg', title: 'General Shipping & Crates', category: 'General' },
+    { id: 15, src: '/IMG_4446_1703172460423.jpg', title: 'Crate Build — Heavy Freight', category: 'Crating' },
     { id: 16, src: '/IMG_5091_1714149760004.jpg', title: 'Secure Loading', category: 'Loading' },
   ]
 

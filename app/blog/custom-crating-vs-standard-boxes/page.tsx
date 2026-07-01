@@ -53,7 +53,7 @@ export default function CustomCratingVsStandardBoxes() {
         '@type': 'Person',
         name: 'Max DeLeonardis',
         url: 'https://austincrate.com/authors/max-deleonardis',
-        jobTitle: 'Operations Manager',
+        jobTitle: 'Marketing Manager',
       },
     ],
     publisher: {
@@ -262,6 +262,10 @@ export default function CustomCratingVsStandardBoxes() {
               <Link href="/blog/prepare-furniture-for-shipping" className="p-4 bg-white rounded-lg shadow hover:shadow-lg transition">
                 <h3 className="font-bold text-lg text-grey-900 mb-2">How to Prepare Furniture for Shipping (Step-by-Step)</h3>
                 <p className="text-grey-600 text-sm">A practical checklist for getting furniture ready for pickup and transit, before we arrive.</p>
+              </Link>
+              <Link href="/blog/antique-shipping-guide" className="p-4 bg-white rounded-lg shadow hover:shadow-lg transition">
+                <h3 className="font-bold text-lg text-grey-900 mb-2">Antique Shipping Guide: How to Protect Heirlooms in Transit</h3>
+                <p className="text-grey-600 text-sm">Insurance, crating methods, and what carriers to avoid when shipping antiques and heirlooms.</p>
               </Link>
               <Link href="/blog/ship-large-furniture-texas" className="p-4 bg-white rounded-lg shadow hover:shadow-lg transition">
                 <h3 className="font-bold text-lg text-grey-900 mb-2">How to Ship Large Furniture Across Texas</h3>

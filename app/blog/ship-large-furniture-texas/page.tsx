@@ -47,7 +47,7 @@ export default function ShipLargeFurnitureTexas() {
         '@type': 'Person',
         name: 'Max DeLeonardis',
         url: 'https://austincrate.com/authors/max-deleonardis',
-        jobTitle: 'Operations Manager',
+        jobTitle: 'Marketing Manager',
       },
       {
         '@type': 'Person',
