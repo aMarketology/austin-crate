@@ -3,6 +3,7 @@
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 import Breadcrumbs from '../components/Breadcrumbs'
+import Image from 'next/image'
 import { useState, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 import emailjs from '@emailjs/browser'
@@ -143,9 +144,22 @@ export default function ContactClient() {
           {/* Contact Info */}
           <div className="order-2 md:order-1">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Get In Touch</h2>
-            <p className="text-gray-700 mb-8 leading-relaxed">
+            <p className="text-gray-700 mb-6 leading-relaxed">
               Ready to ship your fine art, designer furniture, or medical equipment? Contact us today for a free consultation and quote. We're here to answer all your questions and provide expert specialty shipping solutions.
             </p>
+
+            {/* Shop photo strip */}
+            <div className="grid grid-cols-3 gap-2 mb-8 rounded-xl overflow-hidden">
+              {[
+                { src: '/IMG_2981.jpg', alt: 'Crate fabrication in progress — Austin Crate & Freight shop' },
+                { src: '/IMG_3092.jpg', alt: 'Workshop crate assembly — Austin TX' },
+                { src: '/IMG_3155.jpg', alt: 'Job complete — Austin Crate & Freight' },
+              ].map((photo, i) => (
+                <div key={i} className="relative h-28">
+                  <Image src={photo.src} alt={photo.alt} fill className="object-cover" sizes="33vw" quality={70} loading="lazy" />
+                </div>
+              ))}
+            </div>
 
             <div className="space-y-8">
               {/* Phone */}

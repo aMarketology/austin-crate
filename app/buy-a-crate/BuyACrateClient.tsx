@@ -4,6 +4,7 @@ import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 import Breadcrumbs from '../components/Breadcrumbs'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 
 export default function BuyACrateClient() {
@@ -75,6 +76,25 @@ export default function BuyACrateClient() {
             >
               Request Custom Size
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Real crate build photos strip */}
+      <section className="py-10 px-4 bg-grey-900">
+        <div className="max-w-7xl mx-auto">
+          <p className="text-center text-grey-400 text-sm uppercase tracking-widest mb-5 font-semibold">Hand-built at our Austin workshop</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {[
+              { src: '/IMG_2980.jpg', alt: 'Custom crate build in progress — Austin TX workshop' },
+              { src: '/IMG_2981.jpg', alt: 'Wood crate fabrication — Austin Crate & Freight' },
+              { src: '/IMG_3037.jpg', alt: 'Large item custom crate — Austin TX' },
+              { src: '/IMG_2985.jpg', alt: 'Interior foam blocking detail — custom crate padding' },
+            ].map((photo, i) => (
+              <div key={i} className="relative h-40 rounded-xl overflow-hidden border border-grey-700">
+                <Image src={photo.src} alt={photo.alt} fill className="object-cover" sizes="(max-width: 768px) 50vw, 25vw" quality={70} loading="lazy" />
+              </div>
+            ))}
           </div>
         </div>
       </section>
