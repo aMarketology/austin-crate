@@ -288,6 +288,9 @@ export default function Georgetown() {
               <Link href="/locations/round-rock" className="px-5 py-2.5 bg-white border border-gray-200 rounded-lg text-gray-700 hover:border-emerald-500 hover:text-emerald-700 transition-colors font-medium">
                 Round Rock, TX
               </Link>
+              <Link href="/locations/taylor" className="px-5 py-2.5 bg-white border border-gray-200 rounded-lg text-gray-700 hover:border-emerald-500 hover:text-emerald-700 transition-colors font-medium">
+                Taylor, TX
+              </Link>
               <Link href="/locations/cedar-park" className="px-5 py-2.5 bg-white border border-gray-200 rounded-lg text-gray-700 hover:border-emerald-500 hover:text-emerald-700 transition-colors font-medium">
                 Cedar Park, TX
               </Link>

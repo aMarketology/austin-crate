@@ -9,6 +9,24 @@ import Footer from '@/app/components/Footer'
 export default function BlogIndexClient() {
   const blogPosts = [
     {
+      slug: 'how-to-choose-specialty-shipping',
+      title: 'How to Choose a Specialty Shipping Company in Austin, TX',
+      excerpt: '10 questions to ask before you hire — licensing, in-house crating, climate control, claims process, and the red flags that mean walk away.',
+      date: 'July 8, 2026',
+      category: 'Buyer Guide',
+      readTime: '8 min read',
+      image: '🔍',
+    },
+    {
+      slug: 'moving-to-austin-ship-valuables',
+      title: 'Moving to Austin? Ship Your Valuables First — A Practical Guide',
+      excerpt: 'Fine art, antiques, designer furniture, safes, and pianos need a different approach than a standard moving truck. Here\'s how to handle them correctly.',
+      date: 'July 8, 2026',
+      category: 'Moving Guide',
+      readTime: '7 min read',
+      image: '📦',
+    },
+    {
       slug: 'fine-art-shipping-austin',
       title: 'Fine Art Shipping in Austin, TX: The Complete 2026 Guide',
       excerpt: 'Crating methods, climate protection, insurance, carrier selection, and real costs — everything Austin collectors and galleries need to know.',

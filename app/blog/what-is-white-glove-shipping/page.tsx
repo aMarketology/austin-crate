@@ -287,6 +287,10 @@ export default function WhiteGloveShippingBlog() {
                 <h3 className="font-bold text-lg text-grey-900 mb-2">Fine Art Shipping &amp; Custom Crating in Austin</h3>
                 <p className="text-grey-600 text-sm">Museum-quality crating and white-glove transport for paintings, sculpture, and more.</p>
               </Link>
+              <Link href="/blog/how-to-choose-specialty-shipping" className="p-4 bg-white rounded-lg shadow hover:shadow-lg transition">
+                <h3 className="font-bold text-lg text-grey-900 mb-2">How to Choose a Specialty Shipping Company in Austin</h3>
+                <p className="text-grey-600 text-sm">A 10-question buyer's checklist to help you find the right carrier for high-value items.</p>
+              </Link>
             </div>
           </div>
         </section>

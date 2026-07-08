@@ -132,6 +132,7 @@ export default function Kyle() {
             <div className="flex flex-wrap gap-4">
               {[
                 { href: '/locations/buda', label: 'Buda, TX' },
+                { href: '/locations/san-marcos', label: 'San Marcos, TX' },
                 { href: '/locations/round-rock', label: 'Round Rock, TX' },
                 { href: '/locations/cedar-park', label: 'Cedar Park, TX' },
                 { href: '/locations/georgetown', label: 'Georgetown, TX' },

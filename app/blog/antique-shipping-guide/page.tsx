@@ -409,6 +409,14 @@ export default function AntiqueShippingGuide() {
                 <h3 className="font-bold text-lg text-grey-900 mb-1">What Is White-Glove Shipping? (And Is It Worth It?)</h3>
                 <p className="text-grey-600 text-sm">What white-glove delivery actually includes, and when it is the right choice for your piece.</p>
               </Link>
+              <Link href="/blog/how-to-choose-specialty-shipping" className="p-4 bg-white rounded-lg shadow hover:shadow-lg transition">
+                <h3 className="font-bold text-lg text-grey-900 mb-1">How to Choose a Specialty Shipping Company in Austin</h3>
+                <p className="text-grey-600 text-sm">A 10-question buyer's checklist to vet any carrier before you trust them with a valuable antique.</p>
+              </Link>
+              <Link href="/blog/moving-to-austin-ship-valuables" className="p-4 bg-white rounded-lg shadow hover:shadow-lg transition">
+                <h3 className="font-bold text-lg text-grey-900 mb-1">Moving to Austin? Here's How to Ship Your Valuables</h3>
+                <p className="text-grey-600 text-sm">What to ship separately — and how — when relocating to Austin with antiques and heirlooms.</p>
+              </Link>
             </div>
           </div>
         </section>

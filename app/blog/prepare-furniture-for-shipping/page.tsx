@@ -441,6 +441,10 @@ export default function PrepareFurnitureForShipping() {
                 <h3 className="font-bold text-lg text-grey-900 mb-1">Antique Shipping Guide: Protecting Heirlooms in Transit</h3>
                 <p className="text-grey-600 text-sm">Everything you need to know before shipping an antique, from insurance to crating methods.</p>
               </Link>
+              <Link href="/blog/moving-to-austin-ship-valuables" className="p-4 bg-white rounded-lg shadow hover:shadow-lg transition">
+                <h3 className="font-bold text-lg text-grey-900 mb-1">Moving to Austin? Here's How to Ship Your Valuables</h3>
+                <p className="text-grey-600 text-sm">What to ship separately — and how — when relocating to Austin with furniture and high-value items.</p>
+              </Link>
             </div>
           </div>
         </section>

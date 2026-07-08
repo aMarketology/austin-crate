@@ -944,6 +944,62 @@ export const contentRegistry: ContentEntry[] = [
     changeFrequency: 'monthly',
   },
 
+  // ── Q3 2026 Blog Posts ────────────────────────────────────────────────────────
+  {
+    slug: '/blog/moving-to-austin-ship-valuables',
+    title: 'Moving to Austin? Ship Your Valuables First — A Practical Guide | Austin Crate & Freight',
+    description:
+      'What standard movers cannot handle — fine art, antiques, designer furniture, safes, and pianos. How to ship your valuables to Austin TX safely, what it costs, and how to plan it.',
+    publishDate: '2026-07-08',
+    modifiedDate: '2026-07-08',
+    category: 'Blog',
+    tags: ['moving to Austin ship valuables', 'shipping valuables to Austin TX', 'relocating to Austin Texas shipping', 'ship furniture to Austin', 'ship art to Austin Texas'],
+    author: 'Max DeLeonardis',
+    priority: 0.8,
+    changeFrequency: 'monthly',
+  },
+  {
+    slug: '/blog/how-to-choose-specialty-shipping',
+    title: 'How to Choose a Specialty Shipping Company in Austin, TX | Austin Crate & Freight',
+    description:
+      '10 questions to ask before hiring a specialty shipper in Austin — licensing, in-house crating, climate control, claims process, and the red flags that mean walk away.',
+    publishDate: '2026-07-08',
+    modifiedDate: '2026-07-08',
+    category: 'Blog',
+    tags: ['how to choose specialty shipping company Austin', 'best specialty shipping Austin TX', 'specialty freight company Austin', 'white glove shipping company Austin', 'custom crating company Austin'],
+    author: 'Max DeLeonardis',
+    priority: 0.8,
+    changeFrequency: 'monthly',
+  },
+
+  // ── Q3 2026 Location Pages ─────────────────────────────────────────────────
+  {
+    slug: '/locations/san-marcos',
+    title: 'Specialty Shipping & Crating in San Marcos, TX | Austin Crate & Freight',
+    description:
+      'Specialty shipping and custom crating in San Marcos, TX. Antique shipping, furniture crating, fine art transport, heavy item pickup. Serving all of Hays County. Call (512) 240-9818.',
+    publishDate: '2026-07-08',
+    modifiedDate: '2026-07-08',
+    category: 'Locations',
+    tags: ['specialty shipping San Marcos TX', 'antique shipping San Marcos', 'furniture crating San Marcos TX', 'fine art shipping San Marcos', 'custom crating San Marcos Texas'],
+    author: 'Austin Crate & Freight',
+    priority: 0.8,
+    changeFrequency: 'monthly',
+  },
+  {
+    slug: '/locations/taylor',
+    title: 'Specialty Shipping & Crating in Taylor, TX | Austin Crate & Freight',
+    description:
+      'Specialty shipping and custom crating in Taylor, TX. Industrial equipment crating, heavy item pickup, furniture shipping, and medical equipment transport. Serving Williamson County. Call (512) 240-9818.',
+    publishDate: '2026-07-08',
+    modifiedDate: '2026-07-08',
+    category: 'Locations',
+    tags: ['specialty shipping Taylor TX', 'industrial equipment crating Taylor Texas', 'custom crating Taylor TX', 'furniture shipping Taylor', 'heavy item pickup Taylor Texas'],
+    author: 'Austin Crate & Freight',
+    priority: 0.8,
+    changeFrequency: 'monthly',
+  },
+
   // ── Author Pages ─────────────────────────────────────────────────────────────
   {
     slug: '/authors/peter-hall',

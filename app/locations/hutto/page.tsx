@@ -131,6 +131,7 @@ export default function Hutto() {
             <div className="flex flex-wrap gap-4">
               {[
                 { href: '/locations/pflugerville', label: 'Pflugerville, TX' },
+                { href: '/locations/taylor', label: 'Taylor, TX' },
                 { href: '/locations/round-rock', label: 'Round Rock, TX' },
                 { href: '/locations/manor', label: 'Manor, TX' },
                 { href: '/locations/georgetown', label: 'Georgetown, TX' },

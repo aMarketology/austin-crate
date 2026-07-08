@@ -845,7 +845,7 @@ export default function HomeClient() {
               Serving Austin & Surrounding Areas
             </h2>
             <p className="text-sm md:text-lg lg:text-xl text-grey-600">
-              Austin • Round Rock • Cedar Park • Georgetown • Pflugerville & More
+              Austin • Round Rock • Cedar Park • Georgetown • San Marcos • Taylor & More
             </p>
           </div>
 
@@ -855,6 +855,8 @@ export default function HomeClient() {
               { city: 'Round Rock', href: '/locations/round-rock' },
               { city: 'Cedar Park', href: '/locations/cedar-park' },
               { city: 'Georgetown', href: '/locations/georgetown' },
+              { city: 'San Marcos', href: '/locations/san-marcos' },
+              { city: 'Taylor', href: '/locations/taylor' },
             ].map((item, i) => (
               <Link
                 key={i}

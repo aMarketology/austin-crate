@@ -131,6 +131,7 @@ export default function Buda() {
             <div className="flex flex-wrap gap-4">
               {[
                 { href: '/locations/kyle', label: 'Kyle, TX' },
+                { href: '/locations/san-marcos', label: 'San Marcos, TX' },
                 { href: '/locations/dripping-springs', label: 'Dripping Springs, TX' },
                 { href: '/locations/round-rock', label: 'Round Rock, TX' },
                 { href: '/locations/cedar-park', label: 'Cedar Park, TX' },
