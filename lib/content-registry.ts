@@ -999,6 +999,71 @@ export const contentRegistry: ContentEntry[] = [
     priority: 0.8,
     changeFrequency: 'monthly',
   },
+  {
+    slug: '/locations/wimberley',
+    title: 'Specialty Shipping & Crating in Wimberley, TX | Austin Crate & Freight',
+    description:
+      'Specialty shipping and custom crating in Wimberley, TX. Fine art shipping, antique crating, furniture transport, and high-value item shipping for Hill Country homes and galleries. Call (512) 240-9818.',
+    publishDate: '2026-07-08',
+    modifiedDate: '2026-07-08',
+    category: 'Locations',
+    tags: ['specialty shipping Wimberley TX', 'antique shipping Wimberley Texas', 'fine art shipping Wimberley TX', 'Hill Country art shipping Texas', 'Wimberley Market Days shipping'],
+    author: 'Austin Crate & Freight',
+    priority: 0.8,
+    changeFrequency: 'monthly',
+  },
+  {
+    slug: '/locations/bastrop',
+    title: 'Specialty Shipping & Crating in Bastrop, TX | Austin Crate & Freight',
+    description:
+      'Specialty shipping and custom crating in Bastrop, TX. Furniture shipping, antique crating, heavy item pickup, and fine art transport for Bastrop homes and businesses. Call (512) 240-9818.',
+    publishDate: '2026-07-08',
+    modifiedDate: '2026-07-08',
+    category: 'Locations',
+    tags: ['specialty shipping Bastrop TX', 'antique shipping Bastrop Texas', 'furniture crating Bastrop TX', 'heavy item pickup Bastrop TX', 'custom crating Bastrop Texas'],
+    author: 'Austin Crate & Freight',
+    priority: 0.8,
+    changeFrequency: 'monthly',
+  },
+  {
+    slug: '/locations/marble-falls',
+    title: 'Specialty Shipping & Crating in Marble Falls, TX | Austin Crate & Freight',
+    description:
+      'Specialty shipping and custom crating in Marble Falls, TX. Fine art shipping, antique crating, furniture transport, and high-value item shipping for Highland Lakes estates and galleries. Call (512) 240-9818.',
+    publishDate: '2026-07-08',
+    modifiedDate: '2026-07-08',
+    category: 'Locations',
+    tags: ['specialty shipping Marble Falls TX', 'fine art shipping Marble Falls Texas', 'antique shipping Marble Falls TX', 'Lake LBJ shipping crating', 'Burnet County specialty shipping'],
+    author: 'Austin Crate & Freight',
+    priority: 0.8,
+    changeFrequency: 'monthly',
+  },
+  {
+    slug: '/locations/lockhart',
+    title: 'Specialty Shipping & Crating in Lockhart, TX | Austin Crate & Freight',
+    description:
+      'Specialty shipping and custom crating in Lockhart, TX. Furniture shipping, heavy item pickup, antique crating, and custom packaging for Lockhart homes and businesses. Serving Caldwell County. Call (512) 240-9818.',
+    publishDate: '2026-07-08',
+    modifiedDate: '2026-07-08',
+    category: 'Locations',
+    tags: ['specialty shipping Lockhart TX', 'furniture shipping Lockhart Texas', 'heavy item pickup Lockhart TX', 'antique shipping Lockhart Texas', 'Caldwell County shipping crating'],
+    author: 'Austin Crate & Freight',
+    priority: 0.8,
+    changeFrequency: 'monthly',
+  },
+  {
+    slug: '/locations/elgin',
+    title: 'Specialty Shipping & Crating in Elgin, TX | Austin Crate & Freight',
+    description:
+      'Specialty shipping and custom crating in Elgin, TX. Furniture shipping, heavy item pickup, industrial crating, and custom packaging for Elgin homes and businesses. Serving Bastrop County. Call (512) 240-9818.',
+    publishDate: '2026-07-08',
+    modifiedDate: '2026-07-08',
+    category: 'Locations',
+    tags: ['specialty shipping Elgin TX', 'furniture shipping Elgin Texas', 'heavy item pickup Elgin TX', 'industrial crating Elgin Texas', 'east Austin corridor shipping'],
+    author: 'Austin Crate & Freight',
+    priority: 0.8,
+    changeFrequency: 'monthly',
+  },
 
   // ── Author Pages ─────────────────────────────────────────────────────────────
   {

@@ -131,6 +131,8 @@ export default function DrippingSprings() {
             <div className="flex flex-wrap gap-4">
               {[
                 { href: '/locations/lakeway', label: 'Lakeway / Bee Cave, TX' },
+                { href: '/locations/wimberley', label: 'Wimberley, TX' },
+                { href: '/locations/marble-falls', label: 'Marble Falls, TX' },
                 { href: '/locations/cedar-park', label: 'Cedar Park, TX' },
                 { href: '/locations/round-rock', label: 'Round Rock, TX' },
                 { href: '/services/fine-art', label: 'Fine Art Shipping' },

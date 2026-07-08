@@ -133,6 +133,8 @@ export default function Kyle() {
               {[
                 { href: '/locations/buda', label: 'Buda, TX' },
                 { href: '/locations/san-marcos', label: 'San Marcos, TX' },
+                { href: '/locations/lockhart', label: 'Lockhart, TX' },
+                { href: '/locations/bastrop', label: 'Bastrop, TX' },
                 { href: '/locations/round-rock', label: 'Round Rock, TX' },
                 { href: '/locations/cedar-park', label: 'Cedar Park, TX' },
                 { href: '/locations/georgetown', label: 'Georgetown, TX' },

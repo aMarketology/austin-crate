@@ -132,6 +132,8 @@ export default function Manor() {
             <div className="flex flex-wrap gap-4">
               {[
                 { href: '/locations/pflugerville', label: 'Pflugerville, TX' },
+                { href: '/locations/elgin', label: 'Elgin, TX' },
+                { href: '/locations/bastrop', label: 'Bastrop, TX' },
                 { href: '/locations/hutto', label: 'Hutto, TX' },
                 { href: '/locations/round-rock', label: 'Round Rock, TX' },
                 { href: '/locations/cedar-park', label: 'Cedar Park, TX' },
