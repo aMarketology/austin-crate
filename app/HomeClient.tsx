@@ -849,12 +849,19 @@ export default function HomeClient() {
             </p>
           </div>
 
-          {/* Cities Grid - linked pages + remaining cities */}
+          {/* Cities Grid - all linked */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 md:gap-3 lg:gap-4 mb-6 md:mb-10 lg:mb-12">
             {[
+              { city: 'Austin', href: '/services' },
               { city: 'Round Rock', href: '/locations/round-rock' },
               { city: 'Cedar Park', href: '/locations/cedar-park' },
               { city: 'Georgetown', href: '/locations/georgetown' },
+              { city: 'Pflugerville', href: '/locations/pflugerville' },
+              { city: 'Leander', href: '/locations/leander' },
+              { city: 'Lakeway', href: '/locations/lakeway' },
+              { city: 'Bee Cave', href: '/locations/lakeway' },
+              { city: 'Dripping Springs', href: '/locations/dripping-springs' },
+              { city: 'Kyle', href: '/locations/kyle' },
               { city: 'San Marcos', href: '/locations/san-marcos' },
               { city: 'Taylor', href: '/locations/taylor' },
               { city: 'Wimberley', href: '/locations/wimberley' },
@@ -862,6 +869,9 @@ export default function HomeClient() {
               { city: 'Marble Falls', href: '/locations/marble-falls' },
               { city: 'Lockhart', href: '/locations/lockhart' },
               { city: 'Elgin', href: '/locations/elgin' },
+              { city: 'Hutto', href: '/locations/hutto' },
+              { city: 'Manor', href: '/locations/manor' },
+              { city: 'Buda', href: '/locations/buda' },
             ].map((item, i) => (
               <Link
                 key={i}
@@ -875,19 +885,6 @@ export default function HomeClient() {
                   <span className="text-sm font-semibold text-grey-800">{item.city}</span>
                 </div>
               </Link>
-            ))}
-            {['Austin', 'Pflugerville', 'Leander', 'Lakeway', 'Bee Cave', 'Dripping Springs', 'Kyle'].map((city, i) => (
-              <div
-                key={i}
-                className="p-4 rounded-xl bg-white border-2 border-grey-200 hover:border-emerald hover:shadow-md transition-all text-center"
-              >
-                <div className="flex items-center justify-center gap-2">
-                  <svg className="w-4 h-4 text-emerald" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-sm font-semibold text-grey-800">{city}</span>
-                </div>
-              </div>
             ))}
           </div>
 
