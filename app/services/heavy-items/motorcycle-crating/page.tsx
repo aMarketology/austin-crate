@@ -51,7 +51,7 @@ export default function MotorcycleCrating() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
             <Link href="/services/heavy-items" className="text-emerald hover:underline mb-4 inline-block text-sm">
-              ← Heavy Item Shipping &amp; Pickup
+              ← Heavy Item Shipping &amp; Collection
             </Link>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-grey-700 bg-grey-800/50 mb-6 ml-4">
               <span className="text-xs font-medium text-grey-300 uppercase tracking-widest">Specialty Shipping · Austin, TX</span>
@@ -101,9 +101,9 @@ export default function MotorcycleCrating() {
                 { title: 'Custom-Sized Floor Base', desc: 'The crate base is cut to the wheelbase of your specific bike, not a generic pallet. The bike sits flat and stable, not tilted or propped.' },
                 { title: 'Internal Wheel Chocks', desc: 'Wood wheel chocks are built into the floor base, locking both wheels in position. The bike cannot roll forward or backward inside the crate.' },
                 { title: 'Foam Padding at All Contact Points', desc: 'Handlebars, pegs, mirrors, and exhaust are individually padded at any point where metal could contact the crate interior.' },
-                { title: 'Fuel Drain Compliance', desc: 'Freight carriers require fuel tanks to be drained below 1/4 tank. We advise you on this before pickup and ensure compliance so the shipment is not rejected.' },
+                { title: 'Fuel Drain Compliance', desc: 'Freight carriers require fuel tanks to be drained below 1/4 tank. We advise you on this before collection and ensure compliance so the shipment is not rejected.' },
                 { title: 'Battery Disconnect', desc: 'For long-distance shipments, we disconnect the battery and secure it separately inside the crate, preventing drain and eliminating any fire risk concern from carriers.' },
-                { title: 'Freight Coordination', desc: 'We work directly with freight carriers who handle crated motorcycles, not general cargo handlers who have no experience with bikes. We coordinate pickup, tracking, and delivery.' },
+                { title: 'Freight Coordination', desc: 'We work directly with freight carriers who handle crated motorcycles, not general cargo handlers who have no experience with bikes. We coordinate collection, tracking, and delivery.' },
               ].map((item, i) => (
                 <div key={i} className="p-5 bg-gray-50 border border-gray-200 rounded-xl">
                   <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
@@ -150,7 +150,7 @@ export default function MotorcycleCrating() {
                 { q: 'Do I need to drain the fuel before shipping?', a: 'Yes, major freight carriers require fuel tanks below 1/4 tank, and some require full drain. We advise on this before we arrive and ensure your shipment meets carrier requirements.' },
                 { q: 'Can you ship a vintage or custom motorcycle without damaging the finish?', a: 'Absolutely. Vintage and custom bikes get extra care, foam-padded contact points, no straps on painted surfaces, and careful positioning to prevent any contact between the bike and crate walls.' },
                 { q: 'How long does motorcycle shipping from Austin take?', a: 'Austin to nearby Texas cities: 1–2 days. Cross-country shipments: 5–10 business days depending on the freight carrier route and destination.' },
-                { q: 'Do you offer pickup from my home or dealership?', a: 'Yes. We provide pickup from residential addresses, dealerships, garages, and storage facilities throughout greater Austin.' },
+                { q: 'Do you offer collection from my home or dealership?', a: 'Yes. We provide collection from residential addresses, dealerships, garages, and storage facilities throughout greater Austin.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                   <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

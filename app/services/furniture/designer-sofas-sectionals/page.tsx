@@ -13,7 +13,7 @@ const SLUG = '/services/furniture/designer-sofas-sectionals'
 export function generateMetadata(): Metadata {
   return generateServiceMetadata({
     serviceName: 'Designer Sofa & Sectional Shipping Austin Texas',
-    description: 'Specialist shipping and crating for designer sofas and sectionals in Austin, Texas. White-glove pickup, custom crating, and scratch-free delivery for luxury seating brands. Call (512) 240-9818.',
+    description: 'Specialist shipping and crating for designer sofas and sectionals in Austin, Texas. White-glove collection, custom crating, and scratch-free delivery for luxury seating brands. Call (512) 240-9818.',
     keywords: [
       'designer sofa shipping Austin Texas',
       'sectional shipping Austin TX',
@@ -135,7 +135,7 @@ export default function DesignerSofaShipping() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
             <div className="space-y-5">
               {[
-                { q: 'Can you pick up my designer sofa in Austin?', a: 'Yes, we offer free pickup anywhere in Greater Austin, Round Rock, Cedar Park, Georgetown, and surrounding areas. Our crew arrives with all the right equipment and materials.' },
+                { q: 'Can you collect my designer sofa in Austin?', a: 'Yes, we offer collection anywhere in Greater Austin, Round Rock, Cedar Park, Georgetown, and surrounding areas. Our crew arrives with all the right equipment and materials.' },
                 { q: 'Do you ship sectionals in one piece or disassembled?', a: 'We assess each sectional individually. Most large sectionals ship disassembled into their modular sections, with all hardware carefully bagged and labeled. We reassemble on delivery.' },
                 { q: 'Will you crate my sofa for cross-country shipping?', a: 'Yes. For any long-distance shipment going through LTL freight, we strongly recommend a custom wood crate built in our Austin shop. We provide this end-to-end.' },
                 { q: 'How much does sofa shipping cost in Austin?', a: 'Local designer sofa delivery in Austin typically starts at $200-$400 depending on size and access. Long-distance crated freight starts at $400+. Call (512) 240-9818 for a free quote.' },

@@ -9,14 +9,14 @@ import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = generateLocationMetadata({
   locationName: 'Taylor',
-  description: 'Specialty shipping & custom crating in Taylor, TX. Industrial equipment crating, furniture shipping, fine art transport, and heavy item pickup. White-glove service from Austin Crate & Freight.',
+  description: 'Specialty shipping & custom crating in Taylor, TX. Industrial equipment crating, furniture shipping, fine art transport, and heavy item collection. White-glove service from Austin Crate & Freight.',
   keywords: [
     'specialty shipping Taylor TX',
     'specialty shipping Taylor Texas',
     'custom crating Taylor TX',
     'industrial equipment shipping Taylor',
     'furniture shipping Taylor TX',
-    'heavy item pickup Taylor Texas',
+    'heavy item collection Taylor Texas',
     'oversized shipping Taylor TX',
     'white glove shipping Taylor',
     'Taylor TX shipping company',
@@ -57,7 +57,7 @@ export default function Taylor() {
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Specialty Shipping & Crating in Taylor, TX</h1>
               <p className="text-xl text-gray-300 mb-8">
-                Taylor, Texas is in the middle of one of the most significant industrial expansions in the state. With Samsung's semiconductor fab and wave of supporting businesses transforming Williamson County, the demand for precision shipping and specialty crating has never been higher. Austin Crate &amp; Freight serves Taylor with expert industrial equipment crating, heavy item pickup, and white-glove specialty shipping — built to the standards that high-value equipment demands.
+                Taylor, Texas is in the middle of one of the most significant industrial expansions in the state. With Samsung's semiconductor fab and wave of supporting businesses transforming Williamson County, the demand for precision shipping and specialty crating has never been higher. Austin Crate &amp; Freight serves Taylor with expert industrial equipment crating, heavy item collection, and white-glove specialty shipping — built to the standards that high-value equipment demands.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -150,8 +150,8 @@ export default function Taylor() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Pickup</h3>
-              <p className="text-gray-600 mb-4">Heavy item pickup and custom crating in Taylor for items too large for standard carriers — safes, appliances, and oversized industrial components.</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Collection</h3>
+              <p className="text-gray-600 mb-4">Heavy item collection and custom crating in Taylor for items too large for standard carriers — safes, appliances, and oversized industrial components.</p>
               <Link href="/services/heavy-items" className="text-emerald-600 hover:text-emerald-700 font-medium">Learn More →</Link>
             </div>
           </div>
@@ -186,9 +186,9 @@ export default function Taylor() {
             <div className="grid md:grid-cols-2 gap-6">
               {[
                 { title: 'Industrial Crating Capability', body: 'We build crates for heavy, precision, and oddly-shaped industrial equipment. Our Safety Speed panel saw cuts panels to exact specifications. Every crate is engineered for the specific item, not templated.' },
-                { title: 'Close to the Corridor', body: 'Taylor is 35 miles northeast of our Austin workshop via TX-79 — a straightforward run. We can pick up in Taylor same-day or next-day for urgent jobs.' },
+                { title: 'Close to the Corridor', body: 'Taylor is 35 miles northeast of our Austin workshop via TX-79 — a straightforward run. We can collect in Taylor same-day or next-day for urgent jobs.' },
                 { title: '15+ Years in Austin', body: 'We have been building specialty crates in Central Texas since 2010. The Taylor market is new; our expertise is not. We bring the same standards to every job regardless of location.' },
-                { title: 'Full Insurance Coverage', body: 'Every shipment is covered from pickup to delivery. We document condition before crating and maintain full coverage throughout transit — essential for high-value industrial and precision equipment.' },
+                { title: 'Full Insurance Coverage', body: 'Every shipment is covered from collection to delivery. We document condition before crating and maintain full coverage throughout transit — essential for high-value industrial and precision equipment.' },
               ].map(({ title, body }) => (
                 <div key={title} className="flex gap-4">
                   <div className="flex-shrink-0">
@@ -221,7 +221,7 @@ export default function Taylor() {
               </Link>
               <Link href="/blog/cost-to-ship-heavy-items-austin" className="group block bg-gray-50 border border-gray-200 rounded-xl p-5 hover:border-emerald-400 hover:shadow-md transition-all">
                 <h3 className="font-bold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">Cost to Ship Heavy Items in Austin</h3>
-                <p className="text-gray-500 text-sm">Real pricing for heavy item pickup, crating, and freight from Central Texas.</p>
+                <p className="text-gray-500 text-sm">Real pricing for heavy item collection, crating, and freight from Central Texas.</p>
               </Link>
               <Link href="/blog/moving-to-austin-ship-valuables" className="group block bg-gray-50 border border-gray-200 rounded-xl p-5 hover:border-emerald-400 hover:shadow-md transition-all">
                 <h3 className="font-bold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">Moving to Austin? Ship Your Valuables First</h3>
@@ -237,7 +237,7 @@ export default function Taylor() {
               {[
                 {
                   q: 'Do you offer specialty shipping and crating in Taylor, TX?',
-                  a: 'Yes. Austin Crate & Freight provides specialty shipping and custom crating throughout Taylor, Texas and Williamson County. We pick up from your Taylor location, build custom crates in-house at our Austin workshop, and ship locally or nationwide. We cover 76574 and the full Taylor area.',
+                  a: 'Yes. Austin Crate & Freight provides specialty shipping and custom crating throughout Taylor, Texas and Williamson County. We collect from your Taylor location, build custom crates in-house at our Austin workshop, and ship locally or nationwide. We cover 76574 and the full Taylor area.',
                 },
                 {
                   q: 'Can you crate industrial equipment for the Taylor semiconductor corridor?',
@@ -245,7 +245,7 @@ export default function Taylor() {
                 },
                 {
                   q: 'How far is Taylor from your Austin workshop?',
-                  a: 'Our workshop at 3112 Windsor Rd, Austin TX is approximately 35 miles southwest of Taylor via TX-79 — about 40 minutes. We offer same-day and next-day pickup in Taylor.',
+                  a: 'Our workshop at 3112 Windsor Rd, Austin TX is approximately 35 miles southwest of Taylor via TX-79 — about 40 minutes. We offer same-day and next-day collection in Taylor.',
                 },
                 {
                   q: 'Do you handle relocations for professionals moving to Taylor?',
@@ -287,7 +287,7 @@ export default function Taylor() {
 
           <div className="text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Ship from Taylor, TX?</h3>
-            <p className="text-gray-600 mb-6">Contact us for a free quote on industrial equipment crating, heavy item pickup, furniture shipping, or any specialty shipping need in Taylor.</p>
+            <p className="text-gray-600 mb-6">Contact us for a free quote on industrial equipment crating, heavy item collection, furniture shipping, or any specialty shipping need in Taylor.</p>
             <a href="tel:(512) 240-9818" className="inline-flex items-center gap-2 px-8 py-4 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors font-medium">
               Call (512) 240-9818
             </a>
@@ -302,13 +302,13 @@ export default function Taylor() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Serving Taylor from Austin</h2>
               <p className="text-gray-700 text-lg mb-6">
-                Austin Crate &amp; Freight serves Taylor from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, 35 miles southwest via TX-79. Free pickup throughout Taylor and Williamson County.
+                Austin Crate &amp; Freight serves Taylor from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, 35 miles southwest via TX-79. Collection throughout Taylor and Williamson County.
               </p>
               <ul className="space-y-3 text-gray-700 mb-8">
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Address:</strong> 3112 Windsor Rd, Austin, TX 78703</span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Phone:</strong> <a href="tel:(512) 240-9818" className="text-emerald-600 hover:underline">(512) 240-9818</a></span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Hours:</strong> Mon-Fri 8am-6pm, Sat by appointment</span></li>
-                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Taylor pickup:</strong> Free throughout Taylor and Williamson County</span></li>
+                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Taylor collection:</strong> available throughout Taylor and Williamson County</span></li>
               </ul>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Austin+Crate+%26+Freight+3112+Windsor+Rd+Austin+TX+78703"

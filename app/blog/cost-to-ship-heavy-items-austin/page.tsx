@@ -24,7 +24,7 @@ export function generateMetadata(): Metadata {
     },
     keywords: [
       'cost to ship heavy items Austin',
-      'heavy package pickup Austin cost',
+      'heavy package collection Austin cost',
       'heavy item shipping prices Austin TX',
       'oversized shipping cost Austin',
       'custom furniture shipping cost',
@@ -47,7 +47,7 @@ export default function CostToShipHeavyItemsBlog() {
     '@type': 'Article',
     headline: 'How Much Does It Cost to Ship Heavy Items in Austin? (2026 Price Guide)',
     description:
-      'Complete pricing guide for shipping heavy items in Austin, TX. Compare costs for heavy package pickup, custom furniture shipping, oversized item transport, and freight solutions.',
+      'Complete pricing guide for shipping heavy items in Austin, TX. Compare costs for heavy package collection, custom furniture shipping, oversized item transport, and freight solutions.',
     author: {
       '@type': 'Person',
       name: 'Max DeLeonardis',
@@ -73,7 +73,7 @@ export default function CostToShipHeavyItemsBlog() {
         name: 'How much does it cost to ship heavy items in Austin?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Heavy item shipping in Austin typically costs $150 to $500+ for local pickup and delivery, depending on weight, dimensions, distance, and whether custom crating is needed. Austin Crate & Freight offers free quotes for all heavy item shipments.',
+          text: 'Heavy item shipping in Austin typically costs $150 to $500+ for local collection and delivery, depending on weight, dimensions, distance, and whether custom crating is needed. Austin Crate & Freight offers free quotes for all heavy item shipments.',
         },
       },
       {
@@ -89,7 +89,7 @@ export default function CostToShipHeavyItemsBlog() {
         name: 'What is included in heavy item shipping costs?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Austin Crate & Freight heavy item shipping includes pickup from your location, professional handling with proper equipment, protective wrapping, secure transport, and delivery. Custom crating and insurance are available at additional cost.',
+          text: 'Austin Crate & Freight heavy item shipping includes collection from your location, professional handling with proper equipment, protective wrapping, secure transport, and delivery. Custom crating and insurance are available at additional cost.',
         },
       },
       {
@@ -142,13 +142,13 @@ export default function CostToShipHeavyItemsBlog() {
         <section className="flex-1 py-16 px-4 bg-white">
           <article className="max-w-3xl mx-auto prose prose-lg">
             <p className="text-xl text-gray-700 mb-8">
-              Shipping heavy items in Austin, Texas can feel overwhelming. Standard carriers like UPS and FedEx cap out at 150 lbs, and LTL freight quotes can be confusing. Whether you need <strong>heavy package pickup</strong> for a safe, a piano, commercial equipment, or <strong>custom furniture shipping</strong>, this guide breaks down exactly what you can expect to pay in 2026.
+              Shipping heavy items in Austin, Texas can feel overwhelming. Standard carriers like UPS and FedEx cap out at 150 lbs, and LTL freight quotes can be confusing. Whether you need <strong>heavy package collection</strong> for a safe, a piano, commercial equipment, or <strong>custom furniture shipping</strong>, this guide breaks down exactly what you can expect to pay in 2026.
             </p>
 
             <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 my-8 not-prose">
               <p className="font-semibold text-emerald-800 mb-2">Quick Answer</p>
               <p className="text-gray-700 mb-0">
-                Heavy item shipping in Austin typically costs <strong>$150 to $500+</strong> for local pickup and delivery, depending on weight, dimensions, and crating needs. Long-distance shipments range from <strong>$300 to $2,000+</strong>. <Link href="/contact" className="text-emerald-700 underline">Get a free quote</Link> for your specific item.
+                Heavy item shipping in Austin typically costs <strong>$150 to $500+</strong> for local collection and delivery, depending on weight, dimensions, and crating needs. Long-distance shipments range from <strong>$300 to $2,000+</strong>. <Link href="/contact" className="text-emerald-700 underline">Get a free quote</Link> for your specific item.
               </p>
             </div>
 
@@ -168,7 +168,7 @@ export default function CostToShipHeavyItemsBlog() {
 
             <h2>Heavy Item Shipping Cost Breakdown (Austin, TX)</h2>
             <p>
-              Here is what Austin residents and businesses typically pay for <Link href="/services/heavy-items" className="text-emerald-700 underline">heavy item pickup and shipping</Link> in 2026:
+              Here is what Austin residents and businesses typically pay for <Link href="/services/heavy-items" className="text-emerald-700 underline">heavy item collection and shipping</Link> in 2026:
             </p>
 
             <div className="not-prose my-8">
@@ -183,7 +183,7 @@ export default function CostToShipHeavyItemsBlog() {
                   </thead>
                   <tbody>
                     <tr className="border-b border-gray-200">
-                      <td className="p-4 font-medium">Local Heavy Package Pickup</td>
+                      <td className="p-4 font-medium">Local Heavy Package Collection</td>
                       <td className="p-4 text-gray-600">150 &ndash; 300 lbs</td>
                       <td className="p-4 text-emerald-700 font-semibold">$150 &ndash; $300</td>
                     </tr>
@@ -220,7 +220,7 @@ export default function CostToShipHeavyItemsBlog() {
                   </tbody>
                 </table>
               </div>
-              <p className="text-sm text-gray-500 mt-3">* Prices are estimates. Actual costs depend on item dimensions, pickup/delivery location, stairs or special access, and distance. <Link href="/contact" className="text-emerald-600 underline">Request a free, no-obligation quote.</Link></p>
+              <p className="text-sm text-gray-500 mt-3">* Prices are estimates. Actual costs depend on item dimensions, collection/delivery location, stairs or special access, and distance. <Link href="/contact" className="text-emerald-600 underline">Request a free, no-obligation quote.</Link></p>
             </div>
 
             <h2>5 Factors That Affect Heavy Item Shipping Costs</h2>
@@ -235,12 +235,12 @@ export default function CostToShipHeavyItemsBlog() {
 
             <h3>2. Distance</h3>
             <p>
-              Local Austin-area pickup and delivery (within 30 miles) is the most affordable option. Regional shipments across Texas add $100 to $300, while cross-country freight to the East or West Coast can add $500+. We serve <Link href="/locations/round-rock" className="text-emerald-700 underline">Round Rock</Link>, <Link href="/locations/cedar-park" className="text-emerald-700 underline">Cedar Park</Link>, <Link href="/locations/georgetown" className="text-emerald-700 underline">Georgetown</Link>, and all of Central Texas.
+              Local Austin-area collection and delivery (within 30 miles) is the most affordable option. Regional shipments across Texas add $100 to $300, while cross-country freight to the East or West Coast can add $500+. We serve <Link href="/locations/round-rock" className="text-emerald-700 underline">Round Rock</Link>, <Link href="/locations/cedar-park" className="text-emerald-700 underline">Cedar Park</Link>, <Link href="/locations/georgetown" className="text-emerald-700 underline">Georgetown</Link>, and all of Central Texas.
             </p>
 
             <h3>3. Access and Handling</h3>
             <p>
-              Stairs, narrow doorways, lack of a loading dock, and upper-floor apartments add complexity and cost. A ground-floor pickup with easy truck access will always be cheaper than a third-floor walk-up. We bring the right equipment &mdash; dollies, ramps, and team lifts &mdash; to handle any situation.
+              Stairs, narrow doorways, lack of a loading dock, and upper-floor apartments add complexity and cost. A ground-floor collection with easy truck access will always be cheaper than a third-floor walk-up. We bring the right equipment &mdash; dollies, ramps, and team lifts &mdash; to handle any situation.
             </p>
 
             <h3>4. Custom Crating</h3>
@@ -290,7 +290,7 @@ export default function CostToShipHeavyItemsBlog() {
                       <td className="p-4 text-emerald-700 font-semibold">Included</td>
                     </tr>
                     <tr className="border-b border-gray-200">
-                      <td className="p-4 font-medium">Inside Pickup / Delivery</td>
+                      <td className="p-4 font-medium">Inside Collection / Delivery</td>
                       <td className="p-4 text-gray-600">Not available</td>
                       <td className="p-4 text-emerald-700 font-semibold">Standard</td>
                     </tr>
@@ -305,7 +305,7 @@ export default function CostToShipHeavyItemsBlog() {
             </div>
 
             <p>
-              When you add up UPS/FedEx surcharges for a heavy, oversized item, a specialty carrier like Austin Crate & Freight often comes in at the same price or less &mdash; with far better handling, inside pickup and delivery, and custom crating options.
+              When you add up UPS/FedEx surcharges for a heavy, oversized item, a specialty carrier like Austin Crate & Freight often comes in at the same price or less &mdash; with far better handling, inside collection and delivery, and custom crating options.
             </p>
 
             <h2>Real-World Pricing Examples from Austin</h2>
@@ -335,7 +335,7 @@ export default function CostToShipHeavyItemsBlog() {
                   <h4 className="font-bold text-gray-900">Commercial Oven (500 lbs)</h4>
                   <span className="text-emerald-700 font-bold text-lg">~$600</span>
                 </div>
-                <p className="text-gray-600 text-sm mb-0">Restaurant equipment pickup in East Austin, custom-crated and shipped freight to Dallas. Includes crating and freight booking.</p>
+                <p className="text-gray-600 text-sm mb-0">Restaurant equipment collection in East Austin, custom-crated and shipped freight to Dallas. Includes crating and freight booking.</p>
               </div>
 
               <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
@@ -350,17 +350,17 @@ export default function CostToShipHeavyItemsBlog() {
             <h2>How to Save Money on Heavy Item Shipping</h2>
             <ol>
               <li><strong>Get multiple quotes</strong> &mdash; Always compare at least 2 to 3 specialty carriers. Austin Crate & Freight provides free quotes with no obligation.</li>
-              <li><strong>Be flexible on timing</strong> &mdash; Midweek pickups and deliveries are often 10 to 15% cheaper than weekends.</li>
+              <li><strong>Be flexible on timing</strong> &mdash; Midweek collections and deliveries are often 10 to 15% cheaper than weekends.</li>
               <li><strong>Consolidate shipments</strong> &mdash; Shipping multiple heavy items at once is more cost-effective than separate trips.</li>
               <li><strong>Prepare your item</strong> &mdash; Remove drawers, detach legs, and wrap small components yourself. Check our <Link href="/resources/prepare-artwork" className="text-emerald-700 underline">preparation guide</Link> for tips.</li>
-              <li><strong>Ground-floor access</strong> &mdash; If possible, move items to a ground-floor or garage before pickup to reduce handling fees.</li>
+              <li><strong>Ground-floor access</strong> &mdash; If possible, move items to a ground-floor or garage before collection to reduce handling fees.</li>
             </ol>
 
             <h2>Frequently Asked Questions</h2>
 
             <h3>How much does it cost to ship heavy items in Austin?</h3>
             <p>
-              Heavy item shipping in Austin typically costs $150 to $500+ for local pickup and delivery, depending on weight, dimensions, distance, and whether custom crating is needed. Austin Crate & Freight offers free quotes for all heavy item shipments.
+              Heavy item shipping in Austin typically costs $150 to $500+ for local collection and delivery, depending on weight, dimensions, distance, and whether custom crating is needed. Austin Crate & Freight offers free quotes for all heavy item shipments.
             </p>
 
             <h3>Is it cheaper to ship heavy items with a specialty carrier or UPS/FedEx?</h3>
@@ -370,7 +370,7 @@ export default function CostToShipHeavyItemsBlog() {
 
             <h3>What is included in heavy item shipping costs?</h3>
             <p>
-              Austin Crate & Freight heavy item shipping includes pickup from your location, professional handling with proper equipment, protective wrapping, secure transport, and delivery. Custom crating and insurance are available at additional cost.
+              Austin Crate & Freight heavy item shipping includes collection from your location, professional handling with proper equipment, protective wrapping, secure transport, and delivery. Custom crating and insurance are available at additional cost.
             </p>
 
             <h3>How much does custom crating cost for heavy items?</h3>
@@ -407,8 +407,8 @@ export default function CostToShipHeavyItemsBlog() {
             <h2 className="text-2xl font-bold mb-6">Related Services</h2>
             <div className="grid sm:grid-cols-2 gap-4 mb-8">
               <Link href="/services/heavy-items" className="p-4 bg-white rounded-lg shadow hover:shadow-lg transition">
-                <h3 className="font-bold text-lg text-gray-900 mb-2">Heavy Item Pickup & Shipping</h3>
-                <p className="text-gray-600 text-sm">Full-service heavy package pickup for Austin and Central Texas.</p>
+                <h3 className="font-bold text-lg text-gray-900 mb-2">Heavy Item Collection & Shipping</h3>
+                <p className="text-gray-600 text-sm">Full-service heavy package collection for Austin and Central Texas.</p>
               </Link>
               <Link href="/services/oversized-shipping" className="p-4 bg-white rounded-lg shadow hover:shadow-lg transition">
                 <h3 className="font-bold text-lg text-gray-900 mb-2">Oversized Item Shipping</h3>

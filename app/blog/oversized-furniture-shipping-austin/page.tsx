@@ -89,7 +89,7 @@ export default function OversizedFurnitureShippingAustin() {
         name: 'Do you need to disassemble oversized furniture before shipping?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Partial disassembly is almost always recommended for oversized pieces. Removing legs from dining tables and sofas, separating sectional modules, detaching headboards from bed frames, and removing glass from china cabinets all reduce the crated footprint and lower shipping costs significantly. Our crew handles all disassembly at pickup — you don\'t need to do anything in advance except clear a path to the piece.',
+          text: 'Partial disassembly is almost always recommended for oversized pieces. Removing legs from dining tables and sofas, separating sectional modules, detaching headboards from bed frames, and removing glass from china cabinets all reduce the crated footprint and lower shipping costs significantly. Our crew handles all disassembly at collection — you don\'t need to do anything in advance except clear a path to the piece.',
         },
       },
       {
@@ -146,7 +146,7 @@ export default function OversizedFurnitureShippingAustin() {
         <section className="flex-1 py-16 px-4 bg-white">
           <article className="max-w-3xl mx-auto prose prose-lg">
             <p className="lead text-xl text-grey-700 mb-8">
-              Oversized furniture creates a specific shipping problem: it's too big for standard carriers, too valuable for general freight, and too important to just pile in a moving truck with a dozen other people's things. This guide explains where oversized furniture fits in the shipping ecosystem, what it costs in Austin in 2026, and what actually happens to your piece from pickup to delivery.
+              Oversized furniture creates a specific shipping problem: it's too big for standard carriers, too valuable for general freight, and too important to just pile in a moving truck with a dozen other people's things. This guide explains where oversized furniture fits in the shipping ecosystem, what it costs in Austin in 2026, and what actually happens to your piece from collection to delivery.
             </p>
 
             <h2>What Counts as Oversized Furniture?</h2>
@@ -201,7 +201,7 @@ export default function OversizedFurnitureShippingAustin() {
 
             <h3>Step 1: Assessment and Quote</h3>
             <p>
-              We need three things to quote an oversized furniture job: the dimensions (length, width, height), approximate weight, and the pickup and delivery addresses. If you can send photos, even better — we can spot things like marble tops, glass panels, or delicate legs that affect how we crate.
+              We need three things to quote an oversized furniture job: the dimensions (length, width, height), approximate weight, and the collection and delivery addresses. If you can send photos, even better — we can spot things like marble tops, glass panels, or delicate legs that affect how we crate.
             </p>
             <p>
               Call (512) 240-9818 or use our{' '}
@@ -211,7 +211,7 @@ export default function OversizedFurnitureShippingAustin() {
               and we will get back to you the same day.
             </p>
 
-            <h3>Step 2: Pickup Anywhere in Greater Austin</h3>
+            <h3>Step 2: Collection Anywhere in Greater Austin</h3>
             <p>
               Our crew arrives with the right equipment for the job: lift-gate truck, furniture dollies, moving blankets, straps, and all crating materials. We cover all of Austin and surrounding communities — Round Rock, Cedar Park, Georgetown, Pflugerville, Kyle, Lakeway, and beyond.
             </p>
@@ -248,7 +248,7 @@ export default function OversizedFurnitureShippingAustin() {
             <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 my-8 not-prose">
               <p className="font-semibold text-emerald-800 mb-3 text-lg">📞 Get a Free Quote for Oversized Furniture Shipping</p>
               <p className="text-grey-700 mb-4">
-                Call <strong>(512) 240-9818</strong> with your piece dimensions and pickup/delivery locations. We'll quote you the same day.
+                Call <strong>(512) 240-9818</strong> with your piece dimensions and collection/delivery locations. We'll quote you the same day.
               </p>
               <Link
                 href="/contact"
@@ -329,7 +329,7 @@ export default function OversizedFurnitureShippingAustin() {
 
             <h3>Do you need to disassemble oversized furniture before shipping?</h3>
             <p>
-              Partial disassembly is almost always recommended — removing table legs, separating sectional modules, detaching headboards, and removing glass from china cabinets all reduce cost and risk. Our crew handles all disassembly at pickup.
+              Partial disassembly is almost always recommended — removing table legs, separating sectional modules, detaching headboards, and removing glass from china cabinets all reduce cost and risk. Our crew handles all disassembly at collection.
             </p>
 
             <h3>Can you ship a sectional sofa from Austin?</h3>

@@ -92,14 +92,14 @@ export default function CustomFurnitureShipping() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">We Partner with Austin Furniture Makers</h2>
             <p className="text-gray-700 text-lg mb-4">
-              If you build custom furniture in Austin and sell to buyers outside the area, Austin Crate &amp; Freight is your shipping partner. We pick up directly from your shop, build a custom crate around your piece in our facility, and coordinate delivery to your customer anywhere in the country.
+              If you build custom furniture in Austin and sell to buyers outside the area, Austin Crate &amp; Freight is your shipping partner. We collect directly from your shop, build a custom crate around your piece in our facility, and coordinate delivery to your customer anywhere in the country.
             </p>
             <p className="text-gray-700 text-lg mb-8">
               We understand what it means when a craftsperson puts weeks of work into a single piece. A damaged delivery is not just a financial loss, it&apos;s a time loss and a reputation loss. We prevent that.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { icon: '🏭', title: 'Shop Pickup', desc: 'We come directly to your workshop, studio, or warehouse anywhere in Greater Austin.' },
+                { icon: '🏭', title: 'Shop Collection', desc: 'We come directly to your workshop, studio, or warehouse anywhere in Greater Austin.' },
                 { icon: '🪚', title: 'Custom Crating', desc: 'Every piece gets a crate built to its exact dimensions in our Austin shop, no generic boxes.' },
                 { icon: '🚚', title: 'Nationwide Delivery', desc: 'Your customer receives a white-glove delivery anywhere in the US, with crate removal and placement.' },
               ].map((item, i) => (
@@ -145,7 +145,7 @@ export default function CustomFurnitureShipping() {
                 { q: 'I am a furniture maker in Austin, can you be my regular shipping partner?', a: 'Absolutely. We work with multiple Austin makers on a recurring basis. Call (512) 240-9818 to discuss your volume and we will work out a streamlined process for your shop.' },
                 { q: 'Can you ship a very large or heavy custom piece?', a: 'Yes. We have shipped custom pieces weighing hundreds of pounds and spanning multiple feet. Our crating equipment can handle any size.' },
                 { q: 'Do you provide certificate of packing or condition reports?', a: 'Yes. We can provide pre-shipment condition photographs and a certificate of packing on request, useful for insurance and high-value custom commissions.' },
-                { q: 'Can you ship a custom piece I bought from an Austin maker to my home in another state?', a: 'Yes. This is one of our most common scenarios. We coordinate pickup from the maker\'s studio and delivery to your home, you do not have to be involved in the logistics.' },
+                { q: 'Can you ship a custom piece I bought from an Austin maker to my home in another state?', a: 'Yes. This is one of our most common scenarios. We coordinate collection from the maker\'s studio and delivery to your home, you do not have to be involved in the logistics.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                   <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

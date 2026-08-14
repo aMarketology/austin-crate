@@ -9,14 +9,14 @@ import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = generateLocationMetadata({
   locationName: 'Lockhart',
-  description: 'Specialty shipping & custom crating in Lockhart, TX. Furniture shipping, heavy item pickup, antique crating, and custom packaging for Lockhart homes and businesses. White-glove service from Austin Crate & Freight.',
+  description: 'Specialty shipping & custom crating in Lockhart, TX. Furniture shipping, heavy item collection, antique crating, and custom packaging for Lockhart homes and businesses. White-glove service from Austin Crate & Freight.',
   keywords: [
     'specialty shipping Lockhart TX',
     'specialty shipping Lockhart Texas',
     'custom crating Lockhart TX',
     'furniture shipping Lockhart',
     'furniture crating Lockhart TX',
-    'heavy item pickup Lockhart Texas',
+    'heavy item collection Lockhart Texas',
     'antique shipping Lockhart TX',
     'white glove shipping Lockhart TX',
     'crating Lockhart Texas',
@@ -58,7 +58,7 @@ export default function Lockhart() {
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Specialty Shipping & Crating in Lockhart, TX</h1>
               <p className="text-xl text-gray-300 mb-8">
-                Austin Crate &amp; Freight serves Lockhart and all of Caldwell County with expert specialty shipping and custom wood crating. Furniture shipping, heavy item pickup, antique crating, and oversized freight — the white-glove service that the BBQ Capital of Texas deserves.
+                Austin Crate &amp; Freight serves Lockhart and all of Caldwell County with expert specialty shipping and custom wood crating. Furniture shipping, heavy item collection, antique crating, and oversized freight — the white-glove service that the BBQ Capital of Texas deserves.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -118,8 +118,8 @@ export default function Lockhart() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Pickup</h3>
-              <p className="text-gray-600 mb-4">Safes, appliances, fitness equipment, and oversized items throughout Lockhart and Caldwell County — pickup and crating for items standard carriers won't handle.</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Collection</h3>
+              <p className="text-gray-600 mb-4">Safes, appliances, fitness equipment, and oversized items throughout Lockhart and Caldwell County — collection and crating for items standard carriers won't handle.</p>
               <Link href="/services/heavy-items" className="text-emerald-600 hover:text-emerald-700 font-medium">Learn More →</Link>
             </div>
 
@@ -189,7 +189,7 @@ export default function Lockhart() {
                 { title: 'In-House Crating', body: 'Every crate is built at our Austin workshop — not outsourced. Custom dimensions, foam blocking, and interior padding for the exact item being shipped, not a guess.' },
                 { title: 'No Job Too Small or Too Large', body: 'Whether it\'s a single antique chair or a full estate\'s worth of furniture, we handle it with the same attention to detail. No job is too small to deserve proper crating.' },
                 { title: 'South Corridor Coverage', body: 'Our Austin workshop is approximately 40 miles from Lockhart via US-183 South — about 45 minutes. We serve all of Caldwell County including Lockhart, Luling, and Gonzales County.' },
-                { title: 'Fully Insured', body: 'Every shipment is covered from pickup to delivery. Condition is documented with photos before we crate, and full insurance is maintained throughout transit to the final destination.' },
+                { title: 'Fully Insured', body: 'Every shipment is covered from collection to delivery. Condition is documented with photos before we crate, and full insurance is maintained throughout transit to the final destination.' },
               ].map(({ title, body }) => (
                 <div key={title} className="flex gap-4">
                   <div className="flex-shrink-0">
@@ -222,7 +222,7 @@ export default function Lockhart() {
               </Link>
               <Link href="/blog/prepare-furniture-for-shipping" className="group block bg-gray-50 border border-gray-200 rounded-xl p-5 hover:border-emerald-400 hover:shadow-md transition-all">
                 <h3 className="font-bold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">How to Prepare Furniture for Shipping</h3>
-                <p className="text-gray-500 text-sm">A practical checklist for getting furniture ready for pickup before we arrive in Lockhart.</p>
+                <p className="text-gray-500 text-sm">A practical checklist for getting furniture ready for collection before we arrive in Lockhart.</p>
               </Link>
               <Link href="/blog/how-to-choose-specialty-shipping" className="group block bg-gray-50 border border-gray-200 rounded-xl p-5 hover:border-emerald-400 hover:shadow-md transition-all">
                 <h3 className="font-bold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">How to Choose a Specialty Shipping Company</h3>
@@ -238,15 +238,15 @@ export default function Lockhart() {
               {[
                 {
                   q: 'Do you offer specialty shipping and crating in Lockhart, TX?',
-                  a: 'Yes. Austin Crate & Freight provides comprehensive specialty shipping and custom crating in Lockhart, Texas (78644). We pick up from your Lockhart location, build custom crates in-house at our Austin workshop, and deliver locally or ship nationwide. We cover all of Caldwell County including Lockhart, Luling, and surrounding areas.',
+                  a: 'Yes. Austin Crate & Freight provides comprehensive specialty shipping and custom crating in Lockhart, Texas (78644). We collect from your Lockhart location, build custom crates in-house at our Austin workshop, and deliver locally or ship nationwide. We cover all of Caldwell County including Lockhart, Luling, and surrounding areas.',
                 },
                 {
                   q: 'Can you ship heavy items from Lockhart that FedEx won\'t take?',
-                  a: 'Yes. Safes, fitness equipment, large appliances, oversized furniture, and any item that exceeds standard carrier weight or size limits — we pick up in Lockhart, crate at our Austin facility, and coordinate freight to the destination. Call (512) 240-9818 for a same-day quote.',
+                  a: 'Yes. Safes, fitness equipment, large appliances, oversized furniture, and any item that exceeds standard carrier weight or size limits — we collect in Lockhart, crate at our Austin facility, and coordinate freight to the destination. Call (512) 240-9818 for a same-day quote.',
                 },
                 {
                   q: 'How far is Lockhart from your Austin workshop?',
-                  a: 'Our workshop at 3112 Windsor Rd, Austin TX is approximately 40 miles from Lockhart via US-183 South — about 45 minutes. We offer same-day pickup in Lockhart for urgent jobs and standard 24-48 hour scheduling.',
+                  a: 'Our workshop at 3112 Windsor Rd, Austin TX is approximately 40 miles from Lockhart via US-183 South — about 45 minutes. We offer same-day collection in Lockhart for urgent jobs and standard 24-48 hour scheduling.',
                 },
                 {
                   q: 'Do you ship antiques from Lockhart dealers?',
@@ -288,7 +288,7 @@ export default function Lockhart() {
 
           <div className="text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Ship from Lockhart?</h3>
-            <p className="text-gray-600 mb-6">Contact us for a free quote on furniture crating, heavy item pickup, or any specialty shipping need in Lockhart, TX.</p>
+            <p className="text-gray-600 mb-6">Contact us for a free quote on furniture crating, heavy item collection, or any specialty shipping need in Lockhart, TX.</p>
             <a href="tel:(512) 240-9818" className="inline-flex items-center gap-2 px-8 py-4 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors font-medium">
               Call (512) 240-9818
             </a>
@@ -303,13 +303,13 @@ export default function Lockhart() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Serving Lockhart from Austin</h2>
               <p className="text-gray-700 text-lg mb-6">
-                Austin Crate &amp; Freight serves Lockhart from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, approximately 40 miles via US-183 South. Free pickup throughout Lockhart and all of Caldwell County.
+                Austin Crate &amp; Freight serves Lockhart from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, approximately 40 miles via US-183 South. Collection throughout Lockhart and all of Caldwell County.
               </p>
               <ul className="space-y-3 text-gray-700 mb-8">
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Address:</strong> 3112 Windsor Rd, Austin, TX 78703</span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Phone:</strong> <a href="tel:(512) 240-9818" className="text-emerald-600 hover:underline">(512) 240-9818</a></span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Hours:</strong> Mon-Fri 8am-6pm, Sat by appointment</span></li>
-                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Lockhart pickup:</strong> Free throughout Caldwell County (78644)</span></li>
+                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Lockhart collection:</strong> available throughout Caldwell County (78644)</span></li>
               </ul>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Austin+Crate+%26+Freight+3112+Windsor+Rd+Austin+TX+78703"

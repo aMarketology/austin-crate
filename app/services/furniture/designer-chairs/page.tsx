@@ -154,7 +154,7 @@ export default function DesignerChairShipping() {
                 { q: 'Can you ship a single Eames Lounge Chair safely?', a: 'Yes. The Eames Lounge Chair is one of the most commonly requested designer pieces we ship. The shell-to-base mount and the ottoman leg connections are the known fragile points, and we build the crate specifically to protect these. We ship chairs to collectors, buyers, and galleries nationwide.' },
                 { q: 'How do you handle a set of 8 designer dining chairs?', a: 'Multi-chair sets are crated in shared frames with individual bays. Each chair occupies a padded compartment and cannot contact adjacent chairs during transit. This is more cost-effective than individual crating for each chair while providing the same per-chair protection.' },
                 { q: 'Do you ship vintage mid-century chairs that might be fragile?', a: 'Yes. Older pieces with original upholstery, original finish, or known repair history are assessed before we commit to a crating approach. For very fragile vintage pieces, we may recommend additional support structures inside the crate. We will advise you honestly at the assessment stage.' },
-                { q: 'Can you pick up a designer chair at an estate sale or showroom in Austin?', a: 'Yes. We pick up from estates, showrooms, auction houses, and private sellers throughout Greater Austin and the surrounding area. We bring the right materials for the pickup, no blankets borrowed from a moving truck.' },
+                { q: 'Can you collect a designer chair at an estate sale or showroom in Austin?', a: 'Yes. We collect from estates, showrooms, auction houses, and private sellers throughout Greater Austin and the surrounding area. We bring the right materials for the collection, no blankets borrowed from a moving truck.' },
                 { q: 'What does shipping a designer chair cost?', a: 'A single chair shipped locally in Austin typically starts at $150–$250. Long-distance crated freight depends on the chair dimensions and destination. A set of dining chairs runs proportionally. Call us at (512) 240-9818 for a free, specific quote.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-white border border-gray-200 rounded-xl p-5">
@@ -172,7 +172,7 @@ export default function DesignerChairShipping() {
         <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-16 px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Ship Your Designer Chairs from Austin</h2>
-            <p className="text-grey-300 text-lg mb-8">One chair or a full set, custom crating, white-glove pickup, and delivery anywhere in the US.</p>
+            <p className="text-grey-300 text-lg mb-8">One chair or a full set, custom crating, white-glove collection, and delivery anywhere in the US.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href={`tel:${SITE_CONFIG.phone}`} className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-emerald rounded-lg font-semibold text-white hover:bg-emerald/90 transition">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg>

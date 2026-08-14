@@ -154,7 +154,7 @@ export default function CabinetsCredenazasShipping() {
                 { q: 'Can you ship a large china cabinet with multiple glass panels?', a: 'Yes. China cabinets are among our most common requests. We remove glass doors where possible, face-pad in-place glass where removal is not practical, and build crates with reinforced front panels to prevent impacts reaching glass surfaces.' },
                 { q: 'Do you remove cabinet legs before shipping?', a: 'When legs are designed to be removable, yes, we remove them, wrap them, and label them for reinstallation. Fixed-leg cabinets have their legs individually wrapped with foam padding to protect against impact at the vulnerable joint between leg and case.' },
                 { q: 'Can you move a credenza that is very long (over 8 feet)?', a: 'Yes. We have built crates for credenzas and sideboards up to 12 feet in length. Long pieces are susceptible to mid-span flex in transit, so our crate design adds longitudinal reinforcement along the crate floor.' },
-                { q: 'What is your coverage area for cabinet pickup in Austin?', a: 'We pick up throughout Greater Austin, Round Rock, Cedar Park, Georgetown, Pflugerville, and surrounding areas. For larger pieces, we send a two-person crew with appliance dollies and furniture pads for building-safe movement from the room to our truck.' },
+                { q: 'What is your coverage area for cabinet collection in Austin?', a: 'We collect throughout Greater Austin, Round Rock, Cedar Park, Georgetown, Pflugerville, and surrounding areas. For larger pieces, we send a two-person crew with appliance dollies and furniture pads for building-safe movement from the room to our truck.' },
                 { q: 'How much does shipping a credenza cost?', a: 'A local Austin credenza delivery typically starts around $200-$350. Long-distance crated freight pricing depends on dimensions and destination. Contact us at (512) 240-9818 for a free itemized quote.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-white border border-gray-200 rounded-xl p-5">
@@ -172,7 +172,7 @@ export default function CabinetsCredenazasShipping() {
         <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-16 px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Expert Cabinet &amp; Credenza Shipping in Austin</h2>
-            <p className="text-grey-300 text-lg mb-8">Custom crating for every cabinet type. White-glove pickup and delivery throughout Austin and nationwide.</p>
+            <p className="text-grey-300 text-lg mb-8">Custom crating for every cabinet type. White-glove collection and delivery throughout Austin and nationwide.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href={`tel:${SITE_CONFIG.phone}`} className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-emerald rounded-lg font-semibold text-white hover:bg-emerald/90 transition">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg>

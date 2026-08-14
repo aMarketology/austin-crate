@@ -209,7 +209,7 @@ export default function SafeVaultMovingAustin() {
             <div className="bg-grey-100 border border-grey-200 rounded-lg p-6 my-8 not-prose">
               <p className="font-semibold text-grey-900 mb-2 text-lg">Moving a safe in Austin?</p>
               <p className="text-grey-700 text-sm mb-4">
-                Tell us what you have — make, model, weight, pickup address, destination, and whether there are stairs. We&apos;ll give you a firm quote, usually within the hour.
+                Tell us what you have — make, model, weight, collection address, destination, and whether there are stairs. We&apos;ll give you a firm quote, usually within the hour.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
@@ -384,7 +384,7 @@ export default function SafeVaultMovingAustin() {
               </Link>
               <Link href="/blog/cost-to-ship-heavy-items-austin" className="p-4 bg-white rounded-lg shadow hover:shadow-lg transition">
                 <h3 className="font-bold text-lg text-grey-900 mb-2">How Much Does It Cost to Ship Heavy Items in Austin? (2026 Guide)</h3>
-                <p className="text-grey-600 text-sm">Full price breakdown for heavy package pickup, custom furniture shipping, oversized item transport, and freight solutions in Austin.</p>
+                <p className="text-grey-600 text-sm">Full price breakdown for heavy package collection, custom furniture shipping, oversized item transport, and freight solutions in Austin.</p>
               </Link>
               <Link href="/blog/custom-crating-vs-standard-boxes" className="p-4 bg-white rounded-lg shadow hover:shadow-lg transition">
                 <h3 className="font-bold text-lg text-grey-900 mb-2">Custom Crating vs. Standard Boxes: When You Need a Crate</h3>

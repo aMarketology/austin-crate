@@ -9,7 +9,7 @@ import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = generateLocationMetadata({
   locationName: 'Pflugerville',
-  description: 'Specialty shipping & custom crating in Pflugerville, TX. Furniture shipping, fine art transport, heavy item pickup, and medical equipment shipping. White-glove service from Austin Crate & Freight.',
+  description: 'Specialty shipping & custom crating in Pflugerville, TX. Furniture shipping, fine art transport, heavy item collection, and medical equipment shipping. White-glove service from Austin Crate & Freight.',
   keywords: [
     'specialty shipping Pflugerville TX',
     'specialty shipping Pflugerville Texas',
@@ -17,7 +17,7 @@ export const metadata: Metadata = generateLocationMetadata({
     'furniture shipping Pflugerville',
     'furniture crating Pflugerville TX',
     'fine art shipping Pflugerville',
-    'heavy item pickup Pflugerville TX',
+    'heavy item collection Pflugerville TX',
     'oversized shipping Pflugerville',
     'white glove shipping Pflugerville TX',
     'Pflugerville shipping company',
@@ -58,7 +58,7 @@ export default function Pflugerville() {
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Specialty Shipping & Crating in Pflugerville, TX</h1>
               <p className="text-xl text-gray-300 mb-8">
-                Austin Crate &amp; Freight brings expert specialty shipping and custom crating to Pflugerville. From Stone Hill Town Center to Cele Road, we serve Pflugerville homes and businesses with furniture shipping and crating, fine art transport, heavy item pickup, and medical equipment delivery — all with museum-quality white-glove care.
+                Austin Crate &amp; Freight brings expert specialty shipping and custom crating to Pflugerville. From Stone Hill Town Center to Cele Road, we serve Pflugerville homes and businesses with furniture shipping and crating, fine art transport, heavy item collection, and medical equipment delivery — all with museum-quality white-glove care.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -140,8 +140,8 @@ export default function Pflugerville() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Pickup</h3>
-              <p className="text-gray-600 mb-4">Heavy package pickup in Pflugerville for items too large for standard carriers — safes, appliances, machinery, and more.</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Collection</h3>
+              <p className="text-gray-600 mb-4">Heavy package collection in Pflugerville for items too large for standard carriers — safes, appliances, machinery, and more.</p>
               <Link href="/services/heavy-items" className="text-emerald-600 hover:text-emerald-700 font-medium">Learn More →</Link>
             </div>
 
@@ -183,10 +183,10 @@ export default function Pflugerville() {
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Pflugerville Chooses Austin Crate &amp; Freight</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {[
-                { title: 'Local Knowledge', body: "We know Pflugerville's neighborhoods — from Cele Road to Blackhawk. Familiar with building access, parking, and local logistics for fast, smooth pickups." },
+                { title: 'Local Knowledge', body: "We know Pflugerville's neighborhoods — from Cele Road to Blackhawk. Familiar with building access, parking, and local logistics for fast, smooth collections." },
                 { title: 'Fast Response', body: 'Quick turnaround for Pflugerville customers. Same-day quotes, flexible scheduling, and expedited services available when time matters.' },
                 { title: 'Trusted Service', body: 'Serving the greater Austin area since 2010. Trusted by Pflugerville businesses, medical facilities, and homeowners throughout the community.' },
-                { title: 'Fully Insured', body: 'Comprehensive insurance coverage for all shipments. Your valuable items are protected from pickup in Pflugerville to final delivery.' },
+                { title: 'Fully Insured', body: 'Comprehensive insurance coverage for all shipments. Your valuable items are protected from collection in Pflugerville to final delivery.' },
               ].map(({ title, body }) => (
                 <div key={title} className="flex gap-4">
                   <div className="flex-shrink-0">
@@ -212,7 +212,7 @@ export default function Pflugerville() {
               {[
                 {
                   q: 'Do you offer specialty shipping and crating in Pflugerville, TX?',
-                  a: 'Yes. Austin Crate & Freight provides comprehensive specialty shipping and custom crating in Pflugerville, Texas. We pick up from your Pflugerville location, build custom crates in-house, and deliver locally or ship nationwide.',
+                  a: 'Yes. Austin Crate & Freight provides comprehensive specialty shipping and custom crating in Pflugerville, Texas. We collect from your Pflugerville location, build custom crates in-house, and deliver locally or ship nationwide.',
                 },
                 {
                   q: 'Can you handle furniture shipping for Pflugerville residents?',
@@ -227,8 +227,8 @@ export default function Pflugerville() {
                   a: 'Yes. We coordinate LTL freight nationwide for Pflugerville customers. After custom crating at our Austin facility, we work with trusted freight carriers to deliver anywhere in the US with full insurance coverage.',
                 },
                 {
-                  q: 'How quickly can you pick up in Pflugerville?',
-                  a: 'We offer fast turnaround including same-day and next-day pickups for Pflugerville depending on availability. Call (512) 240-9818 to discuss your timeline.',
+                  q: 'How quickly can you collect in Pflugerville?',
+                  a: 'We offer fast turnaround including same-day and next-day collections for Pflugerville depending on availability. Call (512) 240-9818 to discuss your timeline.',
                 },
               ].map(({ q, a }) => (
                 <div key={q} className="border border-gray-200 rounded-xl p-6">
@@ -262,7 +262,7 @@ export default function Pflugerville() {
 
           <div className="text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Ship in Pflugerville?</h3>
-            <p className="text-gray-600 mb-6">Contact us today for a free quote on custom furniture shipping, heavy package pickup, or any specialty shipping need in Pflugerville.</p>
+            <p className="text-gray-600 mb-6">Contact us today for a free quote on custom furniture shipping, heavy package collection, or any specialty shipping need in Pflugerville.</p>
             <a href="tel:(512) 240-9818" className="inline-flex items-center gap-2 px-8 py-4 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors font-medium">
               Call (512) 240-9818
             </a>
@@ -277,13 +277,13 @@ export default function Pflugerville() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Serving Pflugerville from Austin</h2>
               <p className="text-gray-700 text-lg mb-6">
-                Austin Crate &amp; Freight serves Pflugerville from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, just 25 minutes from Stone Hill Town Center. Free pickup throughout Pflugerville, TX 78660 and 78691.
+                Austin Crate &amp; Freight serves Pflugerville from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, just 25 minutes from Stone Hill Town Center. Collection throughout Pflugerville, TX 78660 and 78691.
               </p>
               <ul className="space-y-3 text-gray-700 mb-8">
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Address:</strong> 3112 Windsor Rd, Austin, TX 78703</span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Phone:</strong> <a href="tel:(512) 240-9818" className="text-emerald-600 hover:underline">(512) 240-9818</a></span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Hours:</strong> Mon-Fri 8am-6pm, Sat by appointment</span></li>
-                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Pflugerville pickup:</strong> Free throughout Pflugerville, Round Rock, and Greater Austin</span></li>
+                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Pflugerville collection:</strong> available throughout Pflugerville, Round Rock, and Greater Austin</span></li>
               </ul>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Austin+Crate+%26+Freight+3112+Windsor+Rd+Austin+TX+78703"

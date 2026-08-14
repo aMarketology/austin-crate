@@ -147,7 +147,7 @@ export default function AntiqueFurnitureShipping() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
             <div className="space-y-5">
               {[
-                { q: 'Can you ship an antique I bought at an Austin estate sale?', a: 'Absolutely. This is one of our most common requests. We provide pickup from private homes, estates, galleries, and auction houses anywhere in Greater Austin.' },
+                { q: 'Can you ship an antique I bought at an Austin estate sale?', a: 'Absolutely. This is one of our most common requests. We provide collection from private homes, estates, galleries, and auction houses anywhere in Greater Austin.' },
                 { q: 'Do you disassemble antiques for shipping?', a: 'Only when necessary and safe to do so given the construction. We never force disassembly on pieces where it would risk damage. When we do disassemble, we use period-correct techniques.' },
                 { q: 'Is antique furniture shipping insured?', a: 'Yes. All shipments are fully insured. We recommend declared value coverage for high-value antiques, which we can arrange through our freight partners.' },
                 { q: 'How do I get a quote for shipping an antique Austin to anywhere in the US?', a: 'Call (512) 240-9818 or fill out our contact form with dimensions and destination. We will come back with an honest quote, usually within 24 hours.' },

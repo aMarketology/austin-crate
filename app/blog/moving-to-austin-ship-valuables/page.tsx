@@ -65,7 +65,7 @@ export default function MovingToAustinShipValuables() {
         name: 'How do I ship furniture to Austin TX?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The safest way to ship furniture to Austin is through a specialty crating and freight company like Austin Crate & Freight. We pick up from your origin, build a custom wood crate specific to your piece, and coordinate white-glove delivery to your Austin address. Standard movers use blanket wrap and pads — fine for short local moves, but inadequate for cross-country transit. For valuable or designer furniture, custom crating is the right approach. Call (512) 240-9818 for a quote.',
+          text: 'The safest way to ship furniture to Austin is through a specialty crating and freight company like Austin Crate & Freight. We collect from your origin, build a custom wood crate specific to your piece, and coordinate white-glove delivery to your Austin address. Standard movers use blanket wrap and pads — fine for short local moves, but inadequate for cross-country transit. For valuable or designer furniture, custom crating is the right approach. Call (512) 240-9818 for a quote.',
         },
       },
       {
@@ -199,7 +199,7 @@ export default function MovingToAustinShipValuables() {
               <Link href="/services/fine-art" className="text-emerald-600 hover:underline">
                 fine art shipping service
               </Link>{' '}
-              handles the entire process — pickup from your current location (or we coordinate with your current gallery/storage), custom wood crating at our Austin facility, and white-glove delivery to your Austin address. For the art portion of a relocation, we can be completely hands-off from your moving company's process.
+              handles the entire process — collection from your current location (or we coordinate with your current gallery/storage), custom wood crating at our Austin facility, and white-glove delivery to your Austin address. For the art portion of a relocation, we can be completely hands-off from your moving company's process.
             </p>
             <p>
               For most collector-level moves (5–20 pieces), we will assess each piece, crate them individually, and coordinate freight to arrive at your new Austin address on a date that works with your overall move schedule. You do not have to be there — we work with building management, property managers, and whoever is on site.
@@ -266,7 +266,7 @@ export default function MovingToAustinShipValuables() {
             <ol>
               <li><strong>Initial call or form submission</strong> — tell us what you have, where it is now, and when you need it in Austin. We ask questions; you do not need to know the terminology.</li>
               <li><strong>Quote</strong> — we give you a specific price, not a range. We quote to build specific crates and coordinate specific freight routes.</li>
-              <li><strong>Pickup</strong> — we pick up from your origin location (or you drop off at a partner facility if you are local to a major city).</li>
+              <li><strong>Collection</strong> — we collect from your origin location (or you drop off at a partner facility if you are local to a major city).</li>
               <li><strong>Crating</strong> — every piece gets a custom crate built to its exact dimensions at our Austin facility.</li>
               <li><strong>Delivery to Austin</strong> — we deliver to your Austin address, inside the door, on a schedule that works with your move.</li>
             </ol>
@@ -299,7 +299,7 @@ export default function MovingToAustinShipValuables() {
 
             <h3>How do I ship furniture to Austin TX?</h3>
             <p>
-              The safest method is specialty crating and freight. We pick up from your origin, build a custom wood crate specific to your piece, and coordinate white-glove delivery to your Austin address. For valuable or designer furniture, this is the appropriate approach — standard moving blankets are not adequate for cross-country transit of high-value pieces.
+              The safest method is specialty crating and freight. We collect from your origin, build a custom wood crate specific to your piece, and coordinate white-glove delivery to your Austin address. For valuable or designer furniture, this is the appropriate approach — standard moving blankets are not adequate for cross-country transit of high-value pieces.
             </p>
 
             <h3>Can I ship fine art to Austin when I move?</h3>

@@ -129,8 +129,8 @@ export default function Wimberley() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Pickup</h3>
-              <p className="text-gray-600 mb-4">Safes, large sculptures, decorative ironwork, and oversized items from Wimberley ranches and estates — pickup and crating for items standard carriers refuse.</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Collection</h3>
+              <p className="text-gray-600 mb-4">Safes, large sculptures, decorative ironwork, and oversized items from Wimberley ranches and estates — collection and crating for items standard carriers refuse.</p>
               <Link href="/services/heavy-items" className="text-emerald-600 hover:text-emerald-700 font-medium">Learn More →</Link>
             </div>
 
@@ -173,7 +173,7 @@ export default function Wimberley() {
               </div>
               <div className="bg-white rounded-xl p-5 border border-emerald-100">
                 <h3 className="font-bold text-gray-900 mb-2">Wimberley Market Days</h3>
-                <p className="text-gray-600 text-sm">Crating and shipping for art and antiques purchased at the monthly Wimberley Market Days — we pick up locally and ship nationally.</p>
+                <p className="text-gray-600 text-sm">Crating and shipping for art and antiques purchased at the monthly Wimberley Market Days — we collect locally and ship nationally.</p>
               </div>
               <div className="bg-white rounded-xl p-5 border border-emerald-100">
                 <h3 className="font-bold text-gray-900 mb-2">Hill Country Estate Moves</h3>
@@ -188,8 +188,8 @@ export default function Wimberley() {
               {[
                 { title: 'In-House Crating', body: 'We build every crate ourselves at our Austin workshop — not a third party, not a reseller. Custom foam blocking, acid-free interior materials, and precise cuts for the exact piece being shipped.' },
                 { title: 'Art & Antique Expertise', body: 'We understand what fine art, sculpture, and antique furniture need: non-off-gassing materials, climate considerations for Hill Country heat, and handling that respects the value of irreplaceable pieces.' },
-                { title: 'Austin Workshop — 45 Min Away', body: 'Our Austin facility is roughly 45 minutes from Wimberley via RR 12 and US-290. We offer same-day pickup for urgent jobs and standard 24-48 hour scheduling.' },
-                { title: 'Licensed, Bonded & Fully Insured', body: 'Every shipment is covered from pickup in Wimberley to delivery at the final destination. Condition is documented with photos before crating, and full coverage is maintained throughout transit.' },
+                { title: 'Austin Workshop — 45 Min Away', body: 'Our Austin facility is roughly 45 minutes from Wimberley via RR 12 and US-290. We offer same-day collection for urgent jobs and standard 24-48 hour scheduling.' },
+                { title: 'Licensed, Bonded & Fully Insured', body: 'Every shipment is covered from collection in Wimberley to delivery at the final destination. Condition is documented with photos before crating, and full coverage is maintained throughout transit.' },
               ].map(({ title, body }) => (
                 <div key={title} className="flex gap-4">
                   <div className="flex-shrink-0">
@@ -238,7 +238,7 @@ export default function Wimberley() {
               {[
                 {
                   q: 'Do you offer specialty shipping and crating in Wimberley, TX?',
-                  a: 'Yes. Austin Crate & Freight provides comprehensive specialty shipping and custom crating in Wimberley, Texas (78676). We pick up from your Wimberley location, build custom crates in-house at our Austin workshop, and ship locally or nationwide. We cover the full Wimberley Valley including the Blanco River corridor and RR 12 area.',
+                  a: 'Yes. Austin Crate & Freight provides comprehensive specialty shipping and custom crating in Wimberley, Texas (78676). We collect from your Wimberley location, build custom crates in-house at our Austin workshop, and ship locally or nationwide. We cover the full Wimberley Valley including the Blanco River corridor and RR 12 area.',
                 },
                 {
                   q: 'Do you ship art from Wimberley galleries and artists?',
@@ -246,11 +246,11 @@ export default function Wimberley() {
                 },
                 {
                   q: 'How far is Wimberley from your Austin workshop?',
-                  a: 'Our workshop at 3112 Windsor Rd, Austin TX is approximately 45 miles from Wimberley via US-290 West and RR 12 — about 50-60 minutes. We offer same-day pickup in Wimberley for urgent jobs and standard 24-48 hour scheduling.',
+                  a: 'Our workshop at 3112 Windsor Rd, Austin TX is approximately 45 miles from Wimberley via US-290 West and RR 12 — about 50-60 minutes. We offer same-day collection in Wimberley for urgent jobs and standard 24-48 hour scheduling.',
                 },
                 {
                   q: 'Can you ship antiques purchased at Wimberley Market Days?',
-                  a: 'Yes. If you or your buyer purchased a piece at the Wimberley Market Days or from any local dealer and needs it shipped cross-country, we handle pickup, custom crating, and freight coordination. Call (512) 240-9818 to schedule.',
+                  a: 'Yes. If you or your buyer purchased a piece at the Wimberley Market Days or from any local dealer and needs it shipped cross-country, we handle collection, custom crating, and freight coordination. Call (512) 240-9818 to schedule.',
                 },
                 {
                   q: 'Do you serve the San Marcos and Canyon Lake areas near Wimberley?',
@@ -303,13 +303,13 @@ export default function Wimberley() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Serving Wimberley from Austin</h2>
               <p className="text-gray-700 text-lg mb-6">
-                Austin Crate &amp; Freight serves Wimberley from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, approximately 45 miles via US-290 West and RR 12. Free pickup throughout Wimberley, the Wimberley Valley, and all of Hays County.
+                Austin Crate &amp; Freight serves Wimberley from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, approximately 45 miles via US-290 West and RR 12. Collection throughout Wimberley, the Wimberley Valley, and all of Hays County.
               </p>
               <ul className="space-y-3 text-gray-700 mb-8">
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Address:</strong> 3112 Windsor Rd, Austin, TX 78703</span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Phone:</strong> <a href="tel:(512) 240-9818" className="text-emerald-600 hover:underline">(512) 240-9818</a></span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Hours:</strong> Mon-Fri 8am-6pm, Sat by appointment</span></li>
-                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Wimberley pickup:</strong> Free throughout Wimberley (78676) and Hays County</span></li>
+                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Wimberley collection:</strong> available throughout Wimberley (78676) and Hays County</span></li>
               </ul>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Austin+Crate+%26+Freight+3112+Windsor+Rd+Austin+TX+78703"

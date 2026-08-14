@@ -73,7 +73,7 @@ const MAX_ARTICLES = [
     date: 'June 24, 2026',
     category: 'How-To Guide',
     excerpt:
-      'What to do before pickup — disassembly, photo documentation, hardware removal, and what NOT to wrap yourself.',
+      'What to do before collection — disassembly, photo documentation, hardware removal, and what NOT to wrap yourself.',
   },
   {
     title: 'How Much Does It Cost to Ship Heavy Items in Austin?',

@@ -182,10 +182,10 @@ export default function FineArtShippingAustin() {
               Central Texas summers are brutal for artwork. The heat is obvious, but the real danger is the combination of heat and the rapid temperature changes as you move between climate-controlled interiors and outdoor loading areas. Oil paint softens at high temperatures. Canvas and linen supports expand and contract unevenly. Acrylic mediums become tacky. Wood frames and stretchers shift.
             </p>
             <p>
-              Art that survives a studio in Austin for years can be damaged in forty-five minutes in the back of an unconditioned truck during a July pickup. We see this consistently — especially from customers who tried a standard mover first and are now dealing with the aftermath.
+              Art that survives a studio in Austin for years can be damaged in forty-five minutes in the back of an unconditioned truck during a July collection. We see this consistently — especially from customers who tried a standard mover first and are now dealing with the aftermath.
             </p>
             <p>
-              For all fine art shipments in Austin between May and October, climate-controlled transport is the standard of care, not an upgrade. Our vehicles maintain 68–72°F regardless of outside temperature. We also pre-cool before loading and schedule pickups in the early morning when possible to minimize thermal stress on the piece.
+              For all fine art shipments in Austin between May and October, climate-controlled transport is the standard of care, not an upgrade. Our vehicles maintain 68–72°F regardless of outside temperature. We also pre-cool before loading and schedule collections in the early morning when possible to minimize thermal stress on the piece.
             </p>
 
             <h2>Crating Fine Art: What It Actually Involves</h2>
@@ -315,7 +315,7 @@ export default function FineArtShippingAustin() {
 
             <h3>Gallery Rotations and Exhibition Shipping</h3>
             <p>
-              Austin has an active gallery scene. Shows rotate frequently, and works need to move between venues, collectors, and storage with professional documentation and handling. We work with Austin galleries on exhibition logistics — scheduled pickups and deliveries, condition reports, and the precise timing that gallery openings require. Our{' '}
+              Austin has an active gallery scene. Shows rotate frequently, and works need to move between venues, collectors, and storage with professional documentation and handling. We work with Austin galleries on exhibition logistics — scheduled collections and deliveries, condition reports, and the precise timing that gallery openings require. Our{' '}
               <Link href="/services/fine-art/gallery-exhibit-shipping" className="text-emerald-600 hover:underline">
                 gallery exhibit shipping service
               </Link>{' '}
@@ -329,7 +329,7 @@ export default function FineArtShippingAustin() {
 
             <h3>Art Fair Shipping (Austin, Houston, Dallas)</h3>
             <p>
-              Texas has active art fairs in Austin, Houston, and Dallas. Transporting work to and from fairs involves tight deadlines, specific crate labeling requirements, and often multiple pickups from multiple galleries. We have coordinated art fair transport across the Texas Triangle and understand the logistics involved.
+              Texas has active art fairs in Austin, Houston, and Dallas. Transporting work to and from fairs involves tight deadlines, specific crate labeling requirements, and often multiple collections from multiple galleries. We have coordinated art fair transport across the Texas Triangle and understand the logistics involved.
             </p>
 
             <h2>Frequently Asked Questions</h2>

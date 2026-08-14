@@ -52,7 +52,7 @@ export default function HeavyEquipmentAustin() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
             <Link href="/services/heavy-items" className="text-emerald hover:underline mb-4 inline-block text-sm">
-              ← Heavy Item Shipping &amp; Pickup
+              ← Heavy Item Shipping &amp; Collection
             </Link>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-grey-700 bg-grey-800/50 mb-6 ml-4">
               <span className="text-xs font-medium text-grey-300 uppercase tracking-widest">Industrial Freight · Austin, TX</span>
@@ -113,7 +113,7 @@ export default function HeavyEquipmentAustin() {
                 { title: 'On-Site Assessment & Crate Design', desc: 'For large or complex equipment, we assess the item at your Austin location before building the crate. We measure, photograph, and identify any disassembly required for safe crating and transit.' },
                 { title: 'Custom Wood Crate Construction', desc: 'Heavy equipment crates use heavier lumber grades and reinforced joinery compared to standard crates. Crate design accounts for forklift entry points, stacking weight, and internal bracing to prevent equipment movement.' },
                 { title: 'Freight Classification & Carrier Selection', desc: 'LTL freight is priced by freight class (1-500), which is based on density, stowability, handling characteristics, and liability. We classify your shipment correctly to avoid reclassification charges and select the best carrier for the equipment type.' },
-                { title: 'Liftgate Coordination at Both Ends', desc: 'Business locations without loading docks require a liftgate truck for both pickup and delivery. We coordinate this at both the origin and destination so there are no surprises on arrival day.' },
+                { title: 'Liftgate Coordination at Both Ends', desc: 'Business locations without loading docks require a liftgate truck for both collection and delivery. We coordinate this at both the origin and destination so there are no surprises on arrival day.' },
                 { title: 'Chain-of-Custody Documentation', desc: 'For regulated equipment (medical devices, hazmat-adjacent machinery) we provide condition reports, crate inspection records, and carrier POD documentation. This protects you in insurance claims and compliance audits.' },
                 { title: 'Shipping Insurance & Declared Value', desc: 'We ensure your equipment is covered at its actual replacement value, not LTL carriers\' default $0.10/lb rate, which would leave a $20,000 machine valued at only $200 in their liability calculation.' },
               ].map((item, i) => (
@@ -203,7 +203,7 @@ export default function HeavyEquipmentAustin() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
             <div className="space-y-5">
               {[
-                { q: 'Do you require a loading dock for heavy equipment pickup?', a: 'Not necessarily. We have liftgate trucks for pickup at locations without loading docks, manufacturing facilities, retail locations, residences, and construction sites. Tell us your pickup location and we will send the right truck.' },
+                { q: 'Do you require a loading dock for heavy equipment collection?', a: 'Not necessarily. We have liftgate trucks for collection at locations without loading docks, manufacturing facilities, retail locations, residences, and construction sites. Tell us your collection location and we will send the right truck.' },
                 { q: 'Can you disassemble equipment before crating?', a: 'For equipment that requires partial disassembly for safe transport (removing large appendages, lifting arms, detachable components), we can coordinate disassembly. For equipment requiring specialized technical knowledge, we work alongside your technicians to ensure proper procedure.' },
                 { q: 'How is LTL freight classified for heavy equipment?', a: 'LTL freight class is determined by four factors: density, stowability, handling, and liability. Most heavy industrial equipment falls into class 50-85, which are the lower-cost classes. Equipment with high liability (sensitive electronics, medical devices) is classified higher. We assess your equipment and classify it correctly to avoid expensive reclassification at the carrier facility.' },
                 { q: 'Do you ship heavy equipment to trade show venues like Las Vegas or Chicago?', a: 'Yes. We ship to major trade show venues across the US including Las Vegas Convention Center, McCormick Place Chicago, Orange County Convention Center, and others. We coordinate advance warehouse delivery and show move-in timing when required.' },

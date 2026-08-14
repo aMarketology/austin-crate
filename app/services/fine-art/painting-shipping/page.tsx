@@ -160,7 +160,7 @@ export default function PaintingShipping() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               {[
-                { title: 'Private Collectors', desc: 'Buying or selling a painting at auction, through a dealer, or privately. We pick up from residences, galleries, and auction houses. White-glove from wall to wall.' },
+                { title: 'Private Collectors', desc: 'Buying or selling a painting at auction, through a dealer, or privately. We collect from residences, galleries, and auction houses. White-glove from wall to wall.' },
                 { title: 'Austin Galleries', desc: 'Gallery directors managing loan exhibitions, consignment transfers, and collector deliveries. We provide consistent crating standards and documentation on every shipment.' },
                 { title: 'Artists & Estates', desc: 'Artists shipping work to galleries, fairs, or exhibitions. Estate executors processing collections. We offer volume pricing for multiple-piece shipments.' },
               ].map((c, i) => (
@@ -182,8 +182,8 @@ export default function PaintingShipping() {
                 { q: 'How much does it cost to ship a painting in Austin?', a: 'Crating a painting in Austin typically runs $100–$400 depending on size and framing complexity. A small framed print might be $80–$150; a large ornate gilt-frame oil painting might be $300–$600. Freight is separate and priced by destination and dimensions. Call us for a fast quote.' },
                 { q: 'Can you ship an unframed rolled canvas?', a: 'Yes. Rolled canvas is shipped in a rigid tube with foam end caps, inner foam liner, and an outer wood or heavy cardboard crate. We do not roll canvases with existing cracks or very thick paint application, if that applies to your piece, we will advise on flat crating instead.' },
                 { q: 'Do paintings need climate control during shipping?', a: 'Most Texas shipments do not require a climate-controlled truck if the transit time is short (1–3 days) and the painting is properly crated. Very old, delicate, or high-value works may warrant climate-controlled freight for longer routes. We assess each piece and recommend accordingly.' },
-                { q: 'Can you pick up from an Austin gallery or auction house?', a: 'Yes. We pick up from galleries, auction houses, moving sales, storage facilities, and private residences throughout the Austin metro. Call us with the address and we will schedule pickup, usually within 1–3 business days.' },
-                { q: 'Do you provide condition reports for insurance purposes?', a: 'Yes. We photograph the painting at pickup and document any pre-existing condition issues before crating. This serves as a baseline for insurance claims and gives you documentation of the piece\'s condition at the time of shipment.' },
+                { q: 'Can you collect from an Austin gallery or auction house?', a: 'Yes. We collect from galleries, auction houses, moving sales, storage facilities, and private residences throughout the Austin metro. Call us with the address and we will schedule collection, usually within 1–3 business days.' },
+                { q: 'Do you provide condition reports for insurance purposes?', a: 'Yes. We photograph the painting at collection and document any pre-existing condition issues before crating. This serves as a baseline for insurance claims and gives you documentation of the piece\'s condition at the time of shipment.' },
               ].map((faq, i) => (
                 <div key={i} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                   <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>

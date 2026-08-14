@@ -9,7 +9,7 @@ import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = generateLocationMetadata({
   locationName: 'Cedar Park',
-  description: 'Specialty shipping & custom crating in Cedar Park, TX, furniture shipping and crating, fine art transport, heavy item pickup, oversized shipping & medical equipment. White-glove service from Austin Crate & Freight.',
+  description: 'Specialty shipping & custom crating in Cedar Park, TX, furniture shipping and crating, fine art transport, heavy item collection, oversized shipping & medical equipment. White-glove service from Austin Crate & Freight.',
   keywords: [
     'specialty shipping Cedar Park TX',
     'specialty shipping Cedar Park Texas',
@@ -19,8 +19,8 @@ export const metadata: Metadata = generateLocationMetadata({
     'furniture crating Cedar Park TX',
     'custom furniture shipping Cedar Park',
     'fine art shipping Cedar Park',
-    'heavy package pickup Cedar Park',
-    'heavy item pickup Cedar Park TX',
+    'heavy package collection Cedar Park',
+    'heavy item collection Cedar Park TX',
     'oversized shipping Cedar Park',
     'white glove shipping Cedar Park TX',
     'Cedar Park shipping company',
@@ -60,7 +60,7 @@ export default function CedarPark() {
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Specialty Shipping & Crating in Cedar Park, TX</h1>
               <p className="text-xl text-gray-300 mb-8">
-                Austin Crate &amp; Freight brings museum-quality specialty shipping and custom crating to Cedar Park. From furniture shipping and crating to fine art transport, heavy item pickup, and medical equipment delivery, we serve the H-E-B Center area, Buttercup Creek, Anderson Mill, and all of Cedar Park with expert white-glove care.
+                Austin Crate &amp; Freight brings museum-quality specialty shipping and custom crating to Cedar Park. From furniture shipping and crating to fine art transport, heavy item collection, and medical equipment delivery, we serve the H-E-B Center area, Buttercup Creek, Anderson Mill, and all of Cedar Park with expert white-glove care.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -100,7 +100,7 @@ export default function CedarPark() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Specialty Shipping & Crating Services in Cedar Park</h2>
-          <p className="text-lg text-gray-600 mb-12 max-w-3xl">Every service we offer in Cedar Park is backed by custom crating expertise built in-house. Whether you need furniture shipping and crating, fine art transport, or heavy item pickup, we deliver with the same white-glove standard as our Austin location.</p>
+          <p className="text-lg text-gray-600 mb-12 max-w-3xl">Every service we offer in Cedar Park is backed by custom crating expertise built in-house. Whether you need furniture shipping and crating, fine art transport, or heavy item collection, we deliver with the same white-glove standard as our Austin location.</p>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <div className="p-6 border border-gray-200 rounded-xl hover:shadow-lg transition-shadow">
@@ -148,8 +148,8 @@ export default function CedarPark() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Pickup</h3>
-              <p className="text-gray-600 mb-4">Heavy package pickup in Cedar Park for items too large for UPS or FedEx, safes, appliances, equipment, and more.</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Collection</h3>
+              <p className="text-gray-600 mb-4">Heavy package collection in Cedar Park for items too large for UPS or FedEx, safes, appliances, equipment, and more.</p>
               <Link href="/services/heavy-items" className="text-emerald-600 hover:text-emerald-700 font-medium">
                 Learn More →
               </Link>
@@ -258,7 +258,7 @@ export default function CedarPark() {
             <div className="space-y-6">
               <div className="border border-gray-200 rounded-xl p-6">
                 <h3 className="font-bold text-gray-900 mb-2">Do you offer specialty shipping and crating in Cedar Park, TX?</h3>
-                <p className="text-gray-600">Yes. Austin Crate &amp; Freight provides full specialty shipping and custom crating services throughout Cedar Park, Texas, including pickup from your Cedar Park home or business, in-house crating at our Austin facility, and delivery anywhere in the US.</p>
+                <p className="text-gray-600">Yes. Austin Crate &amp; Freight provides full specialty shipping and custom crating services throughout Cedar Park, Texas, including collection from your Cedar Park home or business, in-house crating at our Austin facility, and delivery anywhere in the US.</p>
               </div>
               <div className="border border-gray-200 rounded-xl p-6">
                 <h3 className="font-bold text-gray-900 mb-2">Can you handle furniture shipping and crating for Cedar Park residents?</h3>
@@ -282,7 +282,7 @@ export default function CedarPark() {
           {/* Cross-Links to Other Locations */}
           <div className="bg-gray-100 rounded-2xl p-8 mb-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">We Also Serve Nearby Cities</h3>
-            <p className="text-gray-600 mb-6">Austin Crate & Freight provides the same white-glove specialty shipping, custom furniture shipping, and heavy package pickup throughout the greater Austin area.</p>
+            <p className="text-gray-600 mb-6">Austin Crate & Freight provides the same white-glove specialty shipping, custom furniture shipping, and heavy package collection throughout the greater Austin area.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/locations/round-rock" className="px-5 py-2.5 bg-white border border-gray-200 rounded-lg text-gray-700 hover:border-emerald-500 hover:text-emerald-700 transition-colors font-medium">
                 Round Rock, TX
@@ -301,7 +301,7 @@ export default function CedarPark() {
 
           <div className="text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Need Shipping in Cedar Park?</h3>
-            <p className="text-gray-600 mb-6">Get your free quote today for custom furniture shipping, heavy package pickup, or any specialty shipping service.</p>
+            <p className="text-gray-600 mb-6">Get your free quote today for custom furniture shipping, heavy package collection, or any specialty shipping service.</p>
             <a
               href="tel:(512) 240-9818"
               className="inline-flex items-center gap-2 px-8 py-4 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors font-medium"
@@ -319,13 +319,13 @@ export default function CedarPark() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Serving Our Team in Cedar Park</h2>
               <p className="text-gray-700 text-lg mb-6">
-                Austin Crate &amp; Freight serves Cedar Park from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, just minutes from Cedar Park via US-183. Free pickup throughout Cedar Park, TX 78613 and 78641.
+                Austin Crate &amp; Freight serves Cedar Park from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, just minutes from Cedar Park via US-183. Collection throughout Cedar Park, TX 78613 and 78641.
               </p>
               <ul className="space-y-3 text-gray-700 mb-8">
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Address:</strong> 3112 Windsor Rd, Austin, TX 78703</span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Phone:</strong> <a href="tel:(512) 240-9818" className="text-emerald-600 hover:underline">(512) 240-9818</a></span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Hours:</strong> Mon-Fri 8am-6pm, Sat by appointment</span></li>
-                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Cedar Park pickup:</strong> Free throughout Cedar Park, Round Rock, Georgetown, and Greater Austin</span></li>
+                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Cedar Park collection:</strong> available throughout Cedar Park, Round Rock, Georgetown, and Greater Austin</span></li>
               </ul>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Austin+Crate+%26+Freight+3112+Windsor+Rd+Austin+TX+78703"

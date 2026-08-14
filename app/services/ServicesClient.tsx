@@ -34,12 +34,12 @@ export default function ServicesClient() {
       features: ['HIPAA-Aware Handling', 'Chain of Custody', 'Calibration Safe', 'Temperature Control'],
     },
     {
-      title: 'Heavy Item Pickup',
+      title: 'Heavy Item Collection',
       subtitle: 'No Weight Limit',
-      description: 'Heavy package pickup and shipping for safes, pool tables, machinery, motorcycles, and anything over 70 lbs. Custom crating, reinforced packaging, and freight coordination across Austin and nationwide.',
+      description: 'Heavy package collection and shipping for safes, pool tables, machinery, motorcycles, and anything over 70 lbs. Custom crating, reinforced packaging, and freight coordination across Austin and nationwide.',
       image: '/IMG_2983.jpg',
       href: '/services/heavy-items',
-      features: ['Free Local Pickup', 'Custom Heavy Crating', 'LTL Freight Coordination', 'Any Weight'],
+      features: ['Free Local Collection', 'Custom Heavy Crating', 'LTL Freight Coordination', 'Any Weight'],
     },
     {
       title: 'Oversized Shipping',
@@ -375,7 +375,7 @@ export default function ServicesClient() {
             <span className="text-emerald">Valuable Items?</span>
           </h2>
           <p className="text-xl text-grey-400 mb-10 max-w-2xl mx-auto">
-            Get a free quote for specialty shipping in Austin. Whether you need custom furniture shipping, heavy package pickup, oversized freight, or fine art crating, we handle it all.
+            Get a free quote for specialty shipping in Austin. Whether you need custom furniture shipping, heavy package collection, oversized freight, or fine art crating, we handle it all.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -398,7 +398,7 @@ export default function ServicesClient() {
           {/* Quick Links */}
           <div className="mt-12 pt-8 border-t border-grey-800">
             <div className="flex flex-wrap justify-center gap-6 text-sm">
-              <Link href="/services/heavy-items" className="text-emerald hover:text-emerald/80 font-medium transition-colors">Heavy Item Pickup</Link>
+              <Link href="/services/heavy-items" className="text-emerald hover:text-emerald/80 font-medium transition-colors">Heavy Item Collection</Link>
               <Link href="/services/oversized-shipping" className="text-emerald hover:text-emerald/80 font-medium transition-colors">Oversized Shipping</Link>
               <Link href="/buy-a-crate" className="text-emerald hover:text-emerald/80 font-medium transition-colors">Buy a Custom Crate</Link>
               <Link href="/contact" className="text-emerald hover:text-emerald/80 font-medium transition-colors">Get a Free Quote</Link>

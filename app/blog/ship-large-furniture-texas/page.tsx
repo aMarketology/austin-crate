@@ -180,7 +180,7 @@ export default function ShipLargeFurnitureTexas() {
                 <strong>Get a quote:</strong> Share the dimensions, weight, material, and destination. We will tell you what protective packaging is appropriate and give you a flat price.
               </li>
               <li>
-                <strong>Schedule pickup:</strong> We come to your location, home, gallery, warehouse, or estate, and take careful measurements before we build.
+                <strong>Schedule collection:</strong> We come to your location, home, gallery, warehouse, or estate, and take careful measurements before we build.
               </li>
               <li>
                 <strong>Build the crate:</strong> All crating happens in our Austin shop or on-site for very large pieces. Turnaround is typically 24-72 hours depending on complexity.
@@ -209,7 +209,7 @@ export default function ShipLargeFurnitureTexas() {
             </p>
 
             <div className="bg-grey-100 p-6 rounded-lg my-8 not-prose">
-              <h3 className="text-xl font-bold mb-3 text-grey-900">🛋️ Prepare Your Furniture Before Pickup</h3>
+              <h3 className="text-xl font-bold mb-3 text-grey-900">🛋️ Prepare Your Furniture Before Collection</h3>
               <p className="text-grey-700 mb-3">A few simple steps on your end speed up the process significantly:</p>
               <ul className="text-grey-700 space-y-2">
                 <li>✅ <strong>Remove detachable parts</strong>, shelves, leaves, knobs, pulls, and decorative elements wrap separately</li>

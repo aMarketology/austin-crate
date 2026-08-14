@@ -33,7 +33,7 @@ export const faqSchema = {
       name: 'How do I get a shipping quote?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Call us at (512) 240-9818 or fill out our online contact form with details about your item (dimensions, weight, pickup/delivery locations). We provide free, detailed quotes within 24 hours.'
+        text: 'Call us at (512) 240-9818 or fill out our online contact form with details about your item (dimensions, weight, collection/delivery locations). We provide free, detailed quotes within 24 hours.'
       }
     },
     {
@@ -164,10 +164,10 @@ export const furnitureFAQSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Do you offer furniture pickup in Austin?',
+      name: 'Do you offer furniture collection in Austin?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. We offer free furniture pickup throughout Greater Austin and surrounding communities including Round Rock, Cedar Park, Georgetown, Pflugerville, Kyle, and Buda. Our crew arrives with all necessary equipment — no trip to a drop-off location required.'
+        text: 'Yes. We offer furniture collection throughout Greater Austin and surrounding communities including Round Rock, Cedar Park, Georgetown, Pflugerville, Kyle, and Buda. Our crew arrives with all necessary equipment — no trip to a drop-off location required.'
       }
     },
     {
@@ -203,10 +203,10 @@ export const heavyItemsFAQSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Do you pick up heavy packages in Austin?',
+      name: 'Do you collect heavy packages in Austin?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Austin Crate & Freight offers free heavy package pickup throughout Greater Austin, Round Rock, Cedar Park, and Georgetown. We bring all equipment needed for safe loading — dollies, straps, ramps, and a trained crew.'
+        text: 'Yes. Austin Crate & Freight offers heavy package collection throughout Greater Austin, Round Rock, Cedar Park, and Georgetown. We bring all equipment needed for safe loading — dollies, straps, ramps, and a trained crew.'
       }
     },
     {
@@ -253,7 +253,7 @@ export const oversizedShippingFAQSchema = {
       name: 'How do I ship something too big for FedEx or UPS?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Call Austin Crate & Freight at (512) 240-9818. We pick up oversized items at your location, build a custom crate at our Austin facility, and coordinate freight transport to any destination in the US. No size or weight limit.'
+        text: 'Call Austin Crate & Freight at (512) 240-9818. We collect oversized items at your location, build a custom crate at our Austin facility, and coordinate freight transport to any destination in the US. No size or weight limit.'
       }
     },
     {

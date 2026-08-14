@@ -79,9 +79,9 @@ const SERVICES = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 10V7" />
       </svg>
     ),
-    title: 'Heavy Item Pickup & Shipping',
+    title: 'Heavy Item Collection & Shipping',
     description:
-      'Pickup and crating for items over 150 lbs that standard carriers refuse. Safe jacks, furniture dollies, liftgate service, and freight coordination, anywhere in Texas.',
+      'Collection and crating for items over 150 lbs that standard carriers refuse. Safe jacks, furniture dollies, liftgate service, and freight coordination, anywhere in Texas.',
     subLinks: [
       { label: 'Pool Table Shipping', href: '/services/heavy-items/pool-table-shipping' },
       { label: 'Motorcycle Crating', href: '/services/heavy-items/motorcycle-crating' },
@@ -156,7 +156,7 @@ export default function ServicesGrid({
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-900 mb-3 text-center">{title}</h2>
         <p className="text-gray-500 text-center mb-10 max-w-2xl mx-auto">
-          Austin Crate &amp; Freight serves the entire Austin metro, custom crating, white-glove pickup, and specialty freight for items that standard carriers cannot handle.
+          Austin Crate &amp; Freight serves the entire Austin metro, custom crating, white-glove collection, and specialty freight for items that standard carriers cannot handle.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filtered.map((svc) => (

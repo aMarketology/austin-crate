@@ -9,18 +9,18 @@ import { heavyItemsFAQSchema } from '@/lib/faq-schema'
 import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = generateServiceMetadata({
-  serviceName: 'Heavy Item Pickup & Shipping Austin TX',
+  serviceName: 'Heavy Item Collection & Shipping Austin TX',
   description:
     'Heavy package and oversized item shipping in Austin, TX. Custom crating for furniture, equipment, and machinery. Call (512) 240-9818.',
   keywords: [
-    'heavy package pickup Austin',
+    'heavy package collection Austin',
     'heavy item shipping Austin TX',
     'oversized package shipping Austin',
     'heavy freight Austin Texas',
     'large item shipping Austin',
     'bulky item transport Austin TX',
     'heavy equipment shipping Austin',
-    'oversized item pickup Austin',
+    'oversized item collection Austin',
     'specialty shipping heavy items',
     'custom crating heavy items Austin',
   ],
@@ -30,15 +30,15 @@ export const metadata: Metadata = generateServiceMetadata({
 
 export default function HeavyItemsShipping() {
   const serviceSchema = generateServiceSchema({
-    serviceName: 'Heavy Item Pickup & Shipping',
+    serviceName: 'Heavy Item Collection & Shipping',
     description:
-      'Heavy package pickup and oversized item shipping in Austin, TX. Custom crating, reinforced packaging, and freight transport for items too large or heavy for standard carriers.',
+      'Heavy package collection and oversized item shipping in Austin, TX. Custom crating, reinforced packaging, and freight transport for items too large or heavy for standard carriers.',
     serviceType: 'Heavy Item Shipping',
   })
 
   const localBusinessSchema = generateLocalBusinessSchema({
     locationName: 'Austin',
-    description: 'Heavy package pickup and oversized item shipping in Austin, TX. Custom crating for furniture, equipment, and machinery.',
+    description: 'Heavy package collection and oversized item shipping in Austin, TX. Custom crating for furniture, equipment, and machinery.',
     latitude: 30.2972,
     longitude: -97.7594,
     image: '/IMG_4446_1703172460423.jpg',
@@ -76,10 +76,10 @@ export default function HeavyItemsShipping() {
                   </span>
                 </div>
                 <h1 className="text-5xl md:text-6xl font-bold mb-6">
-                  Heavy Item Pickup &amp; Shipping in Austin, Texas
+                  Heavy Item Collection &amp; Shipping in Austin, Texas
                 </h1>
                 <p className="text-xl text-grey-300 mb-8">
-                  Too heavy for FedEx or UPS? We pick up, custom-crate, and ship heavy and
+                  Too heavy for FedEx or UPS? We collect, custom-crate, and ship heavy and
                   oversized items, furniture, equipment, machinery, and more, from anywhere in
                   the Greater Austin area. No weight limits, no size restrictions.
                 </p>
@@ -104,7 +104,7 @@ export default function HeavyItemsShipping() {
               <div className="relative h-96 rounded-2xl overflow-hidden border-2 border-grey-700 shadow-xl">
                 <Image
                   src="/IMG_4446_1703172460423.jpg"
-                  alt="Heavy item pickup and custom crating in Austin Texas, oversized package shipping by Austin Crate & Freight"
+                  alt="Heavy item collection and custom crating in Austin Texas, oversized package shipping by Austin Crate & Freight"
                   fill
                   className="object-cover"
                   priority
@@ -177,7 +177,7 @@ export default function HeavyItemsShipping() {
         <section className="py-20 px-4 bg-gray-50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">
-              Heavy Items We Pick Up &amp; Ship from Austin
+              Heavy Items We Collect &amp; Ship from Austin
             </h2>
             <p className="text-center text-gray-600 text-lg mb-12 max-w-3xl mx-auto">
               If it's too big, too heavy, or too valuable for standard carriers, we handle it.
@@ -266,23 +266,23 @@ export default function HeavyItemsShipping() {
         <section className="py-20 px-4 bg-white">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">
-              How Heavy Item Pickup &amp; Shipping Works
+              How Heavy Item Collection &amp; Shipping Works
             </h2>
             <p className="text-center text-gray-600 text-lg mb-12 max-w-2xl mx-auto">
               We make shipping heavy and oversized items from Austin simple. Our white-glove
-              process handles everything from pickup to delivery.
+              process handles everything from collection to delivery.
             </p>
             <div className="space-y-8">
               {[
                 {
                   step: 1,
                   title: 'Free Quote & Assessment',
-                  desc: 'Tell us what you need shipped, dimensions, weight, pickup and delivery locations. We provide a detailed quote within 24 hours with no hidden fees.',
+                  desc: 'Tell us what you need shipped, dimensions, weight, collection and delivery locations. We provide a detailed quote within 24 hours with no hidden fees.',
                 },
                 {
                   step: 2,
-                  title: 'Scheduled Pickup at Your Location',
-                  desc: 'Our team arrives at your home or business with all equipment needed, dollies, straps, ramps, and a crew trained in heavy-item handling. Pickup fees vary based on location and item size.',
+                  title: 'Scheduled Collection at Your Location',
+                  desc: 'Our team arrives at your home or business with all equipment needed, dollies, straps, ramps, and a crew trained in heavy-item handling. Collection fees vary based on location and item size.',
                 },
                 {
                   step: 3,
@@ -349,12 +349,12 @@ export default function HeavyItemsShipping() {
                 {
                   factor: 'Access',
                   detail:
-                    'Stairs, narrow doorways, or upper-floor pickups may require additional handling.',
+                    'Stairs, narrow doorways, or upper-floor collections may require additional handling.',
                 },
                 {
                   factor: 'Timeline',
                   detail:
-                    'Standard scheduling is most affordable. Rush and weekend pickups available at premium rates.',
+                    'Standard scheduling is most affordable. Rush and weekend collections available at premium rates.',
                 },
               ].map((item, i) => (
                 <div
@@ -404,10 +404,10 @@ export default function HeavyItemsShipping() {
         <section className="py-20 px-4 bg-white">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">
-              Heavy Item Pickup Areas in Central Texas
+              Heavy Item Collection Areas in Central Texas
             </h2>
             <p className="text-center text-gray-600 text-lg mb-12">
-              We offer free heavy item pickup throughout the Greater Austin area. We also ship
+              We offer heavy item collection throughout the Greater Austin area. We also ship
               nationwide via freight.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mb-10">
@@ -465,8 +465,8 @@ export default function HeavyItemsShipping() {
                   a: 'Heavy item shipping costs in Austin depend on weight, dimensions, fragility, and destination. Most local heavy item shipments start at $150-$300. Long-distance freight starts at $300+. Call (512) 240-9818 for a free, no-obligation quote.',
                 },
                 {
-                  q: 'Do you pick up heavy packages in Austin?',
-                  a: 'Yes! Austin Crate & Freight offers free heavy package pickup throughout Greater Austin, including Round Rock, Cedar Park, Georgetown, Pflugerville, and surrounding areas. Our crew arrives with all necessary equipment, dollies, straps, ramps, and a truck.',
+                  q: 'Do you collect heavy packages in Austin?',
+                  a: 'Yes! Austin Crate & Freight offers heavy package collection throughout Greater Austin, including Round Rock, Cedar Park, Georgetown, Pflugerville, and surrounding areas. Our crew arrives with all necessary equipment, dollies, straps, ramps, and a truck.',
                 },
                 {
                   q: 'What is considered a heavy item for shipping?',
@@ -481,7 +481,7 @@ export default function HeavyItemsShipping() {
                   a: 'Absolutely. Every heavy item we ship gets a custom-built wood crate engineered for its exact weight and dimensions. We use kiln-dried lumber, stainless steel hardware, shock-absorbing foam, and reinforced framing.',
                 },
                 {
-                  q: 'How do I prepare a heavy item for pickup?',
+                  q: 'How do I prepare a heavy item for collection?',
                   a: 'No preparation needed. Just make sure we have clear access to the item. Our team handles all disassembly, wrapping, padding, and loading. We bring all equipment.',
                 },
                 {
@@ -634,7 +634,7 @@ export default function HeavyItemsShipping() {
         <section className="py-20 px-4 bg-gray-50">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Heavy Item Crating &amp; Pickup Projects in Austin</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Heavy Item Crating &amp; Collection Projects in Austin</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">A look inside our Austin workshop at 3112 Windsor Rd, where every heavy-item crate is engineered for maximum protection during freight transport across Texas and the U.S.</p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -720,7 +720,7 @@ export default function HeavyItemsShipping() {
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Visit Our Austin Crating Workshop</h2>
                 <p className="text-gray-700 text-lg mb-6">
-                  Austin Crate &amp; Freight is locally based at <strong>3112 Windsor Rd, Austin, TX 78703</strong>. We pick up heavy and oversized items across the Austin metro, custom-crate them in our shop, and ship them anywhere in the U.S.
+                  Austin Crate &amp; Freight is locally based at <strong>3112 Windsor Rd, Austin, TX 78703</strong>. We collect heavy and oversized items across the Austin metro, custom-crate them in our shop, and ship them anywhere in the U.S.
                 </p>
                 <ul className="space-y-3 text-gray-700 mb-8">
                   <li className="flex gap-3"><span className="text-emerald font-bold">✓</span> <span><strong>Address:</strong> 3112 Windsor Rd, Austin, TX 78703</span></li>
@@ -760,7 +760,7 @@ export default function HeavyItemsShipping() {
               Need to Ship Something Heavy in Austin?
             </h2>
             <p className="text-xl text-grey-300 mb-10">
-              Get a free quote for heavy item pickup and shipping. We handle everything, pickup,
+              Get a free quote for heavy item collection and shipping. We handle everything, collection,
               custom crating, and door-to-door delivery. No weight limits.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

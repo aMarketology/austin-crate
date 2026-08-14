@@ -11,7 +11,7 @@ import SEOWrapper from '@/app/components/SEOWrapper'
 export const metadata: Metadata = generateServiceMetadata({
   serviceName: 'Oversized Item Shipping Austin TX',
   description:
-    'Ship oversized items from Austin, Texas. Custom crating and freight for furniture, equipment, artwork, and more too large for FedEx or UPS. White-glove pickup, fully insured. Free quotes.',
+    'Ship oversized items from Austin, Texas. Custom crating and freight for furniture, equipment, artwork, and more too large for FedEx or UPS. White-glove collection, fully insured. Free quotes.',
   keywords: [
     'oversized item shipping Austin',
     'large package shipping Austin TX',
@@ -19,7 +19,7 @@ export const metadata: Metadata = generateServiceMetadata({
     'oversized freight Austin Texas',
     'large item shipping service Austin',
     'ship large items Austin TX',
-    'oversized package pickup Austin',
+    'oversized package collection Austin',
     'too big for UPS Austin',
     'freight shipping Austin Texas',
     'custom crating oversized items',
@@ -38,7 +38,7 @@ export default function OversizedShipping() {
 
   const localBusinessSchema = generateLocalBusinessSchema({
     locationName: 'Austin',
-    description: 'Oversized item shipping from Austin, Texas. Custom crating and freight for items too large for FedEx or UPS. White-glove pickup, fully insured.',
+    description: 'Oversized item shipping from Austin, Texas. Custom crating and freight for items too large for FedEx or UPS. White-glove collection, fully insured.',
     latitude: 30.2972,
     longitude: -97.7594,
     image: '/IMG_8539.jpeg',
@@ -263,8 +263,8 @@ export default function OversizedShipping() {
                 },
                 {
                   step: 2,
-                  title: 'Pickup at Your Location',
-                  desc: 'Our crew arrives with a fully equipped truck, dollies, straps, ramps, and blankets. Free pickup anywhere in Greater Austin, including Round Rock, Cedar Park, and Georgetown.',
+                  title: 'Collection at Your Location',
+                  desc: 'Our crew arrives with a fully equipped truck, dollies, straps, ramps, and blankets. Collection anywhere in Greater Austin, including Round Rock, Cedar Park, and Georgetown.',
                 },
                 {
                   step: 3,
@@ -311,7 +311,7 @@ export default function OversizedShipping() {
                   tier: 'Local',
                   range: 'Austin Metro Area',
                   price: '$150 - $400',
-                  items: ['Pickup within 30 miles', 'Same-day available', 'Protective blankets included', 'Inside delivery option'],
+                  items: ['Collection within 30 miles', 'Same-day available', 'Protective blankets included', 'Inside delivery option'],
                 },
                 {
                   tier: 'Regional',
@@ -359,7 +359,7 @@ export default function OversizedShipping() {
               Oversized Shipping Service Areas
             </h2>
             <p className="text-center text-gray-600 max-w-2xl mx-auto mb-14 text-lg">
-              Free pickup for oversized items throughout the Greater Austin metro area:
+              Collection for oversized items throughout the Greater Austin metro area:
             </p>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
               {[
@@ -406,7 +406,7 @@ export default function OversizedShipping() {
               {[
                 {
                   q: 'How do I ship something too big for FedEx or UPS?',
-                  a: 'Call Austin Crate & Freight at (512) 240-9818. We pick up oversized items at your location, build a custom crate at our Austin facility, and coordinate freight transport to any destination in the US. No size or weight limit.',
+                  a: 'Call Austin Crate & Freight at (512) 240-9818. We collect oversized items at your location, build a custom crate at our Austin facility, and coordinate freight transport to any destination in the US. No size or weight limit.',
                 },
                 {
                   q: 'How much does it cost to ship an oversized item from Austin?',
@@ -453,7 +453,7 @@ export default function OversizedShipping() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-emerald transition-colors">Heavy Item Pickup</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-emerald transition-colors">Heavy Item Collection</h3>
                 <p className="text-gray-600 text-sm">Items over 70 lbs that need specialized equipment, custom crating, and freight handling.</p>
               </Link>
               <Link href="/services/furniture" className="group p-8 rounded-xl bg-gray-50 border-2 border-gray-200 hover:border-emerald hover:shadow-lg transition-all">
@@ -517,7 +517,7 @@ export default function OversizedShipping() {
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Visit Our Austin Crating Workshop</h2>
                 <p className="text-gray-700 text-lg mb-6">
-                  Austin Crate &amp; Freight is locally based at <strong>3112 Windsor Rd, Austin, TX 78703</strong>. We pick up oversized items across the Austin metro, build custom crates in our shop, and ship them door-to-door anywhere in the U.S.
+                  Austin Crate &amp; Freight is locally based at <strong>3112 Windsor Rd, Austin, TX 78703</strong>. We collect oversized items across the Austin metro, build custom crates in our shop, and ship them door-to-door anywhere in the U.S.
                 </p>
                 <ul className="space-y-3 text-gray-700 mb-8">
                   <li className="flex gap-3"><span className="text-emerald font-bold">✓</span> <span><strong>Address:</strong> 3112 Windsor Rd, Austin, TX 78703</span></li>

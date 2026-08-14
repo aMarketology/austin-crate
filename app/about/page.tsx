@@ -88,7 +88,7 @@ export default function About() {
                 { src: '/IMG_2980.jpg', alt: 'Custom crate build in progress at Austin Crate & Freight shop' },
                 { src: '/IMG_3037.jpg', alt: 'Large item custom crate — Austin Crate & Freight' },
                 { src: '/IMG_3092.jpg', alt: 'Crate assembly in the Austin Crate workshop' },
-                { src: '/IMG_2983.jpg', alt: 'Freight secured and ready for pickup — Austin TX' },
+                { src: '/IMG_2983.jpg', alt: 'Freight secured and ready for collection — Austin TX' },
                 { src: '/IMG_2984.jpg', alt: 'White-glove packing prep — Austin Crate & Freight' },
                 { src: '/IMG_3155.jpg', alt: 'Completed job — Austin Crate & Freight' },
               ].map((photo, i) => (

@@ -51,7 +51,7 @@ export default function PoolTableShipping() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
             <Link href="/services/heavy-items" className="text-emerald hover:underline mb-4 inline-block text-sm">
-              ← Heavy Item Shipping &amp; Pickup
+              ← Heavy Item Shipping &amp; Collection
             </Link>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-grey-700 bg-grey-800/50 mb-6 ml-4">
               <span className="text-xs font-medium text-grey-300 uppercase tracking-widest">Specialty Shipping · Austin, TX</span>

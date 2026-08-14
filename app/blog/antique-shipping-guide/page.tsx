@@ -399,7 +399,7 @@ export default function AntiqueShippingGuide() {
             <div className="grid gap-4">
               <Link href="/blog/prepare-furniture-for-shipping" className="p-4 bg-white rounded-lg shadow hover:shadow-lg transition">
                 <h3 className="font-bold text-lg text-grey-900 mb-1">How to Prepare Furniture for Shipping (Step-by-Step)</h3>
-                <p className="text-grey-600 text-sm">A practical checklist for getting furniture ready for pickup — what to do before we arrive.</p>
+                <p className="text-grey-600 text-sm">A practical checklist for getting furniture ready for collection — what to do before we arrive.</p>
               </Link>
               <Link href="/blog/custom-crating-vs-standard-boxes" className="p-4 bg-white rounded-lg shadow hover:shadow-lg transition">
                 <h3 className="font-bold text-lg text-grey-900 mb-1">Custom Crating vs. Standard Boxes: When You Need a Crate</h3>

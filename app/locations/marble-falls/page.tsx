@@ -129,7 +129,7 @@ export default function MarbleFalls() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Pickup</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Collection</h3>
               <p className="text-gray-600 mb-4">Large safes, stone sculptures, oversized lake-home furnishings, and items too heavy for standard carriers — throughout Marble Falls, Horseshoe Bay, and Lake LBJ.</p>
               <Link href="/services/heavy-items" className="text-emerald-600 hover:text-emerald-700 font-medium">Learn More →</Link>
             </div>
@@ -238,7 +238,7 @@ export default function MarbleFalls() {
               {[
                 {
                   q: 'Do you offer specialty shipping and crating in Marble Falls, TX?',
-                  a: 'Yes. Austin Crate & Freight provides comprehensive specialty shipping and custom crating in Marble Falls, Texas (78654). We pick up from your Marble Falls or Highland Lakes location, build custom crates in-house at our Austin workshop, and ship locally or nationwide. We cover all of Burnet County including Horseshoe Bay, Kingsland, and Llano.',
+                  a: 'Yes. Austin Crate & Freight provides comprehensive specialty shipping and custom crating in Marble Falls, Texas (78654). We collect from your Marble Falls or Highland Lakes location, build custom crates in-house at our Austin workshop, and ship locally or nationwide. We cover all of Burnet County including Horseshoe Bay, Kingsland, and Llano.',
                 },
                 {
                   q: 'Do you ship art and antiques from Marble Falls?',
@@ -246,7 +246,7 @@ export default function MarbleFalls() {
                 },
                 {
                   q: 'How far is Marble Falls from your Austin workshop?',
-                  a: 'Our workshop at 3112 Windsor Rd, Austin TX is approximately 55 miles from Marble Falls via US-281 — about 60-65 minutes. We offer same-day pickup for urgent jobs and standard 24-48 hour scheduling for most shipments.',
+                  a: 'Our workshop at 3112 Windsor Rd, Austin TX is approximately 55 miles from Marble Falls via US-281 — about 60-65 minutes. We offer same-day collection for urgent jobs and standard 24-48 hour scheduling for most shipments.',
                 },
                 {
                   q: 'Can you ship large furniture from Lake LBJ lake homes?',
@@ -303,13 +303,13 @@ export default function MarbleFalls() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Serving Marble Falls from Austin</h2>
               <p className="text-gray-700 text-lg mb-6">
-                Austin Crate &amp; Freight serves Marble Falls from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, approximately 55 miles via US-281 North. Free pickup throughout Marble Falls, Horseshoe Bay, and all of Burnet County.
+                Austin Crate &amp; Freight serves Marble Falls from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, approximately 55 miles via US-281 North. Collection throughout Marble Falls, Horseshoe Bay, and all of Burnet County.
               </p>
               <ul className="space-y-3 text-gray-700 mb-8">
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Address:</strong> 3112 Windsor Rd, Austin, TX 78703</span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Phone:</strong> <a href="tel:(512) 240-9818" className="text-emerald-600 hover:underline">(512) 240-9818</a></span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Hours:</strong> Mon-Fri 8am-6pm, Sat by appointment</span></li>
-                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Marble Falls pickup:</strong> Free throughout Burnet County (78654)</span></li>
+                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Marble Falls collection:</strong> available throughout Burnet County (78654)</span></li>
               </ul>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Austin+Crate+%26+Freight+3112+Windsor+Rd+Austin+TX+78703"

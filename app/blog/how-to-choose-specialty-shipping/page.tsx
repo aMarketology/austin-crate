@@ -248,7 +248,7 @@ export default function HowToChooseSpecialtyShipping() {
 
             <h3>10. Can you handle the whole process, or just part of it?</h3>
             <p>
-              Some companies crate but do not ship. Some ship but do not crate. A full-service specialty shipper handles pickup, custom crating, carrier coordination, and delivery — the whole chain. Fewer handoffs mean fewer opportunities for damage.
+              Some companies crate but do not ship. Some ship but do not crate. A full-service specialty shipper handles collection, custom crating, carrier coordination, and delivery — the whole chain. Fewer handoffs mean fewer opportunities for damage.
             </p>
 
             <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 my-8 not-prose">
@@ -310,7 +310,7 @@ export default function HowToChooseSpecialtyShipping() {
               </Link>
               ,{' '}
               <Link href="/services/heavy-items" className="text-emerald-600 hover:underline">
-                heavy item pickup
+                heavy item collection
               </Link>
               , and{' '}
               <Link href="/services/medical-equipment" className="text-emerald-600 hover:underline">
@@ -386,7 +386,7 @@ export default function HowToChooseSpecialtyShipping() {
                 <p className="text-grey-600 text-sm">Custom wood crates for designer and antique furniture. White-glove delivery throughout Austin.</p>
               </Link>
               <Link href="/services/heavy-items" className="p-5 bg-white rounded-xl shadow hover:shadow-lg transition group">
-                <h3 className="font-bold text-lg text-grey-900 group-hover:text-emerald-600 transition-colors mb-1">Heavy Item Pickup</h3>
+                <h3 className="font-bold text-lg text-grey-900 group-hover:text-emerald-600 transition-colors mb-1">Heavy Item Collection</h3>
                 <p className="text-grey-600 text-sm">Safes, pool tables, industrial equipment — custom crating and specialized delivery throughout Central Texas.</p>
               </Link>
               <Link href="/services/medical-equipment" className="p-5 bg-white rounded-xl shadow hover:shadow-lg transition group">

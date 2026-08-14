@@ -9,7 +9,7 @@ import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = generateLocationMetadata({
   locationName: 'Kyle',
-  description: 'Specialty shipping & custom crating in Kyle, TX. Furniture shipping, fine art transport, heavy item pickup, and oversized freight. White-glove service from Austin Crate & Freight.',
+  description: 'Specialty shipping & custom crating in Kyle, TX. Furniture shipping, fine art transport, heavy item collection, and oversized freight. White-glove service from Austin Crate & Freight.',
   keywords: [
     'specialty shipping Kyle TX',
     'specialty shipping Kyle Texas',
@@ -17,7 +17,7 @@ export const metadata: Metadata = generateLocationMetadata({
     'furniture shipping Kyle',
     'furniture crating Kyle TX',
     'fine art shipping Kyle Texas',
-    'heavy item pickup Kyle TX',
+    'heavy item collection Kyle TX',
     'oversized shipping Kyle',
     'white glove shipping Kyle TX',
     'Kyle shipping company',
@@ -53,7 +53,7 @@ export default function Kyle() {
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Specialty Shipping & Crating in Kyle, TX</h1>
               <p className="text-xl text-gray-300 mb-8">
-                Austin Crate &amp; Freight brings expert specialty shipping and custom crating to Kyle. From Plum Creek to Winfield, we serve Kyle homes and businesses with furniture shipping, fine art transport, heavy item pickup, and oversized freight — all with white-glove care.
+                Austin Crate &amp; Freight brings expert specialty shipping and custom crating to Kyle. From Plum Creek to Winfield, we serve Kyle homes and businesses with furniture shipping, fine art transport, heavy item collection, and oversized freight — all with white-glove care.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="tel:(512) 240-9818" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald-600 rounded-lg font-medium text-white hover:bg-emerald-700 transition-all duration-300">
@@ -82,7 +82,7 @@ export default function Kyle() {
               { icon: 'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z', title: 'Fine Art Shipping', desc: 'Museum-quality crating and climate-controlled transport for Kyle collectors and homeowners.', href: '/services/fine-art' },
               { icon: 'M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z', title: 'Custom Furniture Shipping', desc: 'White-glove furniture shipping and custom crating for Kyle homes and new construction.', href: '/services/furniture' },
               { icon: 'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z', title: 'Medical Equipment', desc: 'HIPAA-compliant transport for Kyle medical facilities, clinics, and healthcare providers.', href: '/services/medical-equipment' },
-              { icon: 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4', title: 'Heavy Item Pickup', desc: 'Heavy package pickup in Kyle for items too large for UPS or FedEx — safes, appliances, equipment, and more.', href: '/services/heavy-items' },
+              { icon: 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4', title: 'Heavy Item Collection', desc: 'Heavy package collection in Kyle for items too large for UPS or FedEx — safes, appliances, equipment, and more.', href: '/services/heavy-items' },
               { icon: 'M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7', title: 'Oversized Shipping', desc: 'Custom crating and freight solutions for oversized items that exceed standard carrier limits in Kyle.', href: '/services/oversized-shipping' },
             ].map(({ icon, title, desc, href }) => (
               <div key={title} className="p-6 border border-gray-200 rounded-xl hover:shadow-lg transition-shadow">
@@ -112,11 +112,11 @@ export default function Kyle() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Specialty Shipping Kyle TX — Frequently Asked Questions</h2>
             <div className="space-y-6">
               {[
-                { q: 'Do you offer specialty shipping and crating in Kyle, TX?', a: 'Yes. Austin Crate & Freight provides comprehensive specialty shipping and custom crating in Kyle, Texas. We pick up from your Kyle location, build custom crates in-house, and deliver locally or ship nationwide.' },
+                { q: 'Do you offer specialty shipping and crating in Kyle, TX?', a: 'Yes. Austin Crate & Freight provides comprehensive specialty shipping and custom crating in Kyle, Texas. We collect from your Kyle location, build custom crates in-house, and deliver locally or ship nationwide.' },
                 { q: 'Can you handle furniture shipping for Kyle residents?', a: 'Absolutely. We specialize in furniture shipping and crating for Kyle — from new-build furniture deliveries in Plum Creek to antique pieces in historic downtown Kyle. Every item gets a custom-built crate.' },
                 { q: 'What Kyle neighborhoods do you serve?', a: 'We serve all Kyle zip codes and neighborhoods including Plum Creek, Winfield, Post Oak, Waterleaf, and surrounding areas in 78640 and 78666. Same-day quotes available.' },
                 { q: 'Do you handle Kyle to nationwide shipping?', a: 'Yes. We coordinate LTL freight nationwide for Kyle customers. After custom crating at our Austin facility, we deliver anywhere in the US with full insurance coverage.' },
-                { q: 'How far is Kyle from your Austin facility?', a: 'Our workshop at 3112 Windsor Rd, Austin is approximately 25 minutes from Kyle via I-35. We offer free pickup throughout Kyle and provide same-day and next-day service based on availability.' },
+                { q: 'How far is Kyle from your Austin facility?', a: 'Our workshop at 3112 Windsor Rd, Austin is approximately 25 minutes from Kyle via I-35. We offer collection throughout Kyle and provide same-day and next-day service based on availability.' },
               ].map(({ q, a }) => (
                 <div key={q} className="border border-gray-200 rounded-xl p-6">
                   <h3 className="font-bold text-gray-900 mb-2">{q}</h3>
@@ -148,7 +148,7 @@ export default function Kyle() {
 
           <div className="text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Ship in Kyle?</h3>
-            <p className="text-gray-600 mb-6">Contact us for a free quote on furniture shipping, heavy item pickup, or any specialty shipping need in Kyle, TX.</p>
+            <p className="text-gray-600 mb-6">Contact us for a free quote on furniture shipping, heavy item collection, or any specialty shipping need in Kyle, TX.</p>
             <a href="tel:(512) 240-9818" className="inline-flex items-center gap-2 px-8 py-4 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors font-medium">Call (512) 240-9818</a>
           </div>
         </div>
@@ -159,12 +159,12 @@ export default function Kyle() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Serving Kyle from Austin</h2>
-              <p className="text-gray-700 text-lg mb-6">Austin Crate &amp; Freight serves Kyle from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, just 25 minutes via I-35 South. Free pickup throughout Kyle, TX 78640 and 78666.</p>
+              <p className="text-gray-700 text-lg mb-6">Austin Crate &amp; Freight serves Kyle from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, just 25 minutes via I-35 South. Collection throughout Kyle, TX 78640 and 78666.</p>
               <ul className="space-y-3 text-gray-700 mb-8">
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span><span><strong>Address:</strong> 3112 Windsor Rd, Austin, TX 78703</span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span><span><strong>Phone:</strong> <a href="tel:(512) 240-9818" className="text-emerald-600 hover:underline">(512) 240-9818</a></span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span><span><strong>Hours:</strong> Mon-Fri 8am-6pm, Sat by appointment</span></li>
-                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span><span><strong>Kyle pickup:</strong> Free throughout Kyle, Buda, and Greater Austin</span></li>
+                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span><span><strong>Kyle collection:</strong> available throughout Kyle, Buda, and Greater Austin</span></li>
               </ul>
               <a href="https://www.google.com/maps/search/?api=1&query=Austin+Crate+%26+Freight+3112+Windsor+Rd+Austin+TX+78703" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-700 transition-all">Get Directions on Google Maps</a>
             </div>

@@ -103,7 +103,7 @@ export default function OfficeFurnitureShipping() {
                 { title: 'Conference Table Shipping', desc: 'Conference tables, including glass, stone, and solid wood tops, get their own custom crates with rigid edge protection and foam face padding.' },
                 { title: 'Credenza & Lateral File Protection', desc: 'Glass-front credenzas have glass removed and crated separately. Lateral file drawers are secured and padded before crating.' },
                 { title: 'Modular System Coordination', desc: 'For system furniture (Knoll, Herman Miller, Haworth), we photograph, label, and document every component before disassembly to ensure correct reinstallation.' },
-                { title: 'Dealer & Showroom Pickups', desc: 'We pick up directly from Austin furniture showrooms and deliver to your office, home office, or commercial space anywhere in the US.' },
+                { title: 'Dealer & Showroom Collections', desc: 'We collect directly from Austin furniture showrooms and deliver to your office, home office, or commercial space anywhere in the US.' },
                 { title: 'Debris-Free Installation', desc: 'We remove all crating materials and packing debris so your space is clean and ready to use from the moment we finish.' },
               ].map((item, i) => (
                 <div key={i} className="p-5 bg-gray-50 border border-gray-200 rounded-xl">
@@ -148,7 +148,7 @@ export default function OfficeFurnitureShipping() {
             <div className="space-y-5">
               {[
                 { q: 'Can you ship a large executive desk from Austin to another state?', a: 'Yes. We ship executive desks nationwide regularly. We disassemble, crate each component, and coordinate LTL freight with a white-glove delivery carrier at the destination.' },
-                { q: 'Do you work with Austin office furniture dealers and showrooms?', a: 'Yes. We pick up directly from dealers and showrooms. Many Austin-area commercial furniture dealers refer their clients to us for specialty shipping.' },
+                { q: 'Do you work with Austin office furniture dealers and showrooms?', a: 'Yes. We collect directly from dealers and showrooms. Many Austin-area commercial furniture dealers refer their clients to us for specialty shipping.' },
                 { q: 'Can you ship an entire office worth of furniture?', a: 'Yes. For larger jobs we assess the full scope, provide a detailed quote, and coordinate staging and loading to ensure everything is packed and tracked together.' },
                 { q: 'How much does office furniture shipping cost in Austin?', a: 'A single executive desk shipped locally starts at $250-$400. Long-distance crated freight for an executive desk starts at $500+. Call (512) 240-9818 for an itemized quote.' },
               ].map((faq, i) => (

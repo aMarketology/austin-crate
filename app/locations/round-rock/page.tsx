@@ -9,7 +9,7 @@ import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = generateLocationMetadata({
   locationName: 'Round Rock',
-  description: 'Specialty shipping & custom crating in Round Rock, TX, furniture shipping and crating, fine art transport, heavy item pickup, oversized shipping & medical equipment. White-glove service from Austin Crate & Freight.',
+  description: 'Specialty shipping & custom crating in Round Rock, TX, furniture shipping and crating, fine art transport, heavy item collection, oversized shipping & medical equipment. White-glove service from Austin Crate & Freight.',
   keywords: [
     'specialty shipping Round Rock TX',
     'specialty shipping Round Rock Texas',
@@ -19,8 +19,8 @@ export const metadata: Metadata = generateLocationMetadata({
     'furniture crating Round Rock TX',
     'custom furniture shipping Round Rock',
     'fine art shipping Round Rock',
-    'heavy package pickup Round Rock',
-    'heavy item pickup Round Rock TX',
+    'heavy package collection Round Rock',
+    'heavy item collection Round Rock TX',
     'oversized shipping Round Rock',
     'white glove shipping Round Rock TX',
     'Round Rock shipping company',
@@ -60,7 +60,7 @@ export default function RoundRock() {
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Specialty Shipping & Crating in Round Rock, TX</h1>
               <p className="text-xl text-gray-300 mb-8">
-                Austin Crate &amp; Freight brings expert specialty shipping and custom crating to Round Rock. From Dell Diamond to Old Town, we serve Round Rock homes and businesses with furniture shipping and crating, fine art transport, heavy item pickup, and medical equipment delivery, all with museum-quality white-glove care.
+                Austin Crate &amp; Freight brings expert specialty shipping and custom crating to Round Rock. From Dell Diamond to Old Town, we serve Round Rock homes and businesses with furniture shipping and crating, fine art transport, heavy item collection, and medical equipment delivery, all with museum-quality white-glove care.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -148,8 +148,8 @@ export default function RoundRock() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Pickup</h3>
-              <p className="text-gray-600 mb-4">Heavy package pickup in Round Rock for items too large or heavy for standard carriers, safes, appliances, equipment, and more.</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Collection</h3>
+              <p className="text-gray-600 mb-4">Heavy package collection in Round Rock for items too large or heavy for standard carriers, safes, appliances, equipment, and more.</p>
               <Link href="/services/heavy-items" className="text-emerald-600 hover:text-emerald-700 font-medium">
                 Learn More →
               </Link>
@@ -258,7 +258,7 @@ export default function RoundRock() {
             <div className="space-y-6">
               <div className="border border-gray-200 rounded-xl p-6">
                 <h3 className="font-bold text-gray-900 mb-2">Do you offer specialty shipping and crating in Round Rock, TX?</h3>
-                <p className="text-gray-600">Yes. Austin Crate &amp; Freight provides comprehensive specialty shipping and custom crating in Round Rock, Texas. We pick up from your Round Rock location, build custom crates in-house at our Austin facility, and deliver locally or ship nationwide.</p>
+                <p className="text-gray-600">Yes. Austin Crate &amp; Freight provides comprehensive specialty shipping and custom crating in Round Rock, Texas. We collect from your Round Rock location, build custom crates in-house at our Austin facility, and deliver locally or ship nationwide.</p>
               </div>
               <div className="border border-gray-200 rounded-xl p-6">
                 <h3 className="font-bold text-gray-900 mb-2">Can you handle furniture shipping and crating for Round Rock residents?</h3>
@@ -273,8 +273,8 @@ export default function RoundRock() {
                 <p className="text-gray-600">Yes, we coordinate LTL freight nationwide for Round Rock customers. After custom crating at our Austin facility, we work with trusted freight carriers to deliver your items anywhere in the US with full insurance coverage.</p>
               </div>
               <div className="border border-gray-200 rounded-xl p-6">
-                <h3 className="font-bold text-gray-900 mb-2">How quickly can you pick up in Round Rock?</h3>
-                <p className="text-gray-600">We offer fast turnaround including same-day and next-day pickups for Round Rock depending on availability. Call (512) 240-9818 to discuss your timeline and we'll do our best to accommodate your schedule.</p>
+                <h3 className="font-bold text-gray-900 mb-2">How quickly can you collect in Round Rock?</h3>
+                <p className="text-gray-600">We offer fast turnaround including same-day and next-day collections for Round Rock depending on availability. Call (512) 240-9818 to discuss your timeline and we'll do our best to accommodate your schedule.</p>
               </div>
             </div>
           </div>
@@ -282,7 +282,7 @@ export default function RoundRock() {
           {/* Cross-Links to Other Locations */}
           <div className="bg-gray-100 rounded-2xl p-8 mb-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">We Also Serve Nearby Cities</h3>
-            <p className="text-gray-600 mb-6">Austin Crate & Freight provides the same white-glove specialty shipping, custom furniture shipping, and heavy package pickup throughout the greater Austin area.</p>
+            <p className="text-gray-600 mb-6">Austin Crate & Freight provides the same white-glove specialty shipping, custom furniture shipping, and heavy package collection throughout the greater Austin area.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/locations/cedar-park" className="px-5 py-2.5 bg-white border border-gray-200 rounded-lg text-gray-700 hover:border-emerald-500 hover:text-emerald-700 transition-colors font-medium">Cedar Park, TX</Link>
               <Link href="/locations/georgetown" className="px-5 py-2.5 bg-white border border-gray-200 rounded-lg text-gray-700 hover:border-emerald-500 hover:text-emerald-700 transition-colors font-medium">Georgetown, TX</Link>
@@ -296,7 +296,7 @@ export default function RoundRock() {
 
           <div className="text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Ship in Round Rock?</h3>
-            <p className="text-gray-600 mb-6">Contact us today for a free quote on custom furniture shipping, heavy package pickup, or any specialty shipping need.</p>
+            <p className="text-gray-600 mb-6">Contact us today for a free quote on custom furniture shipping, heavy package collection, or any specialty shipping need.</p>
             <a
               href="tel:(512) 240-9818"
               className="inline-flex items-center gap-2 px-8 py-4 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors font-medium"
@@ -314,13 +314,13 @@ export default function RoundRock() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Serving Our Team in Round Rock</h2>
               <p className="text-gray-700 text-lg mb-6">
-                Austin Crate &amp; Freight serves Round Rock from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, just 20 minutes from La Frontera and Old Town. Free pickup throughout Round Rock, TX 78664, 78665, and 78681.
+                Austin Crate &amp; Freight serves Round Rock from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, just 20 minutes from La Frontera and Old Town. Collection throughout Round Rock, TX 78664, 78665, and 78681.
               </p>
               <ul className="space-y-3 text-gray-700 mb-8">
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Address:</strong> 3112 Windsor Rd, Austin, TX 78703</span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Phone:</strong> <a href="tel:(512) 240-9818" className="text-emerald-600 hover:underline">(512) 240-9818</a></span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Hours:</strong> Mon-Fri 8am-6pm, Sat by appointment</span></li>
-                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Round Rock pickup:</strong> Free throughout Round Rock, Georgetown, Cedar Park, and Greater Austin</span></li>
+                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Round Rock collection:</strong> available throughout Round Rock, Georgetown, Cedar Park, and Greater Austin</span></li>
               </ul>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Austin+Crate+%26+Freight+3112+Windsor+Rd+Austin+TX+78703"

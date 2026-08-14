@@ -110,7 +110,7 @@ export default function AntiqueFurnitureShipping() {
             <p className="text-gray-600 mb-8">Every antique shipment follows a hands-on process developed over years of handling irreplaceable pieces.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                { title: 'Condition Assessment Before Pickup', desc: 'We photograph and document the piece before it leaves the origin, noting any pre-existing wear, repairs, or fragile areas. This protects both you and us and establishes a baseline for insurance purposes.' },
+                { title: 'Condition Assessment Before Collection', desc: 'We photograph and document the piece before it leaves the origin, noting any pre-existing wear, repairs, or fragile areas. This protects both you and us and establishes a baseline for insurance purposes.' },
                 { title: 'Acid-Free Material Contact Layer', desc: 'Acid-free tissue paper is applied directly to all finished surfaces before any other material touches the piece. Never plastic wrap directly on lacquer, shellac, or wax finishes, moisture traps and adhesives damage period finishes.' },
                 { title: 'Padded Blanket Wrap', desc: 'Thick padded moving blankets are applied over the tissue layer. Blankets are secured with stretch wrap only on the outer layer, not against the wood. For complex pieces with legs, arms, or projections, each element is padded individually.' },
                 { title: 'Custom Crating When Required', desc: 'Particularly fragile, high-value, or long-distance shipments warrant a wood crate. We build the crate around the wrapped piece, adding internal blocking to prevent movement and external corner protectors to handle dock contact.' },
@@ -163,7 +163,7 @@ export default function AntiqueFurnitureShipping() {
               Texas is one of the most active antique markets in the country. Roundtop Antiques, held twice yearly near La Grange, draws buyers from across the state and nation. Houston has dozens of antique galleries along Westheimer. San Antonio&apos;s King William Historic District has significant Victorian and Mission Revival furniture. Dallas-Fort Worth has established antique dealer communities in Design District and Highland Park. Austin itself has growing collector and gallery networks.
             </p>
             <p className="text-gray-700 text-lg mb-4">
-              We ship from and to every corner of Texas, from El Paso to Beaumont, from Amarillo to Brownsville. We pick up at estate sales, antique markets, galleries, and private residences. Delivery goes wherever the buyer is: apartment, ranch, storage facility, or commercial gallery.
+              We ship from and to every corner of Texas, from El Paso to Beaumont, from Amarillo to Brownsville. We collect at estate sales, antique markets, galleries, and private residences. Delivery goes wherever the buyer is: apartment, ranch, storage facility, or commercial gallery.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6">
               {[
@@ -190,7 +190,7 @@ export default function AntiqueFurnitureShipping() {
               We recommend declared value coverage at the full appraised or insured value of the piece. Before shipping a high-value antique, have it appraised in writing if you do not already have documentation. An appraisal from a certified appraiser is the best protection you have in a claim.
             </p>
             <p className="text-gray-700 text-lg">
-              We provide condition reports at pickup and delivery, photograph the piece in packaging before transport, and document the complete chain of handling. This documentation supports any claim and gives our clients the strongest possible position in a dispute.
+              We provide condition reports at collection and delivery, photograph the piece in packaging before transport, and document the complete chain of handling. This documentation supports any claim and gives our clients the strongest possible position in a dispute.
             </p>
           </div>
         </section>
@@ -203,7 +203,7 @@ export default function AntiqueFurnitureShipping() {
               {[
                 { q: 'How much does it cost to ship antique furniture across Texas?', a: 'Antique furniture shipping across Texas typically ranges from $300-$900 depending on the piece size, fragility, destination, and whether a custom crate is required. A single chair shipping from Austin to Houston might be $250-$400; a large armoire requiring a custom crate shipping to Dallas might be $600-$1,200. Call us for an exact quote.' },
                 { q: 'Is it safe to ship antique furniture without a crate?', a: 'For many antiques, padded blanket wrap in a dedicated specialty freight vehicle is safe. For pieces over $3,000 in value, with very fragile veneer or surface finish, or for long-distance Texas or out-of-state routes, a custom crate provides significantly better protection. We will make an honest recommendation based on the specific piece.' },
-                { q: 'Can you pick up from estate sales, auctions, or antique markets?', a: 'Yes. We regularly pick up antique furniture from estate sales, auction houses, and antique markets including the Roundtop Antiques show. We can coordinate pickup to coincide with the end of an event or auction. Call us in advance to schedule, Roundtop pickups in particular book up quickly around show dates.' },
+                { q: 'Can you collect from estate sales, auctions, or antique markets?', a: 'Yes. We regularly collect antique furniture from estate sales, auction houses, and antique markets including the Roundtop Antiques show. We can coordinate collection to coincide with the end of an event or auction. Call us in advance to schedule, Roundtop collections in particular book up quickly around show dates.' },
                 { q: 'What should I tell you when requesting a quote?', a: 'The most helpful information is: the piece description (type, approximate age, dimensions, weight if known), origin city/zip, destination city/zip, and any known fragility issues (veneer damage, gilt that chips, structural repairs). Photos are also very helpful, you can email or text them to us.' },
                 { q: 'Do you ship antique furniture out of Texas to other states?', a: 'Yes. We ship antique furniture across the US. For out-of-state shipments, we typically use LTL freight with a custom crate, which provides the safest combination of protection and cost for long-distance moves. Transit time varies by destination, typically 5–10 business days for cross-country delivery.' },
               ].map((faq, i) => (

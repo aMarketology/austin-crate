@@ -9,7 +9,7 @@ import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = generateLocationMetadata({
   locationName: 'San Marcos',
-  description: 'Specialty shipping & custom crating in San Marcos, TX. Furniture shipping, fine art transport, heavy item pickup, and antique shipping. White-glove service from Austin Crate & Freight.',
+  description: 'Specialty shipping & custom crating in San Marcos, TX. Furniture shipping, fine art transport, heavy item collection, and antique shipping. White-glove service from Austin Crate & Freight.',
   keywords: [
     'specialty shipping San Marcos TX',
     'specialty shipping San Marcos Texas',
@@ -18,7 +18,7 @@ export const metadata: Metadata = generateLocationMetadata({
     'furniture crating San Marcos TX',
     'fine art shipping San Marcos',
     'antique shipping San Marcos TX',
-    'heavy item pickup San Marcos',
+    'heavy item collection San Marcos',
     'oversized shipping San Marcos TX',
     'white glove shipping San Marcos',
     'San Marcos shipping company',
@@ -58,7 +58,7 @@ export default function SanMarcos() {
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Specialty Shipping & Crating in San Marcos, TX</h1>
               <p className="text-xl text-gray-300 mb-8">
-                Austin Crate &amp; Freight serves San Marcos with expert specialty shipping and custom crating. From the Wimberley corridor to the Texas State University district and the antique shops along Guadalupe Street, we pick up, crate, and ship furniture, fine art, antiques, heavy items, and medical equipment — white-glove care, real Austin pricing.
+                Austin Crate &amp; Freight serves San Marcos with expert specialty shipping and custom crating. From the Wimberley corridor to the Texas State University district and the antique shops along Guadalupe Street, we collect, crate, and ship furniture, fine art, antiques, heavy items, and medical equipment — white-glove care, real Austin pricing.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -140,8 +140,8 @@ export default function SanMarcos() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Pickup</h3>
-              <p className="text-gray-600 mb-4">Heavy package pickup in San Marcos for safes, appliances, exercise equipment, and items too large for standard carriers — throughout 78666 and 78667.</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Collection</h3>
+              <p className="text-gray-600 mb-4">Heavy package collection in San Marcos for safes, appliances, exercise equipment, and items too large for standard carriers — throughout 78666 and 78667.</p>
               <Link href="/services/heavy-items" className="text-emerald-600 hover:text-emerald-700 font-medium">Learn More →</Link>
             </div>
 
@@ -188,7 +188,7 @@ export default function SanMarcos() {
               {[
                 { title: 'In-House Crating', body: 'We build every crate at our Austin workshop — not outsourced. Precision cuts, custom foam blocking, and screw-closure lids that protect your piece and allow easy opening at the destination.' },
                 { title: 'Antique Expertise', body: 'We understand what antiques need: acid-free materials, climate-controlled transport for heat-sensitive finishes, and gentle handling that respects the age and fragility of older pieces.' },
-                { title: 'I-35 Corridor Coverage', body: 'San Marcos is 30 miles from our Austin workshop via I-35 — we are out there fast. Same-day pickup is available for urgent jobs.' },
+                { title: 'I-35 Corridor Coverage', body: 'San Marcos is 30 miles from our Austin workshop via I-35 — we are out there fast. Same-day collection is available for urgent jobs.' },
                 { title: 'Fully Insured', body: 'Every shipment is covered. We document condition before crating and maintain full coverage throughout transit. Your item is protected from San Marcos to its final destination.' },
               ].map(({ title, body }) => (
                 <div key={title} className="flex gap-4">
@@ -238,7 +238,7 @@ export default function SanMarcos() {
               {[
                 {
                   q: 'Do you offer specialty shipping and crating in San Marcos, TX?',
-                  a: 'Yes. Austin Crate & Freight provides comprehensive specialty shipping and custom crating in San Marcos, Texas. We pick up from your San Marcos location, build custom crates in-house at our Austin workshop, and deliver locally or ship nationwide. We cover all of Hays County including 78666 and 78667.',
+                  a: 'Yes. Austin Crate & Freight provides comprehensive specialty shipping and custom crating in San Marcos, Texas. We collect from your San Marcos location, build custom crates in-house at our Austin workshop, and deliver locally or ship nationwide. We cover all of Hays County including 78666 and 78667.',
                 },
                 {
                   q: 'Do you ship antiques from San Marcos dealers?',
@@ -246,11 +246,11 @@ export default function SanMarcos() {
                 },
                 {
                   q: 'How far is San Marcos from your Austin workshop?',
-                  a: 'Our workshop at 3112 Windsor Rd, Austin TX is approximately 30 miles north of San Marcos via I-35 — about 35-40 minutes. We offer same-day pickup in San Marcos and can typically schedule within 24-48 hours.',
+                  a: 'Our workshop at 3112 Windsor Rd, Austin TX is approximately 30 miles north of San Marcos via I-35 — about 35-40 minutes. We offer same-day collection in San Marcos and can typically schedule within 24-48 hours.',
                 },
                 {
                   q: 'Can you ship furniture from San Marcos to another state?',
-                  a: 'Yes. We pick up in San Marcos, crate at our Austin facility, and coordinate freight nationwide. For designer furniture, antiques, or any piece where a standard mover\'s blanket wrap is not adequate, custom crating is the right approach. Call (512) 240-9818 for a specific quote.',
+                  a: 'Yes. We collect in San Marcos, crate at our Austin facility, and coordinate freight nationwide. For designer furniture, antiques, or any piece where a standard mover\'s blanket wrap is not adequate, custom crating is the right approach. Call (512) 240-9818 for a specific quote.',
                 },
                 {
                   q: 'Do you serve the Wimberley and Canyon Lake area near San Marcos?',
@@ -289,7 +289,7 @@ export default function SanMarcos() {
 
           <div className="text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Ship from San Marcos?</h3>
-            <p className="text-gray-600 mb-6">Contact us for a free quote on antique shipping, furniture crating, heavy item pickup, or any specialty shipping need in San Marcos, TX.</p>
+            <p className="text-gray-600 mb-6">Contact us for a free quote on antique shipping, furniture crating, heavy item collection, or any specialty shipping need in San Marcos, TX.</p>
             <a href="tel:(512) 240-9818" className="inline-flex items-center gap-2 px-8 py-4 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors font-medium">
               Call (512) 240-9818
             </a>
@@ -304,13 +304,13 @@ export default function SanMarcos() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Serving San Marcos from Austin</h2>
               <p className="text-gray-700 text-lg mb-6">
-                Austin Crate &amp; Freight serves San Marcos from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, 30 miles north via I-35. Free pickup throughout San Marcos, Wimberley, and all of Hays County.
+                Austin Crate &amp; Freight serves San Marcos from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, 30 miles north via I-35. Collection throughout San Marcos, Wimberley, and all of Hays County.
               </p>
               <ul className="space-y-3 text-gray-700 mb-8">
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Address:</strong> 3112 Windsor Rd, Austin, TX 78703</span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Phone:</strong> <a href="tel:(512) 240-9818" className="text-emerald-600 hover:underline">(512) 240-9818</a></span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Hours:</strong> Mon-Fri 8am-6pm, Sat by appointment</span></li>
-                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>San Marcos pickup:</strong> Free throughout Hays County and surrounding areas</span></li>
+                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>San Marcos collection:</strong> available throughout Hays County and surrounding areas</span></li>
               </ul>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Austin+Crate+%26+Freight+3112+Windsor+Rd+Austin+TX+78703"

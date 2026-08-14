@@ -416,7 +416,7 @@ export default function MedicalEquipment() {
             <p className="text-grey-400 mb-4 text-sm uppercase tracking-widest">Related Services</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/services/heavy-items" className="text-emerald hover:text-emerald/80 font-medium transition-colors">
-                Heavy Item Pickup &rarr;
+                Heavy Item Collection &rarr;
               </Link>
               <Link href="/services/furniture" className="text-emerald hover:text-emerald/80 font-medium transition-colors">
                 Custom Furniture Shipping &rarr;

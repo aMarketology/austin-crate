@@ -165,7 +165,7 @@ export default function OutdoorFurnitureShipping() {
         <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-16 px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Ship Your Outdoor Furniture from Austin</h2>
-            <p className="text-grey-300 text-lg mb-8">Free pickup in Greater Austin. Professional crating. Nationwide white-glove delivery.</p>
+            <p className="text-grey-300 text-lg mb-8">Collection in Greater Austin. Professional crating. Nationwide white-glove delivery.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:(512) 240-9818" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-emerald rounded-lg font-semibold text-white hover:bg-emerald/90 transition">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg>

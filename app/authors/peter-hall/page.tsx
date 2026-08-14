@@ -246,7 +246,7 @@ export default function PeterHallAuthorPage() {
               <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-6">
                 <h2 className="text-base font-bold mb-2">Talk to Peter's Team</h2>
                 <p className="text-gray-300 text-sm mb-4 leading-relaxed">
-                  Get a free quote for custom crating, white-glove pickup, or specialty freight anywhere in Central Texas.
+                  Get a free quote for custom crating, white-glove collection, or specialty freight anywhere in Central Texas.
                 </p>
                 <Link
                   href="/contact"

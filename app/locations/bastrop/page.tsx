@@ -9,7 +9,7 @@ import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = generateLocationMetadata({
   locationName: 'Bastrop',
-  description: 'Specialty shipping & custom crating in Bastrop, TX. Furniture shipping, antique crating, heavy item pickup, and fine art transport for Bastrop homes and businesses. White-glove service from Austin Crate & Freight.',
+  description: 'Specialty shipping & custom crating in Bastrop, TX. Furniture shipping, antique crating, heavy item collection, and fine art transport for Bastrop homes and businesses. White-glove service from Austin Crate & Freight.',
   keywords: [
     'specialty shipping Bastrop TX',
     'specialty shipping Bastrop Texas',
@@ -17,7 +17,7 @@ export const metadata: Metadata = generateLocationMetadata({
     'furniture shipping Bastrop',
     'furniture crating Bastrop TX',
     'antique shipping Bastrop Texas',
-    'heavy item pickup Bastrop TX',
+    'heavy item collection Bastrop TX',
     'fine art shipping Bastrop',
     'white glove shipping Bastrop TX',
     'crating Bastrop Texas',
@@ -129,8 +129,8 @@ export default function Bastrop() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Pickup</h3>
-              <p className="text-gray-600 mb-4">Safes, appliances, fitness equipment, and oversize items throughout Bastrop County — pickup and crating for items standard carriers won't touch.</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Collection</h3>
+              <p className="text-gray-600 mb-4">Safes, appliances, fitness equipment, and oversize items throughout Bastrop County — collection and crating for items standard carriers won't touch.</p>
               <Link href="/services/heavy-items" className="text-emerald-600 hover:text-emerald-700 font-medium">Learn More →</Link>
             </div>
 
@@ -188,8 +188,8 @@ export default function Bastrop() {
               {[
                 { title: 'In-House Crating', body: 'Every crate is built at our Austin workshop — not outsourced, not a reseller. Custom foam blocking, precise dimension cuts, and screw-closure lids that can be opened at the destination without damage.' },
                 { title: 'Antique & Historic Item Expertise', body: 'Bastrop has some of the finest antique dealers in Central Texas. We understand what century-old furniture needs: acid-free materials, careful blocking, and documentation of condition before it ships.' },
-                { title: 'East Corridor Coverage', body: 'Our Austin workshop is approximately 35 miles from Bastrop via Hwy 71 — about 40 minutes. We offer same-day pickup in Bastrop and standard 24-48 hour scheduling for most jobs.' },
-                { title: 'Fully Insured & Documented', body: 'Every shipment is covered from pickup to delivery. We photograph condition before crating, provide documentation, and maintain full insurance coverage throughout transit.' },
+                { title: 'East Corridor Coverage', body: 'Our Austin workshop is approximately 35 miles from Bastrop via Hwy 71 — about 40 minutes. We offer same-day collection in Bastrop and standard 24-48 hour scheduling for most jobs.' },
+                { title: 'Fully Insured & Documented', body: 'Every shipment is covered from collection to delivery. We photograph condition before crating, provide documentation, and maintain full insurance coverage throughout transit.' },
               ].map(({ title, body }) => (
                 <div key={title} className="flex gap-4">
                   <div className="flex-shrink-0">
@@ -218,7 +218,7 @@ export default function Bastrop() {
               </Link>
               <Link href="/blog/prepare-furniture-for-shipping" className="group block bg-gray-50 border border-gray-200 rounded-xl p-5 hover:border-emerald-400 hover:shadow-md transition-all">
                 <h3 className="font-bold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">How to Prepare Furniture for Shipping (Step-by-Step)</h3>
-                <p className="text-gray-500 text-sm">A practical checklist for getting furniture ready for pickup before we arrive.</p>
+                <p className="text-gray-500 text-sm">A practical checklist for getting furniture ready for collection before we arrive.</p>
               </Link>
               <Link href="/blog/cost-to-ship-heavy-items-austin" className="group block bg-gray-50 border border-gray-200 rounded-xl p-5 hover:border-emerald-400 hover:shadow-md transition-all">
                 <h3 className="font-bold text-gray-900 group-hover:text-emerald-600 transition-colors mb-2">How Much Does It Cost to Ship Heavy Items in Austin?</h3>
@@ -238,7 +238,7 @@ export default function Bastrop() {
               {[
                 {
                   q: 'Do you offer specialty shipping and crating in Bastrop, TX?',
-                  a: 'Yes. Austin Crate & Freight provides comprehensive specialty shipping and custom crating in Bastrop, Texas (78602). We pick up from your Bastrop location, build custom crates in-house at our Austin workshop, and deliver locally or ship nationwide. We cover all of Bastrop County including Bastrop, Cedar Creek, Smithville, and surrounding areas.',
+                  a: 'Yes. Austin Crate & Freight provides comprehensive specialty shipping and custom crating in Bastrop, Texas (78602). We collect from your Bastrop location, build custom crates in-house at our Austin workshop, and deliver locally or ship nationwide. We cover all of Bastrop County including Bastrop, Cedar Creek, Smithville, and surrounding areas.',
                 },
                 {
                   q: 'Do you ship antiques from Bastrop dealers?',
@@ -246,7 +246,7 @@ export default function Bastrop() {
                 },
                 {
                   q: 'How far is Bastrop from your Austin workshop?',
-                  a: 'Our workshop at 3112 Windsor Rd, Austin TX is approximately 35 miles from Bastrop via Hwy 71 East — about 40 minutes. We offer same-day pickup in Bastrop for urgent jobs and standard 24-48 hour scheduling.',
+                  a: 'Our workshop at 3112 Windsor Rd, Austin TX is approximately 35 miles from Bastrop via Hwy 71 East — about 40 minutes. We offer same-day collection in Bastrop for urgent jobs and standard 24-48 hour scheduling.',
                 },
                 {
                   q: 'Can you ship large furniture from new Bastrop construction homes?',
@@ -288,7 +288,7 @@ export default function Bastrop() {
 
           <div className="text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Ship from Bastrop?</h3>
-            <p className="text-gray-600 mb-6">Contact us for a free quote on antique shipping, furniture crating, heavy item pickup, or any specialty shipping need in Bastrop, TX.</p>
+            <p className="text-gray-600 mb-6">Contact us for a free quote on antique shipping, furniture crating, heavy item collection, or any specialty shipping need in Bastrop, TX.</p>
             <a href="tel:(512) 240-9818" className="inline-flex items-center gap-2 px-8 py-4 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors font-medium">
               Call (512) 240-9818
             </a>
@@ -303,13 +303,13 @@ export default function Bastrop() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Serving Bastrop from Austin</h2>
               <p className="text-gray-700 text-lg mb-6">
-                Austin Crate &amp; Freight serves Bastrop from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, approximately 35 miles via Hwy 71 East. Free pickup throughout Bastrop, Cedar Creek, and all of Bastrop County.
+                Austin Crate &amp; Freight serves Bastrop from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, approximately 35 miles via Hwy 71 East. Collection throughout Bastrop, Cedar Creek, and all of Bastrop County.
               </p>
               <ul className="space-y-3 text-gray-700 mb-8">
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Address:</strong> 3112 Windsor Rd, Austin, TX 78703</span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Phone:</strong> <a href="tel:(512) 240-9818" className="text-emerald-600 hover:underline">(512) 240-9818</a></span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Hours:</strong> Mon-Fri 8am-6pm, Sat by appointment</span></li>
-                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Bastrop pickup:</strong> Free throughout Bastrop County (78602)</span></li>
+                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Bastrop collection:</strong> available throughout Bastrop County (78602)</span></li>
               </ul>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Austin+Crate+%26+Freight+3112+Windsor+Rd+Austin+TX+78703"

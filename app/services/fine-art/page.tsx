@@ -149,7 +149,7 @@ export default function FineArtShipping() {
                   </svg>
                 ),
                 title: 'Comprehensive Art Insurance',
-                description: 'Full replacement value insurance coverage from pickup to delivery. We work with specialized fine art insurers who understand the unique value of paintings, sculptures, and collectibles. Coverage includes transit damage, theft, and environmental incidents.'
+                description: 'Full replacement value insurance coverage from collection to delivery. We work with specialized fine art insurers who understand the unique value of paintings, sculptures, and collectibles. Coverage includes transit damage, theft, and environmental incidents.'
               },
               {
                 icon: (
@@ -168,7 +168,7 @@ export default function FineArtShipping() {
                   </svg>
                 ),
                 title: '24/7 GPS Tracking',
-                description: 'Monitor your artwork\'s exact location in real-time through our secure tracking portal. Receive automatic notifications at each milestone: pickup confirmation, transit updates, and delivery completion. Available for local Austin deliveries and nationwide shipments.'
+                description: 'Monitor your artwork\'s exact location in real-time through our secure tracking portal. Receive automatic notifications at each milestone: collection confirmation, transit updates, and delivery completion. Available for local Austin deliveries and nationwide shipments.'
               },
               {
                 icon: (
@@ -307,17 +307,17 @@ export default function FineArtShipping() {
                 question: 'How much does fine art shipping cost in Austin?',
                 answer: (
                   <>
-                    Fine art shipping costs in Austin depend on artwork size, value, destination, and special requirements. Local Austin deliveries typically start around $200-500, while custom crating adds $300-1,000+ depending on dimensions. Cross-country shipments range from $800-3,000+. We provide free detailed quotes after discussing your specific artwork. Factors include: piece dimensions and weight, insurance value, pickup/delivery locations in Austin or Central Texas, timeframe, and any special handling needs. Need just a custom crate? Visit our <Link href="/buy-a-crate" className="text-emerald font-semibold hover:underline">buy a crate page</Link> for standalone crating services. Contact us at (512) 240-9818 for a precise shipping estimate.
+                    Fine art shipping costs in Austin depend on artwork size, value, destination, and special requirements. Local Austin deliveries typically start around $200-500, while custom crating adds $300-1,000+ depending on dimensions. Cross-country shipments range from $800-3,000+. We provide free detailed quotes after discussing your specific artwork. Factors include: piece dimensions and weight, insurance value, collection/delivery locations in Austin or Central Texas, timeframe, and any special handling needs. Need just a custom crate? Visit our <Link href="/buy-a-crate" className="text-emerald font-semibold hover:underline">buy a crate page</Link> for standalone crating services. Contact us at (512) 240-9818 for a precise shipping estimate.
                   </>
                 )
               },
               {
                 question: 'Do you ship artwork to and from Austin galleries and museums?',
-                answer: 'Yes, we regularly provide fine art specialty shipping services for Austin galleries, museums, private collectors, and art dealers throughout Central Texas. Our team has experience with exhibition installations, gallery rotations, museum loans, art fair transport, auction house pickups and deliveries, and estate collection transfers. We work with venues like The Contemporary Austin, Blanton Museum area, and private galleries throughout Austin, Round Rock, Cedar Park, and Georgetown. We understand gallery schedules and can coordinate with your installation timeline.'
+                answer: 'Yes, we regularly provide fine art specialty shipping services for Austin galleries, museums, private collectors, and art dealers throughout Central Texas. Our team has experience with exhibition installations, gallery rotations, museum loans, art fair transport, auction house collections and deliveries, and estate collection transfers. We work with venues like The Contemporary Austin, Blanton Museum area, and private galleries throughout Austin, Round Rock, Cedar Park, and Georgetown. We understand gallery schedules and can coordinate with your installation timeline.'
               },
               {
                 question: 'How do you protect artwork during hot Austin summers?',
-                answer: 'Austin\'s summer temperatures (often exceeding 100°F) pose serious risks to fine art. Our climate-controlled vehicles maintain consistent 68-72°F temperatures regardless of outside conditions. We also: pre-cool vehicles before loading, minimize time artwork spends in non-climate zones, schedule early morning pickups/deliveries when possible, use insulated blankets for additional protection, and monitor interior temperature throughout transit. This is crucial for oil paintings, acrylics, watercolors, antique frames, and mixed media pieces that can warp, crack, or suffer adhesive failure in extreme heat.'
+                answer: 'Austin\'s summer temperatures (often exceeding 100°F) pose serious risks to fine art. Our climate-controlled vehicles maintain consistent 68-72°F temperatures regardless of outside conditions. We also: pre-cool vehicles before loading, minimize time artwork spends in non-climate zones, schedule early morning collections/deliveries when possible, use insulated blankets for additional protection, and monitor interior temperature throughout transit. This is crucial for oil paintings, acrylics, watercolors, antique frames, and mixed media pieces that can warp, crack, or suffer adhesive failure in extreme heat.'
               },
               {
                 question: 'What types of art can you ship from Austin?',
@@ -425,7 +425,7 @@ export default function FineArtShipping() {
               { src: '/IMG_3092.jpg', alt: 'Crate assembly for gallery shipping — Austin Crate & Freight shop' },
               { src: '/IMG_3748.jpg', alt: 'Large painting crate construction for gallery shipping in Austin Texas' },
               { src: '/IMG_3760.jpg', alt: 'Fine art handler securing artwork inside custom Austin-built crate' },
-              { src: '/IMG_3770.jpg', alt: 'Completed fine art shipping crate ready for pickup in Austin Texas' },
+              { src: '/IMG_3770.jpg', alt: 'Completed fine art shipping crate ready for collection in Austin Texas' },
             ].map((img, i) => (
               <div key={i} className="relative aspect-square rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-lg transition-shadow">
                 <Image
@@ -478,7 +478,7 @@ export default function FineArtShipping() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Visit Our Austin Crating Workshop</h2>
               <p className="text-gray-700 text-lg mb-6">
-                Austin Crate &amp; Freight is locally based at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, just minutes from Tarrytown, downtown Austin galleries, and The Contemporary Austin. We offer free pickup throughout the Austin metro and serve all of Central Texas.
+                Austin Crate &amp; Freight is locally based at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, just minutes from Tarrytown, downtown Austin galleries, and The Contemporary Austin. We offer collection throughout the Austin metro and serve all of Central Texas.
               </p>
               <ul className="space-y-3 text-gray-700 mb-8">
                 <li className="flex gap-3"><span className="text-emerald font-bold">✓</span> <span><strong>Address:</strong> 3112 Windsor Rd, Austin, TX 78703</span></li>
@@ -539,7 +539,7 @@ export default function FineArtShipping() {
             <p className="text-grey-400 mb-4">Also explore our other specialty shipping services:</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/services/heavy-items" className="text-emerald hover:text-emerald/80 font-medium transition-colors">
-                Heavy Item Pickup &rarr;
+                Heavy Item Collection &rarr;
               </Link>
               <span className="text-grey-600">•</span>
               <Link href="/services/furniture" className="text-emerald hover:text-emerald/80 font-medium transition-colors">

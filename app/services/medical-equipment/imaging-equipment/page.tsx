@@ -109,7 +109,7 @@ export default function ImagingEquipmentShipping() {
                 { title: 'OEM-Spec Shock Protection', desc: 'Crates and foam inserts are designed to the manufacturer\'s published shock specifications. For systems without published specs, we apply conservative biomedical equipment standards.' },
                 { title: 'Orientation Control', desc: 'Many imaging systems must travel in one specific orientation. We engineer the crate so this is enforced mechanically, not just noted on a label that a freight handler may ignore.' },
                 { title: 'Chain-of-Custody Documentation', desc: 'Complete sign-off documentation for every transport handover point, supporting re-certification and regulatory compliance requirements at the destination facility.' },
-                { title: 'HIPAA-Compliant Handling', desc: 'All personnel involved in the pick-up, transport, and delivery handle equipment in compliance with healthcare privacy and security requirements, including storage media protocols.' },
+                { title: 'HIPAA-Compliant Handling', desc: 'All personnel involved in the collection, transport, and delivery handle equipment in compliance with healthcare privacy and security requirements, including storage media protocols.' },
                 { title: 'Pre-Transport Assessment', desc: 'We photograph all components, document existing condition, and record serial numbers and calibration tags before anything is disconnected or moved.' },
                 { title: 'Coordinated Biomedical Handoff', desc: 'Delivery is coordinated with your biomedical engineering team. We provide the transport log, shock/vibration incident report (if any), and all documentation needed for re-commissioning.' },
               ].map((item, i) => (

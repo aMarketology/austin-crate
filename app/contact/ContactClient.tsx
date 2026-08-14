@@ -458,7 +458,7 @@ export default function ContactClient() {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Fragile antique, needs pickup from 2nd floor, destination is a museum..."
+                  placeholder="Fragile antique, needs collection from 2nd floor, destination is a museum..."
                   rows={4}
                   className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500 resize-none"
                 ></textarea>

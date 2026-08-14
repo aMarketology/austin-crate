@@ -94,7 +94,7 @@ export default function DiagnosticDevicesShipping() {
               Probes and accessories, SpO₂ probes, NIBP cuffs, ECG lead sets, temperature probes, are often the most expensive peripherals and the most commonly damaged in transit because they are packed alongside the main unit without proper individual protection. We pack accessories separately and log every component against the unit's serial number.
             </p>
             <p className="text-gray-700 text-lg">
-              For devices being sold, leased, or transferred between facilities, we provide the condition documentation that biomedical engineers and equipment leasing companies require before the transaction can close, a time-stamped photo log of all components and a transport event log showing the custody chain from pickup to delivery.
+              For devices being sold, leased, or transferred between facilities, we provide the condition documentation that biomedical engineers and equipment leasing companies require before the transaction can close, a time-stamped photo log of all components and a transport event log showing the custody chain from collection to delivery.
             </p>
           </div>
         </section>
@@ -157,7 +157,7 @@ export default function DiagnosticDevicesShipping() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
             <div className="space-y-5">
               {[
-                { q: 'Can you pick up multiple patient monitors at once from a hospital?', a: 'Yes. We regularly handle multi-unit pickups for hospital equipment relocation and fleet refurbishment projects. We bring serial-number tracking sheets and condition photo logs for each unit.' },
+                { q: 'Can you collect multiple patient monitors at once from a hospital?', a: 'Yes. We regularly handle multi-unit collections for hospital equipment relocation and fleet refurbishment projects. We bring serial-number tracking sheets and condition photo logs for each unit.' },
                 { q: 'How do you handle patient data stored on diagnostic devices?', a: 'We do not access, inspect, or interact with patient data in any way. Devices that require data wiping or PHI removal before transport must be cleared by your facility\'s biomedical or IT team before we take custody. We can coordinate timing with that process.' },
                 { q: 'Can you move diagnostic equipment between Austin medical facilities?', a: 'Yes, between hospitals, outpatient clinics, physician offices, urgent care centers, and storage facilities anywhere in Greater Austin. We can work within your facility\'s vendor credentialing requirements.' },
                 { q: 'Do you transport diagnostic devices for equipment dealers and remarketers?', a: 'Yes. We work with medical equipment dealers, hospital liquidators, and biomedical refurbishment companies. We provide the condition documentation photos and chain-of-custody records that equipment transactions require.' },

@@ -71,7 +71,7 @@ export default function AustinMarathonBlog() {
 
           <h3>Saturday, February 14, 2026</h3>
           <ul>
-            <li><strong>10:00 AM - 8:00 PM</strong> - Expo & Packet Pickup at Palmer Events Center</li>
+            <li><strong>10:00 AM - 8:00 PM</strong> - Expo & Packet Collection at Palmer Events Center</li>
             <li><strong>12:00 PM - 4:00 PM</strong> - Running Seminars & Clinics</li>
             <li><strong>6:00 PM</strong> - Pre-Race Pasta Dinner</li>
           </ul>

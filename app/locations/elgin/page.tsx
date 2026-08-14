@@ -9,14 +9,14 @@ import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = generateLocationMetadata({
   locationName: 'Elgin',
-  description: 'Specialty shipping & custom crating in Elgin, TX. Furniture shipping, heavy item pickup, industrial crating, and custom packaging for Elgin homes and businesses. White-glove service from Austin Crate & Freight.',
+  description: 'Specialty shipping & custom crating in Elgin, TX. Furniture shipping, heavy item collection, industrial crating, and custom packaging for Elgin homes and businesses. White-glove service from Austin Crate & Freight.',
   keywords: [
     'specialty shipping Elgin TX',
     'specialty shipping Elgin Texas',
     'custom crating Elgin TX',
     'furniture shipping Elgin',
     'furniture crating Elgin TX',
-    'heavy item pickup Elgin Texas',
+    'heavy item collection Elgin Texas',
     'industrial crating Elgin TX',
     'white glove shipping Elgin TX',
     'crating Elgin Texas',
@@ -58,7 +58,7 @@ export default function Elgin() {
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Specialty Shipping & Crating in Elgin, TX</h1>
               <p className="text-xl text-gray-300 mb-8">
-                Austin Crate &amp; Freight serves Elgin and the eastern Austin corridor with expert specialty shipping and custom wood crating. Furniture shipping, heavy item pickup, industrial crating, and oversized freight — professional service for one of the fastest-growing communities in Bastrop County.
+                Austin Crate &amp; Freight serves Elgin and the eastern Austin corridor with expert specialty shipping and custom wood crating. Furniture shipping, heavy item collection, industrial crating, and oversized freight — professional service for one of the fastest-growing communities in Bastrop County.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -118,8 +118,8 @@ export default function Elgin() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Pickup</h3>
-              <p className="text-gray-600 mb-4">Safes, appliances, fitness equipment, and oversized items throughout Elgin and Bastrop County — we pick up anything standard carriers won't take and handle it properly.</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Collection</h3>
+              <p className="text-gray-600 mb-4">Safes, appliances, fitness equipment, and oversized items throughout Elgin and Bastrop County — we collect anything standard carriers won't take and handle it properly.</p>
               <Link href="/services/heavy-items" className="text-emerald-600 hover:text-emerald-700 font-medium">Learn More →</Link>
             </div>
 
@@ -164,7 +164,7 @@ export default function Elgin() {
               Elgin — the Sausage Capital of Texas — sits on US-290 East, one of the most active growth corridors in the Austin metro. New subdivisions have been breaking ground every year as buyers seek affordable housing within commuting distance of Austin, Round Rock, and the broader Williamson County tech corridor. With that growth comes demand for specialty shipping services that suburban zip codes have historically lacked access to.
             </p>
             <p className="text-gray-700 mb-6">
-              We serve Elgin for both residential and light commercial shipping needs — furniture crating for new homeowners, heavy item pickup for renovating homeowners, and industrial equipment crating for businesses along the US-290 corridor. From a single antique picked up at the Elgin Main Street Market to a pallet of equipment relocating to a new facility, we handle it properly.
+              We serve Elgin for both residential and light commercial shipping needs — furniture crating for new homeowners, heavy item collection for renovating homeowners, and industrial equipment crating for businesses along the US-290 corridor. From a single antique collected at the Elgin Main Street Market to a pallet of equipment relocating to a new facility, we handle it properly.
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white rounded-xl p-5 border border-emerald-100">
@@ -176,8 +176,8 @@ export default function Elgin() {
                 <p className="text-gray-600 text-sm">We serve the full US-290 East corridor from Austin through Elgin to Bastrop — light industrial, small commercial, and residential across Bastrop County.</p>
               </div>
               <div className="bg-white rounded-xl p-5 border border-emerald-100">
-                <h3 className="font-bold text-gray-900 mb-2">Same-Day Pickup Available</h3>
-                <p className="text-gray-600 text-sm">Elgin is approximately 30 miles from our Austin workshop — we can often offer same-day pickup for urgent jobs. Call (512) 240-9818 to check availability.</p>
+                <h3 className="font-bold text-gray-900 mb-2">Same-Day Collection Available</h3>
+                <p className="text-gray-600 text-sm">Elgin is approximately 30 miles from our Austin workshop — we can often offer same-day collection for urgent jobs. Call (512) 240-9818 to check availability.</p>
               </div>
             </div>
           </div>
@@ -188,8 +188,8 @@ export default function Elgin() {
               {[
                 { title: 'In-House Crating', body: 'Every crate is built at our Austin workshop — not outsourced. Custom dimensions, foam blocking, and precise interior padding for the exact item being shipped.' },
                 { title: 'East Corridor Specialists', body: 'We regularly serve the US-290 East corridor — Manor, Elgin, Bastrop, McDade. If you\'re in Bastrop County and need specialty shipping, we know the area and can be there fast.' },
-                { title: 'Close to Elgin — 30 Min Away', body: 'Our Austin workshop at 3112 Windsor Rd is approximately 30 miles from Elgin via US-290 East — about 35 minutes. Same-day pickup is often available.' },
-                { title: 'Fully Insured & Documented', body: 'Every shipment is covered from pickup to delivery. We document condition with photos before crating and maintain full insurance coverage throughout transit.' },
+                { title: 'Close to Elgin — 30 Min Away', body: 'Our Austin workshop at 3112 Windsor Rd is approximately 30 miles from Elgin via US-290 East — about 35 minutes. Same-day collection is often available.' },
+                { title: 'Fully Insured & Documented', body: 'Every shipment is covered from collection to delivery. We document condition with photos before crating and maintain full insurance coverage throughout transit.' },
               ].map(({ title, body }) => (
                 <div key={title} className="flex gap-4">
                   <div className="flex-shrink-0">
@@ -238,19 +238,19 @@ export default function Elgin() {
               {[
                 {
                   q: 'Do you offer specialty shipping and crating in Elgin, TX?',
-                  a: 'Yes. Austin Crate & Freight provides comprehensive specialty shipping and custom crating in Elgin, Texas (78621). We pick up from your Elgin location, build custom crates in-house at our Austin workshop, and deliver locally or ship nationwide. We cover all of western Bastrop County including Elgin, McDade, and surrounding areas.',
+                  a: 'Yes. Austin Crate & Freight provides comprehensive specialty shipping and custom crating in Elgin, Texas (78621). We collect from your Elgin location, build custom crates in-house at our Austin workshop, and deliver locally or ship nationwide. We cover all of western Bastrop County including Elgin, McDade, and surrounding areas.',
                 },
                 {
-                  q: 'Can you pick up heavy items in Elgin that standard carriers won\'t take?',
-                  a: 'Yes. Safes, fitness equipment, large appliances, oversized furniture, and any item that exceeds standard carrier weight or size limits — we pick up in Elgin, crate at our Austin facility, and coordinate freight to the destination. Call (512) 240-9818 for a same-day quote.',
+                  q: 'Can you collect heavy items in Elgin that standard carriers won\'t take?',
+                  a: 'Yes. Safes, fitness equipment, large appliances, oversized furniture, and any item that exceeds standard carrier weight or size limits — we collect in Elgin, crate at our Austin facility, and coordinate freight to the destination. Call (512) 240-9818 for a same-day quote.',
                 },
                 {
                   q: 'How far is Elgin from your Austin workshop?',
-                  a: 'Our workshop at 3112 Windsor Rd, Austin TX is approximately 30 miles from Elgin via US-290 East — about 35 minutes. We can typically offer same-day pickup in Elgin and standard 24-48 hour scheduling for most jobs.',
+                  a: 'Our workshop at 3112 Windsor Rd, Austin TX is approximately 30 miles from Elgin via US-290 East — about 35 minutes. We can typically offer same-day collection in Elgin and standard 24-48 hour scheduling for most jobs.',
                 },
                 {
                   q: 'Do you handle furniture shipping for new Elgin residents relocating from out of state?',
-                  a: 'Yes. Many new Elgin residents are relocating from out of state and need specialty crating for furniture, art, and high-value items that standard movers mishandle. We pick up in Elgin, crate properly, and coordinate freight from the origin or deliver the final leg to your Elgin home. Call (512) 240-9818.',
+                  a: 'Yes. Many new Elgin residents are relocating from out of state and need specialty crating for furniture, art, and high-value items that standard movers mishandle. We collect in Elgin, crate properly, and coordinate freight from the origin or deliver the final leg to your Elgin home. Call (512) 240-9818.',
                 },
                 {
                   q: 'Do you serve Bastrop, Manor, and other nearby cities from Elgin?',
@@ -288,7 +288,7 @@ export default function Elgin() {
 
           <div className="text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Ship from Elgin?</h3>
-            <p className="text-gray-600 mb-6">Contact us for a free quote on furniture crating, heavy item pickup, or any specialty shipping need in Elgin, TX.</p>
+            <p className="text-gray-600 mb-6">Contact us for a free quote on furniture crating, heavy item collection, or any specialty shipping need in Elgin, TX.</p>
             <a href="tel:(512) 240-9818" className="inline-flex items-center gap-2 px-8 py-4 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors font-medium">
               Call (512) 240-9818
             </a>
@@ -303,13 +303,13 @@ export default function Elgin() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Serving Elgin from Austin</h2>
               <p className="text-gray-700 text-lg mb-6">
-                Austin Crate &amp; Freight serves Elgin from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, approximately 30 miles via US-290 East. Free pickup throughout Elgin and western Bastrop County.
+                Austin Crate &amp; Freight serves Elgin from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, approximately 30 miles via US-290 East. Collection throughout Elgin and western Bastrop County.
               </p>
               <ul className="space-y-3 text-gray-700 mb-8">
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Address:</strong> 3112 Windsor Rd, Austin, TX 78703</span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Phone:</strong> <a href="tel:(512) 240-9818" className="text-emerald-600 hover:underline">(512) 240-9818</a></span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Hours:</strong> Mon-Fri 8am-6pm, Sat by appointment</span></li>
-                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Elgin pickup:</strong> Free throughout Elgin (78621) and western Bastrop County</span></li>
+                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Elgin collection:</strong> available throughout Elgin (78621) and western Bastrop County</span></li>
               </ul>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Austin+Crate+%26+Freight+3112+Windsor+Rd+Austin+TX+78703"

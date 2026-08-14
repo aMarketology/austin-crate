@@ -18,7 +18,7 @@ export function generateMetadata(): Metadata {
       'heavy furniture shipping Austin TX',
       'large furniture crating Austin',
       'ship oversized furniture Austin',
-      'heavy furniture pickup Austin Texas',
+      'heavy furniture collection Austin Texas',
       'oversized furniture crating Austin TX',
       'freight furniture shipping Austin',
       'large item shipping Austin Texas',
@@ -108,7 +108,7 @@ export default function OversizedFurnitureShipping() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                { title: 'Liftgate Service', desc: 'Our trucks are equipped with liftgates for heavy pieces that cannot be hand-carried. No dock required at pickup or delivery.' },
+                { title: 'Liftgate Service', desc: 'Our trucks are equipped with liftgates for heavy pieces that cannot be hand-carried. No dock required at collection or delivery.' },
                 { title: 'Two-Man Crew for Heavy Items', desc: 'All oversized furniture shipments are handled by a two-person crew with proper equipment, dollies, straps, and protective gear.' },
                 { title: 'Heavy-Duty Custom Crating', desc: 'Large and heavy pieces get reinforced crates with additional internal blocking, corner protection, and base skids for forklift access.' },
                 { title: 'Specialty LTL Freight', desc: 'We use freight carriers experienced with high-value oversized goods, not the cheapest carrier, but the right one for your piece.' },
@@ -157,7 +157,7 @@ export default function OversizedFurnitureShipping() {
             <div className="space-y-5">
               {[
                 { q: 'How do you ship furniture that is too heavy for standard carriers?', a: 'We build a custom wood crate around the piece in our Austin shop, load it onto a liftgate truck with a two-person crew, and ship via specialty LTL freight with full insurance and tracking.' },
-                { q: 'Can you pick up heavy furniture from my home in Austin?', a: 'Yes. We offer free heavy furniture pickup anywhere in Greater Austin. We bring a two-person trained crew and all necessary equipment, you do not need to help lift anything.' },
+                { q: 'Can you collect heavy furniture from my home in Austin?', a: 'Yes. We offer heavy furniture collection anywhere in Greater Austin. We bring a two-person trained crew and all necessary equipment, you do not need to help lift anything.' },
                 { q: 'How much does heavy furniture shipping cost from Austin?', a: 'Heavy furniture shipping from Austin starts at $300 for local delivery. Long-distance heavy freight starts at $500+ depending on dimensions, weight, and destination. Call (512) 240-9818 for a free quote.' },
                 { q: 'Do you ship pool tables or game room furniture?', a: 'Yes. Pool tables require professional disassembly and proper slate handling, which our crew is trained to perform. We crate all components and ship via specialty freight.' },
               ].map((faq, i) => (

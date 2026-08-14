@@ -9,7 +9,7 @@ import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = generateLocationMetadata({
   locationName: 'Georgetown',
-  description: 'Specialty shipping & custom crating in Georgetown, TX, furniture shipping and crating, fine art transport, heavy item pickup, oversized shipping & medical equipment. White-glove service from Austin Crate & Freight.',
+  description: 'Specialty shipping & custom crating in Georgetown, TX, furniture shipping and crating, fine art transport, heavy item collection, oversized shipping & medical equipment. White-glove service from Austin Crate & Freight.',
   keywords: [
     'specialty shipping Georgetown TX',
     'specialty shipping Georgetown Texas',
@@ -19,8 +19,8 @@ export const metadata: Metadata = generateLocationMetadata({
     'furniture crating Georgetown TX',
     'custom furniture shipping Georgetown',
     'fine art shipping Georgetown',
-    'heavy package pickup Georgetown',
-    'heavy item pickup Georgetown TX',
+    'heavy package collection Georgetown',
+    'heavy item collection Georgetown TX',
     'oversized shipping Georgetown',
     'white glove shipping Georgetown TX',
     'Georgetown shipping company',
@@ -61,7 +61,7 @@ export default function Georgetown() {
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Specialty Shipping & Crating in Georgetown, TX</h1>
               <p className="text-xl text-gray-300 mb-8">
-                Austin Crate &amp; Freight delivers expert specialty shipping and custom crating to Georgetown, Texas. We serve historic downtown Georgetown, Sun City, Berry Creek, and all surrounding communities with white-glove furniture shipping and crating, fine art transport, heavy item pickup, and medical equipment delivery.
+                Austin Crate &amp; Freight delivers expert specialty shipping and custom crating to Georgetown, Texas. We serve historic downtown Georgetown, Sun City, Berry Creek, and all surrounding communities with white-glove furniture shipping and crating, fine art transport, heavy item collection, and medical equipment delivery.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -149,8 +149,8 @@ export default function Georgetown() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Pickup</h3>
-              <p className="text-gray-600 mb-4">Heavy package pickup in Georgetown for items too large for standard carriers, safes, pianos, appliances, and more.</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Heavy Item Collection</h3>
+              <p className="text-gray-600 mb-4">Heavy package collection in Georgetown for items too large for standard carriers, safes, pianos, appliances, and more.</p>
               <Link href="/services/heavy-items" className="text-emerald-600 hover:text-emerald-700 font-medium">
                 Learn More →
               </Link>
@@ -259,7 +259,7 @@ export default function Georgetown() {
             <div className="space-y-6">
               <div className="border border-gray-200 rounded-xl p-6">
                 <h3 className="font-bold text-gray-900 mb-2">Do you provide specialty shipping and crating in Georgetown, TX?</h3>
-                <p className="text-gray-600">Yes. Austin Crate &amp; Freight serves Georgetown with full specialty shipping and custom crating, including pickup, in-house crate building, and delivery locally or nationwide. We serve Georgetown's historic downtown, Sun City, Berry Creek, and all surrounding zip codes.</p>
+                <p className="text-gray-600">Yes. Austin Crate &amp; Freight serves Georgetown with full specialty shipping and custom crating, including collection, in-house crate building, and delivery locally or nationwide. We serve Georgetown's historic downtown, Sun City, Berry Creek, and all surrounding zip codes.</p>
               </div>
               <div className="border border-gray-200 rounded-xl p-6">
                 <h3 className="font-bold text-gray-900 mb-2">Can you ship antique furniture from Georgetown?</h3>
@@ -283,7 +283,7 @@ export default function Georgetown() {
           {/* Cross-Links to Other Locations */}
           <div className="bg-gray-100 rounded-2xl p-8 mb-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">We Also Serve Nearby Cities</h3>
-            <p className="text-gray-600 mb-6">Austin Crate & Freight provides the same white-glove specialty shipping, custom furniture shipping, and heavy package pickup throughout the greater Austin area.</p>
+            <p className="text-gray-600 mb-6">Austin Crate & Freight provides the same white-glove specialty shipping, custom furniture shipping, and heavy package collection throughout the greater Austin area.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/locations/round-rock" className="px-5 py-2.5 bg-white border border-gray-200 rounded-lg text-gray-700 hover:border-emerald-500 hover:text-emerald-700 transition-colors font-medium">
                 Round Rock, TX
@@ -305,7 +305,7 @@ export default function Georgetown() {
 
           <div className="text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Serving Georgetown with Pride</h3>
-            <p className="text-gray-600 mb-6">Contact us for expert custom furniture shipping, heavy package pickup, and specialty shipping throughout Georgetown and Williamson County.</p>
+            <p className="text-gray-600 mb-6">Contact us for expert custom furniture shipping, heavy package collection, and specialty shipping throughout Georgetown and Williamson County.</p>
             <a
               href="tel:(512) 240-9818"
               className="inline-flex items-center gap-2 px-8 py-4 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors font-medium"
@@ -323,13 +323,13 @@ export default function Georgetown() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Serving Our Team in Georgetown</h2>
               <p className="text-gray-700 text-lg mb-6">
-                Austin Crate &amp; Freight serves Georgetown from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, just 35 minutes from Georgetown's historic town square via I-35. Free pickup throughout Georgetown, TX 78626, 78627, and 78628.
+                Austin Crate &amp; Freight serves Georgetown from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, just 35 minutes from Georgetown's historic town square via I-35. Collection throughout Georgetown, TX 78626, 78627, and 78628.
               </p>
               <ul className="space-y-3 text-gray-700 mb-8">
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Address:</strong> 3112 Windsor Rd, Austin, TX 78703</span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Phone:</strong> <a href="tel:(512) 240-9818" className="text-emerald-600 hover:underline">(512) 240-9818</a></span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Hours:</strong> Mon-Fri 8am-6pm, Sat by appointment</span></li>
-                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Georgetown pickup:</strong> Free throughout Georgetown, Round Rock, Cedar Park, and Greater Austin</span></li>
+                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span> <span><strong>Georgetown collection:</strong> available throughout Georgetown, Round Rock, Cedar Park, and Greater Austin</span></li>
               </ul>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Austin+Crate+%26+Freight+3112+Windsor+Rd+Austin+TX+78703"

@@ -38,7 +38,7 @@ export default function PrepareFurnitureForShipping() {
     '@type': 'Article',
     headline: 'How to Prepare Furniture for Shipping: A Step-by-Step Checklist',
     description:
-      'A practical, step-by-step guide to preparing furniture for pickup and transit — disassembly, documentation, padding, and what to leave for the pros.',
+      'A practical, step-by-step guide to preparing furniture for collection and transit — disassembly, documentation, padding, and what to leave for the pros.',
     image: 'https://austincrate.com/og-default.jpg',
     datePublished: '2026-06-24',
     dateModified: '2026-06-24',
@@ -62,7 +62,7 @@ export default function PrepareFurnitureForShipping() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'Do I need to disassemble furniture before it gets picked up?',
+        name: 'Do I need to disassemble furniture before it gets collected?',
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'It depends on the piece. For most large sofas, dining tables, and bed frames, partial disassembly — removing legs, detaching cushions, collapsing bases — makes crating safer and more cost-effective. We will advise you during the quote process on exactly what to detach. You do not need to fully strip any piece.',
@@ -81,7 +81,7 @@ export default function PrepareFurnitureForShipping() {
         name: 'How do I document furniture condition before shipping?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Photograph every face, all four corners, all legs, and any pre-existing chips, scratches, or repairs under good lighting before pickup. Save these photos with timestamps. If a claim is ever needed, your pre-shipment photo documentation is the most important evidence you can provide.',
+          text: 'Photograph every face, all four corners, all legs, and any pre-existing chips, scratches, or repairs under good lighting before collection. Save these photos with timestamps. If a claim is ever needed, your pre-shipment photo documentation is the most important evidence you can provide.',
         },
       },
       {
@@ -89,7 +89,7 @@ export default function PrepareFurnitureForShipping() {
         name: 'How far in advance should I book furniture shipping in Austin?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'For standard furniture pickups in the Austin area, 3–5 business days is usually sufficient. For large custom crating jobs, oversized pieces, or out-of-state freight, book 1–2 weeks ahead to ensure proper materials are prepped. For auction purchases or estate pieces, call us the same day — we can often accommodate same-week pickups.',
+          text: 'For standard furniture collections in the Austin area, 3–5 business days is usually sufficient. For large custom crating jobs, oversized pieces, or out-of-state freight, book 1–2 weeks ahead to ensure proper materials are prepped. For auction purchases or estate pieces, call us the same day — we can often accommodate same-week collections.',
         },
       },
       {
@@ -146,10 +146,10 @@ export default function PrepareFurnitureForShipping() {
         <section className="flex-1 py-16 px-4 bg-white">
           <article className="max-w-3xl mx-auto prose prose-lg">
             <p className="lead text-xl text-grey-700 mb-8">
-              Most furniture damage during shipping does not happen in transit — it happens in the fifteen minutes before pickup. Drawers left loaded, legs still attached, no photos taken, no hardware removed. The good news is that preparing furniture for shipping correctly is straightforward. This guide walks through exactly what to do before your pickup, and what to leave for us to handle.
+              Most furniture damage during shipping does not happen in transit — it happens in the fifteen minutes before collection. Drawers left loaded, legs still attached, no photos taken, no hardware removed. The good news is that preparing furniture for shipping correctly is straightforward. This guide walks through exactly what to do before your collection, and what to leave for us to handle.
             </p>
 
-            <h2>The Short Answer: 6 Steps Before Pickup</h2>
+            <h2>The Short Answer: 6 Steps Before Collection</h2>
             <p>
               Proper prep comes down to six steps: empty it, document it, disassemble removable parts, protect the finish, secure loose hardware, and clear a path for the crew. Everything else is handled professionally at our shop.
             </p>
@@ -170,7 +170,7 @@ export default function PrepareFurnitureForShipping() {
 
             <h2>Step 1: Empty Everything</h2>
             <p>
-              This is the most overlooked step. Drawers, cabinets, shelving units, and armoires should be completely emptied before pickup — without exception. Loaded furniture is heavier, harder to crate safely, and the contents shift in transit, putting pressure on joints and finishes from the inside.
+              This is the most overlooked step. Drawers, cabinets, shelving units, and armoires should be completely emptied before collection — without exception. Loaded furniture is heavier, harder to crate safely, and the contents shift in transit, putting pressure on joints and finishes from the inside.
             </p>
             <p>
               For pieces with built-in storage (blanket chests, sideboards, buffets), pull everything out and set it aside. If you are shipping an entire room, those contents ship separately in boxes. The furniture ships empty.
@@ -178,7 +178,7 @@ export default function PrepareFurnitureForShipping() {
 
             <h2>Step 2: Document Condition with Photos</h2>
             <p>
-              Before any furniture leaves your home, photograph it thoroughly. This protects you in the unlikely event of a claim, and it gives us a baseline at pickup.
+              Before any furniture leaves your home, photograph it thoroughly. This protects you in the unlikely event of a claim, and it gives us a baseline at collection.
             </p>
             <p>What to photograph:</p>
             <ul>
@@ -201,7 +201,7 @@ export default function PrepareFurnitureForShipping() {
 
             <h2>Step 4: Disassemble Removable Legs and Components</h2>
             <p>
-              Most dining tables, sofas, bed frames, and shelving units have legs, panels, or bases that detach. Removing these before pickup reduces the crated footprint, significantly lowers your shipping cost, and eliminates the most common breakage point — furniture legs — from the equation.
+              Most dining tables, sofas, bed frames, and shelving units have legs, panels, or bases that detach. Removing these before collection reduces the crated footprint, significantly lowers your shipping cost, and eliminates the most common breakage point — furniture legs — from the equation.
             </p>
             <p>How to handle this:</p>
             <ul>
@@ -215,7 +215,7 @@ export default function PrepareFurnitureForShipping() {
             </p>
 
             <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 my-8 not-prose">
-              <p className="font-semibold text-emerald-800 mb-3 text-lg">📞 Questions Before Pickup? We Are Here.</p>
+              <p className="font-semibold text-emerald-800 mb-3 text-lg">📞 Questions Before Collection? We Are Here.</p>
               <p className="text-grey-700 mb-4">
                 Call <strong>(512) 240-9818</strong> and describe your piece. We will walk you through exactly what to prep, what we handle, and give you a quote in minutes.
               </p>
@@ -244,7 +244,7 @@ export default function PrepareFurnitureForShipping() {
 
             <h2>Step 6: Clear the Path</h2>
             <p>
-              Our crew brings equipment — dollies, straps, moving pads, crating panels — and needs room to work. Before pickup, clear a minimum six-foot path from the furniture to the nearest exterior door or loading area. Remove area rugs from the travel path if possible (dollies catch on rug edges).
+              Our crew brings equipment — dollies, straps, moving pads, crating panels — and needs room to work. Before collection, clear a minimum six-foot path from the furniture to the nearest exterior door or loading area. Remove area rugs from the travel path if possible (dollies catch on rug edges).
             </p>
             <p>
               For upper floors, let us know in advance if there are stairs, narrow hallways, or elevator access only. This affects which equipment we bring and how we schedule the job.
@@ -280,7 +280,7 @@ export default function PrepareFurnitureForShipping() {
             </p>
             <ul>
               <li>
-                <strong>Antiques:</strong> Tell us the approximate age and any known repairs or fragile areas before pickup. We adjust foam blocking and crating methods for pieces with dried glue joints, aged veneer, or original hardware.
+                <strong>Antiques:</strong> Tell us the approximate age and any known repairs or fragile areas before collection. We adjust foam blocking and crating methods for pieces with dried glue joints, aged veneer, or original hardware.
               </li>
               <li>
                 <strong>Designer and custom pieces:</strong> If the manufacturer has specific handling or storage requirements (many high-end upholstery brands do), share those with us. We follow OEM guidance when provided.
@@ -297,7 +297,7 @@ export default function PrepareFurnitureForShipping() {
               is the right service level. It includes full crating, climate-controlled transit options, and a two-person specialist crew from origin to destination.
             </p>
 
-            <h2>What We Handle After Pickup</h2>
+            <h2>What We Handle After Collection</h2>
             <p>
               Once the piece is at our shop in Austin, we handle everything from crating forward:
             </p>
@@ -364,7 +364,7 @@ export default function PrepareFurnitureForShipping() {
 
             <h2>Frequently Asked Questions</h2>
 
-            <h3>Do I need to disassemble furniture before it gets picked up?</h3>
+            <h3>Do I need to disassemble furniture before it gets collected?</h3>
             <p>
               It depends on the piece. For most large sofas, dining tables, and bed frames, partial disassembly — removing legs, detaching cushions, collapsing bases — makes crating safer and more cost-effective. We will advise you during the quote process on exactly what to detach. You do not need to fully strip any piece.
             </p>
@@ -376,12 +376,12 @@ export default function PrepareFurnitureForShipping() {
 
             <h3>How do I document furniture condition before shipping?</h3>
             <p>
-              Photograph every face, all four corners, all legs, and any pre-existing chips, scratches, or repairs under good lighting before pickup. Save these photos with timestamps. If a claim is ever needed, your pre-shipment photo documentation is the most important evidence you can provide.
+              Photograph every face, all four corners, all legs, and any pre-existing chips, scratches, or repairs under good lighting before collection. Save these photos with timestamps. If a claim is ever needed, your pre-shipment photo documentation is the most important evidence you can provide.
             </p>
 
             <h3>How far in advance should I book furniture shipping in Austin?</h3>
             <p>
-              For standard furniture pickups in the Austin area, 3–5 business days is usually sufficient. For large custom crating jobs, oversized pieces, or out-of-state freight, book 1–2 weeks ahead. For auction purchases or estate pieces, call us the same day — we can often accommodate same-week pickups.
+              For standard furniture collections in the Austin area, 3–5 business days is usually sufficient. For large custom crating jobs, oversized pieces, or out-of-state freight, book 1–2 weeks ahead. For auction purchases or estate pieces, call us the same day — we can often accommodate same-week collections.
             </p>
 
             <h3>What items should I remove from furniture before it ships?</h3>

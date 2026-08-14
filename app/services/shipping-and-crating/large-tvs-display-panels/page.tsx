@@ -56,7 +56,7 @@ export default function LargeTVsDisplayPanels() {
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-5">Large TV & Display Panel Shipping in Austin, TX</h1>
             <p className="text-xl text-grey-300 mb-8 max-w-3xl">
-              A 75" OLED panel has one weak point, its screen. We keep it vertical, armored at every corner and edge, and locked inside a shock-isolated crate from pickup to delivery, with no carrier handling the panel flat.
+              A 75" OLED panel has one weak point, its screen. We keep it vertical, armored at every corner and edge, and locked inside a shock-isolated crate from collection to delivery, with no carrier handling the panel flat.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a

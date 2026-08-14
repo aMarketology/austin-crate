@@ -13,7 +13,7 @@ const SLUG = '/services/furniture/bedroom-furniture'
 export function generateMetadata(): Metadata {
   return generateServiceMetadata({
     serviceName: 'Bedroom Furniture Shipping Austin Texas',
-    description: 'Specialist bedroom furniture shipping and crating in Austin, Texas. Platform beds, sleigh beds, dressers, armoires, and nightstands, white-glove pickup, disassembly & delivery. Call (512) 240-9818.',
+    description: 'Specialist bedroom furniture shipping and crating in Austin, Texas. Platform beds, sleigh beds, dressers, armoires, and nightstands, white-glove collection, disassembly & delivery. Call (512) 240-9818.',
     keywords: [
       'bedroom furniture shipping Austin Texas',
       'bed frame shipping Austin TX',
@@ -93,7 +93,7 @@ export default function BedroomFurnitureShipping() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">How We Ship Bedroom Furniture</h2>
             <p className="text-gray-700 text-lg mb-4">
-              Bedroom furniture presents a unique combination of large, heavy panels (headboards, dressers) and delicate hardware, mirrors, and finish surfaces. Tall armoires and headboards are particularly prone to tip-over damage and corner impact. Our process protects every component from pickup through placement.
+              Bedroom furniture presents a unique combination of large, heavy panels (headboards, dressers) and delicate hardware, mirrors, and finish surfaces. Tall armoires and headboards are particularly prone to tip-over damage and corner impact. Our process protects every component from collection through placement.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
               {[
@@ -166,7 +166,7 @@ export default function BedroomFurnitureShipping() {
         <section className="bg-gradient-to-br from-grey-900 to-grey-800 text-white py-16 px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Ship Your Bedroom Furniture from Austin</h2>
-            <p className="text-grey-300 text-lg mb-8">Free pickup in Greater Austin. Professional crating. Nationwide delivery.</p>
+            <p className="text-grey-300 text-lg mb-8">Collection in Greater Austin. Professional crating. Nationwide delivery.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:(512) 240-9818" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-emerald rounded-lg font-semibold text-white hover:bg-emerald/90 transition">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg>

@@ -17,7 +17,7 @@ export const metadata: Metadata = generateLocationMetadata({
     'furniture shipping Lakeway',
     'furniture crating Lakeway TX',
     'fine art shipping Lakeway Texas',
-    'heavy item pickup Lakeway TX',
+    'heavy item collection Lakeway TX',
     'white glove shipping Lakeway TX',
     'Lakeway shipping company',
     'Bee Cave shipping',
@@ -84,7 +84,7 @@ export default function Lakeway() {
               { icon: 'M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z', title: 'Luxury Furniture Shipping', desc: 'White-glove furniture shipping for designer sofas, antiques, and custom pieces from Lakeway\'s finest homes.', href: '/services/furniture' },
               { icon: 'M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12z', title: 'Antique & Heirloom Transport', desc: 'Careful crating and climate-controlled shipping for antique furniture and family heirlooms from Bee Cave and Lakeway.', href: '/services/furniture/antique-furniture-shipping' },
               { icon: 'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z', title: 'Medical Equipment', desc: 'HIPAA-compliant transport for Lakeway and Bee Cave medical facilities and healthcare providers.', href: '/services/medical-equipment' },
-              { icon: 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4', title: 'Heavy Item Pickup', desc: 'Safe and vault moving, heavy art pieces, and oversized items from Lakeway and Bee Cave homes.', href: '/services/heavy-items' },
+              { icon: 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4', title: 'Heavy Item Collection', desc: 'Safe and vault moving, heavy art pieces, and oversized items from Lakeway and Bee Cave homes.', href: '/services/heavy-items' },
             ].map(({ icon, title, desc, href }) => (
               <div key={title} className="p-6 border border-gray-200 rounded-xl hover:shadow-lg transition-shadow">
                 <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
@@ -117,7 +117,7 @@ export default function Lakeway() {
                 { q: 'Can you ship luxury furniture from Lakeway estates?', a: 'Absolutely. We provide white-glove furniture shipping and custom crating for Lakeway and Bee Cave homes — from designer sofas and antique dining sets to custom-built pieces. We handle disassembly, crating, and reassembly.' },
                 { q: 'Do you move safes and vaults in Lakeway?', a: 'Yes. We provide safe and vault moving for Lakeway and Bee Cave homes. We use heavy-lift equipment and fully insured transport for all safes and high-security items.' },
                 { q: 'What is the service area for Lakeway and Bee Cave?', a: 'We serve all of Lakeway (78734, 78738), Bee Cave (78738), and surrounding Hill Country communities including Spicewood, Hudson Bend, and The Hills. Same-day quotes available.' },
-                { q: 'How does white-glove shipping work for Lakeway?', a: 'We pick up from your Lakeway or Bee Cave home, transport items to our Austin facility for custom crating, then ship via insured freight nationwide — or deliver locally. Every step includes dedicated handling by our team.' },
+                { q: 'How does white-glove shipping work for Lakeway?', a: 'We collect from your Lakeway or Bee Cave home, transport items to our Austin facility for custom crating, then ship via insured freight nationwide — or deliver locally. Every step includes dedicated handling by our team.' },
               ].map(({ q, a }) => (
                 <div key={q} className="border border-gray-200 rounded-xl p-6">
                   <h3 className="font-bold text-gray-900 mb-2">{q}</h3>
@@ -158,12 +158,12 @@ export default function Lakeway() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Serving Lakeway & Bee Cave from Austin</h2>
-              <p className="text-gray-700 text-lg mb-6">Austin Crate &amp; Freight serves Lakeway and Bee Cave from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, approximately 30 minutes via TX-71. Free pickup throughout Lakeway 78734, 78738 and Bee Cave 78738.</p>
+              <p className="text-gray-700 text-lg mb-6">Austin Crate &amp; Freight serves Lakeway and Bee Cave from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, approximately 30 minutes via TX-71. Collection throughout Lakeway 78734, 78738 and Bee Cave 78738.</p>
               <ul className="space-y-3 text-gray-700 mb-8">
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span><span><strong>Address:</strong> 3112 Windsor Rd, Austin, TX 78703</span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span><span><strong>Phone:</strong> <a href="tel:(512) 240-9818" className="text-emerald-600 hover:underline">(512) 240-9818</a></span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span><span><strong>Hours:</strong> Mon-Fri 8am-6pm, Sat by appointment</span></li>
-                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span><span><strong>Lakeway/Bee Cave pickup:</strong> Free throughout the Lake Travis corridor</span></li>
+                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span><span><strong>Lakeway/Bee Cave collection:</strong> available throughout the Lake Travis corridor</span></li>
               </ul>
               <a href="https://www.google.com/maps/search/?api=1&query=Austin+Crate+%26+Freight+3112+Windsor+Rd+Austin+TX+78703" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-700 transition-all">Get Directions on Google Maps</a>
             </div>

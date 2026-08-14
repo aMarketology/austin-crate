@@ -10,7 +10,7 @@ import SEOWrapper from '@/app/components/SEOWrapper'
 
 export const metadata: Metadata = generateServiceMetadata({
   serviceName: 'Furniture Shipping & Crating Austin Texas',
-  description: 'Expert furniture shipping and crating in Austin, Texas. Custom wood crates built in-house, white-glove pickup, expert disassembly & reassembly for designer, antique & heavy furniture. Scratch-free guarantee. Call (512) 240-9818.',
+  description: 'Expert furniture shipping and crating in Austin, Texas. Custom wood crates built in-house, white-glove collection, expert disassembly & reassembly for designer, antique & heavy furniture. Scratch-free guarantee. Call (512) 240-9818.',
   keywords: [
     'furniture shipping and crating Austin Texas',
     'furniture crating Austin TX',
@@ -20,7 +20,7 @@ export const metadata: Metadata = generateServiceMetadata({
     'furniture crating Austin Texas',
     'antique furniture shipping Texas',
     'white glove furniture movers Austin',
-    'heavy furniture pickup Austin TX',
+    'heavy furniture collection Austin TX',
     'designer furniture transport Austin',
     'luxury furniture shipping Austin',
     'furniture shipping crating Central Texas',
@@ -38,7 +38,7 @@ export default function FurnitureShipping() {
 
   const localBusinessSchema = generateLocalBusinessSchema({
     locationName: 'Austin',
-    description: 'Custom furniture shipping in Austin, Texas. White-glove pickup, expert disassembly, custom crating, and precision reassembly for designer, antique, and heavy furniture.',
+    description: 'Custom furniture shipping in Austin, Texas. White-glove collection, expert disassembly, custom crating, and precision reassembly for designer, antique, and heavy furniture.',
     latitude: 30.2972,
     longitude: -97.7594,
     image: '/2.jpg',
@@ -75,7 +75,7 @@ export default function FurnitureShipping() {
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Furniture Shipping &amp; Crating in Austin, Texas</h1>
               <p className="text-xl text-grey-300 mb-8">
-                Austin&apos;s specialist in furniture shipping and crating. We build every crate in-house at our Austin shop, and provide white-glove pickup, expert disassembly, and precision reassembly for designer, antique, and heavy furniture, locally and nationwide.
+                Austin&apos;s specialist in furniture shipping and crating. We build every crate in-house at our Austin shop, and provide white-glove collection, expert disassembly, and precision reassembly for designer, antique, and heavy furniture, locally and nationwide.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -118,7 +118,7 @@ export default function FurnitureShipping() {
             <span className="flex items-center gap-2">✅ Crates Built In-House, Austin, TX</span>
             <span className="flex items-center gap-2">✅ Scratch-Free Guarantee</span>
             <span className="flex items-center gap-2">✅ Fully Insured &amp; Licensed</span>
-            <span className="flex items-center gap-2">✅ Free Local Pickup</span>
+            <span className="flex items-center gap-2">✅ Free Local Collection</span>
             <span className="flex items-center gap-2">✅ Serving Austin Since 2010</span>
           </div>
         </div>
@@ -140,7 +140,7 @@ export default function FurnitureShipping() {
                   </svg>
                 ),
                 title: 'White-Glove Service',
-                description: 'Premium handling from pickup to placement, ensuring your luxury furniture receives the care it deserves.'
+                description: 'Premium handling from collection to placement, ensuring your luxury furniture receives the care it deserves.'
               },
               {
                 icon: (
@@ -298,7 +298,7 @@ export default function FurnitureShipping() {
           <div className="space-y-8">
             {[
               { step: 1, title: 'Free Quote & Assessment', desc: 'Call (512) 240-9818 or fill out our contact form. We assess your furniture, ask the right questions, and give you an honest quote, no surprises.' },
-              { step: 2, title: 'Pickup Anywhere in Greater Austin', desc: 'Our crew arrives with the right equipment: moving blankets, dollies, straps, and lift-gate trucks. We cover Austin, Round Rock, Cedar Park, Georgetown, and surrounding areas.' },
+              { step: 2, title: 'Collection Anywhere in Greater Austin', desc: 'Our crew arrives with the right equipment: moving blankets, dollies, straps, and lift-gate trucks. We cover Austin, Round Rock, Cedar Park, Georgetown, and surrounding areas.' },
               { step: 3, title: 'Expert Disassembly', desc: 'For beds, sectionals, and large case pieces, we carefully disassemble using proper techniques, hardware is bagged and labeled so nothing gets lost.' },
               { step: 4, title: 'Custom Crating or Premium Wrapping', desc: 'Valuable or fragile pieces get a custom wood crate built in our Austin shop. Other pieces receive multi-layer furniture blankets and stretch wrap.' },
               { step: 5, title: 'Secure Transport', desc: 'Furniture rides in our climate-controlled trucks, fully padded and strapped. For long-haul, we use insured LTL freight carriers with specialty freight experience.' },
@@ -358,8 +358,8 @@ export default function FurnitureShipping() {
                 a: 'Absolutely. Antique furniture is one of our specialties. We use period-correct handling techniques, avoid adhesives or materials that could damage finishes, and build custom crates for pieces that cannot be padded adequately. Our team is trained in proper disassembly for antique joinery.',
               },
               {
-                q: 'Do you offer furniture pickup in Austin?',
-                a: 'Yes. We offer free furniture pickup throughout Greater Austin and surrounding communities including Round Rock, Cedar Park, Georgetown, Pflugerville, Kyle, and Buda. Our crew arrives with all necessary equipment, no trip to a drop-off location required.',
+                q: 'Do you offer furniture collection in Austin?',
+                a: 'Yes. We offer furniture collection throughout Greater Austin and surrounding communities including Round Rock, Cedar Park, Georgetown, Pflugerville, Kyle, and Buda. Our crew arrives with all necessary equipment, no trip to a drop-off location required.',
               },
               {
                 q: 'Can you ship furniture across the country from Austin?',
@@ -421,7 +421,7 @@ export default function FurnitureShipping() {
               { src: '/IMG_2984.jpg', alt: 'White-glove furniture prep at Austin Crate & Freight workshop' },
               { src: '/IMG_2985.jpg', alt: 'Interior foam blocking detail for furniture crate — Austin TX' },
               { src: '/IMG_3155.jpg', alt: 'Completed furniture job ready for delivery — Austin Crate & Freight' },
-              { src: '/IMG_3979_1686773817157.jpg', alt: 'Austin craftsman building furniture shipping crate for local white-glove pickup' },
+              { src: '/IMG_3979_1686773817157.jpg', alt: 'Austin craftsman building furniture shipping crate for local white-glove collection' },
               { src: '/IMG_4196_1695841417957.jpg', alt: 'Completed furniture shipping crate ready for LTL freight from Austin Texas' },
               { src: '/IMG_5091_1714149760004.jpg', alt: 'Antique furniture wrapped and crated for safe transport by Austin Crate & Freight' },
             ].map((img, i) => (
@@ -453,7 +453,7 @@ export default function FurnitureShipping() {
             <Link href="/blog/prepare-furniture-for-shipping" className="group block bg-gray-50 border border-gray-200 rounded-xl p-5 hover:border-emerald/40 hover:shadow-md transition-all">
               <span className="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">How-To</span>
               <h3 className="font-bold text-gray-900 mt-2 mb-1 group-hover:text-emerald transition-colors">How to Prepare Furniture for Shipping</h3>
-              <p className="text-gray-500 text-sm">Step-by-step checklist before pickup day.</p>
+              <p className="text-gray-500 text-sm">Step-by-step checklist before collection day.</p>
             </Link>
             <Link href="/blog/ship-large-furniture-texas" className="group block bg-gray-50 border border-gray-200 rounded-xl p-5 hover:border-emerald/40 hover:shadow-md transition-all">
               <span className="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">Shipping Guide</span>
@@ -481,7 +481,7 @@ export default function FurnitureShipping() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Visit Our Austin Crating Workshop</h2>
               <p className="text-gray-700 text-lg mb-6">
-                Austin Crate &amp; Freight is locally based at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, minutes from major furniture districts and luxury home showrooms. We offer free furniture pickup throughout the Austin metro and ship nationwide.
+                Austin Crate &amp; Freight is locally based at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, minutes from major furniture districts and luxury home showrooms. We offer furniture collection throughout the Austin metro and ship nationwide.
               </p>
               <ul className="space-y-3 text-gray-700 mb-8">
                 <li className="flex gap-3"><span className="text-emerald font-bold">✓</span> <span><strong>Address:</strong> 3112 Windsor Rd, Austin, TX 78703</span></li>
@@ -519,7 +519,7 @@ export default function FurnitureShipping() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Need Furniture Shipping or Crating in Austin?</h2>
           <p className="text-xl text-grey-300 mb-10">
-            Whether it&apos;s a designer sofa, a family heirloom, or a commercial delivery, Austin Crate &amp; Freight builds the crate and ships it right. Free pickup anywhere in Greater Austin. Get a quote today.
+            Whether it&apos;s a designer sofa, a family heirloom, or a commercial delivery, Austin Crate &amp; Freight builds the crate and ships it right. Collection anywhere in Greater Austin. Get a quote today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -544,7 +544,7 @@ export default function FurnitureShipping() {
             <p className="text-grey-400 mb-4 text-sm uppercase tracking-widest">Related Services</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/services/heavy-items" className="text-emerald hover:text-emerald/80 font-medium transition-colors">
-                Heavy Item Pickup &rarr;
+                Heavy Item Collection &rarr;
               </Link>
               <Link href="/services/fine-art" className="text-emerald hover:text-emerald/80 font-medium transition-colors">
                 Fine Art Shipping &rarr;

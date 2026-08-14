@@ -77,7 +77,7 @@ const ALL_SERVICES = [
     ],
   },
   {
-    label: 'Heavy Item Pickup & Shipping',
+    label: 'Heavy Item Collection & Shipping',
     href: '/services/heavy-items',
     subs: [
       { label: 'Pool Table Shipping', href: '/services/heavy-items/pool-table-shipping' },
@@ -230,7 +230,7 @@ export default function BlogSeoAtx({
             <div className="bg-gradient-to-br from-grey-900 to-grey-800 text-white rounded-2xl p-6">
               <h2 className="text-lg font-bold mb-2">Need Something Shipped?</h2>
               <p className="text-grey-300 text-sm mb-5 leading-relaxed">
-                Free quotes for custom crating, white-glove pickup, and specialty freight anywhere in Central Texas.
+                Free quotes for custom crating, white-glove collection, and specialty freight anywhere in Central Texas.
               </p>
               <Link
                 href="/contact"

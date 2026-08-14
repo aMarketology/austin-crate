@@ -70,7 +70,7 @@ export default function MoveOutATXBlog() {
 
         <h2>The Free Furniture Market</h2>
         <p>
-          The Free Furniture Market allows any Austin resident to pick up donated furniture at no cost. The market is
+          The Free Furniture Market allows any Austin resident to collect donated furniture at no cost. The market is
           historically held at the UT Whitaker Courts Parking Lot (287 W. 51st St., near the tennis courts).
         </p>
 
@@ -131,7 +131,7 @@ export default function MoveOutATXBlog() {
           <h3 className="text-lg font-bold text-emerald-900 mb-2">🚛 Moving Out This Summer?</h3>
           <p className="text-emerald-800 text-sm mb-4">
             If you have furniture or large items that won&apos;t fit in your car for donation drop-off, Austin Crate &amp; Freight
-            offers white-glove pickup and specialty shipping throughout Central Texas. Whether you&apos;re relocating or
+            offers white-glove collection and specialty shipping throughout Central Texas. Whether you&apos;re relocating or
             passing items along, we can help get them where they need to go.
           </p>
           <Link

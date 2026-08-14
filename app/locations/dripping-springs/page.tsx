@@ -17,7 +17,7 @@ export const metadata: Metadata = generateLocationMetadata({
     'furniture shipping Dripping Springs',
     'fine art shipping Dripping Springs TX',
     'antique shipping Dripping Springs Texas',
-    'heavy item pickup Dripping Springs TX',
+    'heavy item collection Dripping Springs TX',
     'white glove shipping Dripping Springs TX',
     'Dripping Springs shipping company',
     'custom crating Dripping Springs Texas',
@@ -81,7 +81,7 @@ export default function DrippingSprings() {
               { icon: 'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z', title: 'Fine Art Shipping', desc: 'Museum-quality crating for paintings, sculptures, and fine art from Dripping Springs estates and collections.', href: '/services/fine-art' },
               { icon: 'M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z', title: 'Luxury Furniture Shipping', desc: 'White-glove furniture shipping for custom Hill Country home builds and high-end designer pieces.', href: '/services/furniture' },
               { icon: 'M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12z', title: 'Antique & Heirloom Transport', desc: 'Expert crating for antique furniture, heirlooms, and collectibles from Dripping Springs homes.', href: '/services/furniture/antique-furniture-shipping' },
-              { icon: 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4', title: 'Heavy Item Pickup', desc: 'Safes, vaults, heavy equipment, and oversized items from Dripping Springs homes and properties.', href: '/services/heavy-items' },
+              { icon: 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4', title: 'Heavy Item Collection', desc: 'Safes, vaults, heavy equipment, and oversized items from Dripping Springs homes and properties.', href: '/services/heavy-items' },
               { icon: 'M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7', title: 'Oversized Shipping', desc: 'Custom freight solutions for oversized Hill Country deliveries that standard carriers won\'t handle.', href: '/services/oversized-shipping' },
             ].map(({ icon, title, desc, href }) => (
               <div key={title} className="p-6 border border-gray-200 rounded-xl hover:shadow-lg transition-shadow">
@@ -111,11 +111,11 @@ export default function DrippingSprings() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Specialty Shipping Dripping Springs TX — FAQs</h2>
             <div className="space-y-6">
               {[
-                { q: 'Do you offer specialty shipping in Dripping Springs, TX?', a: 'Yes. Austin Crate & Freight provides specialty shipping and custom crating throughout Dripping Springs and the Texas Hill Country. We pick up from your location, build custom crates in-house, and ship locally or nationwide.' },
+                { q: 'Do you offer specialty shipping in Dripping Springs, TX?', a: 'Yes. Austin Crate & Freight provides specialty shipping and custom crating throughout Dripping Springs and the Texas Hill Country. We collect from your location, build custom crates in-house, and ship locally or nationwide.' },
                 { q: 'Can you ship fine art from Dripping Springs estates?', a: 'Absolutely. We specialize in fine art crating for Dripping Springs collectors and homeowners — custom foam-lined wood crates, climate-controlled options, and full insurance coverage for every piece.' },
                 { q: 'Do you handle antique furniture shipping from Hill Country homes?', a: 'Yes. We provide expert antique furniture crating and shipping from Dripping Springs, Wimberley, and surrounding Hill Country communities. Every antique gets a custom crate built to protect it in transit.' },
-                { q: 'What areas of Dripping Springs do you serve?', a: 'We serve all of Dripping Springs (78620) including Caliterra, Headwaters, Sunset Canyon, Arrowhead Ranch, and surrounding Hill Country communities. Free pickup throughout the area.' },
-                { q: 'How long does it take to get from Austin to Dripping Springs?', a: 'Our Austin workshop is approximately 35-40 minutes from downtown Dripping Springs via US-290. We schedule pickups and deliveries throughout the week with flexible timing for Hill Country properties.' },
+                { q: 'What areas of Dripping Springs do you serve?', a: 'We serve all of Dripping Springs (78620) including Caliterra, Headwaters, Sunset Canyon, Arrowhead Ranch, and surrounding Hill Country communities. Collection throughout the area.' },
+                { q: 'How long does it take to get from Austin to Dripping Springs?', a: 'Our Austin workshop is approximately 35-40 minutes from downtown Dripping Springs via US-290. We schedule collections and deliveries throughout the week with flexible timing for Hill Country properties.' },
               ].map(({ q, a }) => (
                 <div key={q} className="border border-gray-200 rounded-xl p-6">
                   <h3 className="font-bold text-gray-900 mb-2">{q}</h3>
@@ -157,12 +157,12 @@ export default function DrippingSprings() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Serving Dripping Springs from Austin</h2>
-              <p className="text-gray-700 text-lg mb-6">Austin Crate &amp; Freight serves Dripping Springs from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, approximately 35 minutes via US-290. Free pickup throughout Dripping Springs and the surrounding Hill Country (78620).</p>
+              <p className="text-gray-700 text-lg mb-6">Austin Crate &amp; Freight serves Dripping Springs from our workshop at <strong>3112 Windsor Rd, Austin, TX 78703</strong>, approximately 35 minutes via US-290. Collection throughout Dripping Springs and the surrounding Hill Country (78620).</p>
               <ul className="space-y-3 text-gray-700 mb-8">
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span><span><strong>Address:</strong> 3112 Windsor Rd, Austin, TX 78703</span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span><span><strong>Phone:</strong> <a href="tel:(512) 240-9818" className="text-emerald-600 hover:underline">(512) 240-9818</a></span></li>
                 <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span><span><strong>Hours:</strong> Mon-Fri 8am-6pm, Sat by appointment</span></li>
-                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span><span><strong>Dripping Springs pickup:</strong> Free throughout Dripping Springs and Hill Country</span></li>
+                <li className="flex gap-3"><span className="text-emerald-600 font-bold">✓</span><span><strong>Dripping Springs collection:</strong> available throughout Dripping Springs and Hill Country</span></li>
               </ul>
               <a href="https://www.google.com/maps/search/?api=1&query=Austin+Crate+%26+Freight+3112+Windsor+Rd+Austin+TX+78703" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-700 transition-all">Get Directions on Google Maps</a>
             </div>

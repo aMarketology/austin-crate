@@ -101,7 +101,7 @@ export default function BlogIndexClient() {
     {
       slug: 'cost-to-ship-heavy-items-austin',
       title: 'How Much Does It Cost to Ship Heavy Items in Austin? (2026 Price Guide)',
-      excerpt: 'Complete pricing guide for shipping heavy items in Austin, TX. Compare costs for heavy package pickup, custom furniture shipping, oversized item transport, and freight solutions.',
+      excerpt: 'Complete pricing guide for shipping heavy items in Austin, TX. Compare costs for heavy package collection, custom furniture shipping, oversized item transport, and freight solutions.',
       date: 'February 26, 2026',
       category: 'Shipping Guide',
       readTime: '8 min read',
