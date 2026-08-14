@@ -11,7 +11,7 @@ import SEOWrapper from '@/app/components/SEOWrapper'
 export const metadata: Metadata = generateServiceMetadata({
   serviceName: 'Heavy Item Pickup & Shipping Austin TX',
   description:
-    'Heavy package pickup and oversized item shipping in Austin, TX. Custom crating for furniture, equipment, and machinery. Free local pickup. Call (512) 240-9818.',
+    'Heavy package and oversized item shipping in Austin, TX. Custom crating for furniture, equipment, and machinery. Call (512) 240-9818.',
   keywords: [
     'heavy package pickup Austin',
     'heavy item shipping Austin TX',
@@ -38,7 +38,7 @@ export default function HeavyItemsShipping() {
 
   const localBusinessSchema = generateLocalBusinessSchema({
     locationName: 'Austin',
-    description: 'Heavy package pickup and oversized item shipping in Austin, TX. Custom crating for furniture, equipment, and machinery. Free local pickup.',
+    description: 'Heavy package pickup and oversized item shipping in Austin, TX. Custom crating for furniture, equipment, and machinery.',
     latitude: 30.2972,
     longitude: -97.7594,
     image: '/IMG_4446_1703172460423.jpg',
@@ -242,6 +242,7 @@ export default function HeavyItemsShipping() {
                         d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                         clipRule="evenodd"
                       />
+                    </svg>
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-gray-900 mb-1">
