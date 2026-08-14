@@ -714,7 +714,7 @@ export default function Home() {
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
               </svg>
-              Call (512) 240-9818 for Free Quote
+              (512) 240-9818
             </a>
           </div>
         </div>
@@ -739,7 +739,7 @@ export default function Home() {
 
               <div className="space-y-4 md:space-y-6">
                 {[
-                  { step: '01', title: 'We Pick Up Your Item', desc: 'Free pickup in the Greater Austin area. We come to you and carefully collect your items.' },
+                  { step: '01', title: 'We Pick Up Your Item', desc: 'We come to you and carefully collect your items. Pickup fees vary based on location and item size.' },
                   { step: '02', title: 'Custom Crating & Packing', desc: 'Our craftsmen build a custom crate specifically designed to protect your item during transit.' },
                   { step: '03', title: 'Ship or Pickup', desc: 'Choose delivery to your destination or pick up your crated item from our facility.' }
                 ].map((item, i) => (

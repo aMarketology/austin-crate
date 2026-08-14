@@ -242,7 +242,6 @@ export default function HeavyItemsShipping() {
                         d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                         clipRule="evenodd"
                       />
-                    </svg>
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-gray-900 mb-1">
@@ -282,7 +281,7 @@ export default function HeavyItemsShipping() {
                 {
                   step: 2,
                   title: 'Scheduled Pickup at Your Location',
-                  desc: 'Our team arrives at your home or business with all equipment needed, dollies, straps, ramps, and a crew trained in heavy-item handling. Free pickup in the Greater Austin area.',
+                  desc: 'Our team arrives at your home or business with all equipment needed, dollies, straps, ramps, and a crew trained in heavy-item handling. Pickup fees vary based on location and item size.',
                 },
                 {
                   step: 3,
