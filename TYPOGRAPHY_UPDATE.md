@@ -5,7 +5,7 @@ Updated the website typography to use **Playfair Display** (serif) for headings 
 
 ## Changes Made
 
-### 1. Font Implementation
+### 1. Font Implementationss
 
 **Google Fonts Added:**
 - **Playfair Display** - Elegant serif font for all headings (h1-h6)
