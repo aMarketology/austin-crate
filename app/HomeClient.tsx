@@ -226,7 +226,7 @@ export default function HomeClient() {
             transition={{ duration: 0.8, delay: 0.30 }}
             className="font-sans text-lg sm:text-xl text-grey-800 font-light leading-snug mt-4 px-2"
           >
-            Austin&apos;s Premier Specialty Shipping: Custom Crating, Furniture Shipping &amp; Crating, Heavy Pickup &amp; Fine Art Transport
+            Austin&apos;s Premier Specialty Shipping: Custom Crating, Furniture Shipping &amp; Crating, Heavy Item &amp; Fine Art Transport
           </motion.h3>
 
           {/* Description */}
@@ -236,7 +236,7 @@ export default function HomeClient() {
             transition={{ duration: 0.8, delay: 0.35 }}
             className="font-sans text-sm sm:text-base text-grey-600 mt-3 mb-6 font-light leading-relaxed max-w-md mx-auto px-2"
           >
-            Austin&apos;s trusted specialty shipping &amp; custom crating company. Expert furniture shipping and crating, heavy item pickup, fine art crating, and medical equipment transport, delivered with museum-quality care across Austin and nationwide.
+            Austin&apos;s trusted specialty shipping &amp; custom crating company. Expert furniture shipping and crating, heavy item transport, fine art crating, and medical equipment transport — delivered with museum-quality care across Austin and nationwide.
           </motion.p>
 
           {/* CTA Buttons - Animated */}
@@ -437,7 +437,7 @@ export default function HomeClient() {
                 transition={{ duration: 0.8, delay: 0.35 }}
                 className="font-sans text-3xl md:text-4xl text-grey-800 font-light leading-tight -mt-2"
               >
-                Austin&apos;s Premier Specialty Shipping — Custom Crating, Furniture Shipping &amp; Crating, Heavy Pickup &amp; Fine Art Transport
+                Austin&apos;s Premier Specialty Shipping — Custom Crating, Furniture Shipping &amp; Crating, Heavy Item &amp; Fine Art Transport
               </motion.h3>
 
               {/* Description */}
@@ -447,7 +447,7 @@ export default function HomeClient() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="font-sans text-xl md:text-2xl text-grey-600 font-light leading-relaxed max-w-2xl"
               >
-                Austin&apos;s trusted specialty shipping &amp; custom crating company. Expert furniture shipping and crating, heavy item pickup, fine art crating, and medical equipment transport — delivered with museum-quality care across Austin, Texas and nationwide.
+                Austin&apos;s trusted specialty shipping &amp; custom crating company. Expert furniture shipping and crating, heavy item transport, fine art crating, and medical equipment transport — delivered with museum-quality care across Austin, Texas and nationwide.
               </motion.p>
 
               {/* CTA Buttons Row */}
@@ -605,7 +605,7 @@ export default function HomeClient() {
               Premium Shipping for Every Need
             </h3>
             <p className="font-sans text-sm md:text-base lg:text-xl text-grey-600 max-w-3xl mx-auto leading-relaxed font-light">
-              Austin Crate &amp; Freight provides specialty shipping and custom crating in Austin, Texas — furniture shipping and crating, fine art transport, heavy item pickup, and medical equipment shipping. Our expert team ensures your most valuable items arrive safely, locally or nationwide.
+              Austin Crate &amp; Freight provides specialty shipping and custom crating in Austin, Texas — furniture shipping and crating, fine art transport, heavy item shipping, and medical equipment shipping. Our expert team ensures your most valuable items arrive safely, locally or nationwide.
             </p>
           </div>
 
@@ -772,14 +772,14 @@ export default function HomeClient() {
                 Simple <span className="text-emerald">3-Step</span> Process
               </h2>
               <p className="text-grey-400 mb-6 md:mb-8 text-sm md:text-lg">
-                We make shipping your valuable items easy. From pickup to delivery, we handle everything.
+                We make shipping your valuable items easy. From your location to delivery, we handle everything.
               </p>
 
               <div className="space-y-4 md:space-y-6">
                 {[
-                  { step: '01', title: 'We Pick Up Your Item', desc: 'We come to you and carefully collect your items. Pickup fees vary based on location and item size.' },
+                  { step: '01', title: 'We Collect Your Item', desc: 'We come to you and carefully collect your items. Collection fees vary based on location and item size.' },
                   { step: '02', title: 'Custom Crating & Packing', desc: 'Our craftsmen build a custom crate specifically designed to protect your item during transit.' },
-                  { step: '03', title: 'Ship or Pickup', desc: 'Choose delivery to your destination or pick up your crated item from our facility.' }
+                  { step: '03', title: 'Ship or Collect', desc: 'Choose delivery to your destination or collect your crated item from our facility.' }
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4">
                     <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-emerald/20 rounded-lg flex items-center justify-center">
@@ -824,7 +824,7 @@ export default function HomeClient() {
               {/* Delivery tags */}
               <div className="pt-2 flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-emerald/20 text-emerald text-sm font-medium rounded-full">We Deliver</span>
-                <span className="px-3 py-1 bg-emerald/20 text-emerald text-sm font-medium rounded-full">Customer Pickup</span>
+                <span className="px-3 py-1 bg-emerald/20 text-emerald text-sm font-medium rounded-full">Customer Collection</span>
                 <span className="px-3 py-1 bg-emerald/20 text-emerald text-sm font-medium rounded-full">Nationwide Shipping</span>
               </div>
             </div>
@@ -1059,7 +1059,7 @@ export default function HomeClient() {
           </h2>
           
           <p className="text-sm md:text-lg lg:text-xl text-grey-600 mb-6 md:mb-10 lg:mb-12 max-w-2xl mx-auto">
-            Request your free specialty shipping quote today. Whether you need custom furniture shipping, heavy package pickup, or fine art crating in Austin, our expert team handles it all.
+            Request your free specialty shipping quote today. Whether you need custom furniture shipping, heavy item transport, or fine art crating in Austin, our expert team handles it all.
           </p>
 
           {/* CTA Buttons Row */}

@@ -734,14 +734,14 @@ export default function Home() {
                 Simple <span className="text-emerald">3-Step</span> Process
               </h2>
               <p className="text-grey-400 mb-6 md:mb-8 text-sm md:text-lg">
-                We make shipping your valuable items easy. From pickup to delivery, we handle everything.
+                We make shipping your valuable items easy. From your location to delivery, we handle everything.
               </p>
 
               <div className="space-y-4 md:space-y-6">
                 {[
-                  { step: '01', title: 'We Pick Up Your Item', desc: 'We come to you and carefully collect your items. Pickup fees vary based on location and item size.' },
+                  { step: '01', title: 'We Collect Your Item', desc: 'We come to you and carefully collect your items. Collection fees vary based on location and item size.' },
                   { step: '02', title: 'Custom Crating & Packing', desc: 'Our craftsmen build a custom crate specifically designed to protect your item during transit.' },
-                  { step: '03', title: 'Ship or Pickup', desc: 'Choose delivery to your destination or pick up your crated item from our facility.' }
+                  { step: '03', title: 'Ship or Collect', desc: 'Choose delivery to your destination or collect your crated item from our facility.' }
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4">
                     <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-emerald/20 rounded-lg flex items-center justify-center">
@@ -796,7 +796,7 @@ export default function Home() {
                 <p className="text-grey-400 text-sm mb-3">Delivery Options:</p>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 bg-emerald/20 text-emerald text-sm font-medium rounded-full">We Deliver</span>
-                  <span className="px-3 py-1 bg-emerald/20 text-emerald text-sm font-medium rounded-full">Customer Pickup</span>
+                  <span className="px-3 py-1 bg-emerald/20 text-emerald text-sm font-medium rounded-full">Customer Collection</span>
                   <span className="px-3 py-1 bg-emerald/20 text-emerald text-sm font-medium rounded-full">Nationwide Shipping</span>
                 </div>
               </div>
@@ -892,7 +892,7 @@ export default function Home() {
           <div className="mt-6 md:mt-12 lg:mt-16 pt-4 md:pt-6 lg:pt-8 border-t border-zinc-800">
             <p className="text-zinc-500 flex items-center justify-center gap-2 text-sm md:text-base">
               <svg className="w-4 h-4 md:w-5 md:h-5 text-emerald" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
               </svg>
               Serving Austin & Surrounding Areas, Texas
             </p>
