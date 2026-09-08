@@ -110,12 +110,31 @@ export default function ContactClient() {
     }
 
     try {
+      // 1. Send email via EmailJS (existing)
       await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
         templateParams,
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       )
+
+      // 2. Save lead to Google Sheet via our API route
+      await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          serviceType: serviceLabel,
+          dimensions: dimensionsText,
+          weight: weightText,
+          zipcode: formData.serviceType === 'shipping' ? (formData.zipcode || 'Not provided') : 'N/A',
+          message: formData.message || 'No additional details provided.',
+          sourceUrl: typeof window !== 'undefined' ? window.location.href : '',
+        }),
+      })
+
       // Fire Google Ads conversion before redirecting
       if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
         ;(window as any).gtag('event', 'conversion', {
